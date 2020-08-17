@@ -8,8 +8,11 @@ recommend a format that:
   SMPTE timecode is problematical because it uses frame counts and
   thus requires knowing the frame rate of the video, which is not
   always possible.
+  
    Good:  "00:07:59.16" (0 hours, 7 minutes, 59 seconds, 160 milliseconds)
+   
     Bad:  "00:07:59:16" (0 hours, 7 minutes, 59 seconds, 16 "frames")
+    
    Ugly:  "00:07:59;16" (drop-frame timecode, implies 29.97HZ)
 
 Also, it is usually best if the format:
