@@ -1,0 +1,1228 @@
+1
+00:00:04,634 --> 00:00:05,901
+man:
+Ladies and gentlemen,
+
+2
+00:00:05,901 --> 00:00:08,267
+please welcome Chief Executive
+Officer of Google,
+
+3
+00:00:08,267 --> 00:00:10,834
+Dr. Eric Schmidt.
+
+4
+00:00:10,834 --> 00:00:11,934
+Schmidt: Thank you.
+
+5
+00:00:11,934 --> 00:00:15,133
+[applause]
+
+6
+00:00:15,133 --> 00:00:17,234
+Thank you all.
+
+7
+00:00:20,000 --> 00:00:22,000
+First let me start
+by welcoming everybody.
+
+8
+00:00:22,000 --> 00:00:23,400
+Many of you traveled
+a long distance
+
+9
+00:00:23,400 --> 00:00:26,634
+to come here
+to, uh, spend two days with us
+
+10
+00:00:26,634 --> 00:00:28,968
+to talk about the thing
+I like the most,
+
+11
+00:00:28,968 --> 00:00:30,901
+which is programming.
+
+12
+00:00:30,901 --> 00:00:34,300
+And let me tell you
+that it's time.
+
+13
+00:00:34,300 --> 00:00:37,501
+It's time for us
+to take advantage
+
+14
+00:00:37,501 --> 00:00:40,067
+of the amazing opportunity
+that is before us.
+
+15
+00:00:40,067 --> 00:00:41,334
+And that's what I want
+to talk about
+
+16
+00:00:41,334 --> 00:00:43,367
+for just a few minutes.
+
+17
+00:00:43,367 --> 00:00:44,767
+Today and tomorrow,
+
+18
+00:00:44,767 --> 00:00:47,033
+you're going to have interesting
+product announcements,
+
+19
+00:00:47,033 --> 00:00:50,200
+some fun stuff,
+and perhaps most important,
+
+20
+00:00:50,200 --> 00:00:51,667
+you're gonna spend time
+
+21
+00:00:51,667 --> 00:00:53,567
+with the best programmers
+in the world
+
+22
+00:00:53,567 --> 00:00:54,701
+who are here in the room.
+
+23
+00:00:54,701 --> 00:00:55,934
+Literally you all.
+
+24
+00:00:55,934 --> 00:00:58,601
+And we're very excited
+to have you here.
+
+25
+00:00:58,601 --> 00:01:02,334
+Uh, from my perspective,
+it's time.
+
+26
+00:01:02,334 --> 00:01:04,934
+We have spent 20 years
+
+27
+00:01:04,934 --> 00:01:08,834
+trying to build
+a programming model
+
+28
+00:01:08,834 --> 00:01:10,467
+that's the right one.
+
+29
+00:01:10,467 --> 00:01:11,968
+We started
+with the mainframe model.
+
+30
+00:01:11,968 --> 00:01:13,467
+Then we moved
+to the PC model.
+
+31
+00:01:13,467 --> 00:01:17,567
+And it had brilliant parts
+and very frustrating parts.
+
+32
+00:01:17,567 --> 00:01:19,434
+And then
+the internet arrived.
+
+33
+00:01:19,434 --> 00:01:21,067
+And internet programming.
+
+34
+00:01:21,067 --> 00:01:23,334
+The way we think
+about it now
+
+35
+00:01:23,334 --> 00:01:24,901
+is something
+we have all worked on
+
+36
+00:01:24,901 --> 00:01:26,634
+for all of our career.
+
+37
+00:01:26,634 --> 00:01:28,167
+It's time.
+
+38
+00:01:28,167 --> 00:01:29,567
+Why is it time?
+
+39
+00:01:29,567 --> 00:01:32,367
+We finally now have
+the networks,
+
+40
+00:01:32,367 --> 00:01:35,133
+the businesses,
+the programmers,
+
+41
+00:01:35,133 --> 00:01:36,968
+the programming tools,
+
+42
+00:01:36,968 --> 00:01:39,234
+that can build
+the kind of platforms
+
+43
+00:01:39,234 --> 00:01:43,834
+and the kind of opportunities
+that I want to highlight.
+
+44
+00:01:43,834 --> 00:01:45,868
+Today and tomorrow,
+you're going to hear a lot
+
+45
+00:01:45,868 --> 00:01:48,601
+about some
+of the Google technologies
+
+46
+00:01:48,601 --> 00:01:50,100
+many of you,
+you--you are already using.
+
+47
+00:01:50,100 --> 00:01:51,567
+For example,
+Google Web--Web Toolkit.
+
+48
+00:01:51,567 --> 00:01:52,834
+You know, we used
+to say "write once,
+
+49
+00:01:52,834 --> 00:01:54,934
+run anywhere with Java"
+back in my old--
+
+50
+00:01:54,934 --> 00:01:56,400
+in my old job.
+
+51
+00:01:56,400 --> 00:01:59,501
+Now it's write "write once,
+run on any browser," right?
+
+52
+00:01:59,501 --> 00:02:01,701
+Uh, because the browsers
+have become so complicated.
+
+53
+00:02:01,701 --> 00:02:04,033
+That's what GWT
+is all about.
+
+54
+00:02:04,033 --> 00:02:05,701
+We're going to see
+a lot more things
+
+55
+00:02:05,701 --> 00:02:07,968
+about a product
+called App Engine,
+
+56
+00:02:07,968 --> 00:02:09,601
+which now today includes,
+by the way,
+
+57
+00:02:09,601 --> 00:02:11,667
+support for Java, right,
+which is great,
+
+58
+00:02:11,667 --> 00:02:13,868
+and more,
+presumably, coming.
+
+59
+00:02:13,868 --> 00:02:18,434
+The notion of these platforms
+as powerful platforms
+
+60
+00:02:18,434 --> 00:02:21,567
+are part of a story
+that's been true forever.
+
+61
+00:02:21,567 --> 00:02:24,701
+And it's a story that innovation
+always occurs elsewhere.
+
+62
+00:02:24,701 --> 00:02:27,501
+It never is in the little world
+that I sit in
+
+63
+00:02:27,501 --> 00:02:28,501
+or that you sit in.
+
+64
+00:02:28,501 --> 00:02:30,167
+It's always somewhere else.
+
+65
+00:02:30,167 --> 00:02:33,567
+There's always a programmer,
+an inventor,
+
+66
+00:02:33,567 --> 00:02:35,400
+a brilliant person
+
+67
+00:02:35,400 --> 00:02:37,501
+who's somewhere other than
+where you are.
+
+68
+00:02:37,501 --> 00:02:40,000
+They need to use a platform
+that you build.
+
+69
+00:02:40,000 --> 00:02:42,501
+They need, for example,
+to be able to use a platform
+
+70
+00:02:42,501 --> 00:02:44,667
+even if they don't
+speak English
+
+71
+00:02:44,667 --> 00:02:46,400
+and even if they don't
+really understand
+
+72
+00:02:46,400 --> 00:02:48,367
+some of the other things
+that you've done,
+
+73
+00:02:48,367 --> 00:02:51,968
+but because they have an idea
+and they have a vision.
+
+74
+00:02:51,968 --> 00:02:53,801
+And maybe they use
+the wrong operating system
+
+75
+00:02:53,801 --> 00:02:54,968
+or they have
+the wrong background
+
+76
+00:02:54,968 --> 00:02:56,234
+or whatever,
+
+77
+00:02:56,234 --> 00:02:57,901
+but they're clever
+and they're smart.
+
+78
+00:02:57,901 --> 00:02:59,734
+And that's
+how innovation occurs.
+
+79
+00:02:59,734 --> 00:03:03,267
+It's always been true
+and it will always be true.
+
+80
+00:03:03,267 --> 00:03:05,667
+And that's why
+we're here today.
+
+81
+00:03:05,667 --> 00:03:07,667
+Maybe you're here
+to talk about Android
+
+82
+00:03:07,667 --> 00:03:09,834
+and some of the things
+that we're doing there.
+
+83
+00:03:09,834 --> 00:03:12,267
+Android looks like it's going
+to have a very strong year.
+
+84
+00:03:12,267 --> 00:03:14,167
+Not only do we have
+many thousands
+
+85
+00:03:14,167 --> 00:03:15,300
+of applications now
+
+86
+00:03:15,300 --> 00:03:17,567
+as part of our Android
+application store,
+
+87
+00:03:17,567 --> 00:03:19,400
+but we also have
+many hardware partners
+
+88
+00:03:19,400 --> 00:03:20,868
+that are coming along
+
+89
+00:03:20,868 --> 00:03:23,100
+to build innovative
+new hardware platforms
+
+90
+00:03:23,100 --> 00:03:24,234
+which look like phones,
+
+91
+00:03:24,234 --> 00:03:25,601
+but do a lot of things
+
+92
+00:03:25,601 --> 00:03:28,200
+that--that are not
+normally associated with phones.
+
+93
+00:03:28,200 --> 00:03:31,300
+Again, the innovation cycle
+continues.
+
+94
+00:03:31,300 --> 00:03:34,100
+So what we want you to do
+is we want you here
+
+95
+00:03:34,100 --> 00:03:37,734
+to spend your time
+with our teams and vice versa
+
+96
+00:03:37,734 --> 00:03:39,434
+and yourselves
+with each other
+
+97
+00:03:39,434 --> 00:03:42,634
+to try to figure out
+what we can do now.
+
+98
+00:03:42,634 --> 00:03:45,000
+So why is it time?
+Why is it time?
+
+99
+00:03:45,000 --> 00:03:47,133
+Why is it time
+to take the challenge?
+
+100
+00:03:47,133 --> 00:03:49,033
+Because people
+are frustrated.
+
+101
+00:03:49,033 --> 00:03:50,701
+They're tired
+of the complexity
+
+102
+00:03:50,701 --> 00:03:52,334
+of all of the systems
+that have been built up
+
+103
+00:03:52,334 --> 00:03:54,334
+over the last 10, 20 years.
+
+104
+00:03:54,334 --> 00:03:55,734
+They don't work that well.
+
+105
+00:03:55,734 --> 00:03:57,501
+Where's the "it works"
+option?
+
+106
+00:03:57,501 --> 00:04:00,434
+Where's the button where it
+just installs and works?
+
+107
+00:04:00,434 --> 00:04:03,634
+Why do we keep adding complexity
+after complexity in our--
+
+108
+00:04:03,634 --> 00:04:04,968
+in our world?
+
+109
+00:04:04,968 --> 00:04:08,334
+Well, here's an opportunity
+using Ajax programming,
+
+110
+00:04:08,334 --> 00:04:09,834
+the new programming
+languages,
+
+111
+00:04:09,834 --> 00:04:12,033
+the new programming paradigm
+that we're going to talk about
+
+112
+00:04:12,033 --> 00:04:15,968
+in the next couple of days
+to build another step higher.
+
+113
+00:04:15,968 --> 00:04:18,934
+To bring another level
+of functionality
+
+114
+00:04:18,934 --> 00:04:23,334
+that ultimately means power
+can generate simplicity
+
+115
+00:04:23,334 --> 00:04:25,033
+and ultimately
+make these systems
+
+116
+00:04:25,033 --> 00:04:26,901
+simpler and easier to use
+
+117
+00:04:26,901 --> 00:04:29,834
+by the people we serve
+who are not programmers.
+
+118
+00:04:29,834 --> 00:04:31,434
+They're not computer
+scientists.
+
+119
+00:04:31,434 --> 00:04:33,534
+They're not engineers.
+
+120
+00:04:33,534 --> 00:04:34,834
+I'm one of these people
+who believes
+
+121
+00:04:34,834 --> 00:04:35,834
+that computer science
+
+122
+00:04:35,834 --> 00:04:37,801
+is at the center
+of the universe.
+
+123
+00:04:37,801 --> 00:04:39,167
+I'm one of these people
+who believes
+
+124
+00:04:39,167 --> 00:04:44,100
+that what we do as scientists,
+as programmers,
+
+125
+00:04:44,100 --> 00:04:45,567
+as people who care
+about making the world
+
+126
+00:04:45,567 --> 00:04:46,934
+a better place,
+
+127
+00:04:46,934 --> 00:04:48,334
+can really scale.
+
+128
+00:04:48,334 --> 00:04:51,300
+I'm a person who believes
+that scalability
+
+129
+00:04:51,300 --> 00:04:53,234
+and the power as r--
+as evidenced by the power
+
+130
+00:04:53,234 --> 00:04:55,901
+of the internet
+is just beginning.
+
+131
+00:04:55,901 --> 00:04:59,501
+And I would tell you
+that we're just at the beginning
+
+132
+00:04:59,501 --> 00:05:01,167
+of getting this right.
+
+133
+00:05:01,167 --> 00:05:03,434
+When we talk
+about cloud computing,
+
+134
+00:05:03,434 --> 00:05:05,801
+we talk about all
+the new kinds of devices,
+
+135
+00:05:05,801 --> 00:05:10,167
+you're seeing a whole new set
+of companies, ideas,
+
+136
+00:05:10,167 --> 00:05:12,234
+product solutions,
+competitors.
+
+137
+00:05:12,234 --> 00:05:15,501
+All sorts of things all coming
+from this shared vision
+
+138
+00:05:15,501 --> 00:05:17,567
+around a new
+programming model.
+
+139
+00:05:17,567 --> 00:05:18,801
+It's not the old
+programming model
+
+140
+00:05:18,801 --> 00:05:20,601
+where I was handed a book
+and said program
+
+141
+00:05:20,601 --> 00:05:22,901
+against these interfaces
+against this standard OS
+
+142
+00:05:22,901 --> 00:05:25,067
+and everything
+will work locally.
+
+143
+00:05:25,067 --> 00:05:27,133
+But it's a similar model
+
+144
+00:05:27,133 --> 00:05:29,868
+where I can go pick
+the very best
+
+145
+00:05:29,868 --> 00:05:31,133
+of this code
+and that code.
+
+146
+00:05:31,133 --> 00:05:33,400
+Put it together.
+Mash it if you will.
+
+147
+00:05:33,400 --> 00:05:34,934
+Have it automatically
+compiled.
+
+148
+00:05:34,934 --> 00:05:38,133
+And have it deliver
+tremendous performance
+
+149
+00:05:38,133 --> 00:05:39,634
+for all of us.
+
+150
+00:05:39,634 --> 00:05:42,300
+With this, we can take
+the collective intelligence
+
+151
+00:05:42,300 --> 00:05:44,567
+of the internet,
+which is astounding--
+
+152
+00:05:44,567 --> 00:05:47,167
+all the information,
+all those things going on--
+
+153
+00:05:47,167 --> 00:05:48,968
+and do amazing things.
+
+154
+00:05:48,968 --> 00:05:51,167
+We can tell people
+what's going to happen.
+
+155
+00:05:51,167 --> 00:05:52,767
+We can tell people
+what's happening nearby.
+
+156
+00:05:52,767 --> 00:05:55,267
+We can follow
+what they care about.
+
+157
+00:05:55,267 --> 00:05:56,400
+As you walk down the street,
+
+158
+00:05:56,400 --> 00:05:58,000
+we can tell them the history
+of the buildings
+
+159
+00:05:58,000 --> 00:05:59,467
+as we walk along.
+
+160
+00:05:59,467 --> 00:06:02,868
+We can do image recognition
+to sort of see what's happening.
+
+161
+00:06:02,868 --> 00:06:06,734
+All of these are applications
+that someone in this room
+
+162
+00:06:06,734 --> 00:06:08,734
+has already built.
+
+163
+00:06:08,734 --> 00:06:11,400
+All of you are busy building
+the version 2
+
+164
+00:06:11,400 --> 00:06:13,033
+of all of those kinds
+of things.
+
+165
+00:06:13,033 --> 00:06:14,767
+It's phenomenal.
+
+166
+00:06:14,767 --> 00:06:17,934
+So my message to you
+is this is the beginning
+
+167
+00:06:17,934 --> 00:06:20,300
+of the real win
+of cloud computing.
+
+168
+00:06:20,300 --> 00:06:22,801
+Of the real win
+of applications.
+
+169
+00:06:22,801 --> 00:06:24,634
+Of the real win
+of the internet,
+
+170
+00:06:24,634 --> 00:06:27,434
+which is changing
+the computing paradigm--
+
+171
+00:06:27,434 --> 00:06:29,400
+the one that we've all
+grown up with--
+
+172
+00:06:29,400 --> 00:06:30,801
+so it just works.
+
+173
+00:06:30,801 --> 00:06:32,901
+It works no matter what device
+you're using,
+
+174
+00:06:32,901 --> 00:06:34,901
+whatever operating system
+you're using,
+
+175
+00:06:34,901 --> 00:06:36,667
+as long as you're connected--
+
+176
+00:06:36,667 --> 00:06:39,234
+and even if you're no--
+offline with some caching,
+
+177
+00:06:39,234 --> 00:06:41,267
+you're on and you have
+everything you need.
+
+178
+00:06:41,267 --> 00:06:44,667
+That's the promise
+of our new web computing model,
+
+179
+00:06:44,667 --> 00:06:46,400
+which we're all
+talking about.
+
+180
+00:06:46,400 --> 00:06:48,667
+We're going to show you
+some amazing technology
+
+181
+00:06:48,667 --> 00:06:50,367
+and some amazing partnerships
+that we've done
+
+182
+00:06:50,367 --> 00:06:51,834
+in the next hour and a half.
+
+183
+00:06:51,834 --> 00:06:54,200
+I'm delighted
+that you're here
+
+184
+00:06:54,200 --> 00:06:56,033
+and I'm excited
+about what we're doing.
+
+185
+00:06:56,033 --> 00:06:58,701
+And I want to take a minute
+to thank you for coming
+
+186
+00:06:58,701 --> 00:07:00,968
+and also introduce
+Vic Gundrota,
+
+187
+00:07:00,968 --> 00:07:02,534
+who's the executive
+who's in charge
+
+188
+00:07:02,534 --> 00:07:04,601
+of all of our develop programs,
+all of our mobile programs,
+
+189
+00:07:04,601 --> 00:07:05,868
+and lots of our businesses.
+
+190
+00:07:05,868 --> 00:07:06,868
+Vic, can you join me
+on stage?
+
+191
+00:07:06,868 --> 00:07:08,100
+Thank you very much.
+
+192
+00:07:08,100 --> 00:07:09,834
+Gundrota: Thank you, Eric.
+Schmidt: Take care, Vic.
+
+193
+00:07:09,834 --> 00:07:11,267
+Gundrota: Appreciate it.
+Schmidt: Thanks.
+
+194
+00:07:11,267 --> 00:07:12,667
+Gundrota: Thank you.
+Schmidt: Thank you.
+
+195
+00:07:12,667 --> 00:07:16,100
+[applause]
+
+196
+00:07:16,100 --> 00:07:17,901
+Gundrota: Thank you for those
+opening comments, Eric.
+
+197
+00:07:17,901 --> 00:07:22,267
+And good morning, everybody.
+Welcome to I/O.
+
+198
+00:07:22,267 --> 00:07:25,534
+Never underestimate the web.
+
+199
+00:07:25,534 --> 00:07:28,734
+It's a mistake
+that I once made.
+
+200
+00:07:28,734 --> 00:07:30,167
+It was about a half
+a decade ago
+
+201
+00:07:30,167 --> 00:07:33,834
+and I was leading a team
+at Microsoft responsible
+
+202
+00:07:33,834 --> 00:07:37,067
+for driving the developer
+adoption of Windows.
+
+203
+00:07:37,067 --> 00:07:39,801
+Of course we had seen
+the emergence of the web.
+
+204
+00:07:39,801 --> 00:07:45,300
+But we argued that web apps
+could never rival desktop apps.
+
+205
+00:07:45,300 --> 00:07:48,400
+In fact, our favorite
+and our canonical example
+
+206
+00:07:48,400 --> 00:07:52,968
+was from a small Bay Area
+company called Keyhole.
+
+207
+00:07:52,968 --> 00:07:54,801
+Keyhole had made the fan--
+
+208
+00:07:54,801 --> 00:07:57,667
+most fantastic
+geovisualization software
+
+209
+00:07:57,667 --> 00:07:58,934
+for Windows.
+
+210
+00:07:58,934 --> 00:08:01,400
+And it was exactly
+that kind of software
+
+211
+00:08:01,400 --> 00:08:05,534
+that we argued
+could never be done on the web.
+
+212
+00:08:05,534 --> 00:08:07,667
+In November of 2004,
+
+213
+00:08:07,667 --> 00:08:10,434
+Google acquired
+that small company
+
+214
+00:08:10,434 --> 00:08:13,968
+and a few months later
+released maps.google.com
+
+215
+00:08:13,968 --> 00:08:15,334
+with satellite views.
+
+216
+00:08:15,334 --> 00:08:19,167
+A web app
+that simply left us stunned.
+
+217
+00:08:19,167 --> 00:08:21,300
+Maybe you remember
+the first time you
+
+218
+00:08:21,300 --> 00:08:23,467
+from any browser
+were able to zoom down
+
+219
+00:08:23,467 --> 00:08:25,300
+into your own backyard.
+
+220
+00:08:25,300 --> 00:08:28,467
+You know, Google Apps--
+Google Maps was amazing--
+
+221
+00:08:28,467 --> 00:08:29,968
+is amazing.
+
+222
+00:08:29,968 --> 00:08:33,634
+But what was even more important
+was what that application
+
+223
+00:08:33,634 --> 00:08:35,234
+was foretelling.
+
+224
+00:08:35,234 --> 00:08:37,033
+That we would see
+what we formerly thought
+
+225
+00:08:37,033 --> 00:08:40,267
+was impossible
+become possible,
+
+226
+00:08:40,267 --> 00:08:42,934
+even commonplace
+in the browser.
+
+227
+00:08:42,934 --> 00:08:46,234
+Yes, the web has won.
+
+228
+00:08:46,234 --> 00:08:50,400
+It has become the dominant
+programming model of our time.
+
+229
+00:08:50,400 --> 00:08:52,734
+In many respects,
+this conference, Google I/O,
+
+230
+00:08:52,734 --> 00:08:56,000
+is about a celebration
+of that open web platform.
+
+231
+00:08:56,000 --> 00:08:57,667
+And this morning,
+I'd like to talk to you
+
+232
+00:08:57,667 --> 00:09:01,000
+about the ongoing evolution
+of--of the web.
+
+233
+00:09:01,000 --> 00:09:05,200
+Of making a more powerful web
+made easier.
+
+234
+00:09:05,200 --> 00:09:06,968
+And this morning's keynote
+is broken up
+
+235
+00:09:06,968 --> 00:09:08,868
+into two broad sections.
+
+236
+00:09:08,868 --> 00:09:10,067
+In the opening section,
+
+237
+00:09:10,067 --> 00:09:11,400
+I'm going to show you,
+
+238
+00:09:11,400 --> 00:09:13,734
+uh, what's making the web
+more powerful.
+
+239
+00:09:13,734 --> 00:09:16,467
+Some new HTML 5 standards
+
+240
+00:09:16,467 --> 00:09:18,534
+that are enabling us
+to build applications
+
+241
+00:09:18,534 --> 00:09:21,300
+that I think
+will surprise users.
+
+242
+00:09:21,300 --> 00:09:23,834
+And in the second half
+of the keynote,
+
+243
+00:09:23,834 --> 00:09:26,133
+I'm going to highlight
+some Google services
+
+244
+00:09:26,133 --> 00:09:29,667
+that we believe can help you,
+uh, build those apps
+
+245
+00:09:29,667 --> 00:09:30,767
+much easier.
+
+246
+00:09:30,767 --> 00:09:33,434
+So let's get started here.
+
+247
+00:09:33,434 --> 00:09:36,167
+Let me find the clicker.
+
+248
+00:09:36,167 --> 00:09:38,267
+You know, I think when you
+look back over the last year--
+
+249
+00:09:38,267 --> 00:09:41,334
+in fact, just the last
+eight, nine months--
+
+250
+00:09:41,334 --> 00:09:43,334
+you have to be amazed
+
+251
+00:09:43,334 --> 00:09:47,067
+at the rate our web platform
+is accelerating.
+
+252
+00:09:47,067 --> 00:09:48,901
+It seems like almost
+every other month,
+
+253
+00:09:48,901 --> 00:09:50,567
+we've had a browser released
+
+254
+00:09:50,567 --> 00:09:53,167
+even--either for the desktop
+or for mobile.
+
+255
+00:09:53,167 --> 00:09:55,167
+And these new browsers
+are not just faster--
+
+256
+00:09:55,167 --> 00:09:57,000
+I mean, of course
+they're faster--
+
+257
+00:09:57,000 --> 00:09:58,300
+but even more importantly,
+
+258
+00:09:58,300 --> 00:10:02,334
+these browsers are incorporating
+.NET new functionality
+
+259
+00:10:02,334 --> 00:10:05,601
+that, frankly, I'm not sure
+most developers know about.
+

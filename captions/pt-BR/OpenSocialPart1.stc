@@ -1,0 +1,261 @@
+﻿*TC 00:00:05:05
+Oi, sou o Dan e trabalho no 
+Open Social 
+
+*TC 00:00:07;09 
+e hoje vou orientá-lo 
+pelas etapas básicas 
+
+*TC 00:00:09;07
+para a execução de seus próprios 
+aplicativos do Open Social.
+
+*TC 00:00:12;05
+A primeira coisa que  
+faremos 
+
+*TC 00:00:13;12
+é uma pequena introdução sobre gadgets.
+
+*TC 00:00:15;09
+E Gadgets em seu nível básico
+são apenas arquivos XML.
+
+*TC 00:00:18;23
+Portanto, vamos dar uma 
+
+*TC 00:00:19;17
+rápida olhada na aparência de 
+um arquivo xml de gadget.
+
+*TC 00:00:22;14
+Como você pode ver, um gadget é 
+apenas xml. 
+
+*TC 00:00:25;12
+Na parte superior do arquivo
+você pode ver o arquivo;
+
+*TC 00:00:26;17
+e o tipo e a codificação 
+da versão xml;
+
+*TC 00:00:29;17
+e abaixo disso é possível
+ver as tags que o especificam 
+
+*TC 00:00:32;24
+como um arquivo de gadget
+
+*TC 00:00:34;19
+Abrimos tudo isso com uma 
+tag Module 
+
+*TC 00:00:36;25
+e dentro dela 
+há as preferências do módulo
+
+*TC 00:00:38;28
+que especificam coisas
+como o título dos aplicativos;
+
+*TC 00:00:41;13
+e uma tag Require feature com os
+recursos necessários para o aplicativo.
+
+*TC 00:00:44;26
+aqui, é exigido o recurso 
+Open Social 
+
+*TC 00:00:48;08
+e abaixo disso definimos 
+o conteúdo do gadget.
+
+*TC 00:00:52;21 
+aqui o tipo de conteúdo é html 
+
+*TC 00:00:54;26
+ E dentro disso temos uma seção "cdata" 
+
+*TC 00:00:56;24 
+que é onde ficam todo o código, 
+o html e o java script.
+
+*TC 00:01:00;27
+E a frase "hello world".
+
+*TC 00:01:03;02 
+Agora que a pequena introdução
+foi feita podemos 
+
+*TC 00:01:05;05 
+começar e executar nosso primeiro
+aplicativo social.
+
+*TC 00:01:08;06
+você precisará de 
+algumas coisas para isso.
+
+*TC 00:01:09;26
+Primeiro, um editor de texto e uma 
+conta de hospedagem na web.
+
+*TC 00:01:13;18
+e além disso, uma conta 
+no orkut 
+
+*TC 00:01:15;29 
+e acesso ao 
+orkut sandbox
+
+*TC 00:01:17;20
+que é onde permitimos o 
+teste de seus aplicativos sociais.
+
+*TC 00:01:21;26
+acredito que a maioria de vocês
+possui um editor de texto
+
+*TC 00:01:24;08
+e que provavelmente já tenham 
+serviço de hospedagem na web.
+
+*TC 00:01:26;06
+mas se não tiverem, há duas 
+coisas que podem tentar.
+
+*TC 00:01:28;17
+Primeiro, é a hospedagem do projeto 
+Google Code, que é 
+
+*TC 00:01:31;00
+um local para hospedar aplicativos 
+de software livre.
+
+*TC 00:01:33;18
+Portanto, se desejar tornar seu 
+gadget um software livre,
+
+*TC 00:01:35;14 
+será possível hospedá-lo nesse local.
+
+*TC 00:01:36;22
+e se não quiser fazer isso, 
+você poderá usar o Google Page Creator
+
+*TC 00:01:39;22
+que permite a edição e o upload 
+de arquivos html. 
+
+*TC 00:01:42;17
+além do upload de outros arquivos não html,
+como especificações de gadgets,
+
+*TC 00:01:47;09
+que o que estamos fazendo aqui.
+
+*TC 00:01:49;01
+depois de resolver isso 
+
+*TC 00:01:50;13
+você precisará criar 
+uma conta no orkut, 
+
+*TC 00:01:52;02
+o que é bem simples.
+
+*TC 00:01:52;29
+basta acessar orkut.com e seguir
+as instruções.
+
+*TC 00:01:55;24
+após fazer isso, 
+
+*TC 00:01:56;17
+você precisará se inscrever para 
+obter acesso ao orkut sandbox,
+
+*TC 00:01:59;12
+o que também é bem simples.
+
+*TC 00:02:01;12
+temos um link que você pode 
+usar para fazer isso.
+
+*TC 00:02:03;14
+e assim que tiver acesso,
+
+*TC 00:02:04;25
+você poderá fazer login em 
+"sandbox.orkut.com" 
+
+*TC 00:02:07;26
+e adicionar seu gadget.
+
+*TC 00:02:09;02
+mostrarei como fazer isso
+agora.
+
+*TC 00:02:11;00 
+o que você precisa fazer é 
+pegar o texto do gadget de exemplo,
+
+*TC 00:02:14;26
+copiá-lo para um arquivo de texto 
+
+*TC 00:02:17;05
+e salvá-lo na sua conta de hospedagem 
+na web como "helloworld.xml"
+
+*TC 00:02:20;25
+depois, faça login em sua conta no orkut,
+
+*TC 00:02:23;21
+clique no botão Editar, 
+
+*TC 00:02:25;05 
+ao lado de Aplicativos no lado 
+esquerdo da página, 
+
+*TC 00:02:29;18
+digite o URL de seu arquivo xml 
+recém-criado, 
+
+*TC 00:02:35;27 
+clique no botão 
+Adicionar aplicativo
+
+*TC 00:02:39;27
+conceda ao aplicativo permissão 
+acessar sua conta
+
+*TC 00:02:44;13 
+e clique no link que ele adiciona
+aos aplicativos na sua página.
+
+*TC 00:02:48;18
+agora, você já instalou seu
+primeiro aplicativo social no orkut.
+
+*TC 00:02:51;06
+para obter mais informações sobre o que fiz, 
+
+*TC 00:02:53;01
+além de mais informações sobre as 
+demais APIs sociais,
+
+*TC 00:02:56;02
+consulte o tutorial em 
+"code.google.com" 
+
+*TC 00:02:58;17
+na seção Open Social.
+
+
+
+
+
+
+
+
+

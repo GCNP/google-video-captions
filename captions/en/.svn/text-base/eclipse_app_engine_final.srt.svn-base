@@ -1,0 +1,430 @@
+1
+00:00:05,167 --> 00:00:06,467
+Marks: Hi.
+I'm Mano Marks.
+
+2
+00:00:06,467 --> 00:00:08,667
+And I work
+with Google App Engine.
+
+3
+00:00:08,667 --> 00:00:10,033
+If you've gotten this far,
+
+4
+00:00:10,033 --> 00:00:12,534
+you're probably aware
+that App Engine enables you
+
+5
+00:00:12,534 --> 00:00:14,634
+to build scalable
+web applications
+
+6
+00:00:14,634 --> 00:00:18,634
+on the same systems
+that power Google applications.
+
+7
+00:00:18,634 --> 00:00:21,100
+This video walks you through
+setting up Eclipse,
+
+8
+00:00:21,100 --> 00:00:22,901
+an integrated development
+environment.
+
+9
+00:00:22,901 --> 00:00:25,601
+It's based on an excellent
+article by Joscha Feth
+
+10
+00:00:25,601 --> 00:00:27,300
+on code.google.com.
+
+11
+00:00:33,734 --> 00:00:37,167
+Download and install
+Python 2.5 or higher.
+
+12
+00:00:37,167 --> 00:00:40,701
+Download and install the latest
+version of Eclipse.
+
+13
+00:00:40,701 --> 00:00:44,501
+For this demo, we will be using
+Eclipse 3.4.0.
+
+14
+00:00:44,501 --> 00:00:46,801
+Download and install
+the latest version
+
+15
+00:00:46,801 --> 00:00:49,934
+of the App Engine development
+server.
+
+16
+00:00:49,934 --> 00:00:52,734
+All right.
+So to start configuring Eclipse.
+
+17
+00:00:52,734 --> 00:00:56,734
+Eclipse is a flexible
+development environment.
+
+18
+00:00:56,734 --> 00:00:58,234
+With the proper plug-ins,
+
+19
+00:00:58,234 --> 00:01:01,667
+it can be used with many
+different programming languages.
+
+20
+00:01:01,667 --> 00:01:04,067
+In order to set it up
+to work with Python,
+
+21
+00:01:04,067 --> 00:01:07,200
+you need to set up
+a Python plug-in.
+
+22
+00:01:07,200 --> 00:01:09,033
+We're going to use Pydev.
+
+23
+00:01:09,033 --> 00:01:11,334
+So in order
+to install Pydev,
+
+24
+00:01:11,334 --> 00:01:15,100
+open Eclipse and go to Help,
+Software Updates.
+
+25
+00:01:15,100 --> 00:01:17,701
+Click Add Site.
+
+26
+00:01:19,801 --> 00:01:23,300
+And then enter
+pydev.sourceforge.net/updates
+
+27
+00:01:23,300 --> 00:01:26,400
+in the location field.
+
+28
+00:01:26,400 --> 00:01:27,834
+And click OK.
+
+29
+00:01:30,567 --> 00:01:33,734
+Next, select the Pydev updates
+that you just added.
+
+30
+00:01:33,734 --> 00:01:37,767
+Choose to install
+Pydev for Eclipse.
+
+31
+00:01:37,767 --> 00:01:40,868
+After the update site
+has been searched,
+
+32
+00:01:40,868 --> 00:01:42,968
+click on Finish.
+
+33
+00:01:46,033 --> 00:01:48,133
+Choose Yes to restart
+Eclipse.
+
+34
+00:01:50,234 --> 00:01:52,567
+After Eclipse restarts,
+
+35
+00:01:52,567 --> 00:01:54,767
+choose Windows,
+Preferences
+
+36
+00:01:54,767 --> 00:01:56,567
+to bring up the Preferences
+dialogue.
+
+37
+00:01:56,567 --> 00:02:00,300
+Change the Pydev Interpreter
+Python section
+
+38
+00:02:00,300 --> 00:02:02,701
+to configure Python.
+
+39
+00:02:04,634 --> 00:02:06,601
+Click on New.
+
+40
+00:02:06,601 --> 00:02:09,634
+Search for the python.exe
+executable,
+
+41
+00:02:09,634 --> 00:02:13,734
+normally at C:\Python25.
+
+42
+00:02:13,734 --> 00:02:15,567
+After you select
+the executable,
+
+43
+00:02:15,567 --> 00:02:17,667
+Pydev will search
+for libraries
+
+44
+00:02:17,667 --> 00:02:19,834
+and the following screen
+appears.
+
+45
+00:02:19,834 --> 00:02:23,267
+Normally the preselection
+done by Pydev is fine.
+
+46
+00:02:23,267 --> 00:02:27,734
+So click on OK to accept
+the system Python path entries.
+
+47
+00:02:27,734 --> 00:02:28,901
+In the Preferences window,
+
+48
+00:02:28,901 --> 00:02:31,234
+click OK to configure
+your changes.
+
+49
+00:02:31,234 --> 00:02:34,067
+After you have Pydev
+installed on Eclipse,
+
+50
+00:02:34,067 --> 00:02:37,901
+you are ready to start
+developing your application.
+
+51
+00:02:37,901 --> 00:02:39,567
+Right click
+on the package explorer
+
+52
+00:02:39,567 --> 00:02:41,801
+and choose New, Other.
+
+53
+00:02:41,801 --> 00:02:43,634
+In the dialogue box,
+
+54
+00:02:43,634 --> 00:02:47,734
+select Pydev Project
+from the Pydev folder.
+
+55
+00:02:47,734 --> 00:02:53,501
+Create a new helloworld project
+with Python 2.5.
+
+56
+00:02:53,501 --> 00:02:55,300
+After clicking Finish,
+
+57
+00:02:55,300 --> 00:02:58,167
+Eclipse will switch
+to the Pydev view.
+
+58
+00:02:58,167 --> 00:03:02,601
+Right click on your new project
+and choose Properties.
+
+59
+00:03:02,601 --> 00:03:04,067
+In the properties dialogue,
+
+60
+00:03:04,067 --> 00:03:06,467
+choose the Pydev
+PYTHONPATH section
+
+61
+00:03:06,467 --> 00:03:09,334
+to add the App Engine
+libraries.
+
+62
+00:03:09,334 --> 00:03:11,534
+Click on Add source folder
+
+63
+00:03:11,534 --> 00:03:13,634
+to add the following folders
+
+64
+00:03:13,634 --> 00:03:16,801
+from your Google App Engine
+folder.
+
+65
+00:03:20,334 --> 00:03:22,634
+Click OK to confirm
+your changes.
+
+66
+00:03:25,400 --> 00:03:27,434
+The last thing we need to do
+is create an application
+
+67
+00:03:27,434 --> 00:03:30,767
+and add
+a run configuration.
+
+68
+00:03:30,767 --> 00:03:32,968
+We're going to use
+the helloworld code
+
+69
+00:03:32,968 --> 00:03:36,968
+from the Getting Started section
+of the documentation.
+
+70
+00:03:39,133 --> 00:03:42,300
+Here you see me creating
+the app.yaml
+
+71
+00:03:42,300 --> 00:03:44,734
+and helloworld.py files.
+
+72
+00:03:49,934 --> 00:03:52,434
+Go to Run,
+Run Configurations.
+
+73
+00:03:52,434 --> 00:03:57,033
+Choose Python Run and add a new
+launch configuration.
+
+74
+00:03:59,868 --> 00:04:01,801
+Name your run configuration.
+
+75
+00:04:01,801 --> 00:04:03,133
+Under Project,
+
+76
+00:04:03,133 --> 00:04:06,501
+add your Google App Engine
+Python project.
+
+77
+00:04:06,501 --> 00:04:08,000
+Under Main Module,
+
+78
+00:04:08,000 --> 00:04:12,934
+add the location
+of the dev_appserver.py script.
+
+79
+00:04:16,434 --> 00:04:18,200
+Change to the Arguments tab
+
+80
+00:04:18,200 --> 00:04:21,133
+and enter this code
+as your first argument.
+
+81
+00:04:24,734 --> 00:04:25,968
+After this argument,
+
+82
+00:04:25,968 --> 00:04:28,534
+you may add all available
+additional arguments
+
+83
+00:04:28,534 --> 00:04:32,834
+listed on the dev web server
+documentation page.
+
+84
+00:04:32,834 --> 00:04:34,934
+Here, for example,
+we change the port
+
+85
+00:04:34,934 --> 00:04:39,067
+where Google App Engine
+is listening to 9999.
+
+86
+00:04:39,067 --> 00:04:41,100
+Click on Apply to save
+your changes.
+
+87
+00:04:41,100 --> 00:04:43,367
+Click on Run to run
+your application.
+
+88
+00:04:43,367 --> 00:04:46,834
+From now on, you can run
+your project by selecting
+
+89
+00:04:46,834 --> 00:04:50,100
+your configuration
+from the Run dropdown
+
+90
+00:04:50,100 --> 00:04:56,667
+and access your app
+on http://localhost:9999/
+
+91
+00:04:56,667 --> 00:05:01,667
+For more information,
+visit code.google.com/appengine.
+

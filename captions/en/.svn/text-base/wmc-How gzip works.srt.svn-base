@@ -1,0 +1,268 @@
+1
+00:00:06,234 --> 00:00:07,501
+Higgins: Hi, my name's Eric.
+
+2
+00:00:07,501 --> 00:00:08,701
+Khaw: My name is Kevin.
+
+3
+00:00:08,701 --> 00:00:10,501
+Higgins: And we're webmasters
+at Google.
+
+4
+00:00:10,501 --> 00:00:13,100
+Khaw: Today we're gonna talk
+about making websites faster
+
+5
+00:00:13,100 --> 00:00:16,167
+using GNU zip compression,
+better known as gzip.
+
+6
+00:00:16,167 --> 00:00:19,067
+Higgins: The idea behind using
+gzip compression
+
+7
+00:00:19,067 --> 00:00:21,968
+is to reduce the traffic
+between your web server
+
+8
+00:00:21,968 --> 00:00:23,834
+and your browsers.
+
+9
+00:00:23,834 --> 00:00:25,968
+By using gzip compression,
+you can reduce
+
+10
+00:00:25,968 --> 00:00:28,133
+the file size of your pages
+and your style sheets
+
+11
+00:00:28,133 --> 00:00:29,868
+up to 70%.
+
+12
+00:00:29,868 --> 00:00:32,167
+Khaw: Gzip is supported
+on a majority of browsers,
+
+13
+00:00:32,167 --> 00:00:33,934
+including mobile web browsers.
+
+14
+00:00:33,934 --> 00:00:38,000
+Enabling gzip on your server
+is as easy as flipping a switch.
+
+15
+00:00:38,000 --> 00:00:40,534
+Higgins: Let's take a look
+at how this works.
+
+16
+00:00:40,534 --> 00:00:43,167
+I'm a browser.
+Khaw: I'm a web server.
+
+17
+00:00:43,167 --> 00:00:46,133
+Higgins: Hey, web server.
+Send me your web page.
+
+18
+00:00:46,133 --> 00:00:47,300
+And do you support gzip?
+
+19
+00:00:47,300 --> 00:00:49,334
+Khaw: No, I don't really support
+gzip.
+
+20
+00:00:49,334 --> 00:00:50,334
+Here's your web page.
+
+21
+00:00:50,334 --> 00:00:51,801
+Higgins: [groans]
+
+22
+00:00:51,801 --> 00:00:54,501
+Khaw: Hmm, maybe I need
+to support gzip.
+
+23
+00:00:54,501 --> 00:00:56,100
+Higgins: I'm still a browser.
+
+24
+00:00:56,100 --> 00:00:57,634
+Khaw: I'm still a web server.
+
+25
+00:00:57,634 --> 00:00:59,334
+Higgins: Hey, web server,
+can you send me your website?
+
+26
+00:00:59,334 --> 00:01:00,334
+And do you support gzip?
+
+27
+00:01:00,334 --> 00:01:01,868
+Khaw: Yes, I do support gzip.
+
+28
+00:01:01,868 --> 00:01:03,133
+Here's the web page.
+
+29
+00:01:03,133 --> 00:01:05,968
+Higgins: That was fast.
+Hey, nice website.
+
+30
+00:01:05,968 --> 00:01:07,901
+Now I would like to show you
+how gzip works
+
+31
+00:01:07,901 --> 00:01:09,901
+at a lower level
+so that you can try
+
+32
+00:01:09,901 --> 00:01:11,567
+and use this information
+to your advantage
+
+33
+00:01:11,567 --> 00:01:13,834
+when coding your page.
+
+34
+00:01:13,834 --> 00:01:16,300
+Gzip's compression algorithm
+finds similar strings
+
+35
+00:01:16,300 --> 00:01:18,901
+within a file,
+then compresses them out.
+
+36
+00:01:18,901 --> 00:01:21,200
+So the more matching strings
+you have in a file,
+
+37
+00:01:21,200 --> 00:01:23,434
+the smaller
+your files can compress.
+
+38
+00:01:23,434 --> 00:01:26,868
+This is ideal for HTML,
+which is typically full
+
+39
+00:01:26,868 --> 00:01:29,467
+of white space
+and matching tags.
+
+40
+00:01:29,467 --> 00:01:32,601
+Now let's see gzip
+in action.
+
+41
+00:01:32,601 --> 00:01:35,067
+Here I have
+two simple HTML pages.
+
+42
+00:01:35,067 --> 00:01:38,300
+In each file, I have a list
+of ten items.
+
+43
+00:01:38,300 --> 00:01:40,400
+In the first file,
+I have a list
+
+44
+00:01:40,400 --> 00:01:42,734
+of different names,
+and in the second file,
+
+45
+00:01:42,734 --> 00:01:45,667
+I repeated the word Google
+ten times.
+
+46
+00:01:45,667 --> 00:01:47,834
+Now let's take a look
+at the file sizes.
+
+47
+00:01:47,834 --> 00:01:51,000
+Uncompressed, the files
+are roughly the same size.
+
+48
+00:01:51,000 --> 00:01:54,133
+But notice that google.html
+is five bytes larger
+
+49
+00:01:54,133 --> 00:01:56,000
+than names.html.
+
+50
+00:01:56,000 --> 00:01:58,133
+Now let's compress these files
+with gzip
+
+51
+00:01:58,133 --> 00:02:01,801
+and see what
+the resulting file sizes are.
+
+52
+00:02:01,801 --> 00:02:04,701
+You can see that the files
+are about 40% smaller,
+
+53
+00:02:04,701 --> 00:02:08,033
+and google.html compressed
+to be about 50 bytes smaller
+
+54
+00:02:08,033 --> 00:02:10,367
+than names.html.
+
+55
+00:02:10,367 --> 00:02:13,801
+I hope this helps you to speed
+up your web pages using gzip.
+
+56
+00:02:13,801 --> 00:02:16,901
+For more information about how
+to make your web sites faster,
+
+57
+00:02:16,901 --> 00:02:22,467
+visit code.google.com/speed.
+

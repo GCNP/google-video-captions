@@ -1,0 +1,111 @@
+﻿*TC 00:00:06;00
+agora criaremos um 
+aplicativo de exemplo que 
+
+*TC 00:00:07;23
+usa nossa lista de amigos e 
+que nos permite dar presentes a eles.
+
+*TC 00:00:12;14
+começamos fazendo pequenas 
+modificações no arquivo xml, 
+
+*TC 00:00:15;19
+criando um formulário com uma lista 
+de amigos e uma lista de presentes 
+
+*TC 00:00:19;20
+e um botão para dar 
+o presente ao amigo.
+
+*TC 00:00:23;18
+em seguida, modificamos nossa função 
+onLoadFriends, 
+
+*TC 00:00:26;12
+para que, em vez de listar 
+os amigos na página,
+
+*TC 00:00:28;29
+ela crie um menu com eles
+para selecionarmos um amigo.
+
+*TC 00:00:32;15
+em seguida, criamos outra função, 
+makeOptionsMenu,
+
+*TC 00:00:35;04
+que pega a lista de presentes 
+especificados e a transforma
+
+*TC 00:00:37;10
+em um menu para que possamos 
+selecionar um presente para dar ao nosso amigo.
+
+*TC 00:00:41;21
+em seguida, modificamos 
+nossa função de inicialização, 
+
+*TC 00:00:43;26
+para que, em vez de apenas 
+carregar nossos amigos,
+
+*TC 00:00:45;19
+ela também carregue o menu de presentes 
+quando o gadget é carregado.
+
+*TC 00:00:49;02
+a última etapa, e a mais importante, 
+é escrever a função giveGift.
+
+*TC 00:00:52;13
+essa função pega o presente e 
+o amigo para o qual queremos enviar o  
+
+*TC 00:00:56;17
+presente e salva-os no 
+armazenamento de dados persistentes 
+
+*TC 00:00:59;03
+da API do Open Social.
+
+*TC 00:01:00;25
+fazemos isso criando 
+um objeto newDataRequest 
+
+*TC 00:01:03;21
+e passando-o para um objeto 
+newUpdatePersonAppDataRequest,
+
+*TC 00:01:06;27
+especificando salvar os dados 
+no objeto Viewer.
+
+*TC 00:01:10;10
+em seguida, enviamos a solicitação à 
+API do Open Social, 
+
+*TC 00:01:12;20
+que armazena os dados.
+
+*TC 00:01:14;04
+Aqui, é possível ver nosso gadget 
+em ação
+
+*TC 00:01:15;29
+especificando uma lista de presentes,
+
+*TC 00:01:17;14
+uma lista de amigos e um botão 
+para dar um presente ao amigo.
+
+*TC 00:01:21;11
+para obter mais informações 
+sobre o que acabei de mostrar, 
+
+*TC 00:01:23;08
+consulte o tutorial em 
+"code.google.com" 
+
+*TC 00:01:25;14
+na seção Open Social.

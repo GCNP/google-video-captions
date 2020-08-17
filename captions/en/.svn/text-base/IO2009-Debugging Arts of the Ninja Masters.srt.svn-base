@@ -1,0 +1,6539 @@
+1
+00:00:00,901 --> 00:00:02,000
+Mattson: So while
+my presentation
+
+2
+00:00:02,000 --> 00:00:03,167
+is getting up onscreen,
+
+3
+00:00:03,167 --> 00:00:04,367
+I'll just do a little
+introduction.
+
+4
+00:00:04,367 --> 00:00:05,767
+My name is Justin Mattson.
+
+5
+00:00:05,767 --> 00:00:08,400
+I'm a developer advocate
+here at Google
+
+6
+00:00:08,400 --> 00:00:10,167
+working on Android.
+
+7
+00:00:10,167 --> 00:00:12,701
+And up front,
+
+8
+00:00:12,701 --> 00:00:14,501
+I just want
+to thank you all
+
+9
+00:00:14,501 --> 00:00:16,300
+for your interest
+in Android
+
+10
+00:00:16,300 --> 00:00:18,701
+and letting me be here
+and do all the cool stuff
+
+11
+00:00:18,701 --> 00:00:20,701
+that I--
+that I get to do.
+
+12
+00:00:20,701 --> 00:00:23,200
+And, so a couple
+of months ago,
+
+13
+00:00:23,200 --> 00:00:24,634
+my manager said to me,
+
+14
+00:00:24,634 --> 00:00:27,434
+"Hey, do you want to give
+a presentation at Google I/O?"
+
+15
+00:00:27,434 --> 00:00:28,767
+And I said,
+"Yeah, that'd be great!
+
+16
+00:00:28,767 --> 00:00:30,267
+What's the title?"
+
+17
+00:00:30,267 --> 00:00:32,968
+And he said, "'Debugging Arts
+of the Ninja Masters.'"
+
+18
+00:00:32,968 --> 00:00:36,267
+And I thought, "All right,
+no pressure there."
+
+19
+00:00:36,267 --> 00:00:38,901
+[chuckles]
+
+20
+00:00:38,901 --> 00:00:41,634
+And...so...
+
+21
+00:00:41,634 --> 00:00:43,968
+for today,
+this is our agenda.
+
+22
+00:00:43,968 --> 00:00:47,033
+And debugging is in the title
+of my presentation,
+
+23
+00:00:47,033 --> 00:00:49,234
+but I assume
+that everyone here
+
+24
+00:00:49,234 --> 00:00:51,801
+has an idea of how to do
+basic debugging,
+
+25
+00:00:51,801 --> 00:00:53,901
+stepping through code
+and such like that.
+
+26
+00:00:53,901 --> 00:00:55,601
+So that's not what
+I'm going to cover.
+
+27
+00:00:55,601 --> 00:00:59,968
+I'm going to cover
+tools that you can use
+
+28
+00:00:59,968 --> 00:01:03,033
+to diagnose and solve
+some of the more subtle
+
+29
+00:01:03,033 --> 00:01:05,000
+debugging issues
+that you may encounter.
+
+30
+00:01:05,000 --> 00:01:07,267
+And one of these that
+I'm going to focus
+
+31
+00:01:07,267 --> 00:01:09,367
+a fair deal on
+is performance,
+
+32
+00:01:09,367 --> 00:01:11,601
+because poor performance
+is a bug.
+
+33
+00:01:11,601 --> 00:01:13,934
+No one plans for this.
+
+34
+00:01:13,934 --> 00:01:15,467
+No user wants it.
+
+35
+00:01:15,467 --> 00:01:17,968
+No developer intends it.
+
+36
+00:01:17,968 --> 00:01:19,934
+So today,
+we're gonna start out
+
+37
+00:01:19,934 --> 00:01:22,501
+with what I'm calling
+the Tool Tour
+
+38
+00:01:22,501 --> 00:01:24,734
+of three tools
+from the Android SDK
+
+39
+00:01:24,734 --> 00:01:27,100
+that you may or may not
+be familiar with.
+
+40
+00:01:27,100 --> 00:01:30,100
+Even if you are
+experienced with them,
+
+41
+00:01:30,100 --> 00:01:32,701
+I think you may
+find some things here
+
+42
+00:01:32,701 --> 00:01:35,100
+that you didn't
+know were there.
+
+43
+00:01:35,100 --> 00:01:36,300
+I certainly discovered
+
+44
+00:01:36,300 --> 00:01:37,501
+a couple of things
+in the process
+
+45
+00:01:37,501 --> 00:01:39,501
+of creating content
+for this session
+
+46
+00:01:39,501 --> 00:01:41,701
+that I wasn't aware of.
+
+47
+00:01:41,701 --> 00:01:43,701
+And after that,
+I'm gonna go on
+
+48
+00:01:43,701 --> 00:01:46,501
+to some real-world usage
+of these tools
+
+49
+00:01:46,501 --> 00:01:48,901
+in situations
+that I've encountered.
+
+50
+00:01:48,901 --> 00:01:50,901
+And I think that'll be
+a little--
+
+51
+00:01:50,901 --> 00:01:56,501
+the more interesting part
+of the presentation.
+
+52
+00:01:56,501 --> 00:01:59,501
+And after being on the spot
+for 45 or 50 minutes,
+
+53
+00:01:59,501 --> 00:02:01,367
+I think it's only fair
+to turn the tables around
+
+54
+00:02:01,367 --> 00:02:03,767
+and put you guys
+on the spot
+
+55
+00:02:03,767 --> 00:02:04,968
+for a little pop quiz
+
+56
+00:02:04,968 --> 00:02:06,767
+to see if you can
+find the bugs
+
+57
+00:02:06,767 --> 00:02:10,167
+or find where to start
+looking for the bugs.
+
+58
+00:02:10,167 --> 00:02:12,133
+And then, fair is fair,
+
+59
+00:02:12,133 --> 00:02:14,167
+so a pop quiz for me:
+Q&A.
+
+60
+00:02:14,167 --> 00:02:18,334
+We've got a lot to cover,
+so let's get started.
+
+61
+00:02:18,334 --> 00:02:20,501
+I'm gonna start out
+talking about logcat.
+
+62
+00:02:20,501 --> 00:02:22,801
+And some of you
+may be thinking,
+
+63
+00:02:22,801 --> 00:02:24,567
+"Well, why are you
+talking about logcat?
+
+64
+00:02:24,567 --> 00:02:26,334
+This is a pretty
+basic tool."
+
+65
+00:02:26,334 --> 00:02:28,367
+But I can't
+emphasize enough
+
+66
+00:02:28,367 --> 00:02:30,767
+how important I think
+using logcat
+
+67
+00:02:30,767 --> 00:02:32,767
+during your development is.
+
+68
+00:02:32,767 --> 00:02:35,968
+It's--it's really a tool
+that provides you
+
+69
+00:02:35,968 --> 00:02:38,901
+some insight into what's
+happening in the system.
+
+70
+00:02:38,901 --> 00:02:41,100
+And if you use it with
+your programs properly,
+
+71
+00:02:41,100 --> 00:02:42,767
+it'll give you
+an overall picture
+
+72
+00:02:42,767 --> 00:02:48,400
+of how your program execution
+is going.
+
+73
+00:02:48,400 --> 00:02:50,934
+This dialogue is probably
+the most dreaded
+
+74
+00:02:50,934 --> 00:02:52,534
+on the Android platform.
+
+75
+00:02:52,534 --> 00:02:54,968
+Your--your app has crashed.
+
+76
+00:02:54,968 --> 00:02:57,634
+And unfortunately,
+this dialogue provides
+
+77
+00:02:57,634 --> 00:03:00,434
+very other--very little
+other information
+
+78
+00:03:00,434 --> 00:03:03,567
+to you or the user
+why this has happened.
+
+79
+00:03:03,567 --> 00:03:05,968
+So the first place
+to start looking
+
+80
+00:03:05,968 --> 00:03:07,467
+is actually logcat.
+
+81
+00:03:07,467 --> 00:03:11,133
+And in logcat you'll often see
+an error message like this.
+
+82
+00:03:11,133 --> 00:03:13,834
+In this case,
+I happen to be doing something
+
+83
+00:03:13,834 --> 00:03:16,334
+incredibly silly
+with the URI
+
+84
+00:03:16,334 --> 00:03:19,334
+that I was trying to fetch.
+
+85
+00:03:19,334 --> 00:03:22,367
+But beyond providing you
+just the--
+
+86
+00:03:22,367 --> 00:03:25,267
+the forensic information
+of what went wrong,
+
+87
+00:03:25,267 --> 00:03:27,200
+logcat
+you can also think of
+
+88
+00:03:27,200 --> 00:03:29,834
+as your newsfeed
+into the system.
+
+89
+00:03:29,834 --> 00:03:32,234
+So it's going to provide you
+with the information
+
+90
+00:03:32,234 --> 00:03:34,200
+about your application,
+if you choose to put it there--
+
+91
+00:03:34,200 --> 00:03:36,501
+and I encourage you to do so--
+
+92
+00:03:36,501 --> 00:03:38,601
+about other applications
+
+93
+00:03:38,601 --> 00:03:41,133
+that have
+intelligently decided
+
+94
+00:03:41,133 --> 00:03:42,467
+to put information there,
+
+95
+00:03:42,467 --> 00:03:44,000
+and finally,
+about the system state
+
+96
+00:03:44,000 --> 00:03:50,000
+that may impact
+the execution of your program.
+
+97
+00:03:50,000 --> 00:03:51,267
+This is a slide
+
+98
+00:03:51,267 --> 00:03:52,801
+that I actually
+didn't have time to take out,
+
+99
+00:03:52,801 --> 00:03:54,234
+but we don't
+have time to cover.
+
+100
+00:03:54,234 --> 00:03:57,501
+So...
+[laughs]
+
+101
+00:03:57,501 --> 00:04:01,033
+So...
+
+102
+00:04:01,033 --> 00:04:02,968
+Here's a simple
+piece of code
+
+103
+00:04:02,968 --> 00:04:05,200
+that I want to use
+to illustrate
+
+104
+00:04:05,200 --> 00:04:08,300
+how logcat can be helpful.
+
+105
+00:04:08,300 --> 00:04:10,701
+It--I'm basically
+reading URL here.
+
+106
+00:04:10,701 --> 00:04:13,367
+So I'm starting
+a new HTTP client.
+
+107
+00:04:13,367 --> 00:04:16,467
+I'm getting the content
+of the response,
+
+108
+00:04:16,467 --> 00:04:18,767
+and then I'm reading it
+and just discarding it.
+
+109
+00:04:18,767 --> 00:04:21,567
+Now, I never really
+expect to encounter
+
+110
+00:04:21,567 --> 00:04:24,167
+any of either of these
+two exceptions
+
+111
+00:04:24,167 --> 00:04:26,067
+under the assumptions
+that, one,
+
+112
+00:04:26,067 --> 00:04:28,067
+my network connection
+on my device is up,
+
+113
+00:04:28,067 --> 00:04:30,033
+and, two,
+my server is up.
+
+114
+00:04:30,033 --> 00:04:33,634
+So let's just
+take those for granted.
+
+115
+00:04:33,634 --> 00:04:36,601
+In this case,
+
+116
+00:04:36,601 --> 00:04:39,033
+I, you know,
+I tested the code
+
+117
+00:04:39,033 --> 00:04:40,701
+100 times on the emulator.
+
+118
+00:04:40,701 --> 00:04:43,033
+It worked perfectly
+every time.
+
+119
+00:04:43,033 --> 00:04:47,567
+And so then it was time
+to put it onto a device.
+
+120
+00:04:47,567 --> 00:04:50,234
+When I put it on the device
+and looked at logcat,
+
+121
+00:04:50,234 --> 00:04:51,667
+this is what I saw.
+
+122
+00:04:51,667 --> 00:04:54,400
+Exactly what
+I didn't expect.
+
+123
+00:04:54,400 --> 00:04:57,968
+I'd gotten an I/O exception.
+
+124
+00:04:57,968 --> 00:05:00,634
+Now, my personal
+first reaction
+
+125
+00:05:00,634 --> 00:05:02,767
+is to overreact
+and start looking at my code
+
+126
+00:05:02,767 --> 00:05:06,434
+and trying to figure out
+what I've done wrong.
+
+127
+00:05:06,434 --> 00:05:08,901
+Luckily, this time,
+I decided not to do that
+
+128
+00:05:08,901 --> 00:05:13,300
+and instead look back
+in logcat to see this message
+
+129
+00:05:13,300 --> 00:05:17,968
+relating to the Wi-Fi service
+which had kicked in.
+
+130
+00:05:17,968 --> 00:05:20,033
+And what had
+actually happened here
+
+131
+00:05:20,033 --> 00:05:24,267
+was that my device was asleep
+before I started running.
+
+132
+00:05:24,267 --> 00:05:26,501
+I started running my program,
+and in the process,
+
+133
+00:05:26,501 --> 00:05:29,267
+Wi-Fi woke up and associated
+with an axis point
+
+134
+00:05:29,267 --> 00:05:30,467
+that it knew
+
+135
+00:05:30,467 --> 00:05:33,400
+and that it connected to.
+
+136
+00:05:33,400 --> 00:05:35,300
+Well, the problem is that,
+of course,
+
+137
+00:05:35,300 --> 00:05:37,601
+all your sockets
+are going to break.
+
+138
+00:05:37,601 --> 00:05:40,300
+You can't fail over
+from the cellular network
+
+139
+00:05:40,300 --> 00:05:43,067
+onto this Wi-Fi network
+that--that, you know,
+
+140
+00:05:43,067 --> 00:05:46,434
+T-Mobile or Vodafone
+has no idea about.
+
+141
+00:05:46,434 --> 00:05:50,534
+So logcat in this case
+was my newsfeed looking in.
+
+142
+00:05:50,534 --> 00:05:53,200
+And the system told me
+this change has happened,
+
+143
+00:05:53,200 --> 00:05:55,534
+and the resulting...
+
+144
+00:05:55,534 --> 00:05:58,033
+the result was affecting
+my program in a way
+
+145
+00:05:58,033 --> 00:06:00,067
+that I'd never expected.
+
+146
+00:06:00,067 --> 00:06:01,767
+So I didn't spend forever
+
+147
+00:06:01,767 --> 00:06:04,267
+trying to chase after
+a problem that didn't exist.
+
+148
+00:06:04,267 --> 00:06:07,868
+Just deal with it.
+
+149
+00:06:07,868 --> 00:06:09,801
+Next to the dialogue
+
+150
+00:06:09,801 --> 00:06:11,601
+that your application
+has crashed,
+
+151
+00:06:11,601 --> 00:06:14,534
+I would say
+this is the second--
+
+152
+00:06:14,534 --> 00:06:19,601
+the second-worst dialogue
+to see on the Android.
+
+153
+00:06:19,601 --> 00:06:22,400
+And this goes a little back
+to what I was saying:
+
+154
+00:06:22,400 --> 00:06:25,200
+that no one designs
+for poor performance.
+
+155
+00:06:25,200 --> 00:06:27,601
+Users don't like
+to wait for things.
+
+156
+00:06:27,601 --> 00:06:29,033
+And, really,
+
+157
+00:06:29,033 --> 00:06:31,400
+I don't think
+that they should have to.
+
+158
+00:06:31,400 --> 00:06:33,601
+So, again, the first place
+
+159
+00:06:33,601 --> 00:06:35,601
+that I started
+diagnosing this problem
+
+160
+00:06:35,601 --> 00:06:39,033
+was to go to logcat.
+
+161
+00:06:39,033 --> 00:06:42,200
+And in there, I saw this,
+which was rather suspicious.
+
+162
+00:06:42,200 --> 00:06:43,801
+Lots of garbage collection,
+
+163
+00:06:43,801 --> 00:06:45,834
+all going on
+in a single process,
+
+164
+00:06:45,834 --> 00:06:49,033
+which, in this case,
+turned out to be my process.
+
+165
+00:06:49,033 --> 00:06:51,267
+And--
+so just keep this in mind.
+
+166
+00:06:51,267 --> 00:06:53,667
+I'm gonna go deeper
+into this example
+
+167
+00:06:53,667 --> 00:06:55,133
+later in the presentation.
+
+168
+00:07:00,234 --> 00:07:02,934
+So, like I said,
+logcat is a newsfeed,
+
+169
+00:07:02,934 --> 00:07:05,300
+and it's full of information.
+
+170
+00:07:05,300 --> 00:07:09,968
+Sometimes, it's full
+of way too much information.
+
+171
+00:07:09,968 --> 00:07:12,234
+So one of the ways
+that you can cut through
+
+172
+00:07:12,234 --> 00:07:14,434
+the jungle of messages
+that you see in logcat
+
+173
+00:07:14,434 --> 00:07:16,534
+is with filters
+that you can supply
+
+174
+00:07:16,534 --> 00:07:18,567
+to the program.
+
+175
+00:07:18,567 --> 00:07:22,400
+You simply specify the filter
+as the tag,
+
+176
+00:07:22,400 --> 00:07:24,067
+and then, colon,
+the severity.
+
+177
+00:07:24,067 --> 00:07:26,434
+And the tag is whatever
+you specify in your code.
+
+178
+00:07:26,434 --> 00:07:28,701
+And the severity is whatever
+severity level
+
+179
+00:07:28,701 --> 00:07:30,167
+you put it at.
+
+180
+00:07:30,167 --> 00:07:33,501
+I'll note that this
+ordering of tag and severity
+
+181
+00:07:33,501 --> 00:07:36,167
+is actually reversed
+from the way it's presented
+
+182
+00:07:36,167 --> 00:07:38,000
+in logcat,
+which prevent--
+
+183
+00:07:38,000 --> 00:07:40,934
+which presents severity,
+and then--
+
+184
+00:07:40,934 --> 00:07:45,667
+severity and--
+severity, slash, the tag.
+
+185
+00:07:45,667 --> 00:07:46,934
+Another note is that,
+
+186
+00:07:46,934 --> 00:07:48,601
+when you specify severity
+this way,
+
+187
+00:07:48,601 --> 00:07:49,934
+you're going to get
+everything
+
+188
+00:07:49,934 --> 00:07:53,400
+that's above this threshold
+that you specify.
+
+189
+00:07:53,400 --> 00:07:54,701
+So if you specify "warning,"
+
+190
+00:07:54,701 --> 00:07:58,367
+you'll get errors
+and warnings.
+
+191
+00:07:58,367 --> 00:08:02,868
+In order to make
+best use both--
+
+192
+00:08:02,868 --> 00:08:05,200
+in order to make best use
+of the messages
+
+193
+00:08:05,200 --> 00:08:07,601
+that you're putting out
+from your program,
+
+194
+00:08:07,601 --> 00:08:09,601
+use a strategy
+that I like to call
+
+195
+00:08:09,601 --> 00:08:11,334
+smart tagging.
+
+196
+00:08:11,334 --> 00:08:14,667
+So for any reasonably complex
+Android program,
+
+197
+00:08:14,667 --> 00:08:16,667
+you're going to have
+different logical components.
+
+198
+00:08:16,667 --> 00:08:18,968
+Maybe you have one component
+that deals with
+
+199
+00:08:18,968 --> 00:08:20,033
+your data model,
+
+200
+00:08:20,033 --> 00:08:21,634
+and another component
+that deals with
+
+201
+00:08:21,634 --> 00:08:23,400
+synchronizing
+your web service.
+
+202
+00:08:23,400 --> 00:08:26,367
+It doesn't make sense
+to tag all your log messages
+
+203
+00:08:26,367 --> 00:08:28,334
+from your program
+the same thing.
+
+204
+00:08:28,334 --> 00:08:32,534
+Because then they're
+not going to be meaningful.
+
+205
+00:08:32,534 --> 00:08:35,467
+But you also want
+to make these tags related
+
+206
+00:08:35,467 --> 00:08:38,167
+in a way that can be expressed
+in a regular expression,
+
+207
+00:08:38,167 --> 00:08:39,968
+so that you can
+do easy filtering
+
+208
+00:08:39,968 --> 00:08:42,334
+and get all the messages
+from--
+
+209
+00:08:42,334 --> 00:08:44,767
+all the messages
+related to your program,
+
+210
+00:08:44,767 --> 00:08:46,000
+or, you know,
+if you want,
+
+211
+00:08:46,000 --> 00:08:47,167
+then you can go down
+
+212
+00:08:47,167 --> 00:08:52,400
+and drill into the specific
+component.
+
+213
+00:08:52,400 --> 00:08:53,801
+Now, like I've said,
+
+214
+00:08:53,801 --> 00:08:57,167
+logcat has a lot
+of information in it.
+
+215
+00:08:57,167 --> 00:09:02,267
+And it can be tempting
+to generate spam.
+
+216
+00:09:02,267 --> 00:09:04,634
+So I encourage you,
+
+217
+00:09:04,634 --> 00:09:07,834
+when you're considering
+what to put in logcat,
+
+218
+00:09:07,834 --> 00:09:09,467
+to be precise.
+
+219
+00:09:09,467 --> 00:09:12,667
+So log just what you need--
+events that are interesting,
+
+220
+00:09:12,667 --> 00:09:14,400
+not every event
+that comes along
+
+221
+00:09:14,400 --> 00:09:19,200
+and you're--you're unlikely
+to ever be concerned with.
+
+222
+00:09:19,200 --> 00:09:21,400
+Be concise in that--
+
+223
+00:09:21,400 --> 00:09:24,801
+print out something
+that encapsulates
+
+224
+00:09:24,801 --> 00:09:26,701
+exactly what's happened
+
+225
+00:09:26,701 --> 00:09:28,200
+in the least
+possible information.
+
+226
+00:09:28,200 --> 00:09:30,801
+I've seen several instances
+in logcat
+
+227
+00:09:30,801 --> 00:09:32,834
+where the information
+printed out
+
+228
+00:09:32,834 --> 00:09:34,000
+is an entire email
+
+229
+00:09:34,000 --> 00:09:35,834
+or an entire web page
+that's loaded.
+
+230
+00:09:35,834 --> 00:09:39,000
+And that's not going
+to actually be useful
+
+231
+00:09:39,000 --> 00:09:40,834
+to very many people.
+
+232
+00:09:40,834 --> 00:09:44,067
+And finally, because logcat
+is a shared medium,
+
+233
+00:09:44,067 --> 00:09:46,000
+and everyone
+has access to it,
+
+234
+00:09:46,000 --> 00:09:48,400
+be privacy sensitive.
+
+235
+00:09:48,400 --> 00:09:50,400
+Don't print out
+
+236
+00:09:50,400 --> 00:09:52,400
+passwords
+or credit card numbers
+
+237
+00:09:52,400 --> 00:09:54,200
+or authentication tokens,
+
+238
+00:09:54,200 --> 00:09:56,033
+which is also stuff
+that I've, you know,
+
+239
+00:09:56,033 --> 00:09:58,400
+seen in log messages
+before.
+
+240
+00:09:58,400 --> 00:10:01,167
+You don't want to be
+the source of a privacy leak.
+
+241
+00:10:04,801 --> 00:10:08,000
+So...in summary,
+
+242
+00:10:08,000 --> 00:10:09,834
+you know,
+logcat is a basic tool,
+
+243
+00:10:09,834 --> 00:10:12,000
+but it provides you
+a lot of power.
+
+244
+00:10:12,000 --> 00:10:16,601
+And I don't think anyone's
+above looking at logcat
+
+245
+00:10:16,601 --> 00:10:22,601
+and the information that it--
+that it can give you.
+
+246
+00:10:22,601 --> 00:10:26,000
+After logcat
+is TraceView.
+
+247
+00:10:26,000 --> 00:10:30,200
+And TraceView gives you
+a graphical representation
+
+248
+00:10:30,200 --> 00:10:33,400
+to look at your performance
+profiling data
+
+249
+00:10:33,400 --> 00:10:36,234
+that's really powerful.
+
+250
+00:10:36,234 --> 00:10:38,801
+So when you're tracing
+your program in Android,
+
+251
+00:10:38,801 --> 00:10:42,000
+it's going to record
+every method and function
+
+252
+00:10:42,000 --> 00:10:43,734
+entry and exit point.
+
+253
+00:10:43,734 --> 00:10:44,968
+It's going to record,
+you know,
+
+254
+00:10:44,968 --> 00:10:46,601
+when these events happened,
+and therefore,
+
+255
+00:10:46,601 --> 00:10:49,367
+how long execution took.
+
+256
+00:10:49,367 --> 00:10:51,934
+And then TraceView
+will provide you
+
+257
+00:10:51,934 --> 00:10:56,334
+a timeline and a call tree
+that you can navigate through
+
+258
+00:10:56,334 --> 00:10:59,801
+to easily figure out,
+you know,
+
+259
+00:10:59,801 --> 00:11:01,667
+which methods are being called,
+in which order,
+
+260
+00:11:01,667 --> 00:11:04,501
+and from
+which other methods.
+
+261
+00:11:04,501 --> 00:11:06,100
+It's really a must,
+I think,
+
+262
+00:11:06,100 --> 00:11:08,501
+to use TraceView
+for any developer
+
+263
+00:11:08,501 --> 00:11:09,767
+that's serious
+about performance.
+
+264
+00:11:09,767 --> 00:11:12,167
+And I think we should
+all be serious about it.
+
+265
+00:11:12,167 --> 00:11:17,534
+I'm going to go over
+some examples of this later,
+
+266
+00:11:17,534 --> 00:11:20,167
+but sometimes you may think,
+
+267
+00:11:20,167 --> 00:11:22,000
+"Oh, I'm not doing
+anything in my code
+
+268
+00:11:22,000 --> 00:11:23,901
+"that has a significant
+performance impact.
+
+269
+00:11:23,901 --> 00:11:27,234
+You know, it's--
+it's just plain code."
+
+270
+00:11:27,234 --> 00:11:29,133
+But there are some
+innocuous-looking calls
+
+271
+00:11:29,133 --> 00:11:32,400
+out there that turn out to be
+not so innocuous-looking.
+
+272
+00:11:32,400 --> 00:11:34,834
+And they're really easy
+to spot in TraceView.
+
+273
+00:11:34,834 --> 00:11:36,467
+It's a very powerful tool.
+
+274
+00:11:36,467 --> 00:11:38,801
+And, you know,
+take advantage
+
+275
+00:11:38,801 --> 00:11:41,934
+of the power that's
+afforded by it.
+
+276
+00:11:41,934 --> 00:11:45,133
+And finally, because
+code is never fast enough.
+
+277
+00:11:45,133 --> 00:11:47,067
+We've seen this
+many places
+
+278
+00:11:47,067 --> 00:11:48,868
+in many products
+around Google--
+
+279
+00:11:48,868 --> 00:11:50,501
+when we make products
+faster,
+
+280
+00:11:50,501 --> 00:11:54,067
+we make the latency lower,
+usage increases.
+
+281
+00:11:54,067 --> 00:12:00,033
+People like speed.
+
+282
+00:12:00,033 --> 00:12:02,200
+So starting tracing
+in your application
+
+283
+00:12:02,200 --> 00:12:04,067
+is actually really simple.
+
+284
+00:12:04,067 --> 00:12:05,400
+You have two options.
+
+285
+00:12:05,400 --> 00:12:07,033
+You can start it in code.
+
+286
+00:12:07,033 --> 00:12:10,868
+So here you just call
+Debug.startMethodTracing.
+
+287
+00:12:10,868 --> 00:12:13,234
+And then stopMethodTracing
+when you're done.
+
+288
+00:12:13,234 --> 00:12:15,200
+I'll note that there
+are separate calls
+
+289
+00:12:15,200 --> 00:12:19,467
+for tracing dalvik code
+versus native code.
+
+290
+00:12:19,467 --> 00:12:21,200
+So here in the top example,
+
+291
+00:12:21,200 --> 00:12:24,767
+I'm just tracing
+dalvik code.
+
+292
+00:12:24,767 --> 00:12:28,033
+And then you can also start it
+from the command line.
+
+293
+00:12:28,033 --> 00:12:30,167
+The disadvantage there
+
+294
+00:12:30,167 --> 00:12:32,968
+being that it's
+a less granular experience.
+
+295
+00:12:32,968 --> 00:12:35,834
+If you want to trace
+just a small section in code,
+
+296
+00:12:35,834 --> 00:12:38,934
+then you really want
+to start and stop method tracing
+
+297
+00:12:38,934 --> 00:12:40,501
+in the code.
+
+298
+00:12:40,501 --> 00:12:43,033
+But, of course, the advantage
+of the command line
+
+299
+00:12:43,033 --> 00:12:45,734
+is you don't have to modify
+the actual source
+
+300
+00:12:45,734 --> 00:12:50,767
+and then remember to take
+that debugging code out.
+
+301
+00:12:50,767 --> 00:12:52,734
+And so these commands
+will control debugging
+
+302
+00:12:52,734 --> 00:12:54,734
+for the entire
+virtual machine.
+
+303
+00:12:54,734 --> 00:12:58,567
+And by that, I mean
+remember that, in Android,
+
+304
+00:12:58,567 --> 00:13:00,834
+each process has its own
+virtual machine
+
+305
+00:13:00,834 --> 00:13:02,734
+that it executes within.
+
+306
+00:13:02,734 --> 00:13:04,467
+So you're not starting it
+just for an activity
+
+307
+00:13:04,467 --> 00:13:07,167
+or just for a service where--
+where you call this.
+
+308
+00:13:07,167 --> 00:13:10,501
+You're starting it
+for your entire process.
+
+309
+00:13:10,501 --> 00:13:12,934
+As a result, you're gonna
+generate a lot of information
+
+310
+00:13:12,934 --> 00:13:14,868
+really quickly.
+
+311
+00:13:14,868 --> 00:13:19,801
+And to help deal with that,
+just trace what you need.
+
+312
+00:13:19,801 --> 00:13:21,601
+And finally,
+like I mentioned,
+
+313
+00:13:21,601 --> 00:13:24,801
+tracing has a big impact
+on performance,
+
+314
+00:13:24,801 --> 00:13:26,167
+and that's why you want
+to remember
+
+315
+00:13:26,167 --> 00:13:30,200
+to take any--
+any debug--or...
+
+316
+00:13:30,200 --> 00:13:32,901
+Any time you start
+tracing in your code,
+
+317
+00:13:32,901 --> 00:13:34,400
+you want to make sure
+to take that out
+
+318
+00:13:34,400 --> 00:13:35,701
+before you ship.
+
+319
+00:13:35,701 --> 00:13:37,400
+Because performance
+is going to be
+
+320
+00:13:37,400 --> 00:13:39,834
+multiple times slower
+while tracing is running,
+
+321
+00:13:39,834 --> 00:13:42,200
+simply because the system
+is gathering
+
+322
+00:13:42,200 --> 00:13:45,400
+a lot of information.
+
+323
+00:13:45,400 --> 00:13:46,767
+So, for example,
+
+324
+00:13:46,767 --> 00:13:48,300
+in this time
+when I was tracing,
+
+325
+00:13:48,300 --> 00:13:50,434
+and I'm tracing over about
+20 mil--
+
+326
+00:13:50,434 --> 00:13:53,434
+or 20 seconds here,
+so 20,000 milliseconds,
+
+327
+00:13:53,434 --> 00:13:56,167
+I think this trace file
+was around eight megabytes.
+
+328
+00:13:56,167 --> 00:14:00,100
+So data accumulates
+very rapidly.
+
+329
+00:14:00,100 --> 00:14:02,634
+And this is the top part
+of TraceView,
+
+330
+00:14:02,634 --> 00:14:04,601
+the--the execution timeline.
+
+331
+00:14:04,601 --> 00:14:06,100
+So along the left,
+you have the threads
+
+332
+00:14:06,100 --> 00:14:07,167
+that are executing.
+
+333
+00:14:07,167 --> 00:14:09,167
+And, like, I said,
+along the top,
+
+334
+00:14:09,167 --> 00:14:11,901
+the time that they're
+executing in.
+
+335
+00:14:11,901 --> 00:14:14,667
+TraceView also gives you
+the ability
+
+336
+00:14:14,667 --> 00:14:17,067
+to look
+at individual methods
+
+337
+00:14:17,067 --> 00:14:19,567
+and where their--
+what their parents
+
+338
+00:14:19,567 --> 00:14:21,200
+and children are.
+
+339
+00:14:21,200 --> 00:14:23,767
+And navigate quickly
+through the--
+
+340
+00:14:23,767 --> 00:14:25,067
+through the call graph,
+
+341
+00:14:25,067 --> 00:14:27,467
+because when you identify
+a performance problem,
+
+342
+00:14:27,467 --> 00:14:29,467
+it may be with a,
+you know,
+
+343
+00:14:29,467 --> 00:14:30,868
+a method that you've
+never heard of.
+
+344
+00:14:30,868 --> 00:14:32,667
+So you need to figure out
+where in your code
+
+345
+00:14:32,667 --> 00:14:34,467
+this is being called.
+
+346
+00:14:34,467 --> 00:14:38,868
+You'll also note that
+the methods are enumerated.
+
+347
+00:14:38,868 --> 00:14:40,667
+So they're enumerated
+in the order
+
+348
+00:14:40,667 --> 00:14:43,067
+that they're
+originally called.
+
+349
+00:14:43,067 --> 00:14:44,901
+So thread.run,
+not surprisingly,
+
+350
+00:14:44,901 --> 00:14:50,300
+is really the first method
+that's called here.
+
+351
+00:14:50,300 --> 00:14:51,868
+And they're
+also color-coded.
+
+352
+00:14:51,868 --> 00:14:53,267
+These color codes
+will correspond
+
+353
+00:14:53,267 --> 00:14:56,400
+to colors
+in the execution timeline.
+
+354
+00:14:56,400 --> 00:14:59,567
+You can note the--
+the big, green blob
+
+355
+00:14:59,567 --> 00:15:01,067
+on thread 14 there
+
+356
+00:15:01,067 --> 00:15:05,334
+that we'll actually
+talk about a little later.
+
+357
+00:15:05,334 --> 00:15:07,534
+A quick note about
+some of the statistics
+
+358
+00:15:07,534 --> 00:15:08,968
+that are provided.
+
+359
+00:15:08,968 --> 00:15:10,968
+Most of them
+are pretty obvious.
+
+360
+00:15:10,968 --> 00:15:12,834
+I just want to make sure
+it's clear
+
+361
+00:15:12,834 --> 00:15:16,767
+what inclusive and exclusive
+execution time mean.
+
+362
+00:15:16,767 --> 00:15:19,801
+So inclusive execution time
+is all the time spent
+
+363
+00:15:19,801 --> 00:15:22,534
+executing a method,
+plus its children.
+
+364
+00:15:22,534 --> 00:15:26,200
+And exclusive is simply
+the time spent
+
+365
+00:15:26,200 --> 00:15:29,634
+executing code that exists
+solely in that method,
+
+366
+00:15:29,634 --> 00:15:32,434
+and not counting any time
+from descendent methods
+
+367
+00:15:32,434 --> 00:15:37,534
+that are called.
+
+368
+00:15:37,534 --> 00:15:39,567
+So like I said, the--
+
+369
+00:15:39,567 --> 00:15:41,133
+the source
+of your performance issue
+
+370
+00:15:41,133 --> 00:15:42,734
+may not actually
+be in your code,
+
+371
+00:15:42,734 --> 00:15:45,334
+but it may
+be somewhere else.
+
+372
+00:15:45,334 --> 00:15:48,133
+And to get to the bottom
+or to the top of that,
+
+373
+00:15:48,133 --> 00:15:49,901
+tracing through
+the call tree
+
+374
+00:15:49,901 --> 00:15:51,267
+can be very useful.
+
+375
+00:15:51,267 --> 00:15:53,534
+So I'm just gonna show
+a quick example here.
+
+376
+00:15:53,534 --> 00:15:56,133
+So you can click
+on the down arrow there
+
+377
+00:15:56,133 --> 00:15:58,334
+and see where
+this method was called from.
+
+378
+00:15:58,334 --> 00:16:00,834
+It's called from
+FetchURL.
+
+379
+00:16:00,834 --> 00:16:03,400
+Go up further to parents.
+
+380
+00:16:03,400 --> 00:16:04,634
+And I could also then,
+you know,
+
+381
+00:16:04,634 --> 00:16:08,000
+go into--go and navigate
+down the call tree
+
+382
+00:16:08,000 --> 00:16:13,334
+into any of the children.
+
+383
+00:16:13,334 --> 00:16:15,501
+TraceView is a really
+powerful tool,
+
+384
+00:16:15,501 --> 00:16:18,367
+and it--it affords us
+the ability
+
+385
+00:16:18,367 --> 00:16:20,667
+to optimize reality.
+
+386
+00:16:20,667 --> 00:16:24,601
+I myself have spent
+plenty of time over my career
+
+387
+00:16:24,601 --> 00:16:26,167
+agonizing and designing
+
+388
+00:16:26,167 --> 00:16:28,133
+really complex
+data structures,
+
+389
+00:16:28,133 --> 00:16:29,801
+only to find out in the end
+
+390
+00:16:29,801 --> 00:16:31,367
+that this data structure
+is used
+
+391
+00:16:31,367 --> 00:16:36,133
+in less than 1%
+of execution time.
+
+392
+00:16:36,133 --> 00:16:40,300
+So I encourage you
+to take advantage of TraceView,
+
+393
+00:16:40,300 --> 00:16:42,601
+and therefore,
+you can design sensibly,
+
+394
+00:16:42,601 --> 00:16:45,133
+build a proof of concept,
+test,
+
+395
+00:16:45,133 --> 00:16:46,767
+and then figure out
+if you need to spend
+
+396
+00:16:46,767 --> 00:16:50,234
+hours and hours developing
+a wonderfully elegant,
+
+397
+00:16:50,234 --> 00:16:52,100
+highly-efficient
+data structure.
+
+398
+00:16:57,133 --> 00:17:00,400
+So TraceView will help you
+look at, you know,
+
+399
+00:17:00,400 --> 00:17:03,567
+the execution code
+of your program.
+
+400
+00:17:03,567 --> 00:17:06,234
+But another big component
+of Android applications
+
+401
+00:17:06,234 --> 00:17:07,801
+is the UI.
+
+402
+00:17:07,801 --> 00:17:10,534
+And the UI can easily
+get more complex
+
+403
+00:17:10,534 --> 00:17:12,000
+than you might imagine.
+
+404
+00:17:12,000 --> 00:17:14,267
+And HierarchyViewer
+is one way
+
+405
+00:17:14,267 --> 00:17:17,467
+that you can deal with
+identifying this complexity,
+
+406
+00:17:17,467 --> 00:17:21,501
+and once you've identified it,
+look at solving it.
+
+407
+00:17:21,501 --> 00:17:24,467
+HierarchyViewer gives you
+a graphical depiction
+
+408
+00:17:24,467 --> 00:17:26,234
+of the UI tree from the--
+
+409
+00:17:26,234 --> 00:17:30,100
+from the point of view
+of the layout system.
+
+410
+00:17:30,100 --> 00:17:32,601
+And so we're going
+to navigate this tree
+
+411
+00:17:32,601 --> 00:17:34,033
+a little now.
+
+412
+00:17:34,033 --> 00:17:37,367
+Each note in the tree
+can be double-clicked on.
+
+413
+00:17:37,367 --> 00:17:38,834
+And when you
+double-click on that,
+
+414
+00:17:38,834 --> 00:17:40,701
+it's going
+to show you the UI
+
+415
+00:17:40,701 --> 00:17:42,601
+represented
+by that sub tree.
+
+416
+00:17:42,601 --> 00:17:45,467
+And you can see it
+on black or white backgrounds.
+
+417
+00:17:45,467 --> 00:17:48,434
+Notice that this UI element
+has a black background
+
+418
+00:17:48,434 --> 00:17:50,901
+native to it.
+
+419
+00:17:50,901 --> 00:17:54,734
+I can look through, further,
+the UI tree here,
+
+420
+00:17:54,734 --> 00:17:57,901
+go down to see
+some of the children,
+
+421
+00:17:57,901 --> 00:18:04,467
+and then maybe click on
+another child node over here.
+
+422
+00:18:04,467 --> 00:18:06,367
+And again, investigate--
+you know,
+
+423
+00:18:06,367 --> 00:18:08,934
+does this element
+have a background to it?
+
+424
+00:18:08,934 --> 00:18:11,334
+As it turns out,
+this has no background,
+
+425
+00:18:11,334 --> 00:18:15,634
+or it's transparent.
+
+426
+00:18:15,634 --> 00:18:17,400
+In addition,
+HierarchyViewer
+
+427
+00:18:17,400 --> 00:18:18,734
+will show you lots
+of information
+
+428
+00:18:18,734 --> 00:18:22,033
+about any individual node
+in the tree.
+
+429
+00:18:22,033 --> 00:18:24,901
+So here you can look
+at all the properties
+
+430
+00:18:24,901 --> 00:18:26,834
+as well as many
+of the responses
+
+431
+00:18:26,834 --> 00:18:29,434
+from essentially
+the getter methods of--
+
+432
+00:18:29,434 --> 00:18:31,100
+of that view.
+
+433
+00:18:31,100 --> 00:18:33,300
+And then, because hierarchies
+are often large,
+
+434
+00:18:33,300 --> 00:18:35,367
+down in
+the bottom corner there
+
+435
+00:18:35,367 --> 00:18:40,701
+you can see a zoomed-out view
+of the entire UI tree.
+
+436
+00:18:40,701 --> 00:18:42,534
+When you're looking
+at HierarchyViewer,
+
+437
+00:18:42,534 --> 00:18:46,801
+there are a couple of classes
+of conditions
+
+438
+00:18:46,801 --> 00:18:48,767
+that I often see
+
+439
+00:18:48,767 --> 00:18:52,567
+and can indicate that
+optimization is--is possible
+
+440
+00:18:52,567 --> 00:18:53,801
+and, you know, recommended.
+
+441
+00:18:53,801 --> 00:18:56,601
+So the first group
+I want to talk about
+
+442
+00:18:56,601 --> 00:18:59,267
+is infertile--what I call
+infertile parents.
+
+443
+00:18:59,267 --> 00:19:02,567
+So this is a layout
+or a view group
+
+444
+00:19:02,567 --> 00:19:07,634
+that has no parents
+or a single parent.
+
+445
+00:19:07,634 --> 00:19:10,234
+You know, why do I need
+a linear layout
+
+446
+00:19:10,234 --> 00:19:14,534
+that has as single child
+that is a linear layout?
+
+447
+00:19:14,534 --> 00:19:17,067
+Did I say a single parent?
+
+448
+00:19:17,067 --> 00:19:19,100
+I mean a single child.
+
+449
+00:19:19,100 --> 00:19:21,834
+So why do I need
+a linear layout
+
+450
+00:19:21,834 --> 00:19:25,334
+that has a single child
+that's also a linear layout,
+
+451
+00:19:25,334 --> 00:19:28,367
+that has a single child
+that's a relative layout.
+
+452
+00:19:28,367 --> 00:19:30,667
+The answer
+is that I don't.
+
+453
+00:19:30,667 --> 00:19:35,000
+So, you know, this is ripe
+for optimization here.
+
+454
+00:19:35,000 --> 00:19:37,868
+The other set is something
+that I call clones.
+
+455
+00:19:37,868 --> 00:19:39,601
+And so this is parents
+
+456
+00:19:39,601 --> 00:19:42,000
+that have children
+that are the same type
+
+457
+00:19:42,000 --> 00:19:47,000
+that they are,
+or have children
+
+458
+00:19:47,000 --> 00:19:48,601
+where the children
+are the same type.
+
+459
+00:19:48,601 --> 00:19:51,801
+So an example again
+would be, you know,
+
+460
+00:19:51,801 --> 00:19:53,601
+a linear layout parent
+
+461
+00:19:53,601 --> 00:19:56,000
+that has two
+linear layout children.
+
+462
+00:19:56,000 --> 00:19:57,400
+There's probably a way
+to combine these
+
+463
+00:19:57,400 --> 00:20:00,200
+or to convert them either
+to a relative layout
+
+464
+00:20:00,200 --> 00:20:02,200
+or a table layout.
+
+465
+00:20:02,200 --> 00:20:04,801
+And then the other example
+I was talking about,
+
+466
+00:20:04,801 --> 00:20:05,934
+if you have some layout
+
+467
+00:20:05,934 --> 00:20:08,200
+that has two
+relative layout children,
+
+468
+00:20:08,200 --> 00:20:11,200
+well, relative layout
+siblings
+
+469
+00:20:11,200 --> 00:20:13,400
+are very uncommon
+to be necessary,
+
+470
+00:20:13,400 --> 00:20:17,801
+because the data
+is inherently related.
+
+471
+00:20:17,801 --> 00:20:20,801
+These conditions sometimes
+
+472
+00:20:20,801 --> 00:20:23,567
+result from...
+
+473
+00:20:23,567 --> 00:20:26,200
+having our layout broken
+into multiple pieces,
+
+474
+00:20:26,200 --> 00:20:27,367
+which is sensible
+
+475
+00:20:27,367 --> 00:20:30,234
+from a design and--
+and coding perspective.
+
+476
+00:20:30,234 --> 00:20:33,000
+It makes dealing
+with the UI simpler.
+
+477
+00:20:33,000 --> 00:20:37,801
+It keeps the layout files,
+on average, smaller.
+
+478
+00:20:37,801 --> 00:20:42,234
+The problem is that then
+we usually put a--
+
+479
+00:20:42,234 --> 00:20:45,067
+put a view group,
+so some kind of layout,
+
+480
+00:20:45,067 --> 00:20:47,834
+as the parent of this
+component of the UI.
+
+481
+00:20:47,834 --> 00:20:50,033
+And then, when you
+plug it into your UI,
+
+482
+00:20:50,033 --> 00:20:52,200
+you get this container
+that you didn't really need--
+
+483
+00:20:52,200 --> 00:20:54,567
+you just put there
+
+484
+00:20:54,567 --> 00:20:56,367
+so that you could build
+this--this file
+
+485
+00:20:56,367 --> 00:20:58,000
+that you were just going
+to incorporate
+
+486
+00:20:58,000 --> 00:20:59,767
+into your UI.
+
+487
+00:20:59,767 --> 00:21:02,334
+And the answer to this
+is to use the merge tag.
+
+488
+00:21:02,334 --> 00:21:06,200
+The merge tag
+is a placeholder layout
+
+489
+00:21:06,200 --> 00:21:08,834
+that says, "Whatever
+my children are,
+
+490
+00:21:08,834 --> 00:21:11,667
+"just inject them
+directly into
+
+491
+00:21:11,667 --> 00:21:14,934
+whatever view group
+I'm being included in."
+
+492
+00:21:14,934 --> 00:21:17,701
+So the merge tag
+essentially goes away
+
+493
+00:21:17,701 --> 00:21:20,434
+when you
+include this layout
+
+494
+00:21:20,434 --> 00:21:21,868
+into another one.
+
+495
+00:21:27,534 --> 00:21:31,067
+Okay, so enough of talking
+about tools.
+
+496
+00:21:31,067 --> 00:21:33,868
+Let's see
+some usage of this.
+
+497
+00:21:33,868 --> 00:21:36,667
+And so looking at code,
+you know,
+
+498
+00:21:36,667 --> 00:21:38,267
+is kind of like
+traveling along
+
+499
+00:21:38,267 --> 00:21:40,467
+and visiting
+different towns.
+
+500
+00:21:40,467 --> 00:21:43,267
+And so, in my travels,
+I've accumulated some tales.
+
+501
+00:21:43,267 --> 00:21:45,100
+And the first one
+that I'm --
+
+502
+00:21:45,100 --> 00:21:46,868
+I'm going to call <i>Betrayal,</i>
+
+503
+00:21:46,868 --> 00:21:49,267
+which is nice and kind of,
+you know,
+
+504
+00:21:49,267 --> 00:21:50,667
+ooh, intrigue.
+
+505
+00:21:50,667 --> 00:21:52,667
+It is kind of intriguing.
+
+506
+00:21:52,667 --> 00:21:54,934
+Anyway, so the first
+couple examples here
+
+507
+00:21:54,934 --> 00:21:57,667
+are gonna come from
+when I was looking
+
+508
+00:21:57,667 --> 00:21:59,667
+at the Google Finance
+application.
+
+509
+00:21:59,667 --> 00:22:03,934
+So that's Google's finance
+client for Android,
+
+510
+00:22:03,934 --> 00:22:07,133
+which now includes
+all these improvements.
+
+511
+00:22:07,133 --> 00:22:09,934
+And what I was really
+focusing on
+
+512
+00:22:09,934 --> 00:22:13,334
+was trying to optimize
+start-up time.
+
+513
+00:22:13,334 --> 00:22:15,033
+Because the app
+start-up time
+
+514
+00:22:15,033 --> 00:22:17,534
+wasn't as good
+as we wanted it to be.
+
+515
+00:22:17,534 --> 00:22:20,534
+And start-up time
+is particularly important
+
+516
+00:22:20,534 --> 00:22:23,133
+because this
+is the first experience
+
+517
+00:22:23,133 --> 00:22:27,334
+your users will ever have
+with your application.
+
+518
+00:22:27,334 --> 00:22:29,334
+And they may decide
+at that point
+
+519
+00:22:29,334 --> 00:22:30,734
+never to use it again.
+
+520
+00:22:30,734 --> 00:22:32,167
+But, beyond that,
+
+521
+00:22:32,167 --> 00:22:34,534
+it's also the first experience
+they have
+
+522
+00:22:34,534 --> 00:22:36,534
+when they decide they want
+to start a new session
+
+523
+00:22:36,534 --> 00:22:37,834
+with your app.
+
+524
+00:22:37,834 --> 00:22:39,934
+When they haven't opened it
+for two days,
+
+525
+00:22:39,934 --> 00:22:41,334
+and they open it again
+and they go,
+
+526
+00:22:41,334 --> 00:22:45,133
+"Ohh, I'm opening
+this slow app again."
+
+527
+00:22:45,133 --> 00:22:47,734
+So anyways,
+this first impression
+
+528
+00:22:47,734 --> 00:22:50,133
+needs to be snappy.
+
+529
+00:22:50,133 --> 00:22:52,934
+So when I started
+
+530
+00:22:52,934 --> 00:22:55,133
+looking at the performance
+
+531
+00:22:55,133 --> 00:22:57,334
+and tracing in finance,
+
+532
+00:22:57,334 --> 00:22:58,934
+this is--this is
+the execution graph
+
+533
+00:22:58,934 --> 00:23:01,701
+that I saw.
+
+534
+00:23:01,701 --> 00:23:06,734
+And immediately, I see
+this big blob of color,
+
+535
+00:23:06,734 --> 00:23:09,734
+and I think,
+"Wow, what is that?"
+
+536
+00:23:09,734 --> 00:23:11,834
+And furthermore,
+
+537
+00:23:11,834 --> 00:23:13,901
+why is that running
+on the UI thread?
+
+538
+00:23:13,901 --> 00:23:16,667
+So you can see it's on
+the thread that's labeled Main.
+
+539
+00:23:16,667 --> 00:23:18,000
+So this is the UI thread,
+
+540
+00:23:18,000 --> 00:23:19,667
+which always
+needs to be responsive.
+
+541
+00:23:19,667 --> 00:23:21,767
+Something's running
+for two seconds on there,
+
+542
+00:23:21,767 --> 00:23:23,234
+blocking the UI thread.
+
+543
+00:23:23,234 --> 00:23:25,534
+And it suddenly
+made sense to me why,
+
+544
+00:23:25,534 --> 00:23:26,868
+when I was using Finance,
+
+545
+00:23:26,868 --> 00:23:31,133
+I was frustrated
+at the start-up.
+
+546
+00:23:31,133 --> 00:23:32,334
+And the only thing
+I could think
+
+547
+00:23:32,334 --> 00:23:33,601
+that could take that long
+
+548
+00:23:33,601 --> 00:23:34,601
+was that with some--
+
+549
+00:23:34,601 --> 00:23:36,234
+someone had done
+a network request,
+
+550
+00:23:36,234 --> 00:23:41,400
+and forgotten to move it off
+to its own thread.
+
+551
+00:23:41,400 --> 00:23:43,834
+I was then very surprised
+to discover
+
+552
+00:23:43,834 --> 00:23:46,734
+that this had nothing to do
+with a network request,
+
+553
+00:23:46,734 --> 00:23:48,901
+and that the method
+that was being shown there
+
+554
+00:23:48,901 --> 00:23:52,300
+is something called
+getTimeZonesNative.
+
+555
+00:23:52,300 --> 00:23:55,701
+And I thought...
+
+556
+00:23:55,701 --> 00:23:57,434
+well, one, why is this
+taking so long?
+
+557
+00:23:57,434 --> 00:24:01,167
+But then, I'm not doing
+anything with time zones.
+
+558
+00:24:01,167 --> 00:24:04,167
+Why is this even being called
+in my code?
+
+559
+00:24:04,167 --> 00:24:07,834
+Well, luckily, TraceView
+will provide an answer for me.
+
+560
+00:24:07,834 --> 00:24:10,667
+So I can trace up
+and I see some more stuff
+
+561
+00:24:10,667 --> 00:24:11,767
+about time zones,
+
+562
+00:24:11,767 --> 00:24:13,901
+and then something
+about date formats.
+
+563
+00:24:13,901 --> 00:24:16,367
+And further up...
+
+564
+00:24:16,367 --> 00:24:19,868
+further up, more stuff
+about date formats.
+
+565
+00:24:19,868 --> 00:24:22,200
+And finally, I get into
+my own code.
+
+566
+00:24:22,200 --> 00:24:25,033
+So, all right, something
+about date formatting
+
+567
+00:24:25,033 --> 00:24:27,300
+for my own code.
+
+568
+00:24:27,300 --> 00:24:28,501
+Where's this coming from?
+
+569
+00:24:28,501 --> 00:24:30,968
+So it was time for me
+to look at the code.
+
+570
+00:24:30,968 --> 00:24:32,133
+And, as it turns out,
+
+571
+00:24:32,133 --> 00:24:33,901
+in the Finance UI,
+
+572
+00:24:33,901 --> 00:24:37,667
+there's a little timestamp
+in the top right of the UI
+
+573
+00:24:37,667 --> 00:24:40,133
+that denoted the last time
+that data had been loaded
+
+574
+00:24:40,133 --> 00:24:41,868
+from the server.
+
+575
+00:24:41,868 --> 00:24:44,200
+And to create this
+little timestamp
+
+576
+00:24:44,200 --> 00:24:47,067
+we were calling
+dateformat.format,
+
+577
+00:24:47,067 --> 00:24:49,868
+a seemingly
+very innocuous call
+
+578
+00:24:49,868 --> 00:24:52,167
+that really shouldn't
+take very long at all,
+
+579
+00:24:52,167 --> 00:24:54,801
+should just happen
+right away.
+
+580
+00:24:54,801 --> 00:24:55,901
+As it turns out,
+
+581
+00:24:55,901 --> 00:24:58,534
+it takes about two seconds
+to run.
+
+582
+00:24:58,534 --> 00:25:05,934
+And this is what
+was blocking the UI thread.
+
+583
+00:25:05,934 --> 00:25:08,033
+So the story
+has a happy ending.
+
+584
+00:25:08,033 --> 00:25:11,467
+The solution was just,
+you know,
+
+585
+00:25:11,467 --> 00:25:13,667
+move the call
+to its own thread,
+
+586
+00:25:13,667 --> 00:25:15,033
+and also, because
+I didn't think this was
+
+587
+00:25:15,033 --> 00:25:17,501
+a very important part
+of the UI,
+
+588
+00:25:17,501 --> 00:25:20,167
+make it less important.
+
+589
+00:25:20,167 --> 00:25:22,767
+Let other stuff go first.
+
+590
+00:25:22,767 --> 00:25:28,200
+And the result was much better
+perceived start-up time.
+
+591
+00:25:28,200 --> 00:25:32,234
+Because now--and I say
+"perceived start-up time"
+
+592
+00:25:32,234 --> 00:25:35,434
+because I'm not actually
+avoiding any execution here.
+
+593
+00:25:35,434 --> 00:25:37,534
+I'm still doing everything.
+
+594
+00:25:37,534 --> 00:25:39,334
+But I'm putting it off,
+
+595
+00:25:39,334 --> 00:25:41,934
+and I'm also not letting it
+interfere--
+
+596
+00:25:41,934 --> 00:25:45,534
+interfere with the UI.
+
+597
+00:25:45,534 --> 00:25:48,534
+And so, I mean,
+in order to lower priority,
+
+598
+00:25:48,534 --> 00:25:50,734
+all you need to do
+is set the priority
+
+599
+00:25:50,734 --> 00:25:54,901
+on the thread.
+
+600
+00:25:54,901 --> 00:25:57,601
+So the key take-aways
+that I want to express here
+
+601
+00:25:57,601 --> 00:25:59,234
+are trust no one.
+
+602
+00:25:59,234 --> 00:26:01,400
+Just because you think
+it's a safe call
+
+603
+00:26:01,400 --> 00:26:02,767
+that doesn't take very long
+
+604
+00:26:02,767 --> 00:26:04,567
+doesn't mean that it's
+a safe library call
+
+605
+00:26:04,567 --> 00:26:06,467
+that doesn't take very long.
+
+606
+00:26:06,467 --> 00:26:09,267
+Talking to--talking
+to one of the engineers
+
+607
+00:26:09,267 --> 00:26:12,033
+that actually worked
+on implementing this,
+
+608
+00:26:12,033 --> 00:26:14,367
+what's happening as we're
+loading this giant database
+
+609
+00:26:14,367 --> 00:26:18,100
+of--of, you know, every
+date format ever known
+
+610
+00:26:18,100 --> 00:26:20,901
+off of a file somewhere
+
+611
+00:26:20,901 --> 00:26:22,734
+and pushing it up
+into the Java layer.
+
+612
+00:26:22,734 --> 00:26:24,767
+And this is what's
+taking two seconds.
+
+613
+00:26:24,767 --> 00:26:27,033
+And it's actually
+two seconds in real time,
+
+614
+00:26:27,033 --> 00:26:29,200
+not debug time, because
+this is a native method
+
+615
+00:26:29,200 --> 00:26:31,834
+that we're looking at.
+
+616
+00:26:31,834 --> 00:26:34,834
+Secondly, a little profiling
+can go a long way.
+
+617
+00:26:34,834 --> 00:26:37,968
+No one had done profiling
+on the Finance app.
+
+618
+00:26:37,968 --> 00:26:39,534
+But after
+about five minutes,
+
+619
+00:26:39,534 --> 00:26:43,901
+you could see very easily
+that there was a problem.
+
+620
+00:26:43,901 --> 00:26:48,100
+And finally,
+that priority matters.
+
+621
+00:26:48,100 --> 00:26:49,801
+This little part
+of the UI was secondary
+
+622
+00:26:49,801 --> 00:26:51,601
+to the user experience.
+
+623
+00:26:51,601 --> 00:26:54,000
+The most important part
+of the user experience
+
+624
+00:26:54,000 --> 00:26:55,801
+was getting updated quotes
+on the screen
+
+625
+00:26:55,801 --> 00:26:57,400
+as rapidly as possible.
+
+626
+00:26:57,400 --> 00:26:59,234
+It's nice to know
+when they came from,
+
+627
+00:26:59,234 --> 00:27:05,200
+but it's more important
+just to have them.
+
+628
+00:27:05,200 --> 00:27:06,634
+So traveling about,
+
+629
+00:27:06,634 --> 00:27:08,601
+it's best to find
+the shortest point
+
+630
+00:27:08,601 --> 00:27:10,267
+from "A" to "B."
+
+631
+00:27:10,267 --> 00:27:16,100
+However, that's not always
+the route we take.
+
+632
+00:27:16,100 --> 00:27:19,467
+So this next example
+is also from Finance.
+
+633
+00:27:19,467 --> 00:27:22,167
+And now, it's, you know,
+an obvious performance issue
+
+634
+00:27:22,167 --> 00:27:25,033
+in the execution timeline.
+
+635
+00:27:25,033 --> 00:27:26,868
+But that was really
+the only one that, you know,
+
+636
+00:27:26,868 --> 00:27:29,067
+jumped out at me.
+
+637
+00:27:29,067 --> 00:27:31,300
+So after that,
+it was time to go
+
+638
+00:27:31,300 --> 00:27:33,234
+into the method information
+
+639
+00:27:33,234 --> 00:27:35,167
+and see what I could learn
+about what methods
+
+640
+00:27:35,167 --> 00:27:37,801
+were taking a long time
+to execute.
+
+641
+00:27:37,801 --> 00:27:40,133
+So I started out
+sorting by
+
+642
+00:27:40,133 --> 00:27:42,234
+exclusive execution time.
+
+643
+00:27:42,234 --> 00:27:44,334
+So again, this shows
+just the time spent
+
+644
+00:27:44,334 --> 00:27:48,067
+executing lines of code
+within an individual method.
+
+645
+00:27:48,067 --> 00:27:50,200
+And so that means
+these are the methods
+
+646
+00:27:50,200 --> 00:27:53,901
+where your code
+is spending most of--
+
+647
+00:27:53,901 --> 00:27:57,767
+or your program is spending
+most of its lifetime.
+
+648
+00:27:57,767 --> 00:27:59,701
+And good targets
+to look for
+
+649
+00:27:59,701 --> 00:28:01,868
+when you're looking
+for inefficiencies here
+
+650
+00:28:01,868 --> 00:28:04,067
+are methods that have
+a few calls,
+
+651
+00:28:04,067 --> 00:28:06,300
+because then you have
+fewer code paths
+
+652
+00:28:06,300 --> 00:28:08,200
+to worry about making sure
+
+653
+00:28:08,200 --> 00:28:11,634
+that your changes
+won't interfere with.
+
+654
+00:28:11,634 --> 00:28:14,067
+And ones that are
+obviously a long running time,
+
+655
+00:28:14,067 --> 00:28:16,534
+because you want to get
+the most bang for your buck.
+
+656
+00:28:16,534 --> 00:28:18,501
+And once you've identified
+your targets,
+
+657
+00:28:18,501 --> 00:28:21,934
+see what you can do
+about reducing or eliminating
+
+658
+00:28:21,934 --> 00:28:24,901
+the use of them.
+
+659
+00:28:24,901 --> 00:28:26,267
+So this is what I saw.
+
+660
+00:28:26,267 --> 00:28:28,734
+And you can see my friend
+up there at the top:
+
+661
+00:28:28,734 --> 00:28:30,234
+get TimeZonesNative.
+
+662
+00:28:30,234 --> 00:28:32,267
+It's still there.
+
+663
+00:28:32,267 --> 00:28:34,033
+And there are
+a bunch of methods
+
+664
+00:28:34,033 --> 00:28:35,501
+that really can't
+be avoided,
+
+665
+00:28:35,501 --> 00:28:37,267
+probably string.charAt
+
+666
+00:28:37,267 --> 00:28:38,767
+and JSONTokenizer.
+
+667
+00:28:38,767 --> 00:28:40,434
+This is all necessary.
+
+668
+00:28:40,434 --> 00:28:41,734
+But going down further,
+
+669
+00:28:41,734 --> 00:28:45,434
+I see bitmap.nativecompress,
+and I go, "Hmm."
+
+670
+00:28:45,434 --> 00:28:48,033
+Well, this is only called,
+it looks like, twice,
+
+671
+00:28:48,033 --> 00:28:49,534
+and it's fairly expensive,
+
+672
+00:28:49,534 --> 00:28:51,400
+because sorted by this,
+
+673
+00:28:51,400 --> 00:28:53,367
+it's like
+number eight or ten.
+
+674
+00:28:53,367 --> 00:28:54,801
+Something like that.
+
+675
+00:28:54,801 --> 00:28:57,934
+So let's see what's
+going on with this method.
+
+676
+00:28:57,934 --> 00:28:59,901
+And before
+I jumped into the code,
+
+677
+00:28:59,901 --> 00:29:05,100
+I decided, take
+a look around in TraceView.
+
+678
+00:29:05,100 --> 00:29:07,367
+Use TraceView
+to let me tell--
+
+679
+00:29:07,367 --> 00:29:09,667
+use TraceView in order
+to learn what's happening
+
+680
+00:29:09,667 --> 00:29:11,267
+before I jump
+into this code base
+
+681
+00:29:11,267 --> 00:29:13,200
+that's relatively
+foreign to me.
+
+682
+00:29:17,701 --> 00:29:22,067
+So to do this...
+
+683
+00:29:22,067 --> 00:29:24,501
+start out and make sure
+
+684
+00:29:24,501 --> 00:29:27,701
+that I'm zoomed in
+on the right method there.
+
+685
+00:29:27,701 --> 00:29:30,567
+So bitmap.nativecompress.
+
+686
+00:29:30,567 --> 00:29:33,100
+And then I'm gonna go
+and see who calls this thing.
+
+687
+00:29:33,100 --> 00:29:34,133
+Because I don't really know
+
+688
+00:29:34,133 --> 00:29:35,567
+where the call comes from.
+
+689
+00:29:35,567 --> 00:29:39,167
+So I go up, and we're
+adding something to the cache.
+
+690
+00:29:39,167 --> 00:29:43,133
+And more information
+about adding to the cache.
+
+691
+00:29:43,133 --> 00:29:46,801
+And this is coming
+from result available,
+
+692
+00:29:46,801 --> 00:29:51,167
+from a call to get
+a news item or get a chart.
+
+693
+00:29:51,167 --> 00:29:53,234
+Okay, so I have
+a general idea
+
+694
+00:29:53,234 --> 00:29:58,100
+of what the progression
+is here.
+
+695
+00:29:58,100 --> 00:30:00,100
+And then, I'm gonna zoom in
+on the timeline
+
+696
+00:30:00,100 --> 00:30:01,501
+here in TraceView.
+
+697
+00:30:01,501 --> 00:30:05,601
+Make sure I'm centered
+on the right function again.
+
+698
+00:30:05,601 --> 00:30:09,167
+And so this is gonna
+expand out the timeline for me.
+
+699
+00:30:09,167 --> 00:30:12,400
+And then I can look
+and see what's being executed
+
+700
+00:30:12,400 --> 00:30:13,734
+before and after.
+
+701
+00:30:13,734 --> 00:30:16,000
+I'm gonna look
+at the "before" first.
+
+702
+00:30:16,000 --> 00:30:17,000
+So I'll move it over
+
+703
+00:30:17,000 --> 00:30:19,067
+so we can see
+the method name.
+
+704
+00:30:19,067 --> 00:30:20,567
+And there's a call
+at the top.
+
+705
+00:30:20,567 --> 00:30:22,467
+You can see
+the bitmap factory,
+
+706
+00:30:22,467 --> 00:30:26,067
+that native decode string.
+
+707
+00:30:26,067 --> 00:30:28,234
+This series of events
+immediately strikes me
+
+708
+00:30:28,234 --> 00:30:30,033
+as a bit odd.
+
+709
+00:30:30,033 --> 00:30:32,601
+Because it looks like
+what's happening
+
+710
+00:30:32,601 --> 00:30:35,167
+is I'm decoding a bitmap,
+
+711
+00:30:35,167 --> 00:30:37,734
+and then I'm encoding
+a bitmap.
+
+712
+00:30:37,734 --> 00:30:40,434
+And I thought, "Okay,
+and this is also around
+
+713
+00:30:40,434 --> 00:30:41,834
+"network fetching.
+
+714
+00:30:41,834 --> 00:30:44,667
+"Am I converting images--
+image sizes on the client?
+
+715
+00:30:44,667 --> 00:30:49,601
+If so, we really
+need to fix that."
+
+716
+00:30:49,601 --> 00:30:52,701
+It turns that the answer's
+not quite that.
+
+717
+00:30:52,701 --> 00:30:54,100
+So I dove into the code,
+
+718
+00:30:54,100 --> 00:30:57,133
+and this is kind of
+what I found.
+
+719
+00:30:57,133 --> 00:30:58,334
+It's taking the long way
+
+720
+00:30:58,334 --> 00:31:00,334
+to go from one point
+to the other.
+
+721
+00:31:00,334 --> 00:31:03,133
+So what's happening
+is I'm downloading a response
+
+722
+00:31:03,133 --> 00:31:05,167
+and parsing out the data.
+
+723
+00:31:05,167 --> 00:31:08,067
+Part of that parsing
+is to create a bitmap
+
+724
+00:31:08,067 --> 00:31:09,601
+that I'm gonna
+display onscreen.
+
+725
+00:31:09,601 --> 00:31:11,000
+So for a quote or something.
+
+726
+00:31:11,000 --> 00:31:14,067
+Also gonna display
+the other quote information.
+
+727
+00:31:14,067 --> 00:31:16,067
+Then what's happening
+is I'm compressing
+
+728
+00:31:16,067 --> 00:31:18,067
+my onscreen bitmap
+
+729
+00:31:18,067 --> 00:31:22,100
+so that I can add it
+to the cache.
+
+730
+00:31:22,100 --> 00:31:24,267
+Now, it's a roundabout way,
+
+731
+00:31:24,267 --> 00:31:26,300
+but you can easily see
+how you'd get here.
+
+732
+00:31:26,300 --> 00:31:29,400
+You start out
+and build an application,
+
+733
+00:31:29,400 --> 00:31:31,067
+and then you think,
+
+734
+00:31:31,067 --> 00:31:33,801
+"Okay, we're gonna
+display the data onscreen."
+
+735
+00:31:33,801 --> 00:31:35,701
+And a little later,
+you think,
+
+736
+00:31:35,701 --> 00:31:37,400
+"Wait, we should
+cache this data,
+
+737
+00:31:37,400 --> 00:31:40,400
+"so we don't have to
+download it every single time.
+
+738
+00:31:40,400 --> 00:31:43,434
+Okay, we'll cache the data
+that's onscreen."
+
+739
+00:31:43,434 --> 00:31:46,667
+And so you end up going
+much further
+
+740
+00:31:46,667 --> 00:31:48,267
+and through many more
+lines of code
+
+741
+00:31:48,267 --> 00:31:50,267
+than are necessary,
+
+742
+00:31:50,267 --> 00:31:54,100
+when the better thing to do
+is to take a step back,
+
+743
+00:31:54,100 --> 00:31:56,434
+evaluate how the code
+is operating,
+
+744
+00:31:56,434 --> 00:31:58,167
+and implement
+this little fix--
+
+745
+00:31:58,167 --> 00:32:00,033
+which is read the response,
+
+746
+00:32:00,033 --> 00:32:01,901
+take the image data--
+
+747
+00:32:01,901 --> 00:32:03,100
+which is
+in the same format
+
+748
+00:32:03,100 --> 00:32:04,801
+that we were
+caching anyways--
+
+749
+00:32:04,801 --> 00:32:07,100
+take the image data
+
+750
+00:32:07,100 --> 00:32:08,501
+and cache it first.
+
+751
+00:32:08,501 --> 00:32:09,901
+And then,
+from that image data,
+
+752
+00:32:09,901 --> 00:32:11,033
+inflate your bitmap
+
+753
+00:32:11,033 --> 00:32:12,968
+that you're gonna
+put onscreen.
+
+754
+00:32:12,968 --> 00:32:14,834
+And then, you know,
+you can go ahead
+
+755
+00:32:14,834 --> 00:32:16,968
+and discard the--
+the base image data,
+
+756
+00:32:16,968 --> 00:32:18,400
+'cause you no longer
+need it.
+
+757
+00:32:21,434 --> 00:32:24,300
+So the effect of this
+looks fairly small.
+
+758
+00:32:24,300 --> 00:32:28,067
+I reduced about 2%
+of start-up time.
+
+759
+00:32:28,067 --> 00:32:30,100
+But again,
+this is debug time,
+
+760
+00:32:30,100 --> 00:32:31,400
+and this
+is a native method.
+
+761
+00:32:31,400 --> 00:32:34,300
+So it's--
+it resulted in a--
+
+762
+00:32:34,300 --> 00:32:40,133
+a larger real-time
+improvement.
+
+763
+00:32:40,133 --> 00:32:42,834
+The key take-aways here
+are big is beautiful.
+
+764
+00:32:42,834 --> 00:32:44,033
+Go for the target--
+
+765
+00:32:44,033 --> 00:32:45,767
+go for the largest
+targets first.
+
+766
+00:32:45,767 --> 00:32:49,367
+It's the most bang
+for the buck and where--
+
+767
+00:32:49,367 --> 00:32:52,567
+where you'll get furthest
+with your effort.
+
+768
+00:32:52,567 --> 00:32:54,801
+Before leaping
+into the code,
+
+769
+00:32:54,801 --> 00:32:56,934
+especially if it's
+a foreign code base,
+
+770
+00:32:56,934 --> 00:32:58,234
+like this was for me,
+
+771
+00:32:58,234 --> 00:33:01,634
+use what TraceView
+affords you
+
+772
+00:33:01,634 --> 00:33:04,367
+and look at where
+the calls are coming from
+
+773
+00:33:04,367 --> 00:33:07,100
+and also what's executing
+around the call
+
+774
+00:33:07,100 --> 00:33:08,567
+that you're interested in,
+
+775
+00:33:08,567 --> 00:33:10,901
+both on the same thread
+and on different threads,
+
+776
+00:33:10,901 --> 00:33:12,701
+if you need to use that
+to get an idea
+
+777
+00:33:12,701 --> 00:33:15,334
+of what's happening.
+
+778
+00:33:15,334 --> 00:33:18,300
+And finally, three rights
+can make a left.
+
+779
+00:33:18,300 --> 00:33:20,534
+Iterative development
+can lead us places
+
+780
+00:33:20,534 --> 00:33:22,601
+that we didn't
+expect to go.
+
+781
+00:33:22,601 --> 00:33:25,000
+And it's--
+
+782
+00:33:25,000 --> 00:33:26,200
+it's always a good idea
+
+783
+00:33:26,200 --> 00:33:28,000
+to take a step back
+occasionally
+
+784
+00:33:28,000 --> 00:33:30,334
+and see if there's
+a shorter path.
+
+785
+00:33:36,434 --> 00:33:38,501
+So the next little tale
+
+786
+00:33:38,501 --> 00:33:40,434
+I'm going to call
+"Packing Mistakes."
+
+787
+00:33:40,434 --> 00:33:42,834
+So sometimes when we're--
+
+788
+00:33:42,834 --> 00:33:44,167
+when we're going about
+on our travels,
+
+789
+00:33:44,167 --> 00:33:46,000
+we repack our suitcase
+
+790
+00:33:46,000 --> 00:33:47,801
+and some things
+don't get ordered
+
+791
+00:33:47,801 --> 00:33:51,667
+the way
+we expected them to.
+
+792
+00:33:51,667 --> 00:33:55,834
+And I started out looking--
+looking for a problem.
+
+793
+00:33:55,834 --> 00:33:58,100
+I had sorted by
+exclusive execution.
+
+794
+00:33:58,100 --> 00:34:01,467
+I've--I'd seen what was
+in the execution timeline,
+
+795
+00:34:01,467 --> 00:34:03,767
+so now I'm gonna sort
+by inclusive.
+
+796
+00:34:03,767 --> 00:34:05,701
+So this will identify--
+
+797
+00:34:05,701 --> 00:34:08,267
+this will sort by
+the most expensive methods,
+
+798
+00:34:08,267 --> 00:34:11,734
+the most expensive
+methods
+
+799
+00:34:11,734 --> 00:34:13,501
+in total time
+for the system.
+
+800
+00:34:13,501 --> 00:34:16,000
+And this amounts
+to something like
+
+801
+00:34:16,000 --> 00:34:19,300
+a breadth-first traversal
+of your call tree.
+
+802
+00:34:19,300 --> 00:34:21,667
+So you can imagine
+if you have a tree
+
+803
+00:34:21,667 --> 00:34:23,634
+outlining all the calls
+that are made,
+
+804
+00:34:23,634 --> 00:34:25,767
+the most expensive ones
+are going to be at the top.
+
+805
+00:34:25,767 --> 00:34:28,734
+The parents will always be
+greater than their children.
+
+806
+00:34:28,734 --> 00:34:31,634
+It's not precisely
+what it is,
+
+807
+00:34:31,634 --> 00:34:34,133
+but it's along those lines.
+
+808
+00:34:34,133 --> 00:34:36,367
+So in this case, again,
+I'm gonna sort
+
+809
+00:34:36,367 --> 00:34:37,868
+by inclusive execution.
+
+810
+00:34:37,868 --> 00:34:40,334
+And I'll see some stuff
+that I really can't avoid
+
+811
+00:34:40,334 --> 00:34:44,901
+related to strings
+and the system and whatnot.
+
+812
+00:34:44,901 --> 00:34:47,133
+And then
+there are some things
+
+813
+00:34:47,133 --> 00:34:49,901
+that maybe I can't avoid,
+but there are lots of calls.
+
+814
+00:34:49,901 --> 00:34:50,968
+And I want
+to look for something
+
+815
+00:34:50,968 --> 00:34:52,400
+that only has a few calls.
+
+816
+00:34:52,400 --> 00:34:55,634
+So luckily, I see
+this GetNewsItemsJSON,
+
+817
+00:34:55,634 --> 00:34:57,334
+which only has one call,
+
+818
+00:34:57,334 --> 00:34:59,767
+and it's taking
+a lot of my time.
+
+819
+00:34:59,767 --> 00:35:01,834
+So what's--what's making
+up the time
+
+820
+00:35:01,834 --> 00:35:03,400
+in this method?
+
+821
+00:35:03,400 --> 00:35:06,067
+Okay, so I'm fetching
+something from the network,
+
+822
+00:35:06,067 --> 00:35:08,534
+and it's talking about
+a result being available,
+
+823
+00:35:08,534 --> 00:35:10,133
+which is great because
+I'm kind of already
+
+824
+00:35:10,133 --> 00:35:12,100
+familiar with this code.
+
+825
+00:35:12,100 --> 00:35:15,934
+So I can click down.
+
+826
+00:35:15,934 --> 00:35:20,100
+And see who else's method
+is calling.
+
+827
+00:35:20,100 --> 00:35:22,534
+So again, it's something
+about adding an item
+
+828
+00:35:22,534 --> 00:35:24,934
+to the cache.
+
+829
+00:35:24,934 --> 00:35:30,033
+And this is called
+from a network fetch.
+
+830
+00:35:30,033 --> 00:35:32,100
+And I noticed this callback
+result--
+
+831
+00:35:32,100 --> 00:35:35,634
+result available
+from the network fetch.
+
+832
+00:35:35,634 --> 00:35:37,467
+So at this point,
+I have a rough idea
+
+833
+00:35:37,467 --> 00:35:38,701
+of what's going on.
+
+834
+00:35:38,701 --> 00:35:40,467
+I'm fetching something
+from the network
+
+835
+00:35:40,467 --> 00:35:42,000
+on one thread,
+
+836
+00:35:42,000 --> 00:35:45,901
+so I've probably got kind of
+a network worker thread going.
+
+837
+00:35:45,901 --> 00:35:47,400
+And once I've got that,
+
+838
+00:35:47,400 --> 00:35:49,601
+I call some callback method
+that's resulting
+
+839
+00:35:49,601 --> 00:35:56,334
+in the data being added
+to the cache.
+
+840
+00:35:56,334 --> 00:35:57,667
+And taking a look
+at the code,
+
+841
+00:35:57,667 --> 00:35:59,133
+this is more or less
+what I found.
+
+842
+00:35:59,133 --> 00:36:03,501
+So what I've got
+is I'm starting a new array,
+
+843
+00:36:03,501 --> 00:36:05,133
+which is going to be
+my list
+
+844
+00:36:05,133 --> 00:36:08,067
+of processed
+or downloaded items.
+
+845
+00:36:08,067 --> 00:36:10,200
+And then I've got a list
+called source
+
+846
+00:36:10,200 --> 00:36:11,434
+that I'm reading.
+
+847
+00:36:11,434 --> 00:36:13,200
+So I'm downloading
+each of these items,
+
+848
+00:36:13,200 --> 00:36:14,968
+one at a time,
+then adding them to the list
+
+849
+00:36:14,968 --> 00:36:16,467
+of things
+that's been downloaded.
+
+850
+00:36:16,467 --> 00:36:19,133
+And then I'm doing
+a callback on them to say,
+
+851
+00:36:19,133 --> 00:36:20,734
+"Okay, your data's ready.
+
+852
+00:36:20,734 --> 00:36:22,100
+Do whatever you want
+with it."
+
+853
+00:36:22,100 --> 00:36:25,334
+In this case, it's gonna be
+added to the cache.
+
+854
+00:36:25,334 --> 00:36:27,334
+What immediately strikes me
+as odd, though,
+
+855
+00:36:27,334 --> 00:36:29,367
+is that I'm adding
+the items
+
+856
+00:36:29,367 --> 00:36:31,734
+that have been downloaded
+to a list.
+
+857
+00:36:31,734 --> 00:36:33,133
+And I'm
+processing this list
+
+858
+00:36:33,133 --> 00:36:35,400
+each time I'm downloading
+an item.
+
+859
+00:36:35,400 --> 00:36:36,934
+Meaning the first item
+in the list
+
+860
+00:36:36,934 --> 00:36:38,868
+is going to be
+processed "N" times,
+
+861
+00:36:38,868 --> 00:36:40,467
+if there are "N" items
+in the list.
+
+862
+00:36:40,467 --> 00:36:42,067
+And the second one,
+"N" minus one,
+
+863
+00:36:42,067 --> 00:36:44,367
+and et cetera, et cetera.
+
+864
+00:36:44,367 --> 00:36:45,567
+So this seems wrong.
+
+865
+00:36:45,567 --> 00:36:47,167
+It's possible
+there's a scenario
+
+866
+00:36:47,167 --> 00:36:48,267
+where this is right.
+
+867
+00:36:48,267 --> 00:36:50,200
+But it seems odd.
+
+868
+00:36:50,200 --> 00:36:51,501
+And I look back
+over the code,
+
+869
+00:36:51,501 --> 00:36:52,834
+and, indeed,
+this was odd
+
+870
+00:36:52,834 --> 00:36:54,934
+and a mistake
+that was added
+
+871
+00:36:54,934 --> 00:36:58,267
+when the exception handling
+code was refactored.
+
+872
+00:36:58,267 --> 00:37:01,033
+So the simple fix
+is to move this
+
+873
+00:37:01,033 --> 00:37:02,968
+outside of the fetch loop
+
+874
+00:37:02,968 --> 00:37:05,334
+and have it run after.
+
+875
+00:37:05,334 --> 00:37:07,901
+So obviously, this results
+in fewer calls
+
+876
+00:37:07,901 --> 00:37:09,734
+to the callback methods.
+
+877
+00:37:09,734 --> 00:37:12,367
+And it decreased
+start-up time by about 5%.
+
+878
+00:37:12,367 --> 00:37:14,968
+And this time,
+it's really about 5%.
+
+879
+00:37:19,934 --> 00:37:21,200
+And--oh, wrong way.
+
+880
+00:37:24,567 --> 00:37:28,033
+So this, you know, this story
+taken with the others,
+
+881
+00:37:28,033 --> 00:37:30,601
+I just want to say
+that there's no single angle
+
+882
+00:37:30,601 --> 00:37:32,968
+of attack in looking at--
+
+883
+00:37:32,968 --> 00:37:34,100
+looking at problems
+
+884
+00:37:34,100 --> 00:37:35,934
+you may be experiencing
+with your code.
+
+885
+00:37:35,934 --> 00:37:37,801
+There are multiple angles,
+certainly,
+
+886
+00:37:37,801 --> 00:37:39,100
+from the performance
+perspective,
+
+887
+00:37:39,100 --> 00:37:41,067
+and they're all valuable.
+
+888
+00:37:41,067 --> 00:37:43,667
+And also that, sometimes,
+when you're...
+
+889
+00:37:43,667 --> 00:37:45,667
+looking to improve
+your performance,
+
+890
+00:37:45,667 --> 00:37:49,467
+you discover things--
+other things along the way.
+
+891
+00:37:49,467 --> 00:37:50,868
+In this instance,
+
+892
+00:37:50,868 --> 00:37:53,067
+this bug wasn't causing
+a crash in the program,
+
+893
+00:37:53,067 --> 00:37:55,868
+but what if I was now
+suddenly fetching
+
+894
+00:37:55,868 --> 00:37:57,267
+100 news items
+
+895
+00:37:57,267 --> 00:37:59,267
+instead of the five or six?
+
+896
+00:37:59,267 --> 00:38:02,734
+And this callback was being
+executed, you know,
+
+897
+00:38:02,734 --> 00:38:05,334
+that many times?
+
+898
+00:38:05,334 --> 00:38:07,934
+So it revealed a bug
+that could have been
+
+899
+00:38:07,934 --> 00:38:09,267
+tomorrow's crash.
+
+900
+00:38:17,334 --> 00:38:19,467
+Next in
+my traveler's tales is--
+
+901
+00:38:19,467 --> 00:38:22,701
+I'm going to talk about
+consolidating containers.
+
+902
+00:38:22,701 --> 00:38:24,033
+So when you're traveling,
+
+903
+00:38:24,033 --> 00:38:26,934
+sometimes you end up
+with a lot of little suitcases,
+
+904
+00:38:26,934 --> 00:38:30,033
+and it's time to turn them
+into one big one.
+
+905
+00:38:30,033 --> 00:38:33,334
+And so we're gonna
+look at HierarchyViewer here
+
+906
+00:38:33,334 --> 00:38:38,133
+and analyzing a UI
+that's become overly complex.
+
+907
+00:38:38,133 --> 00:38:41,934
+And I just want to say again
+that UI is code too.
+
+908
+00:38:41,934 --> 00:38:44,133
+We often
+don't think of it that way
+
+909
+00:38:44,133 --> 00:38:47,534
+because it's specified
+in Android and XML.
+
+910
+00:38:47,534 --> 00:38:50,534
+But it is on the same level
+as the Java code
+
+911
+00:38:50,534 --> 00:38:52,267
+that we're writing
+for the platform.
+
+912
+00:38:55,267 --> 00:38:57,033
+This is a little bit
+of the UI
+
+913
+00:38:57,033 --> 00:38:59,300
+from the Google
+Scoreboard application
+
+914
+00:38:59,300 --> 00:39:00,367
+that I was looking at,
+
+915
+00:39:00,367 --> 00:39:01,667
+and it seems pretty simple.
+
+916
+00:39:01,667 --> 00:39:03,501
+I've got two rows of data,
+
+917
+00:39:03,501 --> 00:39:06,133
+and then
+some other data
+
+918
+00:39:06,133 --> 00:39:08,801
+on the--
+on the left-hand side.
+
+919
+00:39:08,801 --> 00:39:10,501
+Or, I'm sorry,
+on the right-hand side.
+
+920
+00:39:10,501 --> 00:39:14,701
+It's not quite in rows.
+
+921
+00:39:14,701 --> 00:39:18,234
+So it turns out this has
+a rather complex view tree.
+
+922
+00:39:18,234 --> 00:39:21,234
+And...it doesn't seem
+like it really needs to.
+
+923
+00:39:21,234 --> 00:39:23,834
+And you can see a couple
+of the cases
+
+924
+00:39:23,834 --> 00:39:25,534
+that I was talking about
+here before,
+
+925
+00:39:25,534 --> 00:39:27,868
+where I've got,
+you know, clones
+
+926
+00:39:27,868 --> 00:39:29,234
+where a linear layout
+
+927
+00:39:29,234 --> 00:39:30,868
+has a linear layout
+that has a child or, you know,
+
+928
+00:39:30,868 --> 00:39:33,667
+infertile parents.
+
+929
+00:39:33,667 --> 00:39:35,267
+And, looking at this data,
+I thought,
+
+930
+00:39:35,267 --> 00:39:37,934
+"Surely this can be turned
+into a relative layout.
+
+931
+00:39:37,934 --> 00:39:41,834
+Surely this can be made
+less complex."
+
+932
+00:39:41,834 --> 00:39:43,267
+The first step to doing that
+
+933
+00:39:43,267 --> 00:39:46,601
+is defining
+the relationships that--
+
+934
+00:39:46,601 --> 00:39:49,667
+that exist in the UI
+between the data.
+
+935
+00:39:49,667 --> 00:39:52,601
+And I have to give
+a proviso on this slide.
+
+936
+00:39:52,601 --> 00:39:55,567
+It was having lots of fun
+with keynote transitions.
+
+937
+00:39:55,567 --> 00:39:58,434
+So I used as many
+of the cool ones as I could.
+
+938
+00:39:58,434 --> 00:40:01,167
+So just bear with me.
+
+939
+00:40:01,167 --> 00:40:03,200
+So the first--the element
+that I'm gonna start with
+
+940
+00:40:03,200 --> 00:40:05,267
+is in the top left.
+
+941
+00:40:05,267 --> 00:40:06,534
+And there's nothing here,
+
+942
+00:40:06,534 --> 00:40:08,200
+because we're looking
+at a baseball score.
+
+943
+00:40:08,200 --> 00:40:09,901
+But if this were something
+like tennis,
+
+944
+00:40:09,901 --> 00:40:11,501
+there would be
+a player ranking
+
+945
+00:40:11,501 --> 00:40:13,834
+or something like that
+there.
+
+946
+00:40:13,834 --> 00:40:16,067
+So I'm gonna define
+this little piece of the UI
+
+947
+00:40:16,067 --> 00:40:19,234
+simply to align
+with the left-hand side
+
+948
+00:40:19,234 --> 00:40:22,167
+and the top of its container.
+
+949
+00:40:22,167 --> 00:40:25,100
+That's its relationship
+to the container.
+
+950
+00:40:25,100 --> 00:40:26,968
+My first fun transition.
+
+951
+00:40:26,968 --> 00:40:30,367
+And then the team name
+is going--
+
+952
+00:40:30,367 --> 00:40:32,834
+its relationship
+to this area
+
+953
+00:40:32,834 --> 00:40:34,601
+is that it's
+to the right of it,
+
+954
+00:40:34,601 --> 00:40:36,834
+and also aligned with the top
+of its container.
+
+955
+00:40:36,834 --> 00:40:40,567
+So to be part
+of this top row.
+
+956
+00:40:40,567 --> 00:40:43,667
+Now, the next UI element
+is actually
+
+957
+00:40:43,667 --> 00:40:45,901
+not strictly related
+to the team name.
+
+958
+00:40:45,901 --> 00:40:47,133
+It is the score
+for the team,
+
+959
+00:40:47,133 --> 00:40:50,167
+but this is actually
+related to data
+
+960
+00:40:50,167 --> 00:40:51,300
+for the game.
+
+961
+00:40:51,300 --> 00:40:53,067
+And it's an important,
+you know,
+
+962
+00:40:53,067 --> 00:40:55,801
+little distinction
+about this UI,
+
+963
+00:40:55,801 --> 00:40:57,934
+that the right-hand side
+is concerned with the game
+
+964
+00:40:57,934 --> 00:40:59,234
+and the left-hand side
+
+965
+00:40:59,234 --> 00:41:03,334
+is concerned
+with the team itself.
+
+966
+00:41:03,334 --> 00:41:05,734
+So this is specified
+as being related
+
+967
+00:41:05,734 --> 00:41:08,200
+to the top
+of the container again,
+
+968
+00:41:08,200 --> 00:41:10,501
+but this time, it's related
+to the right-hand side
+
+969
+00:41:10,501 --> 00:41:13,033
+of its container instead
+of the left-hand side,
+
+970
+00:41:13,033 --> 00:41:15,934
+with a generous
+padding margin
+
+971
+00:41:15,934 --> 00:41:19,300
+to allow room for other--
+other elements.
+
+972
+00:41:19,300 --> 00:41:21,434
+And along the bottom here,
+
+973
+00:41:21,434 --> 00:41:23,834
+you can see
+this is pretty similar,
+
+974
+00:41:23,834 --> 00:41:26,801
+with cool transitions.
+
+975
+00:41:26,801 --> 00:41:29,167
+But something I'll note
+is that
+
+976
+00:41:29,167 --> 00:41:31,000
+I've specified
+the second row.
+
+977
+00:41:31,000 --> 00:41:33,734
+I want to make sure
+that it is horizontally
+
+978
+00:41:33,734 --> 00:41:35,000
+aligned with the top row.
+
+979
+00:41:35,000 --> 00:41:37,234
+So I've added
+other specifications
+
+980
+00:41:37,234 --> 00:41:40,133
+to make sure that
+the left-hand boundaries
+
+981
+00:41:40,133 --> 00:41:43,801
+of the UI elements
+are aligned.
+
+982
+00:41:43,801 --> 00:41:49,434
+More stuff
+that you'd expect.
+
+983
+00:41:49,434 --> 00:41:51,167
+And then, like I said,
+
+984
+00:41:51,167 --> 00:41:52,801
+this data
+on the right-hand side
+
+985
+00:41:52,801 --> 00:41:54,634
+is really related
+to the game itself,
+
+986
+00:41:54,634 --> 00:41:55,934
+and not the team.
+
+987
+00:41:55,934 --> 00:42:00,234
+So this score stat--
+or the score detail area,
+
+988
+00:42:00,234 --> 00:42:01,968
+which is, you know,
+who's on base,
+
+989
+00:42:01,968 --> 00:42:05,701
+is now defined
+in a relationship
+
+990
+00:42:05,701 --> 00:42:07,234
+to the score status,
+
+991
+00:42:07,234 --> 00:42:10,467
+which is what inning we're in
+and the count.
+
+992
+00:42:10,467 --> 00:42:12,801
+So now that I've defined
+all these relationships,
+
+993
+00:42:12,801 --> 00:42:16,367
+I can go and codify this
+in XML.
+
+994
+00:42:16,367 --> 00:42:18,434
+And the great thing is
+that I went from a hierarchy
+
+995
+00:42:18,434 --> 00:42:19,467
+that looks like this--
+
+996
+00:42:19,467 --> 00:42:21,434
+it's five levels deep--
+
+997
+00:42:21,434 --> 00:42:23,400
+to a hierarchy
+that looks like this.
+
+998
+00:42:23,400 --> 00:42:25,968
+One level deep...
+
+999
+00:42:25,968 --> 00:42:27,601
+in terms of HierarchyViewer,
+
+1000
+00:42:27,601 --> 00:42:29,667
+something
+that's just beautiful.
+
+1001
+00:42:29,667 --> 00:42:32,000
+And...
+
+1002
+00:42:32,000 --> 00:42:35,300
+now, you may
+be asking why.
+
+1003
+00:42:35,300 --> 00:42:37,467
+It looks the same now
+as it did before.
+
+1004
+00:42:37,467 --> 00:42:41,467
+So what's the difference?
+Who cares?
+
+1005
+00:42:41,467 --> 00:42:44,100
+Well, design
+flatter hierarchies
+
+1006
+00:42:44,100 --> 00:42:46,501
+for what I call
+aerodynamic performance.
+
+1007
+00:42:46,501 --> 00:42:48,100
+The UI will draw faster.
+
+1008
+00:42:48,100 --> 00:42:50,601
+In this case,
+the drawing, I think,
+
+1009
+00:42:50,601 --> 00:42:54,334
+improved by around 7%.
+
+1010
+00:42:54,334 --> 00:42:56,901
+And also, RelativeLayouts,
+when you can use them,
+
+1011
+00:42:56,901 --> 00:42:59,501
+have a lot of other
+ancillary benefits.
+
+1012
+00:42:59,501 --> 00:43:02,033
+One, they adapt better
+to their environment.
+
+1013
+00:43:02,033 --> 00:43:04,200
+As the container,
+you know,
+
+1014
+00:43:04,200 --> 00:43:07,667
+as the container grows
+for these UI elements,
+
+1015
+00:43:07,667 --> 00:43:10,968
+the elements
+inside the UI
+
+1016
+00:43:10,968 --> 00:43:13,334
+will just
+automatically adapt.
+
+1017
+00:43:13,334 --> 00:43:15,667
+And secondly,
+using RelativeLayout
+
+1018
+00:43:15,667 --> 00:43:17,067
+really makes you think about:
+
+1019
+00:43:17,067 --> 00:43:19,267
+What are the relationships
+in my data?
+
+1020
+00:43:19,267 --> 00:43:21,467
+How is my UI related?
+
+1021
+00:43:21,467 --> 00:43:24,167
+You know, where do these
+pieces of data belong?
+
+1022
+00:43:24,167 --> 00:43:26,868
+And it's a great, you know,
+and useful exercise
+
+1023
+00:43:26,868 --> 00:43:30,234
+to go through that.
+
+1024
+00:43:30,234 --> 00:43:31,734
+So key takeaways:
+
+1025
+00:43:31,734 --> 00:43:33,501
+Layouts are code too,
+
+1026
+00:43:33,501 --> 00:43:37,200
+and they evolve and are
+subject to all the same
+
+1027
+00:43:37,200 --> 00:43:40,567
+necessarily rethinks
+as other code.
+
+1028
+00:43:40,567 --> 00:43:44,267
+And also that LinearLayouts
+are almost seductive,
+
+1029
+00:43:44,267 --> 00:43:45,501
+in a way.
+
+1030
+00:43:45,501 --> 00:43:49,267
+They're simple to visualize
+and deal with.
+
+1031
+00:43:49,267 --> 00:43:50,701
+But they're also overused,
+
+1032
+00:43:50,701 --> 00:43:54,734
+and I think we at Google have
+to take some responsibility
+
+1033
+00:43:54,734 --> 00:43:55,934
+for this, actually.
+
+1034
+00:43:55,934 --> 00:43:57,934
+Almost all of our examples
+
+1035
+00:43:57,934 --> 00:43:59,801
+are written
+with LinearLayouts,
+
+1036
+00:43:59,801 --> 00:44:01,868
+and we should probably
+change that to encourage
+
+1037
+00:44:01,868 --> 00:44:05,901
+developers to use
+other layouts.
+
+1038
+00:44:05,901 --> 00:44:09,033
+And finally, because
+layouts are code,
+
+1039
+00:44:09,033 --> 00:44:10,367
+they're going
+to get overgrown.
+
+1040
+00:44:10,367 --> 00:44:12,901
+They're going to evolve
+and kind of turn into
+
+1041
+00:44:12,901 --> 00:44:14,968
+mutant monsters sometimes.
+
+1042
+00:44:14,968 --> 00:44:17,734
+So take a minute
+to tame them.
+
+1043
+00:44:22,801 --> 00:44:24,868
+Finally, I want to go back
+to something
+
+1044
+00:44:24,868 --> 00:44:27,067
+from earlier
+in the presentation.
+
+1045
+00:44:27,067 --> 00:44:30,067
+I'm gonna label it
+"squeaky wheels" this time.
+
+1046
+00:44:30,067 --> 00:44:33,100
+So if something's being noisy
+in logcat,
+
+1047
+00:44:33,100 --> 00:44:34,634
+there might be
+a good reason for it,
+
+1048
+00:44:34,634 --> 00:44:37,267
+and there might be something
+that needs to be fixed.
+
+1049
+00:44:37,267 --> 00:44:43,067
+So this was for some code
+that I was using...
+
+1050
+00:44:43,067 --> 00:44:45,467
+for an internal little
+toy application
+
+1051
+00:44:45,467 --> 00:44:47,300
+that I was writing.
+
+1052
+00:44:47,300 --> 00:44:50,000
+And it was taking
+much longer than I expected.
+
+1053
+00:44:50,000 --> 00:44:51,767
+And I found out
+that it was mostly due
+
+1054
+00:44:51,767 --> 00:44:53,868
+to garbage collection.
+
+1055
+00:44:53,868 --> 00:44:57,701
+To my rescue came a part
+of DDMS
+
+1056
+00:44:57,701 --> 00:45:00,033
+that you can use
+in the stand-alone version
+
+1057
+00:45:00,033 --> 00:45:02,167
+called Allocation Tracker.
+
+1058
+00:45:02,167 --> 00:45:05,067
+So it does very much
+what it--
+
+1059
+00:45:05,067 --> 00:45:06,367
+what the name indicates.
+
+1060
+00:45:06,367 --> 00:45:07,834
+It will track
+memory allocations
+
+1061
+00:45:07,834 --> 00:45:10,434
+and tell you
+where they came from.
+
+1062
+00:45:10,434 --> 00:45:13,501
+Just select your process
+in the left-hand side of DDMS,
+
+1063
+00:45:13,501 --> 00:45:15,367
+which is not shown here.
+
+1064
+00:45:15,367 --> 00:45:18,067
+And then click
+"start tracking."
+
+1065
+00:45:18,067 --> 00:45:20,367
+And then get allocations
+when you want to look
+
+1066
+00:45:20,367 --> 00:45:24,000
+at the allocations
+that have been made.
+
+1067
+00:45:24,000 --> 00:45:26,868
+And this is what I saw.
+
+1068
+00:45:26,868 --> 00:45:28,234
+A bunch of allocations,
+
+1069
+00:45:28,234 --> 00:45:31,133
+all from the exact,
+same place in my program...
+
+1070
+00:45:31,133 --> 00:45:34,334
+where I was reading
+a URL.
+
+1071
+00:45:34,334 --> 00:45:36,200
+And what I discovered
+when I went back
+
+1072
+00:45:36,200 --> 00:45:37,968
+and looked at my code
+
+1073
+00:45:37,968 --> 00:45:42,200
+was that I was using code
+
+1074
+00:45:42,200 --> 00:45:45,067
+that I'd imported
+from another program.
+
+1075
+00:45:45,067 --> 00:45:46,968
+A much simpler program,
+
+1076
+00:45:46,968 --> 00:45:49,434
+very, very specific purpose.
+
+1077
+00:45:49,434 --> 00:45:50,901
+And so what I'm doing here
+
+1078
+00:45:50,901 --> 00:45:52,734
+is I'm--I'm opening a URL
+
+1079
+00:45:52,734 --> 00:45:55,234
+and I'm reading it,
+chunk by chunk--
+
+1080
+00:45:55,234 --> 00:45:57,267
+in small chunks,
+384 bytes.
+
+1081
+00:45:57,267 --> 00:45:59,334
+And each time I read,
+I add a little more
+
+1082
+00:45:59,334 --> 00:46:02,234
+to my response buffer
+that I'm reading.
+
+1083
+00:46:02,234 --> 00:46:04,868
+So...
+
+1084
+00:46:04,868 --> 00:46:07,267
+this was fine
+for its original intent.
+
+1085
+00:46:07,267 --> 00:46:09,767
+I was only intending
+that this read
+
+1086
+00:46:09,767 --> 00:46:12,901
+a couple kilobyte responses.
+
+1087
+00:46:12,901 --> 00:46:16,200
+But it had outgrown
+its usefulness in this case,
+
+1088
+00:46:16,200 --> 00:46:19,000
+because I was reading
+much larger ones.
+
+1089
+00:46:19,000 --> 00:46:21,234
+The fixes, you know,
+the fix was pretty simple.
+
+1090
+00:46:21,234 --> 00:46:24,000
+First of all, I'm reading
+much larger responses,
+
+1091
+00:46:24,000 --> 00:46:26,901
+so try to read
+in larger chunks.
+
+1092
+00:46:26,901 --> 00:46:30,167
+Secondly, take
+all the chunks together
+
+1093
+00:46:30,167 --> 00:46:33,000
+and then assemble them
+into one, full response
+
+1094
+00:46:33,000 --> 00:46:36,234
+at the end,
+and return that.
+
+1095
+00:46:36,234 --> 00:46:37,868
+And the result was,
+you know, my program
+
+1096
+00:46:37,868 --> 00:46:39,000
+got quite a bit faster
+
+1097
+00:46:39,000 --> 00:46:40,634
+because I wasn't
+spending all this time
+
+1098
+00:46:40,634 --> 00:46:45,000
+churning through memory.
+
+1099
+00:46:45,000 --> 00:46:48,000
+And the key takeaway
+that, you know,
+
+1100
+00:46:48,000 --> 00:46:49,100
+key takeaways here
+
+1101
+00:46:49,100 --> 00:46:52,467
+are that reused
+or prototype code,
+
+1102
+00:46:52,467 --> 00:46:54,801
+is great
+for its purpose.
+
+1103
+00:46:54,801 --> 00:46:57,901
+Leave yourself a to-do
+in Eclipse
+
+1104
+00:46:57,901 --> 00:47:00,901
+to change that later on.
+
+1105
+00:47:00,901 --> 00:47:03,167
+And also, if you know
+that your code
+
+1106
+00:47:03,167 --> 00:47:07,200
+was only designed to operate
+within certain tolerances,
+
+1107
+00:47:07,200 --> 00:47:09,467
+use some log messages
+or maybe even go as far
+
+1108
+00:47:09,467 --> 00:47:11,267
+as throwing an exception
+
+1109
+00:47:11,267 --> 00:47:17,467
+if the code is used on--
+beyond its design tolerances.
+
+1110
+00:47:17,467 --> 00:47:20,868
+And so those
+are my traveler's tales,
+
+1111
+00:47:20,868 --> 00:47:23,067
+and hopefully
+a diverse tour
+
+1112
+00:47:23,067 --> 00:47:25,067
+of the sorts of things
+that you can do
+
+1113
+00:47:25,067 --> 00:47:27,868
+with just a few
+very powerful tools
+
+1114
+00:47:27,868 --> 00:47:30,200
+in the Android SDK.
+
+1115
+00:47:30,200 --> 00:47:34,667
+So I again encourage you
+to exploit those tools heavily
+
+1116
+00:47:34,667 --> 00:47:37,667
+to build better programs.
+
+1117
+00:47:37,667 --> 00:47:42,234
+Now...I've been talking
+for 47 minutes and 33 seconds.
+
+1118
+00:47:42,234 --> 00:47:45,868
+So...pop quiz
+for you guys.
+
+1119
+00:47:45,868 --> 00:47:48,167
+So if you think you know
+the answer,
+
+1120
+00:47:48,167 --> 00:47:50,801
+we will dispense
+with the microphones.
+
+1121
+00:47:50,801 --> 00:47:54,767
+Just raise your hand
+and I'll, you know, point.
+
+1122
+00:47:54,767 --> 00:47:57,501
+I was looking at some code
+that I'd written,
+
+1123
+00:47:57,501 --> 00:47:59,667
+and I saw this.
+
+1124
+00:47:59,667 --> 00:48:01,334
+Stack overflow error.
+
+1125
+00:48:01,334 --> 00:48:02,934
+So very curious.
+
+1126
+00:48:02,934 --> 00:48:04,734
+It sort of appeared
+out of nowhere.
+
+1127
+00:48:04,734 --> 00:48:06,334
+Couldn't figure out why.
+
+1128
+00:48:06,334 --> 00:48:10,601
+And it went on
+and on and on.
+
+1129
+00:48:10,601 --> 00:48:15,934
+And so the question
+is what's going on here?
+
+1130
+00:48:15,934 --> 00:48:19,133
+Ideas?
+
+1131
+00:48:19,133 --> 00:48:22,734
+So the suggestion
+was the UI is too complex.
+
+1132
+00:48:22,734 --> 00:48:25,133
+And this is indeed
+the answer.
+
+1133
+00:48:25,133 --> 00:48:26,934
+Now, I've only, you know,
+
+1134
+00:48:26,934 --> 00:48:29,534
+this is a little bit
+of a trick question,
+
+1135
+00:48:29,534 --> 00:48:30,934
+because I didn't give you
+direct tools
+
+1136
+00:48:30,934 --> 00:48:33,133
+in this presentation to--
+to figure this out.
+
+1137
+00:48:33,133 --> 00:48:35,734
+But the first place
+to start with with this
+
+1138
+00:48:35,734 --> 00:48:36,934
+would have been
+HierarchyViewer.
+
+1139
+00:48:36,934 --> 00:48:39,133
+And this
+is actually something
+
+1140
+00:48:39,133 --> 00:48:41,133
+that many developers
+have experienced
+
+1141
+00:48:41,133 --> 00:48:42,734
+as we're making
+the transition
+
+1142
+00:48:42,734 --> 00:48:44,734
+from 1.1 to Cupcake,
+
+1143
+00:48:44,734 --> 00:48:47,734
+is that we've changed
+the UI layout code,
+
+1144
+00:48:47,734 --> 00:48:51,534
+which can result in...
+some view hierarchies
+
+1145
+00:48:51,534 --> 00:48:54,901
+that were exceedingly deep...
+
+1146
+00:48:54,901 --> 00:49:01,200
+no longer working
+in Cupcake.
+
+1147
+00:49:01,200 --> 00:49:04,000
+So the next quiz is...
+
+1148
+00:49:04,000 --> 00:49:07,400
+let's say that I have
+these two UIs.
+
+1149
+00:49:07,400 --> 00:49:10,200
+And they look the same.
+
+1150
+00:49:10,200 --> 00:49:12,334
+But they perform
+somewhat differently.
+
+1151
+00:49:12,334 --> 00:49:14,501
+You'll see that the list
+on the left
+
+1152
+00:49:14,501 --> 00:49:18,267
+is quickly outpacing
+the list on the right.
+
+1153
+00:49:23,000 --> 00:49:25,000
+And so the question is,
+
+1154
+00:49:25,000 --> 00:49:26,400
+well, one, either,
+
+1155
+00:49:26,400 --> 00:49:28,601
+"Where should I start
+the investigation
+
+1156
+00:49:28,601 --> 00:49:30,000
+of what's going on?"
+
+1157
+00:49:30,000 --> 00:49:32,200
+Or two, directly,
+you know,
+
+1158
+00:49:32,200 --> 00:49:33,601
+"What's going on here?"
+
+1159
+00:49:33,601 --> 00:49:34,801
+So let's start, you know,
+
+1160
+00:49:34,801 --> 00:49:37,334
+"Where could I look
+for the investigation?"
+
+1161
+00:49:41,868 --> 00:49:45,000
+Yes?
+
+1162
+00:49:45,000 --> 00:49:47,133
+So the questions was:
+What kind of adapter
+
+1163
+00:49:47,133 --> 00:49:48,367
+am I using
+for my list view?
+
+1164
+00:49:48,367 --> 00:49:54,968
+It happens to be
+an array adapter here.
+
+1165
+00:49:54,968 --> 00:49:58,701
+Sorry.
+
+1166
+00:49:58,701 --> 00:50:00,567
+So the question
+was about the images
+
+1167
+00:50:00,567 --> 00:50:01,767
+for the thumbnails.
+
+1168
+00:50:01,767 --> 00:50:04,801
+The images are actually
+all the same.
+
+1169
+00:50:04,801 --> 00:50:07,033
+And so there's no--
+
+1170
+00:50:07,033 --> 00:50:10,834
+there's no overhead
+for those, essentially.
+
+1171
+00:50:10,834 --> 00:50:13,634
+man: How complicated
+is list item layout?
+
+1172
+00:50:13,634 --> 00:50:14,901
+Mattson: The question was
+how complicated
+
+1173
+00:50:14,901 --> 00:50:16,200
+is my list item layout.
+
+1174
+00:50:16,200 --> 00:50:19,467
+It's not
+that complicated.
+
+1175
+00:50:19,467 --> 00:50:20,801
+I made it complicated enough
+
+1176
+00:50:20,801 --> 00:50:24,200
+to give a nice differential
+for this--
+
+1177
+00:50:24,200 --> 00:50:25,334
+for this example.
+
+1178
+00:50:25,334 --> 00:50:27,567
+But I can tell you
+that the layout--
+
+1179
+00:50:27,567 --> 00:50:29,300
+the layout is defined
+in XML
+
+1180
+00:50:29,300 --> 00:50:33,167
+and is identical
+for the left and right.
+
+1181
+00:50:33,167 --> 00:50:34,267
+Yep.
+
+1182
+00:50:38,200 --> 00:50:40,000
+The question was
+am I updating all the rows
+
+1183
+00:50:40,000 --> 00:50:41,100
+instead of just
+the visible,
+
+1184
+00:50:41,100 --> 00:50:44,033
+and the answer is no.
+
+1185
+00:50:44,033 --> 00:50:47,667
+Yeah?
+
+1186
+00:50:47,667 --> 00:50:50,667
+Did I add some debugging code
+and forget to take it out?
+
+1187
+00:50:50,667 --> 00:50:53,567
+That's a really--
+that's a really good guess.
+
+1188
+00:50:53,567 --> 00:50:55,067
+But, no, actually.
+
+1189
+00:50:55,067 --> 00:50:56,634
+It would actually
+be much slower
+
+1190
+00:50:56,634 --> 00:50:58,167
+if that were the case.
+
+1191
+00:50:58,167 --> 00:51:00,334
+Yeah?
+
+1192
+00:51:00,334 --> 00:51:02,000
+Question was
+do I convert views?
+
+1193
+00:51:02,000 --> 00:51:03,334
+And that's the answer: no.
+
+1194
+00:51:03,334 --> 00:51:05,868
+In the right--
+in the right-hand example,
+
+1195
+00:51:05,868 --> 00:51:07,567
+I'm not using
+Convert View.
+
+1196
+00:51:07,567 --> 00:51:10,133
+I'm inflating a new view
+each and every time
+
+1197
+00:51:10,133 --> 00:51:12,234
+my adapter is called.
+
+1198
+00:51:12,234 --> 00:51:14,734
+In the left-hand side,
+I am converting the views.
+
+1199
+00:51:14,734 --> 00:51:19,267
+And the result is that
+the UI is 30% faster.
+
+1200
+00:51:19,267 --> 00:51:22,367
+So, you know,
+this is the solution.
+
+1201
+00:51:22,367 --> 00:51:24,601
+A great place that this
+would have become
+
+1202
+00:51:24,601 --> 00:51:27,234
+pretty readily apparent
+is in TraceView
+
+1203
+00:51:27,234 --> 00:51:29,467
+in the
+in the getView call.
+
+1204
+00:51:29,467 --> 00:51:32,934
+The get view call would have
+been taking a lot longer
+
+1205
+00:51:32,934 --> 00:51:36,534
+on the left-hand side
+than on the right-hand side.
+
+1206
+00:51:36,534 --> 00:51:39,133
+That's the pop quizzes
+that I have for you.
+
+1207
+00:51:39,133 --> 00:51:41,400
+So let my pop quiz commence.
+
+1208
+00:51:41,400 --> 00:51:44,033
+And I will preface this
+by saying a couple of things.
+
+1209
+00:51:44,033 --> 00:51:47,734
+One, if I--if I don't
+know the answer,
+
+1210
+00:51:47,734 --> 00:51:49,667
+I promise to furrow my brow
+thoughtfully,
+
+1211
+00:51:49,667 --> 00:51:52,667
+stroke my chin,
+and get back to you.
+
+1212
+00:51:52,667 --> 00:51:55,067
+Two, please
+use the microphones.
+
+1213
+00:51:55,067 --> 00:51:57,267
+And, three, you know,
+
+1214
+00:51:57,267 --> 00:51:59,267
+if you want to start
+talking amongst yourselves,
+
+1215
+00:51:59,267 --> 00:52:02,534
+if you wouldn't mind just
+taking that out in the hall
+
+1216
+00:52:02,534 --> 00:52:05,734
+so others can hear
+the answers to the questions.
+
+1217
+00:52:05,734 --> 00:52:08,534
+man: Hi, can you use
+those debugging tools
+
+1218
+00:52:08,534 --> 00:52:10,534
+like TraceView
+or HierarchyView
+
+1219
+00:52:10,534 --> 00:52:12,734
+for marketplace apps?
+
+1220
+00:52:12,734 --> 00:52:14,734
+Mattson: I'm sorry?
+For marketplace apps?
+
+1221
+00:52:14,734 --> 00:52:17,133
+man: Yes, apps,
+user-downloaded
+
+1222
+00:52:17,133 --> 00:52:18,234
+from the marketplace.
+
+1223
+00:52:18,234 --> 00:52:21,734
+Mattson: Um...
+
+1224
+00:52:21,734 --> 00:52:25,334
+so I think with Hierarchy--
+
+1225
+00:52:25,334 --> 00:52:27,934
+So the answer
+for HierarchyViewer is no.
+
+1226
+00:52:27,934 --> 00:52:31,334
+I believe the answer
+with TraceView is yes,
+
+1227
+00:52:31,334 --> 00:52:33,534
+because you can turn on
+debugging for the VM
+
+1228
+00:52:33,534 --> 00:52:35,133
+from the command line.
+
+1229
+00:52:35,133 --> 00:52:38,133
+But you may need--
+
+1230
+00:52:38,133 --> 00:52:39,734
+although I guess I'm not
+entirely sure,
+
+1231
+00:52:39,734 --> 00:52:41,734
+because you may actually
+need root access
+
+1232
+00:52:41,734 --> 00:52:46,467
+to turn on debugging
+from the command line.
+
+1233
+00:52:46,467 --> 00:52:47,534
+What's that?
+
+1234
+00:52:47,534 --> 00:52:51,901
+[man speaking indistinctly]
+
+1235
+00:52:51,901 --> 00:52:52,934
+Mattson: Yeah.
+
+1236
+00:52:52,934 --> 00:52:54,834
+So I guess I should say if--
+
+1237
+00:52:54,834 --> 00:52:56,133
+if you have
+a developer phone,
+
+1238
+00:52:56,133 --> 00:52:58,133
+and you're using
+HierarchyViewer
+
+1239
+00:52:58,133 --> 00:52:59,934
+and you're downloading apps
+that aren't forward locked,
+
+1240
+00:52:59,934 --> 00:53:02,534
+then--then, yes,
+you should be able to see it.
+
+1241
+00:53:05,000 --> 00:53:06,200
+Yep.
+
+1242
+00:53:06,200 --> 00:53:08,801
+man: Is there any penalty
+for using the log?
+
+1243
+00:53:08,801 --> 00:53:13,367
+So logcat,
+all of the Log.e, Log.d.
+
+1244
+00:53:13,367 --> 00:53:16,400
+Mattson: I mean, you know,
+no method is free.
+
+1245
+00:53:16,400 --> 00:53:20,200
+But the--
+the overhead for the log
+
+1246
+00:53:20,200 --> 00:53:22,601
+is fairly--
+fairly minimal.
+
+1247
+00:53:22,601 --> 00:53:24,601
+You know,
+a lot of the impact
+
+1248
+00:53:24,601 --> 00:53:27,000
+and reason I ask people
+to be careful
+
+1249
+00:53:27,000 --> 00:53:29,200
+in the information
+that they're putting there
+
+1250
+00:53:29,200 --> 00:53:30,400
+is that it stays
+a meaningful
+
+1251
+00:53:30,400 --> 00:53:32,200
+and useful resource
+for people.
+
+1252
+00:53:32,200 --> 00:53:33,601
+man: Is that something
+you should remove
+
+1253
+00:53:33,601 --> 00:53:36,801
+before releasing
+production code?
+
+1254
+00:53:36,801 --> 00:53:38,801
+Mattson:
+That's up to you,
+
+1255
+00:53:38,801 --> 00:53:39,968
+but it can be--
+it can be useful
+
+1256
+00:53:39,968 --> 00:53:42,400
+to have it out there
+in production code,
+
+1257
+00:53:42,400 --> 00:53:44,000
+I mean, in our
+production devices.
+
+1258
+00:53:44,000 --> 00:53:46,601
+The--you know, our logcat
+messages are on there.
+
+1259
+00:53:46,601 --> 00:53:48,200
+You might want
+to call them down.
+
+1260
+00:53:48,200 --> 00:53:51,000
+But, you know,
+if you can convince a user
+
+1261
+00:53:51,000 --> 00:53:53,801
+to install the SDK
+and connect--
+
+1262
+00:53:53,801 --> 00:53:55,601
+connect it to ADB,
+
+1263
+00:53:55,601 --> 00:53:57,000
+you might get some
+interesting information
+
+1264
+00:53:57,000 --> 00:53:59,000
+about, you know, why
+your program's not working.
+
+1265
+00:53:59,000 --> 00:54:02,467
+man: Thanks.
+Mattson: Yep.
+
+1266
+00:54:02,467 --> 00:54:03,868
+Yep?
+
+1267
+00:54:03,868 --> 00:54:07,067
+man: I've had some issues
+with uncaught exceptions
+
+1268
+00:54:07,067 --> 00:54:08,868
+in my app out in the wild.
+
+1269
+00:54:08,868 --> 00:54:11,868
+And the problem
+seems to be due
+
+1270
+00:54:11,868 --> 00:54:14,167
+to intermittent
+network activity.
+
+1271
+00:54:14,167 --> 00:54:15,300
+Mattson: Okay.
+
+1272
+00:54:15,300 --> 00:54:16,868
+man: I'd like
+to reproduce that
+
+1273
+00:54:16,868 --> 00:54:18,133
+in the Emulator,
+
+1274
+00:54:18,133 --> 00:54:19,267
+and I was wondering
+if you had any suggestions
+
+1275
+00:54:19,267 --> 00:54:21,467
+on how I can bring
+my interface up and down
+
+1276
+00:54:21,467 --> 00:54:22,667
+in the Emulator
+
+1277
+00:54:22,667 --> 00:54:25,267
+to reproduce networking
+going down.
+
+1278
+00:54:25,267 --> 00:54:27,067
+Mattson: Well, so,
+I think, actually,
+
+1279
+00:54:27,067 --> 00:54:29,067
+in the emulator
+there are options
+
+1280
+00:54:29,067 --> 00:54:32,667
+to do flakey connection mode,
+essentially.
+
+1281
+00:54:32,667 --> 00:54:35,267
+man: There's lag and speed.
+
+1282
+00:54:35,267 --> 00:54:38,267
+There doesn't seem to be
+any options for flakiness.
+
+1283
+00:54:38,267 --> 00:54:39,501
+Mattson: I thought you could
+specify packet loss.
+
+1284
+00:54:39,501 --> 00:54:44,033
+So, let me...
+let's talk after here,
+
+1285
+00:54:44,033 --> 00:54:46,667
+and give me a chance to look
+at the Emulator Man. pages,
+
+1286
+00:54:46,667 --> 00:54:49,267
+because I thought there
+was a way to do that, but...
+
+1287
+00:54:49,267 --> 00:54:52,467
+man: Thank you.
+Mattson: Yep.
+
+1288
+00:54:52,467 --> 00:54:54,067
+man: I was won--
+Mattson: Yeah.
+
+1289
+00:54:54,067 --> 00:54:55,667
+man: I was wondering if--
+I'm sorry.
+
+1290
+00:54:55,667 --> 00:54:56,968
+Mattson: Sorry, I meant--
+
+1291
+00:54:56,968 --> 00:54:59,267
+I saw a big--
+so let's go over here first.
+
+1292
+00:54:59,267 --> 00:55:00,367
+man: Yeah, question:
+
+1293
+00:55:00,367 --> 00:55:02,934
+You mentioned applications
+being used,
+
+1294
+00:55:02,934 --> 00:55:05,133
+maybe beyond
+what you intended them for
+
+1295
+00:55:05,133 --> 00:55:06,934
+in conditions like that.
+Mattson: Sure.
+
+1296
+00:55:06,934 --> 00:55:09,133
+man: That might not happen
+until after you've shipped it,
+
+1297
+00:55:09,133 --> 00:55:11,133
+'cause you don't know
+that's gonna happen.
+
+1298
+00:55:11,133 --> 00:55:12,734
+What technique
+should you use
+
+1299
+00:55:12,734 --> 00:55:15,334
+to evaluate
+that kind of thing
+
+1300
+00:55:15,334 --> 00:55:17,734
+from a customer that might
+call you and say,
+
+1301
+00:55:17,734 --> 00:55:19,334
+"This thing
+is running slow,"
+
+1302
+00:55:19,334 --> 00:55:20,567
+and you're trying
+to figure out
+
+1303
+00:55:20,567 --> 00:55:22,934
+if it something
+they're doing different.
+
+1304
+00:55:22,934 --> 00:55:24,934
+Mattson: Well,
+
+1305
+00:55:24,934 --> 00:55:26,934
+I mean, there's nothing
+inherent to the system
+
+1306
+00:55:26,934 --> 00:55:27,934
+that would allow you
+to do that.
+
+1307
+00:55:27,934 --> 00:55:29,334
+I mean, hopefully,
+in this case,
+
+1308
+00:55:29,334 --> 00:55:32,133
+your test cases
+cover the usage scenarios.
+
+1309
+00:55:32,133 --> 00:55:33,267
+Although obvious--
+
+1310
+00:55:33,267 --> 00:55:34,734
+man: In this case,
+it didn't, right?
+
+1311
+00:55:34,734 --> 00:55:36,734
+Mattson: Right, obviously
+that's not always strictly true.
+
+1312
+00:55:36,734 --> 00:55:38,934
+You know,
+so there's nothing
+
+1313
+00:55:38,934 --> 00:55:40,734
+that I can recommend
+from the platform.
+
+1314
+00:55:40,734 --> 00:55:42,934
+The best recommendation
+that I--I can give
+
+1315
+00:55:42,934 --> 00:55:44,934
+is that, you know,
+
+1316
+00:55:44,934 --> 00:55:46,133
+you may want to write out,
+essentially,
+
+1317
+00:55:46,133 --> 00:55:48,334
+a log file to the SD card.
+
+1318
+00:55:48,334 --> 00:55:52,534
+And then...again, if you
+can convince your customer
+
+1319
+00:55:52,534 --> 00:55:55,167
+to connect
+to their computer
+
+1320
+00:55:55,167 --> 00:55:57,734
+and pull this log file off
+and get access to it.
+
+1321
+00:55:57,734 --> 00:55:59,133
+But, yeah, unfortunately,
+
+1322
+00:55:59,133 --> 00:56:00,801
+there's nothing inherent
+in the system.
+
+1323
+00:56:00,801 --> 00:56:02,400
+man: Thank you.
+
+1324
+00:56:02,400 --> 00:56:03,400
+Mattson: Yeah.
+
+1325
+00:56:03,400 --> 00:56:04,601
+man: So my question was
+
+1326
+00:56:04,601 --> 00:56:06,400
+if there are any plans
+
+1327
+00:56:06,400 --> 00:56:09,801
+to add an ability
+to Android
+
+1328
+00:56:09,801 --> 00:56:15,601
+to post a stack trace
+to the developer's email.
+
+1329
+00:56:15,601 --> 00:56:17,000
+This is one
+of the problems
+
+1330
+00:56:17,000 --> 00:56:19,200
+that commercial apps have.
+
+1331
+00:56:19,200 --> 00:56:21,033
+You deploy it,
+you're really good,
+
+1332
+00:56:21,033 --> 00:56:22,200
+but you miss something.
+
+1333
+00:56:22,200 --> 00:56:24,801
+And you simply cannot
+reproduce that problem.
+
+1334
+00:56:24,801 --> 00:56:29,000
+So next to that "force close"
+dialogue button,
+
+1335
+00:56:29,000 --> 00:56:31,000
+there should be possibly
+an option--
+
+1336
+00:56:31,000 --> 00:56:33,000
+Mattson: Right, so basically,
+automatic bug reporting
+
+1337
+00:56:33,000 --> 00:56:34,200
+is--is addressed.
+
+1338
+00:56:34,200 --> 00:56:35,601
+man: I guess not automatic,
+
+1339
+00:56:35,601 --> 00:56:37,901
+just a user should
+have the option to post it.
+
+1340
+00:56:37,901 --> 00:56:39,300
+Mattson: Right, right.
+
+1341
+00:56:39,300 --> 00:56:42,400
+So the answer is that
+there are no specific plans
+
+1342
+00:56:42,400 --> 00:56:43,400
+right now to do that.
+
+1343
+00:56:43,400 --> 00:56:45,601
+It is a request that,
+you know,
+
+1344
+00:56:45,601 --> 00:56:47,000
+we get--we get a lot.
+
+1345
+00:56:47,000 --> 00:56:49,200
+So--and I think,
+
+1346
+00:56:49,200 --> 00:56:50,501
+you know,
+bringing it up to us
+
+1347
+00:56:50,501 --> 00:56:53,200
+and keeping it conscious
+is the best way to do that.
+
+1348
+00:56:53,200 --> 00:56:55,000
+So it's just a matter
+of priorities.
+
+1349
+00:56:55,000 --> 00:56:59,200
+Because...
+
+1350
+00:56:59,200 --> 00:57:02,868
+you know, it seems like
+a feature that would be useful.
+
+1351
+00:57:02,868 --> 00:57:05,267
+There--there may be reasons
+that I don't know
+
+1352
+00:57:05,267 --> 00:57:06,334
+that it's not there,
+
+1353
+00:57:06,334 --> 00:57:07,868
+or it may just be time
+at this point.
+
+1354
+00:57:07,868 --> 00:57:09,868
+So, I mean, it seems
+like a reasonable request.
+
+1355
+00:57:09,868 --> 00:57:11,200
+I'm actually gonna--
+
+1356
+00:57:11,200 --> 00:57:12,868
+man: If I could just do
+a follow-up to your question.
+
+1357
+00:57:12,868 --> 00:57:14,133
+Mattson: Yeah.
+
+1358
+00:57:14,133 --> 00:57:16,467
+man: A quick and easy
+way to deal with that
+
+1359
+00:57:16,467 --> 00:57:19,868
+is to use Thread.
+UncaughtExceptionHandler.
+
+1360
+00:57:19,868 --> 00:57:23,067
+Just catch the exception.
+Post it to your server.
+
+1361
+00:57:23,067 --> 00:57:24,667
+And you'll be able
+to get it that way.
+
+1362
+00:57:24,667 --> 00:57:26,868
+You can't use any of
+the JavaMail stuff to mail it,
+
+1363
+00:57:26,868 --> 00:57:28,467
+but you can post it
+to your server.
+
+1364
+00:57:28,467 --> 00:57:29,868
+Just make sure you call
+
+1365
+00:57:29,868 --> 00:57:32,067
+the default
+uncaught exception handler
+
+1366
+00:57:32,067 --> 00:57:34,501
+when your
+exception handler runs.
+
+1367
+00:57:34,501 --> 00:57:36,601
+Mattson: Great, thanks.
+
+1368
+00:57:36,601 --> 00:57:37,667
+Yeah.
+
+1369
+00:57:37,667 --> 00:57:39,667
+man: Logcat
+is available
+
+1370
+00:57:39,667 --> 00:57:41,467
+for the native code also.
+
+1371
+00:57:41,467 --> 00:57:43,267
+So similarly,
+I wanted to know
+
+1372
+00:57:43,267 --> 00:57:45,467
+if TraceView is also
+available,
+
+1373
+00:57:45,467 --> 00:57:48,467
+and someday
+to debug in the native code.
+
+1374
+00:57:48,467 --> 00:57:50,267
+Mattson: Yeah, so like
+I mentioned before,
+
+1375
+00:57:50,267 --> 00:57:51,868
+there are separate methods--
+
+1376
+00:57:51,868 --> 00:57:55,267
+there are separate calls
+to enable dalvik tracing
+
+1377
+00:57:55,267 --> 00:57:57,067
+versus native tracing.
+
+1378
+00:57:57,067 --> 00:57:58,667
+So if you go ahead
+and turn on native tracing,
+
+1379
+00:57:58,667 --> 00:58:05,534
+you'll see that
+in TraceView too.
+
+1380
+00:58:05,534 --> 00:58:08,334
+If that's all
+the questions,
+
+1381
+00:58:08,334 --> 00:58:10,334
+I'm done, with a minute
+and 30 seconds left.
+
+1382
+00:58:10,334 --> 00:58:11,534
+Thank you, everyone.
+
+1383
+00:58:11,534 --> 00:58:13,467
+[applause]
+

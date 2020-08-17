@@ -1,0 +1,424 @@
+﻿
+*TC 00:00:06;27
+Olá, sou Jeff Scudder e trabalho
+com a API de dados do
+
+*TC 00:00:09;21
+Google Spreadsheets. Talvez você já
+conheça o Google
+
+*TC 00:00:12;29
+Spreadsheets. Um aplicativo de
+planilhas on-line que
+
+*TC 00:00:15;27
+permite a colaboração
+em tempo real.
+
+*TC 00:00:18;15
+Ele é parte do conjunto
+Google Docs. A API do Spreadsheets
+
+*TC 00:00:21;29
+permite acessar e modificar
+programaticamente os
+
+*TC 00:00:24;24
+dados da planilha com sua
+linguagem preferida.
+
+*TC 00:00:28;13
+O Google fornece
+bibliotecas-cliente em diversas
+
+*TC 00:00:31;04
+linguagens, simplificando
+o uso da
+
+*TC 00:00:33;07
+API do Spreadsheets.
+
+*TC 00:00:34;23
+Recentemente fiz uma adição
+à biblioteca Python
+
+*TC 00:00:37;26
+facilitando o uso das
+planilhas como um simples
+
+*TC 00:00:40;14
+banco de dados de texto.
+
+*TC 00:00:42;22
+Uma das vantagens de usar o
+Google Spreadsheets como um
+
+*TC 00:00:45;13
+banco de dados simples é 
+poder ver e modificar todos
+
+*TC 00:00:49;09
+os dados a partir de uma 
+interface de usuário.
+
+*TC 00:00:52;00
+E os dados estão disponíveis em
+qualquer máquina. Enquanto
+
+*TC 00:00:55;16
+estiver conectado à internet, você
+pode interagir com os dados do
+
+*TC 00:00:58;18
+seu Google Documents.
+
+*TC 00:01:00;10
+Vamos começar.
+
+*TC 00:01:05;02
+Primeiramente, a biblioteca-
+cliente Python é um software
+
+*TC 00:01:08;12
+livre e está disponível em
+code.google.com/p/gdata-python-client
+
+*TC 00:01:16;07
+Este módulo é chamado "text db"
+e reside dentro do pacote
+
+*TC 00:01:19;26
+de planilhas da biblioteca-cliente
+da API de dados do Google.
+
+*TC 00:01:24;21
+O módulo de planilhas permite
+usar todos os recursos
+
+*TC 00:01:28;02
+da API do Spreadsheets, e o
+novo módulo "text db" foi
+
+*TC 00:01:31;17
+criado sobre ele.
+
+*TC 00:01:33;09
+O módulo "text db"
+otimiza um caso de uso 
+
+*TC 00:01:35;25
+específico e torna o uso da
+API do Spreadsheets tão
+
+*TC 00:01:39;11
+simples quanto usar
+um banco de dados.
+
+*TC 00:01:41;26
+Você pode fazer muito mais
+com a API do Spreadsheets,
+
+*TC 00:01:45;04
+como usar fórmulas, obter
+dados de outras fontes e
+
+*TC 00:01:49;06
+atualizar muitas células
+ao mesmo tempo. 
+
+*TC 00:01:51;24
+Mas neste módulo, decidi
+falar sobre facilidade de uso.
+
+*TC 00:01:55;10
+Vamos olhar uma amostra
+de como usar o
+
+*TC 00:01:57;26
+"db module" de texto.
+
+*TC 00:02:00;15
+Começaremos importando o
+módulo que tem classes que
+
+*TC 00:02:03;16
+facilitam o uso do Google
+Spreadsheets como um simples
+
+*TC 00:02:06;08
+banco de dados nas nuvens.
+
+*TC 00:02:08;16
+Depois, importamos um módulo de
+demonstração que insere meu endereço
+
+*TC 00:02:11;15
+de e-mail, de modo que não
+seja divulgado publicamente
+
+*TC 00:02:14;15
+devido a este vídeo.
+
+*TC 00:02:16;20
+Agora podemos criar uma nova planilha
+do Google Spreadsheets com o cliente.
+
+*TC 00:02:20;13
+É fácil. Basta fornecer
+um nome.
+
+*TC 00:02:24;25
+O objeto banco de dados representa
+a nova planilha do Google Spreadsheet e
+
+*TC 00:02:28;22
+estamos prontos para criar uma tabela.
+
+*TC 00:02:30;19
+Primeiro, vamos abrir este
+documento no Google Docs.
+
+*TC 00:02:37;01
+Ok, digamos que temos uma
+tabela de cavaleiros e queremos
+
+*TC 00:02:40;12
+perguntar seus nomes,
+missão e cor favorita.
+
+*TC 00:02:44;07
+Agora nossa planilha tem uma
+nova guia e estamos prontos
+
+*TC 00:02:47;09
+para adicionar informações.
+
+*TC 00:02:49;08
+Vamos abrir isso agora.
+
+*TC 00:02:52;01
+Vemos uma nova linha
+aparecer na planilha.
+
+*TC 00:02:57;28
+Também podemos adicionar
+informações por meio da
+
+*TC 00:03:01;19
+interface de usuário da planilha.
+
+*TC 00:03:06;04
+Se trabalharmos com dados
+existentes, pode ser necessário
+
+*TC 00:03:09;14
+começar procurando a planilha, o
+que você pode fazer pesquisando
+
+*TC 00:03:12;12
+o nome da planilha ou o ID
+principal exclusivo da planilha.
+
+*TC 00:03:19;08
+Como é possível haver
+diversas planilhas com o mesmo
+
+*TC 00:03:21;20
+nome, o método "getdatabases"
+retorna uma lista.
+
+*TC 00:03:26;09
+Você pode recuperar linhas de dados
+de diversas maneiras.
+
+*TC 00:03:29;11
+Pesquise uma única linha
+ou solicite um intervalo de linhas,
+
+*TC 00:03:32;26
+usando "getrecords".
+
+*TC 00:03:35;03
+Como temos apenas três linhas
+de dados, as linhas contêm
+
+*TC 00:03:38;18
+três itens.
+
+*TC 00:03:41;02
+Você também pode pesquisar
+linhas correspondentes a certos
+
+*TC 00:03:43;25
+requisitos, usando a linguagem
+de consulta estruturada da planilha.
+
+*TC 00:03:49;08
+As consultas estruturadas podem conter
+correspondências exatas, e, ou,
+
+*TC 00:03:54;06
+menor que, maior que e diferentes.
+
+*TC 00:03:57;22
+Temos dois cavaleiros com
+a cor favorita azul.
+
+*TC 00:04:02;02
+Logo, temos duas correspondências,
+como você pode ver.
+
+*TC 00:04:07;03
+Quando tivermos as linhas,
+podemos alterar os dados no
+
+*TC 00:04:10;17
+Google Spreadsheet.
+
+*TC 00:04:12;02
+Um dos desafios em potencial
+de armazenar os dados nas
+
+*TC 00:04:14;22
+nuvens é que as operações de
+leitura e gravação podem ser lentas,
+
+*TC 00:04:19;02
+pois transferem dados através
+de conexões de rede lentas e
+
+*TC 00:04:22;15
+potencialmente instáveis. Para evitar este
+problema na biblioteca
+
+*TC 00:04:26;16
+"text db", as alterações nos
+objetos locais são enviadas
+
+*TC 00:04:30;04
+ao servidor somente quando chamamos o
+método push. Em nosso exemplo anterior,
+
+*TC 00:04:34;20
+esquecemos de inserir
+a missão de Galahad.
+
+*TC 00:04:36;26
+Vamos fazer isso agora.
+
+*TC 00:04:38;27
+Vejamos o conteúdo
+do registro.
+
+*TC 00:04:43;10
+Agora, vamos enviar esta
+alteração ao servidor, e
+
+*TC 00:04:46;20
+devemos ver a missão ser
+atualizada na planilha.
+
+*TC 00:04:50;22
+Vejo também que a
+cor favorita de Galahad
+
+*TC 00:04:52;29
+está errada.
+
+*TC 00:04:54;06
+Para mostrar as atualizações de
+recuperação que ocorreram fora
+
+*TC 00:04:57;04
+da cópia local dos dados, 
+faremos uma alteração
+
+*TC 00:05:00;02
+na planilha.
+
+*TC 00:05:01;25
+Nossa cópia local ainda não
+foi alterada, mas depois que
+
+*TC 00:05:06;04
+obtivermos os dados, veremos
+que o conteúdo foi atualizado.
+
+*TC 00:05:19;06
+Acabamos de ver, passo a passo,
+um exemplo simples de como usar
+
+*TC 00:05:21;25
+o módulo "text db" para usar o Google
+Spreadsheets como se fosse um
+
+*TC 00:05:25;06
+banco de dados nas nuvens.
+
+*TC 00:05:27;06
+Esta é apenas uma das
+maneiras de usar a
+
+*TC 00:05:29;08
+API do Spreadsheets.
+
+*TC 00:05:30;21
+E, embora este exemplo seja
+em Python, é possível criar
+
+*TC 00:05:34;05
+uma biblioteca semelhante em
+quase qualquer linguagem.
+
+*TC 00:05:37;03
+Todo o código que usamos
+nesta amostra é aberto,
+
+*TC 00:05:40;13
+portanto você pode copiá-lo
+e modificá-lo como quiser.
+
+*TC 00:05:43;22
+Se pensar em alguma outra
+coisa interessante que gostaria
+
+*TC 00:05:45;26
+de fazer usando a API do
+Spreadsheets, adoraríamos
+
+*TC 00:05:48;27
+receber suas sugestões.
+
+*TC 00:05:50;14
+Visite-nos no Grupo da API de
+dados do Google Docs.
+
+*TC 00:05:54;13
+Você também pode ler a 
+documentação da API em
+
+*TC 00:05:57;29
+code.google.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

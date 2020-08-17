@@ -1,0 +1,9386 @@
+1
+00:00:01,334 --> 00:00:02,734
+man:
+Ladies and gentlemen,
+
+2
+00:00:02,734 --> 00:00:07,300
+please welcome Vice President,
+Engineering, Vic Gundotra.
+
+3
+00:00:07,300 --> 00:00:11,334
+[cheers and applause]
+
+4
+00:00:11,334 --> 00:00:13,300
+Gundotra:
+Well, good morning, everyone.
+
+5
+00:00:13,300 --> 00:00:16,200
+Welcome to day two
+of Google I/O.
+
+6
+00:00:16,200 --> 00:00:18,267
+I hope you all had
+a great time yesterday.
+
+7
+00:00:18,267 --> 00:00:20,067
+I hope you enjoyed
+your sessions,
+
+8
+00:00:20,067 --> 00:00:23,200
+and I hope you enjoyed
+those Android phones.
+
+9
+00:00:23,200 --> 00:00:24,701
+[audience whoos]
+
+10
+00:00:24,701 --> 00:00:29,400
+[cheers and applause]
+
+11
+00:00:29,400 --> 00:00:33,767
+Yesterday, we promised you
+a surprise for this morning.
+
+12
+00:00:33,767 --> 00:00:37,167
+And this morning,
+Google will surprise you.
+
+13
+00:00:37,167 --> 00:00:39,701
+We are about to unveil
+
+14
+00:00:39,701 --> 00:00:43,133
+a personal communication
+and collaboration tool
+
+15
+00:00:43,133 --> 00:00:45,634
+in a very early form.
+
+16
+00:00:45,634 --> 00:00:48,200
+We decided to do this
+at this forum
+
+17
+00:00:48,200 --> 00:00:49,834
+for a couple of reasons.
+
+18
+00:00:49,834 --> 00:00:51,701
+This unbelievable product,
+
+19
+00:00:51,701 --> 00:00:54,467
+one that I'm very,
+very excited about,
+
+20
+00:00:54,467 --> 00:00:57,100
+will be open-sourced.
+
+21
+00:00:57,100 --> 00:00:59,434
+It's open-sourced
+for many reasons.
+
+22
+00:00:59,434 --> 00:01:01,534
+Not only do we want to
+contribute to the Internet,
+
+23
+00:01:01,534 --> 00:01:03,534
+but frankly,
+we need developers
+
+24
+00:01:03,534 --> 00:01:05,534
+to help us
+complete this product,
+
+25
+00:01:05,534 --> 00:01:06,667
+and we need your support.
+
+26
+00:01:06,667 --> 00:01:08,534
+So we hope after
+you see this
+
+27
+00:01:08,534 --> 00:01:11,133
+you're as excited
+about it as we are.
+
+28
+00:01:11,133 --> 00:01:13,033
+And number two,
+
+29
+00:01:13,033 --> 00:01:15,334
+we decided to unveil
+this product
+
+30
+00:01:15,334 --> 00:01:17,701
+in its early form
+at this conference
+
+31
+00:01:17,701 --> 00:01:20,968
+because it is an unbelievable,
+powerful demonstration
+
+32
+00:01:20,968 --> 00:01:23,634
+of what is possible
+in the browser.
+
+33
+00:01:23,634 --> 00:01:26,334
+I guarantee you that over
+the next hour and a half,
+
+34
+00:01:26,334 --> 00:01:29,601
+as you see this product,
+you will forget
+
+35
+00:01:29,601 --> 00:01:31,467
+that you are looking
+at the browser.
+
+36
+00:01:31,467 --> 00:01:33,467
+And I want you
+to repeat after me.
+
+37
+00:01:33,467 --> 00:01:36,033
+"I am looking
+at an HTML 5 app.
+
+38
+00:01:36,033 --> 00:01:39,000
+I am looking at what's
+possible in the browser."
+
+39
+00:01:39,000 --> 00:01:43,334
+And I hope you are as excited
+and delighted as I was
+
+40
+00:01:43,334 --> 00:01:46,400
+when I first saw the thinking
+behind this product.
+
+41
+00:01:46,400 --> 00:01:48,667
+Now, it shouldn't
+have surprised me
+
+42
+00:01:48,667 --> 00:01:50,567
+that this product
+would be magical.
+
+43
+00:01:50,567 --> 00:01:53,200
+After all,
+the engineering leadership
+
+44
+00:01:53,200 --> 00:01:55,868
+had already produced
+a magical product.
+
+45
+00:01:55,868 --> 00:01:59,133
+The engineering leadership
+behind what you're about to see
+
+46
+00:01:59,133 --> 00:02:01,067
+is the work
+of two brothers,
+
+47
+00:02:01,067 --> 00:02:03,200
+and an amazing
+engineering team with them.
+
+48
+00:02:03,200 --> 00:02:07,434
+Those two brothers
+are Lars and Jens Rasmussen.
+
+49
+00:02:07,434 --> 00:02:09,234
+You might remember
+those names,
+
+50
+00:02:09,234 --> 00:02:12,033
+because those were
+the same amazing people
+
+51
+00:02:12,033 --> 00:02:16,133
+that did another magical app
+called Maps--Google Maps.
+
+52
+00:02:16,133 --> 00:02:18,100
+And so you'll see what
+they've been working on
+
+53
+00:02:18,100 --> 00:02:20,000
+unveiled for
+the first time today.
+
+54
+00:02:20,000 --> 00:02:21,834
+So why don't we go ahead
+and get started?
+
+55
+00:02:21,834 --> 00:02:24,834
+Remember, this is
+an early developer preview
+
+56
+00:02:24,834 --> 00:02:26,334
+for this audience.
+
+57
+00:02:26,334 --> 00:02:30,300
+Everyone in this room will get
+accounts to give us feedback,
+
+58
+00:02:30,300 --> 00:02:32,200
+and we'll talk about that
+a little bit later.
+
+59
+00:02:32,200 --> 00:02:35,033
+We have your email addresses,
+so you will get those passwords
+
+60
+00:02:35,033 --> 00:02:37,467
+a little bit later on,
+likely tomorrow.
+
+61
+00:02:37,467 --> 00:02:39,634
+With that, let me just
+go ahead and get started.
+
+62
+00:02:39,634 --> 00:02:43,400
+Let me introduce Lars Rasmussen
+and Stephanie Hannon.
+
+63
+00:02:43,400 --> 00:02:45,100
+Thank you.
+
+64
+00:02:45,100 --> 00:02:47,634
+[cheers and applause]
+
+65
+00:02:47,634 --> 00:02:48,701
+Lars Rasmussen:
+Thank you.
+
+66
+00:02:48,701 --> 00:02:51,267
+Thank you.
+Thank you.
+
+67
+00:02:54,367 --> 00:02:56,367
+Thank you very much.
+
+68
+00:02:56,367 --> 00:03:00,033
+I shall wake up
+my laptop.
+
+69
+00:03:00,033 --> 00:03:02,067
+Good morning, everyone.
+
+70
+00:03:02,067 --> 00:03:03,400
+Thank you very much
+for coming early.
+
+71
+00:03:03,400 --> 00:03:06,000
+I know you've been here
+partying all night.
+
+72
+00:03:06,000 --> 00:03:07,767
+Uh, we're going
+to show a demo today
+
+73
+00:03:07,767 --> 00:03:09,367
+of a product that
+we've been working on
+
+74
+00:03:09,367 --> 00:03:12,133
+for a couple of years
+down in Sydney, Australia.
+
+75
+00:03:12,133 --> 00:03:15,634
+It's called Google Wave,
+
+76
+00:03:15,634 --> 00:03:18,334
+and it's a communication
+and collaborations tool
+
+77
+00:03:18,334 --> 00:03:20,434
+that we're launching
+later in the year.
+
+78
+00:03:20,434 --> 00:03:22,901
+Uh, like Vic said,
+it's a little unusual for us
+
+79
+00:03:22,901 --> 00:03:25,234
+to be showing it
+to the world this early.
+
+80
+00:03:25,234 --> 00:03:27,234
+The reason we're doing it
+is very simple.
+
+81
+00:03:27,234 --> 00:03:30,200
+We're starting
+a developer preview today.
+
+82
+00:03:30,200 --> 00:03:31,567
+You guys will all
+get accounts
+
+83
+00:03:31,567 --> 00:03:33,567
+on a sandbox build
+of the system.
+
+84
+00:03:33,567 --> 00:03:36,467
+You are the first outside
+of Google to see this,
+
+85
+00:03:36,467 --> 00:03:39,734
+and you'll be the first
+to get accounts on the system.
+
+86
+00:03:39,734 --> 00:03:43,033
+And we're doing that because
+as you will see from the demo,
+
+87
+00:03:43,033 --> 00:03:45,934
+Google Wave comes with a set
+of really nice APIs,
+
+88
+00:03:45,934 --> 00:03:47,968
+and we're hoping we can
+persuade you guys
+
+89
+00:03:47,968 --> 00:03:51,767
+to start building cool things
+with those APIs
+
+90
+00:03:51,767 --> 00:03:54,334
+while we're getting
+the product ready for launch,
+
+91
+00:03:54,334 --> 00:03:56,434
+which is going to happen
+later this year.
+
+92
+00:03:56,434 --> 00:03:58,267
+Because that way,
+when we do launch,
+
+93
+00:03:58,267 --> 00:04:01,567
+our users and your users
+can enjoy both Google Waves
+
+94
+00:04:01,567 --> 00:04:04,334
+and all the cool things
+that we hope you'll build
+
+95
+00:04:04,334 --> 00:04:05,868
+at the same time.
+
+96
+00:04:05,868 --> 00:04:07,567
+Let me introduce
+Stephanie Hannon.
+
+97
+00:04:07,567 --> 00:04:10,968
+She's quite possibly
+the best PM in the world.
+
+98
+00:04:10,968 --> 00:04:12,501
+[cheers and applause]
+
+99
+00:04:12,501 --> 00:04:14,234
+Hannon: [laughs]
+
+100
+00:04:16,534 --> 00:04:18,701
+Good morning, I/O.
+
+101
+00:04:18,701 --> 00:04:20,801
+Thank you, Vic,
+for the invitation to be here.
+
+102
+00:04:20,801 --> 00:04:22,834
+We couldn't imagine
+a better audience
+
+103
+00:04:22,834 --> 00:04:24,868
+to show our
+product to first.
+
+104
+00:04:24,868 --> 00:04:26,701
+Lars Rasmussen:
+I second that.
+
+105
+00:04:26,701 --> 00:04:29,734
+Hannon: Our presentation
+today is in three parts.
+
+106
+00:04:29,734 --> 00:04:31,934
+First, we're going to show you
+a demo of the product.
+
+107
+00:04:31,934 --> 00:04:35,434
+Second, we'll show you the APIs
+that Lars talked about.
+
+108
+00:04:35,434 --> 00:04:38,701
+You can use Waves
+to enhance your Web site
+
+109
+00:04:38,701 --> 00:04:41,834
+and you can build
+extensions to Wave itself.
+
+110
+00:04:41,834 --> 00:04:44,968
+Third, we'll show you
+that Wave is also a protocol.
+
+111
+00:04:44,968 --> 00:04:46,968
+We are very passionate
+about this being
+
+112
+00:04:46,968 --> 00:04:49,167
+an open system
+of communication.
+
+113
+00:04:49,167 --> 00:04:51,434
+We hope other people
+build Wave services
+
+114
+00:04:51,434 --> 00:04:53,400
+that interoperate
+with ours
+
+115
+00:04:53,400 --> 00:04:55,767
+so users have choice
+in their provider.
+
+116
+00:04:55,767 --> 00:04:59,167
+We affectionately
+call this the three Ps.
+
+117
+00:04:59,167 --> 00:05:01,901
+Product, platform, protocol.
+
+118
+00:05:01,901 --> 00:05:04,033
+And we'll talk
+about them all today.
+
+119
+00:05:04,033 --> 00:05:07,367
+Lars Rasmussen:
+Okay, so communication.
+
+120
+00:05:07,367 --> 00:05:10,133
+Um, email today is by far
+the most popular way
+
+121
+00:05:10,133 --> 00:05:11,834
+for us to communicate
+on the Internet,
+
+122
+00:05:11,834 --> 00:05:13,434
+which is remarkable,
+
+123
+00:05:13,434 --> 00:05:16,334
+because email was invented
+more than 40 years ago.
+
+124
+00:05:16,334 --> 00:05:19,234
+before the Internet,
+before the Web,
+
+125
+00:05:19,234 --> 00:05:21,968
+and it was done
+without the experience
+
+126
+00:05:21,968 --> 00:05:24,634
+of things like SMS,
+and instant messenging,
+
+127
+00:05:24,634 --> 00:05:26,901
+and blogs, and Wikis,
+and bulletin boards,
+
+128
+00:05:26,901 --> 00:05:29,801
+and discussion groups,
+and social networks, and Wikis,
+
+129
+00:05:29,801 --> 00:05:33,100
+and media sharing sites,
+and collaborative editors--
+
+130
+00:05:33,100 --> 00:05:35,300
+All of these different
+kinds of communication
+
+131
+00:05:35,300 --> 00:05:37,901
+that we take
+for granted today.
+
+132
+00:05:37,901 --> 00:05:40,601
+Also, of course,
+computers and networks
+
+133
+00:05:40,601 --> 00:05:43,400
+have dramatically improved
+in those four decades,
+
+134
+00:05:43,400 --> 00:05:45,200
+and so when we started
+this project--
+
+135
+00:05:45,200 --> 00:05:47,934
+and it's been
+more than two years--
+
+136
+00:05:47,934 --> 00:05:49,501
+we asked ourselves
+the question,
+
+137
+00:05:49,501 --> 00:05:53,000
+"what might email look like
+if it was invented today?"
+
+138
+00:05:53,000 --> 00:05:54,834
+And needless to say,
+there is about a million
+
+139
+00:05:54,834 --> 00:05:57,400
+different ways you can
+answer that question.
+
+140
+00:05:57,400 --> 00:06:01,634
+What you're going to see today,
+Google Wave, is our attempt.
+
+141
+00:06:01,634 --> 00:06:04,267
+And so let me start
+by briefly contrasting
+
+142
+00:06:04,267 --> 00:06:06,334
+email from Wave.
+
+143
+00:06:06,334 --> 00:06:09,300
+Email essentially
+mimics snail mail.
+
+144
+00:06:09,300 --> 00:06:11,901
+The basic metaphor
+is you write a message
+
+145
+00:06:11,901 --> 00:06:14,100
+and you send it
+to one or more recipients,
+
+146
+00:06:14,100 --> 00:06:15,734
+and then email systems--
+
+147
+00:06:15,734 --> 00:06:18,834
+and we like to think Gmail
+does this particularly well--
+
+148
+00:06:18,834 --> 00:06:24,400
+can collate related messages
+into conversations or threads.
+
+149
+00:06:24,400 --> 00:06:28,000
+Wave, by contrast,
+starts out
+
+150
+00:06:28,000 --> 00:06:29,634
+with the definition
+of a conversation,
+
+151
+00:06:29,634 --> 00:06:32,334
+which is simply a lightweight
+tree structure of messages
+
+152
+00:06:32,334 --> 00:06:35,701
+and a set of users participating
+in that conversation.
+
+153
+00:06:35,701 --> 00:06:38,501
+And then instead of thinking
+of individual messages
+
+154
+00:06:38,501 --> 00:06:40,567
+as being sent
+back and forth,
+
+155
+00:06:40,567 --> 00:06:42,801
+we think of the entire
+conversation object
+
+156
+00:06:42,801 --> 00:06:46,567
+as being a shared object
+hosted on a server somewhere.
+
+157
+00:06:46,567 --> 00:06:50,000
+And users that participate
+can open up that wave,
+
+158
+00:06:50,000 --> 00:06:52,501
+leave their replies,
+go away,
+
+159
+00:06:52,501 --> 00:06:54,267
+and then when
+the next user comes,
+
+160
+00:06:54,267 --> 00:06:57,100
+she can open up
+that same shared object,
+
+161
+00:06:57,100 --> 00:06:59,400
+see those replies,
+and add her own.
+
+162
+00:06:59,400 --> 00:07:00,634
+That's how the wave grows.
+
+163
+00:07:00,634 --> 00:07:02,801
+That's how the conversation
+builds up.
+
+164
+00:07:02,801 --> 00:07:05,133
+And you'll recognize
+that this is a model
+
+165
+00:07:05,133 --> 00:07:07,033
+that came to how
+bulletin boards work.
+
+166
+00:07:07,033 --> 00:07:09,734
+We found that with a tight
+enough implementation,
+
+167
+00:07:09,734 --> 00:07:12,701
+you can use that to build
+a single communication tool
+
+168
+00:07:12,701 --> 00:07:15,934
+that has functionality
+spanning quite a lot further
+
+169
+00:07:15,934 --> 00:07:18,968
+than what you can do
+with email today.
+
+170
+00:07:18,968 --> 00:07:20,734
+And so we'll show you a demo.
+
+171
+00:07:20,734 --> 00:07:24,234
+It'll take you through
+a series of usage scenarios
+
+172
+00:07:24,234 --> 00:07:25,767
+that you'll be
+familiar with,
+
+173
+00:07:25,767 --> 00:07:29,734
+but where today we would use
+different tools for each one,
+
+174
+00:07:29,734 --> 00:07:31,400
+and we'll show you
+how it all fits neatly
+
+175
+00:07:31,400 --> 00:07:33,834
+in this one metaphor
+of hosted conversations.
+
+176
+00:07:33,834 --> 00:07:35,167
+Stephanie.
+
+177
+00:07:35,167 --> 00:07:38,434
+Hannon: So what you are
+looking at is an HTML 5 app
+
+178
+00:07:38,434 --> 00:07:40,634
+that we built with
+the Google Web Toolkit.
+
+179
+00:07:40,634 --> 00:07:43,434
+On the left side
+is Lars running Chrome.
+
+180
+00:07:43,434 --> 00:07:46,167
+On the right side,
+I'm running Safari.
+
+181
+00:07:46,167 --> 00:07:48,968
+And a little bit later
+we're going to throw in Firefox.
+
+182
+00:07:48,968 --> 00:07:51,400
+So the same thing is being shown
+on each pair of screens,
+
+183
+00:07:51,400 --> 00:07:54,567
+you can just
+choose one to look at.
+
+184
+00:07:54,567 --> 00:07:56,033
+Lars Rasmussen:
+Okay, so we'll start
+
+185
+00:07:56,033 --> 00:07:59,167
+with plain vanilla-type
+email conversations,
+
+186
+00:07:59,167 --> 00:08:02,400
+and we'll show you
+how it looks in Wave.
+
+187
+00:08:02,400 --> 00:08:04,200
+We're planning
+a boat trip.
+
+188
+00:08:04,200 --> 00:08:06,100
+And I'm going to start
+by clicking "New Wave" here,
+
+189
+00:08:06,100 --> 00:08:08,434
+and then I'll type my title
+in the first line.
+
+190
+00:08:08,434 --> 00:08:09,767
+Hannon: Watch your
+spelling, Lars.
+
+191
+00:08:09,767 --> 00:08:11,100
+There's a lot of people.
+
+192
+00:08:11,100 --> 00:08:12,434
+Lars Rasmussen: [laughs]
+There is a lot of people.
+
+193
+00:08:12,434 --> 00:08:14,667
+They can't see
+what I'm typing anyway.
+
+194
+00:08:14,667 --> 00:08:18,534
+"Are you ready
+for the boat trip?
+
+195
+00:08:18,534 --> 00:08:20,033
+Hey, Steph."
+
+196
+00:08:20,033 --> 00:08:22,634
+Did you guys like
+the spell-checker?
+
+197
+00:08:22,634 --> 00:08:23,968
+[applause]
+
+198
+00:08:23,968 --> 00:08:26,133
+You do.
+
+199
+00:08:26,133 --> 00:08:27,834
+We'll talk more
+about that later.
+
+200
+00:08:27,834 --> 00:08:30,000
+Since you don't want
+to watch me type for an hour,
+
+201
+00:08:30,000 --> 00:08:31,868
+we put canned messages
+in there.
+
+202
+00:08:31,868 --> 00:08:35,968
+We'll try hard to pull them out
+before we launch.
+
+203
+00:08:35,968 --> 00:08:38,767
+I click "Done,"
+it asks me for more users.
+
+204
+00:08:38,767 --> 00:08:40,567
+I'll add Stephanie.
+
+205
+00:08:40,567 --> 00:08:42,067
+And since she is offline,
+
+206
+00:08:42,067 --> 00:08:45,567
+I'm going to go stare
+at a blank page.
+
+207
+00:08:45,567 --> 00:08:48,501
+Hannon: So I will
+open Wave.
+
+208
+00:08:48,501 --> 00:08:50,834
+And you'll see in my
+Search panel, the middle panel,
+
+209
+00:08:50,834 --> 00:08:53,634
+will be an unread
+message from Lars.
+
+210
+00:08:53,634 --> 00:08:55,534
+He's asking me
+if I want to go shopping,
+
+211
+00:08:55,534 --> 00:08:56,701
+uh, before this
+boat trip,
+
+212
+00:08:56,701 --> 00:08:58,534
+so I'll do something
+very email like,
+
+213
+00:08:58,534 --> 00:08:59,968
+which is hit "Reply,"
+
+214
+00:08:59,968 --> 00:09:03,734
+and say,
+"I looove shopping."
+
+215
+00:09:03,734 --> 00:09:05,834
+Lars Rasmussen:
+I wrote the script.
+
+216
+00:09:05,834 --> 00:09:11,400
+Hannon: "I need new fins.
+Let's go."
+
+217
+00:09:11,400 --> 00:09:13,434
+The first benefit
+I want to show you
+
+218
+00:09:13,434 --> 00:09:15,467
+of this being
+a hosted conversation
+
+219
+00:09:15,467 --> 00:09:18,467
+is it's easier
+to keep track of structure.
+
+220
+00:09:18,467 --> 00:09:20,300
+If this was email
+and I wanted to reply
+
+221
+00:09:20,300 --> 00:09:21,901
+to the middle part
+of Lars's message
+
+222
+00:09:21,901 --> 00:09:24,000
+where he asked
+which bus to take,
+
+223
+00:09:24,000 --> 00:09:27,434
+I would hit "Reply," the email
+client would copy the message,
+
+224
+00:09:27,434 --> 00:09:29,901
+and I'd hand-edit
+in the response.
+
+225
+00:09:29,901 --> 00:09:31,501
+Because this is
+a hosted conversation
+
+226
+00:09:31,501 --> 00:09:33,667
+that lives in one place,
+
+227
+00:09:33,667 --> 00:09:37,067
+I can just instruct the server
+to split the message apart
+
+228
+00:09:37,067 --> 00:09:40,701
+and say,
+"You never wake up early,"
+
+229
+00:09:40,701 --> 00:09:42,734
+which is true.
+
+230
+00:09:42,734 --> 00:09:45,734
+"Let's take the late bus."
+
+231
+00:09:45,734 --> 00:09:49,400
+Okay, Lars isn't online;
+I'm going to close this wave.
+
+232
+00:09:49,400 --> 00:09:51,501
+Lars Rasmussen: So a little bit
+later I come back online,
+
+233
+00:09:51,501 --> 00:09:54,100
+and you'll see, for starters,
+that that wave is now bold
+
+234
+00:09:54,100 --> 00:09:56,234
+to show me there is
+new material in it.
+
+235
+00:09:56,234 --> 00:09:59,634
+When I open it up, Stephanie's
+first message gets the highlight
+
+236
+00:09:59,634 --> 00:10:02,234
+and I can navigate the
+conversation with my keyboard,
+
+237
+00:10:02,234 --> 00:10:04,133
+and of course,
+continue her thread here.
+
+238
+00:10:04,133 --> 00:10:06,667
+"You know me too well."
+
+239
+00:10:06,667 --> 00:10:08,033
+Like that.
+
+240
+00:10:08,033 --> 00:10:11,133
+And that's how plain vanilla
+email-type conversations
+
+241
+00:10:11,133 --> 00:10:13,067
+work in Wave.
+
+242
+00:10:13,067 --> 00:10:15,234
+So you've noticed that
+we have carefully avoided
+
+243
+00:10:15,234 --> 00:10:17,133
+having the wave open
+on both screens.
+
+244
+00:10:17,133 --> 00:10:20,701
+When we do have the wave
+open at the same time,
+
+245
+00:10:20,701 --> 00:10:23,234
+my message bounces
+right off the server
+
+246
+00:10:23,234 --> 00:10:24,934
+into Stephanie's browser.
+
+247
+00:10:24,934 --> 00:10:26,300
+The effect is
+that you can also
+
+248
+00:10:26,300 --> 00:10:29,033
+do Instant Messaging-type
+conversations in Wave.
+
+249
+00:10:29,033 --> 00:10:32,667
+In fact in the same wave
+you can switch back and forth
+
+250
+00:10:32,667 --> 00:10:34,667
+between these different
+ways of communicating.
+
+251
+00:10:34,667 --> 00:10:36,834
+I'll show you that now.
+
+252
+00:10:36,834 --> 00:10:41,000
+Shiny.
+You must know a good store.
+
+253
+00:10:41,000 --> 00:10:42,767
+[cheers and applause]
+
+254
+00:10:42,767 --> 00:10:48,434
+Hannon: There is a new one
+over on George Street.
+
+255
+00:10:48,434 --> 00:10:52,400
+Lars Rasmussen: Cool.
+Let's go at 7:00.
+
+256
+00:10:52,400 --> 00:10:56,267
+Hannon: "Sounds good.
+Let's invite Jens too."
+
+257
+00:10:56,267 --> 00:10:57,734
+Lars Rasmussen: "Okay."
+
+258
+00:10:57,734 --> 00:11:00,567
+So you noticed that it didn't
+wait for me to hit "Done"
+
+259
+00:11:00,567 --> 00:11:02,534
+before showing
+Stephanie the message,
+
+260
+00:11:02,534 --> 00:11:04,400
+but rather--and this was
+difficult to do--
+
+261
+00:11:04,400 --> 00:11:07,167
+we transmit live almost
+character by character
+
+262
+00:11:07,167 --> 00:11:08,567
+what I'm typing.
+
+263
+00:11:08,567 --> 00:11:09,801
+Why did we do that?
+
+264
+00:11:09,801 --> 00:11:11,534
+It's because with today
+instant messaging tools
+
+265
+00:11:11,534 --> 00:11:14,434
+you spend half of your time
+looking at it saying,
+
+266
+00:11:14,434 --> 00:11:16,934
+"Stephanie is typing,
+she's typing, she's typing,
+
+267
+00:11:16,934 --> 00:11:21,133
+she's typing,"
+and then you see what she said.
+
+268
+00:11:21,133 --> 00:11:23,968
+Thank you.
+[laughs]
+
+269
+00:11:23,968 --> 00:11:27,834
+But because in general you can
+start formulating your own reply
+
+270
+00:11:27,834 --> 00:11:30,133
+before Stephanie
+is done typing hers,
+
+271
+00:11:30,133 --> 00:11:31,968
+by doing this
+live transmission,
+
+272
+00:11:31,968 --> 00:11:34,634
+you end up spending 100% of your
+time either reading or writing,
+
+273
+00:11:34,634 --> 00:11:37,133
+which dramatically
+speeds up the conversation.
+
+274
+00:11:37,133 --> 00:11:38,734
+Now needless to say,
+there are times
+
+275
+00:11:38,734 --> 00:11:41,000
+you don't want everyone
+to see every keystroke,
+
+276
+00:11:41,000 --> 00:11:43,300
+in particular
+if you spell like I do.
+
+277
+00:11:43,300 --> 00:11:46,267
+Um, and so we have
+this checkbox here.
+
+278
+00:11:46,267 --> 00:11:47,567
+All you have to do
+is check it
+
+279
+00:11:47,567 --> 00:11:49,334
+and now no one can
+see what you're typing
+
+280
+00:11:49,334 --> 00:11:50,901
+until you hit
+that "Done" button.
+
+281
+00:11:50,901 --> 00:11:53,901
+This is one of the features we
+haven't implemented quite yet.
+
+282
+00:11:53,901 --> 00:11:58,133
+[laughter]
+
+283
+00:11:58,133 --> 00:12:00,567
+Okay, so that's how
+email conversations,
+
+284
+00:12:00,567 --> 00:12:02,400
+or rather email-type
+conversations
+
+285
+00:12:02,400 --> 00:12:04,801
+and instant messaging-type
+conversations
+
+286
+00:12:04,801 --> 00:12:07,501
+no longer require
+two separate tools.
+
+287
+00:12:07,501 --> 00:12:09,400
+Next thing we want
+to show you is how easy it is
+
+288
+00:12:09,400 --> 00:12:12,834
+to add a new person
+to an ongoing conversation.
+
+289
+00:12:12,834 --> 00:12:15,300
+Can I just introduce
+my brother Jens, by the way?
+
+290
+00:12:15,300 --> 00:12:16,868
+Give him a hand, please.
+
+291
+00:12:16,868 --> 00:12:19,801
+[cheers and applause]
+
+292
+00:12:22,834 --> 00:12:23,968
+So we want to--
+
+293
+00:12:23,968 --> 00:12:25,734
+We want to add Jens
+to the conversation.
+
+294
+00:12:25,734 --> 00:12:28,634
+If this was email, I would
+take the last message here,
+
+295
+00:12:28,634 --> 00:12:31,467
+reply to it and add Jens
+to the recipient list.
+
+296
+00:12:31,467 --> 00:12:32,467
+There's two problems
+with that.
+
+297
+00:12:32,467 --> 00:12:33,701
+For starters,
+
+298
+00:12:33,701 --> 00:12:36,100
+because we branched
+the conversation up here,
+
+299
+00:12:36,100 --> 00:12:37,467
+that last email message
+
+300
+00:12:37,467 --> 00:12:39,734
+would not contain
+the entire conversation.
+
+301
+00:12:39,734 --> 00:12:42,434
+But also,
+if Stephanie then later
+
+302
+00:12:42,434 --> 00:12:44,767
+went and replied to
+an earlier message of mine,
+
+303
+00:12:44,767 --> 00:12:46,267
+Jens wouldn't
+get that anyway.
+
+304
+00:12:46,267 --> 00:12:48,501
+You end up with these
+cat and mouse games.
+
+305
+00:12:48,501 --> 00:12:51,234
+In the Wave model,
+all you have to do
+
+306
+00:12:51,234 --> 00:12:55,400
+is make Jens a participant
+in the wave like that.
+
+307
+00:12:55,400 --> 00:12:58,334
+And now I'll switch
+over to Firefox here
+
+308
+00:12:58,334 --> 00:13:01,701
+where Jens is
+already signed in.
+
+309
+00:13:01,701 --> 00:13:03,267
+Jens Rasmussen:
+So now that I'm on the wave,
+
+310
+00:13:03,267 --> 00:13:05,834
+um, I'm going to open it,
+
+311
+00:13:05,834 --> 00:13:08,100
+and, of course, everything
+is going to be marked
+
+312
+00:13:08,100 --> 00:13:10,300
+as unread for me.
+
+313
+00:13:10,300 --> 00:13:11,968
+But because
+I was added late,
+
+314
+00:13:11,968 --> 00:13:14,501
+I didn't get to see
+Lars's message in one piece,
+
+315
+00:13:14,501 --> 00:13:17,934
+and by the time I'm added they
+could be arbitrarily far apart.
+
+316
+00:13:17,934 --> 00:13:20,968
+So we added a feature
+called Playback.
+
+317
+00:13:20,968 --> 00:13:23,601
+So I get to see
+Lars's original message,
+
+318
+00:13:23,601 --> 00:13:26,467
+Lars asks Stephanie,
+Stephanie replies,
+
+319
+00:13:26,467 --> 00:13:29,868
+Steph does in-line reply,
+and so on, and so on.
+
+320
+00:13:29,868 --> 00:13:32,334
+[applause]
+
+321
+00:13:32,334 --> 00:13:34,767
+Thank you.
+
+322
+00:13:34,767 --> 00:13:37,601
+So Playback turns out to be
+a really useful feature,
+
+323
+00:13:37,601 --> 00:13:38,634
+particularly when the wave
+
+324
+00:13:38,634 --> 00:13:39,968
+starts picking up
+more structure,
+
+325
+00:13:39,968 --> 00:13:41,801
+and we'll show you
+more of that later.
+
+326
+00:13:41,801 --> 00:13:43,801
+But now that I've
+caught up on this wave,
+
+327
+00:13:43,801 --> 00:13:48,067
+I'm going to just
+add my reply.
+
+328
+00:13:48,067 --> 00:13:50,334
+"Me too."
+
+329
+00:13:50,334 --> 00:13:51,868
+Oh, I think I crashed.
+
+330
+00:13:51,868 --> 00:13:54,334
+Lars Rasmussen: Did I mention
+that it's a developer preview?
+
+331
+00:13:54,334 --> 00:13:55,601
+[laughter]
+
+332
+00:13:55,601 --> 00:13:57,667
+So we made sure
+to inject a few bugs
+
+333
+00:13:57,667 --> 00:13:59,234
+so that you wouldn't have
+too high expecta--
+
+334
+00:13:59,234 --> 00:14:00,701
+I'm just kidding.
+
+335
+00:14:05,267 --> 00:14:07,067
+Jens Rasmussen: Did you notice
+how quickly it reloads?
+
+336
+00:14:07,067 --> 00:14:09,767
+[laughter]
+
+337
+00:14:09,767 --> 00:14:13,367
+Did we mention
+we used GWT?
+
+338
+00:14:13,367 --> 00:14:16,133
+All right, so I'm
+going to add my reply.
+
+339
+00:14:16,133 --> 00:14:17,934
+"Me too.
+
+340
+00:14:17,934 --> 00:14:22,701
+Don't forget your keys."
+
+341
+00:14:22,701 --> 00:14:24,400
+And then I'll hand it back
+to Lars.
+
+342
+00:14:24,400 --> 00:14:25,934
+Lars Rasmussen: Thank you.
+
+343
+00:14:25,934 --> 00:14:28,334
+So that's how easy it is
+to add a new person
+
+344
+00:14:28,334 --> 00:14:30,000
+to an ongoing
+conversation.
+
+345
+00:14:30,000 --> 00:14:31,634
+And so often
+we end up having
+
+346
+00:14:31,634 --> 00:14:33,534
+very nice
+group conversations in Wave.
+
+347
+00:14:33,534 --> 00:14:35,367
+And then occasionally
+you want to say something
+
+348
+00:14:35,367 --> 00:14:38,133
+in a wave that's not visible
+to all the participants.
+
+349
+00:14:38,133 --> 00:14:40,601
+We call that
+a "Private Reply,"
+
+350
+00:14:40,601 --> 00:14:42,534
+and I'll add one
+down here at the bottom,
+
+351
+00:14:42,534 --> 00:14:43,734
+and I'll say,
+
+352
+00:14:43,734 --> 00:14:49,267
+"Let's buy Steph
+a reeeally nice present."
+
+353
+00:14:49,267 --> 00:14:51,667
+Hannon: I wrote this part.
+
+354
+00:14:51,667 --> 00:14:53,901
+Lars Rasmussen: And then
+I will add just Jens,
+
+355
+00:14:53,901 --> 00:14:55,200
+and you will see,
+
+356
+00:14:55,200 --> 00:14:58,400
+if I just quickly
+flip over to Jens's browser,
+
+357
+00:14:58,400 --> 00:14:59,901
+and scroll down,
+
+358
+00:14:59,901 --> 00:15:01,901
+he sees that
+private reply,
+
+359
+00:15:01,901 --> 00:15:04,033
+but if you look
+at Stephanie's screen,
+
+360
+00:15:04,033 --> 00:15:06,067
+she doesn't see it.
+
+361
+00:15:06,067 --> 00:15:07,501
+If you remember,
+I've explained
+
+362
+00:15:07,501 --> 00:15:09,434
+that a wave is
+a tree structure of messages.
+
+363
+00:15:09,434 --> 00:15:13,100
+Essentially you can take
+any sub-tree of the wave
+
+364
+00:15:13,100 --> 00:15:17,467
+and restrict access
+to a subset of the participants.
+
+365
+00:15:17,467 --> 00:15:20,767
+Okay, I switch back
+to my own account, here.
+
+366
+00:15:20,767 --> 00:15:22,000
+The next thing
+we want to show you
+
+367
+00:15:22,000 --> 00:15:23,934
+is how attachments
+work in Wave.
+
+368
+00:15:23,934 --> 00:15:25,100
+So we've been
+on a boat trip--
+
+369
+00:15:25,100 --> 00:15:26,634
+It was very nice,
+thank you--
+
+370
+00:15:26,634 --> 00:15:28,367
+And we all
+got pictures.
+
+371
+00:15:28,367 --> 00:15:30,634
+I have six of them
+sitting here on my desktop,
+
+372
+00:15:30,634 --> 00:15:35,400
+and I'm going to drag them
+onto the wave like this.
+
+373
+00:15:35,400 --> 00:15:38,334
+[applause]
+
+374
+00:15:42,267 --> 00:15:44,434
+Hannon: You might not
+have noticed,
+
+375
+00:15:44,434 --> 00:15:47,033
+but the thumbnails
+appeared on my screen
+
+376
+00:15:47,033 --> 00:15:50,934
+long before the full images were
+uploaded from Lars's computer.
+
+377
+00:15:50,934 --> 00:15:52,100
+I'll show you
+that again
+
+378
+00:15:52,100 --> 00:15:54,934
+by dragging in
+my own photos from iPhoto.
+
+379
+00:15:57,400 --> 00:15:59,667
+Ready?
+Here we go.
+
+380
+00:15:59,667 --> 00:16:02,767
+Lars Rasmussen: And you can see
+them show up over on my screen.
+
+381
+00:16:02,767 --> 00:16:03,868
+audience member: Yeah.
+
+382
+00:16:03,868 --> 00:16:04,968
+[applause]
+
+383
+00:16:04,968 --> 00:16:06,434
+Lars Rasmussen:
+Don't be shy, you guys.
+
+384
+00:16:06,434 --> 00:16:09,300
+If you like what you see,
+don't be shy letting us know.
+
+385
+00:16:09,300 --> 00:16:11,200
+[cheers and applause]
+
+386
+00:16:11,200 --> 00:16:15,033
+We can--we can handle pretty
+much any amount of applause.
+
+387
+00:16:15,033 --> 00:16:17,100
+[laughter]
+
+388
+00:16:17,100 --> 00:16:18,334
+Hannon: This feature--
+
+389
+00:16:18,334 --> 00:16:20,767
+drag and drop from the desktop
+to the browser--
+
+390
+00:16:20,767 --> 00:16:25,534
+is the one part of Wave
+that HTML 5 can't support yet.
+
+391
+00:16:25,534 --> 00:16:28,400
+We're working on a proposal
+to add it to the standard.
+
+392
+00:16:28,400 --> 00:16:30,601
+In the meantime,
+you need to download Gears
+
+393
+00:16:30,601 --> 00:16:32,534
+for this specific
+feature to work.
+
+394
+00:16:32,534 --> 00:16:36,367
+It's the only part of Wave
+that you need Gears for.
+
+395
+00:16:36,367 --> 00:16:38,400
+When Lars
+dropped in his images,
+
+396
+00:16:38,400 --> 00:16:40,601
+you might've noticed
+at the bottom of the Wave panel
+
+397
+00:16:40,601 --> 00:16:41,834
+there's an Image menu
+
+398
+00:16:41,834 --> 00:16:43,767
+with actions you'd
+probably do on images,
+
+399
+00:16:43,767 --> 00:16:46,067
+like upload or download.
+
+400
+00:16:46,067 --> 00:16:47,934
+What's important
+is these actions
+
+401
+00:16:47,934 --> 00:16:50,200
+apply to all
+the images in the wave,
+
+402
+00:16:50,200 --> 00:16:52,267
+not just the ones
+I dropped in,
+
+403
+00:16:52,267 --> 00:16:54,801
+which makes Wave really
+an easy, lightweight way
+
+404
+00:16:54,801 --> 00:16:57,033
+to create a group
+photo album together,
+
+405
+00:16:57,033 --> 00:17:00,634
+which is surprisingly
+hard to do with today's tools.
+
+406
+00:17:00,634 --> 00:17:02,567
+Lars Rasmussen: And so here's
+the photo album.
+
+407
+00:17:02,567 --> 00:17:04,067
+This is Captain Athena.
+
+408
+00:17:04,067 --> 00:17:06,300
+Here's the hard life
+down under.
+
+409
+00:17:06,300 --> 00:17:08,400
+And as advertised,
+you'll see over here
+
+410
+00:17:08,400 --> 00:17:10,534
+Stephanie's images
+show up in my slideshow
+
+411
+00:17:10,534 --> 00:17:11,701
+so that I can show you
+
+412
+00:17:11,701 --> 00:17:17,400
+just how much fun
+life down under is.
+
+413
+00:17:17,400 --> 00:17:19,868
+And that's images.
+
+414
+00:17:19,868 --> 00:17:21,968
+So that's how easy it is
+to share photos in Wave.
+
+415
+00:17:21,968 --> 00:17:23,067
+This was a group trip.
+
+416
+00:17:23,067 --> 00:17:24,501
+We'll all throw
+our photos in here.
+
+417
+00:17:24,501 --> 00:17:26,300
+We'd probably share it
+with the rest of the office
+
+418
+00:17:26,300 --> 00:17:27,834
+to make them envious.
+
+419
+00:17:27,834 --> 00:17:30,200
+In this particular case,
+it's not clear
+
+420
+00:17:30,200 --> 00:17:33,100
+that we want everyone to know
+that we went shopping together.
+
+421
+00:17:33,100 --> 00:17:35,267
+And so one of the features
+down here
+
+422
+00:17:35,267 --> 00:17:37,100
+lets me copy
+just the images
+
+423
+00:17:37,100 --> 00:17:39,868
+from this wave
+into a fresh wave.
+
+424
+00:17:39,868 --> 00:17:42,934
+"Boating in January.
+
+425
+00:17:42,934 --> 00:17:47,901
+Enjoy all,
+here and yonder."
+
+426
+00:17:47,901 --> 00:17:49,701
+And then I'll add
+Stephanie to this.
+
+427
+00:17:49,701 --> 00:17:52,801
+I could now share that
+with the rest of the office.
+
+428
+00:17:52,801 --> 00:17:55,801
+Now, this feature here
+of extracting images
+
+429
+00:17:55,801 --> 00:17:57,467
+from a wave and putting them
+in a new one
+
+430
+00:17:57,467 --> 00:17:59,200
+is actually part
+of a very important
+
+431
+00:17:59,200 --> 00:18:00,400
+design principle for us.
+
+432
+00:18:00,400 --> 00:18:02,901
+Namely that we care
+just as much
+
+433
+00:18:02,901 --> 00:18:06,567
+about the product of the wave
+as we do the wave itself.
+
+434
+00:18:06,567 --> 00:18:11,300
+And we'll show you
+more examples of that later.
+
+435
+00:18:11,300 --> 00:18:13,868
+Yes, we will.
+
+436
+00:18:13,868 --> 00:18:16,400
+Um, I forgot what's next.
+
+437
+00:18:16,400 --> 00:18:19,734
+Hannon: How 'bout we show them
+the embedding APIs?
+
+438
+00:18:19,734 --> 00:18:20,734
+Lars Rasmussen:
+Excellent idea.
+
+439
+00:18:20,734 --> 00:18:21,734
+Okay, thank you. So...
+
+440
+00:18:21,734 --> 00:18:22,934
+[laughter]
+
+441
+00:18:22,934 --> 00:18:24,400
+She's right.
+
+442
+00:18:24,400 --> 00:18:26,667
+We should've rehearsed this
+before coming this morning.
+
+443
+00:18:26,667 --> 00:18:27,667
+Just kidding.
+
+444
+00:18:27,667 --> 00:18:29,267
+So the first--
+
+445
+00:18:29,267 --> 00:18:32,901
+The first category of, um,
+APIs that we want to show you
+
+446
+00:18:32,901 --> 00:18:37,334
+are APIs that let you
+embed waves onto your webpage.
+
+447
+00:18:37,334 --> 00:18:40,601
+It is very similar
+to the Maps API,
+
+448
+00:18:40,601 --> 00:18:43,767
+which, by the way, um,
+thank you, everyone who used it.
+
+449
+00:18:43,767 --> 00:18:46,501
+We consider your enthusiasm
+for that API
+
+450
+00:18:46,501 --> 00:18:49,067
+an enormous factor
+in that product's success,
+
+451
+00:18:49,067 --> 00:18:52,567
+and we're hoping, obviously,
+to repeat that with Wave.
+
+452
+00:18:52,567 --> 00:18:54,667
+Hannon: Give a round
+of applause to themselves.
+
+453
+00:18:54,667 --> 00:18:56,534
+Lars Rasmussen: Oh, yeah,
+a round of applause to yourself.
+
+454
+00:18:56,534 --> 00:18:58,534
+Well done.
+[applause]
+
+455
+00:18:58,534 --> 00:19:01,133
+Lars Rasmussen: Okay, so...
+Hannon: Yay, developers!
+
+456
+00:19:01,133 --> 00:19:02,734
+Lars Rasmussen: Here's
+an example application.
+
+457
+00:19:02,734 --> 00:19:04,534
+It's a little blogging site
+we've built.
+
+458
+00:19:04,534 --> 00:19:06,167
+It's over
+on Google App Engine,
+
+459
+00:19:06,167 --> 00:19:09,000
+but you could build it
+anywhere you host your website.
+
+460
+00:19:09,000 --> 00:19:10,300
+And this blogging site--
+
+461
+00:19:10,300 --> 00:19:13,367
+In addition to embedding
+waves on its pages,
+
+462
+00:19:13,367 --> 00:19:16,133
+it provides me
+with this robotic participant
+
+463
+00:19:16,133 --> 00:19:18,834
+that we affectionately
+call Bloggy.
+
+464
+00:19:18,834 --> 00:19:22,934
+All I have to do
+is add Bloggy to the wave,
+
+465
+00:19:22,934 --> 00:19:24,434
+and now you'll see--
+
+466
+00:19:24,434 --> 00:19:25,601
+You can probably
+not read that,
+
+467
+00:19:25,601 --> 00:19:27,334
+but on that yellow banner,
+
+468
+00:19:27,334 --> 00:19:30,300
+all users on the wave
+is now warned that Bloggy,
+
+469
+00:19:30,300 --> 00:19:33,801
+this new participant,
+has published the blog
+
+470
+00:19:33,801 --> 00:19:36,434
+on a page which we built
+over an app engine.
+
+471
+00:19:36,434 --> 00:19:39,300
+Can I just introduce
+Gregory Delasander?
+
+472
+00:19:39,300 --> 00:19:40,968
+He's another PM
+on the team.
+
+473
+00:19:40,968 --> 00:19:42,868
+[cheers and applause]
+
+474
+00:19:42,868 --> 00:19:45,534
+And he's going to show you
+the blog site now.
+
+475
+00:19:45,534 --> 00:19:46,601
+Delasander: Hi, I'm Greg,
+
+476
+00:19:46,601 --> 00:19:47,968
+and I'm a huge fan
+of Lars's blog,
+
+477
+00:19:47,968 --> 00:19:50,667
+just like everybody on the team
+is told they should be.
+
+478
+00:19:50,667 --> 00:19:53,534
+I'm going to show you...
+Hannon: He makes us read it.
+
+479
+00:19:53,534 --> 00:19:54,667
+Lars Rasmussen:
+It's a good blog. Come on.
+
+480
+00:19:54,667 --> 00:19:59,501
+Delasander: Oh, hold on
+just a second.
+
+481
+00:19:59,501 --> 00:20:02,033
+Did we lose...
+
+482
+00:20:02,033 --> 00:20:03,567
+Hannon: Did we lose VPN?
+
+483
+00:20:03,567 --> 00:20:05,067
+Delasander:
+Yes, I think we might have.
+
+484
+00:20:05,067 --> 00:20:06,734
+Hannon: Lars, this is
+where you do the dance.
+
+485
+00:20:06,734 --> 00:20:07,767
+Delasander:
+Lars, dance a little bit.
+
+486
+00:20:07,767 --> 00:20:08,767
+Lars Rasmussen:
+Everyone look at me.
+
+487
+00:20:08,767 --> 00:20:09,801
+Don't look at his screen.
+
+488
+00:20:09,801 --> 00:20:11,400
+[humming]
+
+489
+00:20:11,400 --> 00:20:12,968
+The Wave dance.
+
+490
+00:20:12,968 --> 00:20:14,801
+Delasander: I think
+we lost all connectivity.
+
+491
+00:20:14,801 --> 00:20:19,234
+Lars Rasmussen: Neener, neener.
+Neener, neener.
+
+492
+00:20:19,234 --> 00:20:22,200
+There's not a--
+Delasander: And then...
+
+493
+00:20:22,200 --> 00:20:23,467
+Lars Rasmussen: There's not
+a lot of people in the world
+
+494
+00:20:23,467 --> 00:20:25,634
+that can have their demos
+as spectacularly fail
+
+495
+00:20:25,634 --> 00:20:29,634
+in front of 4,000 people
+and not break a sweat.
+
+496
+00:20:29,634 --> 00:20:31,300
+Hannon: It wasn't the demo,
+it was the network.
+
+497
+00:20:31,300 --> 00:20:33,067
+Lars Rasmussen: We wish
+we were one of them.
+
+498
+00:20:33,067 --> 00:20:34,501
+Delasander: Excellent.
+
+499
+00:20:34,501 --> 00:20:36,567
+Lars Rasmussen: I think your
+proxy server might be missing.
+
+500
+00:20:36,567 --> 00:20:38,634
+Oh, there we go.
+Hannon: All right, we're back.
+
+501
+00:20:38,634 --> 00:20:42,200
+Delasander:
+So as I was saying...
+
+502
+00:20:42,200 --> 00:20:44,334
+The blog.
+
+503
+00:20:44,334 --> 00:20:46,200
+So in the blog, one of
+the cool things you'll s--
+
+504
+00:20:46,200 --> 00:20:49,234
+you can see is that we're
+not just embedding the images,
+
+505
+00:20:49,234 --> 00:20:50,767
+we're actually embedding
+the whole wave
+
+506
+00:20:50,767 --> 00:20:52,334
+with all of its UI.
+
+507
+00:20:52,334 --> 00:20:54,767
+This means
+that I can respond.
+
+508
+00:20:54,767 --> 00:20:57,601
+"Hey, that looks fun.
+Why wasn't I invited?"
+
+509
+00:20:57,601 --> 00:21:00,601
+[cheers and applause]
+
+510
+00:21:03,667 --> 00:21:06,267
+The same way we embed--
+
+511
+00:21:06,267 --> 00:21:07,634
+And we--we do--
+
+512
+00:21:07,634 --> 00:21:10,067
+You can respond in the same way
+you do in the Wave client.
+
+513
+00:21:10,067 --> 00:21:11,167
+Lars Rasmussen: Exactly.
+
+514
+00:21:11,167 --> 00:21:13,667
+And so now,
+I can see, obviously, uh,
+
+515
+00:21:13,667 --> 00:21:15,801
+Greg's question
+from inside my Wave client.
+
+516
+00:21:15,801 --> 00:21:17,300
+I can answer from in here.
+
+517
+00:21:17,300 --> 00:21:19,400
+I don't have to go
+to the blog site to do that.
+
+518
+00:21:19,400 --> 00:21:22,601
+I could if I wanted to,
+but I can stay here.
+
+519
+00:21:22,601 --> 00:21:28,601
+"Um, I lost the phone
+with your number."
+
+520
+00:21:28,601 --> 00:21:30,667
+I really,
+truly can't spell.
+
+521
+00:21:30,667 --> 00:21:32,367
+Here we go.
+
+522
+00:21:32,367 --> 00:21:34,067
+Delasander: So one of
+the things you just saw
+
+523
+00:21:34,067 --> 00:21:36,501
+is that I happened to be online
+when Lars was online,
+
+524
+00:21:36,501 --> 00:21:39,000
+and I saw his response
+coming in live on his blog.
+
+525
+00:21:39,000 --> 00:21:40,834
+That's not always
+going to be the case.
+
+526
+00:21:40,834 --> 00:21:42,667
+Since I responded
+to this blog,
+
+527
+00:21:42,667 --> 00:21:45,901
+it'll show up
+in my Wave client.
+
+528
+00:21:45,901 --> 00:21:49,067
+Right after I refresh
+my Wave client.
+
+529
+00:21:49,067 --> 00:21:51,501
+Um, it will show up
+in my Wave client
+
+530
+00:21:51,501 --> 00:21:54,667
+and I can continue
+the conversation in there.
+
+531
+00:21:54,667 --> 00:21:57,367
+"But, Lars,
+I live next door."
+
+532
+00:21:57,367 --> 00:22:00,067
+[laughter]
+
+533
+00:22:00,067 --> 00:22:01,868
+And, um--
+And then we can--
+
+534
+00:22:01,868 --> 00:22:04,868
+That response shows up
+on the blog,
+
+535
+00:22:04,868 --> 00:22:06,534
+we can continue
+the conversation from there,
+
+536
+00:22:06,534 --> 00:22:09,501
+and anyone else can
+join in that conversation.
+
+537
+00:22:09,501 --> 00:22:11,200
+Lars Rasmussen: Thank you, Greg.
+Delasander: No problem.
+
+538
+00:22:11,200 --> 00:22:14,701
+[applause]
+
+539
+00:22:14,701 --> 00:22:17,200
+Lars Rasmussen:
+Thank you.
+
+540
+00:22:17,200 --> 00:22:19,601
+And so this, again,
+is an example
+
+541
+00:22:19,601 --> 00:22:23,434
+of how to use our embedding APIs
+to put blogs on your web pages,
+
+542
+00:22:23,434 --> 00:22:25,267
+and here we showed you
+with a blogging site,
+
+543
+00:22:25,267 --> 00:22:27,067
+but you could imagine
+discussion group sites,
+
+544
+00:22:27,067 --> 00:22:28,267
+community forums--
+
+545
+00:22:28,267 --> 00:22:29,534
+if you have
+a rich-media site
+
+546
+00:22:29,534 --> 00:22:33,200
+you can let your users
+discuss that using waves.
+
+547
+00:22:33,200 --> 00:22:34,901
+The benefit
+for developers, of course,
+
+548
+00:22:34,901 --> 00:22:38,067
+is you get to provide
+this very live, rich experience
+
+549
+00:22:38,067 --> 00:22:39,534
+with very little code.
+
+550
+00:22:39,534 --> 00:22:43,567
+For your users, for starters,
+they get to use a familiar UI,
+
+551
+00:22:43,567 --> 00:22:46,234
+but for those of your users
+that have Wave accounts,
+
+552
+00:22:46,234 --> 00:22:48,067
+they get to walk
+around the Web
+
+553
+00:22:48,067 --> 00:22:50,968
+and aggregate the conversations
+they're interested in
+
+554
+00:22:50,968 --> 00:22:52,734
+into the Wave client
+so that they don't
+
+555
+00:22:52,734 --> 00:22:55,300
+have to go check back
+on 10,000 different pages
+
+556
+00:22:55,300 --> 00:22:57,167
+whether someone
+responded to them.
+
+557
+00:22:57,167 --> 00:23:00,067
+Which will make flame wars
+so much more effective.
+
+558
+00:23:00,067 --> 00:23:01,801
+[laughter]
+
+559
+00:23:01,801 --> 00:23:03,200
+She hates that joke.
+
+560
+00:23:03,200 --> 00:23:05,634
+Hannon: I hate it.
+[laughs]
+
+561
+00:23:05,634 --> 00:23:06,801
+Lars Rasmussen: Okay.
+
+562
+00:23:06,801 --> 00:23:09,067
+So that was an example
+of how to embed waves.
+
+563
+00:23:09,067 --> 00:23:11,200
+The embedding APIs
+can do other things,
+
+564
+00:23:11,200 --> 00:23:13,767
+and Stephanie
+will show you that now.
+
+565
+00:23:13,767 --> 00:23:15,667
+Hannon: So we invited
+some of our colleagues
+
+566
+00:23:15,667 --> 00:23:17,667
+from Brazil and India
+to Sydney
+
+567
+00:23:17,667 --> 00:23:20,667
+who work on one of our
+social networks called Orkut.
+
+568
+00:23:20,667 --> 00:23:23,334
+We wanted to build a demo
+of what it could look like
+
+569
+00:23:23,334 --> 00:23:25,133
+to put waves
+inside of Orkut.
+
+570
+00:23:25,133 --> 00:23:28,200
+Obviously, it's a place where
+lots of discussions happen.
+
+571
+00:23:28,200 --> 00:23:31,067
+It demonstrates
+three important principles,
+
+572
+00:23:31,067 --> 00:23:34,901
+or features,
+of our embed API.
+
+573
+00:23:34,901 --> 00:23:37,000
+Let me load up the demo.
+
+574
+00:23:42,501 --> 00:23:44,400
+So here's my Orkut account.
+
+575
+00:23:44,400 --> 00:23:47,767
+And you can see there's
+a Wave panel in the middle.
+
+576
+00:23:47,767 --> 00:23:51,200
+And the first thing is
+I can create a wave on Orkut.
+
+577
+00:23:51,200 --> 00:23:54,901
+So I'm starting a new wave,
+and I'll say, "Brazil trip?
+
+578
+00:23:54,901 --> 00:23:59,234
+Wonder when Lars
+will let me go."
+
+579
+00:24:01,467 --> 00:24:03,934
+The second important feature
+is that you can
+
+580
+00:24:03,934 --> 00:24:06,834
+use contacts
+other than your Wave contacts.
+
+581
+00:24:06,834 --> 00:24:08,634
+In this case,
+the authors of the site
+
+582
+00:24:08,634 --> 00:24:10,567
+chose to use
+the Orkut contacts,
+
+583
+00:24:10,567 --> 00:24:12,601
+so I can add
+some of my Orkut friends
+
+584
+00:24:12,601 --> 00:24:16,300
+like Sid, Torston,
+and Rodrigo,
+
+585
+00:24:16,300 --> 00:24:18,734
+who all helped
+build this demo.
+
+586
+00:24:18,734 --> 00:24:21,868
+The third principle is that
+I can embed a "Search" panel
+
+587
+00:24:21,868 --> 00:24:25,934
+inside of Orkut
+using the embed API.
+
+588
+00:24:25,934 --> 00:24:27,200
+I'll show you that now.
+
+589
+00:24:27,200 --> 00:24:32,601
+I can search for all my waves
+from here.
+
+590
+00:24:32,601 --> 00:24:35,601
+And so on.
+And look at them.
+
+591
+00:24:35,601 --> 00:24:38,767
+So that's waves
+embedded in Orkut.
+
+592
+00:24:38,767 --> 00:24:41,267
+What's important
+is that our embed API
+
+593
+00:24:41,267 --> 00:24:45,100
+is powerful enough for you
+to build your own Wave client.
+
+594
+00:24:45,100 --> 00:24:46,901
+In this case, the Orkut team
+
+595
+00:24:46,901 --> 00:24:49,934
+chose to focus on waves
+created inside of Orkut.
+
+596
+00:24:49,934 --> 00:24:52,167
+But just like
+in the blog example,
+
+597
+00:24:52,167 --> 00:24:54,801
+I can go back to my Wave client,
+
+598
+00:24:54,801 --> 00:24:57,334
+and I can see the wave
+I started there.
+
+599
+00:24:57,334 --> 00:24:59,968
+"Wonder when Lars
+will let me go to Brazil."
+
+600
+00:24:59,968 --> 00:25:02,868
+So that's the embed API.
+
+601
+00:25:02,868 --> 00:25:04,667
+Lars Rasmussen: You guys--
+[applause]
+
+602
+00:25:04,667 --> 00:25:06,167
+Thank you.
+
+603
+00:25:09,167 --> 00:25:11,767
+Are you guys
+feeling inspired yet?
+
+604
+00:25:11,767 --> 00:25:13,801
+So remember that we're all
+going to give you accounts
+
+605
+00:25:13,801 --> 00:25:15,334
+on a sandbox build,
+
+606
+00:25:15,334 --> 00:25:18,901
+which is in fact the build that
+we're demo-ing from later today,
+
+607
+00:25:18,901 --> 00:25:21,033
+and this is all
+sample applications
+
+608
+00:25:21,033 --> 00:25:22,367
+that we're hoping
+you'll pick up
+
+609
+00:25:22,367 --> 00:25:25,501
+and build much,
+much cooler things with.
+
+610
+00:25:25,501 --> 00:25:27,968
+Okay, so the next thing
+I want to show is
+
+611
+00:25:27,968 --> 00:25:31,634
+of course you're going to want
+Wave on your mobile devices,
+
+612
+00:25:31,634 --> 00:25:34,701
+and I have an Android
+and an iPhone here,
+
+613
+00:25:34,701 --> 00:25:38,501
+and I was going to show you
+how well it works communicating
+
+614
+00:25:38,501 --> 00:25:41,334
+from mobile devices
+to the desktop,
+
+615
+00:25:41,334 --> 00:25:43,200
+but you guys are all
+on Facebook, aren't you?
+
+616
+00:25:43,200 --> 00:25:46,067
+Because I can't
+get on the wireless.
+
+617
+00:25:46,067 --> 00:25:47,534
+[laughter]
+
+618
+00:25:47,534 --> 00:25:51,133
+So if it doesn't work,
+it's your fault.
+
+619
+00:25:51,133 --> 00:25:53,133
+Okay, so you can see
+my inbox over here.
+
+620
+00:25:53,133 --> 00:25:54,634
+This is on
+the Android device.
+
+621
+00:25:54,634 --> 00:25:56,300
+Here's an open--
+
+622
+00:25:56,300 --> 00:25:58,133
+uh, the same open wave
+we saw before.
+
+623
+00:25:58,133 --> 00:26:00,067
+You see the pretty
+pictures here.
+
+624
+00:26:00,067 --> 00:26:05,868
+And then I can click
+the "Reply" button like this,
+
+625
+00:26:05,868 --> 00:26:08,734
+and you'll see
+over on Stephanie's screen,
+
+626
+00:26:08,734 --> 00:26:11,400
+which I can't see.
+
+627
+00:26:11,400 --> 00:26:13,200
+You will see a reply.
+
+628
+00:26:13,200 --> 00:26:15,667
+Imagine I was actually
+on a network,
+
+629
+00:26:15,667 --> 00:26:21,667
+and then I could type in,
+"I am on the boat."
+
+630
+00:26:21,667 --> 00:26:23,234
+Done.
+
+631
+00:26:23,234 --> 00:26:25,534
+Notice again my spelling.
+
+632
+00:26:25,534 --> 00:26:27,400
+And nothing is going
+to show up over there
+
+633
+00:26:27,400 --> 00:26:28,968
+because we haven't
+yet figured out
+
+634
+00:26:28,968 --> 00:26:32,033
+squeezing this through
+without a connection.
+
+635
+00:26:32,033 --> 00:26:33,467
+Maybe we'll show you that.
+
+636
+00:26:33,467 --> 00:26:35,601
+[laughter]
+
+637
+00:26:35,601 --> 00:26:37,133
+Hannon: As long as it's your
+fault that it's not working.
+
+638
+00:26:37,133 --> 00:26:38,400
+Lars Rasmussen: We are--
+
+639
+00:26:38,400 --> 00:26:39,467
+Hannon: I just don't
+want to screw up the--
+
+640
+00:26:39,467 --> 00:26:40,767
+Lars Rasmussen:
+We are working on it.
+
+641
+00:26:40,767 --> 00:26:44,133
+Okay, so that's mobile.
+
+642
+00:26:44,133 --> 00:26:46,000
+Hannon: How 'bout
+we talk about editing?
+
+643
+00:26:46,000 --> 00:26:47,601
+Lars Rasmussen:
+Oh, that's a brilliant idea.
+
+644
+00:26:47,601 --> 00:26:49,067
+Thank you.
+
+645
+00:26:49,067 --> 00:26:51,601
+Okay, so the next thing
+we're going to show.
+
+646
+00:26:51,601 --> 00:26:53,701
+Again because, um,
+there's only--
+
+647
+00:26:53,701 --> 00:26:54,901
+Back to my desktop.
+Thank you.
+
+648
+00:26:54,901 --> 00:26:57,033
+There is only one copy
+of the wave out there.
+
+649
+00:26:57,033 --> 00:26:59,367
+Even though we put
+these pictures on my blog,
+
+650
+00:26:59,367 --> 00:27:01,367
+I discussed them
+with Greg,
+
+651
+00:27:01,367 --> 00:27:03,767
+uh, we had them
+on my mobile device.
+
+652
+00:27:03,767 --> 00:27:05,667
+Now I notice
+that some of the captions
+
+653
+00:27:05,667 --> 00:27:06,968
+are kind of wonky.
+
+654
+00:27:06,968 --> 00:27:09,167
+And all I have to do is click
+this "Edit" button here,
+
+655
+00:27:09,167 --> 00:27:11,234
+and then I can
+fix that.
+
+656
+00:27:11,234 --> 00:27:14,767
+Kayaks. Beer Man.
+
+657
+00:27:14,767 --> 00:27:18,000
+Thank you.
+[applause]
+
+658
+00:27:18,000 --> 00:27:19,267
+Hannon: And as you notice,
+
+659
+00:27:19,267 --> 00:27:22,734
+the captions
+are updating on the blog.
+
+660
+00:27:22,734 --> 00:27:24,868
+Lars Rasmussen: Yes, hopefully
+you saw that the captions
+
+661
+00:27:24,868 --> 00:27:28,367
+were actually updating live
+on the blog as I was typing.
+
+662
+00:27:28,367 --> 00:27:30,834
+So, here I edited
+my own message,
+
+663
+00:27:30,834 --> 00:27:34,734
+but we actually let users edit
+each other's messages as well,
+
+664
+00:27:34,734 --> 00:27:36,567
+which is a very nice effect
+that in addition
+
+665
+00:27:36,567 --> 00:27:38,300
+to everything
+we showed you already,
+
+666
+00:27:38,300 --> 00:27:39,501
+you can use waves
+
+667
+00:27:39,501 --> 00:27:41,367
+to collaboratively
+author documents,
+
+668
+00:27:41,367 --> 00:27:42,801
+which we'll show you now.
+
+669
+00:27:42,801 --> 00:27:45,868
+So let's leave the boat behind,
+and let's go to work.
+
+670
+00:27:45,868 --> 00:27:47,200
+Stephanie.
+
+671
+00:27:47,200 --> 00:27:49,033
+Hannon: As Lars mentioned,
+I'm a product manager,
+
+672
+00:27:49,033 --> 00:27:51,767
+and I often have to
+take notes in a meeting.
+
+673
+00:27:51,767 --> 00:27:54,200
+Today I have to decide
+if I want to send those notes
+
+674
+00:27:54,200 --> 00:27:57,133
+out on email because
+I want people to discuss them,
+
+675
+00:27:57,133 --> 00:27:59,133
+or if I'm going to put them
+in a dock or a Wiki,
+
+676
+00:27:59,133 --> 00:28:01,501
+'cause I want other people
+to help me edit them.
+
+677
+00:28:01,501 --> 00:28:03,968
+With Wave you don't
+have to make that choice.
+
+678
+00:28:03,968 --> 00:28:07,234
+You can do both discussion
+and content collaboration
+
+679
+00:28:07,234 --> 00:28:09,133
+in one tool.
+
+680
+00:28:09,133 --> 00:28:11,067
+So these are
+our meeting notes.
+
+681
+00:28:11,067 --> 00:28:13,501
+I'm going to add Lars,
+
+682
+00:28:13,501 --> 00:28:17,234
+Jens, Greg, and ACD.
+
+683
+00:28:17,234 --> 00:28:18,968
+[Lars Rasmussen and Hannon
+speak over each other]
+
+684
+00:28:18,968 --> 00:28:20,167
+Lars Rasmussen:
+Pardon me.
+
+685
+00:28:20,167 --> 00:28:21,234
+Hannon: Then you open it.
+
+686
+00:28:21,234 --> 00:28:22,434
+Lars Rasmussen:
+Then I open it.
+
+687
+00:28:22,434 --> 00:28:24,467
+And even though
+this is Stephanie's message,
+
+688
+00:28:24,467 --> 00:28:26,467
+I can click
+that same "Edit" button
+
+689
+00:28:26,467 --> 00:28:31,634
+and change this
+to "glorious."
+
+690
+00:28:31,634 --> 00:28:33,767
+And then I can
+add an action item.
+
+691
+00:28:33,767 --> 00:28:38,434
+"AI. Make more better
+AIs, already."
+
+692
+00:28:38,434 --> 00:28:39,701
+Whoo, like that.
+
+693
+00:28:39,701 --> 00:28:40,701
+Thank you.
+
+694
+00:28:40,701 --> 00:28:43,067
+[applause]
+
+695
+00:28:43,067 --> 00:28:44,167
+Thank you.
+
+696
+00:28:44,167 --> 00:28:46,033
+And so that's
+how easy it is
+
+697
+00:28:46,033 --> 00:28:48,033
+for me to edit
+Stephanie's message.
+
+698
+00:28:48,033 --> 00:28:49,334
+We want to show you now
+how it looks
+
+699
+00:28:49,334 --> 00:28:51,200
+to the other participants
+on the wave--
+
+700
+00:28:51,200 --> 00:28:52,968
+the fact that
+I edited her message.
+
+701
+00:28:52,968 --> 00:28:54,467
+We'll start
+with Stephanie.
+
+702
+00:28:54,467 --> 00:28:56,634
+Hannon: So you can see
+the wave pop back into my inbox
+
+703
+00:28:56,634 --> 00:28:58,100
+because there's
+new material.
+
+704
+00:28:58,100 --> 00:29:01,868
+If I open it,
+I see the markups.
+
+705
+00:29:01,868 --> 00:29:03,868
+So I see the changes
+that Lars made.
+
+706
+00:29:03,868 --> 00:29:05,567
+Lars Rasmussen:
+Thank you.
+
+707
+00:29:05,567 --> 00:29:09,634
+[applause]
+
+708
+00:29:09,634 --> 00:29:11,267
+Hannon: We haven't
+implemented it yet,
+
+709
+00:29:11,267 --> 00:29:12,968
+but we'll also have
+a little description at the top
+
+710
+00:29:12,968 --> 00:29:15,367
+that says
+Lars edited this message.
+
+711
+00:29:15,367 --> 00:29:17,968
+What's important
+is I see these markups
+
+712
+00:29:17,968 --> 00:29:20,734
+not because I wrote
+the original message,
+
+713
+00:29:20,734 --> 00:29:23,534
+but because I saw
+the original message.
+
+714
+00:29:23,534 --> 00:29:25,667
+Anyone who saw
+my original message
+
+715
+00:29:25,667 --> 00:29:27,234
+would see
+these same markups
+
+716
+00:29:27,234 --> 00:29:29,300
+the next time
+they visited the wave
+
+717
+00:29:29,300 --> 00:29:31,334
+after Lars
+made his edits.
+
+718
+00:29:31,334 --> 00:29:32,567
+Jens Rasmussen:
+All right, now,
+
+719
+00:29:32,567 --> 00:29:33,868
+I didn't get to see
+the original message,
+
+720
+00:29:33,868 --> 00:29:35,734
+so when I open up
+this wave,
+
+721
+00:29:35,734 --> 00:29:37,467
+I just see
+the current version of it.
+
+722
+00:29:37,467 --> 00:29:38,801
+But I do get to see
+
+723
+00:29:38,801 --> 00:29:41,934
+that both Stephanie and Lars
+wrote this message.
+
+724
+00:29:41,934 --> 00:29:44,067
+Most of the time
+I'm not going to care,
+
+725
+00:29:44,067 --> 00:29:47,734
+but if I do care, then Playback
+is my friend again.
+
+726
+00:29:47,734 --> 00:29:49,834
+So I see Stephanie's
+original message,
+
+727
+00:29:49,834 --> 00:29:51,200
+she adds Lars,
+
+728
+00:29:51,200 --> 00:29:55,334
+and then I get to see
+Lars's edits.
+
+729
+00:29:55,334 --> 00:29:58,167
+[applause]
+
+730
+00:29:58,167 --> 00:30:00,334
+Thank you.
+
+731
+00:30:00,334 --> 00:30:01,868
+So now that we have
+accountability--
+
+732
+00:30:01,868 --> 00:30:03,501
+accountability in place,
+
+733
+00:30:03,501 --> 00:30:05,834
+we're going to allow
+everybody on a wave
+
+734
+00:30:05,834 --> 00:30:08,000
+to edit everything
+by default.
+
+735
+00:30:08,000 --> 00:30:09,234
+When something
+is changed,
+
+736
+00:30:09,234 --> 00:30:10,968
+the author
+is notified immediately,
+
+737
+00:30:10,968 --> 00:30:12,934
+and, if needed,
+can take action.
+
+738
+00:30:12,934 --> 00:30:17,234
+and everybody who's on the wave
+can find out who did what.
+
+739
+00:30:17,234 --> 00:30:20,367
+So Stephanie promised
+that we were going to do
+
+740
+00:30:20,367 --> 00:30:22,968
+collaboration and communication
+using the same tool.
+
+741
+00:30:22,968 --> 00:30:24,501
+Hannon: I did.
+Jens Rasmussen: So I'm going--
+
+742
+00:30:24,501 --> 00:30:27,300
+Now that I know that Lars made
+this--the request for more AIs,
+
+743
+00:30:27,300 --> 00:30:30,701
+I'm going to use the in-line
+reply tool we showed earlier,
+
+744
+00:30:30,701 --> 00:30:34,868
+um, to add my reply here.
+
+745
+00:30:34,868 --> 00:30:40,767
+"No, enough AIs already."
+
+746
+00:30:40,767 --> 00:30:44,100
+My spelling is not
+doing well either.
+
+747
+00:30:44,100 --> 00:30:46,100
+Lars Rasmussen: It's hard
+when 4,000 people are watching.
+
+748
+00:30:46,100 --> 00:30:47,334
+Jens Rasmussen:
+Typing and talking?
+
+749
+00:30:47,334 --> 00:30:48,801
+It's a little bit
+too much.
+
+750
+00:30:48,801 --> 00:30:50,567
+There we go.
+So I'll hand it back to Lars.
+
+751
+00:30:50,567 --> 00:30:51,567
+Lars Rasmussen:
+Okay, thank you.
+
+752
+00:30:51,567 --> 00:30:53,033
+So notice--
+
+753
+00:30:53,033 --> 00:30:56,000
+Notice that we never said,
+"Let's start a document, here."
+
+754
+00:30:56,000 --> 00:30:57,534
+These are all
+just waves.
+
+755
+00:30:57,534 --> 00:30:58,767
+The only thing
+different here
+
+756
+00:30:58,767 --> 00:31:01,167
+is that we chose to think
+of that opening message
+
+757
+00:31:01,167 --> 00:31:03,901
+more like a document
+we're collaborating about
+
+758
+00:31:03,901 --> 00:31:06,667
+than a message
+that starts a conversation.
+
+759
+00:31:06,667 --> 00:31:09,634
+And then we're choosing to think
+about that in-line reply
+
+760
+00:31:09,634 --> 00:31:11,567
+more like the beginning
+of a conversation
+
+761
+00:31:11,567 --> 00:31:13,601
+about the point
+in that document.
+
+762
+00:31:13,601 --> 00:31:15,767
+But to the system,
+they're all just waves,
+
+763
+00:31:15,767 --> 00:31:17,934
+and in fact,
+you can collaboratively edit
+
+764
+00:31:17,934 --> 00:31:19,634
+any message
+in the tree.
+
+765
+00:31:19,634 --> 00:31:22,501
+Doesn't have to be, uh,
+document-like at all.
+
+766
+00:31:22,501 --> 00:31:24,634
+Stephanie often comes
+and very friendly fixes
+
+767
+00:31:24,634 --> 00:31:27,200
+all of my spelling errors.
+
+768
+00:31:27,200 --> 00:31:31,801
+And so we think this combination
+of collaborative editing
+
+769
+00:31:31,801 --> 00:31:33,033
+and in-line discussion
+
+770
+00:31:33,033 --> 00:31:35,767
+makes for a very powerful
+collaboration tool.
+
+771
+00:31:35,767 --> 00:31:38,767
+And I want to show you that
+with a design document
+
+772
+00:31:38,767 --> 00:31:41,100
+that the team wrote
+a while back.
+
+773
+00:31:41,100 --> 00:31:43,901
+Let me just reconfigure
+my client, here.
+
+774
+00:31:43,901 --> 00:31:49,467
+I'm going to go do a safe
+search, find the document here,
+
+775
+00:31:49,467 --> 00:31:51,434
+Let me make some more
+space for it.
+
+776
+00:31:51,434 --> 00:31:54,501
+And you'll see here
+that it's a RISTEX document.
+
+777
+00:31:54,501 --> 00:31:55,968
+It's got headlines,
+it's got bullet points.
+
+778
+00:31:55,968 --> 00:31:58,567
+It's got illustrations,
+different types of fonts.
+
+779
+00:31:58,567 --> 00:31:59,934
+And then it's interrupted
+
+780
+00:31:59,934 --> 00:32:02,300
+by these little snippets
+of conversation
+
+781
+00:32:02,300 --> 00:32:05,234
+that help facilitate
+the collaboration.
+
+782
+00:32:05,234 --> 00:32:07,534
+And as always, the best way
+to see how this happened
+
+783
+00:32:07,534 --> 00:32:09,167
+is to play back the wave.
+
+784
+00:32:09,167 --> 00:32:11,100
+And you'll see Steven,
+our trusted server guy,
+
+785
+00:32:11,100 --> 00:32:13,634
+started out
+with a terse draft.
+
+786
+00:32:13,634 --> 00:32:15,734
+He added the rest of the team
+
+787
+00:32:15,734 --> 00:32:18,434
+Lars the manager
+says, "Please do more work."
+
+788
+00:32:18,434 --> 00:32:20,601
+Steven grudgingly
+adds another paragraph.
+
+789
+00:32:20,601 --> 00:32:22,434
+He says, "Yeah, whatever."
+
+790
+00:32:22,434 --> 00:32:24,934
+Then Stephanie the PM
+makes an edit here.
+
+791
+00:32:24,934 --> 00:32:26,534
+She adds a comment there,
+
+792
+00:32:26,534 --> 00:32:29,167
+starts a discussion there,
+and so on.
+
+793
+00:32:29,167 --> 00:32:31,501
+I can use the slider
+here to drag it
+
+794
+00:32:31,501 --> 00:32:34,300
+to anywhere in the history
+of the wave.
+
+795
+00:32:34,300 --> 00:32:36,801
+And we're planning
+a bunch of power tools
+
+796
+00:32:36,801 --> 00:32:38,000
+that come with Playback.
+
+797
+00:32:38,000 --> 00:32:39,601
+For example,
+I might ask it
+
+798
+00:32:39,601 --> 00:32:41,868
+only to play back
+Stephanie's contribution.
+
+799
+00:32:41,868 --> 00:32:44,167
+So I might ask it to only
+play back a single message
+
+800
+00:32:44,167 --> 00:32:47,100
+or even a single paragraph
+inside a message.
+
+801
+00:32:47,100 --> 00:32:48,667
+we're definitely going to
+let you take
+
+802
+00:32:48,667 --> 00:32:50,467
+one change in the history
+
+803
+00:32:50,467 --> 00:32:52,801
+and revert it at the end
+of the history.
+
+804
+00:32:52,801 --> 00:32:55,701
+Maybe name aversion so that you
+can find it again and so on.
+
+805
+00:32:55,701 --> 00:32:57,934
+Playback is going to be
+a really powerful tool
+
+806
+00:32:57,934 --> 00:33:00,334
+for investigating
+and manipulating
+
+807
+00:33:00,334 --> 00:33:04,000
+the entire history
+of the wave.
+
+808
+00:33:04,000 --> 00:33:05,000
+Thank you.
+
+809
+00:33:05,000 --> 00:33:08,067
+[applause]
+
+810
+00:33:10,701 --> 00:33:13,534
+And so now imagine we're done
+with the design document.
+
+811
+00:33:13,534 --> 00:33:15,567
+Or we find we're
+in a good state;
+
+812
+00:33:15,567 --> 00:33:17,234
+we want to share it
+with a wider audience.
+
+813
+00:33:17,234 --> 00:33:19,834
+You'll notice it's not super
+comfortable reading a document
+
+814
+00:33:19,834 --> 00:33:21,534
+interrupted by all
+this discussion,
+
+815
+00:33:21,534 --> 00:33:23,567
+so we added
+this widget here
+
+816
+00:33:23,567 --> 00:33:27,434
+that lets you hide
+and show some discussions,
+
+817
+00:33:27,434 --> 00:33:31,567
+but also, just like we extracted
+images from a wave earlier,
+
+818
+00:33:31,567 --> 00:33:33,434
+we let you extract
+the current version
+
+819
+00:33:33,434 --> 00:33:36,667
+of any message in a tree
+into a fresh wave.
+
+820
+00:33:36,667 --> 00:33:37,934
+Like this.
+
+821
+00:33:37,934 --> 00:33:39,501
+And now I have a fresh wave
+
+822
+00:33:39,501 --> 00:33:42,334
+with the pristine
+product of our work,
+
+823
+00:33:42,334 --> 00:33:44,200
+which I can now submit
+to the server
+
+824
+00:33:44,200 --> 00:33:45,767
+and share with
+whomever I like,
+
+825
+00:33:45,767 --> 00:33:49,367
+put on a mailing list internal
+blog or even keep working on.
+
+826
+00:33:49,367 --> 00:33:52,067
+And in fact, we're planning
+more features here
+
+827
+00:33:52,067 --> 00:33:53,667
+for document production.
+
+828
+00:33:53,667 --> 00:33:55,567
+Imagine you go back
+and do more work
+
+829
+00:33:55,567 --> 00:33:57,067
+in the original wave.
+
+830
+00:33:57,067 --> 00:33:59,567
+Then you'll be able
+to merge just those changes
+
+831
+00:33:59,567 --> 00:34:01,734
+into that same
+product wave.
+
+832
+00:34:01,734 --> 00:34:04,567
+The product wave will just
+have a two-step history now,
+
+833
+00:34:04,567 --> 00:34:07,367
+where each step is attributed
+to whoever did the copy.
+
+834
+00:34:07,367 --> 00:34:10,567
+In fact, and you guys will
+recognize this as, um,
+
+835
+00:34:10,567 --> 00:34:12,234
+inspired by
+source-controlled systems.
+
+836
+00:34:12,234 --> 00:34:13,634
+We'll have you--
+
+837
+00:34:13,634 --> 00:34:15,434
+We'll let you have
+a whole string of work waves,
+
+838
+00:34:15,434 --> 00:34:17,501
+all pointing
+to the same product wave.
+
+839
+00:34:17,501 --> 00:34:18,801
+You can have
+different themes
+
+840
+00:34:18,801 --> 00:34:20,801
+working on different
+parts of a wave,
+
+841
+00:34:20,801 --> 00:34:22,300
+and then when
+one team merges
+
+842
+00:34:22,300 --> 00:34:24,300
+and that changes
+into the product wave,
+
+843
+00:34:24,300 --> 00:34:25,868
+the other teams
+can pull that down,
+
+844
+00:34:25,868 --> 00:34:28,000
+merge it with
+the local changes, and so on.
+
+845
+00:34:28,000 --> 00:34:29,400
+So this is
+going to become
+
+846
+00:34:29,400 --> 00:34:33,634
+a very powerful
+document production tool.
+
+847
+00:34:33,634 --> 00:34:34,634
+Thank you.
+
+848
+00:34:34,634 --> 00:34:37,567
+[applause]
+
+849
+00:34:39,901 --> 00:34:42,667
+We showed you this,
+of course, with, um,
+
+850
+00:34:42,667 --> 00:34:44,801
+with, uh,
+rich text documents.
+
+851
+00:34:44,801 --> 00:34:46,067
+There's no reason
+we shouldn't
+
+852
+00:34:46,067 --> 00:34:48,567
+later add spreadsheet-type
+functionality in there,
+
+853
+00:34:48,567 --> 00:34:50,901
+or presentation building-type
+functionality in there.
+
+854
+00:34:50,901 --> 00:34:53,701
+In fact as we'll show you later,
+we've taken great care
+
+855
+00:34:53,701 --> 00:34:56,868
+to make the content model
+inside Wave extendable,
+
+856
+00:34:56,868 --> 00:34:59,634
+both by us and by you.
+
+857
+00:34:59,634 --> 00:35:00,968
+Okay, the next thing I want--
+
+858
+00:35:00,968 --> 00:35:02,367
+Hannon: Why don't you
+just talk for a minute
+
+859
+00:35:02,367 --> 00:35:03,634
+before you open it?
+
+860
+00:35:03,634 --> 00:35:05,000
+Lars Rasmussen:
+Talk for a minute...
+
+861
+00:35:05,000 --> 00:35:06,133
+Hannon: You know.
+
+862
+00:35:06,133 --> 00:35:07,334
+Lars Rasmussen:
+Before I open it.
+
+863
+00:35:07,334 --> 00:35:08,734
+Hannon: 30 seconds.
+
+864
+00:35:08,734 --> 00:35:10,567
+Lars Rasmussen: We could do
+a little interpretive dance
+
+865
+00:35:10,567 --> 00:35:11,801
+while we open it.
+
+866
+00:35:11,801 --> 00:35:12,868
+It's not that there's
+anything wrong
+
+867
+00:35:12,868 --> 00:35:13,901
+with the thing
+I was about to open,
+
+868
+00:35:13,901 --> 00:35:14,901
+it's just that--
+
+869
+00:35:14,901 --> 00:35:15,901
+How're you guys doing?
+
+870
+00:35:15,901 --> 00:35:17,467
+[laughter]
+
+871
+00:35:17,467 --> 00:35:18,968
+Are you having
+a good time?
+
+872
+00:35:18,968 --> 00:35:20,434
+I know it's a long demo.
+Thank you.
+
+873
+00:35:20,434 --> 00:35:23,067
+Don't be shy
+if you like it.
+
+874
+00:35:23,067 --> 00:35:24,300
+Hannon:
+All right, we're ready.
+
+875
+00:35:24,300 --> 00:35:25,501
+Lars Rasmussen:
+There's a whole bunch of people
+
+876
+00:35:25,501 --> 00:35:28,200
+in blue shirts working
+feverishly over there.
+
+877
+00:35:28,200 --> 00:35:30,801
+[chuckles]
+And we're ready.
+
+878
+00:35:30,801 --> 00:35:33,634
+Okay, so here is
+a wave, um...
+
+879
+00:35:33,634 --> 00:35:34,901
+Here is a wave.
+That's right.
+
+880
+00:35:34,901 --> 00:35:37,267
+So my little introduction
+here is the following:
+
+881
+00:35:37,267 --> 00:35:38,267
+We're going
+to show you now
+
+882
+00:35:38,267 --> 00:35:40,667
+the thing we had
+the most fun working on.
+
+883
+00:35:40,667 --> 00:35:43,234
+As in this was
+the hardest thing we did.
+
+884
+00:35:43,234 --> 00:35:46,334
+Um, which is to let
+more than one person
+
+885
+00:35:46,334 --> 00:35:48,334
+edit the same message
+at the same time
+
+886
+00:35:48,334 --> 00:35:51,167
+and still transmitting
+the characters live on the wire.
+
+887
+00:35:51,167 --> 00:35:52,934
+So we have
+a set of pictures here,
+
+888
+00:35:52,934 --> 00:35:54,501
+and Stephanie
+is going to start
+
+889
+00:35:54,501 --> 00:35:56,267
+at the top-left
+editing the captions.
+
+890
+00:35:56,267 --> 00:35:57,601
+You can see on my screen
+
+891
+00:35:57,601 --> 00:36:00,400
+I can see exactly where
+that orange label--where she is,
+
+892
+00:36:00,400 --> 00:36:02,968
+and I'm going to start
+from the lower-right.
+
+893
+00:36:02,968 --> 00:36:04,367
+Hannon: "Thumbs up."
+
+894
+00:36:04,367 --> 00:36:06,000
+Lars Rasmussen: "Spelling
+Google."
+
+895
+00:36:06,000 --> 00:36:07,767
+Hannon: "Lars in the lead."
+
+896
+00:36:07,767 --> 00:36:09,133
+Lars Rasmussen: "Smiley David."
+
+897
+00:36:09,133 --> 00:36:11,000
+Hannon: "Wave crew hiking."
+Lars Rasmussen: "Kapow."
+
+898
+00:36:11,000 --> 00:36:12,667
+[applause]
+
+899
+00:36:12,667 --> 00:36:14,067
+Thank you.
+
+900
+00:36:14,067 --> 00:36:15,701
+Now we're very close
+to each other.
+
+901
+00:36:15,701 --> 00:36:17,701
+I'll add some
+styling here.
+
+902
+00:36:17,701 --> 00:36:19,267
+I'll make this italic.
+
+903
+00:36:19,267 --> 00:36:22,000
+Oh, boy, if someone
+can add some color.
+
+904
+00:36:22,000 --> 00:36:23,167
+We can do this.
+
+905
+00:36:23,167 --> 00:36:25,367
+Notice how close
+we can edit to each other.
+
+906
+00:36:25,367 --> 00:36:26,968
+You can see we've got
+a couple of--
+
+907
+00:36:26,968 --> 00:36:28,300
+of our team
+has joined us.
+
+908
+00:36:28,300 --> 00:36:29,501
+We've got three people here.
+
+909
+00:36:29,501 --> 00:36:32,934
+Casey, Steph, Ophir and Dan.
+
+910
+00:36:32,934 --> 00:36:34,300
+We have four people now,
+
+911
+00:36:34,300 --> 00:36:37,067
+editing the same document
+right next to each other.
+
+912
+00:36:37,067 --> 00:36:40,000
+[applause]
+
+913
+00:36:41,067 --> 00:36:42,000
+Thank you.
+
+914
+00:36:43,801 --> 00:36:45,801
+Thank you.
+
+915
+00:36:45,801 --> 00:36:47,934
+And so apart
+from hours and hours of fun
+
+916
+00:36:47,934 --> 00:36:50,434
+just chasing each other's
+carrots around on the screen...
+
+917
+00:36:50,434 --> 00:36:51,968
+[laughter]
+
+918
+00:36:51,968 --> 00:36:54,234
+Hannon: It's a lot of fun.
+Lars Rasmussen: A lot of fun.
+
+919
+00:36:54,234 --> 00:36:57,934
+Um, the--the--this sort
+of live, concurrent editing
+
+920
+00:36:57,934 --> 00:37:00,300
+opens up a whole set
+of new ways of using the tool.
+
+921
+00:37:00,300 --> 00:37:02,033
+We're actually
+still discovering some.
+
+922
+00:37:02,033 --> 00:37:03,868
+Imagine you're
+in the same room,
+
+923
+00:37:03,868 --> 00:37:05,467
+you're taking notes
+from a meeting.
+
+924
+00:37:05,467 --> 00:37:07,501
+Oftentimes people don't even
+come to the meeting,
+
+925
+00:37:07,501 --> 00:37:10,534
+they just open up the wave,
+see the notes being taken,
+
+926
+00:37:10,534 --> 00:37:14,100
+they just pop their questions
+in the wave, and so on.
+
+927
+00:37:14,100 --> 00:37:16,434
+I want to--
+while I'm showing off our edit,
+
+928
+00:37:16,434 --> 00:37:18,167
+I want to
+make sure you see
+
+929
+00:37:18,167 --> 00:37:20,667
+that it supports
+right-to-left languages.
+
+930
+00:37:20,667 --> 00:37:23,300
+This is Ophir
+speaking in Hebrew.
+
+931
+00:37:23,300 --> 00:37:24,300
+Thank you.
+
+932
+00:37:24,300 --> 00:37:28,000
+[applause]
+
+933
+00:37:28,000 --> 00:37:31,534
+You see up at the top-left that
+the editor supports languages
+
+934
+00:37:31,534 --> 00:37:35,801
+that require international
+input method editors as well.
+
+935
+00:37:35,801 --> 00:37:40,033
+I'm pretty sure
+that's Chinese.
+
+936
+00:37:40,033 --> 00:37:42,434
+Okay.
+That's collaborative editing.
+
+937
+00:37:46,667 --> 00:37:48,200
+And now...
+
+938
+00:37:48,200 --> 00:37:50,434
+Man, this is a long demo.
+
+939
+00:37:50,434 --> 00:37:51,934
+You guys want
+to stand up a little?
+
+940
+00:37:51,934 --> 00:37:52,934
+Stretch.
+Hannon: Any stretching?
+
+941
+00:37:52,934 --> 00:37:53,934
+Lars Rasmussen:
+Stretch a little.
+
+942
+00:37:53,934 --> 00:37:55,634
+Hug the person
+next to you.
+
+943
+00:37:55,634 --> 00:37:56,634
+[laughter]
+
+944
+00:37:56,634 --> 00:37:57,734
+You don't
+have to do that.
+
+945
+00:37:57,734 --> 00:38:00,801
+Hannon: A hug break.
+Make some friends.
+
+946
+00:38:00,801 --> 00:38:02,868
+Lars Rasmussen: Um, I want
+to take a little break.
+
+947
+00:38:02,868 --> 00:38:04,300
+We have lots more
+to show you,
+
+948
+00:38:04,300 --> 00:38:05,767
+but I want to take
+a little break,
+
+949
+00:38:05,767 --> 00:38:09,634
+and I want to, um, call out
+to our friends and colleagues
+
+950
+00:38:09,634 --> 00:38:11,868
+on the Google Web Toolkit team.
+
+951
+00:38:11,868 --> 00:38:12,868
+So--Thank you.
+
+952
+00:38:12,868 --> 00:38:14,334
+[applause]
+
+953
+00:38:14,334 --> 00:38:18,434
+Thank you.
+
+954
+00:38:18,434 --> 00:38:22,667
+So Google Wave is 100% built
+with the Google Web Toolkit
+
+955
+00:38:22,667 --> 00:38:25,167
+from the first line of code
+we wrote in a prototype
+
+956
+00:38:25,167 --> 00:38:27,667
+back in early 2007.
+
+957
+00:38:27,667 --> 00:38:30,100
+And as I'm sure you know,
+the Google Web Toolkit
+
+958
+00:38:30,100 --> 00:38:34,267
+lets you write HTML 5
+applications in Java.
+
+959
+00:38:34,267 --> 00:38:36,367
+And then GWT,
+as we call it,
+
+960
+00:38:36,367 --> 00:38:40,133
+automatically translates that
+into HTML, JavaScript, CSS,
+
+961
+00:38:40,133 --> 00:38:41,968
+all of those things
+that then run
+
+962
+00:38:41,968 --> 00:38:43,968
+in all
+of the modern browsers.
+
+963
+00:38:43,968 --> 00:38:47,467
+And I think that we couldn't
+possibly have built
+
+964
+00:38:47,467 --> 00:38:50,033
+something this rich
+without the Google Web Toolkit.
+
+965
+00:38:50,033 --> 00:38:54,133
+In fact, I don't think we would
+even have thought to do that.
+
+966
+00:38:54,133 --> 00:38:56,968
+I think using
+modern tools like this
+
+967
+00:38:56,968 --> 00:38:58,534
+changes your way
+of thinking.
+
+968
+00:38:58,534 --> 00:39:01,868
+When I was still hand rolling
+JavaScript for Google Maps,
+
+969
+00:39:01,868 --> 00:39:05,067
+I found too much
+of my brain cycles
+
+970
+00:39:05,067 --> 00:39:07,634
+were used worrying about
+the constraints of programming
+
+971
+00:39:07,634 --> 00:39:09,934
+in a scripting language
+in a browser.
+
+972
+00:39:09,934 --> 00:39:12,000
+But by using GWT,
+I get to write in Java
+
+973
+00:39:12,000 --> 00:39:13,734
+and have this
+amazing set of tools
+
+974
+00:39:13,734 --> 00:39:15,501
+that come with
+writing in Java,
+
+975
+00:39:15,501 --> 00:39:17,067
+and we found
+that our programmers
+
+976
+00:39:17,067 --> 00:39:18,834
+can now spend
+most of their time
+
+977
+00:39:18,834 --> 00:39:23,033
+thinking about the amazing
+potential of the Web.
+
+978
+00:39:23,033 --> 00:39:26,300
+And by the way, this is
+both if you're on a desktop
+
+979
+00:39:26,300 --> 00:39:28,367
+or if you're
+on a mobile device,
+
+980
+00:39:28,367 --> 00:39:31,701
+when I showed you
+on the Android and iPhone here,
+
+981
+00:39:31,701 --> 00:39:35,667
+Wave was running in the browser
+in both of those phones.
+
+982
+00:39:35,667 --> 00:39:37,434
+GWT makes that
+fairly easy to do.
+
+983
+00:39:37,434 --> 00:39:39,534
+It's actually
+the same code
+
+984
+00:39:39,534 --> 00:39:41,868
+that runs
+in those mobile devices,
+
+985
+00:39:41,868 --> 00:39:43,467
+it's just a different layout.
+
+986
+00:39:43,467 --> 00:39:46,868
+We estimate that the extra
+requirement of serving this
+
+987
+00:39:46,868 --> 00:39:49,767
+both into desktop browsers
+and mobile browsers
+
+988
+00:39:49,767 --> 00:39:52,667
+only adds about 5% extra
+engineering effort,
+
+989
+00:39:52,667 --> 00:39:56,067
+which I find remarkable.
+
+990
+00:39:56,067 --> 00:39:57,400
+Okay.
+
+991
+00:39:57,400 --> 00:39:58,734
+Hannon: And that graph
+from yesterday.
+
+992
+00:39:58,734 --> 00:40:00,000
+Lars Rasmussen: Pardon me.
+
+993
+00:40:00,000 --> 00:40:01,667
+Oh, the graph from yesterday.
+Did you see that?
+
+994
+00:40:01,667 --> 00:40:04,367
+How we built 1.4 megs of code
+and then all of a sudden
+
+995
+00:40:04,367 --> 00:40:06,367
+it went down to 200k?
+
+996
+00:40:06,367 --> 00:40:09,934
+We like GWT for that.
+
+997
+00:40:09,934 --> 00:40:13,534
+[applause]
+
+998
+00:40:13,534 --> 00:40:15,667
+Hannon: All right.
+So back to the demo.
+
+999
+00:40:15,667 --> 00:40:17,934
+Let's talk
+about organization.
+
+1000
+00:40:17,934 --> 00:40:20,033
+We learned from our own use
+of Wave
+
+1001
+00:40:20,033 --> 00:40:23,300
+that you get a lot of waves,
+which is great,
+
+1002
+00:40:23,300 --> 00:40:25,501
+but you need tools
+to organize them.
+
+1003
+00:40:25,501 --> 00:40:26,934
+We have things
+you're familiar with
+
+1004
+00:40:26,934 --> 00:40:29,434
+like folders
+and saved searches.
+
+1005
+00:40:29,434 --> 00:40:31,534
+We also have tags
+and they're shared
+
+1006
+00:40:31,534 --> 00:40:34,067
+by all the participants
+on the wave.
+
+1007
+00:40:34,067 --> 00:40:35,801
+So you have
+just as much incentive
+
+1008
+00:40:35,801 --> 00:40:39,300
+to put a great tag on a wave
+as a great subject.
+
+1009
+00:40:39,300 --> 00:40:41,300
+For example,
+Lars is way too lazy
+
+1010
+00:40:41,300 --> 00:40:42,601
+to organize his own stuff.
+
+1011
+00:40:42,601 --> 00:40:43,734
+Lars Rasmussen: Oh, yeah.
+
+1012
+00:40:43,734 --> 00:40:46,067
+Hannon: So we have a team
+help him do it.
+
+1013
+00:40:46,067 --> 00:40:48,567
+Lars Rasmussen: Thank you.
+Hannon: [laughs]
+
+1014
+00:40:48,567 --> 00:40:50,667
+But the most powerful way
+to organize waves
+
+1015
+00:40:50,667 --> 00:40:52,667
+is with waves themselves.
+
+1016
+00:40:52,667 --> 00:40:55,734
+Let me open a wave we used
+to organize this demo.
+
+1017
+00:40:55,734 --> 00:40:57,934
+You can see it has links
+to other waves in it
+
+1018
+00:40:57,934 --> 00:41:01,367
+and you can combine, uh, them
+in sections, formatting.
+
+1019
+00:41:01,367 --> 00:41:03,100
+You can discuss them.
+
+1020
+00:41:03,100 --> 00:41:05,601
+And if I click
+on one of these links,
+
+1021
+00:41:05,601 --> 00:41:07,467
+it'll take me to that wave
+
+1022
+00:41:07,467 --> 00:41:10,400
+and I can use the back button
+to go back.
+
+1023
+00:41:10,400 --> 00:41:12,167
+So let me show you
+how easy it is
+
+1024
+00:41:12,167 --> 00:41:14,367
+to create one
+of these wave links.
+
+1025
+00:41:14,367 --> 00:41:17,033
+If I missed one,
+I can just pick it up
+
+1026
+00:41:17,033 --> 00:41:20,100
+from the search panel
+and drop it in.
+
+1027
+00:41:20,100 --> 00:41:25,167
+[applause]
+
+1028
+00:41:25,167 --> 00:41:28,767
+I'll do that one more time
+'cause I think it's cool.
+
+1029
+00:41:28,767 --> 00:41:30,367
+Drop it in.
+
+1030
+00:41:30,367 --> 00:41:32,234
+So we found
+on our own team
+
+1031
+00:41:32,234 --> 00:41:34,567
+links--wave links are good
+for more than just lists.
+
+1032
+00:41:34,567 --> 00:41:37,601
+We're actually interlinking
+a lot of waves on our site
+
+1033
+00:41:37,601 --> 00:41:40,834
+almost like a Wiki,
+uh, on our team.
+
+1034
+00:41:40,834 --> 00:41:42,467
+Before we get
+to Wave extensions,
+
+1035
+00:41:42,467 --> 00:41:44,801
+which I know this audience
+is really excited about,
+
+1036
+00:41:44,801 --> 00:41:46,300
+I want to show you
+one more thing
+
+1037
+00:41:46,300 --> 00:41:48,400
+that we worked
+really hard on.
+
+1038
+00:41:48,400 --> 00:41:51,000
+I'm going to go up here
+and search for Google Wave.
+
+1039
+00:41:51,000 --> 00:41:52,834
+Lars Rasmussen: I have
+a feeling, uh, you're going
+
+1040
+00:41:52,834 --> 00:41:55,234
+to want to refresh your browser
+before we do this.
+
+1041
+00:41:55,234 --> 00:41:59,167
+Hannon: Just like my inbox,
+when a wave matches this search,
+
+1042
+00:41:59,167 --> 00:42:03,334
+it will pop into the panel.
+
+1043
+00:42:03,334 --> 00:42:04,968
+Lars Rasmussen: And so Stephanie
+has a search
+
+1044
+00:42:04,968 --> 00:42:06,000
+for Google Wave over there.
+
+1045
+00:42:06,000 --> 00:42:08,567
+I'm teeing up
+a new wave here.
+
+1046
+00:42:08,567 --> 00:42:09,634
+Said, "Wow.
+
+1047
+00:42:09,634 --> 00:42:15,701
+I am finally demo-ing
+Google Wave."
+
+1048
+00:42:15,701 --> 00:42:17,234
+Now the reason this hasn't
+showed up
+
+1049
+00:42:17,234 --> 00:42:20,834
+in Stephanie's search yet
+is I didn't type the E.
+
+1050
+00:42:20,834 --> 00:42:22,868
+So what I'm going to do,
+I'm going to count to three,
+
+1051
+00:42:22,868 --> 00:42:24,133
+then I'm going to hit the E,
+
+1052
+00:42:24,133 --> 00:42:26,334
+and you guys can count
+how many seconds it takes
+
+1053
+00:42:26,334 --> 00:42:28,934
+before it shows up
+in Stephanie's browser.
+
+1054
+00:42:28,934 --> 00:42:32,467
+One, two, three.
+
+1055
+00:42:32,467 --> 00:42:37,400
+[applause]
+
+1056
+00:42:37,400 --> 00:42:40,400
+You guys want to--
+you guys want to see that again?
+
+1057
+00:42:40,400 --> 00:42:41,934
+[laughter]
+
+1058
+00:42:41,934 --> 00:42:44,167
+Hey, Stephanie, can you open up
+that wave for me?
+
+1059
+00:42:44,167 --> 00:42:45,634
+Hannon: All right,
+let me go over there.
+
+1060
+00:42:45,634 --> 00:42:46,968
+Lars Rasmussen:
+Backspace.
+
+1061
+00:42:46,968 --> 00:42:48,300
+Hannon: [laughs]
+
+1062
+00:42:48,300 --> 00:42:51,167
+[laughter and applause]
+
+1063
+00:42:51,167 --> 00:42:53,634
+Lars Rasmussen:
+E, backspace, E,
+
+1064
+00:42:53,634 --> 00:42:57,000
+backspace, E, backspace, E,
+backspace.
+
+1065
+00:42:57,000 --> 00:43:00,734
+We call that the Wave dance.
+
+1066
+00:43:00,734 --> 00:43:02,067
+So we've worked really hard
+on this.
+
+1067
+00:43:02,067 --> 00:43:03,434
+We're pretty proud
+of the result.
+
+1068
+00:43:03,434 --> 00:43:06,033
+I should just say
+after we started using it,
+
+1069
+00:43:06,033 --> 00:43:07,634
+we found
+this is almost too fast.
+
+1070
+00:43:07,634 --> 00:43:09,567
+Sometimes, uh, it draws
+your attention
+
+1071
+00:43:09,567 --> 00:43:10,934
+to unfinished work.
+
+1072
+00:43:10,934 --> 00:43:12,868
+And we're actually looking
+for the right balance
+
+1073
+00:43:12,868 --> 00:43:17,767
+between speed and not being
+interrupted too often.
+
+1074
+00:43:17,767 --> 00:43:19,367
+Okay, what's next?
+
+1075
+00:43:19,367 --> 00:43:22,000
+Hannon: Extensions.
+Lars Rasmussen: Extensions.
+
+1076
+00:43:22,000 --> 00:43:24,801
+The reasons
+you guys came here.
+
+1077
+00:43:24,801 --> 00:43:27,234
+Okay. So the next thing
+we want to show
+
+1078
+00:43:27,234 --> 00:43:30,200
+is the other category
+of APIs
+
+1079
+00:43:30,200 --> 00:43:31,634
+that we're
+making available today,
+
+1080
+00:43:31,634 --> 00:43:35,133
+which is about extending
+the functionality of Wave.
+
+1081
+00:43:35,133 --> 00:43:37,734
+So we have tried hard
+to maintain a discipline
+
+1082
+00:43:37,734 --> 00:43:40,567
+on the team
+that even significant offerings
+
+1083
+00:43:40,567 --> 00:43:43,868
+of our own should be built
+with our own extension APIs
+
+1084
+00:43:43,868 --> 00:43:45,601
+so that your extensions
+will live
+
+1085
+00:43:45,601 --> 00:43:47,701
+as first-class citizens
+inside Wave.
+
+1086
+00:43:47,701 --> 00:43:51,634
+It's similar, actually,
+to how browsers like Firefox
+
+1087
+00:43:51,634 --> 00:43:52,801
+let you extend them.
+
+1088
+00:43:52,801 --> 00:43:54,467
+This is just the web site
+you're extending
+
+1089
+00:43:54,467 --> 00:43:55,634
+instead of the browser.
+
+1090
+00:43:55,634 --> 00:43:58,567
+So let me show you
+some examples.
+
+1091
+00:43:58,567 --> 00:44:00,701
+You've undoubtedly noticed
+how all morning,
+
+1092
+00:44:00,701 --> 00:44:03,234
+I've been pretending
+my spelling is bad
+
+1093
+00:44:03,234 --> 00:44:06,033
+just so that we could show off
+our spell-checker.
+
+1094
+00:44:06,033 --> 00:44:07,367
+So normally
+spell-checkers work
+
+1095
+00:44:07,367 --> 00:44:09,968
+by matching words up
+against a dictionary.
+
+1096
+00:44:09,968 --> 00:44:11,834
+If they find there's--
+if they don't find a word
+
+1097
+00:44:11,834 --> 00:44:12,834
+that is in error,
+
+1098
+00:44:12,834 --> 00:44:14,234
+the problem is
+that oftentimes
+
+1099
+00:44:14,234 --> 00:44:16,534
+spelling mistakes
+hits other dictionary words.
+
+1100
+00:44:16,534 --> 00:44:19,601
+And so our spell-checker
+actually takes the context
+
+1101
+00:44:19,601 --> 00:44:21,400
+of the word into account
+
+1102
+00:44:21,400 --> 00:44:22,667
+and then it matches it up
+
+1103
+00:44:22,667 --> 00:44:24,501
+against an enormous
+language model
+
+1104
+00:44:24,501 --> 00:44:26,434
+that we've built
+from the entire web.
+
+1105
+00:44:26,434 --> 00:44:29,200
+Let me show you
+how powerful that is.
+
+1106
+00:44:29,200 --> 00:44:32,968
+We call this
+the "Bean Soup Demo."
+
+1107
+00:44:32,968 --> 00:44:38,000
+"Can I have some been soup?"
+
+1108
+00:44:38,000 --> 00:44:39,567
+It puts a red on the line
+
+1109
+00:44:39,567 --> 00:44:42,734
+and it knows that I meant
+"bean soup."
+
+1110
+00:44:42,734 --> 00:44:43,734
+Thank you.
+
+1111
+00:44:43,734 --> 00:44:47,901
+[applause]
+
+1112
+00:44:47,901 --> 00:44:49,501
+Okay, now watch carefully.
+
+1113
+00:44:49,501 --> 00:44:54,667
+"It has bean so long."
+
+1114
+00:44:54,667 --> 00:44:59,067
+Did you see that?
+
+1115
+00:44:59,067 --> 00:45:02,634
+So it is--it has become
+so good at spell-checking
+
+1116
+00:45:02,634 --> 00:45:04,767
+that often,
+it has enough confidence
+
+1117
+00:45:04,767 --> 00:45:07,434
+that we let it automatically
+correct my errors.
+
+1118
+00:45:07,434 --> 00:45:10,934
+Let me show you that again.
+
+1119
+00:45:10,934 --> 00:45:15,868
+"Icland is an icland."
+
+1120
+00:45:15,868 --> 00:45:20,133
+[applause]
+
+1121
+00:45:22,501 --> 00:45:25,701
+"You are to kind."
+
+1122
+00:45:29,667 --> 00:45:31,801
+Pretty cool, huh?
+[laughs]
+
+1123
+00:45:31,801 --> 00:45:33,033
+You didn't see
+that last one.
+
+1124
+00:45:33,033 --> 00:45:35,200
+Okay, so that's
+our spell-checker,
+
+1125
+00:45:35,200 --> 00:45:37,367
+or Spelly as we
+affectionately call it.
+
+1126
+00:45:37,367 --> 00:45:38,767
+Let me show you another
+simpler one
+
+1127
+00:45:38,767 --> 00:45:41,534
+that detects links
+in what you're typing.
+
+1128
+00:45:41,534 --> 00:45:42,968
+And we call it Linky.
+
+1129
+00:45:42,968 --> 00:45:47,300
+"I love google.com."
+
+1130
+00:45:47,300 --> 00:45:50,000
+It immediately puts
+an underline--.a--
+
+1131
+00:45:50,000 --> 00:45:54,167
+ooh, that's not a link--
+.u--now it's a link again.
+
+1132
+00:45:54,167 --> 00:45:58,434
+[applause]
+
+1133
+00:45:58,434 --> 00:45:59,968
+You're wondering
+what's this all got to do
+
+1134
+00:45:59,968 --> 00:46:02,000
+with extensions
+and let me explain that.
+
+1135
+00:46:02,000 --> 00:46:04,100
+So you remember
+we showed you a robot earlier
+
+1136
+00:46:04,100 --> 00:46:05,534
+called "Bloggy."
+
+1137
+00:46:05,534 --> 00:46:08,100
+All that one did
+was publish a blog
+
+1138
+00:46:08,100 --> 00:46:10,033
+that let you use
+the embedding API.
+
+1139
+00:46:10,033 --> 00:46:11,634
+But robots
+are really powerful ways
+
+1140
+00:46:11,634 --> 00:46:13,234
+of extending Wave's
+functionality.
+
+1141
+00:46:13,234 --> 00:46:17,234
+They're server-side programs
+that participate in Wave
+
+1142
+00:46:17,234 --> 00:46:19,901
+with all the power
+of the human participants.
+
+1143
+00:46:19,901 --> 00:46:22,801
+You can see from your robot
+the live changes in the wave.
+
+1144
+00:46:22,801 --> 00:46:24,801
+You can make live changes
+to the wave
+
+1145
+00:46:24,801 --> 00:46:26,834
+including adding
+and removing messages,
+
+1146
+00:46:26,834 --> 00:46:28,434
+collaboratively edited
+messaging,
+
+1147
+00:46:28,434 --> 00:46:30,033
+adding and removing
+participants.
+
+1148
+00:46:30,033 --> 00:46:33,234
+You can even start new waves
+from robots.
+
+1149
+00:46:33,234 --> 00:46:34,901
+And the way Spelly works
+
+1150
+00:46:34,901 --> 00:46:38,200
+is that it uses our robot APIs
+to watch what I'm typing.
+
+1151
+00:46:38,200 --> 00:46:40,901
+It sits on the server.
+It watches what I'm typing.
+
+1152
+00:46:40,901 --> 00:46:43,033
+It takes every so many words
+and matches it up
+
+1153
+00:46:43,033 --> 00:46:45,300
+against a language model.
+
+1154
+00:46:45,300 --> 00:46:46,667
+And then when it finds
+an error,
+
+1155
+00:46:46,667 --> 00:46:50,300
+it uses collaborative editing
+to edit the content.
+
+1156
+00:46:50,300 --> 00:46:52,367
+And in fact, when it doesn't
+have enough confidence
+
+1157
+00:46:52,367 --> 00:46:54,434
+and it put
+that red underline,
+
+1158
+00:46:54,434 --> 00:46:56,868
+if Steph and I were editing
+the message at the same time,
+
+1159
+00:46:56,868 --> 00:46:58,667
+she would also see
+the red underline
+
+1160
+00:46:58,667 --> 00:47:01,968
+and she could be the one
+taking the suggestion.
+
+1161
+00:47:01,968 --> 00:47:05,167
+Linky works
+in the same way.
+
+1162
+00:47:05,167 --> 00:47:08,701
+But who wants
+to be typing in links all day?
+
+1163
+00:47:08,701 --> 00:47:10,100
+We had a very good friend
+of ours
+
+1164
+00:47:10,100 --> 00:47:13,033
+from the Google Search Team
+build this extension for us here
+
+1165
+00:47:13,033 --> 00:47:15,033
+called Searchy.
+
+1166
+00:47:15,033 --> 00:47:16,300
+Let's search for Australia.
+
+1167
+00:47:16,300 --> 00:47:19,100
+Hannon: We have a really clever
+naming convention.
+
+1168
+00:47:19,100 --> 00:47:20,901
+Lars Rasmussen: And here
+you can do a Google search
+
+1169
+00:47:20,901 --> 00:47:24,667
+from right inside Wave
+and add the link like that.
+
+1170
+00:47:24,667 --> 00:47:28,634
+[applause]
+
+1171
+00:47:28,634 --> 00:47:30,267
+You guys want
+to see that again?
+
+1172
+00:47:30,267 --> 00:47:33,567
+I search for Bora Bora.
+It's so pretty there.
+
+1173
+00:47:33,567 --> 00:47:36,601
+I add an image to the wave
+just like that.
+
+1174
+00:47:36,601 --> 00:47:38,267
+Thank you.
+
+1175
+00:47:38,267 --> 00:47:41,267
+[applause]
+
+1176
+00:47:41,267 --> 00:47:44,067
+Let me just quickly return
+to our friend Linky.
+
+1177
+00:47:44,067 --> 00:47:46,334
+I've got a video
+sitting here.
+
+1178
+00:47:46,334 --> 00:47:49,868
+Let me copy the URL.
+
+1179
+00:47:49,868 --> 00:47:51,667
+And inside my wave,
+
+1180
+00:47:51,667 --> 00:47:55,434
+I'm going to type
+"Check this out."
+
+1181
+00:47:55,434 --> 00:47:58,601
+And then I'm going to copy
+the link in there.
+
+1182
+00:47:58,601 --> 00:48:01,133
+And then I'm going to dance
+a little bit
+
+1183
+00:48:01,133 --> 00:48:04,467
+while the system
+spectacularly fails.
+
+1184
+00:48:04,467 --> 00:48:07,434
+[laughter]
+
+1185
+00:48:07,434 --> 00:48:10,934
+Maybe we'll return
+to that later.
+
+1186
+00:48:10,934 --> 00:48:13,634
+Okay, so that's extensions
+that we built
+
+1187
+00:48:13,634 --> 00:48:15,133
+with internal APIs.
+
+1188
+00:48:15,133 --> 00:48:17,234
+And what we're doing today
+as part of the developer preview
+
+1189
+00:48:17,234 --> 00:48:21,567
+is--is make external versions
+of these APIs
+
+1190
+00:48:21,567 --> 00:48:23,334
+available to you guys.
+
+1191
+00:48:23,334 --> 00:48:25,968
+The external APIs
+have almost all the power
+
+1192
+00:48:25,968 --> 00:48:27,367
+of the internal APIs.
+
+1193
+00:48:27,367 --> 00:48:29,501
+There is a few things
+we haven't quite figured out
+
+1194
+00:48:29,501 --> 00:48:31,400
+how to secure the export.
+
+1195
+00:48:31,400 --> 00:48:33,400
+We're working very hard
+to close the gap.
+
+1196
+00:48:33,400 --> 00:48:37,501
+We're going to show you now
+a series of examples
+
+1197
+00:48:37,501 --> 00:48:39,601
+of things that are built
+with the external APIs.
+
+1198
+00:48:39,601 --> 00:48:41,267
+These are all sample codes
+
+1199
+00:48:41,267 --> 00:48:43,434
+that are going
+to be on code.google.com
+
+1200
+00:48:43,434 --> 00:48:45,667
+where we'll host the API.
+
+1201
+00:48:45,667 --> 00:48:48,167
+Stephanie.
+
+1202
+00:48:48,167 --> 00:48:51,167
+Hannon: Any open social gadget
+can sit inside a wave.
+
+1203
+00:48:51,167 --> 00:48:52,901
+In fact, we were about
+to show you one
+
+1204
+00:48:52,901 --> 00:48:55,100
+which might come
+a little bit later.
+
+1205
+00:48:55,100 --> 00:48:58,000
+But we also make
+an additional API available
+
+1206
+00:48:58,000 --> 00:49:00,834
+that lets you the developer
+make your gadget
+
+1207
+00:49:00,834 --> 00:49:02,534
+live and collaborative.
+
+1208
+00:49:02,534 --> 00:49:04,033
+I want to show you that.
+
+1209
+00:49:04,033 --> 00:49:07,767
+But before I do, I'll digress
+and tell you a little story.
+
+1210
+00:49:07,767 --> 00:49:10,234
+Even though we on this team
+have been building Wave
+
+1211
+00:49:10,234 --> 00:49:12,067
+and thinking about Wave
+for a year and a half,
+
+1212
+00:49:12,067 --> 00:49:14,701
+when we first started
+using it ourselves,
+
+1213
+00:49:14,701 --> 00:49:17,367
+it took awhile for us
+to discover all the ways
+
+1214
+00:49:17,367 --> 00:49:19,367
+Wave can make you
+more productive
+
+1215
+00:49:19,367 --> 00:49:21,868
+because we were so used
+to older tools.
+
+1216
+00:49:21,868 --> 00:49:25,100
+In fact, we're still discovering
+new ways all the time.
+
+1217
+00:49:25,100 --> 00:49:27,501
+I'll show you that
+by opening a wave
+
+1218
+00:49:27,501 --> 00:49:31,033
+and using Playback
+to tell you what happened.
+
+1219
+00:49:31,033 --> 00:49:33,467
+Uh, someone on our team
+wanted to create a movie outing
+
+1220
+00:49:33,467 --> 00:49:35,868
+and we should all go see
+the <i>Transformers.</i>
+
+1221
+00:49:35,868 --> 00:49:37,968
+So he sent a wave out
+and people did something
+
+1222
+00:49:37,968 --> 00:49:40,400
+very email-like
+and responded.
+
+1223
+00:49:40,400 --> 00:49:43,100
+"I'm interested."
+"What place are you going to?"
+
+1224
+00:49:43,100 --> 00:49:45,501
+"Is that really a good movie?"
+And so on.
+
+1225
+00:49:45,501 --> 00:49:49,868
+I tried to get them to see
+ <i>Confessions of a Shopaholic.</i>
+
+1226
+00:49:49,868 --> 00:49:50,934
+Nobody went for that.
+
+1227
+00:49:50,934 --> 00:49:52,234
+Lars Rasmussen:
+She's still trying.
+
+1228
+00:49:52,234 --> 00:49:53,501
+Hannon: Still trying.
+
+1229
+00:49:53,501 --> 00:49:55,000
+So when you look
+at this wave,
+
+1230
+00:49:55,000 --> 00:49:57,067
+it's sort of hard to parse out
+the important information
+
+1231
+00:49:57,067 --> 00:49:58,467
+of who wants to go.
+
+1232
+00:49:58,467 --> 00:50:00,934
+So somebody suggested
+we should all edit
+
+1233
+00:50:00,934 --> 00:50:02,934
+the opening message
+instead of putting it
+
+1234
+00:50:02,934 --> 00:50:05,267
+in individual messages.
+
+1235
+00:50:05,267 --> 00:50:06,567
+And we cleaned up the wave.
+
+1236
+00:50:06,567 --> 00:50:12,000
+Everyone started editing
+the opening message and so on.
+
+1237
+00:50:12,000 --> 00:50:16,100
+This was a much better way
+to construct this RSVP list.
+
+1238
+00:50:16,100 --> 00:50:17,501
+And we could still have
+discussions
+
+1239
+00:50:17,501 --> 00:50:20,634
+about which car to take
+and so on.
+
+1240
+00:50:20,634 --> 00:50:22,234
+Now, we're all engineers,
+
+1241
+00:50:22,234 --> 00:50:23,667
+and you can look
+at this workflow
+
+1242
+00:50:23,667 --> 00:50:25,634
+and think
+there are better ways
+
+1243
+00:50:25,634 --> 00:50:27,901
+or there are ways
+to make this even better
+
+1244
+00:50:27,901 --> 00:50:29,567
+using our extensions.
+
+1245
+00:50:29,567 --> 00:50:32,234
+So another engineer
+on our team wrote a gadget.
+
+1246
+00:50:35,767 --> 00:50:39,601
+We call this
+the "yes-no-maybe gadget."
+
+1247
+00:50:39,601 --> 00:50:41,334
+Hey. [laughs]
+
+1248
+00:50:41,334 --> 00:50:44,734
+[applause]
+
+1249
+00:50:44,734 --> 00:50:46,834
+So if you--it's hard to see
+for you guys, I know.
+
+1250
+00:50:46,834 --> 00:50:48,834
+But I'm currently in "No"
+in the middle column
+
+1251
+00:50:48,834 --> 00:50:51,767
+and I'm to change it
+to "Maybe."
+
+1252
+00:50:51,767 --> 00:50:54,634
+And you see it update
+on Lars' screen.
+
+1253
+00:50:54,634 --> 00:50:56,501
+[applause]
+
+1254
+00:50:56,501 --> 00:50:57,734
+Lars Rasmussen:
+And I'm currently
+
+1255
+00:50:57,734 --> 00:50:58,734
+in the "Maybe" column.
+
+1256
+00:50:58,734 --> 00:50:59,868
+And I click
+the "Yes" over here.
+
+1257
+00:50:59,868 --> 00:51:01,234
+And you'll see
+it quickly updates
+
+1258
+00:51:01,234 --> 00:51:03,234
+on both our screens.
+
+1259
+00:51:03,234 --> 00:51:04,667
+Hannon: So you
+the gadget developer
+
+1260
+00:51:04,667 --> 00:51:07,267
+only have to worry
+about two things.
+
+1261
+00:51:07,267 --> 00:51:08,834
+When I click the button,
+
+1262
+00:51:08,834 --> 00:51:12,701
+update the state of the gadget
+in XML and the wave,
+
+1263
+00:51:12,701 --> 00:51:15,367
+then we automatically transmit
+through the server
+
+1264
+00:51:15,367 --> 00:51:18,100
+to Lars' client
+where your gadget
+
+1265
+00:51:18,100 --> 00:51:21,300
+has to update the UI
+to reflect the new state.
+
+1266
+00:51:23,200 --> 00:51:25,033
+Now, of course we did
+all this--
+
+1267
+00:51:25,033 --> 00:51:27,267
+ooh, it's a secret though--
+
+1268
+00:51:27,267 --> 00:51:29,133
+I, um, uh, don't tell anyone,
+
+1269
+00:51:29,133 --> 00:51:30,534
+but we did all this
+so we could build
+
+1270
+00:51:30,534 --> 00:51:32,701
+impossibly fun,
+addictive games.
+
+1271
+00:51:32,701 --> 00:51:34,901
+And we'll show you
+a few of those now.
+
+1272
+00:51:34,901 --> 00:51:37,968
+Lars and I are going
+to open Sudoku.
+
+1273
+00:51:37,968 --> 00:51:40,567
+Lars Rasmussen: Hmm. Hmm.
+
+1274
+00:51:40,567 --> 00:51:42,868
+Hannon: And we intended for this
+to be a collaborative game
+
+1275
+00:51:42,868 --> 00:51:44,667
+so we could solve
+the puzzle together,
+
+1276
+00:51:44,667 --> 00:51:46,734
+but somehow it turned
+competitive.
+
+1277
+00:51:46,734 --> 00:51:47,901
+[laughter]
+
+1278
+00:51:47,901 --> 00:51:51,033
+And, uh, you get a point
+for making a good move
+
+1279
+00:51:51,033 --> 00:51:53,667
+and a negative point
+for doing something wrong.
+
+1280
+00:51:53,667 --> 00:51:56,667
+You can see Lars' score
+is going negative.
+
+1281
+00:51:56,667 --> 00:51:58,000
+Lars Rasmussen:
+How can you play Sudoku
+
+1282
+00:51:58,000 --> 00:51:59,033
+in front of 4,000 people?
+
+1283
+00:51:59,033 --> 00:52:00,133
+Come on.
+
+1284
+00:52:00,133 --> 00:52:02,267
+Hannon:
+Then, uh, back in 1851,
+
+1285
+00:52:02,267 --> 00:52:04,067
+Lars and I
+played this chess game
+
+1286
+00:52:04,067 --> 00:52:05,734
+that became very famous.
+
+1287
+00:52:05,734 --> 00:52:07,667
+It ended in 23 moves.
+
+1288
+00:52:07,667 --> 00:52:11,501
+And it illustrates how well
+Playback works with gadgets.
+
+1289
+00:52:11,501 --> 00:52:15,167
+So if I go into playback
+and I click forward,
+
+1290
+00:52:15,167 --> 00:52:18,167
+you can actually step through
+the whole game.
+
+1291
+00:52:18,167 --> 00:52:21,767
+[applause]
+
+1292
+00:52:27,267 --> 00:52:28,968
+So as we mentioned
+in the beginning,
+
+1293
+00:52:28,968 --> 00:52:30,167
+we come from the Maps team.
+
+1294
+00:52:30,167 --> 00:52:32,100
+So probably wouldn't be
+a good demo
+
+1295
+00:52:32,100 --> 00:52:34,767
+if we didn't do
+a Maps gadget as well.
+
+1296
+00:52:34,767 --> 00:52:36,901
+It's been a lot of work
+to prepare for this demo.
+
+1297
+00:52:36,901 --> 00:52:40,334
+So I'm going to send Lars a wave
+about taking a vacation.
+
+1298
+00:52:40,334 --> 00:52:41,901
+Lars Rasmussen:
+Stephanie's favorite topic.
+
+1299
+00:52:41,901 --> 00:52:43,801
+She wants to go on vacation
+in Bora Bora.
+
+1300
+00:52:43,801 --> 00:52:46,000
+She's asking me
+for recommendations.
+
+1301
+00:52:46,000 --> 00:52:48,033
+I highlight the term
+Bora Bora here.
+
+1302
+00:52:48,033 --> 00:52:50,267
+And then I click this button
+that's provided
+
+1303
+00:52:50,267 --> 00:52:52,801
+by an extension
+that you guys could've written
+
+1304
+00:52:52,801 --> 00:52:56,734
+that inserts a map
+to Bora Bora.
+
+1305
+00:52:56,734 --> 00:52:58,467
+Thank you.
+[applause]
+
+1306
+00:52:58,467 --> 00:52:59,667
+Hannon: Now,
+the important thing
+
+1307
+00:52:59,667 --> 00:53:01,567
+is my hands are off
+of my computer,
+
+1308
+00:53:01,567 --> 00:53:03,300
+but my screen is still
+on the right.
+
+1309
+00:53:03,300 --> 00:53:05,100
+Lars Rasmussen: And now I click
+the satellite button
+
+1310
+00:53:05,100 --> 00:53:06,767
+and it changes
+on both screens.
+
+1311
+00:53:06,767 --> 00:53:12,501
+And I go zoom, zoom,
+zoom, zoom, zoom, zoom.
+
+1312
+00:53:12,501 --> 00:53:14,167
+[applause]
+
+1313
+00:53:14,167 --> 00:53:17,234
+[laughs]
+Thank you.
+
+1314
+00:53:17,234 --> 00:53:20,901
+[applause]
+
+1315
+00:53:20,901 --> 00:53:24,601
+And now, Stephanie loves
+swimming with sharks.
+
+1316
+00:53:24,601 --> 00:53:26,667
+And I happen to know
+that the lemon sharks hang
+
+1317
+00:53:26,667 --> 00:53:28,200
+over here.
+
+1318
+00:53:28,200 --> 00:53:31,567
+And you can see
+that I put that marker on.
+
+1319
+00:53:31,567 --> 00:53:33,501
+Shows up live
+over on Stephanie's screen.
+
+1320
+00:53:33,501 --> 00:53:34,667
+Now my hands are off.
+
+1321
+00:53:34,667 --> 00:53:36,300
+Hannon: And I'll pick up
+the polygon tool
+
+1322
+00:53:36,300 --> 00:53:39,033
+and I'll tell Lars, actually,
+I want to stay in this area.
+
+1323
+00:53:39,033 --> 00:53:41,968
+Lars Rasmussen: And you see that
+showing up on my screen too.
+
+1324
+00:53:41,968 --> 00:53:44,400
+And so again, all you guys
+have to do with your gadgets
+
+1325
+00:53:44,400 --> 00:53:46,567
+is to store updates
+to the state
+
+1326
+00:53:46,567 --> 00:53:48,300
+in the local XML.
+
+1327
+00:53:48,300 --> 00:53:49,767
+And then we transmit
+on the wire
+
+1328
+00:53:49,767 --> 00:53:51,701
+and then the other instance
+of your gadget
+
+1329
+00:53:51,701 --> 00:53:54,434
+just updates its state
+when it gets notified
+
+1330
+00:53:54,434 --> 00:53:57,334
+of that change.
+
+1331
+00:53:57,334 --> 00:54:01,334
+And so those are client-side,
+um, extensions.
+
+1332
+00:54:01,334 --> 00:54:02,767
+I want to just show you,
+actually,
+
+1333
+00:54:02,767 --> 00:54:05,167
+the team in blue over here
+is scrambled.
+
+1334
+00:54:05,167 --> 00:54:07,067
+And they brought back up
+Linky.
+
+1335
+00:54:07,067 --> 00:54:08,934
+And I wanted to show you
+what happened
+
+1336
+00:54:08,934 --> 00:54:13,501
+when I dropped that YouTube URL
+into the old extension wave.
+
+1337
+00:54:13,501 --> 00:54:15,868
+So you'll see that Linky
+didn't just recognize
+
+1338
+00:54:15,868 --> 00:54:17,067
+it was a link,
+
+1339
+00:54:17,067 --> 00:54:19,534
+but it recognized
+it was a link to a video.
+
+1340
+00:54:19,534 --> 00:54:21,868
+It puts this
+little friendly light bulb
+
+1341
+00:54:21,868 --> 00:54:23,934
+on my screen
+where I can open up
+
+1342
+00:54:23,934 --> 00:54:26,767
+a set of suggestions
+for what I might want to do.
+
+1343
+00:54:26,767 --> 00:54:29,701
+Like, for example,
+I might want to embed the video
+
+1344
+00:54:29,701 --> 00:54:32,367
+right inside my wave
+
+1345
+00:54:32,367 --> 00:54:35,801
+and play it for you guys.
+
+1346
+00:54:35,801 --> 00:54:38,100
+[wobbling noise]
+
+1347
+00:54:38,100 --> 00:54:40,300
+Dah nah.
+Pretty cool, huh?
+
+1348
+00:54:40,300 --> 00:54:43,234
+[applause]
+
+1349
+00:54:46,501 --> 00:54:48,400
+Thank you.
+
+1350
+00:54:48,400 --> 00:54:50,567
+Okay. What's next?
+
+1351
+00:54:50,567 --> 00:54:52,667
+So Stephanie showed you
+a bunch of gadgets.
+
+1352
+00:54:52,667 --> 00:54:55,234
+They're all client-side
+extensions.
+
+1353
+00:54:55,234 --> 00:54:57,267
+We want to show you next
+what you can do
+
+1354
+00:54:57,267 --> 00:54:59,434
+on a server side
+with robots.
+
+1355
+00:54:59,434 --> 00:55:01,434
+And we're going to show you
+three examples.
+
+1356
+00:55:01,434 --> 00:55:03,834
+The first one
+is an application--
+
+1357
+00:55:03,834 --> 00:55:06,701
+a collaborative application
+built entirely within Wave
+
+1358
+00:55:06,701 --> 00:55:09,367
+with our extension API.
+
+1359
+00:55:09,367 --> 00:55:11,601
+So let me just open up
+my inbox again.
+
+1360
+00:55:11,601 --> 00:55:13,534
+And instead of clicking
+"new wave,"
+
+1361
+00:55:13,534 --> 00:55:15,601
+I'm going to hit
+this drop-down button here.
+
+1362
+00:55:15,601 --> 00:55:16,934
+And I'm going
+to hit this item
+
+1363
+00:55:16,934 --> 00:55:18,667
+called a "new poll."
+
+1364
+00:55:18,667 --> 00:55:21,033
+New poll
+is just a new wave,
+
+1365
+00:55:21,033 --> 00:55:24,501
+but with a special robot
+that comes from an extension
+
+1366
+00:55:24,501 --> 00:55:28,901
+that you guys could build
+called Polly the Pollster.
+
+1367
+00:55:28,901 --> 00:55:31,567
+I'll add Steph
+to the wave as well.
+
+1368
+00:55:31,567 --> 00:55:35,067
+Polly added a form
+to the wave.
+
+1369
+00:55:35,067 --> 00:55:37,334
+Yes. And so this is not
+a gadget.
+
+1370
+00:55:37,334 --> 00:55:39,300
+Forms are native to wave.
+
+1371
+00:55:39,300 --> 00:55:40,667
+You can put them in there.
+
+1372
+00:55:40,667 --> 00:55:42,667
+And now
+I can fill out the form
+
+1373
+00:55:42,667 --> 00:55:44,634
+starting with the title
+of the poll
+
+1374
+00:55:44,634 --> 00:55:46,267
+that I want to conduct.
+
+1375
+00:55:46,267 --> 00:55:49,634
+And you'll see
+as I'm typing in the form,
+
+1376
+00:55:49,634 --> 00:55:51,300
+Polly sits
+on the server side.
+
+1377
+00:55:51,300 --> 00:55:52,934
+She saw that
+letter by letter,
+
+1378
+00:55:52,934 --> 00:55:56,400
+and she updated
+the title of the wave.
+
+1379
+00:55:56,400 --> 00:55:58,868
+Now the really cool thing
+about having forms in waves
+
+1380
+00:55:58,868 --> 00:56:01,167
+is that you can fill them out
+collaboratively.
+
+1381
+00:56:01,167 --> 00:56:03,601
+So Stephanie's going
+to fill in the choices
+
+1382
+00:56:03,601 --> 00:56:05,934
+while I add
+the question here.
+
+1383
+00:56:05,934 --> 00:56:10,434
+"Which movie
+is the best ever?"
+
+1384
+00:56:10,434 --> 00:56:13,167
+And you see that Stephanie's
+filling in the options
+
+1385
+00:56:13,167 --> 00:56:15,234
+in the field below.
+
+1386
+00:56:15,234 --> 00:56:17,834
+Hannon: <i>Star Wars.</i>
+
+1387
+00:56:17,834 --> 00:56:21,167
+Lars Rasmussen: Star Wave.
+[laughs]
+
+1388
+00:56:21,167 --> 00:56:24,000
+Hannon: Not on purpose.
+[laughs]
+
+1389
+00:56:24,000 --> 00:56:25,534
+Lars Rasmussen: <i>Confessions</i>
+ <i>of a Shopaholic.</i>
+
+1390
+00:56:25,534 --> 00:56:28,200
+So now Stephanie's going
+to fill out a number of people
+
+1391
+00:56:28,200 --> 00:56:30,167
+that we're going
+to send the poll to
+
+1392
+00:56:30,167 --> 00:56:31,934
+in the recipient list there.
+
+1393
+00:56:36,000 --> 00:56:37,000
+She's putting in--
+
+1394
+00:56:37,000 --> 00:56:38,100
+Hannon: Done.
+
+1395
+00:56:38,100 --> 00:56:39,634
+Lars Rasmussen: Putting in
+six of them.
+
+1396
+00:56:39,634 --> 00:56:42,100
+Now I'll hit the button here
+that says "distribute poll."
+
+1397
+00:56:42,100 --> 00:56:43,834
+Now, what happens is
+that Polly sees
+
+1398
+00:56:43,834 --> 00:56:45,234
+that I hit that button.
+
+1399
+00:56:45,234 --> 00:56:48,000
+She fills in
+a results section
+
+1400
+00:56:48,000 --> 00:56:50,000
+in that same wave here.
+
+1401
+00:56:50,000 --> 00:56:52,334
+And then she sends out
+fresh waves
+
+1402
+00:56:52,334 --> 00:56:54,400
+with the questions
+we specified
+
+1403
+00:56:54,400 --> 00:56:56,200
+to all the recipients
+we specified.
+
+1404
+00:56:56,200 --> 00:56:58,300
+And Stephanie's
+one of them.
+
+1405
+00:56:58,300 --> 00:56:59,534
+Hannon: So I'm going
+to answer the poll
+
+1406
+00:56:59,534 --> 00:57:01,400
+that <i>Star Trek's</i> my favorite.
+
+1407
+00:57:01,400 --> 00:57:03,968
+Lars Rasmussen: And you'll see
+that Polly updates the results
+
+1408
+00:57:03,968 --> 00:57:07,434
+live in the admin wave.
+
+1409
+00:57:07,434 --> 00:57:09,767
+With a bit of luck--
+thank you.
+
+1410
+00:57:09,767 --> 00:57:15,100
+[applause]
+
+1411
+00:57:15,100 --> 00:57:17,601
+Okay. So that's the--
+an example of an extension
+
+1412
+00:57:17,601 --> 00:57:21,767
+built exclusively inside
+of Wave.
+
+1413
+00:57:21,767 --> 00:57:24,334
+The next type of extension
+we want to demonstrate for you
+
+1414
+00:57:24,334 --> 00:57:27,534
+are extensions
+that integrate Wave
+
+1415
+00:57:27,534 --> 00:57:29,234
+with existent
+communication systems.
+
+1416
+00:57:29,234 --> 00:57:31,734
+In this case, we'll show you
+with everyone's favorite
+
+1417
+00:57:31,734 --> 00:57:35,601
+microblogging service,
+Twitter.
+
+1418
+00:57:35,601 --> 00:57:37,434
+Hannon: So at this point,
+you're probably wondering
+
+1419
+00:57:37,434 --> 00:57:39,334
+how to install
+these extensions.
+
+1420
+00:57:39,334 --> 00:57:41,334
+So let me open a wave.
+
+1421
+00:57:41,334 --> 00:57:42,934
+And you probably
+won't be surprised to hear
+
+1422
+00:57:42,934 --> 00:57:45,501
+that extensions can live
+inside a wave.
+
+1423
+00:57:45,501 --> 00:57:47,133
+Here's their--a bunch
+of puzzle pieces
+
+1424
+00:57:47,133 --> 00:57:51,100
+showing some of the things
+we're using today.
+
+1425
+00:57:51,100 --> 00:57:53,501
+All I have to do if I want
+to use one of these inst--
+
+1426
+00:57:53,501 --> 00:57:55,400
+extensious--is--
+
+1427
+00:57:55,400 --> 00:57:59,200
+Sorry.
+Click the "install" button.
+
+1428
+00:57:59,200 --> 00:58:02,868
+And you can see over here,
+there's a new drop-down menu.
+
+1429
+00:58:02,868 --> 00:58:05,300
+And I have the option
+to create a new twave.
+
+1430
+00:58:05,300 --> 00:58:07,367
+Lars Rasmussen: A wave,
+of course--twave, of course,
+
+1431
+00:58:07,367 --> 00:58:10,234
+is a wave of tweets.
+
+1432
+00:58:10,234 --> 00:58:11,968
+Hannon: You can describe
+as a developer
+
+1433
+00:58:11,968 --> 00:58:14,067
+how your extensions
+hook into Wave.
+
+1434
+00:58:14,067 --> 00:58:15,801
+It could be
+a keyboard shortcut,
+
+1435
+00:58:15,801 --> 00:58:17,300
+a button on the tool bar.
+
+1436
+00:58:17,300 --> 00:58:19,567
+It could be something
+like a new twave button.
+
+1437
+00:58:19,567 --> 00:58:20,934
+There'll be
+a confirmation page
+
+1438
+00:58:20,934 --> 00:58:23,000
+that tells the users
+how you're going to interact.
+
+1439
+00:58:23,000 --> 00:58:26,067
+We haven't quite implemented
+that yet.
+
+1440
+00:58:26,067 --> 00:58:28,100
+So let me log in here.
+
+1441
+00:58:28,100 --> 00:58:30,767
+I have to tell you that Lars
+created my Twitter account.
+
+1442
+00:58:30,767 --> 00:58:32,734
+Lars Rasmussen:
+I made her Twiffanie.
+
+1443
+00:58:32,734 --> 00:58:35,334
+She hates that.
+
+1444
+00:58:35,334 --> 00:58:36,934
+Hannon: [laughs]
+
+1445
+00:58:36,934 --> 00:58:40,033
+Lars Rasmussen: She's Twiffanie
+at Twitter.
+
+1446
+00:58:40,033 --> 00:58:42,801
+Hannon: I think that tab button
+should be implemented, you guys.
+
+1447
+00:58:42,801 --> 00:58:44,734
+[laughs]
+
+1448
+00:58:44,734 --> 00:58:48,067
+I feel like all sorts
+of bad stuff is about to happen.
+
+1449
+00:58:48,067 --> 00:58:50,767
+[laughs]
+
+1450
+00:58:50,767 --> 00:58:53,501
+All right, so I'll sign in
+to Twitter.
+
+1451
+00:58:57,234 --> 00:58:58,734
+And you can see tweets
+
+1452
+00:58:58,734 --> 00:59:01,601
+from all the famous people
+I follow.
+
+1453
+00:59:01,601 --> 00:59:03,868
+And down here at the bottom,
+Lars.
+
+1454
+00:59:03,868 --> 00:59:05,701
+Lars Rasmussen: No.
+
+1455
+00:59:05,701 --> 00:59:06,968
+Hannon: I'm just going
+to close it.
+
+1456
+00:59:06,968 --> 00:59:09,067
+We still haven't,
+uh, uh...
+
+1457
+00:59:10,968 --> 00:59:13,100
+I wanted
+to get the contacts out.
+
+1458
+00:59:13,100 --> 00:59:17,067
+Um, it's important you can see
+that each of these avatars,
+
+1459
+00:59:17,067 --> 00:59:19,601
+they're not necessarily
+Wave users.
+
+1460
+00:59:19,601 --> 00:59:22,434
+Through our APIs,
+you can be a proxy
+
+1461
+00:59:22,434 --> 00:59:24,701
+for contacts
+on a different system.
+
+1462
+00:59:24,701 --> 00:59:27,067
+So I have Lance Armstrong,
+Ryan Seacrest,
+
+1463
+00:59:27,067 --> 00:59:28,834
+lots of different people.
+
+1464
+00:59:28,834 --> 00:59:32,968
+If I go down here
+and I look for Lars' tweet,
+
+1465
+00:59:32,968 --> 00:59:34,200
+I can respond to it.
+
+1466
+00:59:34,200 --> 00:59:37,734
+He says, "The demo's going
+pretty well."
+
+1467
+00:59:37,734 --> 00:59:41,834
+And I'll say,
+"It ain't over yet."
+
+1468
+00:59:41,834 --> 00:59:42,934
+[laughs]
+
+1469
+00:59:42,934 --> 00:59:44,300
+Lars Rasmussen: And now
+I've logged in
+
+1470
+00:59:44,300 --> 00:59:46,634
+to Twiffanie at Twitter
+over here.
+
+1471
+00:59:46,634 --> 00:59:48,501
+And if I refresh the page,
+
+1472
+00:59:48,501 --> 00:59:52,300
+you'll see that the extension
+took Stephanie's wave reply
+
+1473
+00:59:52,300 --> 00:59:55,000
+and tweeted it.
+
+1474
+00:59:55,000 --> 00:59:56,334
+Thank you.
+
+1475
+00:59:56,334 --> 00:59:59,067
+[applause]
+
+1476
+00:59:59,067 --> 01:00:01,067
+Hannon: Now Tweety
+also lets you search
+
+1477
+01:00:01,067 --> 01:00:03,267
+over the public timeline
+of Twitter.
+
+1478
+01:00:03,267 --> 01:00:06,701
+For example,
+for a phrase like "Google Wave."
+
+1479
+01:00:06,701 --> 01:00:09,801
+So I'm going to start
+a new twave.
+
+1480
+01:00:09,801 --> 01:00:11,801
+Lars Rasmussen: You're going
+to search for Google Wave now?
+
+1481
+01:00:11,801 --> 01:00:12,801
+Hannon: Gonna do it.
+
+1482
+01:00:12,801 --> 01:00:14,033
+Lars Rasmussen:
+How brave it that?
+
+1483
+01:00:14,033 --> 01:00:17,133
+Hannon: [laughs]
+I'm not afraid.
+
+1484
+01:00:17,133 --> 01:00:21,667
+So try again.
+
+1485
+01:00:21,667 --> 01:00:24,801
+I'm going to log in.
+
+1486
+01:00:24,801 --> 01:00:28,200
+And then I'm going to type
+Google Wave.
+
+1487
+01:00:28,200 --> 01:00:31,267
+So we did this yesterday
+and there are only two tweets.
+
+1488
+01:00:31,267 --> 01:00:33,300
+One of them was a woman
+interviewing at a company
+
+1489
+01:00:33,300 --> 01:00:36,801
+called Wave so she said,
+"I should google Wave
+
+1490
+01:00:36,801 --> 01:00:39,200
+before my interview."
+
+1491
+01:00:39,200 --> 01:00:42,400
+So now let's sign in.
+See what happens.
+
+1492
+01:00:46,701 --> 01:00:49,234
+Lars Rasmussen: * Doo doo *
+Hannon: A lot more than two.
+
+1493
+01:00:49,234 --> 01:00:51,901
+Lars Rasmussen:
+Oh! [laughs]
+
+1494
+01:00:51,901 --> 01:00:53,334
+Hannon: And we can go down
+to the bottom
+
+1495
+01:00:53,334 --> 01:00:54,801
+and see tweets
+still coming in.
+
+1496
+01:00:54,801 --> 01:00:57,234
+Lars Rasmussen: Oh, my God,
+you guys, thank you.
+
+1497
+01:00:57,234 --> 01:00:59,567
+[laughs]
+Wow. Thank you.
+
+1498
+01:00:59,567 --> 01:01:02,734
+[applause]
+
+1499
+01:01:07,133 --> 01:01:09,901
+Hannon: So that was a example
+of an integration
+
+1500
+01:01:09,901 --> 01:01:12,934
+between Wave and another
+communication system.
+
+1501
+01:01:12,934 --> 01:01:15,000
+Lars Rasmussen: I'll just add
+to the search functionality
+
+1502
+01:01:15,000 --> 01:01:17,901
+here, actually, that you can--
+you can have Tweety
+
+1503
+01:01:17,901 --> 01:01:19,701
+continuously search
+over in Twitter
+
+1504
+01:01:19,701 --> 01:01:21,467
+and update the wave
+as they come.
+
+1505
+01:01:21,467 --> 01:01:23,567
+So you can use them
+like "twit alerts"
+
+1506
+01:01:23,567 --> 01:01:24,901
+for whatever
+you're interested in.
+
+1507
+01:01:24,901 --> 01:01:27,234
+It'll just pop
+into your inbox.
+
+1508
+01:01:31,334 --> 01:01:33,133
+Buggy.
+Hannon: Buggy.
+
+1509
+01:01:33,133 --> 01:01:34,200
+We were reading the tweets.
+
+1510
+01:01:34,200 --> 01:01:35,534
+Lars Rasmussen: We were reading
+the tw--
+
+1511
+01:01:35,534 --> 01:01:36,567
+Hannon:
+Totally threw us off.
+
+1512
+01:01:36,567 --> 01:01:38,601
+[laughs]
+
+1513
+01:01:38,601 --> 01:01:40,667
+Lars Rasmussen:
+Okay, the last example
+
+1514
+01:01:40,667 --> 01:01:42,767
+of a robot extension
+we want to show
+
+1515
+01:01:42,767 --> 01:01:45,634
+is an example of how you can use
+Wave extension APIs
+
+1516
+01:01:45,634 --> 01:01:49,000
+to integrate Wave
+within existent workflows.
+
+1517
+01:01:49,000 --> 01:01:50,534
+You guys are programmers
+like us.
+
+1518
+01:01:50,534 --> 01:01:53,367
+You probably deal
+with filing bugs.
+
+1519
+01:01:53,367 --> 01:01:54,834
+I want to show you
+an integration
+
+1520
+01:01:54,834 --> 01:01:57,734
+between Wave
+and the issue tracker--
+
+1521
+01:01:57,734 --> 01:02:00,667
+the bugs database
+over on code.google.com.
+
+1522
+01:02:00,667 --> 01:02:03,934
+But this could be any issue
+tracker Bugzilla could host,
+
+1523
+01:02:03,934 --> 01:02:05,667
+whichever is your favorite.
+
+1524
+01:02:05,667 --> 01:02:08,834
+So I'll just conjure up
+a canned message here.
+
+1525
+01:02:08,834 --> 01:02:09,901
+And I'll tell you
+a little bit
+
+1526
+01:02:09,901 --> 01:02:12,067
+about how we do bugs
+on my team.
+
+1527
+01:02:12,067 --> 01:02:13,534
+So a programmer
+has built some code.
+
+1528
+01:02:13,534 --> 01:02:14,834
+They send it
+for code review.
+
+1529
+01:02:14,834 --> 01:02:17,667
+They also send a demo
+to the PMs and the UI people
+
+1530
+01:02:17,667 --> 01:02:19,000
+and Jens and I.
+
+1531
+01:02:19,000 --> 01:02:20,767
+And then we sit in the room
+and we test it.
+
+1532
+01:02:20,767 --> 01:02:22,367
+And you can't read
+the text here.
+
+1533
+01:02:22,367 --> 01:02:23,701
+But there's a bunch
+of bullet points
+
+1534
+01:02:23,701 --> 01:02:25,367
+with observations we made.
+
+1535
+01:02:25,367 --> 01:02:27,868
+We, of course, edited this
+collaboratively.
+
+1536
+01:02:27,868 --> 01:02:29,200
+Some of them are bugs.
+
+1537
+01:02:29,200 --> 01:02:31,400
+Some of them are observations
+for discussion later.
+
+1538
+01:02:31,400 --> 01:02:33,267
+Some of them are notes
+for the UI designers.
+
+1539
+01:02:33,267 --> 01:02:36,434
+And, of course, we should now go
+and file bugs.
+
+1540
+01:02:36,434 --> 01:02:38,567
+Um, but instead of doing that
+manually,
+
+1541
+01:02:38,567 --> 01:02:42,234
+we run an extension that lets me
+just select a bullet point,
+
+1542
+01:02:42,234 --> 01:02:43,767
+click this button here,
+
+1543
+01:02:43,767 --> 01:02:47,300
+and now a robot enters the fray
+called Buggy,
+
+1544
+01:02:47,300 --> 01:02:50,868
+takes that text,
+and files it as a bug for me.
+
+1545
+01:02:50,868 --> 01:02:52,067
+[applause]
+Thank you.
+
+1546
+01:02:52,067 --> 01:02:54,601
+Hannon: Hey, Lars,
+why don't you add me?
+
+1547
+01:02:54,601 --> 01:02:56,100
+Lars Rasmussen:
+Yes. Excellent.
+
+1548
+01:02:56,100 --> 01:02:57,767
+And I'll add Steph
+to the wave.
+
+1549
+01:02:57,767 --> 01:03:00,200
+The bug--the, uh--the--the--
+sorry, the robot
+
+1550
+01:03:00,200 --> 01:03:03,534
+also grabs a little summary
+from issue tracker
+
+1551
+01:03:03,534 --> 01:03:05,567
+and puts it
+right inside the wave.
+
+1552
+01:03:05,567 --> 01:03:06,901
+There's a link there
+to the bug
+
+1553
+01:03:06,901 --> 01:03:09,267
+will Stephani--which Stephanie
+will now click
+
+1554
+01:03:09,267 --> 01:03:13,567
+so that you can see the bug
+sitting over on issue tracker.
+
+1555
+01:03:15,667 --> 01:03:17,334
+Hannon: All right,
+so I'm going to open this bug,
+
+1556
+01:03:17,334 --> 01:03:19,267
+number 11.
+
+1557
+01:03:19,267 --> 01:03:20,634
+Lars Rasmussen:
+And while she does that,
+
+1558
+01:03:20,634 --> 01:03:21,968
+I'll file a bunch more.
+
+1559
+01:03:21,968 --> 01:03:23,334
+You can see how easy
+it is.
+
+1560
+01:03:23,334 --> 01:03:26,767
+And I just triple click here.
+There's another one.
+
+1561
+01:03:26,767 --> 01:03:28,934
+And I'll file that bug too.
+
+1562
+01:03:28,934 --> 01:03:30,701
+Okay. And so now,
+we might send this wave--
+
+1563
+01:03:30,701 --> 01:03:33,667
+we might share this wave
+with our bug triage team.
+
+1564
+01:03:33,667 --> 01:03:35,367
+I'll just do that myself.
+
+1565
+01:03:35,367 --> 01:03:38,133
+All I have to do
+is change the assignee here.
+
+1566
+01:03:38,133 --> 01:03:41,934
+I'll give this to Stephanie.
+I'll take this myself.
+
+1567
+01:03:41,934 --> 01:03:44,100
+And then this one
+goes to Lars.
+
+1568
+01:03:44,100 --> 01:03:45,300
+Ooh, I'm sorry.
+Was that Greg?
+
+1569
+01:03:45,300 --> 01:03:46,667
+Like this.
+
+1570
+01:03:46,667 --> 01:03:48,968
+And now you'll see--
+Stephanie will refresh the bug
+
+1571
+01:03:48,968 --> 01:03:52,300
+and you'll see the robot
+change the assignee over
+
+1572
+01:03:52,300 --> 01:03:53,701
+in the issue tracker.
+
+1573
+01:03:53,701 --> 01:03:56,200
+Hannon: On the left-hand panel
+where it says "owner."
+
+1574
+01:03:56,200 --> 01:03:57,801
+Lars Rasmussen: And also,
+most issue trackers
+
+1575
+01:03:57,801 --> 01:04:00,067
+or bug databases
+lets you debate bugs--
+
+1576
+01:04:00,067 --> 01:04:03,400
+endlessly if I recall--
+inside the database.
+
+1577
+01:04:03,400 --> 01:04:04,667
+Which is normally
+not the strength
+
+1578
+01:04:04,667 --> 01:04:05,667
+of the database.
+
+1579
+01:04:05,667 --> 01:04:07,267
+But it is the strength
+of Wave.
+
+1580
+01:04:07,267 --> 01:04:10,200
+And so instead of debating them
+over on issue tracker,
+
+1581
+01:04:10,200 --> 01:04:13,100
+you can debate the bug
+from inside Wave.
+
+1582
+01:04:13,100 --> 01:04:15,667
+I'll just use the inline
+reply tool here.
+
+1583
+01:04:15,667 --> 01:04:16,667
+And I'll say,
+
+1584
+01:04:16,667 --> 01:04:21,834
+"That is so not my fault!"
+
+1585
+01:04:21,834 --> 01:04:25,234
+Hannon: And I'll refresh.
+You can see the update there.
+
+1586
+01:04:25,234 --> 01:04:30,534
+[applause]
+
+1587
+01:04:30,534 --> 01:04:31,968
+Lars Rasmussen: And so now
+we can continue
+
+1588
+01:04:31,968 --> 01:04:33,801
+the endless debate
+inside of Wave,
+
+1589
+01:04:33,801 --> 01:04:35,133
+which would be
+much more efficient.
+
+1590
+01:04:35,133 --> 01:04:36,367
+We could also build--
+
+1591
+01:04:36,367 --> 01:04:38,234
+We haven't done this
+in the sample here--
+
+1592
+01:04:38,234 --> 01:04:40,234
+that if someone wanted
+to go make a comment
+
+1593
+01:04:40,234 --> 01:04:41,501
+over on issue tracker,
+
+1594
+01:04:41,501 --> 01:04:45,100
+the robot would see that
+and update the wave as well.
+
+1595
+01:04:45,100 --> 01:04:47,334
+And just like we did a search
+through Twitter
+
+1596
+01:04:47,334 --> 01:04:49,100
+into a-a wave,
+
+1597
+01:04:49,100 --> 01:04:51,767
+we could also have the robot
+start a new wave of bugs
+
+1598
+01:04:51,767 --> 01:04:53,667
+and just pull in all of the bugs
+assigned to you
+
+1599
+01:04:53,667 --> 01:04:56,434
+so that you could track them
+from within a wave.
+
+1600
+01:04:56,434 --> 01:04:59,801
+It's remarkable--thank you--
+how much more effective
+
+1601
+01:04:59,801 --> 01:05:02,667
+this sort of thing
+makes you.
+
+1602
+01:05:02,667 --> 01:05:04,767
+Okay.
+That's extensions for you.
+
+1603
+01:05:04,767 --> 01:05:06,033
+You guys feeling--
+
+1604
+01:05:06,033 --> 01:05:07,767
+Hannon: And I think that's
+two of our Ps.
+
+1605
+01:05:07,767 --> 01:05:08,901
+Lars Rasmussen:
+Those are two Ps.
+
+1606
+01:05:08,901 --> 01:05:10,701
+Are you guys
+feeling inspired yet?
+
+1607
+01:05:10,701 --> 01:05:13,501
+Good. Yeah. Thank you.
+[applause]
+
+1608
+01:05:13,501 --> 01:05:17,334
+Thank you.
+
+1609
+01:05:17,334 --> 01:05:19,667
+Okay, let's talk a little bit
+about the protocols
+
+1610
+01:05:19,667 --> 01:05:22,734
+and algorithms,
+um, underlying Wave.
+
+1611
+01:05:22,734 --> 01:05:24,834
+So we want Wave, as Stephanie
+said in the beginning,
+
+1612
+01:05:24,834 --> 01:05:26,234
+to be an open system.
+
+1613
+01:05:26,234 --> 01:05:28,334
+Obviously,
+it's an enormous reason
+
+1614
+01:05:28,334 --> 01:05:31,334
+behind the success of email
+that it's an open protocol.
+
+1615
+01:05:31,334 --> 01:05:33,467
+Anyone can build
+an email system.
+
+1616
+01:05:33,467 --> 01:05:34,901
+Anyone can email
+with each other
+
+1617
+01:05:34,901 --> 01:05:37,367
+regardless of where they got
+their accounts from.
+
+1618
+01:05:37,367 --> 01:05:41,634
+We want Wave
+to work the same way.
+
+1619
+01:05:41,634 --> 01:05:44,100
+And so we've designed
+the algorithms--
+
+1620
+01:05:44,100 --> 01:05:47,767
+we've designed the protocol
+to, um, uh, to support
+
+1621
+01:05:47,767 --> 01:05:49,000
+what we call "federation."
+
+1622
+01:05:49,000 --> 01:05:50,968
+Which means
+that any organization
+
+1623
+01:05:50,968 --> 01:05:53,367
+could build their own
+Wave system,
+
+1624
+01:05:53,367 --> 01:05:56,434
+give accounts to their users
+even in competition with Google,
+
+1625
+01:05:56,434 --> 01:05:58,200
+and then the system
+will still ensure
+
+1626
+01:05:58,200 --> 01:06:00,767
+that we can share waves
+with each other
+
+1627
+01:06:00,767 --> 01:06:02,701
+across these boundaries.
+
+1628
+01:06:02,701 --> 01:06:05,033
+And we want to--
+we want to first show you
+
+1629
+01:06:05,033 --> 01:06:06,701
+how that's going to look.
+
+1630
+01:06:06,701 --> 01:06:07,868
+And then we'll talk
+a little bit
+
+1631
+01:06:07,868 --> 01:06:10,400
+about how far along
+we are with that.
+
+1632
+01:06:10,400 --> 01:06:13,567
+So let me--so this is very much
+work in progress.
+
+1633
+01:06:13,567 --> 01:06:16,033
+Everything we've shown you
+is work in progress.
+
+1634
+01:06:16,033 --> 01:06:19,400
+I'm going to sign in
+to, um, a different version
+
+1635
+01:06:19,400 --> 01:06:23,667
+of the system that sits
+inside our corporate network
+
+1636
+01:06:23,667 --> 01:06:26,934
+that has an open port on it
+for this sort of federation.
+
+1637
+01:06:26,934 --> 01:06:30,534
+And we're going to imagine
+two separate wave systems.
+
+1638
+01:06:30,534 --> 01:06:31,968
+One is the one
+Google has built
+
+1639
+01:06:31,968 --> 01:06:34,000
+that you've been looking at
+all morning.
+
+1640
+01:06:34,000 --> 01:06:37,167
+The other one
+is from Acme Wave,
+
+1641
+01:06:37,167 --> 01:06:39,200
+which you'll see
+over on Stephanie's screen.
+
+1642
+01:06:39,200 --> 01:06:40,701
+They have built
+a separate system.
+
+1643
+01:06:40,701 --> 01:06:42,100
+They're actually
+giving out accounts
+
+1644
+01:06:42,100 --> 01:06:43,868
+in competition with Google.
+
+1645
+01:06:43,868 --> 01:06:47,133
+You'll realize that their client
+looks very similar to ours.
+
+1646
+01:06:47,133 --> 01:06:49,434
+That's because we're intending
+to open source
+
+1647
+01:06:49,434 --> 01:06:53,934
+the lion's share of the code
+that we used to build our system
+
+1648
+01:06:53,934 --> 01:06:56,834
+so that organizations
+can get started quickly.
+
+1649
+01:06:56,834 --> 01:06:59,133
+And that's how Acme Wave
+built their system.
+
+1650
+01:06:59,133 --> 01:07:03,067
+So I'll start a wave
+over on my account here.
+
+1651
+01:07:03,067 --> 01:07:05,701
+And I will say "Project.
+
+1652
+01:07:05,701 --> 01:07:11,200
+You want to work with me
+on that thing?"
+
+1653
+01:07:11,200 --> 01:07:13,767
+And then I will add--
+what's your account
+
+1654
+01:07:13,767 --> 01:07:15,067
+over on Acme Wave?
+
+1655
+01:07:15,067 --> 01:07:18,334
+Hannon: It's Stephanie.
+Lars Rasmussen: Stephanie.
+
+1656
+01:07:18,334 --> 01:07:19,734
+Stephanie on Acme Wave.
+
+1657
+01:07:19,734 --> 01:07:21,367
+So Stephanie momentarily
+has her account--
+
+1658
+01:07:21,367 --> 01:07:23,467
+Hannon: Actually, it's Steph.
+Lars Rasmussen: There we go.
+
+1659
+01:07:23,467 --> 01:07:24,467
+Hannon: Sorry.
+
+1660
+01:07:24,467 --> 01:07:25,801
+Lars Rasmussen:
+Stephanie is now a user
+
+1661
+01:07:25,801 --> 01:07:26,868
+over on Acme Wave.
+
+1662
+01:07:26,868 --> 01:07:30,100
+And I'm going to add her
+to the wave.
+
+1663
+01:07:30,100 --> 01:07:32,100
+Hannon: So I'm going
+to open up the wave.
+
+1664
+01:07:32,100 --> 01:07:34,300
+And he says, "You want to work
+with me on that thing?"
+
+1665
+01:07:34,300 --> 01:07:40,100
+And I said, "I think the guys
+over at Initech can help too."
+
+1666
+01:07:40,100 --> 01:07:43,634
+Lars Rasmussen: [laughs]
+And so...
+
+1667
+01:07:43,634 --> 01:07:45,601
+And so even though Steph and I
+have accounts
+
+1668
+01:07:45,601 --> 01:07:46,834
+on different wave systems,
+
+1669
+01:07:46,834 --> 01:07:48,801
+you still get that live
+
+1670
+01:07:48,801 --> 01:07:50,801
+character by character
+interaction.
+
+1671
+01:07:50,801 --> 01:07:52,868
+The way it works is that
+from our two clients,
+
+1672
+01:07:52,868 --> 01:07:54,501
+these fine-grained
+operations
+
+1673
+01:07:54,501 --> 01:07:56,868
+travel to our respective
+servers,
+
+1674
+01:07:56,868 --> 01:08:00,133
+then it crosses over
+and goes back up to our client.
+
+1675
+01:08:00,133 --> 01:08:02,400
+And all of the liveness
+and concurrency control
+
+1676
+01:08:02,400 --> 01:08:05,467
+and live--um, sorry,
+and real-time resolution
+
+1677
+01:08:05,467 --> 01:08:07,400
+of conflicts happen
+in an algorithm
+
+1678
+01:08:07,400 --> 01:08:09,701
+that supports this sort
+of federation.
+
+1679
+01:08:09,701 --> 01:08:12,901
+Let's bring a third wave system
+into the system.
+
+1680
+01:08:12,901 --> 01:08:15,033
+So we have a couple of friends,
+Peter and Milton,
+
+1681
+01:08:15,033 --> 01:08:17,067
+that work for a company
+called Initech.
+
+1682
+01:08:17,067 --> 01:08:19,567
+They have chosen to run
+their own wave server
+
+1683
+01:08:19,567 --> 01:08:21,400
+in their server closet.
+
+1684
+01:08:21,400 --> 01:08:23,000
+These guys didn't take
+our code.
+
+1685
+01:08:23,000 --> 01:08:26,667
+Milton is the kind of engineer
+who prefers building stuff
+
+1686
+01:08:26,667 --> 01:08:29,334
+from scratch.
+
+1687
+01:08:29,334 --> 01:08:31,667
+Hannon: I'm not sure
+I want to show this, Lars.
+
+1688
+01:08:31,667 --> 01:08:33,734
+Lars Rasmussen: Oh, come on.
+You show it.
+
+1689
+01:08:33,734 --> 01:08:35,801
+I'm going to add Peter
+and I'm going to add Milton.
+
+1690
+01:08:35,801 --> 01:08:37,200
+Why don't you want me
+to show it?
+
+1691
+01:08:37,200 --> 01:08:39,367
+Hannon: I'm afraid this crowd
+might like their UI
+
+1692
+01:08:39,367 --> 01:08:41,934
+better than ours
+and it would break my heart.
+
+1693
+01:08:41,934 --> 01:08:44,701
+Lars Rasmussen:
+Don't break her heart.
+
+1694
+01:08:44,701 --> 01:08:48,634
+[cheers and applause]
+
+1695
+01:08:51,334 --> 01:08:56,467
+Do you have the wave?
+Do you have the wave?
+
+1696
+01:08:56,467 --> 01:08:58,133
+Hannon: No, 'cause--
+Lars Rasmussen: Hmm?
+
+1697
+01:08:58,133 --> 01:09:01,534
+Hannon: Just make
+another edit.
+
+1698
+01:09:01,534 --> 01:09:03,868
+So now I have the wave.
+
+1699
+01:09:03,868 --> 01:09:08,701
+Lars Rasmussen: So she opens--
+Hannon: And if I go into it...
+
+1700
+01:09:08,701 --> 01:09:12,567
+[cheers and applause]
+
+1701
+01:09:12,567 --> 01:09:15,801
+Lars Rasmussen: Thank you.
+
+1702
+01:09:15,801 --> 01:09:17,901
+Hannon: Now I want to show you
+an important principle
+
+1703
+01:09:17,901 --> 01:09:21,267
+of--an important feature
+of the protocol.
+
+1704
+01:09:21,267 --> 01:09:23,000
+So I go back to Acme Wave
+
+1705
+01:09:23,000 --> 01:09:24,734
+and I'm going to make
+a private reply
+
+1706
+01:09:24,734 --> 01:09:26,834
+just like you saw earlier
+in the demo.
+
+1707
+01:09:26,834 --> 01:09:29,634
+But I'm going to add everyone
+except Lars.
+
+1708
+01:09:29,634 --> 01:09:35,300
+So I'll say, "What do you think
+of that Google guy?"
+
+1709
+01:09:35,300 --> 01:09:40,434
+So I'll add all of my friends
+Peter and Milton.
+
+1710
+01:09:40,434 --> 01:09:43,467
+Even though this wave
+is owned at Google
+
+1711
+01:09:43,467 --> 01:09:46,901
+and there's copies on Acme Wave
+and Initech servers,
+
+1712
+01:09:46,901 --> 01:09:50,567
+this private reply
+is never seen by Google
+
+1713
+01:09:50,567 --> 01:09:53,734
+and cannot be discovered
+by Lars in any way.
+
+1714
+01:09:53,734 --> 01:09:56,467
+In fact, if Peter and Milton
+made a private reply
+
+1715
+01:09:56,467 --> 01:09:58,300
+between themselves,
+
+1716
+01:09:58,300 --> 01:10:01,634
+that wave would never leave
+their server closet.
+
+1717
+01:10:01,634 --> 01:10:06,701
+[applause]
+
+1718
+01:10:06,701 --> 01:10:07,968
+Lars Rasmussen: Thank you.
+
+1719
+01:10:07,968 --> 01:10:09,567
+Hannon: And I just want
+to go back over to Milton
+
+1720
+01:10:09,567 --> 01:10:10,901
+for a second.
+
+1721
+01:10:10,901 --> 01:10:13,400
+You can see the private reply
+came in there as well.
+
+1722
+01:10:13,400 --> 01:10:15,434
+Lars Rasmussen: Okay,
+so let me just say this,
+
+1723
+01:10:15,434 --> 01:10:17,901
+um, federation...
+
+1724
+01:10:17,901 --> 01:10:19,000
+that was hard.
+
+1725
+01:10:19,000 --> 01:10:20,334
+So we're building this thing
+
+1726
+01:10:20,334 --> 01:10:22,100
+with live concurrent editing,
+and chatting,
+
+1727
+01:10:22,100 --> 01:10:23,834
+and instant messaging,
+and email, and pictures,
+
+1728
+01:10:23,834 --> 01:10:25,000
+and all that stuff.
+
+1729
+01:10:25,000 --> 01:10:27,300
+And then we throw federation
+into the mix,
+
+1730
+01:10:27,300 --> 01:10:30,067
+which vastly
+complicates things.
+
+1731
+01:10:30,067 --> 01:10:31,667
+It would be so much easier,
+frankly,
+
+1732
+01:10:31,667 --> 01:10:33,000
+from an engineering
+point of view.
+
+1733
+01:10:33,000 --> 01:10:35,033
+If we could just keep this
+proprietary,
+
+1734
+01:10:35,033 --> 01:10:36,467
+then we'd control
+all the servers,
+
+1735
+01:10:36,467 --> 01:10:38,133
+we'd control
+all the update schedules,
+
+1736
+01:10:38,133 --> 01:10:39,534
+and so on.
+
+1737
+01:10:39,534 --> 01:10:42,267
+But we think it's worth
+the effort--
+
+1738
+01:10:42,267 --> 01:10:44,467
+and we hope you guys
+will help us with this.
+
+1739
+01:10:44,467 --> 01:10:46,200
+We think the world
+will be a much better place
+
+1740
+01:10:46,200 --> 01:10:48,734
+if this is an open system
+that everyone can build
+
+1741
+01:10:48,734 --> 01:10:50,534
+wave services with it.
+
+1742
+01:10:50,534 --> 01:10:52,033
+And so--thank you.
+
+1743
+01:10:52,033 --> 01:10:53,834
+[applause]
+
+1744
+01:10:53,834 --> 01:10:55,901
+Thank you.
+
+1745
+01:10:55,901 --> 01:10:59,567
+[applause]
+
+1746
+01:10:59,567 --> 01:11:01,934
+And so let me tell you,
+um, where we're at with it.
+
+1747
+01:11:01,934 --> 01:11:03,868
+So later today,
+there's a web site--
+
+1748
+01:11:03,868 --> 01:11:06,467
+I'll show you the URL later--
+that's going to launch,
+
+1749
+01:11:06,467 --> 01:11:08,934
+which will have--
+it's a very early draft
+
+1750
+01:11:08,934 --> 01:11:10,133
+of this protocol.
+
+1751
+01:11:10,133 --> 01:11:12,267
+It'll have, I think,
+four whitepapers
+
+1752
+01:11:12,267 --> 01:11:15,167
+describing
+how the system works.
+
+1753
+01:11:15,167 --> 01:11:16,334
+It's going to have,
+of course,
+
+1754
+01:11:16,334 --> 01:11:17,767
+a public discussion forum
+
+1755
+01:11:17,767 --> 01:11:21,100
+so that we can start debating
+how this hopefully bright future
+
+1756
+01:11:21,100 --> 01:11:23,300
+of Wave will look.
+
+1757
+01:11:23,300 --> 01:11:25,467
+And then
+like I said, later,
+
+1758
+01:11:25,467 --> 01:11:28,567
+we're going to open source
+the lion's share of our code,
+
+1759
+01:11:28,567 --> 01:11:31,467
+which will serve both as
+a reference implementation
+
+1760
+01:11:31,467 --> 01:11:32,701
+of the protocol,
+
+1761
+01:11:32,701 --> 01:11:34,701
+but also essentially
+a production ready system
+
+1762
+01:11:34,701 --> 01:11:36,601
+like you saw Acme Wave do.
+
+1763
+01:11:36,601 --> 01:11:38,767
+I'm obviously vastly
+simplifying it here.
+
+1764
+01:11:38,767 --> 01:11:41,000
+But essentially,
+you could take that code,
+
+1765
+01:11:41,000 --> 01:11:42,868
+you could put it on top
+of your own database,
+
+1766
+01:11:42,868 --> 01:11:44,968
+and you would have
+a simple wave server
+
+1767
+01:11:44,968 --> 01:11:47,501
+and you would be up
+and running.
+
+1768
+01:11:47,501 --> 01:11:50,300
+Okay.
+So that's federation.
+
+1769
+01:11:53,000 --> 01:11:54,234
+[laughs]
+
+1770
+01:11:54,234 --> 01:11:55,667
+Hannon: I'm excited
+about our next demo.
+
+1771
+01:11:55,667 --> 01:11:58,133
+Lars Rasmussen: The next demo
+is very, very nice.
+
+1772
+01:11:58,133 --> 01:12:02,534
+This is something, um,
+to end off our demo with.
+
+1773
+01:12:02,534 --> 01:12:04,501
+It's something,
+uh, a friend of ours
+
+1774
+01:12:04,501 --> 01:12:06,767
+on the Google research team
+has been building
+
+1775
+01:12:06,767 --> 01:12:08,133
+over the past month.
+
+1776
+01:12:08,133 --> 01:12:11,334
+I saw it myself the first time
+just a few days ago.
+
+1777
+01:12:11,334 --> 01:12:12,801
+Um, and it blew me away.
+
+1778
+01:12:12,801 --> 01:12:14,567
+So, um, let's see.
+
+1779
+01:12:14,567 --> 01:12:16,901
+I'm going to make sure
+I'm on the right system here.
+
+1780
+01:12:16,901 --> 01:12:18,167
+I'm back on the sandbox.
+
+1781
+01:12:18,167 --> 01:12:19,634
+So again, we've been doing
+this demo
+
+1782
+01:12:19,634 --> 01:12:22,734
+on a system where we'll get
+you guys accounts.
+
+1783
+01:12:22,734 --> 01:12:26,267
+Now, Stephanie is going
+to log into, um, an account
+
+1784
+01:12:26,267 --> 01:12:28,934
+of one of our colleagues,
+Alexi.
+
+1785
+01:12:28,934 --> 01:12:30,200
+And then I'm going to start
+a new wave.
+
+1786
+01:12:30,200 --> 01:12:31,868
+I want to make sure
+you guys can see
+
+1787
+01:12:31,868 --> 01:12:33,868
+what we're typing.
+
+1788
+01:12:33,868 --> 01:12:36,868
+I'm making this
+a little bigger like this.
+
+1789
+01:12:36,868 --> 01:12:38,834
+Do you make your font
+bigger there, Steph?
+
+1790
+01:12:38,834 --> 01:12:40,000
+Hannon: Yeah,
+I was going to wait
+
+1791
+01:12:40,000 --> 01:12:42,501
+till you started
+the wave.
+
+1792
+01:12:42,501 --> 01:12:44,267
+Lars Rasmussen: And then
+I'll start a new wave here.
+
+1793
+01:12:44,267 --> 01:12:47,901
+And I'll add Alexi,
+one of our colleagues.
+
+1794
+01:12:47,901 --> 01:12:51,400
+And then I'll add
+my all-time favorite robot
+
+1795
+01:12:51,400 --> 01:12:54,667
+called Rosy.
+
+1796
+01:12:54,667 --> 01:12:55,734
+Yes.
+
+1797
+01:12:55,734 --> 01:12:58,434
+So, um,
+Alexi is from France.
+
+1798
+01:12:58,434 --> 01:13:01,334
+His English
+is not terribly good.
+
+1799
+01:13:01,334 --> 01:13:03,801
+Hannon: Aww!
+
+1800
+01:13:03,801 --> 01:13:05,767
+Lars Rasmussen: For the purposes
+of this demo.
+
+1801
+01:13:05,767 --> 01:13:07,868
+[laughter]
+
+1802
+01:13:07,868 --> 01:13:11,000
+And Rosy is a robot
+that very kindly translates
+
+1803
+01:13:11,000 --> 01:13:13,501
+what I'm typing.
+
+1804
+01:13:13,501 --> 01:13:16,834
+"Hello, world!"
+
+1805
+01:13:16,834 --> 01:13:18,501
+[applause]
+
+1806
+01:13:18,501 --> 01:13:20,901
+"What do you think
+
+1807
+01:13:20,901 --> 01:13:24,767
+"of this demo--
+
+1808
+01:13:24,767 --> 01:13:27,434
+of this demo?"
+
+1809
+01:13:32,567 --> 01:13:34,467
+And now Alexi's typing
+in France.
+
+1810
+01:13:34,467 --> 01:13:37,801
+And I get to see him saying,
+"Ah, yes...
+
+1811
+01:13:37,801 --> 01:13:41,100
+since new--we are in
+can--use--used--"
+
+1812
+01:13:41,100 --> 01:13:43,634
+Translates word by word,
+character by character
+
+1813
+01:13:43,634 --> 01:13:45,400
+as he's typing.
+
+1814
+01:13:45,400 --> 01:13:47,834
+Rosy speaks, I believe,
+40 languages.
+
+1815
+01:13:47,834 --> 01:13:50,667
+She can translate
+between any pair of them.
+
+1816
+01:13:50,667 --> 01:13:54,901
+Um, she's quite the thing.
+
+1817
+01:13:54,901 --> 01:13:57,634
+Okay.
+That finishes our demo.
+
+1818
+01:13:57,634 --> 01:13:58,901
+Oh, thank you.
+
+1819
+01:13:58,901 --> 01:14:03,968
+[cheers and applause]
+Thank you. Thank you.
+
+1820
+01:14:03,968 --> 01:14:09,467
+Thank you.
+Thank you. Thank you.
+
+1821
+01:14:09,467 --> 01:14:11,667
+Thank you.
+
+1822
+01:14:13,567 --> 01:14:15,634
+Thank you.
+Thank you. Thank you. Thank you.
+
+1823
+01:14:15,634 --> 01:14:18,934
+[cheers and applause]
+Thank you. Thank you.
+
+1824
+01:14:18,934 --> 01:14:22,701
+Hannon: I think they like it.
+Lars Rasmussen: They like it.
+
+1825
+01:14:22,701 --> 01:14:27,367
+You guys like it? Okay.
+Thank you.
+
+1826
+01:14:27,367 --> 01:14:31,968
+Hannon: Thank you.
+Wow. Thank you. [laughs]
+
+1827
+01:14:31,968 --> 01:14:36,601
+[cheers and applause]
+Lars Rasmussen: Thank you.
+
+1828
+01:14:36,601 --> 01:14:39,801
+Thank you.
+[whistling and cheers]
+
+1829
+01:14:39,801 --> 01:14:41,968
+Hannon: They have a lot
+of skills.
+
+1830
+01:14:41,968 --> 01:14:46,234
+[applause]
+
+1831
+01:14:46,234 --> 01:14:47,901
+I think...
+Lars Rasmussen: Thank you.
+
+1832
+01:14:47,901 --> 01:14:51,234
+Hannon: If they really
+liked it...
+
+1833
+01:14:51,234 --> 01:14:52,400
+[man shouting indistinctly]
+
+1834
+01:14:52,400 --> 01:14:54,701
+If you guys--you guys
+really liked it,
+
+1835
+01:14:54,701 --> 01:14:56,200
+you could do a wave.
+
+1836
+01:14:56,200 --> 01:14:58,100
+Lars Rasmussen: So, so, so--
+Hannon: Anyone?
+
+1837
+01:14:58,100 --> 01:15:00,000
+It's time to do the wave.
+Lars Rasmussen: So--
+
+1838
+01:15:00,000 --> 01:15:03,234
+So, um,
+what do you guys think?
+
+1839
+01:15:03,234 --> 01:15:05,934
+Okay. [laughs]
+
+1840
+01:15:05,934 --> 01:15:07,534
+So just--
+Hannon: Thank you for filming.
+
+1841
+01:15:07,534 --> 01:15:08,801
+Lars Rasmussen:
+Just to summarize,
+
+1842
+01:15:08,801 --> 01:15:11,033
+um, what we like to think
+we've built here 
+
+1843
+01:15:11,033 --> 01:15:13,667
+is really quite a simple
+communication object
+
+1844
+01:15:13,667 --> 01:15:15,033
+called a wave.
+
+1845
+01:15:15,033 --> 01:15:16,834
+And we've showed
+how you can use it
+
+1846
+01:15:16,834 --> 01:15:18,501
+for quite a lot
+of different types
+
+1847
+01:15:18,501 --> 01:15:20,901
+of communication
+and collaboration.
+
+1848
+01:15:20,901 --> 01:15:23,767
+We showed you how plain vanilla
+email-type conversations
+
+1849
+01:15:23,767 --> 01:15:25,000
+could be done.
+
+1850
+01:15:25,000 --> 01:15:27,067
+We showed you how instant
+messaging conversations
+
+1851
+01:15:27,067 --> 01:15:28,200
+could be done.
+
+1852
+01:15:28,200 --> 01:15:29,901
+We showed you how easy it is
+to share photos
+
+1853
+01:15:29,901 --> 01:15:31,834
+and other rich media types
+with it.
+
+1854
+01:15:31,834 --> 01:15:34,067
+We introduced a platform
+that we're hoping you guys
+
+1855
+01:15:34,067 --> 01:15:35,367
+will pick up
+
+1856
+01:15:35,367 --> 01:15:37,300
+that will let you build things
+like blogging sites,
+
+1857
+01:15:37,300 --> 01:15:40,033
+discussion groups,
+uh, letting your users
+
+1858
+01:15:40,033 --> 01:15:42,400
+discuss images
+on your web site.
+
+1859
+01:15:42,400 --> 01:15:43,734
+With the editing
+functionality,
+
+1860
+01:15:43,734 --> 01:15:45,400
+you can see you can build
+Wiki-like sites
+
+1861
+01:15:45,400 --> 01:15:46,534
+with that as well.
+
+1862
+01:15:46,534 --> 01:15:48,033
+We showed you
+how you can use waves
+
+1863
+01:15:48,033 --> 01:15:50,534
+to collaboratively
+edit documents.
+
+1864
+01:15:50,534 --> 01:15:53,801
+We showed you a rich set
+of extension APIs
+
+1865
+01:15:53,801 --> 01:15:56,467
+that could let you build
+everything from games,
+
+1866
+01:15:56,467 --> 01:15:59,734
+through collaborative
+applications inside a wave,
+
+1867
+01:15:59,734 --> 01:16:02,534
+through integrations with other
+communication systems.
+
+1868
+01:16:02,534 --> 01:16:03,801
+We showed you Twitter.
+
+1869
+01:16:03,801 --> 01:16:05,400
+We're hoping you guys
+will build gateways
+
+1870
+01:16:05,400 --> 01:16:08,133
+from Wave to email,
+to Facebook,
+
+1871
+01:16:08,133 --> 01:16:10,567
+to instant messaging,
+and so on.
+
+1872
+01:16:10,567 --> 01:16:14,033
+We showed you how you can use
+these extension APIs
+
+1873
+01:16:14,033 --> 01:16:18,734
+to also integrate waves
+into work flows.
+
+1874
+01:16:18,734 --> 01:16:22,934
+Whew. Okay.
+
+1875
+01:16:22,934 --> 01:16:24,033
+And now...
+
+1876
+01:16:24,033 --> 01:16:25,133
+Hannon:
+Just going to bring up...
+
+1877
+01:16:25,133 --> 01:16:27,467
+Lars Rasmussen:
+For the administrativia
+
+1878
+01:16:27,467 --> 01:16:28,601
+at the end,
+
+1879
+01:16:28,601 --> 01:16:32,634
+I want to--
+I want to just point out--
+
+1880
+01:16:32,634 --> 01:16:33,701
+I forgot that earlier
+
+1881
+01:16:33,701 --> 01:16:35,467
+that we have three
+breakout sessions
+
+1882
+01:16:35,467 --> 01:16:39,868
+that I don't believe has been
+in the program so far.
+
+1883
+01:16:39,868 --> 01:16:44,534
+Um, the first one at noon
+is about, um, the API.
+
+1884
+01:16:44,534 --> 01:16:46,968
+If you can only come to one
+of our breakout sessions,
+
+1885
+01:16:46,968 --> 01:16:49,367
+please make it that one.
+
+1886
+01:16:49,367 --> 01:16:50,968
+The next one is a little
+run-through
+
+1887
+01:16:50,968 --> 01:16:52,801
+of some of the more
+exciting pieces of technology
+
+1888
+01:16:52,801 --> 01:16:54,033
+under the hood.
+
+1889
+01:16:54,033 --> 01:16:56,000
+We're going to show you
+from the top of the--
+
+1890
+01:16:56,000 --> 01:16:59,634
+top of the stack how our amazing
+spell-checker works,
+
+1891
+01:16:59,634 --> 01:17:03,100
+how the rich text editor
+in the browser works,
+
+1892
+01:17:03,100 --> 01:17:04,934
+and the algorithms
+that we used underneath
+
+1893
+01:17:04,934 --> 01:17:06,767
+to do all
+the concurrency, control,
+
+1894
+01:17:06,767 --> 01:17:09,367
+and conflict resolution
+and so on.
+
+1895
+01:17:09,367 --> 01:17:10,767
+And then at 2:30,
+
+1896
+01:17:10,767 --> 01:17:13,234
+one of our client team
+tech leads
+
+1897
+01:17:13,234 --> 01:17:16,567
+are going to explain
+how we build
+
+1898
+01:17:16,567 --> 01:17:19,734
+the web application
+with the Google Web Toolkit,
+
+1899
+01:17:19,734 --> 01:17:21,434
+why we love it so much,
+
+1900
+01:17:21,434 --> 01:17:24,934
+and what some other
+future plans are.
+
+1901
+01:17:24,934 --> 01:17:26,634
+We also have in Room B4
+
+1902
+01:17:26,634 --> 01:17:28,734
+from noon till 4:30
+office hours
+
+1903
+01:17:28,734 --> 01:17:32,300
+where you guys can come talk
+to the team in blue here.
+
+1904
+01:17:32,300 --> 01:17:36,467
+They love talking.
+
+1905
+01:17:36,467 --> 01:17:39,133
+And then I wanted
+to show you,
+
+1906
+01:17:39,133 --> 01:17:42,634
+um, three important
+URLs here.
+
+1907
+01:17:42,634 --> 01:17:44,934
+So for starters,
+wave.google.com
+
+1908
+01:17:44,934 --> 01:17:47,534
+is going to be the home
+of Google Wave
+
+1909
+01:17:47,534 --> 01:17:49,801
+when we launch it
+later in the year.
+
+1910
+01:17:49,801 --> 01:17:52,133
+If you go there now
+or when the site goes live
+
+1911
+01:17:52,133 --> 01:17:53,300
+in a little bit,
+
+1912
+01:17:53,300 --> 01:17:55,033
+um, there is
+a sign-up form there
+
+1913
+01:17:55,033 --> 01:17:56,534
+where you can sign up
+for notifications
+
+1914
+01:17:56,534 --> 01:17:57,834
+when we launch it.
+
+1915
+01:17:57,834 --> 01:18:01,234
+There's also going to be
+a beautifully edited video
+
+1916
+01:18:01,234 --> 01:18:03,367
+of today's keynote.
+
+1917
+01:18:03,367 --> 01:18:06,367
+Um, the API site
+is going to go live...
+
+1918
+01:18:06,367 --> 01:18:07,601
+man: Already live.
+
+1919
+01:18:07,601 --> 01:18:09,300
+Lars Rasmussen: The API site
+is already live.
+
+1920
+01:18:09,300 --> 01:18:11,801
+No wonder I couldn't--
+couldn't get a connection
+
+1921
+01:18:11,801 --> 01:18:13,734
+to my mobile phone before.
+
+1922
+01:18:13,734 --> 01:18:18,767
+It's at
+code.google.com/apis/wave.
+
+1923
+01:18:18,767 --> 01:18:21,133
+It's got the API.
+It's got the documentation.
+
+1924
+01:18:21,133 --> 01:18:23,567
+It's got the code samples
+we showed before.
+
+1925
+01:18:23,567 --> 01:18:25,934
+Actually, I should just mention
+really quickly
+
+1926
+01:18:25,934 --> 01:18:28,801
+the bug--the--the issue
+tracker integration
+
+1927
+01:18:28,801 --> 01:18:30,100
+we showed at the end,
+
+1928
+01:18:30,100 --> 01:18:31,868
+we have to cheat
+ever slow slightly
+
+1929
+01:18:31,868 --> 01:18:35,267
+by using, uh, using
+an internal API
+
+1930
+01:18:35,267 --> 01:18:36,334
+to the issue tracker.
+
+1931
+01:18:36,334 --> 01:18:37,667
+I think they're working
+really hard
+
+1932
+01:18:37,667 --> 01:18:39,167
+making APIs available.
+
+1933
+01:18:39,167 --> 01:18:41,467
+So that particular sample
+is not going to be there
+
+1934
+01:18:41,467 --> 01:18:43,400
+for--for a wee while.
+
+1935
+01:18:43,400 --> 01:18:46,033
+Lastly,
+at waveprotocol.org,
+
+1936
+01:18:46,033 --> 01:18:48,434
+you'll find
+the protocol draft,
+
+1937
+01:18:48,434 --> 01:18:50,467
+the whitepapers,
+the discussion forum,
+
+1938
+01:18:50,467 --> 01:18:52,868
+and so on if you guys
+are interested
+
+1939
+01:18:52,868 --> 01:18:55,868
+in helping us,
+um, build that wave
+
+1940
+01:18:55,868 --> 01:18:57,701
+to be an open system.
+
+1941
+01:18:57,701 --> 01:18:59,634
+Hannon: You should tell them
+about the email.
+
+1942
+01:18:59,634 --> 01:19:00,801
+Lars Rasmussen: Yes.
+
+1943
+01:19:00,801 --> 01:19:02,367
+And the way you're going
+to get an account
+
+1944
+01:19:02,367 --> 01:19:04,100
+is you'll receive an email
+later today
+
+1945
+01:19:04,100 --> 01:19:07,167
+that explains where you can go
+and sign up
+
+1946
+01:19:07,167 --> 01:19:08,467
+for an account,
+
+1947
+01:19:08,467 --> 01:19:12,200
+which you will get shortly.
+
+1948
+01:19:12,200 --> 01:19:14,901
+Okay. So, look, the last thing
+I want to say,
+
+1949
+01:19:14,901 --> 01:19:18,868
+um, you can probably imagine
+it felt kind of nice
+
+1950
+01:19:18,868 --> 01:19:21,133
+that you guys seemed to like
+what we built.
+
+1951
+01:19:21,133 --> 01:19:23,033
+Um, one of the--
+one of the best times
+
+1952
+01:19:23,033 --> 01:19:24,501
+in my professional life
+
+1953
+01:19:24,501 --> 01:19:28,100
+was after we launched
+Google Maps back in 2005
+
+1954
+01:19:28,100 --> 01:19:30,968
+and developers started doing
+all kinds of crazy things
+
+1955
+01:19:30,968 --> 01:19:32,033
+with Google Maps.
+
+1956
+01:19:32,033 --> 01:19:33,701
+I hope some of you
+are here.
+
+1957
+01:19:33,701 --> 01:19:36,434
+This was even before
+we had an API on Maps.
+
+1958
+01:19:36,434 --> 01:19:38,801
+We scrambled to put an API
+on Maps.
+
+1959
+01:19:38,801 --> 01:19:41,734
+And it's, uh, it's--
+it's become very popular
+
+1960
+01:19:41,734 --> 01:19:45,033
+and it's a huge driving force
+of success.
+
+1961
+01:19:45,033 --> 01:19:47,000
+We learned
+a very important lesson
+
+1962
+01:19:47,000 --> 01:19:48,767
+that--that you guys,
+developers,
+
+1963
+01:19:48,767 --> 01:19:51,334
+are incredibly important
+to the success
+
+1964
+01:19:51,334 --> 01:19:53,567
+of the kind of products
+that we build.
+
+1965
+01:19:53,567 --> 01:19:56,667
+And so I can't wait
+to see what you guys
+
+1966
+01:19:56,667 --> 01:19:58,167
+are gonna come up with.
+
+1967
+01:19:58,167 --> 01:20:00,334
+Um, please, please, please,
+check it out.
+
+1968
+01:20:00,334 --> 01:20:02,400
+Build cool stuff.
+Surprise us.
+
+1969
+01:20:02,400 --> 01:20:06,534
+I just can't wait to see
+what you come up with.
+
+1970
+01:20:06,534 --> 01:20:07,968
+Thank you very much.
+
+1971
+01:20:07,968 --> 01:20:10,834
+[cheers and applause]
+

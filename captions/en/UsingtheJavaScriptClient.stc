@@ -1,0 +1,497 @@
+*TC 00:00:06;19
+Hi, my name's Austin Chau.
+
+*TC 00:00:08;05
+I work on the Calendar
+Date API team.
+
+*TC 00:00:10;22
+The Calendar Data API, is the
+API that exposes the data of
+
+*TC 00:00:14;08
+your Google calendar account.
+
+*TC 00:00:16;08
+With the API, you can do
+things like creating events,
+
+*TC 00:00:18;26
+searching for events, or even
+create a whole new calendar
+
+*TC 00:00:21;23
+program automatically.
+
+*TC 00:00:23;12
+Today, I am going to go over
+how to get started using
+
+*TC 00:00:25;21
+JavaScript Client Library to
+talk to the Calendar Data API.
+
+*TC 00:00:29;02
+I'll also be showing a demo of
+the new interactive developer
+
+*TC 00:00:31;18
+guide that I developed.
+
+*TC 00:00:33;29
+This new developer guide lets
+you play with the code right
+
+*TC 00:00:36;01
+in the browser.
+
+*TC 00:00:37;06
+So it's a great learning tool
+for you to start learning how
+
+*TC 00:00:39;16 
+to use the client library.
+
+*TC 00:00:41;07
+The JavaScript Client Library
+is the latest client library
+
+*TC 00:00:43;18
+that we have added to our list
+of client libraries that we
+
+*TC 00:00:45;19
+officially support, which
+includes Java, CSharp, PHP,
+
+*TC 00:00:49;15
+and Phython.
+
+*TC 00:00:50;26
+But the JavaScript Client
+Library is particularly useful,
+
+*TC 00:00:53;16
+because it allows you to easily
+integrate with the HTML and
+
+*TC 00:00:56;18
+there is no service side
+dependency.
+
+*TC 00:00:58;24
+The JavaScript Client Library
+also has the building
+
+*TC 00:01:00;20 
+technology that allows cross-
+domain communication, meaning
+
+*TC 00:01:04;09
+that you can now use JavaScript
+to perform not only
+
+*TC 00:01:06;10
+re-operation, but also write.
+
+*TC 00:01:08;21
+Using the JavaScript Client
+Library, it's very easy.
+
+*TC 00:01:11;09 
+I'm going to show you the few
+steps you need to do to set up
+
+*TC 00:01:13;20
+your code to start using it.
+
+*TC 00:01:16;27
+Step 1: You have to sign up
+for a developer key. You do
+
+*TC 00:01:20;03
+that by going to this website.
+
+*TC 00:01:22;20
+Step 2: You need to include
+the client library loader on
+
+*TC 00:01:26;01
+your website by placing this
+script included with
+
+*TC 00:01:28;07
+your developer key.
+
+*TC 00:01:30;05
+Step 3: You need to upload an
+image to the same domain where
+
+*TC 00:01:32;17
+the JavaScript Code is going
+to be. This image doesn't have
+
+*TC 00:01:35;13
+to be visible. 
+
+*TC 00:01:36;09
+As you can see, I'm positioning
+it far off the page.
+
+*TC 00:01:39;06
+This is needed for
+cross-domain
+
+*TC 00:01:40;12
+communication purposes.
+
+*TC 00:01:42;12
+Step 4: You need to use the
+loader to load in the
+
+*TC 00:01:45;04
+JavaScript Client Library.
+
+*TC 00:01:46;23
+Step 5: You now need to set
+the callback function to be
+
+*TC 00:01:49;14
+called when the library is
+loaded and ready to go.
+
+*TC 00:01:52;02
+Step 6: Inside of the callback
+function, you first need to check if the
+
+*TC 00:01:55;10
+user has logged in. 
+
+*TC 00:01:56;19
+If not, you need to redirect
+the user to the Google account
+
+*TC 00:01:58;29
+page to log in.
+
+*TC 00:02:00;26
+The user will then be returned
+back to your page when
+
+*TC 00:02:03;00
+they are authenticated.
+
+*TC 00:02:04;19
+Now you are ready to use the
+JavaScript Client Library to
+
+*TC 00:02:06;15
+make calls to play with
+the calendar data API.
+
+*TC 00:02:09;28
+Now let's go to the
+"Interactive Developer Guide."
+
+*TC 00:02:12;09
+You can access this by going
+to this address.
+
+*TC 00:02:17;03
+The interactive developer
+guide looks like a normal
+
+*TC 00:02:19;03
+developer guide with sample
+code, demonstrating the common
+
+*TC 00:02:21;12
+used cases that you can
+perform using the API.
+
+*TC 00:02:24;13
+But unlike the normal
+developer guide, you can now
+
+*TC 00:02:26;16
+modify the source code using
+the build-in text editor and
+
+*TC 00:02:29;05
+execute a code right
+out of the browser.
+
+*TC 00:02:31;14
+This is a fun and intuitive
+way to learn as you get to
+
+*TC 00:02:34;06
+immediately see the results of
+the action you just performed.
+
+*TC 00:02:37;16
+So let's take a look at some
+of the sample codes and we'll
+
+*TC 00:02:39;12
+try to execute it.
+
+*TC 00:02:40;28
+So let's run this sample code
+and see what happens.
+
+*TC 00:02:44;21
+The snippet you just executed
+retrieved a list of all your
+
+*TC 00:02:47;02
+calendars and printed
+out the titles.
+
+*TC 00:02:49;25
+You can pull up the embedded
+version of Google calendar to
+
+*TC 00:02:52;03
+verify that these are all the
+calendars that belong to you.
+
+*TC 00:02:58;20
+Now let's take a look at the
+code to see how this is done.
+
+*TC 00:03:02;12
+First you have to create calendar
+service object and you have to pass
+
+*TC 00:03:05;18
+in your application name.
+
+*TC 00:03:09;27
+Then you have to specify the
+"feedURL," where this request
+
+*TC 00:03:12;18
+will be sent to.
+
+*TC 00:03:15;09
+And we are using
+the "allcalendar" feed.
+
+*TC 00:03:17;16
+Then you have to define
+your callback function.
+
+*TC 00:03:20;13
+So inside a function, we are
+just peering through the list
+
+*TC 00:03:24;17
+of calendars you have and
+printing out it's title.
+
+*TC 00:03:27;08
+We are using the print
+function, which is a
+
+*TC 00:03:29;13 
+convenience method that we
+provide in this
+
+*TC 00:03:31;15
+developer guide.
+
+*TC 00:03:34;13
+And then you also have to
+create a callback function
+
+*TC 00:03:37;02
+for your "error handling."
+
+*TC 00:03:39;13
+And now we are just outputting
+the error message to the
+
+*TC 00:03:41;27
+"Output" tab.
+
+*TC 00:03:43;08
+And finally, you have to
+submit this request to the
+
+*TC 00:03:45;04
+server by calling the
+"getALLCalendarsFeed" through
+
+*TC 00:03:49;10
+your calendar service object
+by passing your "feedURL,"
+
+*TC 00:03:52;23
+your "callback" and your
+"error callback."
+
+*TC 00:03:55;21
+So let's modify the code to
+something different.
+
+*TC 00:03:58;04
+Let's add some code to print
+out the time zone off
+
+*TC 00:03:59;29
+your calendar.
+
+*TC 00:04:01;17
+You can easily do that by
+going into a text editor
+
+*TC 00:04:03;12
+and changing the code.
+
+*TC 00:04:07;02
+And now let's run this code.
+
+*TC 00:04:12;22
+You'll see you have to count
+the title and the time zone
+
+*TC 00:04:15;25
+and output it.
+
+*TC 00:04:18;19
+Ok. Reading data from your
+calendars is fun, but its more
+
+*TC 00:04:20;29
+interesting to write data
+to calendars.
+
+*TC 00:04:23;14
+So let's create an event to
+your Google calendar account.
+
+*TC 00:04:26;04
+First you have to create a
+service object again.
+
+*TC 00:04:29;16
+And now you have to specify
+a different URL to do
+
+*TC 00:04:31;25
+event creation.
+
+*TC 00:04:33;21
+And this is the URL we are
+going to use, the 
+
+*TC 00:04:35;24
+"private/full" URL.
+
+*TC 00:04:38;24
+And now you have to create an
+MDB object to represent this
+
+*TC 00:04:41;06
+new event.
+
+*TC 00:04:43;08
+And we set the title to
+"youtube video shoot."
+
+*TC 00:04:48;18
+To associate time with an
+event, you have to create a
+
+*TC 00:04:50;16
+"When object."
+
+*TC 00:04:51;24 
+Then we have to set a start
+and end time of the
+
+*TC 00:04:53;09
+"When object" using the
+daytime strain.
+
+*TC 00:04:56;03
+And here we are, specifying
+the start time to be today
+
+*TC 00:04:58;23
+at 9:00 AM.
+
+*TC 00:05:00;16
+And we specify the stop time
+at today...10:00 AM.
+
+*TC 00:05:06;04
+And then we set the
+time to the "When object."
+
+*TC 00:05:11;06
+And then you add the
+"When object" to the event.
+
+*TC 00:05:14;11
+And you also have to specify
+the callback function to let
+
+*TC 00:05:16;13
+you know when
+the event is created.
+
+*TC 00:05:19;05
+And you have to specify the
+"error handling method" if
+
+*TC 00:05:21;23
+they are any errors happening.
+
+*TC 00:05:23;16
+And finally you have to submit
+this request to the server by
+
+*TC 00:05:26;06
+calling the
+"insert event method."
+
+*TC 00:05:30;07
+And let's run this code.
+
+*TC 00:05:35;09
+And let's take a look
+at this data calendar.
+
+*TC 00:05:40;20
+And there it is.
+
+*TC 00:05:44;13
+I hope you have an idea of how
+easy it is to use the
+
+*TC 00:05:46;13
+JavaScript Client Library.
+
+*TC 00:05:48;07
+The interactive developer
+guide has many other samples
+
+*TC 00:05:50;19
+that demonstrate other
+features of Calendar Data API.
+
+*TC 00:05:53;10
+So I encourage you to go check
+it out and go play with that.
+
+*TC 00:05:56;00
+For more resources, you can
+visit the Calendar Data API
+
+*TC 00:05:58;06
+home page on "code.google.com."
+
+*TC 00:06:01;03
+Thank you. Have fun coding.

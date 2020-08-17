@@ -1,0 +1,435 @@
+﻿
+
+
+*TC 00:00:01;14  
+Me gustaría hablaros un
+poco sobre el API AJAX 
+
+*TC 00:00:03;16
+de idiomas
+de Google.
+
+*TC 00:00:06;17
+Estaba haciendo pruebas con
+este bookmarklet 
+
+*TC 00:00:11;00
+que podemos utilizar 
+aquí, 
+
+*TC 00:00:12;18
+mirando en 
+mi Twitter.
+
+*TC 00:00:14;03
+Tenemos esta cosa rara aquí
+que está en un idioma distinto.
+
+*TC 00:00:16;16
+Así que tenemos algo en
+francés y no 
+
+*TC 00:00:18;03
+tengo ni idea de lo que 
+significa. 
+
+*TC 00:00:20;08
+Sólo tenemos
+que seleccionarlo,
+
+*TC 00:00:21;25
+pulsar "Translate" y se 
+analizará el texto 
+
+*TC 00:00:23;26
+para darnos la
+traducción adecuada.
+
+*TC 00:00:26;19
+Vamos a ver otro ejemplo.
+
+*TC 00:00:29;18
+Igual en el sitio del Real
+Madrid, 
+
+*TC 00:00:31;27
+si sigues el fútbol y
+quieres saber lo que dijo Calderón.
+
+*TC 00:00:36;22
+Seguimos.
+
+*TC 00:00:38;13
+Listo.  Va a analizarlo y a decirnos
+que es:
+
+*TC 00:00:41;02
+"Moments to enjoy together".
+
+*TC 00:00:43;02
+Es evidente que 
+
+*TC 00:00:44;26
+lo que nos va a devolver 
+no va a resultar
+
+*TC 00:00:46;22
+la traducción perfecta.
+Sería difícil de conseguir.
+
+*TC 00:00:50;20
+Pero nos da
+suficiente información.
+
+*TC 00:00:53;23
+Por ejemplo, 
+estaba probando
+
+*TC 00:00:54;28
+con el código de la barra 
+para meter esto aquí, en la
+
+*TC 00:00:58;24
+excepción de línea, cuando
+lo estaba creando, con 
+
+*TC 00:01:01;28
+un prototipo de widget, 
+
+*TC 00:01:02;26
+porque sólo
+quería ver
+ 
+*TC 00:01:04;01
+lo que los
+usuarios decían 
+
+*TC 00:01:05;20
+y las
+respuestas que había 
+
+*TC 00:01:06;24
+publicadas en un
+sitio web alemán.  Así,
+
+*TC 00:01:08;22
+una vez más, podemos ir
+al botón,
+
+*TC 00:01:10;15
+obtener
+la traducción y
+
+*TC 00:01:11;25 
+esto nos da
+suficientes datos 
+
+*TC 00:01:13;19
+para saber más o menos lo 
+que dicen aquí, 
+
+*TC 00:01:15;18
+a pesar de que la
+traducción 
+
+*TC 00:01:19;02
+no sea perfecta del todo.
+
+*TC 00:01:22;02
+Este bookmarklet es algo que
+creé rápidamente. La principal
+
+*TC 00:01:25;26
+parte del código es justo este
+fragmento de aquí, 
+
+*TC 00:01:29;00
+que genera
+el texto traducido.
+
+*TC 00:01:30;04
+A continuación, cargamos el
+API de idiomas e incluimos
+
+*TC 00:01:34;21
+algo de información sobre 
+qué queremos que nos  
+
+*TC 00:01:37;06
+dé como resultado.
+
+*TC 00:01:39;10
+Primero, realizaremos una
+detección para que 
+
+*TC 00:01:41;23
+el sistema sepa 
+automáticamente que 
+
+*TC 00:01:43;20
+esto puede ser español, 
+esto es italiano, 
+
+*TC 00:01:45;14
+esto es alemán y,
+una vez que 
+
+*TC 00:01:48;16
+tengamos algún
+resultado seguro aquí, 
+
+*TC 00:01:49;24
+donde crea que 
+tenga un resultado 
+
+*TC 00:01:51;00
+hará un análisis
+del fragmento y 
+
+*TC 00:01:51;22
+realizará
+la traducción. 
+
+*TC 00:01:53;21
+Así que ahora va a intentar
+hacer la traducción 
+
+*TC 00:01:56;06
+y, 
+
+*TC 00:01:58;06
+si hay algo de texto ahí, 
+
+*TC 00:01:59;11
+va a analizarlo y nos lo va
+a traducir. En caso 
+
+*TC 00:02:01;20
+contrario,
+nos va a decir que no
+
+*TC 00:02:03;09
+hay texto ahí.
+
+*TC 00:02:05;14
+Pasamos aquí abajo. Lo que
+hacemos es seguir 
+
+*TC 00:02:08;05
+la lógica de visualización;
+ésta es la llamada
+
+*TC 00:02:11;24
+que enviaste a esa 
+ventana pequeña, 
+
+*TC 00:02:13;12
+que usa el nuevo
+prototipo de ventana de
+
+*TC 00:02:16;21
+interfaz de usuario para los datos.
+
+*TC 00:02:18;14
+Los encabezados, los
+pies... Y,
+
+*TC 00:02:19;21
+si esto no se carga por 
+algún motivo, porque, 
+
+*TC 00:02:21;25
+a veces, con un
+bookmarklet, 
+
+*TC 00:02:24;00
+hay elementos
+conflictivos 
+
+*TC 00:02:25;13
+y cosas 
+parecidas, 
+
+*TC 00:02:27;15
+sólo tenemos que avanzar y
+desbloquearlo fácilmente.
+
+*TC 00:02:31;04
+Ésta es toda la programación
+desagradable para poder 
+
+*TC 00:02:34;16
+cargar los archivos
+en el bookmarklet.
+
+*TC 00:02:36;24
+Continuemos y carguemos el
+código JavaScript principal.
+
+*TC 00:02:39;28
+Carguemos la css para ese
+pequeño widget.
+
+*TC 00:02:43;20
+Por último, para poner todo
+en ejecución, 
+
+*TC 00:02:46;05
+ésta es la llamada inicial para
+cargar las API de Google.
+
+*TC 00:02:50;14
+Ved que añadimos una
+devolución de llamada.
+
+*TC 00:02:53;12
+Esto es bastante nuevo, se
+creó hace unos meses. 
+
+*TC 00:02:57;06 
+Es un método nuevo para 
+agrupar un acceso dinámico 
+
+*TC 00:03:00;28
+para que la
+cadena lo ejecute 
+
+*TC 00:03:03;14
+y este método va a llamar a
+esa carga mediante API.
+
+*TC 00:03:07;09
+Si no lo tenemos, simplemente
+la llamará manualmente.
+
+*TC 00:03:09;28
+Entonces es cuando todo se
+pone en ejecución; 
+
+*TC 00:03:11;24
+se activará este
+elemento que, 
+
+*TC 00:03:13;15
+a continuación,
+empezará a trabajar.
+
+*TC 00:03:15;16
+Una vez más, tenemos otra
+devolución de llamada,
+
+*TC 00:03:18;11
+por lo que tenemos estas
+llamadas recurrentes 
+
+*TC 00:03:20;19
+dándonos lo que necesitamos.
+
+*TC 00:03:23;14
+Otra de las cosas interesantes
+que descubrí 
+
+*TC 00:03:26;23
+el otro día fue que el
+cliente de IRC Mibbit 
+
+*TC 00:03:30;10
+está basado en web
+ 
+*TC 00:03:31;24
+y si vamos a una sala de chat
+donde se esté hablando, 
+
+*TC 00:03:36;08
+podemos ver la nueva traducción.
+
+*TC 00:03:42;04
+Así que podemos indicar que
+coja el inglés y lo 
+
+*TC 00:03:48;24
+pase a francés. Y ahora cuando la
+gente comience a hablar por aquí,
+
+*TC 00:03:53;15
+como ahora, 
+
+*TC 00:03:54;02
+lo traducirá automáticamente
+al francés, como vemos aquí.
+
+*TC 00:03:56;27
+Así que cogió el inglés y lo
+transformó directamente a francés. 
+
+*TC 00:04:00;14
+Y para traducir lo que yo hable,
+si estuviera en un canal
+
+*TC 00:04:05;12
+y no hablara inglés, podría
+acceder e introducir texto 
+
+*TC 00:04:08;09
+en mi lengua materna, y
+la aplicación lo traduciría
+
+01:04:10;16
+al inglés por mí.
+
+*TC 00:04:13;06
+Creo que esta función
+es interesante.
+
+*TC 00:04:16;19
+Finalmente, la última pieza del
+puzzle es 
+
+*TC 00:04:18;25
+que si vais a la documentación,
+podréis ver que acabamos de añadir 
+
+*TC 00:04:22;16
+este fragmento sobre Flash y
+entornos que no usan JavaScript.
+
+*TC 00:04:26;06
+Esto implica que podéis
+continuar 
+
+*TC 00:04:27;28
+y podéis realizar traducciones
+desde el servidor. 
+
+*TC 00:04:30;27
+Por tanto, no sólo se puede
+hacer con Ajax, 
+
+*TC 00:04:34;06
+sino que podemos avanzar y
+crear una llamada Json
+
+*TC 00:04:37;14
+que siempre podremos reproducir
+aquí para hacer la traducción.
+
+*TC 00:04:40;29
+Podemos hacer esto o
+usar tecnología de servicio 
+
+
+*TC 00:04:44;08
+o un elemento que sepa interpretar
+http y Json.
+
+*TC 00:04:48;06
+Bueno, espero que estéis dando
+usos interesantes a 
+
+*TC 00:04:51;07
+esta nueva API de idiomas.
+
+
+
+
+

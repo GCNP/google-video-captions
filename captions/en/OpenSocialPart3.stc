@@ -1,0 +1,111 @@
+*TC 00:00:06;00
+now we're going to create a 
+sample application that 
+
+*TC 00:00:07;23
+takes our list of friends and 
+allows us to give gifts to them
+
+*TC 00:00:12;14
+we start by making small 
+modifications to the xml file
+
+*TC 00:00:15;19
+creating a form that has a list 
+of friends and a list of gifts 
+
+*TC 00:00:19;20
+and a button to give 
+the gift to the friend
+
+*TC 00:00:23;18
+next we modify our on Load 
+friends function 
+
+*TC 00:00:26;12
+so instead of listing 
+the friends on the page
+
+*TC 00:00:28;29
+it creates a menu out of them 
+so we can pick one friend
+
+*TC 00:00:32;15
+next we create another function 
+make options menu
+
+*TC 00:00:35;04
+which takes the list of gifts that 
+we specify and creates
+
+*TC 00:00:37;10
+it into a menu so that we can 
+select a gift to give to our friend.
+
+*TC 00:00:41;21
+then we modify our 
+initialization function 
+
+*TC 00:00:43;26
+so that instead of just 
+loading our friends
+
+*TC 00:00:45;19
+it also loads the gift menu when 
+the gadget loads
+
+*TC 00:00:49;02
+the last and most important step 
+is writing the give gift function.
+
+*TC 00:00:52;13
+this function takes the gift and 
+the friend  we wish to send the  
+
+*TC 00:00:56;17
+gift to and saves them in to the 
+persistent data storage 
+
+*TC 00:00:59;03
+of the open social API
+
+*TC 00:01:00;25
+we do that by creating 
+a new data request object 
+
+*TC 00:01:03;21
+and passing into it a new 
+update person APP data request
+
+*TC 00:01:06;27
+specifying to save the data 
+under the viewer object.
+
+*TC 00:01:10;10
+then we send the request to the 
+open social API 
+
+*TC 00:01:12;20
+which stores the data
+
+*TC 00:01:14;04
+Here you can see our gadget in 
+action
+
+*TC 00:01:15;29
+specifying a list of gifts
+
+*TC 00:01:17;14
+a list of friends and a button 
+to give a gift to the friend
+
+*TC 00:01:21;11
+for more information 
+on what i just showed you 
+
+*TC 00:01:23;08
+check out the tutorial on 
+"code.google.com" 
+
+*TC 00:01:25;14
+under the open social section

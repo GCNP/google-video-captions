@@ -1,0 +1,435 @@
+
+
+
+*TC 00:00:01;14  
+I wanted to talk to you a
+little bit about the 
+
+*TC 00:00:03;16
+google apex 
+language API
+
+*TC 00:00:06;17
+I was playing around with a
+little bookmarklet 
+
+*TC 00:00:11;00
+that we can use here 
+say 
+
+*TC 00:00:12;18
+looking at 
+my twitter.
+
+*TC 00:00:14;03
+We've got the odd thing here
+that's in a different language.
+
+*TC 00:00:16;16
+So we've got something in
+French and 
+
+*TC 00:00:18;03
+I've got no idea what 
+that means. 
+
+*TC 00:00:20;08
+So I can just
+go and select it.
+
+*TC 00:00:21;25
+Hit translate and it's 
+going to go through 
+
+*TC 00:00:23;26
+and give me my
+actual translation.
+
+*TC 00:00:26;19
+Going to move that around.
+
+*TC 00:00:29;18
+Same thing on the Real Madrid
+side, 
+
+*TC 00:00:31;27
+watching the soccer,
+wonder what Calderon actually said.
+
+*TC 00:00:36;22
+Go ahead.
+
+*TC 00:00:38;13
+Boom.  It's going to go through and
+tell us
+
+*TC 00:00:41;02
+moments to enjoy together.
+
+*TC 00:00:43;02
+Now, of course, 
+
+*TC 00:00:44;26
+What this is getting back 
+isn't going to be
+
+*TC 00:00:46;22
+the perfect translation.
+That's really hard to do.
+
+*TC 00:00:50;20
+But it gives me
+enough information.
+
+*TC 00:00:53;23
+For example, 
+I was actually
+
+*TC 00:00:54;28
+playing around with the bar 
+code getting this in line
+
+*TC 00:00:58;24
+exception here when I was
+actually building it out 
+
+*TC 00:01:01;28
+with a prototype widget, 
+
+*TC 00:01:02;26
+so I just
+wanted to see
+ 
+*TC 00:01:04;01
+kinda what
+people were saying 
+
+*TC 00:01:05;20
+and the
+answers and stuff 
+
+*TC 00:01:06;24
+were actually on 
+a German site.  So
+
+*TC 00:01:08;22
+again like this, I can go
+through
+
+*TC 00:01:10;15
+get the
+translation and
+
+*TC 00:01:11;25 
+it gives me
+enough information 
+
+*TC 00:01:13;19
+so I can kind of know what 
+they're saying 
+
+*TC 00:01:15;18
+even though the
+translation 
+
+*TC 00:01:19;02
+isn't actually perfect.
+
+*TC 00:01:22;02
+So this bookmarklet is just
+something I created quickly and
+
+*TC 00:01:25;26
+the bulk of the code is just
+this piece right here, 
+
+*TC 00:01:29;00
+doing the 
+actual translation.
+
+*TC 00:01:30;04
+I am going through, doing a
+load of the language API
+
+*TC 00:01:34;21
+and I'm giving it a little 
+bit of information  
+
+*TC 00:01:37;06
+on what I want back.
+
+*TC 00:01:39;10
+And them I'm first doing a
+detect to try and 
+
+*TC 00:01:41;23
+have the system 
+automatically know 
+
+*TC 00:01:43;20
+this is probably Spanish, 
+this is Italian, 
+
+*TC 00:01:45;14
+this is German and
+then once 
+
+*TC 00:01:48;16
+we actually have
+something back there, 
+
+*TC 00:01:49;24
+where it thinks 
+it has something 
+
+*TC 00:01:51;00
+it will actually 
+going through 
+
+*TC 00:01:51;22
+and doing
+the translation. 
+
+*TC 00:01:53;21
+So then it's going to try and
+do the translation 
+
+*TC 00:01:56;06
+and 
+
+*TC 00:01:58;06
+if there's something there 
+
+*TC 00:01:59;11
+it's going to go through and
+translate it for me 
+
+*TC 00:02:01;20
+otherwise
+it's going to tell me
+
+*TC 00:02:03;09
+that it's not.
+
+*TC 00:02:05;14
+So we go down here, all I'm
+really doing is 
+
+*TC 00:02:08;05
+doing the display logic, so 
+this is that call
+
+*TC 00:02:11;24
+that you send up 
+that little window 
+
+*TC 00:02:13;12
+using the new
+prototype UI window here
+
+*TC 00:02:16;21
+to set the information.
+
+*TC 00:02:18;14
+Headers and footers
+and stuff,
+
+*TC 00:02:19;21
+and if this didn't get 
+loaded for some reason, 
+
+*TC 00:02:21;25
+because with a
+bookmarklet, 
+
+*TC 00:02:24;00
+sometimes you
+get collisions 
+
+*TC 00:02:25;13
+and stuff 
+like that. 
+
+*TC 00:02:27;15
+Just go ahead and unlocked in
+kind of a simple way.
+
+*TC 00:02:31;04
+And then this is all of the
+ugly hackery to actually 
+
+*TC 00:02:34;16
+load in the files from
+the bookmarklet.
+
+*TC 00:02:36;24
+So, go through and actually
+load the main java script
+
+*TC 00:02:39;28
+load the css for that, that
+little widget.
+
+*TC 00:02:43;20
+And then finally to get things
+kicked off 
+
+*TC 00:02:46;05
+this is the actual initial call 
+to load the Google APIs.
+
+*TC 00:02:50;14
+And then notice here,
+we've added a callback.
+
+*TC 00:02:53;12
+And this is actually fairly
+new, it's months old, 
+
+*TC 00:02:57;06 
+but it's a fairly new way to 
+group a dynamic access 
+
+*TC 00:03:00;28
+so the chain
+will go through 
+
+*TC 00:03:03;14
+go through and it's going to 
+call that API-loaded.
+
+*TC 00:03:07;09
+If we don't have that, it will
+just manually call it.
+
+*TC 00:03:09;28
+And then that's when things
+kind of kick off, 
+
+*TC 00:03:11;24
+it will kick off 
+to this guy 
+
+*TC 00:03:13;15
+who then will
+start doing his work.
+
+*TC 00:03:15;16
+And again, we have another
+callback that's going on here
+
+*TC 00:03:18;11
+so we've kinda got this
+recursive callbacks 
+
+*TC 00:03:20;19
+that give us what we need.
+
+*TC 00:03:23;14
+One other little kinda cool
+thing that I 
+
+*TC 00:03:26;23
+noticed the other day was 
+the Mibbit IRC client 
+
+*TC 00:03:30;10
+is purely web based
+ 
+*TC 00:03:31;24
+and if we go into a chat room
+that's hopefully talking 
+
+*TC 00:03:36;08
+we can see this new translation.
+
+*TC 00:03:42;04
+And we can go through and say
+take the English and 
+
+*TC 00:03:48;24
+make it French and now if people
+actually started to talk on this.
+
+*TC 00:03:53;15
+Like that. 
+
+*TC 00:03:54;02
+we see it automatically did 
+the translation into French.
+
+*TC 00:03:56;27
+So it took the English, right
+worked it out did it to French. 
+
+*TC 00:04:00;14
+And then to translate me would
+be, if I were in a channel
+
+*TC 00:04:05;12
+where I didn't speak English,
+I could then come in and 
+
+*TC 00:04:08;09
+type in my native tongue
+and it would translate it
+
+01:04:10;16
+into English for me.
+
+*TC 00:04:13;06
+Again, I think this is
+pretty cool.
+
+*TC 00:04:16;19
+And then one last piece of the
+puzzle is 
+
+*TC 00:04:18;25
+if you go into the documentation 
+you may notice that we just added 
+
+*TC 00:04:22;16
+this new Flash and other Non-
+Javascript Environments piece.
+
+*TC 00:04:26;06
+This means you can now go
+through 
+
+*TC 00:04:27;28
+and you can do translations from 
+the server side. 
+
+*TC 00:04:30;27
+So not just going through the
+Ajax world, 
+
+*TC 00:04:34;06
+you can just go through, 
+do a little Json call
+
+*TC 00:04:37;14
+that you can always just mimic
+in here to do the translation.
+
+*TC 00:04:40;29
+You can do it or using
+service-side technology 
+
+
+*TC 00:04:44;08
+or anything that can understand
+http and Json.
+
+*TC 00:04:48;06
+So, I hope you guys are making
+some interesting uses 
+
+*TC 00:04:51;07
+out of the new language API.
+
+
+
+
+

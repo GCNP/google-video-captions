@@ -1,0 +1,65 @@
+00:00:01.300,00:00:13.930
+We've covered how to get pages into Google and how to prevent private pages from appearing in our search results, but webmasters also typically want their pages to rank higher in Google's search results.
+
+00:00:13.931,00:00:27.030
+Although we once joked that we employ diligent pigeons to rank pages, the reality is that pages get listed in our search results based upon two core principles:  Relevance and importance.
+
+00:00:27.031,00:00:50.000
+A page is deemed relevant if it matches both the query and the interest of the user. The first is rather intuitive: if a user searches using the query "swing dancing," for example, we're likely to list resources associated with swing dance venues, shoes, teachers, etc. -- queries relevant to the phrase typed.
+
+00:00:50.001,00:01:09.360
+Personalization also plays a role, however, both in the aggregate and at the individual level. We tailor results by geography; for instance, on a search for "Banks," we'll show primarily Canadian banks to Canadian searchers and British banks to folks in the UK.
+
+00:01:09.361,00:01:29.860
+Search results may also be slightly customized to each individuals' search history. But with so many web pages out there and, for many queries, millions of relevant pages, Google has to further narrow down and prioritize results, and this is done by evaluating the importance of each page.
+
+00:01:31.900,00:01:47.160
+Google’s original algorithm set that assessed the importance of web pages was dubbed "PageRank." It’s now just one of over two hundred components that go into our ranking of web pages, however it does still play a significant role.
+
+00:01:47.161,00:02:03.500
+Each page's score is based upon the quantity -- and more important, the quality -- of pages that link to it. This means that a relevant link from, for instance, a respected online magazine, will be likely worth more than a link from a friend's guestbook.
+
+00:02:03.501,00:02:12.860
+Attempting to buy or sell links that pass PageRank is a violation of our Webmaster Guidelines and could end up harming your site's presence in Google.
+
+00:02:12.861,00:02:27.200
+The best ways to increase your pages' PageRank are to create good content, participate thoughtfully in relevant communities online and offline, and from this garner quality links naturally.
+
+00:02:27.201,00:02:39.260
+If you do buy or sell online advertising, you'll want to make sure those links don't pass PageRank, by using the nofollow attribute or other means recommended in our Webmaster Help Center.
+
+00:02:41.560,00:02:50.960
+As we update our index, rankings do naturally fluctuate. Sometimes a little, sometimes a lot, and for a great variety of reasons.
+
+00:02:50.961,00:03:03.260
+In Google's early days, we updated our index in large, occasional batches, playfully nicknamed "Google Dances."  Nowadays, however, we updated our index incrementally.
+
+00:03:03.261,00:03:24.400
+Typically, this results in subtle changes, but some sites can be affected more significantly. And while Google is moving forward, the web is changing at a frantic pace as well. The changes in your site, combined with the constant content and link updates around the web, also can noticeably affect your site's presence in Google.
+
+00:03:24.401,00:03:43.330
+In some cases, however, a site can fall to a lower ranking because it was determined to violate the Webmaster Guidelines. In such situations, you and ideally an unbiased friend or expert should carefully evaluate your site, identifying and fixing any issues.
+
+00:03:43.331,00:03:54.800
+Note that these violations may have been caused by someone who worked on the site previously, or even a hacker who unscrupulously added sometimes-hidden links to your pages.
+
+00:03:54.801,00:04:09.960
+We frequently send informational notices about webmaster violations through the Message Center in Webmaster Tools, so be sure you've signed up for this free service. We'll talk more about Webmaster Tools later in this presentation.
+
+00:04:11.100,00:04:20.960
+In the face of this challenging online environment, you undoubtedly want to improve the chances of your site doing well with users and Google over the long haul.
+
+00:04:20.961,00:04:26.730
+Thinking like your users, while it may sound obvious, is actually a powerful start.
+
+00:04:26.731,00:04:37.500
+Of course, you should provide content designed for users, not search engines, making sure to treat search engine bots as just other users and never sending them different content.
+
+00:04:37.501,00:04:54.460
+But beyond that, it makes sense to consider how your users are likely to search for this content. For instance, some within your organization may insist that you refer to your star product in a specific way, but perhaps the public refers to it via an acronym or nickname.
+
+00:04:54.461,00:05:16.130
+And since that is what they're likely to search on, make sure that this text also visibly appears on your relevant pages. As you engage users with the content and links on your site, make sure they aren't disappointed. Regularly verify that all your links are still pointing to relevant resources that reflect well on you and your organization.
+
+00:05:16.131,00:05:22.360
+For other related tips, see our Webmaster Guidelines, linked on this page.

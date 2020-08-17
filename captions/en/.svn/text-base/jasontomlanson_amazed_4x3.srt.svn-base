@@ -1,0 +1,147 @@
+1
+00:00:01,033 --> 00:00:02,234
+Tomlinson: Hi, my name's
+Jason Tomlinson.
+
+2
+00:00:02,234 --> 00:00:04,334
+I'm an engineering manager
+at Hands-On Mobile.
+
+3
+00:00:04,334 --> 00:00:05,767
+I'm here today
+to talk to you
+
+4
+00:00:05,767 --> 00:00:07,300
+about an Android application
+I've written
+
+5
+00:00:07,300 --> 00:00:09,534
+which uses the accelerometer
+feature of the platform.
+
+6
+00:00:09,534 --> 00:00:11,467
+The game is called "Amazed."
+
+7
+00:00:11,467 --> 00:00:12,734
+The whole idea of the game
+
+8
+00:00:12,734 --> 00:00:14,801
+is to navigate a marble
+through the maze
+
+9
+00:00:14,801 --> 00:00:17,167
+by tilting the device
+in various directions.
+
+10
+00:00:17,167 --> 00:00:18,868
+Whatever direction
+you tilt the device,
+
+11
+00:00:18,868 --> 00:00:20,601
+the marble will follow
+the same path.
+
+12
+00:00:20,601 --> 00:00:22,968
+You have to try
+and navigate the marble
+
+13
+00:00:22,968 --> 00:00:24,300
+to the light blue area,
+
+14
+00:00:24,300 --> 00:00:26,067
+which will then
+take you to the next level.
+
+15
+00:00:26,067 --> 00:00:28,834
+As you progress through
+the ten levels of the game,
+
+16
+00:00:28,834 --> 00:00:30,701
+each level gets
+progressively harder,
+
+17
+00:00:30,701 --> 00:00:32,534
+until you
+get to Level Ten
+
+18
+00:00:32,534 --> 00:00:34,868
+which is almost impossible.
+
+19
+00:00:34,868 --> 00:00:36,234
+So that's the game.
+
+20
+00:00:36,234 --> 00:00:37,501
+You can find it
+open-sourced
+
+21
+00:00:37,501 --> 00:00:38,834
+on the Apps for Android
+project.
+
+22
+00:00:38,834 --> 00:00:40,968
+While it is only
+a simple technical demo,
+
+23
+00:00:40,968 --> 00:00:43,200
+I built it to play around
+with the accelerometer feature
+
+24
+00:00:43,200 --> 00:00:44,501
+of the Android platform.
+
+25
+00:00:44,501 --> 00:00:46,133
+It was born from the fact
+
+26
+00:00:46,133 --> 00:00:48,467
+that I was working
+on "Guitar Hero: World Tour"
+
+27
+00:00:48,467 --> 00:00:50,334
+which we're bringing
+to the Android platform,
+
+28
+00:00:50,334 --> 00:00:52,400
+fully leveraging
+all the specific features
+
+29
+00:00:52,400 --> 00:00:54,667
+including multiplayer
+battle mode,
+
+30
+00:00:54,667 --> 00:00:56,434
+so you and your friends
+can play against each other
+
+31
+00:00:56,434 --> 00:00:57,801
+in real time.
+

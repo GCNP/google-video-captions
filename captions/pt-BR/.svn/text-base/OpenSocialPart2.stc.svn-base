@@ -1,0 +1,99 @@
+﻿*TC 00:00:05;18
+O que faremos agora é
+
+*TC 00:00:07;04
+escrever um aplicativo simples que
+dá presentes aos nossos amigos.
+
+*TC 00:00:10;13
+E a primeira coisa que 
+precisamos fazer,
+
+*TC 00:00:12;02
+se formos dar presentes aos
+nossos amigos, é 
+
+*TC 00:00:14;02
+saber quem são nossos amigos.
+
+*TC 00:00:15;14
+Portanto usaremos a
+API Social para carregar nossa lista
+
+*TC 00:00:17;29
+de amigos na página.
+
+*TC 00:00:20;00
+E começaremos escrevendo
+uma função
+
+*TC 00:00:22;03
+"registerOnLoadHandler", 
+que chama uma 
+
+*TC 00:00:24;12
+função "init", que chama uma 
+função "loadFriends",
+
+*TC 00:00:28;05
+para carregar nossa lista de amigos.
+
+*TC 00:00:30;25
+Na função "loadFriends", 
+criamos uma nova
+
+*TC 00:00:33;05
+solicitação de dados Open Social,
+adicionamos a ela solicitações das
+
+*TC 00:00:36;08
+informações "viewer" e "viewerFriends" 
+e enviamos a
+
+*TC 00:00:39;16
+solicitação à API do Open Social.
+
+*TC 00:00:41;26
+Em seguida, ela chama
+"onLoadFriends" após o 
+
+*TC 00:00:43;21
+retorno dos dados.
+
+*TC 00:00:45;17
+A função "onLoadFriends" 
+faz a maioria do trabalho.
+
+*TC 00:00:48;02
+Ela extrai informações de
+"viewer" e "viewerFriends"
+
+*TC 00:00:50;22
+do objeto de dados, coloca essa 
+lista de amigos em uma lista 
+
+*TC 00:00:54;25
+e exibe a lista na página.
+
+*TC 00:00:57;00
+Por fim, fazemos algumas pequenas
+alterações no arquivo XML do gadget,
+
+*TC 00:01:00;12
+para permitir a inserção da lista de
+amigos na página.
+
+*TC 00:01:03;02
+Agora você pode ver nosso gadget 
+em ação listando nossos amigos.
+
+*TC 00:01:05;17
+Para obter mais informações sobre o que eu 
+fiz e mais informações sobre a 
+
+*TC 00:01:08;03
+API Social, consulte o tutorial em 
+code.google.com na
+
+*TC 00:01:11;13
+seção Open Social.

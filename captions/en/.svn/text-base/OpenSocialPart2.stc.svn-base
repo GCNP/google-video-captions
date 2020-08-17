@@ -1,0 +1,101 @@
+*TC 00:00:05;18
+So, what we're going to
+do now, is we're going to
+
+*TC 00:00:07;04
+write a simple application,
+that gives gifts to our friends.
+
+*TC 00:00:10;13
+And the first thing that we're
+going to need to do then,
+
+*TC 00:00:12;02
+if we're going to give gifts to
+our friends, is we need to
+
+*TC 00:00:14;02
+know who our friends are.
+
+*TC 00:00:15;14
+So we're going to use the
+Social API, to load our list
+
+*TC 00:00:17;29
+of friends, onto the page.
+
+*TC 00:00:20;00
+And we're going to begin,
+by writing a
+
+*TC 00:00:22;03
+"registerOnLoadHandler"
+function, that calls a
+
+*TC 00:00:24;12
+function "init", which calls a
+function "loadFriends,"
+
+*TC 00:00:28;05
+to load our list of friends.
+
+*TC 00:00:30;25
+Within the "loadFriends"
+function, we create a new
+
+*TC 00:00:33;05
+OpenSocial data request,
+add into it requests for the
+
+*TC 00:00:36;08
+"viewer" and "viewerFriends"
+information, and send the
+
+*TC 00:00:39;16
+request to the OpenSocial API.
+
+*TC 00:00:41;26
+Where it then calls
+"onLoadFriends" once the
+
+*TC 00:00:43;21
+data has been returned.
+
+*TC 00:00:45;17
+The "onLoadFriends" function
+does most of the work.
+
+*TC 00:00:48;02
+It pulls out information on the
+"viewer" and the "viewerFriends"
+
+*TC 00:00:50;22
+from the data object, pushes that
+list of friends into a list,
+
+*TC 00:00:54;25
+and then displays
+the list onto the page.
+
+*TC 00:00:57;00
+Finally, we make some small
+changes to the gadget XML file,
+
+*TC 00:01:00;12
+to allow us to insert the list of
+friends into the page.
+
+*TC 00:01:03;02
+Now you can see our gadget
+in action listing our friends.
+
+*TC 00:01:05;17
+For more information on what I
+did, and more information on the
+
+*TC 00:01:08;03
+Social API, check out the tutorial on
+code.google.com under
+
+*TC 00:01:11;13
+the Open Social section.

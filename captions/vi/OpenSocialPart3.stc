@@ -1,0 +1,111 @@
+﻿*TC 00:00:06;00
+bây giờ chúng ta sẽ 
+tạo ứng dụng mẫu để 
+
+*TC 00:00:07;23
+tải danh sách bạn bè và cho phép 
+chúng ta tặng quà cho họ
+
+*TC 00:00:12;14
+chúng ta bắt đầu bằng việc tạo một 
+số sửa đổi nhỏ đối với tệp xml
+
+*TC 00:00:15;19
+tạo một mẫu có danh sách bạn 
+bè và danh sách quà tặng 
+
+*TC 00:00:19;20
+và thêm nút để 
+tặng quà cho bạn bè
+
+*TC 00:00:23;18
+tiếp theo, chúng ta sửa 
+đổi hàm on Load friends 
+
+*TC 00:00:26;12
+do đó thay vì liệt kê 
+danh sách trên trang web
+
+*TC 00:00:28;29
+nó sẽ tạo một trình đơn từ danh sách bạn bè 
+để chúng ta có thể chọn ra một người bạn
+
+*TC 00:00:32;15
+tiếp theo chúng ta tạo một hàm 
+khác để tạo trình đơn tuỳ chọn
+
+*TC 00:00:35;04
+lấy danh sách quà tặng mà chúng ta 
+đã chỉ định và tạo
+
+*TC 00:00:37;10
+thành trình đơn để chúng ta có thể 
+chọn quà và tặng cho bạn bè
+
+*TC 00:00:41;21
+sau đó chúng ta 
+sửa đổi hàm khởi tạo 
+
+*TC 00:00:43;26
+để thay vì chỉ 
+tải danh sách bạn bè
+
+*TC 00:00:45;19
+nó sẽ tải trình đơn quà 
+tặng khi tiện ích tải
+
+*TC 00:00:49;02
+bước cuối cùng và là bước quan trọng 
+nhất là viết hàm tặng quà.
+
+*TC 00:00:52;13
+hàm này chọn quà và người bạn 
+chúng ta muốn gửi quà  
+
+*TC 00:00:56;17
+và lưu thông tin vào 
+vùng dữ liệu cố định 
+
+*TC 00:00:59;03
+của API mạng xã hội mở
+
+*TC 00:01:00;25
+chúng ta thực hiện việc đó bằng cách tạo 
+một đối tượng yêu cầu dữ liệu mới 
+
+*TC 00:01:03;21
+và chuyển vào đó yêu cầu cập nhật 
+dữ liệu Ứng dụng cá nhân mới
+
+*TC 00:01:06;27
+chỉ định lưu dữ 
+liệu trong đối tượng viewer.
+
+*TC 00:01:10;10
+sau đó chúng ta gửi yêu cầu này tới 
+API mạng xã hội mở 
+
+*TC 00:01:12;20
+là nơi lưu trữ dữ liệu
+
+*TC 00:01:14;04
+Tại đây bạn có thể thấy tiện ích 
+của chúng ta hoạt động
+
+*TC 00:01:15;29
+chỉ định danh sách quà tặng
+
+*TC 00:01:17;14
+danh sách bạn bè và nút 
+gửi quà cho bạn bè
+
+*TC 00:01:21;11
+để biết thêm thông tin về những vấn 
+đề tôi vừa trình bày 
+
+*TC 00:01:23;08
+hãy xem hướng dẫn trên 
+"code.google.com" 
+
+*TC 00:01:25;14
+trong mục mạng xã hội mở

@@ -1,0 +1,255 @@
+<window bgcolor="black"><font size="4" color="#FFFFFF"><center>
+
+<time begin="00:00:05.400" end="00:00:10.145">
+<i>So, ah, we've got an interesting release to share with you today.</i>
+<time begin="00:00:10.145" end="00:00:12.595">
+<i> Ah, Kenton, could you please first introduce yourself? </i>
+<time begin="00:00:12.835" end="00:00:15.651">
+I'm Kenton Varda, I'm an engineer here.
+<time begin="00:00:15.651" end="00:00:20.038">
+<i>Cool.  So, what is it you've released today?</i>
+<time begin="00:00:20.038" end="00:00:25.841">
+So it's called Procol Buffers.<br>
+It's the way we encode<br>
+structured data here at Google.
+<time begin="00:00:25.841" end="00:00:27.504">
+It's, um...
+<time begin="00:00:27.504" end="00:00:37.745">
+The basic idea is, you write a "proto" file <br>
+which contains the definitions of
+<time begin="00:00:37.745" end="00:00:42.847">
+structured data, and then run it through<br>
+the protocol compiler
+<time begin="00:00:42.847" end="00:00:53.475">
+which generate classes in C++ or Java<br>
+or Python which represent those <br>
+structures that you've defined.
+<time begin="00:00:53.475" end="00:00:59.432">
+ And, each of these classes have accessors<br>
+for all the fields you've defined, and then
+<time begin="00:00:59.432" end="00:01:07.784">
+has methods for parsing and serializing the data<br>
+in a compact and very fast format. 
+<time begin="00:01:07.784" end="00:01:13.857">
+It's the format we use for pretty much<br>
+all our data interchange here at Google.
+<time begin="00:01:13.857" end="00:01:19.736">
+<i>Interesting.  So, when a lot of people think of <br>
+structured data, they think of XML,<br>
+things like that.</i>
+<time begin="00:01:19.736" end="00:01:24.589">
+<i>So, why are we not using XML?  How did<br>
+we get to use this structure?</i>
+<time begin="00:01:24.589" end="00:01:27.649">
+Well, XML is nice, but, um..
+<time begin="00:01:27.649" end="00:01:35.058">
+with the sheer quantity of data that we<br>
+use here, it just wouldn't work, you know.
+<time begin="00:01:35.058" end="00:01:39.734">
+It takes a while to decode and<br>
+to encode, and it's kind of large.
+<time begin="00:01:39.734" end="00:01:42.306">
+We need something extremely efficient.
+<time begin="00:01:42.306" end="00:01:52.213">
+The other problem is that XML, depending<br>
+on what kind of data you are representing,<br>
+can be kind of cumbersome to use.
+<time begin="00:01:52.213" end="00:01:58.535">
+Like if you are trying to represent something<br>
+like HTML, which is, you know, text with<br>
+markup, then XML is great.
+<time begin="00:01:58.535" end="00:02:07.196">
+But if you're trying to just represent,<br>
+you know, data structures that have<br>
+some set of fields, each having a simple type,
+<time begin="00:02:07.196" end="00:02:14.206">
+then XML, it's kind of cumbersome<br>
+because you have to
+<time begin="00:02:14.196" end="00:02:16.540">
+you know, navigate this DOM tree..
+<time begin="00:02:16.540" end="00:02:20.456">
+and like, get element with name "whatever"
+<time begin="00:02:20.456" end="00:02:26.373">
+and then get the inner text of that,<br>
+and then parse that and this number<br>
+and whatever you want to do.
+<time begin="00:02:26.373" end="00:02:30.296">
+<i>Right.  So this is all, like, typed information?</i>
+<time begin="00:02:30.296" end="00:02:35.061">
+Yes.  Protocol Buffers are strongly typed.
+<time begin="00:02:35.061" end="00:02:46.433">
+<i>Interesting.  So, the other comparison that<br>
+people make is it sounds a little bit<br>
+IDL-ish and CORBA and things like that come out.</i>
+<time begin="00:02:46.433" end="00:02:49.569">
+<i>is it similar to that in some ways?</i>
+<time begin="00:02:49.569" end="00:02:56.021">
+Um.  All of these systems have different<br>
+strengths and weaknesses.
+<time begin="00:02:56.021" end="00:03:02.832">
+Um, Protocol Buffers is just a way to encode data,
+<time begin="00:03:02.832" end="00:03:08.027">
+it's not an RPC system,<br>
+though you could use it for RPC,<br>
+and we do use it for RPC.
+<time begin="00:03:08.027" end="00:03:14.342">
+Um, this release does not actually<br>
+include any sort of<br>
+RPC implementation
+<time begin="00:03:14.342" end="00:03:21.311">
+and it can actually be...<br>
+ it's designed to be used with any RPC<br>
+implementation that you want to hook it up to
+<time begin="00:03:21.342" end="00:03:27.490">
+<i>Do you know historically how<br>
+we came to end up with Protocol Buffers?</i>
+<time begin="00:03:27.490" end="00:03:30.868">
+Well, it's a long story...um..
+<time begin="00:03:30.868" end="00:03:38.303">
+Protocol Buffers in their first incarnation<br>
+appeared in, I believe, late 2000
+<time begin="00:03:38.303" end="00:03:42.201">
+I wasn't working here at the time, but, um...
+<time begin="00:03:42.203" end="00:03:49.456">
+Jeff Dean and Sanjay Ghemawat,<br>
+the guys who are responsible<br>
+ for a lot of our big technologies
+<time begin="00:03:49.456" end="00:03:52.145">
+like MapReduce and BigTable
+<time begin="00:03:52.145" end="00:03:55.875">
+sort of, came up with this, um...
+<time begin="00:03:55.875" end="00:04:05.223">
+at first.. I don't completely know the<br>
+history because I wasn't there -<br>
+but I guess at first
+<time begin="00:04:05.223" end="00:04:12.876">
+it was just, you could define these proto files<br>
+and it would just produce a set of constants
+<time begin="00:04:12.923" end="00:04:22.419">
+you know, numeric constants that you could<br>
+use to manually write parsers and encoders<br>
+for various formats
+<time begin="00:04:22.276" end="00:04:28.024">
+and then over time it evolved<br>
+to the point where
+<time begin="00:04:28.024" end="00:04:33.136">
+the protocol compiler automatically<br>
+generates everything for you.
+<time begin="00:04:33.136" end="00:04:42.378">
+<i>OK, cool.  So you as the kind of end user developer<br>
+just have this Java class that you get back<br>
+that you can manipulate, so that you're saying</i>
+<time begin="00:04:42.378" end="00:04:50.012">
+<i>GET to get various data back, and SET<br>
+to put data into the system, and at a <br>
+lower level it's doing stuff with binary files</i>
+<time begin="00:04:50.012" end="00:04:54.138">
+Yeah, it's really simple,<br>
+you just create your message class
+<time begin="00:04:54.138" end="00:04:57.525">
+and call SET "whatever"
+<time begin="00:04:57.538" end="00:05:01.245">
+accessors to set each field, and then
+<time begin="00:05:01.245" end="00:05:06.768">
+serialize the string, or<br>
+serialze to a
+<time begin="00:05:06.768" end="00:05:08.697">
+output stream, or whatever.
+<time begin="00:05:08.697" end="00:05:13.957">
+<i>OK, so why do you think, ah, you know,<br>
+now this is open source and<br>
+people can start playing with this</i>
+<time begin="00:05:13.957" end="00:05:21.566">
+<i>what kind of use cases do you see<br>
+where people would want to use this vs.<br>
+some of the other solutions that are out there?</i>
+<time begin="00:05:21.566" end="00:05:24.118">
+<i>Where does this really fit in well?</i>
+<time begin="00:05:24.118" end="00:05:30.714">
+Basically, if you need a fast, compact<br>
+format that's
+<time begin="00:05:30.714" end="00:05:33.165">
+easy to define, and extensible
+<time begin="00:05:33.165" end="00:05:40.431">
+meaning you can add fields, remove fields,<br>
+and still be able to interact with
+<time begin="00:05:40.431" end="00:05:43.761">
+older programs that are using<br>
+the old version of the format
+<time begin="00:05:43.761" end="00:05:46.813">
+then, ah, Protocol Buffers<br>
+are a good solution.
+<time begin="00:05:46.813" end="00:05:53.384">
+As I said before, they are not great<br>
+for representing structured text.
+<time begin="00:05:53.384" end="00:05:59.713">
+because they're not a text format, <br>
+and you can't just insert structure<br>
+into text.
+<time begin="00:05:59.784" end="00:06:06.422">
+They are also probably not great if you...
+<time begin="00:06:06.422" end="00:06:11.412">
+...if your first priority is human readability,<br>
+because obviously this is a binary format
+<time begin="00:06:11.412" end="00:06:18.079">
+although there is a text format <br>
+that's useful for debugging,<br>
+it's primarily a binary format.
+<time begin="00:06:18.079" end="00:06:25.600">
+<i>OK, you mentioned manipulating the data,<br>
+is there versioning built into this schema,<br>
+or how does that work? </i>
+<time begin="00:06:25.600" end="00:06:30.524">
+Ah, yes.  It's..
+<time begin="00:06:30.524" end="00:06:33.531">
+you don't just declare a version, um..
+<time begin="00:06:33.531" end="00:06:36.885">
+If you add new fields to your structures
+<time begin="00:06:36.885" end="00:06:41.273">
+and then encode a message using those new fields
+<time begin="00:06:41.273" end="00:06:44.005">
+old programs that don't know about them<br>
+will just ignore them.
+<time begin="00:06:44.005" end="00:06:45.917">
+<i>OK.</i>
+<time begin="00:06:45.917" end="00:06:49.710">
+If you remove a field,<br>
+old programs will just
+<time begin="00:06:49.710" end="00:06:52.090">
+assume it has its default value.
+<time begin="00:06:52.090" end="00:06:53.663">
+<i>OK, cool.</i>
+<time begin="00:06:53.663" end="00:06:55.554">
+<i>OK, so that's actually really useful.</i>
+<time begin="00:06:55.554" end="00:07:00.736">
+<i>not have to mess around with schemas<br>
+and working through all of those<br>
+kind of systems</i>
+<time begin="00:07:00.736" end="00:07:03.222">
+<i>if it's built into the protocol itself.</i>
+<time begin="00:07:03.222" end="00:07:05.510">
+<i>That seems pretty useful.</i>
+<time begin="00:07:05.510" end="00:07:07.111">
+<i>Cool.</i>
+<time begin="00:07:07.111" end="00:07:14.538">
+<i>So, any final thoughts for developers<br>
+taking a first peek at this<br>
+open source package?</i>
+<time begin="00:07:14.538" end="00:07:19.257">
+Yeah, well, take a look at the docs
+<time begin="00:07:19.257" end="00:07:21.429">
+download the code, it's all<br>
+freely available
+<time begin="00:07:21.429" end="00:07:26.011">
+and let us know what you think<br>
+at our discussion group.
+<time begin="00:07:26.089" end="00:07:28.726">
+<i>Great, well, thanks so much for<br>
+making this happen,</i>
+<time begin="00:07:28.726" end="00:07:33.297">
+<i>I know a bunch of people that maybe have<br>
+left Google that wish they had<br>
+Protocol Buffers.</i>
+<time begin="00:07:33.297" end="00:07:37.774">
+<i>So it's cool to see it out in the wild now,<br>
+I really appreciate it.</i>

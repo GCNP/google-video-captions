@@ -1,0 +1,423 @@
+
+*TC 00:00:06;27
+Hi I'm Jeff Scudder and I work
+with the Google Spreadsheets
+
+*TC 00:00:09;21
+Data API. You might already be
+familiar with Google
+
+*TC 00:00:12;29
+Spreadsheets. An online
+spreadsheets application that
+
+*TC 00:00:15;27
+allows for real-time
+collaboration.
+
+*TC 00:00:18;15
+It's part of our Google Docs
+suite. The spreadsheets API
+
+*TC 00:00:21;29
+allows you to programmatically
+access and modify your
+
+*TC 00:00:24;24
+spreadsheet data in your
+language of choice.
+
+*TC 00:00:28;13
+Google provides client
+libraries in a variety of
+
+*TC 00:00:31;04
+languages, which simplify
+working with the
+
+*TC 00:00:33;07
+spreadsheets API.
+
+*TC 00:00:34;23
+And I've recently made an
+addition to the Python library
+
+*TC 00:00:37;26
+that makes it easier to use
+spreadsheets as a simple
+
+*TC 00:00:40;14
+text database.
+
+*TC 00:00:42;22
+One of the great things about
+using Google Spreadsheets as a
+
+*TC 00:00:45;13
+simple database is that you
+can see and modify all of
+
+*TC 00:00:49;09
+your data from a nice
+user interface.
+
+*TC 00:00:52;00
+and your data is available on
+any machine as long as you're
+
+*TC 00:00:55;16
+connected to the internet you
+can interact with the data in
+
+*TC 00:00:58;18
+your Google Documents.
+
+*TC 00:01:00;10
+Let's get started.
+
+*TC 00:01:05;02
+First off, the Python client
+library is open source and
+
+*TC 00:01:08;12
+available at
+code.google.com/p/gdata-python-client
+
+*TC 00:01:16;07
+This module is called "text db"
+and it lives within the gdata
+
+*TC 00:01:19;26
+spreadsheet package of the
+gdata client library.
+
+*TC 00:01:24;21
+The spreadsheet module allows
+you to use all of the features
+
+*TC 00:01:28;02
+in the spreadsheet's API and
+the new "text db" module is
+
+*TC 00:01:31;17
+built on top of it.
+
+*TC 00:01:33;09
+The "text db" module
+streamlines a specific 
+
+*TC 00:01:35;25
+use case and makes
+using the spreadsheets API feel
+
+*TC 00:01:39;11
+like using a simple database.
+
+*TC 00:01:41;26
+There's much more that you can
+do with the spreadsheet's API
+
+*TC 00:01:45;04
+like use formulas, pulling
+data from other sources, and
+
+*TC 00:01:49;06
+update a large number of
+cells at once. 
+
+*TC 00:01:51;24
+But I decided to make this
+module about ease of use.
+
+*TC 00:01:55;10
+Let's take a look a look at a
+sample of how to use the
+
+*TC 00:01:57;26
+text "db module."
+
+*TC 00:02:00;15
+We'll begin by importing the
+module which has classes that
+
+*TC 00:02:03;16
+make it easy to use Google
+Spreadsheets like a simple
+
+*TC 00:02:06;08
+database in the cloud.
+
+*TC 00:02:08;16
+Next, I'll import a demo
+module which enters my email
+
+*TC 00:02:11;15
+address for me so that it's not
+broadcast to the world thanks
+
+*TC 00:02:14;15
+to this video.
+
+*TC 00:02:16;20
+Now we can create a new Google
+Spreadsheet using our client.
+
+*TC 00:02:20;13
+It's easy. All you need to
+provide is a name.
+
+*TC 00:02:24;25
+The database object represents
+our new Google Spreadsheet and
+
+*TC 00:02:28;22
+we're ready to create a table.
+
+*TC 00:02:30;19
+But first, let's take a look at
+this document in Google Docs.
+
+*TC 00:02:37;01
+Okay, let's say that we have a
+table of knights and we want
+
+*TC 00:02:40;12
+to ask their name,
+quest, and favorite color.
+
+*TC 00:02:44;07
+Our spreadsheet now has a new
+worksheet and we're ready
+
+*TC 00:02:47;09
+to add some information.
+
+*TC 00:02:49;08
+Let me open that now.
+
+*TC 00:02:52;01
+Now we'll see a new row appear
+in our spreadsheet.
+
+*TC 00:02:57;28
+We can also add information
+through the spreadsheet's
+
+*TC 00:03:01;19
+user interface.
+
+*TC 00:03:06;04
+If we're working with existing
+data we may need to start by
+
+*TC 00:03:09;14
+finding the spreadsheet, which
+you can do by looking up the
+
+*TC 00:03:12;12
+name of the spreadsheet or the
+unique spreadsheet key id.
+
+*TC 00:03:19;08
+Since you can have multiple
+spreadsheets with the same
+
+*TC 00:03:21;20
+name, the "getdatabases" method
+returns a list.
+
+*TC 00:03:26;09
+You can retrieve rows of data
+in several ways.
+
+*TC 00:03:29;11
+You can look up a single row,
+or request a range of rows
+
+*TC 00:03:32;26
+using "getrecords."
+
+*TC 00:03:35;03
+Since we only have three rows
+of data, rows contains
+
+*TC 00:03:38;18
+three items.
+
+*TC 00:03:41;02
+You can also search for rows
+which match certain
+
+*TC 00:03:43;25
+requirements using spreadsheet
+structured query language.
+
+*TC 00:03:49;08
+Structured queries can contain
+and or less than greater than
+
+*TC 00:03:54;06
+exact matches and not equals.
+
+*TC 00:03:57;22
+We had two knights with the
+favorite color of blue.
+
+*TC 00:04:02;02
+So, as you can see we have
+two matches.
+
+*TC 00:04:07;03
+Once we have our rows, we can
+make changes to the data in
+
+*TC 00:04:10;17
+our Google Spreadsheet.
+
+*TC 00:04:12;02
+One of the potential challenges
+in storing your data in the
+
+*TC 00:04:14;22
+cloud is that read and write
+operations may be slow because
+
+*TC 00:04:19;02
+they're transferring data over
+slow and potentially flakey
+
+*TC 00:04:22;15
+network connections. To avoid
+this problem in the "text db"
+
+*TC 00:04:26;16
+library, changes to local
+objects are only sent to the
+
+*TC 00:04:30;04
+server when you call the push
+method. In our example earlier,
+
+*TC 00:04:34;20
+we forgot to enter
+Galahad's quest.
+
+*TC 00:04:36;26
+Let's do that now.
+
+*TC 00:04:38;27
+Let's take a look at the
+content in our record.
+
+*TC 00:04:43;10
+Now we're going to send this
+change to the server and we
+
+*TC 00:04:46;20
+should see the quest in our
+spreadsheet update.
+
+*TC 00:04:50;22
+I also see that we
+got Galahad's favorite
+
+*TC 00:04:52;29
+color wrong.
+
+*TC 00:04:54;06
+To show retrieving updates
+which have happened outside
+
+*TC 00:04:57;04
+of the local copy of the data
+we'll make a change
+
+*TC 00:05:00;02
+in the spreadsheet.
+
+*TC 00:05:01;25
+Our local copy doesn't have
+the change yet but after we
+
+*TC 00:05:06;04
+pull the data you can see the
+content has been updated.
+
+*TC 00:05:19;06
+I've just walked you through
+a simple example of using the
+
+*TC 00:05:21;25
+"text db" module to use Google
+Spreadsheets as if it were a
+
+*TC 00:05:25;06
+database in the cloud.
+
+*TC 00:05:27;06
+This is just one of the ways
+that you can use the
+
+*TC 00:05:29;08
+spreadsheets API.
+
+*TC 00:05:30;21
+And although this example is
+in Python, a similar library
+
+*TC 00:05:34;05
+could be built in almost
+any language.
+
+*TC 00:05:37;03
+All of the code that I've used
+in this sample is open source
+
+*TC 00:05:40;13
+so you're free to copy it and
+modify it as you like.
+
+*TC 00:05:43;22
+If you think of some other
+interesting things that you'd
+
+*TC 00:05:45;26
+like to do using the
+spreadsheet's API, we would
+
+*TC 00:05:48;27
+love to hear about it.
+
+*TC 00:05:50;14
+Please visit us in the Google
+Docs Data API Group.
+
+*TC 00:05:54;13
+You can also check out the
+documentation for the API on
+
+*TC 00:05:57;29
+code.google.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

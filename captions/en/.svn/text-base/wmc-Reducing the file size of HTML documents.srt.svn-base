@@ -1,0 +1,150 @@
+1
+00:00:06,033 --> 00:00:07,434
+Meiert: Hi, my name is Jens.
+
+2
+00:00:07,434 --> 00:00:09,267
+At Google,
+I'm the webmaster responsible
+
+3
+00:00:09,267 --> 00:00:12,133
+for quality assurance
+and education outreach.
+
+4
+00:00:12,133 --> 00:00:14,133
+Khaw: Hi, my name is Kevin.
+
+5
+00:00:14,133 --> 00:00:16,000
+I'm a webmaster,
+and I build fun tools
+
+6
+00:00:16,000 --> 00:00:17,968
+for the Webmaster team
+at Google.
+
+7
+00:00:17,968 --> 00:00:19,400
+Meiert: Without HTML,
+we wouldn't have
+
+8
+00:00:19,400 --> 00:00:20,501
+the Web we have today.
+
+9
+00:00:20,501 --> 00:00:22,801
+There are billions of documents
+out there
+
+10
+00:00:22,801 --> 00:00:25,601
+providing information
+and services of all sorts.
+
+11
+00:00:25,601 --> 00:00:29,167
+The Webmaster team alone
+maintains hundreds of thousands
+
+12
+00:00:29,167 --> 00:00:31,100
+of HTML documents.
+
+13
+00:00:31,100 --> 00:00:32,734
+Khaw: Writing HTML is easy,
+
+14
+00:00:32,734 --> 00:00:36,133
+but writing maintainable,
+fast, and accessible HTML
+
+15
+00:00:36,133 --> 00:00:37,934
+can be rather challenging.
+
+16
+00:00:37,934 --> 00:00:40,267
+There's a feature in HTML
+that we really like.
+
+17
+00:00:40,267 --> 00:00:42,100
+Remember, not XHTML.
+
+18
+00:00:42,100 --> 00:00:46,334
+HTML allows you
+to leave out certain tags.
+
+19
+00:00:46,334 --> 00:00:48,467
+Meiert: That means you don't
+have to close
+
+20
+00:00:48,467 --> 00:00:49,968
+your paragraph
+and other elements.
+
+21
+00:00:49,968 --> 00:00:53,634
+You can entirely skip
+your HTML head and body text,
+
+22
+00:00:53,634 --> 00:00:57,100
+and that's something authors do
+with tbody element anyways.
+
+23
+00:00:57,100 --> 00:00:58,901
+These texts
+are entirely optional.
+
+24
+00:00:58,901 --> 00:01:01,334
+And the HTML
+will still be valid.
+
+25
+00:01:01,334 --> 00:01:03,534
+Khaw: It takes a while
+to get used to this technique.
+
+26
+00:01:03,534 --> 00:01:05,434
+But leaving out optional texts
+
+27
+00:01:05,434 --> 00:01:07,033
+will make your pages
+a lot smaller
+
+28
+00:01:07,033 --> 00:01:09,234
+and easier to understand.
+
+29
+00:01:09,234 --> 00:01:12,000
+Meiert: Maybe one thing
+we especially like about this
+
+30
+00:01:12,000 --> 00:01:13,901
+is that we can keep things
+simple.
+
+31
+00:01:13,901 --> 00:01:16,300
+Khaw: For more tips on making
+your website faster,
+
+32
+00:01:16,300 --> 00:01:20,267
+visit code.google.com/speed.
+

@@ -1,0 +1,266 @@
+﻿*TC 00:00:05:05
+Xin chào, tôi là Dan, tôi 
+phụ trách về Open Social 
+
+*TC 00:00:07;09 
+và hôm nay tôi sẽ giới thiệu với 
+các bạn những bước cơ bản 
+
+*TC 00:00:09;07
+về chạy ứng dụng 
+mạng xã hội mở.
+
+*TC 00:00:12;05
+Việc đầu tiên chúng 
+ta phải làm đó là 
+
+*TC 00:00:13;12
+tìm hiểu một số thông 
+tin cơ bản về tiện ích.
+
+*TC 00:00:15;09
+Và ở cấp độ cơ sở thì 
+Tiện ích chỉ là tệp XML.
+
+*TC 00:00:18;23
+và tiếp theo chúng ta sẽ 
+
+*TC 00:00:19;17
+xem qua tệp tin XML tiện 
+ích là như thế nào
+
+*TC 00:00:22;14
+như các bạn thấy, tiện 
+ích chỉ là tệp xml 
+
+*TC 00:00:25;12
+ở đầu tệp các 
+bạn có thể thấy
+
+*TC 00:00:26;17
+loại phiên bản 
+xml và kiểu mã hoá
+
+*TC 00:00:29;17
+và ở dưới các bạn có thể 
+thấy các thẻ chỉ định 
+
+*TC 00:00:32;24
+đây là một tệp tiện ích
+
+*TC 00:00:34;19
+chúng ta bắt đầu 
+bằng một thẻ mô đun 
+
+*TC 00:00:36;25
+và trong thẻ này chúng ta 
+có các tuỳ chọn mô đun.
+
+*TC 00:00:38;28
+Các tuỳ chọn này chỉ định những thông 
+tin như tiêu đề của ứng dụng
+
+*TC 00:00:41;13
+và yêu cầu các tính năng 
+cần thiết cho ứng dụng
+
+*TC 00:00:44;26
+ở đây là yêu cầu tính 
+năng mạng xã hội mở 
+
+*TC 00:00:48;08
+và dưới đây chúng ta mới thực sự định nghĩa 
+nội dung của tiện ích
+
+*TC 00:00:52;21 
+ở đây loại nội dung là html 
+
+*TC 00:00:54;26
+ bên trong thẻ này chúng ta có mục "cdata" 
+
+*TC 00:00:56;24 
+đây là nơi chứa toàn bộ mã, html và 
+tập lệnh java của chúng ta
+
+*TC 00:01:00;27
+và chuỗi "chào thế giới".
+
+*TC 00:01:03;02 
+như vậy đã xong phần giới thiệu ngắn gọn 
+ngoài lề và bây giờ chúng ta có thể  
+
+*TC 00:01:05;05 
+tiếp tục kéo xuống và chạy ứng 
+dụng mạng xã hội đầu tiên.
+
+*TC 00:01:08;06
+có một số thứ bạn sẽ cần để 
+thực hiện công việc này
+
+*TC 00:01:09;26
+Trước hết là một trình soạn thảo văn bản 
+và một tài khoản lưu trữ trên web.
+
+*TC 00:01:13;18
+ngoài ra, chúng ta cần một tài khoản orkut 
+
+*TC 00:01:15;29 
+và quyền truy cập vào cơ chế bảo 
+mật hộp cát của orkut
+
+*TC 00:01:17;20
+đây là nơi chúng tôi cho phép bạn thử nghiệm 
+các ứng dụng mạng xã hội của mình.
+
+*TC 00:01:21;26
+tôi giả định rằng hầu hết các bạn 
+đều có trình soạn thảo văn bản
+
+*TC 00:01:24;08
+và rất nhiều người trong các bạn 
+đã có dịch vụ lưu trữ trên web
+
+*TC 00:01:26;06
+nhưng nếu bạn không có hai công 
+cụ này thì bạn có thể thử.
+
+*TC 00:01:28;17
+Trước hết là dịch vụ lưu 
+trữ dự án mã của google 
+
+*TC 00:01:31;00
+nơi lưu trữ các 
+ứng dụng mã nguồn mở
+
+*TC 00:01:33;18
+nên nếu bạn muốn tạo mã 
+nguồn mở cho tiện ích
+
+*TC 00:01:35;14 
+bạn có thể lưu trữ tại đây
+
+*TC 00:01:36;22
+và nếu không muốn thực hiện việc này thì bạn có thể sử dụng google page creator
+
+*TC 00:01:39;22
+trang web cho phép tải lên 
+và chỉnh sửa tệp html 
+
+*TC 00:01:42;17
+và tải lên các tệp không phải html 
+khác như các thông số tiện ích
+
+*TC 00:01:47;09
+giống như công việc mà chúng 
+ta đang làm ở đây.
+
+*TC 00:01:49;01
+và nếu bạn không làm 
+như vậy 
+
+*TC 00:01:50;13
+bạn có thể tạo 
+một tài khoản orkut
+
+*TC 00:01:52;02
+công việc này tương đối đơn giản.
+
+*TC 00:01:52;29
+bạn chỉ cần truy cập vào orkut.com và trang 
+web sẽ hướng dẫn theo từng bước.
+
+*TC 00:01:55;24
+sau khi thực hiện xong, 
+
+*TC 00:01:56;17
+bạn cần đăng ký để truy cập 
+vào hộp cát của orkut.
+
+*TC 00:01:59;12
+việc này cũng 
+không có gì khó khăn.
+
+*TC 00:02:01;12
+chúng tôi có liên kết giúp 
+bạn thực hiện việc này.
+
+*TC 00:02:03;14
+và sau khi bạn 
+đã có quyền truy cập
+
+*TC 00:02:04;25
+bạn có thể đăng nhập vào 
+"sandbox.orkut.com" 
+
+*TC 00:02:07;26
+và thêm tiện ích của bạn
+
+*TC 00:02:09;02
+và tôi sẽ hướng dẫn các bạn 
+cách làm ngay bây giờ
+
+*TC 00:02:11;00 
+bạn nên lấy phần văn 
+bản của tiện ích mẫu
+
+*TC 00:02:14;26
+sao chép nó 
+vào một tệp văn bản 
+
+*TC 00:02:17;05
+và lưu tệp này trên tài khoản lưu trữ trên 
+web của bạn dưới dạng "helloworld.xml"
+
+*TC 00:02:20;25
+đăng nhập vào 
+tài khoản orkut của bạn
+
+*TC 00:02:23;21
+nhấp vào nút chỉnh sửa, 
+
+*TC 00:02:25;05 
+bên cạnh mục ứng dụng 
+ở bên trái trang web
+
+*TC 00:02:29;18
+nhập url của tệp 
+xml bạn vừa tạo
+
+*TC 00:02:35;27 
+nhấp vào nút thêm ứng dụng
+
+*TC 00:02:39;27
+cấp cho ứng dụng quyền truy cập 
+vào tài khoản của bạn
+
+*TC 00:02:44;13 
+sau đó nhấp vào liên kết được thêm vào 
+ứng dụng trên trang web của bạn.
+
+*TC 00:02:48;18
+và bây giờ bạn đã cài đặt ứng dụng mạng 
+xã hội đầu tiên của mình vào orkut.
+
+*TC 00:02:51;06
+để biết thêm thông tin về những 
+thao tác tôi vừa thực hiện
+
+*TC 00:02:53;01
+cũng như các thông tin khác 
+về API mạng xã hội
+
+*TC 00:02:56;02
+hãy xem hướng dẫn trên  
+"code.google.com" 
+
+*TC 00:02:58;17
+trong mục mạng xã hội mở.
+
+
+
+
+
+
+
+
+

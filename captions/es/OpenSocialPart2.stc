@@ -1,0 +1,101 @@
+﻿*TC 00:00:05;18
+Lo que haremos ahora 
+será crear
+
+*TC 00:00:07;04
+una sencilla aplicación 
+para obsequiar a nuestros amigos.
+
+*TC 00:00:10;13
+Lo primero que tenemos
+que saber
+
+*TC 00:00:12;02
+si queremos hacer regalos a
+nuestros amigos es
+
+*TC 00:00:14;02
+quiénes son nuestros amigos.
+
+*TC 00:00:15;14
+Utilizaremos el API de
+OpenSocial para cargar la lista
+
+*TC 00:00:17;29
+de amigos en la página.
+
+*TC 00:00:20;00
+Empezaremos creando
+una función
+
+*TC 00:00:22;03
+"registerOnLoadHandler"
+que ejecute una función
+
+*TC 00:00:24;12
+"init", que ejecute a su vez
+una función "loadFriends"
+
+*TC 00:00:28;05
+que cargará nuestra lista de amigos.
+
+*TC 00:00:30;25
+Dentro de la función 
+"loadFriends", crearemos una nueva
+
+*TC 00:00:33;05
+solicitud de datos de OpenSocial,
+a la que añadiremos solicitudes
+
+*TC 00:00:36;08
+de informacióndel usuario y sus amigos.
+Después enviaremos esa
+
+*TC 00:00:39;16
+solicitud al API de OpenSocial,
+
+*TC 00:00:41;26
+donde se ejecutará
+"onLoadFriends" una vez
+
+*TC 00:00:43;21
+que se obtengan los datos.
+
+*TC 00:00:45;17
+La función "onLoadFriends"
+hace la mayor parte del trabajo:
+
+*TC 00:00:48;02
+extrae la información del
+usuarioy de sus amigos
+
+*TC 00:00:50;22
+del objeto de datos, incluye ese
+conjunto de amigos en una lista
+
+*TC 00:00:54;25
+y muestra después
+esa lista en la página.
+
+*TC 00:00:57;00
+Por último, haremos unos
+pequeños cambios en el archivo XML
+
+*TC 00:01:00;12
+del gadget para insertar la lista
+de amigos en la página.
+
+*TC 00:01:03;02
+Ésta es la lista de amigos que
+hemos creado con el gadget.
+
+*TC 00:01:05;17
+Para obtener más información 
+sobre este proceso y sobre el API
+
+*TC 00:01:08;03
+de OpenSocial, consultad el tutorial
+de la sección "OpenSocial"
+
+*TC 00:01:11;13
+en code.google.com.

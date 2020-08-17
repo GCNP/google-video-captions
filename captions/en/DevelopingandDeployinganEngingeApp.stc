@@ -1,0 +1,482 @@
+*TC 00:00:02;24
+Hi I'm Brett Slatkin, a
+software engineer on the
+
+*TC 00:00:05;08
+Google App Engine team.
+
+*TC 00:00:06;28
+App Engine enables editors to
+build web applications on
+
+*TC 00:00:09;05
+Google's infrastructure.
+
+*TC 00:00:10;20
+I'm here today to show you how
+to quickly build a guest book
+
+*TC 00:00:12;15
+application using App Engine.
+Let's get started.
+
+*TC 00:00:16;10
+First we'll create a directory
+for my new application and
+
+*TC 00:00:18;24
+bring it into my editor.
+
+*TC 00:00:24;00
+Then I'll create an "app.yamo"
+file with my
+
+*TC 00:00:25;14
+application configuration.
+
+*TC 00:00:29;23
+I'll type my application name.
+
+*TC 00:00:32;06
+Version of this application,
+in this case
+
+*TC 00:00:34;11
+the first version.
+
+*TC 00:00:36;01
+Version of the apis I'm going
+to be using.
+
+*TC 00:00:38;05
+And the runtime,
+which is "python."
+
+*TC 00:00:42;00
+Then I declare how my URL is
+going to map
+
+*TC 00:00:43;13
+to my application.
+
+*TC 00:00:45;19
+In this case, I'm going to
+have all URLs go to single
+
+*TC 00:00:48;16
+python scripts called "main."
+
+*TC 00:00:51;09
+I'll create my
+main python file.
+
+*TC 00:00:56;18
+I'll type in a very basic,
+"Hello world" application.
+
+*TC 00:01:06;17
+Now I'll go to the terminal
+and start the
+
+*TC 00:01:08;01
+development web server.
+
+*TC 00:01:12;00
+And now that the server is
+running, I can go and view the
+
+*TC 00:01:13;29
+"Hello World" application.
+
+*TC 00:01:19;26
+Now let's do something more
+complicated and build
+
+*TC 00:01:21;16
+a web application.
+
+*TC 00:01:23;28
+To do this we've provided a
+very basic web application
+
+*TC 00:01:26;10
+framework called "Web App."
+
+*TC 00:01:28;01
+I'll import the "Web App"
+module and then define a
+
+*TC 00:01:33;19
+handler, which will handle
+the requests from
+
+*TC 00:01:35;21
+the application.
+
+*TC 00:01:42;03
+The methods of this class
+will handle HTP requests.
+
+*TC 00:01:45;03
+In this case, I just want to
+handle a get request, and I'll
+
+*TC 00:01:47;22
+print out a
+"Hello World" message.
+
+*TC 00:01:54;03
+Text "schema handler
+" I'll use "wsgiref," which is
+
+*TC 00:01:57;09
+python standard
+web application container.
+
+*TC 00:02:11;28
+And I'll define a
+"WSGIApplication" throughout
+
+*TC 00:02:15;00
+all URL's access to my
+really basic handler.
+
+*TC 00:02:31;10
+And of course, tell phython
+to run my main function.
+
+*TC 00:02:40;08
+Now let's view this
+in our browser.
+
+*TC 00:02:44;19
+Great. It showed up
+and it's working.
+
+*TC 00:02:48;01
+Now let's do some templates to
+make this page look better.
+
+*TC 00:02:50;23
+We provide a basic
+library for doing this.
+
+*TC 00:02:54;22
+Let's create a template file
+using Django templates.
+
+*TC 00:03:01;23
+To begin with, I'll just have
+some HTML that says,
+
+*TC 00:03:04;00
+"Hello World."
+
+*TC 00:03:09;08
+I'll import our
+template module.
+
+*TC 00:03:18;02
+And then render the template.
+
+*TC 00:03:28;12
+And then I can view
+this in my browser.
+
+*TC 00:03:34;06
+Now let's implement a basic
+UI for our web application.
+
+*TC 00:03:37;26
+I'll go back into my template
+file and start writing my
+
+*TC 00:03:40;23
+UI and HTML.
+So first I'll have a form.
+
+*TC 00:03:47;05
+In this case, I want to post.
+
+*TC 00:03:49;18
+And the form will have
+a couple of fields. 
+
+*TC 00:03:51;00
+Since it's a guest book, let's
+start off with the message
+
+*TC 00:03:53;13
+I want to have.
+
+*TC 00:03:55;19
+In this case, it's just text
+fields with "message."
+
+*TC 00:04:01;29
+And we'll change the "submit"
+button to say "shout."
+
+*TC 00:04:08;03
+And now we can go back
+and view this in our browser.
+
+*TC 00:04:12;07
+So let's have our web
+application handle the post
+
+*TC 00:04:14;00
+request and then do
+something more interesting.
+
+*TC 00:04:18;05
+I'll modify "MyHandler" to
+handle post requests, as well
+
+*TC 00:04:20;23
+as the "get" requests.
+
+*TC 00:04:36;07 
+Now let's hook this
+up to the data store.
+
+*TC 00:04:39;02
+To use the data store, I'll
+import the dv module and to
+
+*TC 00:04:41;25
+find a model class that says
+what fields will have to store
+
+*TC 00:04:45;24
+in the data store.
+
+*TC 00:04:48;02
+In this case, my model class
+will be called "Shout."
+
+*TC 00:04:54;27
+And I'll have two fields. 
+First, the message.
+
+*TC 00:05:02;04
+And then the time the
+message was left.
+
+*TC 00:05:13;05
+Now, in the post method, I'll
+use the request parameters to
+
+*TC 00:05:16;07
+create a new "Shout" and
+put it in the data store.
+
+*TC 00:05:28;16
+Then I'll redirect the user
+back to the main page.
+
+*TC 00:05:32;26
+Then I can go back to my
+browser and see this is
+
+*TC 00:05:34;18
+working right now.
+
+*TC 00:05:38;25
+Now we're handling posts and
+putting posts and putting data
+
+*TC 00:05:40;13
+in the data store,
+but we're no retrieving it.
+
+*TC 00:05:42;12
+So let's create a query to get
+the data back out and
+
+*TC 00:05:44;19
+present it to the user.
+
+*TC 00:05:46;14
+To do this I'll
+create a "GqlQuery."
+
+*TC 00:05:57;13
+And then I'll use the results
+of the query to
+
+*TC 00:06:00;03
+populate my templates.
+
+*TC 00:06:04;23
+And passes values
+into the template renderer.
+
+*TC 00:06:10;22
+Then if I go into my template,
+I can use the results of the
+
+*TC 00:06:12;22
+query and render them
+to the user.
+
+*TC 00:06:19;10
+In this case,
+I'm using Django templates.
+
+*TC 00:06:30;16
+Now I can go back to my
+browser and see this is
+
+*TC 00:06:32;14
+immediately working.
+
+*TC 00:06:36;15
+And there are my two
+requests from before.
+
+*TC 00:06:39;21
+Now I can type of few
+more messages.
+
+*TC 00:06:43;08
+You'll see they are not in
+any particular order.
+
+*TC 00:06:45;07
+So I'd like to add a sort
+order to my query.
+
+*TC 00:06:59;21
+New messages go to the top.
+
+*TC 00:07:04;29
+I'll modify my model to have
+another property,
+
+*TC 00:07:07;07
+which is
+"who set the message?"
+
+*TC 00:07:09;16
+In this case, it's optional
+because some of the messages
+
+*TC 00:07:11;17
+were sent without
+an explicit sender.
+
+*TC 00:07:15;24
+Then I'm going to go to my
+template and add
+
+*TC 00:07:16;24
+that new field.
+
+*TC 00:07:29;07
+It would also be good to have
+labels on these input fields.
+
+*TC 00:07:33;06
+Then I need to make sure that
+when I create my shot I've
+
+*TC 00:07:35;04
+correctly populated
+the "who" field.
+
+*TC 00:07:41;03
+I'd also like to render who
+sent each message.
+
+*TC 00:07:43;03
+So, I'll go back to my
+template and add that too.
+
+*TC 00:07:51;18
+In the case the "who" field is
+empty, I'll just say
+
+*TC 00:07:53;12
+it's from anonymous.
+
+*TC 00:08:10;06
+Now let's go back to the
+browser and see what
+
+*TC 00:08:11;09
+this looks like.
+
+*TC 00:08:13;29
+You can see all the messages
+are from anonymous because
+
+*TC 00:08:15;29
+none of them has a sender.
+
+*TC 00:08:17;08
+Let's add a new one
+with a sender for me.
+
+*TC 00:08:24;10
+You'll see my name
+has appeared.
+
+*TC 00:08:27;11
+One last thing I'm going to do
+is fix the title to point out
+
+*TC 00:08:30;08
+this is my application
+called "shoutout!"
+
+*TC 00:08:36;00
+For this application,
+I'll use the App Config Tool.
+
+*TC 00:08:39;09
+I'll just type, "appcfig
+update" to deploy my
+
+*TC 00:08:41;21
+application and then the
+naming application directory.
+
+*TC 00:08:48;18
+And we're done.
+
+*TC 00:08:49;26
+Now I can access this
+application on appspot.com.
+
+*TC 00:08:57;24
+Now let's leave a message.
+
+*TC 00:09:04;25
+That's it. We built an
+application and deployed it.
+
+*TC 00:09:08;10
+We hope that you check
+out Google App Engine. 
+
+*TC 00:09:10;02
+We look forward to
+hearing your comments.
+
+*TC 00:09:12;01
+If you'd like to learn more
+about App Engine, please join
+
+*TC 00:09:13;23
+us at Google IO, Google's
+developer event on
+
+*TC 00:09:16;16
+May 28th and 29th.
+
+*TC 00:09:18;17
+Thanks for watching.
+
+
+

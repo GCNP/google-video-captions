@@ -1,0 +1,105 @@
+﻿*TC 00:00:05;18
+Và bây giờ chúng ta sẽ làm gì 
+tiếp theo, chúng ta sẽ
+
+*TC 00:00:07;04
+viết một ứng dụng đơn giản để làm 
+quà tặng cho bạn bè.
+
+*TC 00:00:10;13
+Và công việc đầu tiên chúng ta 
+cần thực hiện đó là,
+
+*TC 00:00:12;02
+nếu chúng ta muốn tặng quà cho 
+bạn bè thì chúng ta cần phải biết
+
+*TC 00:00:14;02
+bạn bè của 
+chúng ta là những ai.
+
+*TC 00:00:15;14
+Vì vậy, chúng ta sử dụng API 
+mạng Xã hội để tải danh sách
+
+*TC 00:00:17;29
+bạn bè lên trang web.
+
+*TC 00:00:20;00
+và chúng ta 
+bắt đầu bằng cách viết
+
+*TC 00:00:22;03
+hàm 
+"registerOnLoadHandler", 
+hàm này sẽ gọi
+
+*TC 00:00:24;12
+hàm "init" để gọi hàm 
+"loadFriends,"
+
+*TC 00:00:28;05
+hàm "loadFriends" sẽ 
+tải danh sách bạn bè.
+
+*TC 00:00:30;25
+Trong hàm "loadFriends", 
+chúng ta tạo
+
+*TC 00:00:33;05
+yêu cầu dữ liệu OpenSocial mới,
+và thêm vào đó yêu cầu
+
+*TC 00:00:36;08
+thông tin 
+"viewer" và "viewerFriends", 
+và gửi
+
+*TC 00:00:39;16
+yêu cầu này tới API của OpenSocial.
+
+*TC 00:00:41;26
+Tại đây nó sẽ gọi
+"onLoadFriends" khi
+
+*TC 00:00:43;21
+dữ liệu đã được trả về.
+
+*TC 00:00:45;17
+Hàm "onLoadFriends" sẽ thực 
+hiện phần lớn công việc.
+
+*TC 00:00:48;02
+Nó gọi ra thông tin về
+"viewer" và "viewerFriends"
+
+*TC 00:00:50;22
+từ đối tượng dữ liệu, đưa danh sách 
+bạn bè đó vào một danh sách,
+
+*TC 00:00:54;25
+và hiển thị danh 
+sách đó lên trang web.
+
+*TC 00:00:57;00
+Cuối cùng, chúng ta thực hiện một số 
+thay đổi nhỏ đối với tệp XML của tiện ích,
+
+*TC 00:01:00;12
+để cho phép chúng ta chèn danh sách 
+bạn bè vào trang web.
+
+*TC 00:01:03;02
+Bây giờ bạn có thể thấy tiện ích 
+đang liệt kê bạn bè.
+
+*TC 00:01:05;17
+Để biết thêm thông tin về những thao tác 
+tôi vừa thực hiện và biết thêm thông tin về
+
+*TC 00:01:08;03
+API Mạng xã hội, hãy xem chỉ dẫn trên
+code.google.com trong
+
+*TC 00:01:11;13
+mục Open Social.

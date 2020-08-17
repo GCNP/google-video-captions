@@ -1,0 +1,5389 @@
+1
+00:00:01,200 --> 00:00:01,767
+man:
+And we're finally ready
+to get started.
+
+2
+00:00:01,767 --> 00:00:05,033
+So I'm actually gonna
+turn it over to Josh Bloch
+
+3
+00:00:05,033 --> 00:00:06,300
+to introduce Kevin,
+
+4
+00:00:06,300 --> 00:00:08,300
+and Josh needs
+no introduction, so.
+
+5
+00:00:08,300 --> 00:00:10,200
+[laughter]
+
+6
+00:00:13,934 --> 00:00:15,334
+Thank you for the--
+fine, non-introduction.
+
+7
+00:00:15,334 --> 00:00:16,601
+[laughter]
+
+8
+00:00:16,601 --> 00:00:17,901
+[clears throat]
+
+9
+00:00:17,901 --> 00:00:20,868
+This is what we call,
+uh, "just in time."
+
+10
+00:00:20,868 --> 00:00:22,567
+It's an important
+part of running a--
+
+11
+00:00:22,567 --> 00:00:24,133
+a large corporation
+in a, you know,
+
+12
+00:00:24,133 --> 00:00:26,267
+profitable fashion,
+and blah, blah, blah.
+
+13
+00:00:26,267 --> 00:00:30,200
+Anyway, so, um,
+I have the great pleasure
+
+14
+00:00:30,200 --> 00:00:33,601
+of introducing, uh,
+Kevin Bourrillion tonight
+
+15
+00:00:33,601 --> 00:00:35,300
+who is going
+to be talking to you
+
+16
+00:00:35,300 --> 00:00:37,701
+about the Google
+Collections.
+
+17
+00:00:37,701 --> 00:00:40,434
+And as many of you
+probably know,
+
+18
+00:00:40,434 --> 00:00:44,133
+um, I developed
+the Java Collections framework
+
+19
+00:00:44,133 --> 00:00:45,834
+11 years ago now.
+
+20
+00:00:45,834 --> 00:00:47,901
+It--it seems almost unreal,
+but it really is true.
+
+21
+00:00:47,901 --> 00:00:50,734
+It was in 1997
+that I developed it
+
+22
+00:00:50,734 --> 00:00:52,634
+and the--the framework
+
+23
+00:00:52,634 --> 00:00:54,868
+revolves around
+three big ideas:
+
+24
+00:00:54,868 --> 00:00:57,200
+interfaces
+that define Collections,
+
+25
+00:00:57,200 --> 00:01:00,367
+implementations
+that provide
+
+26
+00:01:00,367 --> 00:01:04,501
+either concrete
+or abstract implementations
+
+27
+00:01:04,501 --> 00:01:06,000
+of those Collections,
+
+28
+00:01:06,000 --> 00:01:08,000
+and, um...
+
+29
+00:01:10,000 --> 00:01:12,400
+algorithms that allow you
+to manipulate the correc--
+
+30
+00:01:12,400 --> 00:01:13,667
+Collections.
+
+31
+00:01:13,667 --> 00:01:15,534
+And, you know,
+
+32
+00:01:15,534 --> 00:01:19,167
+the--the basic idea
+around this framework
+
+33
+00:01:19,167 --> 00:01:21,367
+was that
+it was extensible--
+
+34
+00:01:21,367 --> 00:01:22,734
+that people
+could build on it,
+
+35
+00:01:22,734 --> 00:01:25,501
+that people
+could add to it,
+
+36
+00:01:25,501 --> 00:01:28,934
+and that it would turn
+into this sort of ecology
+
+37
+00:01:28,934 --> 00:01:30,200
+over the years.
+
+38
+00:01:30,200 --> 00:01:31,834
+Uh, and that has happened.
+
+39
+00:01:31,834 --> 00:01:34,133
+But I think it's--
+it's really blossomed
+
+40
+00:01:34,133 --> 00:01:37,868
+with Kevin's framework,
+uh, and--
+
+41
+00:01:37,868 --> 00:01:40,100
+and I'm delighted that
+he'll be able to tell us
+
+42
+00:01:40,100 --> 00:01:41,701
+all about that tonight.
+
+43
+00:01:41,701 --> 00:01:45,234
+Um, not only does it build
+on the work that I've done,
+
+44
+00:01:45,234 --> 00:01:48,234
+but it does so
+in a fashion
+
+45
+00:01:48,234 --> 00:01:50,067
+that I am
+very comfortable with.
+
+46
+00:01:50,067 --> 00:01:51,434
+There are certain ideas
+
+47
+00:01:51,434 --> 00:01:54,234
+that have
+kind of been pervasive
+
+48
+00:01:54,234 --> 00:01:55,534
+in--in all that I've done.
+
+49
+00:01:55,534 --> 00:01:58,400
+Uh, one of them is
+minimize mutability.
+
+50
+00:01:58,400 --> 00:02:00,801
+I've always preferred
+immutable things
+
+51
+00:02:00,801 --> 00:02:02,067
+over mutable things,
+
+52
+00:02:02,067 --> 00:02:03,901
+and I've always
+preferred things--
+
+53
+00:02:03,901 --> 00:02:06,200
+when you must
+have mutability--
+
+54
+00:02:06,200 --> 00:02:10,434
+that allow as little change
+as is necessary
+
+55
+00:02:10,434 --> 00:02:13,767
+to achieve
+their stated goals.
+
+56
+00:02:13,767 --> 00:02:15,567
+Uh, another one is,
+
+57
+00:02:15,567 --> 00:02:16,868
+"When in doubt,
+leave it out."
+
+58
+00:02:16,868 --> 00:02:19,200
+I prefer small interfaces
+to big ones.
+
+59
+00:02:19,200 --> 00:02:22,834
+And a third one is,
+"Know and use the libraries."
+
+60
+00:02:22,834 --> 00:02:24,167
+I'm a great believer
+
+61
+00:02:24,167 --> 00:02:27,100
+in having
+a small number of people
+
+62
+00:02:27,100 --> 00:02:29,534
+work very hard
+to produce systems
+
+63
+00:02:29,534 --> 00:02:32,033
+that will solve
+your problems for you
+
+64
+00:02:32,033 --> 00:02:33,767
+so that you
+can write your programs
+
+65
+00:02:33,767 --> 00:02:35,767
+without worrying about
+these lower-level problems.
+
+66
+00:02:35,767 --> 00:02:37,934
+Uh, and--and I believe
+
+67
+00:02:37,934 --> 00:02:40,267
+that Google Collections
+does all of these things.
+
+68
+00:02:40,267 --> 00:02:43,934
+So, um, why don't
+we give a warm welcome
+
+69
+00:02:43,934 --> 00:02:45,701
+to Kevin Bourrillion
+who will tell us more
+
+70
+00:02:45,701 --> 00:02:47,501
+about the Google
+Collections framework.
+
+71
+00:02:47,501 --> 00:02:49,767
+[applause]
+
+72
+00:02:53,133 --> 00:02:54,400
+Hi.
+
+73
+00:02:54,400 --> 00:02:55,667
+Thanks, Josh,
+
+74
+00:02:55,667 --> 00:02:58,300
+and thanks, everybody,
+for coming out tonight.
+
+75
+00:02:58,300 --> 00:03:00,400
+Uh, I'm going to talk
+
+76
+00:03:00,400 --> 00:03:02,100
+about the Google
+Collections Library.
+
+77
+00:03:02,100 --> 00:03:05,200
+I have to correct one thing
+from Josh's introduction
+
+78
+00:03:05,200 --> 00:03:06,767
+because he called it
+"Kevin's framework."
+
+79
+00:03:06,767 --> 00:03:09,167
+So I have to point out
+that, uh,
+
+80
+00:03:09,167 --> 00:03:11,667
+the framework is the result
+of a lot of hard people's work
+
+81
+00:03:11,667 --> 00:03:13,000
+and, in particular,
+
+82
+00:03:13,000 --> 00:03:15,100
+uh, Jared Levy
+who is sitting back here
+
+83
+00:03:15,100 --> 00:03:17,801
+has done probably
+more for it than I have,
+
+84
+00:03:17,801 --> 00:03:19,400
+although let's not--
+let's not get into that,
+
+85
+00:03:19,400 --> 00:03:20,701
+uh, contest, okay?
+
+86
+00:03:20,701 --> 00:03:22,234
+I don't want to know
+who would come out on top
+
+87
+00:03:22,234 --> 00:03:23,501
+from that one.
+
+88
+00:03:23,501 --> 00:03:25,367
+But it's--it's been
+very much a project
+
+89
+00:03:25,367 --> 00:03:26,868
+driven by Jared
+and myself
+
+90
+00:03:26,868 --> 00:03:28,400
+and we have had
+a lot of help
+
+91
+00:03:28,400 --> 00:03:31,334
+from a lot of, uh,
+of our Googler friends
+
+92
+00:03:31,334 --> 00:03:33,000
+and members of the public.
+
+93
+00:03:33,000 --> 00:03:35,033
+So I'm gonna give
+you just the--
+
+94
+00:03:35,033 --> 00:03:38,534
+the real nutshell first.
+
+95
+00:03:38,534 --> 00:03:40,334
+We are talking
+about an open-source
+
+96
+00:03:40,334 --> 00:03:41,767
+Apache-licensed library
+
+97
+00:03:41,767 --> 00:03:43,734
+that you can go home
+and download tonight,
+
+98
+00:03:43,734 --> 00:03:45,767
+or if you have your laptop,
+you can download it
+
+99
+00:03:45,767 --> 00:03:47,534
+right now as we speak.
+
+100
+00:03:47,534 --> 00:03:52,200
+Um, it's at google-collections.
+googlecode.com
+
+101
+00:03:52,200 --> 00:03:54,300
+and it's currently written
+
+102
+00:03:54,300 --> 00:03:56,934
+to work with JDK 1.5.
+
+103
+00:03:56,934 --> 00:03:58,701
+Uh, in the future
+
+104
+00:03:58,701 --> 00:04:01,400
+we will want to add
+support for Java 1.6,
+
+105
+00:04:01,400 --> 00:04:03,501
+but when we do,
+we're gonna always maintain--
+
+106
+00:04:03,501 --> 00:04:05,667
+well, I shouldn't
+say "always,"
+
+107
+00:04:05,667 --> 00:04:07,534
+we are going to,
+for some time,
+
+108
+00:04:07,534 --> 00:04:10,767
+maintain the 1.5 branch
+of the library as well,
+
+109
+00:04:10,767 --> 00:04:12,901
+and we will probably
+be taking steps
+
+110
+00:04:12,901 --> 00:04:16,467
+to make that 1.5 branch
+more GWT-friendly,
+
+111
+00:04:16,467 --> 00:04:19,000
+so that those of you who
+are using Google Web Toolkit
+
+112
+00:04:19,000 --> 00:04:21,167
+would be able to use
+that version of the library
+
+113
+00:04:21,167 --> 00:04:24,801
+with GWT even as the full
+1.6 version of the library
+
+114
+00:04:24,801 --> 00:04:28,267
+may not completely
+work, uh, with everything.
+
+115
+00:04:28,267 --> 00:04:29,901
+Um, right now,
+
+116
+00:04:29,901 --> 00:04:32,501
+we have been making pre-release
+snapshots available.
+
+117
+00:04:32,501 --> 00:04:34,734
+We're about
+to make a release
+
+118
+00:04:34,734 --> 00:04:36,567
+later this month,
+
+119
+00:04:36,567 --> 00:04:38,634
+uh, which we're
+going to call "0.9."
+
+120
+00:04:38,634 --> 00:04:40,467
+Why are we calling it 0.9?
+
+121
+00:04:40,467 --> 00:04:42,200
+The big reason here
+
+122
+00:04:42,200 --> 00:04:46,133
+is that we do not want
+to freeze our APIs--
+
+123
+00:04:46,133 --> 00:04:48,767
+all of the signatures,
+all of the names,
+
+124
+00:04:48,767 --> 00:04:50,801
+all of the organization
+of all the files--
+
+125
+00:04:50,801 --> 00:04:52,267
+until there's
+been ample time
+
+126
+00:04:52,267 --> 00:04:54,334
+for people
+not just inside Google
+
+127
+00:04:54,334 --> 00:04:55,801
+but also outside Google
+
+128
+00:04:55,801 --> 00:04:57,767
+to really get to use it
+and give us their feedback.
+
+129
+00:04:57,767 --> 00:05:01,234
+So if you would
+rather not use code
+
+130
+00:05:01,234 --> 00:05:03,634
+that may, you know,
+in the future upgrade,
+
+131
+00:05:03,634 --> 00:05:05,033
+that you may have
+to rename some of your--
+
+132
+00:05:05,033 --> 00:05:06,467
+your calls to that code,
+
+133
+00:05:06,467 --> 00:05:08,167
+then it may be
+a little early for you
+
+134
+00:05:08,167 --> 00:05:10,000
+to use the Google Collections
+for that reason--
+
+135
+00:05:10,000 --> 00:05:12,501
+that some of the names
+may change and so forth.
+
+136
+00:05:12,501 --> 00:05:16,634
+Um, when we do call it "1.0,"
+it'll be API-frozen
+
+137
+00:05:16,634 --> 00:05:18,534
+and we will
+commit to it at that point
+
+138
+00:05:18,534 --> 00:05:20,501
+and we will not break you.
+
+139
+00:05:20,501 --> 00:05:24,000
+Um, but from the sense
+of, you know,
+
+140
+00:05:24,000 --> 00:05:27,467
+how--apart from that issue
+of API stability,
+
+141
+00:05:27,467 --> 00:05:29,734
+um, it's a very
+production-worthy library
+
+142
+00:05:29,734 --> 00:05:31,434
+and it's used
+very widely in production
+
+143
+00:05:31,434 --> 00:05:33,667
+at Google in d--
+
+144
+00:05:33,667 --> 00:05:35,934
+uh, many dozens
+of Java-based projects
+
+145
+00:05:35,934 --> 00:05:38,467
+including the Google
+Presentations, uh, product
+
+146
+00:05:38,467 --> 00:05:40,300
+that I'm using to show you
+this--this presentation
+
+147
+00:05:40,300 --> 00:05:42,033
+right now.
+
+148
+00:05:42,033 --> 00:05:43,701
+Uh, and that's this slide.
+
+149
+00:05:43,701 --> 00:05:47,334
+So basically what I'm
+gonna do in this presentation
+
+150
+00:05:47,334 --> 00:05:51,567
+is give you a sort of
+uneven overview of the library.
+
+151
+00:05:51,567 --> 00:05:53,400
+On some topics
+I'm gonna dive deep,
+
+152
+00:05:53,400 --> 00:05:55,667
+and go into more detail,
+
+153
+00:05:55,667 --> 00:05:58,734
+and in other ones I'm just
+gonna--just skitter right over.
+
+154
+00:05:58,734 --> 00:06:01,234
+And that's in
+the interest of time
+
+155
+00:06:01,234 --> 00:06:02,968
+and if--if
+in some of the topics
+
+156
+00:06:02,968 --> 00:06:04,534
+that I skip right over
+were intriguing to you,
+
+157
+00:06:04,534 --> 00:06:06,901
+then you can bring those up
+later in the Q and A.
+
+158
+00:06:06,901 --> 00:06:09,033
+Uh, the other thing
+I wanted to point out
+
+159
+00:06:09,033 --> 00:06:11,400
+is that in this presentation,
+I'm going to assume
+
+160
+00:06:11,400 --> 00:06:13,133
+that you have
+a pretty good familiarity
+
+161
+00:06:13,133 --> 00:06:15,968
+with the Java Collections
+framework in java.util,
+
+162
+00:06:15,968 --> 00:06:18,501
+um, and I won't
+spend a lot of time
+
+163
+00:06:18,501 --> 00:06:20,133
+explaining things
+that are in there.
+
+164
+00:06:20,133 --> 00:06:21,601
+The reason is not because
+
+165
+00:06:21,601 --> 00:06:23,667
+if you don't know those things,
+I think you're a jerk.
+
+166
+00:06:23,667 --> 00:06:26,400
+Uh--you might be a jerk,
+I don't know.
+
+167
+00:06:26,400 --> 00:06:28,367
+Uh, the reason is
+
+168
+00:06:28,367 --> 00:06:31,300
+that if you aren't very deeply
+familiar with that code,
+
+169
+00:06:31,300 --> 00:06:33,567
+then you should not
+download our library.
+
+170
+00:06:33,567 --> 00:06:34,834
+You should not
+be using our library.
+
+171
+00:06:34,834 --> 00:06:37,100
+You should spend
+your time first, uh,
+
+172
+00:06:37,100 --> 00:06:39,467
+digging into detail of
+what's already in Java Util
+
+173
+00:06:39,467 --> 00:06:41,200
+and make sure you're really
+familiar with those things.
+
+174
+00:06:41,200 --> 00:06:43,334
+That library
+is the bedrock,
+
+175
+00:06:43,334 --> 00:06:45,634
+and we're the...
+I don't know,
+
+176
+00:06:45,634 --> 00:06:47,534
+the icing on the bedrock.
+
+177
+00:06:47,534 --> 00:06:50,234
+To mix metaphors
+a little bit.
+
+178
+00:06:50,234 --> 00:06:53,167
+So I'm gonna talk about
+our Immutable Collections,
+
+179
+00:06:53,167 --> 00:06:54,701
+a couple of our
+new Collection types,
+
+180
+00:06:54,701 --> 00:06:56,367
+which are Multisets
+and Multimaps,
+
+181
+00:06:56,367 --> 00:06:58,634
+and I'm gonna skim over
+
+182
+00:06:58,634 --> 00:07:01,000
+a few other types
+and implementations.
+
+183
+00:07:01,000 --> 00:07:03,868
+And then I'm gonna skim over
+some of our static utilities
+
+184
+00:07:03,868 --> 00:07:05,267
+that we offer.
+
+185
+00:07:05,267 --> 00:07:08,234
+And, uh, you know, as the talk
+goes further and further,
+
+186
+00:07:08,234 --> 00:07:09,767
+we're--I'm
+just gonna rattle off,
+
+187
+00:07:09,767 --> 00:07:11,467
+"And here's the things that
+I'm not telling you about,"
+
+188
+00:07:11,467 --> 00:07:13,100
+and then we'll be done.
+
+189
+00:07:13,100 --> 00:07:15,567
+And questions
+are welcome throughout,
+
+190
+00:07:15,567 --> 00:07:17,934
+especially if
+you have a question
+
+191
+00:07:17,934 --> 00:07:19,367
+about something
+that's, you know,
+
+192
+00:07:19,367 --> 00:07:20,834
+getting in your--
+getting in the way of you
+
+193
+00:07:20,834 --> 00:07:22,868
+understanding the material
+I'm trying to present.
+
+194
+00:07:22,868 --> 00:07:24,501
+I would really, uh,
+rather that you came up
+
+195
+00:07:24,501 --> 00:07:25,767
+and asked the question.
+
+196
+00:07:25,767 --> 00:07:27,567
+And if I think
+that it's a question
+
+197
+00:07:27,567 --> 00:07:29,334
+best saved to later,
+I'll just say,
+
+198
+00:07:29,334 --> 00:07:30,734
+"We'll just
+defer that to later."
+
+199
+00:07:30,734 --> 00:07:32,701
+So no big deal.
+
+200
+00:07:32,701 --> 00:07:35,934
+All right,
+so Immutable Collections.
+
+201
+00:07:35,934 --> 00:07:37,734
+Uh, in the JDK,
+
+202
+00:07:37,734 --> 00:07:39,567
+we have lots and lots
+of Mutable Collections
+
+203
+00:07:39,567 --> 00:07:41,701
+and then we have
+unmodifiable wrappers.
+
+204
+00:07:41,701 --> 00:07:42,968
+Uh, these are called,
+
+205
+00:07:42,968 --> 00:07:45,267
+"Collections.unmodifiable
+blank."
+
+206
+00:07:45,267 --> 00:07:47,934
+And they exist for
+Set, List, SortedMap,
+
+207
+00:07:47,934 --> 00:07:51,133
+SortedSet, Map,
+and so on down the line.
+
+208
+00:07:51,133 --> 00:07:55,634
+Uh, however,
+there is a difference
+
+209
+00:07:55,634 --> 00:07:58,234
+between unmodifiable
+and immutable.
+
+210
+00:07:58,234 --> 00:08:00,767
+Immutable is a stronger form
+of--of the concept.
+
+211
+00:08:00,767 --> 00:08:04,367
+If I give you
+an unmodifiable Collection,
+
+212
+00:08:04,367 --> 00:08:06,334
+I'm really referring
+to that reference
+
+213
+00:08:06,334 --> 00:08:07,767
+to the Collection,
+and I'm saying,
+
+214
+00:08:07,767 --> 00:08:10,667
+"You cannot change this
+Collection via this reference."
+
+215
+00:08:10,667 --> 00:08:13,400
+But I'm not promising
+that some other actor
+
+216
+00:08:13,400 --> 00:08:15,901
+might not be changing that
+Collection behind the scenes.
+
+217
+00:08:15,901 --> 00:08:17,400
+If something is immutable,
+
+218
+00:08:17,400 --> 00:08:20,234
+it means it absolutely,
+positively, will never change.
+
+219
+00:08:20,234 --> 00:08:22,634
+Um, and it is possible
+
+220
+00:08:22,634 --> 00:08:24,467
+to use these
+unmodifiable wrappers
+
+221
+00:08:24,467 --> 00:08:25,734
+to make something immutable.
+
+222
+00:08:25,734 --> 00:08:27,133
+All you have to do
+is make sure
+
+223
+00:08:27,133 --> 00:08:29,367
+you throw away the reference
+directly to the immuta--
+
+224
+00:08:29,367 --> 00:08:32,701
+or, uh, directly
+to the modifiable instance,
+
+225
+00:08:32,701 --> 00:08:34,334
+so that the only
+reference that survives
+
+226
+00:08:34,334 --> 00:08:35,634
+is the unmodifiable wrapper,
+
+227
+00:08:35,634 --> 00:08:37,868
+and then it is,
+basically, immutable.
+
+228
+00:08:37,868 --> 00:08:40,567
+Um, but I'm
+about to show you
+
+229
+00:08:40,567 --> 00:08:42,767
+how we have gone
+much further, uh, than that
+
+230
+00:08:42,767 --> 00:08:44,133
+with this concept.
+
+231
+00:08:44,133 --> 00:08:46,167
+Um, I can't even
+begin to list
+
+232
+00:08:46,167 --> 00:08:48,667
+all of the benefits
+of immutability in your code.
+
+233
+00:08:48,667 --> 00:08:51,100
+They are in, uh,
+Effective Java.
+
+234
+00:08:51,100 --> 00:08:52,501
+Uh, both editions.
+
+235
+00:08:52,501 --> 00:08:55,601
+Um, they basically--
+
+236
+00:08:55,601 --> 00:08:57,434
+when your objects
+are immutable,
+
+237
+00:08:57,434 --> 00:08:58,868
+then your life is easy.
+
+238
+00:08:58,868 --> 00:09:00,667
+When your objects
+are mutable,
+
+239
+00:09:00,667 --> 00:09:02,300
+then your life is hard.
+
+240
+00:09:02,300 --> 00:09:04,434
+So sometimes you
+need that mutability
+
+241
+00:09:04,434 --> 00:09:05,934
+and so you have
+to make your life hard,
+
+242
+00:09:05,934 --> 00:09:07,467
+but if you don't have
+to make your life hard,
+
+243
+00:09:07,467 --> 00:09:09,167
+why would you want to make
+your life hard, right?
+
+244
+00:09:09,167 --> 00:09:10,667
+So when you're immutable,
+
+245
+00:09:10,667 --> 00:09:12,667
+you get free thread safety,
+
+246
+00:09:12,667 --> 00:09:14,634
+you get free, uh--
+you don't have to worry
+
+247
+00:09:14,634 --> 00:09:16,501
+about crossing
+trust boundaries
+
+248
+00:09:16,501 --> 00:09:18,601
+and, uh, all of these
+sort of concerns,
+
+249
+00:09:18,601 --> 00:09:19,934
+you just laugh at them.
+
+250
+00:09:19,934 --> 00:09:21,734
+All right.
+
+251
+00:09:21,734 --> 00:09:24,434
+So in our library,
+
+252
+00:09:24,434 --> 00:09:27,868
+we have several immutable
+Collection implementations
+
+253
+00:09:27,868 --> 00:09:30,033
+that are brand-new,
+standalone implementations.
+
+254
+00:09:30,033 --> 00:09:31,334
+So we don't just
+
+255
+00:09:31,334 --> 00:09:33,801
+go off and delegate
+to some other JDK class
+
+256
+00:09:33,801 --> 00:09:35,467
+which delegates
+to some other JDK class.
+
+257
+00:09:35,467 --> 00:09:38,901
+This is tightly,
+um, optimized code,
+
+258
+00:09:38,901 --> 00:09:42,868
+um, that implements
+List, Set, SortedSet, and Map.
+
+259
+00:09:42,868 --> 00:09:45,300
+And I don't know
+if you can see the--
+
+260
+00:09:45,300 --> 00:09:47,834
+can you see where it says,
+"Immutable SortedMap"?
+
+261
+00:09:47,834 --> 00:09:51,234
+I hope you can't see it,
+'cause it doesn't exist yet.
+
+262
+00:09:51,234 --> 00:09:52,934
+But I put it there
+in recognition of the fact
+
+263
+00:09:52,934 --> 00:09:54,400
+that one day we'll
+have to have that in there
+
+264
+00:09:54,400 --> 00:09:56,367
+or else it's
+pretty inconsistent.
+
+265
+00:09:57,734 --> 00:09:59,501
+man:
+What do you mean "Navigable"?
+
+266
+00:09:59,501 --> 00:10:01,534
+Well, so, Sorted
+versus Navigable
+
+267
+00:10:01,534 --> 00:10:05,634
+is, uh, is a Java 5
+versus Java 6, uh, issue,
+
+268
+00:10:05,634 --> 00:10:08,667
+and right now our library
+is focused on Java 5
+
+269
+00:10:08,667 --> 00:10:11,067
+for the time being.
+
+270
+00:10:11,067 --> 00:10:14,300
+Uh, I went
+in the wrong--okay.
+
+271
+00:10:14,300 --> 00:10:16,367
+So those JDK wrappers
+are still good
+
+272
+00:10:16,367 --> 00:10:17,801
+for what they're good for.
+
+273
+00:10:17,801 --> 00:10:20,767
+So they're really good for
+providing unmodifiable views
+
+274
+00:10:20,767 --> 00:10:22,334
+of data which can
+still be changing.
+
+275
+00:10:22,334 --> 00:10:24,834
+But if that doesn't
+describe your situation,
+
+276
+00:10:24,834 --> 00:10:27,200
+then ours are better
+in most ways.
+
+277
+00:10:27,200 --> 00:10:29,534
+For one thing,
+you know,
+
+278
+00:10:29,534 --> 00:10:31,367
+they give you that
+hard, immutable guarantee.
+
+279
+00:10:31,367 --> 00:10:34,868
+And as--as well as
+being conceptually immutable,
+
+280
+00:10:34,868 --> 00:10:37,667
+they are also
+thread-safe immutable
+
+281
+00:10:37,667 --> 00:10:40,334
+according to the Java
+nitty-gritty, like,
+
+282
+00:10:40,334 --> 00:10:42,267
+I share an office
+with Jeremy Manson so I--
+
+283
+00:10:42,267 --> 00:10:44,067
+I ask him, like,
+"What do I have to do
+
+284
+00:10:44,067 --> 00:10:46,801
+to make sure this is
+bona fide immutable in Java?"
+
+285
+00:10:46,801 --> 00:10:48,834
+And, you know,
+that's all taken care of.
+
+286
+00:10:48,834 --> 00:10:51,267
+And that guarantee
+is very valuable to you.
+
+287
+00:10:51,267 --> 00:10:54,033
+Uh, they're also
+much easier to use
+
+288
+00:10:54,033 --> 00:10:56,100
+and the following slides
+will show you that.
+
+289
+00:10:56,100 --> 00:10:58,467
+And they happen
+to be slightly faster
+
+290
+00:10:58,467 --> 00:11:00,934
+and use
+typically less memory,
+
+291
+00:11:00,934 --> 00:11:02,868
+sometimes dramatically
+less memory.
+
+292
+00:11:02,868 --> 00:11:05,000
+Um, for an ImmutableSet,
+
+293
+00:11:05,000 --> 00:11:06,901
+uh, sometimes the difference
+in memory usage
+
+294
+00:11:06,901 --> 00:11:08,667
+can be on the order
+of two to three times.
+
+295
+00:11:11,234 --> 00:11:12,934
+So here's an example
+
+296
+00:11:12,934 --> 00:11:16,267
+of how people typically create
+a Constant Set today.
+
+297
+00:11:16,267 --> 00:11:17,534
+So this is one
+of the use cases
+
+298
+00:11:17,534 --> 00:11:19,567
+for an immutable Collection.
+
+299
+00:11:19,567 --> 00:11:21,501
+You have some constant
+that you are going to use
+
+300
+00:11:21,501 --> 00:11:23,601
+and you're initializing it
+in a static field.
+
+301
+00:11:23,601 --> 00:11:27,067
+So first,
+you have to declare, uh,
+
+302
+00:11:27,067 --> 00:11:29,634
+public static final,
+Set of Integer,
+
+303
+00:11:29,634 --> 00:11:32,968
+and the name
+of your constant.
+
+304
+00:11:32,968 --> 00:11:34,400
+And now, how are you
+gonna fill that thing up?
+
+305
+00:11:34,400 --> 00:11:36,033
+You usually
+have two choices:
+
+306
+00:11:36,033 --> 00:11:37,334
+you can call
+some static method
+
+307
+00:11:37,334 --> 00:11:39,367
+or you can have
+a static initializer block.
+
+308
+00:11:39,367 --> 00:11:42,167
+This is p-possibly
+the more popular approach.
+
+309
+00:11:42,167 --> 00:11:45,133
+Um, and you
+create a Collection
+
+310
+00:11:45,133 --> 00:11:46,534
+and then you add
+a bunch of stuff into it,
+
+311
+00:11:46,534 --> 00:11:48,133
+and then you
+have to remember
+
+312
+00:11:48,133 --> 00:11:50,400
+to wrap it in UnmodifiableSet
+when you're done.
+
+313
+00:11:50,400 --> 00:11:52,100
+It's surprising,
+you know,
+
+314
+00:11:52,100 --> 00:11:53,801
+how many times
+we forget that final step
+
+315
+00:11:53,801 --> 00:11:55,501
+of wrapping it in
+unmodifiable Collections.
+
+316
+00:11:55,501 --> 00:11:57,534
+So we're actually storing
+a mutable Collection
+
+317
+00:11:57,534 --> 00:11:59,667
+in a public,
+static, final field,
+
+318
+00:11:59,667 --> 00:12:01,367
+which is bad.
+
+319
+00:12:01,367 --> 00:12:03,934
+Uh, it turns out
+you can actually
+
+320
+00:12:03,934 --> 00:12:06,434
+do much better than this
+using just the JDK.
+
+321
+00:12:06,434 --> 00:12:08,467
+Uh, you could also do this--
+
+322
+00:12:08,467 --> 00:12:10,701
+uh, well,
+did I say "much better"?
+
+323
+00:12:10,701 --> 00:12:11,968
+[chuckles]
+
+324
+00:12:11,968 --> 00:12:13,300
+Maybe I mean
+a little bit better.
+
+325
+00:12:13,300 --> 00:12:14,367
+So what's going on here?
+
+326
+00:12:14,367 --> 00:12:15,968
+Uh, we have
+to read this backwards.
+
+327
+00:12:15,968 --> 00:12:20,834
+Uh, we are using
+this method "Arrays.asList"
+
+328
+00:12:20,834 --> 00:12:22,601
+which is a varargs method.
+
+329
+00:12:22,601 --> 00:12:25,400
+We're putting a bunch
+of numbers in there.
+
+330
+00:12:25,400 --> 00:12:27,901
+Jav--the--the JVM's
+gonna allocate an array,
+
+331
+00:12:27,901 --> 00:12:30,667
+and then it's gonna pass
+the array to Arrays.asList,
+
+332
+00:12:30,667 --> 00:12:32,868
+which will produce
+a Collection view,
+
+333
+00:12:32,868 --> 00:12:35,667
+and then we're gonna pass that
+into a LinkedHashSet
+
+334
+00:12:35,667 --> 00:12:36,934
+which could--
+is gonna copy it all
+
+335
+00:12:36,934 --> 00:12:38,300
+into a LinkedHashSet.
+
+336
+00:12:38,300 --> 00:12:41,300
+And then we're gonna
+call UnmodifiableSet
+
+337
+00:12:41,300 --> 00:12:43,067
+on the result
+of all that noise.
+
+338
+00:12:43,067 --> 00:12:44,701
+So why do I
+say it's better?
+
+339
+00:12:44,701 --> 00:12:46,067
+I don't even remember.
+
+340
+00:12:46,067 --> 00:12:48,200
+One thing is that you can
+do it all in one statement.
+
+341
+00:12:48,200 --> 00:12:50,067
+You don't have to have
+the static initializer block
+
+342
+00:12:50,067 --> 00:12:51,567
+to add all of that stuff.
+
+343
+00:12:51,567 --> 00:12:54,200
+Uh, but we're using
+four different classes.
+
+344
+00:12:54,200 --> 00:12:56,801
+There's something kind of
+strange about this--
+
+345
+00:12:56,801 --> 00:12:58,167
+when you really want
+to do something simple
+
+346
+00:12:58,167 --> 00:13:01,667
+and you end up using four
+different classes to do it.
+
+347
+00:13:01,667 --> 00:13:04,234
+So...
+[imitates trumpet]
+
+348
+00:13:04,234 --> 00:13:08,000
+Here's what it looks like
+to use ImmutableSet--
+
+349
+00:13:08,000 --> 00:13:10,901
+ImmutableSet.of and
+the stuff you want to be in it.
+
+350
+00:13:10,901 --> 00:13:13,534
+It couldn't be
+much simpler than that.
+
+351
+00:13:13,534 --> 00:13:15,467
+Now when people
+read your code,
+
+352
+00:13:15,467 --> 00:13:18,334
+it says exactly
+what you want it to say.
+
+353
+00:13:18,334 --> 00:13:19,667
+It's very direct.
+
+354
+00:13:19,667 --> 00:13:21,033
+And you just happen to get
+
+355
+00:13:21,033 --> 00:13:23,467
+all those nifty performance
+benefits at the same time.
+
+356
+00:13:25,934 --> 00:13:27,534
+Uh, as well,
+
+357
+00:13:27,534 --> 00:13:29,434
+we're only really having
+to reference one class
+
+358
+00:13:29,434 --> 00:13:30,868
+in order to do this.
+
+359
+00:13:30,868 --> 00:13:32,701
+Sorry.
+
+360
+00:13:32,701 --> 00:13:35,133
+Uh, and by the way,
+
+361
+00:13:35,133 --> 00:13:37,968
+this naming pattern of,
+uh, ImmutableSet.of
+
+362
+00:13:37,968 --> 00:13:42,367
+was inspired by the brilliant
+java.util.EnumSet
+
+363
+00:13:42,367 --> 00:13:43,834
+which is the first thing
+I'm aware of
+
+364
+00:13:43,834 --> 00:13:45,968
+that used this nifty
+little naming pattern,
+
+365
+00:13:45,968 --> 00:13:47,367
+and we like it a lot.
+
+366
+00:13:51,033 --> 00:13:53,701
+Um, let's look
+at another example.
+
+367
+00:13:53,701 --> 00:13:55,100
+Uh, Maps.
+
+368
+00:13:55,100 --> 00:13:57,534
+Okay, so Maps
+are even a more--yes!
+
+369
+00:13:57,534 --> 00:13:58,868
+We have a question.
+
+370
+00:13:58,868 --> 00:14:00,334
+man:
+We have a question for you.
+
+371
+00:14:00,334 --> 00:14:01,834
+Can we turn back
+to that previous slide?
+
+372
+00:14:01,834 --> 00:14:03,100
+Bourrillion:
+Mm-hmm.
+
+373
+00:14:03,100 --> 00:14:04,534
+man:
+So why--why
+are you storing that
+
+374
+00:14:04,534 --> 00:14:06,267
+in a variable
+of type ImmutableSet
+
+375
+00:14:06,267 --> 00:14:07,534
+rather than Set?
+
+376
+00:14:07,534 --> 00:14:08,801
+Bourrillion:
+Why am I storing it
+
+377
+00:14:08,801 --> 00:14:10,467
+in a variable of type
+ImmutableSet
+
+378
+00:14:10,467 --> 00:14:12,100
+instead of Set?
+
+379
+00:14:12,100 --> 00:14:14,133
+I think that
+the answer to that
+
+380
+00:14:14,133 --> 00:14:16,300
+will become clear
+in future slides,
+
+381
+00:14:16,300 --> 00:14:17,701
+but the simple answer
+
+382
+00:14:17,701 --> 00:14:20,400
+is that you're conveying
+that guarantee of behavior.
+
+383
+00:14:20,400 --> 00:14:22,200
+So most of the time,
+
+384
+00:14:22,200 --> 00:14:25,334
+we're accustomed to creating
+implementation types
+
+385
+00:14:25,334 --> 00:14:28,400
+like LinkedHashSet and then
+storing that in a field
+
+386
+00:14:28,400 --> 00:14:29,801
+of simple-type Set.
+
+387
+00:14:29,801 --> 00:14:31,200
+And the reason for that
+is that
+
+388
+00:14:31,200 --> 00:14:34,033
+the interface-type Set
+conveys all the behavior
+
+389
+00:14:34,033 --> 00:14:35,968
+that we really need
+to convey at the API level.
+
+390
+00:14:35,968 --> 00:14:37,300
+In this case,
+
+391
+00:14:37,300 --> 00:14:39,200
+ImmutableSet
+is both implementation
+
+392
+00:14:39,200 --> 00:14:41,133
+and it's also
+behavioral guarantee.
+
+393
+00:14:41,133 --> 00:14:43,167
+So by declaring that,
+
+394
+00:14:43,167 --> 00:14:45,834
+uh, right up front
+in the type of our constant,
+
+395
+00:14:45,834 --> 00:14:47,467
+then that is
+making that guarantee
+
+396
+00:14:47,467 --> 00:14:50,234
+very, um--making it
+a hard guarantee
+
+397
+00:14:50,234 --> 00:14:52,767
+that can't be--
+can't be messed up.
+
+398
+00:14:54,634 --> 00:14:56,300
+Uh, so here's
+our Map example.
+
+399
+00:14:56,300 --> 00:14:58,667
+It's even uglier
+than the Set example.
+
+400
+00:14:58,667 --> 00:15:00,701
+We have to put
+all this stuff in there
+
+401
+00:15:00,701 --> 00:15:02,834
+and wrap it--kind of
+the same basic thing,
+
+402
+00:15:02,834 --> 00:15:04,200
+but this time,
+
+403
+00:15:04,200 --> 00:15:06,067
+uh, with our ImmutableMap,
+
+404
+00:15:06,067 --> 00:15:08,701
+you have this nice sort
+of builder-like syntax,
+
+405
+00:15:08,701 --> 00:15:11,868
+where you simply say,
+"ImmutableMap.with"
+
+406
+00:15:11,868 --> 00:15:13,234
+and then you just have
+a whole bunch of lines
+
+407
+00:15:13,234 --> 00:15:15,367
+saying all the entries
+that you want this Map
+
+408
+00:15:15,367 --> 00:15:16,934
+to be created with.
+
+409
+00:15:16,934 --> 00:15:18,367
+And then you
+call it ".build."
+
+410
+00:15:18,367 --> 00:15:20,300
+So this is
+behind the scenes.
+
+411
+00:15:20,300 --> 00:15:21,634
+This is creating a builder,
+
+412
+00:15:21,634 --> 00:15:23,100
+and it's filling up
+the builder,
+
+413
+00:15:23,100 --> 00:15:25,033
+and then it's creating
+an ImmutableMap
+
+414
+00:15:25,033 --> 00:15:27,133
+when you're done
+with the builder.
+
+415
+00:15:27,133 --> 00:15:29,100
+And you're all good.
+
+416
+00:15:29,100 --> 00:15:32,234
+Uh, it couldn't really
+get much simpler than that.
+
+417
+00:15:32,234 --> 00:15:36,534
+As far as I can--
+have ever been able to find.
+
+418
+00:15:36,534 --> 00:15:39,634
+So, next example.
+
+419
+00:15:39,634 --> 00:15:40,901
+So those
+were some constants.
+
+420
+00:15:40,901 --> 00:15:43,067
+Another thing that you
+often want to do
+
+421
+00:15:43,067 --> 00:15:44,968
+is make defensive copies
+of a Collection
+
+422
+00:15:44,968 --> 00:15:46,467
+that somebody
+has given to you.
+
+423
+00:15:46,467 --> 00:15:48,734
+And if you're going
+to make a defensive copy,
+
+424
+00:15:48,734 --> 00:15:50,767
+uh, it's a good idea
+
+425
+00:15:50,767 --> 00:15:52,200
+to go ahead and
+make that defensive copy
+
+426
+00:15:52,200 --> 00:15:54,501
+into an immutable Collection,
+
+427
+00:15:54,501 --> 00:15:57,434
+because if you're not planning
+to modify it, you know,
+
+428
+00:15:57,434 --> 00:15:59,200
+why bother putting it
+in a mutable Collection?
+
+429
+00:15:59,200 --> 00:16:02,901
+So here's, uh, an example
+
+430
+00:16:02,901 --> 00:16:06,200
+using
+the existing JDK APIs.
+
+431
+00:16:06,200 --> 00:16:07,834
+We are creating
+a LinkedHashSet
+
+432
+00:16:07,834 --> 00:16:10,100
+so that we can preserve
+the ordering of those numbers,
+
+433
+00:16:10,100 --> 00:16:13,033
+and we're throwing
+all the numbers into it
+
+434
+00:16:13,033 --> 00:16:14,300
+and then we're wrapping it.
+
+435
+00:16:14,300 --> 00:16:15,767
+So this is--
+this is not bad.
+
+436
+00:16:15,767 --> 00:16:17,334
+Right?
+This looks all right.
+
+437
+00:16:17,334 --> 00:16:21,300
+Um, but we have to remember
+to do that copy on the way in,
+
+438
+00:16:21,300 --> 00:16:23,033
+and we have to remember
+to wrap it
+
+439
+00:16:23,033 --> 00:16:26,200
+in unmodifiable either on
+the way in or on the way out.
+
+440
+00:16:26,200 --> 00:16:28,901
+We definitely want to make
+sure that that happens
+
+441
+00:16:28,901 --> 00:16:31,934
+before the reference
+gets passed back to callers
+
+442
+00:16:31,934 --> 00:16:34,334
+when they call the
+"getLuckyNumbers" method.
+
+443
+00:16:34,334 --> 00:16:39,133
+So here's what this
+looks like using ImmutableSet.
+
+444
+00:16:39,133 --> 00:16:41,334
+So the key line
+is line three, there,
+
+445
+00:16:41,334 --> 00:16:42,601
+where you have
+
+446
+00:16:42,601 --> 00:16:45,767
+"luckyNumbers =
+ImmutableSet.copyOf(numbers)".
+
+447
+00:16:45,767 --> 00:16:47,267
+And in the previous slide,
+
+448
+00:16:47,267 --> 00:16:49,200
+that looked like
+all that stuff.
+
+449
+00:16:49,200 --> 00:16:51,734
+So now that
+is much simpler,
+
+450
+00:16:51,734 --> 00:16:54,133
+but a few other things
+have happened in here as well.
+
+451
+00:16:54,133 --> 00:16:56,767
+And I conveniently
+boldfaced them for you.
+
+452
+00:16:56,767 --> 00:17:00,434
+Uh, ImmutableSet
+is being used
+
+453
+00:17:00,434 --> 00:17:03,501
+as the type of the constant
+and the type of the return value
+
+454
+00:17:03,501 --> 00:17:04,968
+of this
+getLuckyNumbers method.
+
+455
+00:17:04,968 --> 00:17:08,901
+This is a--a really,
+uh, much more valuable idea
+
+456
+00:17:08,901 --> 00:17:10,234
+than at first I thought.
+
+457
+00:17:10,234 --> 00:17:13,300
+Um, what happens is,
+in real life,
+
+458
+00:17:13,300 --> 00:17:14,734
+when you write a method
+like getLuckyNumbers,
+
+459
+00:17:14,734 --> 00:17:16,000
+you don't
+have the advantage
+
+460
+00:17:16,000 --> 00:17:17,567
+of just being able
+to stick it on a slide.
+
+461
+00:17:17,567 --> 00:17:19,501
+You have to actually
+maintain that software,
+
+462
+00:17:19,501 --> 00:17:22,067
+and so you have to write
+Javadoc for that method
+
+463
+00:17:22,067 --> 00:17:24,801
+that actually conveys what
+is the contractual behavior
+
+464
+00:17:24,801 --> 00:17:26,534
+of this--this API.
+
+465
+00:17:26,534 --> 00:17:29,234
+And so with a method
+like this one,
+
+466
+00:17:29,234 --> 00:17:30,901
+you find yourself
+writing things like,
+
+467
+00:17:30,901 --> 00:17:34,167
+uh, it returns a Set
+containing, you know,
+
+468
+00:17:34,167 --> 00:17:37,834
+luckyNumbers and I--
+it's an ImmutableSet.
+
+469
+00:17:37,834 --> 00:17:40,567
+"Really, I promise I won't
+ever change what's in this Set.
+
+470
+00:17:40,567 --> 00:17:42,834
+"Please believe me.
+I really am--
+
+471
+00:17:42,834 --> 00:17:44,801
+"I'm--I'm pretty sure
+that I've done this right
+
+472
+00:17:44,801 --> 00:17:46,567
+and I'm never gonna change it
+and I won't forget."
+
+473
+00:17:46,567 --> 00:17:48,601
+And then the caller
+may or may not trust you.
+
+474
+00:17:48,601 --> 00:17:50,100
+And the caller
+may feel compelled
+
+475
+00:17:50,100 --> 00:17:51,834
+to make a defensive
+copy of his own.
+
+476
+00:17:51,834 --> 00:17:55,667
+Uh, here, you sort of get
+around all that messy stuff
+
+477
+00:17:55,667 --> 00:17:57,601
+because you're just plain
+returning an ImmutableSet.
+
+478
+00:17:57,601 --> 00:17:59,667
+And there's just no way that
+that thing can ever change.
+
+479
+00:17:59,667 --> 00:18:01,567
+So the caller knows that.
+
+480
+00:18:01,567 --> 00:18:02,868
+The caller knows
+
+481
+00:18:02,868 --> 00:18:05,133
+that he doesn't have
+to make a defensive copy.
+
+482
+00:18:05,133 --> 00:18:06,734
+As well, by doing that,
+
+483
+00:18:06,734 --> 00:18:09,567
+then that sort of
+forces our field at the top
+
+484
+00:18:09,567 --> 00:18:11,400
+to also be
+of type ImmutableSet
+
+485
+00:18:11,400 --> 00:18:13,100
+so that we can
+return it from the method,
+
+486
+00:18:13,100 --> 00:18:16,534
+and that means that we
+cannot accidentally--oops.
+
+487
+00:18:16,534 --> 00:18:19,868
+We can't accidentally forget
+to make our defensive copy
+
+488
+00:18:19,868 --> 00:18:22,868
+when that Set of integers
+is passed in.
+
+489
+00:18:22,868 --> 00:18:25,334
+We actually--if we forget
+to make a defensive copy,
+
+490
+00:18:25,334 --> 00:18:26,601
+it won't compile
+
+491
+00:18:26,601 --> 00:18:27,901
+because we'll
+be trying to assign
+
+492
+00:18:27,901 --> 00:18:30,767
+a Set to a variable
+of type ImmutableSet.
+
+493
+00:18:30,767 --> 00:18:33,033
+So we remember,
+and we're like, "Oh, yes.
+
+494
+00:18:33,033 --> 00:18:34,834
+"I need to do
+ImmutableSet.copyOf."
+
+495
+00:18:34,834 --> 00:18:37,400
+And it's always nice
+when you can arrange things
+
+496
+00:18:37,400 --> 00:18:40,200
+so that you're not dependent
+on static analysis tools
+
+497
+00:18:40,200 --> 00:18:42,601
+or code reviews to point out
+these bugs to you,
+
+498
+00:18:42,601 --> 00:18:45,734
+but simply by using the APIs
+in the normal patterns--
+
+499
+00:18:45,734 --> 00:18:49,100
+they just simply fail to
+compile when you do it wrong.
+
+500
+00:18:49,100 --> 00:18:50,367
+man:
+Question.
+
+501
+00:18:50,367 --> 00:18:51,634
+Yes.
+
+502
+00:18:51,634 --> 00:18:53,801
+You have a lot of questions.
+Are you sure you--
+
+503
+00:18:53,801 --> 00:18:55,801
+man:
+You said you're not
+using static analysis.
+
+504
+00:18:55,801 --> 00:18:59,300
+I would claim that a compiler
+is the best static analysis.
+
+505
+00:18:59,300 --> 00:19:01,634
+[indistinct]
+...using it properly.
+
+506
+00:19:01,634 --> 00:19:04,701
+A compiler is the best
+static analysis tool of all.
+
+507
+00:19:04,701 --> 00:19:06,033
+man:
+Yeah.
+
+508
+00:19:06,033 --> 00:19:07,367
+I agree.
+
+509
+00:19:07,367 --> 00:19:08,667
+[audience laughs]
+
+510
+00:19:08,667 --> 00:19:10,167
+man:
+So you're exploiting
+the type system
+
+511
+00:19:10,167 --> 00:19:12,501
+to prove things
+about your program,
+
+512
+00:19:12,501 --> 00:19:13,868
+and that's--that's great.
+
+513
+00:19:13,868 --> 00:19:15,167
+I agree. Thank you.
+
+514
+00:19:15,167 --> 00:19:16,601
+Your name again?
+
+515
+00:19:16,601 --> 00:19:17,934
+[all laugh]
+
+516
+00:19:17,934 --> 00:19:20,100
+man:
+Uh, just--just a reminder,
+
+517
+00:19:20,100 --> 00:19:22,467
+they are recording
+tonight, so, uh,
+
+518
+00:19:22,467 --> 00:19:24,834
+th-this will hopefully go up
+on YouTube at a later date,
+
+519
+00:19:24,834 --> 00:19:27,968
+and so if you're--questions,
+just wave your hand,
+
+520
+00:19:27,968 --> 00:19:29,734
+and we'll run the mic
+over to you.
+
+521
+00:19:29,734 --> 00:19:31,200
+Okay.
+
+522
+00:19:31,200 --> 00:19:32,501
+Okay.
+
+523
+00:19:32,501 --> 00:19:34,434
+Um, a few other things--
+
+524
+00:19:34,434 --> 00:19:36,200
+you may wonder--
+
+525
+00:19:36,200 --> 00:19:38,000
+if you start
+using these ImmutableSets,
+
+526
+00:19:38,000 --> 00:19:40,133
+and then every time
+you're passing something
+
+527
+00:19:40,133 --> 00:19:41,667
+from one API to another,
+
+528
+00:19:41,667 --> 00:19:43,934
+it's constantly calling this
+"copyOf" method over and over,
+
+529
+00:19:43,934 --> 00:19:46,200
+you may wonder if your server
+is going to bog down
+
+530
+00:19:46,200 --> 00:19:48,901
+under the weight of all
+these "copy," uh, operations
+
+531
+00:19:48,901 --> 00:19:50,167
+that are happening.
+
+532
+00:19:50,167 --> 00:19:52,567
+Well, no, it won't,
+because if you look
+
+533
+00:19:52,567 --> 00:19:54,467
+at the specification
+of the copy method,
+
+534
+00:19:54,467 --> 00:19:56,434
+it gives itself
+permission to cheat.
+
+535
+00:19:56,434 --> 00:19:58,334
+Uh, it basically says
+
+536
+00:19:58,334 --> 00:20:00,300
+if it can
+determine that, uh--
+
+537
+00:20:00,300 --> 00:20:01,734
+which isn't very hard--
+
+538
+00:20:01,734 --> 00:20:03,968
+if the Set that you give it
+is already of type ImmutableSet,
+
+539
+00:20:03,968 --> 00:20:05,234
+it's going to simply
+
+540
+00:20:05,234 --> 00:20:07,367
+return you that
+same Set instance again.
+
+541
+00:20:07,367 --> 00:20:09,534
+And that's gonna be
+functionally identical to you,
+
+542
+00:20:09,534 --> 00:20:11,133
+so you won't really care.
+
+543
+00:20:11,133 --> 00:20:13,167
+But that--that means
+you actually don't
+
+544
+00:20:13,167 --> 00:20:15,133
+have to stop
+and--and worry,
+
+545
+00:20:15,133 --> 00:20:16,534
+"Should I really
+make a defensive copy?"
+
+546
+00:20:16,534 --> 00:20:19,734
+Just do it, and, uh,
+the cost will likely be low.
+
+547
+00:20:19,734 --> 00:20:23,167
+Um, yes.
+
+548
+00:20:23,167 --> 00:20:24,968
+Do you want
+to go to a mic or, uh?
+
+549
+00:20:24,968 --> 00:20:26,334
+We can hand it to you.
+
+550
+00:20:26,334 --> 00:20:27,801
+man:
+Thank you.
+
+551
+00:20:27,801 --> 00:20:29,534
+So there are no, uh,
+
+552
+00:20:29,534 --> 00:20:32,501
+new constructors
+for any of these, uh,
+
+553
+00:20:32,501 --> 00:20:33,901
+Collection types?
+
+554
+00:20:33,901 --> 00:20:35,567
+You can't construct them
+with the new--
+
+555
+00:20:35,567 --> 00:20:37,300
+Bourrillion:
+Oh, constructors.
+
+556
+00:20:37,300 --> 00:20:39,133
+So none of them
+have public constructors.
+
+557
+00:20:39,133 --> 00:20:40,400
+man:
+They don't.
+
+558
+00:20:40,400 --> 00:20:41,667
+Bourrillion:
+Um, if they did,
+
+559
+00:20:41,667 --> 00:20:44,934
+uh, you would be able
+to subclass them.
+
+560
+00:20:44,934 --> 00:20:47,133
+Uh, we actually could not
+
+561
+00:20:47,133 --> 00:20:48,868
+make these classes
+themselves final
+
+562
+00:20:48,868 --> 00:20:50,634
+because internal
+to their--their guts,
+
+563
+00:20:50,634 --> 00:20:52,100
+they need to have
+their own subclasses
+
+564
+00:20:52,100 --> 00:20:53,434
+to do some things.
+
+565
+00:20:53,434 --> 00:20:55,400
+So therefore, if
+the constructor was public,
+
+566
+00:20:55,400 --> 00:20:56,667
+you would be able
+to subclass them
+
+567
+00:20:56,667 --> 00:20:57,934
+and you would be able
+to do God-knows-what
+
+568
+00:20:57,934 --> 00:21:00,901
+and break the immutabl--
+immutability guarantee.
+
+569
+00:21:00,901 --> 00:21:04,167
+So there are many different
+factory methods
+
+570
+00:21:04,167 --> 00:21:05,501
+to create
+them with, though.
+
+571
+00:21:05,501 --> 00:21:07,267
+So hopefully you shouldn't
+miss those constructors.
+
+572
+00:21:07,267 --> 00:21:08,534
+man:
+Can you go back to the, uh--
+
+573
+00:21:08,534 --> 00:21:09,934
+did you not list
+off all the, uh,
+
+574
+00:21:09,934 --> 00:21:11,767
+Collection types yet?
+
+575
+00:21:11,767 --> 00:21:13,400
+I'm trying
+to see how you do, uh,
+
+576
+00:21:13,400 --> 00:21:15,501
+sorting also of--
+of things.
+
+577
+00:21:15,501 --> 00:21:16,801
+Bourrillion:
+Sorting.
+
+578
+00:21:16,801 --> 00:21:18,067
+man:
+Yeah.
+
+579
+00:21:18,067 --> 00:21:19,968
+Bourrillion:
+Um, okay, so these, uh,
+
+580
+00:21:19,968 --> 00:21:21,968
+are you thinking about
+things like SortedSet?
+
+581
+00:21:21,968 --> 00:21:23,467
+man:
+Yeah.
+
+582
+00:21:23,467 --> 00:21:26,100
+Okay, so we do also have
+an ImmutableSortedSet class.
+
+583
+00:21:26,100 --> 00:21:29,067
+Uh, so if you
+pass in a bunch of stuff
+
+584
+00:21:29,067 --> 00:21:32,000
+to an Im--
+ImmutableSortedSet.of,
+
+585
+00:21:32,000 --> 00:21:34,934
+uh, then it's gonna sort
+all those things at that time
+
+586
+00:21:34,934 --> 00:21:38,968
+and store them in the Set
+in order to order.
+
+587
+00:21:38,968 --> 00:21:41,267
+Ordered fashion, yeah.
+
+588
+00:21:41,267 --> 00:21:44,968
+Um, so here's some more
+examples of ImmutableSet.
+
+589
+00:21:44,968 --> 00:21:47,868
+These are sort of the--
+the five factory methods.
+
+590
+00:21:47,868 --> 00:21:50,367
+You can use it
+to create empty Sets
+
+591
+00:21:50,367 --> 00:21:53,901
+and singleton Sets
+as well as n-element Sets.
+
+592
+00:21:53,901 --> 00:21:57,400
+Now, why wouldn't you just use
+Collections.emptyset
+
+593
+00:21:57,400 --> 00:21:58,767
+and Collections.singleton?
+
+594
+00:21:58,767 --> 00:22:00,200
+Those are the things
+we've been using
+
+595
+00:22:00,200 --> 00:22:02,200
+for what did you say--
+11 years?
+
+596
+00:22:02,200 --> 00:22:03,567
+11 years.
+
+597
+00:22:03,567 --> 00:22:05,367
+And the answer is you can.
+
+598
+00:22:05,367 --> 00:22:08,234
+Um, but as
+my example shows,
+
+599
+00:22:08,234 --> 00:22:09,701
+we have this ImmutableSet
+of Country
+
+600
+00:22:09,701 --> 00:22:10,968
+called "BETA COUNTRIES."
+
+601
+00:22:10,968 --> 00:22:13,033
+So I used to work
+in the AdWords system
+
+602
+00:22:13,033 --> 00:22:15,567
+and there was always
+a country or more
+
+603
+00:22:15,567 --> 00:22:18,767
+that we were in the process
+of experimentally rolling out
+
+604
+00:22:18,767 --> 00:22:20,400
+new forms of payment
+to and so forth.
+
+605
+00:22:20,400 --> 00:22:22,133
+So over time,
+
+606
+00:22:22,133 --> 00:22:24,734
+uh, we would be
+editing our code
+
+607
+00:22:24,734 --> 00:22:26,334
+and this--this
+set of countries
+
+608
+00:22:26,334 --> 00:22:28,434
+would shrink
+from five down to two,
+
+609
+00:22:28,434 --> 00:22:30,601
+and then down to zero,
+and then back up to one,
+
+610
+00:22:30,601 --> 00:22:31,968
+and back up to four.
+
+611
+00:22:31,968 --> 00:22:34,200
+If you use ImmutableSet
+for some things
+
+612
+00:22:34,200 --> 00:22:36,267
+and Collections.emptyset
+and Collections.singleton
+
+613
+00:22:36,267 --> 00:22:37,601
+for other things,
+
+614
+00:22:37,601 --> 00:22:39,534
+then you're constantly
+churning back and forth.
+
+615
+00:22:39,534 --> 00:22:40,868
+We find it a lot easier
+
+616
+00:22:40,868 --> 00:22:42,734
+to just simply
+always use ImmutableSet.of
+
+617
+00:22:42,734 --> 00:22:44,701
+and then that just
+always stays the same.
+
+618
+00:22:44,701 --> 00:22:47,567
+And we also have
+copyOf methods
+
+619
+00:22:47,567 --> 00:22:49,234
+that take iterators
+and iterables.
+
+620
+00:22:49,234 --> 00:22:53,033
+So if you have your data
+in some representation,
+
+621
+00:22:53,033 --> 00:22:54,334
+you can throw it in there.
+
+622
+00:22:54,334 --> 00:22:57,701
+In the future I think that we
+are pretty much in favor
+
+623
+00:22:57,701 --> 00:23:01,400
+of having a builder syn--
+a builder syntax as well
+
+624
+00:23:01,400 --> 00:23:02,968
+so that you can say,
+you know,
+
+625
+00:23:02,968 --> 00:23:04,334
+"Add everything
+in this Collection,
+
+626
+00:23:04,334 --> 00:23:05,968
+"then add this single element,
+
+627
+00:23:05,968 --> 00:23:08,067
+then remove this
+single element .build,"
+
+628
+00:23:08,067 --> 00:23:10,033
+and get your
+ImmutableSet that way.
+
+629
+00:23:10,033 --> 00:23:11,734
+But that's not there yet.
+
+630
+00:23:11,734 --> 00:23:13,601
+And at the bottom
+there's an example
+
+631
+00:23:13,601 --> 00:23:15,601
+of creating a small Map.
+
+632
+00:23:15,601 --> 00:23:18,033
+It simply looks like
+ImmutableMap.of.
+
+633
+00:23:18,033 --> 00:23:21,100
+It looks very much the
+ImmutableSet, uh, example
+
+634
+00:23:21,100 --> 00:23:23,801
+but the parameters are
+alternating keys and values.
+
+635
+00:23:23,801 --> 00:23:27,000
+Uh, it's very important
+to realize
+
+636
+00:23:27,000 --> 00:23:29,033
+this is not
+a varargs method
+
+637
+00:23:29,033 --> 00:23:30,300
+that's just
+going to allow you
+
+638
+00:23:30,300 --> 00:23:31,868
+to pass a whole
+bunch of objects
+
+639
+00:23:31,868 --> 00:23:34,167
+and then we'll just hope
+that things come out right.
+
+640
+00:23:34,167 --> 00:23:36,534
+If we did that,
+you would lose type safety,
+
+641
+00:23:36,534 --> 00:23:39,167
+the compiler would fail
+at static analysis,
+
+642
+00:23:39,167 --> 00:23:42,133
+and your IDE would fail
+at its autocompletion
+
+643
+00:23:42,133 --> 00:23:44,033
+and all kinds of,
+you know,
+
+644
+00:23:44,033 --> 00:23:45,434
+sad things would happen.
+
+645
+00:23:45,434 --> 00:23:48,501
+So we don't--we don't have
+varargs method for this.
+
+646
+00:23:48,501 --> 00:23:51,634
+We have overloads that go
+up to five key-value pairs
+
+647
+00:23:51,634 --> 00:23:53,033
+just like EnumSet has.
+
+648
+00:23:53,033 --> 00:23:55,601
+Um, and then if you want
+something build--
+
+649
+00:23:55,601 --> 00:23:57,701
+bigger than that, then you
+just use the builder syntax
+
+650
+00:23:57,701 --> 00:23:59,467
+that we showed back here.
+
+651
+00:23:59,467 --> 00:24:02,868
+So really, either way,
+you're pretty well-covered.
+
+652
+00:24:05,534 --> 00:24:07,734
+Are there any questions
+floating out there?
+
+653
+00:24:07,734 --> 00:24:10,133
+Haven't been
+too many of those.
+
+654
+00:24:10,133 --> 00:24:11,901
+I hope that--I don't know
+whether that's a good sign
+
+655
+00:24:11,901 --> 00:24:13,634
+or a bad sign.
+
+656
+00:24:13,634 --> 00:24:15,167
+[chuckles]
+
+657
+00:24:15,167 --> 00:24:16,501
+man:
+Question.
+
+658
+00:24:16,501 --> 00:24:17,767
+Yeah.
+
+659
+00:24:17,767 --> 00:24:19,400
+Oh, great.
+
+660
+00:24:19,400 --> 00:24:20,767
+man:
+Once again, going
+back to my question
+
+661
+00:24:20,767 --> 00:24:22,033
+about the SortedSets.
+
+662
+00:24:22,033 --> 00:24:23,534
+Where do you provide
+the comparator?
+
+663
+00:24:23,534 --> 00:24:25,234
+Where do we
+provide comparators?
+
+664
+00:24:25,234 --> 00:24:26,767
+man:
+Yeah.
+
+665
+00:24:26,767 --> 00:24:29,234
+Uh, well, we do have a class--
+I'm sorry?
+
+666
+00:24:29,234 --> 00:24:31,067
+man:
+With the often copy of syntax
+
+667
+00:24:31,067 --> 00:24:32,334
+I don't see a place to put--
+
+668
+00:24:32,334 --> 00:24:33,734
+Bourrillion:
+Oh, okay. So I'm--
+
+669
+00:24:33,734 --> 00:24:35,501
+I happen to be showing you a
+lot of examples of ImmutableSet.
+
+670
+00:24:35,501 --> 00:24:37,968
+I forgot to put on an example
+of ImmutableSortedSet.
+
+671
+00:24:37,968 --> 00:24:40,367
+Basically,
+if you want natural order,
+
+672
+00:24:40,367 --> 00:24:42,534
+you just say,
+"ImmutableSortedSet.of,"
+
+673
+00:24:42,534 --> 00:24:43,801
+just like this.
+
+674
+00:24:43,801 --> 00:24:45,100
+If you want
+a custom comparator,
+
+675
+00:24:45,100 --> 00:24:48,200
+it looks like,
+"ImmutableSortedSet.orderedBy,"
+
+676
+00:24:48,200 --> 00:24:51,868
+my comparator, ".of"
+and then all of your contents
+
+677
+00:24:51,868 --> 00:24:53,200
+at that point.
+
+678
+00:24:53,200 --> 00:24:55,667
+man:
+Question?
+
+679
+00:24:55,667 --> 00:24:57,801
+Okay.
+
+680
+00:24:57,801 --> 00:25:00,100
+So caveats, uh,
+
+681
+00:25:00,100 --> 00:25:03,167
+these Collections
+do not like null elements.
+
+682
+00:25:03,167 --> 00:25:05,167
+They are hostile
+to the very idea of null
+
+683
+00:25:05,167 --> 00:25:07,367
+and they will reject
+any null element
+
+684
+00:25:07,367 --> 00:25:08,634
+that you
+try to put in it.
+
+685
+00:25:08,634 --> 00:25:10,734
+Why?
+Why do they do this?
+
+686
+00:25:10,734 --> 00:25:12,701
+So we did a lot
+of extensive research.
+
+687
+00:25:12,701 --> 00:25:15,400
+We found that
+the number of times
+
+688
+00:25:15,400 --> 00:25:17,968
+that you want a null element
+in one of these Collections
+
+689
+00:25:17,968 --> 00:25:19,434
+is very low.
+
+690
+00:25:19,434 --> 00:25:23,567
+Uh, I say 95% plus.
+
+691
+00:25:23,567 --> 00:25:25,901
+There are religious
+arguments to be made
+
+692
+00:25:25,901 --> 00:25:27,968
+on whether that's--really
+should be 100% or not.
+
+693
+00:25:27,968 --> 00:25:29,267
+I don't even
+want to go there.
+
+694
+00:25:29,267 --> 00:25:32,367
+But it's rare to want null.
+
+695
+00:25:32,367 --> 00:25:33,934
+So what happens is
+
+696
+00:25:33,934 --> 00:25:36,601
+if you make the Collection
+tolerant of null,
+
+697
+00:25:36,601 --> 00:25:39,167
+then you're serving
+those 5% of people
+
+698
+00:25:39,167 --> 00:25:41,234
+at the expense
+of the other 95%.
+
+699
+00:25:41,234 --> 00:25:43,667
+The 95% case
+would much rather
+
+700
+00:25:43,667 --> 00:25:45,033
+that you
+blew up immediately
+
+701
+00:25:45,033 --> 00:25:46,567
+if you tried to put
+a null element in there
+
+702
+00:25:46,567 --> 00:25:49,234
+so you would catch that error
+close--right at its source,
+
+703
+00:25:49,234 --> 00:25:51,000
+and not only find it later
+
+704
+00:25:51,000 --> 00:25:53,167
+at some totally separate
+piece of code.
+
+705
+00:25:53,167 --> 00:25:56,934
+Uh, luckily, it's--
+we're pretty free
+
+706
+00:25:56,934 --> 00:25:58,200
+to make
+a decision like this
+
+707
+00:25:58,200 --> 00:25:59,601
+because if you
+have null elements,
+
+708
+00:25:59,601 --> 00:26:02,167
+you have perfectly serviceable
+workarounds to use.
+
+709
+00:26:02,167 --> 00:26:05,133
+You can simply keep doing
+what you were doing before--
+
+710
+00:26:05,133 --> 00:26:07,934
+create a HashSet and pass it
+through UnmodifiableSet.
+
+711
+00:26:07,934 --> 00:26:10,767
+So since that's not really
+that bad of a fate,
+
+712
+00:26:10,767 --> 00:26:14,167
+then it frees us to focus
+on the dominant-use case
+
+713
+00:26:14,167 --> 00:26:15,834
+and make sure that these
+do exactly what you want
+
+714
+00:26:15,834 --> 00:26:17,100
+in that case.
+
+715
+00:26:17,100 --> 00:26:18,467
+And by the way,
+JDK Collections
+
+716
+00:26:18,467 --> 00:26:21,267
+are taking the same approach
+ever since 1.4, so.
+
+717
+00:26:21,267 --> 00:26:24,467
+Uh, oh, and I forgot to add
+the--the Doug Lee quote.
+
+718
+00:26:24,467 --> 00:26:26,567
+Doug Lee,
+as you know,
+
+719
+00:26:26,567 --> 00:26:28,267
+he--he's done a lot of work
+on these Collections
+
+720
+00:26:28,267 --> 00:26:32,000
+and, uh--uh, he's--
+his, you know, intellect
+
+721
+00:26:32,000 --> 00:26:35,467
+sort of exceeds, uh,
+any that I--I'm aware of,
+
+722
+00:26:35,467 --> 00:26:37,801
+and his quote
+on the subject is, uh,
+
+723
+00:26:37,801 --> 00:26:39,067
+what--what was it?
+
+724
+00:26:39,067 --> 00:26:42,033
+man:
+I believe he said,
+"Null sucks."
+
+725
+00:26:42,033 --> 00:26:43,300
+Right. That was it.
+
+726
+00:26:43,300 --> 00:26:44,601
+[audience laughs]
+
+727
+00:26:44,601 --> 00:26:46,634
+Yes, so I don't remember
+which academic publication
+
+728
+00:26:46,634 --> 00:26:49,467
+that was in, but "Null sucks,"
+comes from Doug Lee
+
+729
+00:26:49,467 --> 00:26:51,467
+and I--
+I happen to agree.
+
+730
+00:26:51,467 --> 00:26:53,901
+And, you know,
+I put some small things--
+
+731
+00:26:53,901 --> 00:26:55,467
+hey, by the way,
+it happens to be faster
+
+732
+00:26:55,467 --> 00:26:57,100
+and it happens to keep
+our implementation simpler,
+
+733
+00:26:57,100 --> 00:26:58,834
+but that's not really
+what you care about
+
+734
+00:26:58,834 --> 00:27:00,367
+most of the time.
+
+735
+00:27:00,367 --> 00:27:01,701
+Uh, another caveat
+
+736
+00:27:01,701 --> 00:27:04,234
+is that you can confuse
+yourself and others
+
+737
+00:27:04,234 --> 00:27:06,901
+if you put mutable elements
+into an immutable Collection--
+
+738
+00:27:06,901 --> 00:27:08,734
+into an <i>immutable</i> Collection--
+
+739
+00:27:08,734 --> 00:27:11,033
+and then you pass it around
+and advertise it
+
+740
+00:27:11,033 --> 00:27:13,868
+as an "immutable"--
+I'm tripping over the word--
+
+741
+00:27:13,868 --> 00:27:15,567
+as an immutable Collection.
+
+742
+00:27:15,567 --> 00:27:17,534
+Because people may assume
+that that means
+
+743
+00:27:17,534 --> 00:27:19,267
+the Collection
+is deeply immutable,
+
+744
+00:27:19,267 --> 00:27:20,934
+when really it has elements
+
+745
+00:27:20,934 --> 00:27:22,634
+that can be changing
+all over the place.
+
+746
+00:27:22,634 --> 00:27:25,267
+So if you put
+deeply immutable objects in,
+
+747
+00:27:25,267 --> 00:27:27,934
+you will have a deeply
+immutable object as a result.
+
+748
+00:27:27,934 --> 00:27:31,501
+Uh, if you don't, you know,
+just proceed with caution.
+
+749
+00:27:34,234 --> 00:27:35,534
+[mutters]
+
+750
+00:27:35,534 --> 00:27:38,200
+Uh, so the way I want
+to summarize this whole section
+
+751
+00:27:38,200 --> 00:27:40,534
+is--which is the biggest
+section of the talk--
+
+752
+00:27:40,534 --> 00:27:43,334
+is, in the past,
+we always would ask,
+
+753
+00:27:43,334 --> 00:27:46,033
+"Hmm, does my Collection
+need to be immutable?"
+
+754
+00:27:46,033 --> 00:27:47,667
+And if it doesn't,
+
+755
+00:27:47,667 --> 00:27:49,634
+then we would just
+use a plain HashSet,
+
+756
+00:27:49,634 --> 00:27:51,133
+and then if it needed
+to be immutable,
+
+757
+00:27:51,133 --> 00:27:52,400
+we would wrap it.
+
+758
+00:27:52,400 --> 00:27:54,133
+Uh, with these
+new Collections
+
+759
+00:27:54,133 --> 00:27:55,534
+that are part
+of our library,
+
+760
+00:27:55,534 --> 00:27:59,634
+we think that we have flipped
+that argument 180 degrees,
+
+761
+00:27:59,634 --> 00:28:00,968
+and that now,
+the real question is,
+
+762
+00:28:00,968 --> 00:28:02,501
+"Does it need
+to be mutable?"
+
+763
+00:28:02,501 --> 00:28:04,200
+Because if it
+needs to be mutable,
+
+764
+00:28:04,200 --> 00:28:06,267
+go ahead and use a HashSet,
+an ArrayList, whatever.
+
+765
+00:28:06,267 --> 00:28:08,133
+But if it doesn't,
+you're just better off
+
+766
+00:28:08,133 --> 00:28:09,634
+using these
+to begin with
+
+767
+00:28:09,634 --> 00:28:11,534
+for all the many reasons
+that, uh,
+
+768
+00:28:11,534 --> 00:28:13,234
+that I've covered.
+
+769
+00:28:14,667 --> 00:28:15,934
+Questions?
+
+770
+00:28:15,934 --> 00:28:18,133
+I'm gonna move on
+to Multisets next.
+
+771
+00:28:20,334 --> 00:28:23,400
+So, yes, Multi--Multisets
+and Multimaps
+
+772
+00:28:23,400 --> 00:28:25,334
+are two of the, uh,
+
+773
+00:28:25,334 --> 00:28:27,434
+main new types of Collections
+that we have created,
+
+774
+00:28:27,434 --> 00:28:28,701
+and they're
+the ones I chose
+
+775
+00:28:28,701 --> 00:28:30,501
+to spend
+the most time and, uh,
+
+776
+00:28:30,501 --> 00:28:33,400
+energy discussing today,
+and then in Section Five,
+
+777
+00:28:33,400 --> 00:28:36,367
+I'm going to, um,
+just sort of
+
+778
+00:28:36,367 --> 00:28:39,434
+give some highlights of--
+on some of the other types.
+
+779
+00:28:39,434 --> 00:28:41,868
+So to sort of set up
+
+780
+00:28:41,868 --> 00:28:43,467
+the conversation
+about Multisets,
+
+781
+00:28:43,467 --> 00:28:45,267
+a Multiset is
+a type of Collection.
+
+782
+00:28:45,267 --> 00:28:47,300
+So I'm going to talk
+a little bit about
+
+783
+00:28:47,300 --> 00:28:49,434
+how to select
+the right Collection
+
+784
+00:28:49,434 --> 00:28:50,701
+for the right job.
+
+785
+00:28:50,701 --> 00:28:53,634
+Obviously anytime you have
+a whole bunch of "foo"
+
+786
+00:28:53,634 --> 00:28:55,033
+of a similar type
+
+787
+00:28:55,033 --> 00:28:56,501
+and you want
+to store them in something,
+
+788
+00:28:56,501 --> 00:28:58,734
+you're going to be looking
+for a Collection of some kind.
+
+789
+00:28:58,734 --> 00:29:00,467
+But in order to decide
+
+790
+00:29:00,467 --> 00:29:02,133
+what kind of Collection
+you want to use,
+
+791
+00:29:02,133 --> 00:29:04,033
+you have to ask yourself
+a few questions.
+
+792
+00:29:04,033 --> 00:29:07,400
+And the first two of these
+are really the big questions
+
+793
+00:29:07,400 --> 00:29:09,200
+that sort of determine
+what interface type
+
+794
+00:29:09,200 --> 00:29:10,868
+you're going to be using.
+
+795
+00:29:10,868 --> 00:29:14,167
+The third one has more to do
+with what implementation
+
+796
+00:29:14,167 --> 00:29:15,968
+of that interface you'll--
+you'll end up choosing.
+
+797
+00:29:15,968 --> 00:29:17,434
+The first question is,
+
+798
+00:29:17,434 --> 00:29:19,734
+"Can this Collection
+contain duplicate elements?"
+
+799
+00:29:19,734 --> 00:29:21,601
+And the second question is,
+
+800
+00:29:21,601 --> 00:29:24,634
+"Is the ordering of my
+Collection significant?"
+
+801
+00:29:24,634 --> 00:29:27,033
+And by "significant,"
+what I really mean
+
+802
+00:29:27,033 --> 00:29:29,868
+is, uh, would you consider
+the Collection "one, two"
+
+803
+00:29:29,868 --> 00:29:32,667
+and the Collection "two, one"
+to be the same or not?
+
+804
+00:29:32,667 --> 00:29:34,434
+Would you consider them--
+would you want
+
+805
+00:29:34,434 --> 00:29:36,734
+".equals" to return
+true in that case?
+
+806
+00:29:36,734 --> 00:29:38,934
+Would you want them to map
+to the same value
+
+807
+00:29:38,934 --> 00:29:40,834
+if they were used
+as the key in a Map?
+
+808
+00:29:40,834 --> 00:29:45,234
+And so the third question
+
+809
+00:29:45,234 --> 00:29:46,868
+has to do with
+iteration order.
+
+810
+00:29:46,868 --> 00:29:48,133
+The reason
+I put this on here
+
+811
+00:29:48,133 --> 00:29:49,767
+is to emphasize
+the fact that
+
+812
+00:29:49,767 --> 00:29:51,534
+when we talk about
+the ordering of the elements
+
+813
+00:29:51,534 --> 00:29:52,868
+in a Collection,
+
+814
+00:29:52,868 --> 00:29:54,634
+there really are
+two very different things
+
+815
+00:29:54,634 --> 00:29:55,901
+we could be talking about.
+
+816
+00:29:55,901 --> 00:29:57,234
+We could be talking
+about that idea
+
+817
+00:29:57,234 --> 00:29:59,067
+of whether it's
+significant for equality,
+
+818
+00:29:59,067 --> 00:30:00,367
+the second bullet,
+
+819
+00:30:00,367 --> 00:30:02,067
+or we could simply
+be talking about when you 
+
+820
+00:30:02,067 --> 00:30:04,033
+iterate over the elements
+of this Collection,
+
+821
+00:30:04,033 --> 00:30:05,467
+what order do things
+come out in?
+
+822
+00:30:05,467 --> 00:30:07,367
+And there's
+lots of different--
+
+823
+00:30:07,367 --> 00:30:09,767
+Collection types use
+lots of different approaches.
+
+824
+00:30:09,767 --> 00:30:11,968
+They could be insertion-ordered,
+like a LinkedHashSet,
+
+825
+00:30:11,968 --> 00:30:14,667
+comparator-ordered,
+like a TreeSet,
+
+826
+00:30:14,667 --> 00:30:17,701
+uh, user-ordered,
+by which I mean, uh,
+
+827
+00:30:17,701 --> 00:30:20,334
+an ArrayList--the user
+can just finely control
+
+828
+00:30:20,334 --> 00:30:22,501
+exactly what order, uh--
+
+829
+00:30:22,501 --> 00:30:24,901
+uh, he or she wants
+those elements to be in--
+
+830
+00:30:24,901 --> 00:30:26,968
+add something to the end
+or move from the beginning.
+
+831
+00:30:26,968 --> 00:30:29,000
+Uh, it could
+be something else
+
+832
+00:30:29,000 --> 00:30:31,167
+or it could also be,
+"Well, it just doesn't matter.
+
+833
+00:30:31,167 --> 00:30:33,400
+I don't care."
+
+834
+00:30:33,400 --> 00:30:37,901
+Um, so I'm going to focus
+on the first two questions
+
+835
+00:30:37,901 --> 00:30:40,234
+because what the JDK did
+
+836
+00:30:40,234 --> 00:30:43,367
+is provided
+two implementations
+
+837
+00:30:43,367 --> 00:30:45,467
+that cover two of the possible
+combinations here.
+
+838
+00:30:45,467 --> 00:30:48,968
+So here's my awesome
+ASCII art table.
+
+839
+00:30:48,968 --> 00:30:52,300
+I tried to use the--
+the table-drawing feature
+
+840
+00:30:52,300 --> 00:30:53,801
+of the application
+and I--
+
+841
+00:30:53,801 --> 00:30:55,267
+I was just
+in too much of a rush
+
+842
+00:30:55,267 --> 00:30:57,200
+so I just--I just
+skipped right out of there
+
+843
+00:30:57,200 --> 00:30:59,000
+and did it in
+good, old-fashioned ASCII.
+
+844
+00:30:59,000 --> 00:31:02,133
+Um, there's two possible
+answers to the question
+
+845
+00:31:02,133 --> 00:31:04,334
+of whether it's
+an ordered or an, uh,
+
+846
+00:31:04,334 --> 00:31:05,968
+whether order is significant
+on the Collection,
+
+847
+00:31:05,968 --> 00:31:07,234
+and there's two answers
+
+848
+00:31:07,234 --> 00:31:08,801
+to whether it
+can contain duplicates.
+
+849
+00:31:08,801 --> 00:31:12,334
+If it has duplicates
+and has a significant order,
+
+850
+00:31:12,334 --> 00:31:13,601
+that's a List.
+
+851
+00:31:13,601 --> 00:31:15,167
+If it doesn't
+have duplicates
+
+852
+00:31:15,167 --> 00:31:18,634
+and doesn't have
+significant order,
+
+853
+00:31:18,634 --> 00:31:20,567
+then it's a Set.
+
+854
+00:31:20,567 --> 00:31:23,767
+So why, you know,
+would the JDK developers
+
+855
+00:31:23,767 --> 00:31:27,300
+only fill two of the boxes
+in this four-box, uh--
+
+856
+00:31:27,300 --> 00:31:28,634
+uh, windowpane?
+
+857
+00:31:28,634 --> 00:31:30,434
+Well, the answer
+is because List and Set
+
+858
+00:31:30,434 --> 00:31:31,868
+just happen to cover,
+you know,
+
+859
+00:31:31,868 --> 00:31:34,367
+90%, 95% of all the things
+that you want to do.
+
+860
+00:31:34,367 --> 00:31:37,067
+Uh, so I am not
+denigrating them at all.
+
+861
+00:31:37,067 --> 00:31:38,467
+They--they are really--
+
+862
+00:31:38,467 --> 00:31:41,300
+they are the workhorses
+of the Collection, uh, types.
+
+863
+00:31:41,300 --> 00:31:44,534
+But, uh, when you do
+a lot of Java development
+
+864
+00:31:44,534 --> 00:31:45,834
+like we do here,
+
+865
+00:31:45,834 --> 00:31:47,367
+you've occasionally realized
+you need something
+
+866
+00:31:47,367 --> 00:31:49,634
+in one of those--to fill
+one of those other spaces.
+
+867
+00:31:49,634 --> 00:31:50,968
+So here's what we did.
+
+868
+00:31:50,968 --> 00:31:54,901
+Uh, we defined Multiset,
+which--okay.
+
+869
+00:31:54,901 --> 00:31:56,801
+I made it sound
+like we invented the idea.
+
+870
+00:31:56,801 --> 00:31:58,067
+I'm sorry.
+Yeah.
+
+871
+00:31:58,067 --> 00:31:59,901
+So people probably know
+what Multisets are.
+
+872
+00:31:59,901 --> 00:32:01,434
+They're also called "bags."
+
+873
+00:32:01,434 --> 00:32:03,267
+Uh--uh, but
+we wrote the code,
+
+874
+00:32:03,267 --> 00:32:05,868
+and that's something
+that can have duplicates
+
+875
+00:32:05,868 --> 00:32:08,767
+but is insignif--
+ordering is insignificant.
+
+876
+00:32:08,767 --> 00:32:11,634
+You could also fill
+the fourth box in this diagram
+
+877
+00:32:11,634 --> 00:32:13,534
+with something that
+I've called "UniqueList."
+
+878
+00:32:13,534 --> 00:32:15,434
+This doesn't exist
+in our library yet.
+
+879
+00:32:15,434 --> 00:32:17,467
+It exists
+in an experimental form
+
+880
+00:32:17,467 --> 00:32:19,701
+internally that we
+are playing with
+
+881
+00:32:19,701 --> 00:32:21,567
+and it might eventually
+make its way out,
+
+882
+00:32:21,567 --> 00:32:24,667
+but it's certainly the least
+useful of these four.
+
+883
+00:32:26,567 --> 00:32:28,734
+So, let's look at Multiset.
+
+884
+00:32:28,734 --> 00:32:30,501
+Why would you want
+to use a Multiset?
+
+885
+00:32:30,501 --> 00:32:32,467
+Uh, here's a couple
+of examples.
+
+886
+00:32:32,467 --> 00:32:35,133
+"Uh, I kind of want a Set
+
+887
+00:32:35,133 --> 00:32:37,767
+except, oops, uh,
+I can have duplicates."
+
+888
+00:32:37,767 --> 00:32:39,133
+It's kind of
+a silly statement,
+
+889
+00:32:39,133 --> 00:32:40,434
+but here's an example.
+
+890
+00:32:40,434 --> 00:32:43,501
+Suppose that you are modeling,
+uh, card games.
+
+891
+00:32:43,501 --> 00:32:45,834
+Maybe you're working
+on an artificial intelligence
+
+892
+00:32:45,834 --> 00:32:48,934
+to play a card game
+like poker or, uh,
+
+893
+00:32:48,934 --> 00:32:51,000
+name your
+favorite card game.
+
+894
+00:32:51,000 --> 00:32:54,801
+Uh, so you may have
+the Collection of cards
+
+895
+00:32:54,801 --> 00:32:57,033
+that make up a user's hand
+or that makes up a deck
+
+896
+00:32:57,033 --> 00:32:58,634
+expressed as a Set.
+
+897
+00:32:58,634 --> 00:33:00,100
+And everything goes fine,
+
+898
+00:33:00,100 --> 00:33:03,033
+uh, until one day you--
+you start to work on a game
+
+899
+00:33:03,033 --> 00:33:05,634
+like Uno
+or pinochle
+
+900
+00:33:05,634 --> 00:33:07,434
+or blackjack
+with a six-deck shoe,
+
+901
+00:33:07,434 --> 00:33:09,434
+because suddenly those cards
+aren't unique anymore.
+
+902
+00:33:09,434 --> 00:33:11,501
+Suddenly you
+can't use a Set anymore.
+
+903
+00:33:11,501 --> 00:33:14,634
+So what usually
+you end up doing
+
+904
+00:33:14,634 --> 00:33:17,434
+is switching to List so that
+you can get those duplicates
+
+905
+00:33:17,434 --> 00:33:18,934
+but then you sacrifice
+a few things.
+
+906
+00:33:18,934 --> 00:33:20,601
+For one thing,
+you're sacrificing
+
+907
+00:33:20,601 --> 00:33:22,033
+your performance
+of "contains"
+
+908
+00:33:22,033 --> 00:33:24,534
+because most every List
+that I'm aware of
+
+909
+00:33:24,534 --> 00:33:28,067
+has, uh, does linear search
+for contains.
+
+910
+00:33:28,067 --> 00:33:31,234
+Another thing is that
+you've lost the ability
+
+911
+00:33:31,234 --> 00:33:32,567
+to tell whether
+
+912
+00:33:32,567 --> 00:33:34,934
+this hand of cards
+and this hand of cards
+
+913
+00:33:34,934 --> 00:33:36,968
+represent the same
+exact hand of cards.
+
+914
+00:33:36,968 --> 00:33:38,667
+You may have
+some sort of table
+
+915
+00:33:38,667 --> 00:33:40,100
+where you're computing,
+you know,
+
+916
+00:33:40,100 --> 00:33:42,467
+"For this hand of cards,
+I think I would," you know,
+
+917
+00:33:42,467 --> 00:33:43,734
+"I would bet this high
+
+918
+00:33:43,734 --> 00:33:45,334
+or I would have
+this probability of success."
+
+919
+00:33:45,334 --> 00:33:47,534
+And if you can't tell
+
+920
+00:33:47,534 --> 00:33:49,734
+when two hands are
+the same except for order,
+
+921
+00:33:49,734 --> 00:33:51,834
+then you'll end up
+doing work twice
+
+922
+00:33:51,834 --> 00:33:53,801
+and considering them different
+when they're really the same.
+
+923
+00:33:53,801 --> 00:33:56,000
+So at some point,
+
+924
+00:33:56,000 --> 00:33:58,567
+uh, everyone eventually
+hits this spot
+
+925
+00:33:58,567 --> 00:34:00,467
+where they're like, "Hmm,
+I need to compare two Lists
+
+926
+00:34:00,467 --> 00:34:02,934
+"but--except the order
+doesn't matter to me.
+
+927
+00:34:02,934 --> 00:34:04,467
+But I want
+to compare two Lists."
+
+928
+00:34:04,467 --> 00:34:06,968
+And they end up writing
+a utility method for this,
+
+929
+00:34:06,968 --> 00:34:08,467
+and there's a few things
+you can do.
+
+930
+00:34:08,467 --> 00:34:10,200
+You can sort
+both of the Lists first
+
+931
+00:34:10,200 --> 00:34:12,868
+and then compare them with
+the normal equality method,
+
+932
+00:34:12,868 --> 00:34:16,033
+but that only works
+if the, um,
+
+933
+00:34:16,033 --> 00:34:17,467
+elements in your List
+are comparable
+
+934
+00:34:17,467 --> 00:34:19,601
+or if you have some
+comparator to use on them.
+
+935
+00:34:19,601 --> 00:34:20,868
+If--if that's not the case,
+
+936
+00:34:20,868 --> 00:34:22,334
+then you're
+just out of luck.
+
+937
+00:34:22,334 --> 00:34:23,834
+Uh, you could
+also do something
+
+938
+00:34:23,834 --> 00:34:25,167
+where you create
+a temporary Collection
+
+939
+00:34:25,167 --> 00:34:26,934
+and then you remove,
+you know,
+
+940
+00:34:26,934 --> 00:34:28,200
+you put everything in one
+
+941
+00:34:28,200 --> 00:34:29,501
+and then you remove 'em
+as you go and all this,
+
+942
+00:34:29,501 --> 00:34:31,267
+but, you know, we really
+shouldn't have to jump
+
+943
+00:34:31,267 --> 00:34:32,701
+through all this hoops--
+all these hoops.
+
+944
+00:34:32,701 --> 00:34:34,067
+It's really a sign
+
+945
+00:34:34,067 --> 00:34:35,767
+that we're just using
+the wrong type of Collection
+
+946
+00:34:35,767 --> 00:34:37,434
+and we really should be
+using a Multiset.
+
+947
+00:34:37,434 --> 00:34:38,767
+If you were using
+a Multiset
+
+948
+00:34:38,767 --> 00:34:40,501
+to represent
+this hand of cards,
+
+949
+00:34:40,501 --> 00:34:43,501
+you would simply call
+".equals" on that Multiset,
+
+950
+00:34:43,501 --> 00:34:46,601
+pass in the other Multiset,
+and you would get your answer.
+
+951
+00:34:46,601 --> 00:34:50,200
+But the most popular use
+for Multiset
+
+952
+00:34:50,200 --> 00:34:52,167
+is for histogram-type
+structures.
+
+953
+00:34:52,167 --> 00:34:53,567
+And I should--
+
+954
+00:34:53,567 --> 00:34:56,934
+I should say integer-valued
+histogram-type structures.
+
+955
+00:34:56,934 --> 00:34:59,334
+So an example is, "Hmm."
+
+956
+00:34:59,334 --> 00:35:01,367
+You know,
+"What tags am I applying
+
+957
+00:35:01,367 --> 00:35:02,934
+"to the articles on my blog,
+
+958
+00:35:02,934 --> 00:35:05,367
+"and how many times
+do I use each of these tags?
+
+959
+00:35:05,367 --> 00:35:07,133
+"I want to iterate over all
+the articles of my blog
+
+960
+00:35:07,133 --> 00:35:08,534
+"and put
+all these tags in there,
+
+961
+00:35:08,534 --> 00:35:10,601
+and then I want to find out--
+Oh, I use Java."
+
+962
+00:35:10,601 --> 00:35:13,634
+You know, "Java is my number
+one," uh, you know, "tag,
+
+963
+00:35:13,634 --> 00:35:15,133
+and Britney Spears
+is number two."
+
+964
+00:35:15,133 --> 00:35:16,834
+You know.
+
+965
+00:35:16,834 --> 00:35:19,100
+I'm not talking about
+my blog, you understand.
+
+966
+00:35:19,100 --> 00:35:20,834
+[audience chuckles]
+
+967
+00:35:20,834 --> 00:35:23,167
+Um, and a Multiset
+is good for this
+
+968
+00:35:23,167 --> 00:35:24,801
+because the performance
+is going to vary
+
+969
+00:35:24,801 --> 00:35:26,501
+based on the number
+of distinct elements
+
+970
+00:35:26,501 --> 00:35:28,534
+not based on the total size
+of the Collection.
+
+971
+00:35:28,534 --> 00:35:31,868
+Um, here's--
+uh, you know,
+
+972
+00:35:31,868 --> 00:35:33,501
+I'm--I'm, uh,
+sort of out of order.
+
+973
+00:35:33,501 --> 00:35:34,767
+Forget the Multiset.
+
+974
+00:35:34,767 --> 00:35:36,234
+I'm showing you
+what it looks like
+
+975
+00:35:36,234 --> 00:35:37,501
+if you don't
+have a Multiset.
+
+976
+00:35:37,501 --> 00:35:38,767
+This is the code
+that many of you
+
+977
+00:35:38,767 --> 00:35:40,567
+have probably written
+several times.
+
+978
+00:35:40,567 --> 00:35:44,000
+You have a Map where
+the objects you're interested in
+
+979
+00:35:44,000 --> 00:35:45,267
+are your keys,
+
+980
+00:35:45,267 --> 00:35:47,534
+and the values
+are either an integer
+
+981
+00:35:47,534 --> 00:35:49,467
+or an IntArray
+or an AtomicInteger
+
+982
+00:35:49,467 --> 00:35:51,667
+or there's all kinds
+of variations on this.
+
+983
+00:35:51,667 --> 00:35:53,934
+And we're
+going to loop through
+
+984
+00:35:53,934 --> 00:35:57,901
+our--all of our blog posts.
+
+985
+00:35:57,901 --> 00:35:59,968
+For each one,
+we're going to get its tags,
+
+986
+00:35:59,968 --> 00:36:01,300
+and now we've
+gotta figure out
+
+987
+00:36:01,300 --> 00:36:02,567
+how to get this in there.
+
+988
+00:36:02,567 --> 00:36:05,834
+So we've gotta check
+whether our Map
+
+989
+00:36:05,834 --> 00:36:08,501
+already contains
+an integer value.
+
+990
+00:36:08,501 --> 00:36:09,767
+And if it does,
+
+991
+00:36:09,767 --> 00:36:11,033
+we're just
+gonna increment that.
+
+992
+00:36:11,033 --> 00:36:12,434
+And if it doesn't,
+
+993
+00:36:12,434 --> 00:36:14,467
+we've got it started off
+at zero and then increment it.
+
+994
+00:36:14,467 --> 00:36:15,834
+or started off at one.
+
+995
+00:36:15,834 --> 00:36:19,133
+And once we've
+done all this work,
+
+996
+00:36:19,133 --> 00:36:20,567
+then we're able to ask
+a few other questions
+
+997
+00:36:20,567 --> 00:36:21,934
+that we want to know.
+
+998
+00:36:21,934 --> 00:36:23,267
+So if we want to know,
+
+999
+00:36:23,267 --> 00:36:25,100
+"What are all these
+distinct tags I was using?",
+
+1000
+00:36:25,100 --> 00:36:26,400
+we just take the key set
+
+1001
+00:36:26,400 --> 00:36:27,968
+of that Map
+that we populated.
+
+1002
+00:36:27,968 --> 00:36:30,167
+If we want to know
+
+1003
+00:36:30,167 --> 00:36:34,133
+how many times
+I use the "java" tag,
+
+1004
+00:36:34,133 --> 00:36:36,267
+the instinctive thing to do
+
+1005
+00:36:36,267 --> 00:36:39,934
+would be to call
+tags.get"java".
+
+1006
+00:36:39,934 --> 00:36:41,734
+Uh, but be careful,
+
+1007
+00:36:41,734 --> 00:36:45,734
+because if you never
+added any tags called "java,"
+
+1008
+00:36:45,734 --> 00:36:48,567
+this is gonna return null
+
+1009
+00:36:48,567 --> 00:36:50,467
+and then you're going to try
+to cast that to an integer
+
+1010
+00:36:50,467 --> 00:36:51,901
+and you're gonna get
+a null point or exception.
+
+1011
+00:36:51,901 --> 00:36:53,267
+So you have to be careful,
+
+1012
+00:36:53,267 --> 00:36:56,434
+find out, "Okay, is 'java'
+even in this Map?"
+
+1013
+00:36:56,434 --> 00:36:58,501
+If so, then use the value.
+
+1014
+00:36:58,501 --> 00:36:59,868
+Otherwise, use zero.
+
+1015
+00:36:59,868 --> 00:37:02,701
+And then suppose
+you want that total count
+
+1016
+00:37:02,701 --> 00:37:05,200
+of every time I tagged a--
+a blog post.
+
+1017
+00:37:05,200 --> 00:37:07,400
+Oops, uh, you know,
+
+1018
+00:37:07,400 --> 00:37:10,300
+you've gotta either iterate
+over the whole Map
+
+1019
+00:37:10,300 --> 00:37:12,200
+and sum them up,
+or maybe you should have
+
+1020
+00:37:12,200 --> 00:37:14,033
+been summing them up
+from the beginning.
+
+1021
+00:37:14,033 --> 00:37:16,634
+This is a--
+this is a big pain.
+
+1022
+00:37:16,634 --> 00:37:18,634
+And not only
+is it a big pain,
+
+1023
+00:37:18,634 --> 00:37:19,968
+but as I did the research
+
+1024
+00:37:19,968 --> 00:37:22,434
+for, uh, when I
+was writing Multiset,
+
+1025
+00:37:22,434 --> 00:37:25,501
+and I looked over the corpus
+of--of all the Java code
+
+1026
+00:37:25,501 --> 00:37:26,767
+in--at Google,
+
+1027
+00:37:26,767 --> 00:37:28,367
+I--there was no--
+
+1028
+00:37:28,367 --> 00:37:30,767
+there were
+no two source files
+
+1029
+00:37:30,767 --> 00:37:32,400
+that did this
+in the exact same way.
+
+1030
+00:37:32,400 --> 00:37:33,801
+There's
+always just, like,
+
+1031
+00:37:33,801 --> 00:37:35,767
+ever so many
+slight variations,
+
+1032
+00:37:35,767 --> 00:37:38,968
+uh, on this--
+on doing this,
+
+1033
+00:37:38,968 --> 00:37:40,534
+and, you know,
+a third of them had bugs.
+
+1034
+00:37:40,534 --> 00:37:43,834
+So this sort of cried out
+to me for a solution.
+
+1035
+00:37:43,834 --> 00:37:45,167
+So a question.
+
+1036
+00:37:45,167 --> 00:37:46,501
+Bloch:
+In my defense,
+
+1037
+00:37:46,501 --> 00:37:48,467
+uh, the Java Collections
+tutorial does show you
+
+1038
+00:37:48,467 --> 00:37:49,801
+the right way to do this.
+
+1039
+00:37:49,801 --> 00:37:53,133
+But that in no way diminishes
+the value of this work.
+
+1040
+00:37:53,133 --> 00:37:55,133
+[audience chuckles]
+
+1041
+00:37:55,133 --> 00:37:56,501
+Josh is correct.
+
+1042
+00:37:56,501 --> 00:37:58,167
+The Java Tutorial
+contains this
+
+1043
+00:37:58,167 --> 00:37:59,767
+and many other
+nuggets of wisdom.
+
+1044
+00:37:59,767 --> 00:38:01,567
+You should
+be going there first,
+
+1045
+00:38:01,567 --> 00:38:03,601
+before you use
+any of our stuff.
+
+1046
+00:38:03,601 --> 00:38:07,334
+Um, so here's what
+this looks like after.
+
+1047
+00:38:07,334 --> 00:38:08,968
+Uh, I'm not going
+to create a Map.
+
+1048
+00:38:08,968 --> 00:38:10,334
+I want a Multiset.
+
+1049
+00:38:10,334 --> 00:38:12,200
+And then,
+for each post,
+
+1050
+00:38:12,200 --> 00:38:13,834
+I'm gonna get its tags.
+
+1051
+00:38:13,834 --> 00:38:15,801
+I'm gonna throw them
+into the Multiset.
+
+1052
+00:38:15,801 --> 00:38:18,400
+Uh, and then I'm done.
+
+1053
+00:38:18,400 --> 00:38:21,000
+I--I have all this
+empty space there.
+
+1054
+00:38:21,000 --> 00:38:22,534
+I was gonna, like, get
+a picture of my daughters
+
+1055
+00:38:22,534 --> 00:38:24,367
+and stick it in there
+just to have something,
+
+1056
+00:38:24,367 --> 00:38:25,901
+um, to go there,
+
+1057
+00:38:25,901 --> 00:38:27,200
+but I ran out of time.
+
+1058
+00:38:27,200 --> 00:38:29,033
+Um, compare that to this.
+
+1059
+00:38:29,033 --> 00:38:31,968
+Before, after.
+Before, after.
+
+1060
+00:38:31,968 --> 00:38:33,267
+All right.
+
+1061
+00:38:33,267 --> 00:38:36,033
+Um, and now, if we want
+to ask distinct tags,
+
+1062
+00:38:36,033 --> 00:38:37,834
+we're gonna use a method
+on the Multiset
+
+1063
+00:38:37,834 --> 00:38:39,400
+called "ElementSet."
+
+1064
+00:38:39,400 --> 00:38:40,634
+That gives you a Set
+
+1065
+00:38:40,634 --> 00:38:42,701
+containing all of
+the distinct elements
+
+1066
+00:38:42,701 --> 00:38:44,067
+that are found
+in your Multiset.
+
+1067
+00:38:44,067 --> 00:38:47,133
+Uh, if you want to know
+the count for the "java" tag,
+
+1068
+00:38:47,133 --> 00:38:49,767
+it's "tags.count("java")."
+
+1069
+00:38:49,767 --> 00:38:54,234
+Arguably, it might need
+to be called "get count,"
+
+1070
+00:38:54,234 --> 00:38:55,567
+but I don't think so.
+
+1071
+00:38:55,567 --> 00:38:57,467
+We think we like "count."
+
+1072
+00:38:57,467 --> 00:39:00,968
+Um, and that just simply
+returns you zero or more.
+
+1073
+00:39:00,968 --> 00:39:02,567
+It'll never return
+a negative number.
+
+1074
+00:39:02,567 --> 00:39:04,167
+And then if you
+want the total count,
+
+1075
+00:39:04,167 --> 00:39:05,901
+that's just the total size
+of your Multiset,
+
+1076
+00:39:05,901 --> 00:39:07,734
+because every tag you found,
+you threw it in there.
+
+1077
+00:39:07,734 --> 00:39:11,133
+so your total size is just
+what you're looking for.
+
+1078
+00:39:13,534 --> 00:39:15,300
+Um...
+
+1079
+00:39:15,300 --> 00:39:18,000
+But, you know, the difference
+doesn't stop there
+
+1080
+00:39:18,000 --> 00:39:19,467
+because I don't want it
+simply, you know--
+
+1081
+00:39:19,467 --> 00:39:21,033
+if you look at
+the size of this code
+
+1082
+00:39:21,033 --> 00:39:22,501
+and the size of this code,
+
+1083
+00:39:22,501 --> 00:39:23,901
+and you decide,
+based on this,
+
+1084
+00:39:23,901 --> 00:39:26,667
+that Multiset is better,
+well, it's true.
+
+1085
+00:39:26,667 --> 00:39:28,634
+But you're also missing
+the bigger picture.
+
+1086
+00:39:28,634 --> 00:39:29,901
+The bigger picture
+is that
+
+1087
+00:39:29,901 --> 00:39:31,434
+your software
+is gonna need to change
+
+1088
+00:39:31,434 --> 00:39:33,033
+and it's gonna
+need to evolve.
+
+1089
+00:39:33,033 --> 00:39:34,801
+And when you're using
+the right abstraction
+
+1090
+00:39:34,801 --> 00:39:36,167
+and you're using
+a powerful library,
+
+1091
+00:39:36,167 --> 00:39:37,934
+then as your needs evolve,
+
+1092
+00:39:37,934 --> 00:39:39,534
+the library is right there
+ready to evolve with you
+
+1093
+00:39:39,534 --> 00:39:40,801
+and do what you need.
+
+1094
+00:39:40,801 --> 00:39:43,667
+So let's say now
+you need to remove tags
+
+1095
+00:39:43,667 --> 00:39:45,100
+from this Collection
+
+1096
+00:39:45,100 --> 00:39:48,200
+or a.k.a. "decrement"
+the values of these tags.
+
+1097
+00:39:48,200 --> 00:39:49,968
+Now you've gotta
+write some more code.
+
+1098
+00:39:49,968 --> 00:39:51,634
+You've gotta, you know,
+
+1099
+00:39:51,634 --> 00:39:53,300
+each time you need
+to remove some things,
+
+1100
+00:39:53,300 --> 00:39:54,968
+you need to check that
+you're not accidentally
+
+1101
+00:39:54,968 --> 00:39:56,501
+gonna send the--
+the count negative
+
+1102
+00:39:56,501 --> 00:39:57,868
+'cause that
+would be nonsensical.
+
+1103
+00:39:57,868 --> 00:40:00,801
+And if you
+get down to zero,
+
+1104
+00:40:00,801 --> 00:40:02,400
+you have to figure out
+what to do.
+
+1105
+00:40:02,400 --> 00:40:04,334
+Should you prune that entry
+from the Multiset?
+
+1106
+00:40:04,334 --> 00:40:06,901
+Uh, and if so,
+you've gotta deal with that.
+
+1107
+00:40:06,901 --> 00:40:08,667
+And if you don't, then you
+could have a memory leak,
+
+1108
+00:40:08,667 --> 00:40:09,934
+depending on how
+you use this thing.
+
+1109
+00:40:09,934 --> 00:40:11,434
+It could grow without bound.
+
+1110
+00:40:11,434 --> 00:40:14,033
+Um, you know, or you could
+have just used a Multiset
+
+1111
+00:40:14,033 --> 00:40:15,601
+and just called
+the remove method.
+
+1112
+00:40:15,601 --> 00:40:17,834
+Uh, then what if you
+want concurrent access?
+
+1113
+00:40:17,834 --> 00:40:20,033
+What if you--you know,
+we have a lot of servers
+
+1114
+00:40:20,033 --> 00:40:21,601
+that are continually
+gathering statistics
+
+1115
+00:40:21,601 --> 00:40:22,868
+on all kinds of things.
+
+1116
+00:40:22,868 --> 00:40:25,133
+Like, suppose you
+have an HTTP server
+
+1117
+00:40:25,133 --> 00:40:26,534
+and every time
+it sends a status code
+
+1118
+00:40:26,534 --> 00:40:28,868
+like 200, or 302, or 304,
+
+1119
+00:40:28,868 --> 00:40:30,567
+it wants to keep
+a running tally
+
+1120
+00:40:30,567 --> 00:40:32,067
+of how many
+of these things it's done.
+
+1121
+00:40:32,067 --> 00:40:34,567
+Well, if you're using
+this Map-based approach,
+
+1122
+00:40:34,567 --> 00:40:36,501
+you pretty much have
+to lock the entire Map
+
+1123
+00:40:36,501 --> 00:40:38,067
+while you're doing
+all of this stuff.
+
+1124
+00:40:38,067 --> 00:40:39,934
+Um, if you're
+using a Multiset,
+
+1125
+00:40:39,934 --> 00:40:41,300
+you just change
+your implementation
+
+1126
+00:40:41,300 --> 00:40:42,868
+from HashMultiset
+to ConcurrentMultiset
+
+1127
+00:40:42,868 --> 00:40:44,133
+and there you go.
+
+1128
+00:40:44,133 --> 00:40:46,434
+Now you can have multithreads--
+multiple threads
+
+1129
+00:40:46,434 --> 00:40:48,200
+simultaneously
+incrementing these values
+
+1130
+00:40:48,200 --> 00:40:49,701
+and decrementing
+these values,
+
+1131
+00:40:49,701 --> 00:40:51,901
+uh, safely without
+stepping on each other.
+

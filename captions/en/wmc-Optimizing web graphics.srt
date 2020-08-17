@@ -1,0 +1,185 @@
+1
+00:00:05,801 --> 00:00:07,200
+Sahim: Hi, my name's Susie,
+
+2
+00:00:07,200 --> 00:00:09,167
+and I'm from the Doodle team
+at Google.
+
+3
+00:00:09,167 --> 00:00:10,767
+So I'm gonna show you
+a few tips
+
+4
+00:00:10,767 --> 00:00:13,901
+that we use to make sure that
+pages load faster on the Web.
+
+5
+00:00:13,901 --> 00:00:15,567
+One easy tip is to crop out
+
+6
+00:00:15,567 --> 00:00:17,601
+any excess white space
+in your graphic.
+
+7
+00:00:17,601 --> 00:00:20,734
+Another tip is to use
+the correct file format
+
+8
+00:00:20,734 --> 00:00:21,834
+for your graphics.
+
+9
+00:00:21,834 --> 00:00:24,000
+Now let's go
+to the computer demo.
+
+10
+00:00:24,000 --> 00:00:25,834
+So here I am
+in Adobe Photoshop.
+
+11
+00:00:25,834 --> 00:00:27,467
+First I'm gonna crop
+this image
+
+12
+00:00:27,467 --> 00:00:32,834
+'cause I've got a lot
+of excess white space here.
+
+13
+00:00:32,834 --> 00:00:35,968
+Now I'm gonna go to File,
+Save for Web & Devices.
+
+14
+00:00:35,968 --> 00:00:38,567
+Now this
+is where all the magic happens.
+
+15
+00:00:38,567 --> 00:00:41,868
+Looks like GIF is much smaller.
+
+16
+00:00:41,868 --> 00:00:43,133
+So we're gonna go
+with GIF,
+
+17
+00:00:43,133 --> 00:00:45,334
+but I'm gonna optimize it
+even more
+
+18
+00:00:45,334 --> 00:00:47,868
+by adjusting the amount
+of colors.
+
+19
+00:00:47,868 --> 00:00:50,534
+We could bring it all the way
+down to 16 colors,
+
+20
+00:00:50,534 --> 00:00:52,634
+and the artwork
+has hardly changed at all.
+
+21
+00:00:52,634 --> 00:00:57,000
+And the size of this file format
+is only 2K.
+
+22
+00:00:57,000 --> 00:00:59,934
+Now here is another piece
+of artwork
+
+23
+00:00:59,934 --> 00:01:03,234
+that is completely opposite
+of the last one we saw.
+
+24
+00:01:03,234 --> 00:01:06,467
+This one is really detailed
+and full of tons of color.
+
+25
+00:01:06,467 --> 00:01:10,734
+Let's see how we can optimize
+this one.
+
+26
+00:01:10,734 --> 00:01:14,167
+So I'm gonna crop it
+just like I did before.
+
+27
+00:01:14,167 --> 00:01:16,968
+I'm gonna go to Save for Web,
+
+28
+00:01:16,968 --> 00:01:19,534
+and I'm gonna try GIF first
+'cause GIF worked so well
+
+29
+00:01:19,534 --> 00:01:21,367
+for us last time.
+
+30
+00:01:21,367 --> 00:01:24,367
+But, oh, man, you can't see it
+on your screen,
+
+31
+00:01:24,367 --> 00:01:26,400
+but on mine it looks horrible.
+
+32
+00:01:26,400 --> 00:01:29,167
+I'm losing
+all that beautiful detail.
+
+33
+00:01:29,167 --> 00:01:34,434
+So I'm going to try JPEG.
+
+34
+00:01:34,434 --> 00:01:36,100
+Oh, it looks so much better.
+
+35
+00:01:36,100 --> 00:01:39,734
+It's like
+you're actually there.
+
+36
+00:01:39,734 --> 00:01:42,067
+So hopefully you've learned
+something cool and new
+
+37
+00:01:42,067 --> 00:01:44,601
+about how to optimize graphics
+on the Web.
+
+38
+00:01:44,601 --> 00:01:48,000
+But be sure to visit
+code.google.com/speed
+
+39
+00:01:48,000 --> 00:01:51,067
+for more tips.
+

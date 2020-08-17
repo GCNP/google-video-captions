@@ -1,0 +1,736 @@
+﻿*TC 00:00:07;06
+Hola, soy Stephanie Liu del
+equipo de API y herramientas
+
+*TC 00:00:10;00
+de YouTube. 
+
+*TC 00:00:11;06
+Hoy veremos algunos sencillos ejemplos
+de las nuevas API del
+
+*TC 00:00:13;21
+reproductor y del reproductor
+sin bordes. Primero, una breve
+
+*TC 00:00:16;24
+introducción.  Antes, para
+insertar un vídeo de YouTube
+
+*TC 00:00:19;06
+en un sitio, sólo se podía
+usar uno de nuestros
+
+*TC 00:00:21;21
+reproductores insertados
+estándar. Los desarrolladores
+
+*TC 00:00:24;24
+no teníais ninguna información
+sobre qué sucedía en
+
+*TC 00:00:26;15
+realidad.  Ahora, tenéis muchas más
+posibilidades. Las API de JavaScript
+
+*TC 00:00:26;15
+y Flash que acabamos de
+lanzar os permitirán controlar
+
+*TC 00:00:31;27
+los reproductores insertados
+(reproducir, poner en pausa, buscar
+
+*TC 00:00:35;00
+una posición en un vídeo,
+silenciar, ajustar el volumen,
+
+*TC 00:00:38;12
+obtener datos como la posición
+actual o cuánto se ha almacenado
+
+*TC 00:00:42;09
+en el búfer). También podréis
+suscribiros a eventos como
+
+*TC 00:00:44;12
+cambios de estado del reproductor.
+Ahora el reproductor sin bordes es un
+
+*TC 00:00:47;18
+SWF sin controles de reproducción.
+Sin botones de YouTube ni la
+
+*TC 00:00:51;03
+barra de progreso. Podéis incluir
+vuestros propios botones y
+
+*TC 00:00:53;18
+personalizarlo según el estilo de
+vuestro sitio. Empecemos por ver
+
+*TC 00:00:57;09
+qué puede hacer el
+API de JavaScript del reproductor.
+
+*TC 00:01:00;29
+Éste es un reproductor insertado de
+YouTube común. Creo
+
+*TC 00:01:03;11
+que todos estamos bastante
+familiarizados con él.
+
+*TC 00:01:06;29
+Lo reproducimos y ahora os voy
+a mostrar cómo insertarlo
+
+*TC 00:01:11;11
+para poder aplicarle llamadas
+al API. Primero tenéis
+
+*TC 00:01:14;26
+que incluir
+"swfobject.js". Ahora, os
+
+*TC 00:01:19;02
+recomiendo que uséis un swfobject
+porque facilita mucho 
+
+*TC 00:01:21;05
+la inserción de contenido Flash.
+Por ejemplo, detecta
+
+*TC 00:01:23;20
+automáticamente la versión Flash
+del usuario. Necesitarán
+
+*TC 00:01:27;02
+la versión 8 como mínimo para
+ver vuestro reproductor
+
+*TC 00:01:29;20
+correctamente. Éste es el div
+que va a incluir el
+
+*TC 00:01:36;20
+reproductor insertado. Observad que
+lo hemos llamado "ytapiplayer"
+
+*TC 00:01:40;17
+porque lo necesitaremos más
+tarde. Y si no tienen instalada
+
+*TC 00:01:43;26
+la versión 8 como mínimo,
+verán este texto en lugar de
+
+*TC 00:01:46;02
+un reproductor roto.
+Ahora llegamos a la parte más
+
+*TC 00:01:50;02
+importante. Aquí es donde
+vamos a configurar realmente
+
+*TC 00:01:52;17
+el objeto insertado. 
+
+*TC 00:01:58;08
+Aquí podéis ver
+los parámetros que vamos
+
+*TC 00:02:00;28
+a tener en el objeto insertado.
+Necesitamos
+
+*TC 00:02:02;28
+"allowScriptAccess: "always"".
+Esto hará que el SWF de YouTube
+
+*TC 00:02:07;10
+pueda llamar a vuestra página HTML
+y vuestra página HTML pueda
+
+*TC 00:02:10;10
+llamar al SWF del reproductor. Uno
+de los atributos que configuraremos
+
+*TC 00:02:14;22
+será la ID de "myytplayer". Éste
+será el nombre del objeto
+
+*TC 00:02:20;10
+insertado. Podrás usarlo
+más tarde para obtener una referencia al
+
+*TC 00:02:24;01
+reproductor con el comando
+JavaScript "get element by id".
+
+*TC 00:02:33;22
+Ahora "swfobject.embedSWF"
+cargará el reproductor desde
+
+*TC 00:02:37;07
+YouTube y lo insertará en vuestra
+página HTML. Éstos son los
+
+*TC 00:02:41;10 
+parámetros que vais a
+necesitar. El primer parámetro
+
+*TC 00:02:45;28
+es la URL del SWF.
+"enableksopi=1", que
+
+*TC 00:02:53;04
+permite al reproductor
+recibir llamadas del API. 
+
+*TC 00:02:57;25 
+Ahora "playerapiid" es el
+parámetro que se incluirá
+
+*TC 00:03:02;03
+en "onYouTubePlayerReady" como
+el primer argumento
+
+*TC 00:03:05;24
+cuando el reproductor esté
+cargado y listo. Ahora tenéis que
+
+*TC 00:03:09;06
+asignar un nombre al reproductor
+porque si pensáis cargar
+
+*TC 00:03:12;18
+varios vídeo en la página,
+os interesará saber cuál os
+
+*TC 00:03:16;21
+acaba de indicar que está
+listo. El segundo parámetro
+
+*TC 00:03:23;15
+es la ID del div HTML donde se
+incluirá el reproductor
+
+*TC 00:03:26;24
+insertado. Como observaréis,
+esta ID es "ytopiplayer", que
+
+*TC 00:03:31;18
+ya usamos aquí arriba. Luego tenemos
+el ancho, la altura y la
+
+*TC 00:03:36;15
+versión de Flash que necesitarán
+los usuarios. Recordad que
+
+*TC 00:03:41;06
+necesitarán como mínimo la 8
+para poder ver el contenido
+
+*TC 00:03:43;18
+correctamente. A continuación, un
+par de parámetros opcionales
+
+*TC 00:03:48;09
+que no vamos a usar. Y los
+parámetros y atributos que
+
+*TC 00:03:51;03
+configuramos aquí. Ahora que el
+reproductor insertado está listo para
+
+*TC 00:03:55;03
+recibir llamadas API, hagamos
+algo un poco más interesante.
+
+*TC 00:03:57;15
+Introduzcamos algunos parámetros.
+
+*TC 00:03:58;27
+Aquí he añadido
+un par de enlaces.
+
+*TC 00:04:01;14
+Con ellos podemos controlar
+el reproductor en lugar de con
+
+*TC 00:04:03;17
+los botones. Podemos reproducirlo.
+Ponerlo en pausa. Detenerlo. Silenciarlo. Activar el sonido. Y
+
+*TC 00:04:12;08
+voy a mostraros cómo se puede
+hacer todo esto mediante unas
+
+*TC 00:04:15;11
+simples llamadas. Cómo os
+decía, una vez que el reproductor
+
+*TC 00:04:18;20
+esté cargado y listo,
+llamará a la función
+
+*TC 00:04:20;29
+"onYouTubePlayerReady".
+
+*TC 00:04:23;02
+Aquí es donde definiremos
+la función. Y sólo hay que copiar
+
+*TC 00:04:26;23
+la referencia al reproductor
+y guardarla para poder
+
+*TC 00:04:29;14
+aplicarle llamadas al API. Ya
+podemos empezar a hacer
+
+*TC 00:04:33;11
+cosas de verdad.
+
+*TC 00:04:35;17
+Así es como se configuran esos
+enlaces. Es muy simple.
+
+*TC 00:04:39;29
+Un enlace con un "onclick" a
+la función de reproducción. Y
+
+*TC 00:04:44;20
+así es como lo hemos definido.
+Hacemos una pequeña comprobación
+
+*TC 00:04:44;20
+y nos aseguramos de que el
+valor no sea nulo, y luego
+
+*TC 00:04:50;08
+ejecutamos "ytplayer.playVideo".
+Es así de simple. De forma similar,
+
+*TC 00:04:55;23
+con pausa tenemos
+".pauseVideo",
+
+*TC 00:04:59;20
+"stopVideo", y después "mute"
+y "unmute". Aplicar estos
+
+*TC 00:05:05;16
+comandos al reproductor
+es así se simple. Ahora
+
+*TC 00:05:08;07
+que hemos aplicado algunos
+comandos básicos, intentemos
+
+*TC 00:05:10;28
+introducir un valor y buscar
+el segundo 90 del vídeo.
+
+*TC 00:05:18;19
+Es igual de simple que con
+los otros comandos. Os voy a
+
+*TC 00:05:21;01
+enseñar cómo se hace.
+
+*TC 00:05:22;28
+Este pequeño formulario
+permite al usuario especificar
+
+*TC 00:05:27;16
+a qué segundo del vídeo quiere
+ir. Ejecutamos la función
+
+*TC 00:05:30;16
+"seekTo" aquí y obtenemos
+el valor en el cuadro de
+
+*TC 00:05:33;10
+texto. Y aquí es
+donde definimos la
+
+*TC 00:05:36;13
+función, muy similar a lo que
+hicimos antes
+
+*TC 00:05:38;16
+"ytplayer.seekTo". Los
+segundos que hemos transmitido y
+
+*TC 00:05:42;16
+si queremos realizar una nueva
+solicitud al servidor si la
+
+*TC 00:05:46;01
+posición "seekTo" del
+vídeo aún no se ha cargado. Entonces.
+
+*TC 00:05:52;07
+Ahora que hemos aplicado comandos
+al reproductor, intentemos
+
+*TC 00:05:54;07
+obtener datos de él. Algunos datos
+útiles son el tiempo actual
+
+*TC 00:05:58;10
+del reproductor y cuánto vídeo
+ha reproducido el usuario. Entonces
+
+*TC 00:06:01;24
+Si hacemos clic en reproducir,
+podéis ver cómo se actualiza el
+
+*TC 00:06:07;18
+div del tiempo actual.
+
+*TC 00:06:10;09
+Para mostrar continuamente
+el tiempo actual del video,
+
+*TC 00:06:12;09
+volvamos a
+
+*TC 00:06:13;21
+"onYouTubePlayerReady". Vamos
+a añadir un intervalo de
+
+*TC 00:06:18;21
+250 milisegundos. Así,
+cada 250 milisegundos
+
+*TC 00:06:21;24
+se ejecutará
+"updateCurrentTime", que
+
+*TC 00:06:23;18
+ejecuta
+"ytplayer.getCurrentTime" y
+
+*TC 00:06:26;15
+actualiza el HTML. También puedes
+obtener otros datos como
+
+*TC 00:06:30;06
+la duración del vídeo, la URL
+del vídeo y el código de
+
+*TC 00:06:34;18
+inserción.  Ahora que hemos
+aplicado comandos al reproductor
+
+*TC 00:06:38;15
+y obtenido datos de él, veamos
+como podemos suscribirnos a eventos.
+
+*TC 00:06:41;24
+En este caso, hagamos que el
+reproductor nos avise cada vez
+
+*TC 00:06:46;06
+que cambie de estado. Aquí
+podemos ver que el reproductor
+
+*TC 00:06:49;09
+está en el estado 5, que indica
+que el vídeo está en cola. Pulso reproducir,
+
+*TC 00:06:53;21
+empieza a almacenarse en búfer
+y pasa a 1: en reproducción.
+
+*TC 00:06:58;03
+Lo pongo en pausa y pasa a 2,
+y así sucesivamente. Ahora veamos cómo
+
+*TC 00:07:01;08
+suscribirse a un evento.
+Para mostrar constantemente
+
+*TC 00:07:04;20
+el estado actual del reproductor,
+debemos volver a
+
+*TC 00:07:07;26
+"onYouTubePlayerReady" y añadir
+una función de escucha de
+
+*TC 00:07:10;20
+eventos mediante
+"ytplayer.addEventListener".
+
+*TC 00:07:15;20
+Vamos a suscribirnos al
+evento "onStateChange".
+
+*TC 00:07:19;08
+Y el evento "onStateChange"
+va a utilizar nuestra devolución
+
+*TC 00:07:22;29
+de llamada aquí y trasmitirla
+al estado actual.
+
+*TC 00:07:28;11
+Y aquí sólo estamos actualizando
+el HTML. Ya conocéis
+
+*TC 00:07:33;11
+lo básico del API de JavaScript.
+Cómo aplicar comandos, cómo
+
+*TC 00:07:36;02
+obtener datos y cómo suscribirse
+a eventos. Las API de Flash
+
+*TC 00:07:39;08
+tienen las mismas llamadas y
+funciones, pero cargar el
+
+*TC 00:07:41;29
+SWF de los reproductores de
+YouTube en otro SWF es un
+
+*TC 00:07:44;14
+poco más complicado. Debido a la
+estructura del SWF del
+
+*TC 00:07:47;11
+reproductor, la secuencia de
+comandos integrada
+
+*TC 00:07:49;08
+"MovieClipLoader" no os dará
+información precisa sobre
+
+*TC 00:07:51;17
+cuándo está listo el reproductor.
+
+*TC 00:07:52;26
+Éste fragmento de código carga
+el reproductor de YouTube
+
+*TC 00:07:55;05
+a Flash. Creamos un nuevo
+"MovieClipLoader" aquí.
+
+*TC 00:08:01;13
+Ahora le cargamos un SWF de
+YouTube y lo llamamos "ytPlayer".
+
+*TC 00:08:07;10
+Esta función de escucha comprobará
+cada 250 milisegundos si el
+
+*TC 00:08:12;07
+reproductor está cargado. Ésta
+es la llamada extra que no está
+
+*TC 00:08:16;13
+en el API de JavaScript.
+"ytplayer.isPlayerLoaded" es
+
+*TC 00:08:20;07
+lo que debéis usar en la secuencia
+de comandos para comprobar si el
+
+*TC 00:08:22;16
+reproductor está cargado. Cuando el valor
+sea true, podemos seguir y
+
+*TC 00:08:27;25
+hacer todo lo que comentamos
+antes con el API de JavaScript,
+
+*TC 00:08:30;01
+como addEventListeners.
+
+*TC 00:08:33;13
+Ahora que ya conocéis nuestras
+API del reproductor, veamos
+
+*TC 00:08:36;04
+el reproductor sin bordes.
+
+*TC 00:08:37;25
+Como dije antes, el
+reproductor sin bordes es sólo
+
+*TC 00:08:40;07
+un SWF sin botones. Puedes
+personalizarlo y darle el aspecto
+
+*TC 00:08:44;07
+que prefieras. Por ejemplo, en
+este sitio utilizan el
+
+*TC 00:08:48;07
+reproductor sin bordes. Utilizan sus
+
+*TC 00:08:51;04
+propios botones y las API del
+reproductor para controlarlo.
+
+*TC 00:09:03;03
+Éste ejemplo es muy
+similar al de antes, excepto
+
+*TC 00:09:05;12
+que aquí estamos usando el
+reproductor sin bordes. Observaréis
+
+*TC 00:09:07;24
+que no incluye ni los botones
+ni la barra de progreso.
+
+*TC 00:09:10;09
+Lo único que queda es el logotipo
+de YouTube aquí abajo a la
+
+*TC 00:09:13;03
+derecha. Utiliza las mismas
+API de JavaScript que vimos
+
+*TC 00:09:16;09
+antes, así que puedo controlarlo
+con estos enlaces.
+
+*TC 00:09:19;09
+Reproducción. Pausa. Ya sabéis cómo
+configurar todo esto, excepto
+
+*TC 00:09:23;21
+que la URL del SWF es
+diferente. Os lo voy a mostrar
+
+*TC 00:09:26;27
+ahora mismo. Una diferencia
+del reproductor sin bordes
+
+*TC 00:09:29;15
+respecto al reproductor
+insertado es que se necesita una
+
+*TC 00:09:32;12
+clave de desarrollador para
+acceder. Si no tenéis una
+
+*TC 00:09:35;03
+clave de desarrollador,
+acceded a code.google.com y
+
+*TC 00:09:38;12
+conseguid una. Es gratuito y es muy
+fácil registrarse. Este código
+
+*TC 00:09:43;18
+os debe resultar bastante
+familiar. La única diferencia
+
+*TC 00:09:47;15
+entre insertar el
+reproductor sin bordes y un
+
+*TC 00:09:49;21
+reproductor común de
+YouTube en un página
+
+*TC 00:09:52;00
+es la URL del SWF. Aquí podéis
+ver que la URL del SWF
+
+*TC 00:09:55;24
+del reproductor sin bordes es
+gdata.youtube.com/apiplayer.
+
+*TC 00:10:00;27
+Aquí es donde va la
+clave de desarrollador.
+
+*TC 00:10:03;06
+Los dos otros parámetros
+son iguales.
+
+*TC 00:10:09;06
+Ahora que ya sabéis cargar
+el reproductor sin bordes,
+
+*TC 00:10:11;12
+os voy a enseñar algunas
+diferencias con el API de
+
+*TC 00:10:13;15
+JavaScript común. Aquí podéis
+ver cómo aparece el SWF del
+
+*TC 00:10:16;24
+reproductor sin bordes cuando se
+carga por primera vez
+
+*TC 00:10:18;21
+porque aún no contiene ninguna ID de 
+vídeo.
+
+*TC 00:10:21;03
+Hay una función de carga de vídeos que podemos llamar.
+
+*TC 00:10:28;09
+Aquí está. También
+hay una función para poner los
+
+*TC 00:10:36;03
+vídeos en cola. Así sólo
+se carga la imagen en miniatura
+
+*TC 00:10:40;12
+y el vídeo, pero no se
+reproduce. Para cargar un
+
+*TC 00:10:44;27
+nuevo vídeo en el
+reproductor sin bordes, ejecutamos
+
+*TC 00:10:47;06 
+"ytplaer.loadVideoById", incluimos
+la "id" y, opcionalmente,
+
+*TC 00:10:51;21
+dónde queremos que
+empiece el reproductor. Para
+
+*TC 00:10:56;06
+"cueNewVideo" ejecutaremos
+"ytplaer.cueVideoBGyId", incluiremos
+
+*TC 00:11:00;29
+la "id" y dónde queremos que
+empiece el reproductor una vez
+
+*TC 00:11:04;29
+que haya ejecutado un comando
+de reproducción. Espero haberos
+
+*TC 00:11:09;29
+ayudado a conocer mejor
+estas nuevas herramientas y
+
+*TC 00:11:12;05
+todas sus funciones. Hay
+muchos temas que no hemos tratado
+
+*TC 00:11:14;05
+aquí, así que no olvidéis
+consultar la documentación
+
+*TC 00:11:16;17
+en code.google.com.
+
+
+

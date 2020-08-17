@@ -1,0 +1,1169 @@
+1
+00:00:01,033 --> 00:00:02,734
+Gundrota: As much as we love
+web apps,
+
+2
+00:00:02,734 --> 00:00:04,734
+they don't work
+in many situations
+
+3
+00:00:04,734 --> 00:00:06,234
+when you lose connectivity
+
+4
+00:00:06,234 --> 00:00:08,100
+or have intermittent
+connectivity.
+
+5
+00:00:08,100 --> 00:00:09,567
+And there are a lot
+of scenarios
+
+6
+00:00:09,567 --> 00:00:11,834
+that we wish our web apps
+could work.
+
+7
+00:00:11,834 --> 00:00:14,501
+One of the challenges
+is that there's no local storage
+
+8
+00:00:14,501 --> 00:00:18,667
+and no way to store
+the application state or code.
+
+9
+00:00:18,667 --> 00:00:20,267
+That is until recently.
+
+10
+00:00:20,267 --> 00:00:23,534
+What the HTML 5 standards
+of Database and App Cache
+
+11
+00:00:23,534 --> 00:00:26,868
+allow you do is really approach
+the problem of offline,
+
+12
+00:00:26,868 --> 00:00:29,467
+or even
+in the online scenario,
+
+13
+00:00:29,467 --> 00:00:31,934
+store and cache
+the resources you need
+
+14
+00:00:31,934 --> 00:00:34,100
+for a faster application.
+
+15
+00:00:34,100 --> 00:00:36,601
+Let's show you
+how this works.
+
+16
+00:00:36,601 --> 00:00:38,567
+Let's go
+into the first demo.
+
+17
+00:00:38,567 --> 00:00:39,968
+First demo, I'm in Safari,
+
+18
+00:00:39,968 --> 00:00:41,701
+I've got a little app,
+it creates a sticky note,
+
+19
+00:00:41,701 --> 00:00:44,801
+and I can, uh, you know,
+create some sort of data.
+
+20
+00:00:44,801 --> 00:00:46,267
+And if we go
+into the developer tool here,
+
+21
+00:00:46,267 --> 00:00:48,634
+inspect the element,
+go into the Database,
+
+22
+00:00:48,634 --> 00:00:49,767
+you'll see that sure enough,
+
+23
+00:00:49,767 --> 00:00:52,000
+the notes I'm writing
+are pushed down
+
+24
+00:00:52,000 --> 00:00:54,334
+into that SQLite
+database.
+
+25
+00:00:54,334 --> 00:00:57,400
+But let's lose
+the connection.
+
+26
+00:00:57,400 --> 00:01:00,100
+Okay. No connection.
+No Ethernet connection.
+
+27
+00:01:00,100 --> 00:01:02,167
+Can you go to google.com?
+
+28
+00:01:04,300 --> 00:01:06,767
+Okay, good. My favorite web site
+is inaccessible.
+
+29
+00:01:06,767 --> 00:01:08,834
+We really are offline.
+
+30
+00:01:08,834 --> 00:01:11,334
+Let's try creating another note.
+
+31
+00:01:11,334 --> 00:01:12,934
+Okay, so the note
+continues to work.
+
+32
+00:01:12,934 --> 00:01:14,400
+The JavaScript's all there.
+
+33
+00:01:14,400 --> 00:01:17,467
+Uh, the data is being pushed
+into the SQL database.
+
+34
+00:01:17,467 --> 00:01:19,033
+Now you must be wondering, okay,
+
+35
+00:01:19,033 --> 00:01:20,501
+you got the data
+in the database,
+
+36
+00:01:20,501 --> 00:01:22,133
+but where is the app?
+
+37
+00:01:22,133 --> 00:01:23,534
+Well, let's look
+at the manifest
+
+38
+00:01:23,534 --> 00:01:26,934
+because the standard points us
+to a way to actually, uh,
+
+39
+00:01:26,934 --> 00:01:29,667
+have pointers into
+the storage system which high--
+
+40
+00:01:29,667 --> 00:01:32,167
+which, uh, point to where
+the code is, the JavaScript code
+
+41
+00:01:32,167 --> 00:01:34,200
+and the other resources
+that you need.
+
+42
+00:01:34,200 --> 00:01:37,701
+And so there you can see where
+the JavaScript CSS images,
+
+43
+00:01:37,701 --> 00:01:39,067
+uh, and other things are stored
+
+44
+00:01:39,067 --> 00:01:40,934
+so that when you're
+in an offline state,
+
+45
+00:01:40,934 --> 00:01:43,100
+well, you can rehydrate
+all those resources,
+
+46
+00:01:43,100 --> 00:01:45,534
+and the app just works.
+
+47
+00:01:45,534 --> 00:01:49,400
+Let's show you
+a more advanced example.
+
+48
+00:01:49,400 --> 00:01:51,701
+This is an Android phone,
+
+49
+00:01:51,701 --> 00:01:55,167
+and what you're looking at
+here on Android is Gmail.
+
+50
+00:01:55,167 --> 00:01:57,400
+It's really, really rich Gmail.
+
+51
+00:01:57,400 --> 00:01:58,868
+You can see the colored labels,
+
+52
+00:01:58,868 --> 00:02:00,367
+for those of you
+who are Gmail users,
+
+53
+00:02:00,367 --> 00:02:01,934
+you've come to know and love.
+
+54
+00:02:01,934 --> 00:02:03,634
+Um, as Matt moves around,
+
+55
+00:02:03,634 --> 00:02:06,968
+you see that floating toolbar
+that moves with him--
+
+56
+00:02:06,968 --> 00:02:09,000
+that's all implemented, uh,
+in this particular app,
+
+57
+00:02:09,000 --> 00:02:10,167
+and it's very, very fast.
+
+58
+00:02:10,167 --> 00:02:11,968
+You click a message,
+it opens up.
+
+59
+00:02:11,968 --> 00:02:13,634
+Here's the kicker.
+
+60
+00:02:13,634 --> 00:02:16,167
+Look at the top of the screen.
+
+61
+00:02:16,167 --> 00:02:18,434
+This is an Android device
+that's in offline mode.
+
+62
+00:02:18,434 --> 00:02:20,167
+It has no connectivity.
+
+63
+00:02:20,167 --> 00:02:22,734
+In fact, what you're
+looking at is a web app,
+
+64
+00:02:22,734 --> 00:02:24,667
+utilizing the great
+new capabilities
+
+65
+00:02:24,667 --> 00:02:27,133
+of the Android browser
+to have support
+
+66
+00:02:27,133 --> 00:02:29,167
+for these HTML 5 standards.
+
+67
+00:02:29,167 --> 00:02:32,501
+This particular app, Gmail
+on Android or on the iPhone,
+
+68
+00:02:32,501 --> 00:02:34,000
+is already shipping.
+
+69
+00:02:34,000 --> 00:02:37,801
+In fact, it's Google's
+first big HTML 5 app,
+
+70
+00:02:37,801 --> 00:02:40,234
+and really demonstrates
+the power of what's possible.
+
+71
+00:02:40,234 --> 00:02:43,367
+And as these phones get faster,
+these web apps
+
+72
+00:02:43,367 --> 00:02:45,334
+just get better
+and better and better.
+
+73
+00:02:45,334 --> 00:02:47,267
+Whether it be better
+JavaScript performance,
+
+74
+00:02:47,267 --> 00:02:49,167
+or the CPU of the phone
+gets better,
+
+75
+00:02:49,167 --> 00:02:51,100
+or the network connectivity
+gets faster,
+
+76
+00:02:51,100 --> 00:02:53,267
+these really become
+more and more capable,
+
+77
+00:02:53,267 --> 00:02:57,634
+and another example of Google
+moving towards HTML 5.
+
+78
+00:02:57,634 --> 00:03:01,934
+Okay, let's go back to slides.
+
+79
+00:03:01,934 --> 00:03:04,968
+Of course, we're not the only
+company who's, uh--who's--
+
+80
+00:03:04,968 --> 00:03:07,133
+really has invested in the web.
+
+81
+00:03:07,133 --> 00:03:09,467
+Another company that has
+pivoted their strategy
+
+82
+00:03:09,467 --> 00:03:11,801
+around an
+open web platform is Palm.
+
+83
+00:03:11,801 --> 00:03:14,868
+And to talk about that,
+I'd like to invite up Michael.
+
+84
+00:03:14,868 --> 00:03:16,434
+Michael Abbott,
+Senior Vice President of Palm.
+
+85
+00:03:16,434 --> 00:03:17,701
+Welcome Michael.
+
+86
+00:03:17,701 --> 00:03:19,267
+Michael and Greg.
+
+87
+00:03:19,267 --> 00:03:23,367
+Gonna talk about this, yes.
+
+88
+00:03:23,367 --> 00:03:24,400
+Abbott: Thanks a lot, Vic.
+
+89
+00:03:24,400 --> 00:03:26,734
+Uh, good morning
+to everyone here.
+
+90
+00:03:26,734 --> 00:03:29,334
+Um, I think that, uh,
+one of the interesting things
+
+91
+00:03:29,334 --> 00:03:30,701
+that I was thinking about
+yesterday is that
+
+92
+00:03:30,701 --> 00:03:32,901
+if it was a year ago,
+and you were at this conference,
+
+93
+00:03:32,901 --> 00:03:34,701
+I'm not too sure many of you
+would've predicted
+
+94
+00:03:34,701 --> 00:03:37,400
+that Palm would be at stage
+here at Google I/O.
+
+95
+00:03:37,400 --> 00:03:41,167
+And, uh, one of the key things
+I think why we're here
+
+96
+00:03:41,167 --> 00:03:43,133
+is that we share
+a very common vision.
+
+97
+00:03:43,133 --> 00:03:44,400
+Or a similar vision.
+
+98
+00:03:44,400 --> 00:03:47,000
+And that is indeed that the web
+is really the platform.
+
+99
+00:03:47,000 --> 00:03:50,567
+And as we step back in time
+from when we were designing
+
+100
+00:03:50,567 --> 00:03:53,467
+and architecting webOS,
+we were thinking through,
+
+101
+00:03:53,467 --> 00:03:55,767
+how could we actually
+enable developers
+
+102
+00:03:55,767 --> 00:03:58,801
+to have a program model
+that we're used to,
+
+103
+00:03:58,801 --> 00:04:00,901
+but at the same time
+offer access to both
+
+104
+00:04:00,901 --> 00:04:03,968
+services in the cloud
+as well as on the device?
+
+105
+00:04:03,968 --> 00:04:07,067
+And so what we did was
+we have built up a platform
+
+106
+00:04:07,067 --> 00:04:09,934
+with the browser as really
+the core construct.
+
+107
+00:04:09,934 --> 00:04:12,467
+And more concretely,
+actually using WebKit
+
+108
+00:04:12,467 --> 00:04:15,234
+as the core rendering engine
+in WebOS.
+
+109
+00:04:15,234 --> 00:04:16,834
+So all of the core applications
+
+110
+00:04:16,834 --> 00:04:19,667
+that are built
+as a part of WebOS--
+
+111
+00:04:19,667 --> 00:04:22,100
+mail, contacts, and calendar--
+
+112
+00:04:22,100 --> 00:04:25,734
+are all built in HTML,
+CSS, and JavaScript
+
+113
+00:04:25,734 --> 00:04:29,000
+as applications on--
+in this environment.
+
+114
+00:04:29,000 --> 00:04:30,400
+So if you look
+at a little more details
+
+115
+00:04:30,400 --> 00:04:32,467
+of what one of these
+applications really look like,
+
+116
+00:04:32,467 --> 00:04:34,834
+you can see that
+we have an HTML page
+
+117
+00:04:34,834 --> 00:04:37,300
+that defines a layout
+of the application,
+
+118
+00:04:37,300 --> 00:04:40,167
+we have JavaScript that--
+which can define transitions,
+
+119
+00:04:40,167 --> 00:04:43,033
+animations,
+access storage on the device,
+
+120
+00:04:43,033 --> 00:04:45,868
+and we might use CSS
+to style the applications.
+
+121
+00:04:45,868 --> 00:04:47,501
+Now, for developers we have
+
+122
+00:04:47,501 --> 00:04:49,601
+a framework called
+the Mojo framework
+
+123
+00:04:49,601 --> 00:04:52,567
+that allows you to style
+applications in beautiful ways
+
+124
+00:04:52,567 --> 00:04:54,734
+and at the same time
+be very performate.
+
+125
+00:04:54,734 --> 00:04:57,834
+Now, with this program model
+that we're offering,
+
+126
+00:04:57,834 --> 00:05:00,267
+certainly standards
+is really important to us,
+
+127
+00:05:00,267 --> 00:05:04,801
+and HTML 5 is a really
+key aspect of WebOS 1.0.
+
+128
+00:05:04,801 --> 00:05:07,133
+And so we're gonna show you
+just a couple quick demos
+
+129
+00:05:07,133 --> 00:05:10,534
+of how we've actually
+deployed and leveraged HTML 5
+
+130
+00:05:10,534 --> 00:05:14,234
+in the initial version
+of the platform.
+
+131
+00:05:14,234 --> 00:05:16,067
+So we'll switch over.
+
+132
+00:05:16,067 --> 00:05:17,934
+So, the first thing
+I'm gonna show you
+
+133
+00:05:17,934 --> 00:05:21,100
+is just an example of the canvas
+tag in our calendar application.
+
+134
+00:05:21,100 --> 00:05:22,434
+You can see the way
+we're using it
+
+135
+00:05:22,434 --> 00:05:24,501
+is to actually get really
+high-performance scrolling
+
+136
+00:05:24,501 --> 00:05:27,167
+as Greg actually scrolls
+up and down in the day view.
+
+137
+00:05:27,167 --> 00:05:28,968
+So that's just
+one example there.
+
+138
+00:05:28,968 --> 00:05:32,767
+And this example we're gonna
+show you is CSS transformations.
+
+139
+00:05:32,767 --> 00:05:34,968
+So this is in our
+music application,
+
+140
+00:05:34,968 --> 00:05:37,167
+and you can see that we're
+using CSS transformations
+
+141
+00:05:37,167 --> 00:05:38,968
+to rotate the album art.
+
+142
+00:05:38,968 --> 00:05:40,200
+Again, this application
+
+143
+00:05:40,200 --> 00:05:44,400
+is all built in HTML,
+CSS, and JavaScript.
+
+144
+00:05:44,400 --> 00:05:46,133
+And the last example
+I'm gonna show you
+
+145
+00:05:46,133 --> 00:05:48,067
+is with HTML 5 database.
+
+146
+00:05:48,067 --> 00:05:50,467
+And we're using
+that HTML 5 database
+
+147
+00:05:50,467 --> 00:05:55,300
+as a mechanism to store user's
+history as well as browsers.
+
+148
+00:05:55,300 --> 00:05:58,100
+Now, within this
+development environment,
+
+149
+00:05:58,100 --> 00:06:00,801
+there's a set of services
+that are on the device--
+
+150
+00:06:00,801 --> 00:06:03,501
+uh, we'll get to the next slide.
+
+151
+00:06:03,501 --> 00:06:05,667
+That we want to offer
+and expose up,
+
+152
+00:06:05,667 --> 00:06:08,334
+from the hardware
+in this particular case,
+
+153
+00:06:08,334 --> 00:06:10,634
+into that development
+environment.
+
+154
+00:06:10,634 --> 00:06:13,067
+And the Accelerometer
+is one of these extensions
+
+155
+00:06:13,067 --> 00:06:15,133
+that we'd like to see in HTML 5.
+
+156
+00:06:15,133 --> 00:06:17,734
+What we've done is offered up
+various events
+
+157
+00:06:17,734 --> 00:06:19,701
+into that JavaScript run time
+
+158
+00:06:19,701 --> 00:06:23,767
+so, for example, events around
+shaking, acceleration,
+
+159
+00:06:23,767 --> 00:06:27,200
+and orientation,
+and expose those events up
+
+160
+00:06:27,200 --> 00:06:30,567
+through a DOM Level 2 interface
+into JavaScript.
+
+161
+00:06:30,567 --> 00:06:33,634
+Now, there are certainly
+other types of events like this
+
+162
+00:06:33,634 --> 00:06:35,534
+that--as a result
+of that deep integration
+
+163
+00:06:35,534 --> 00:06:36,868
+between the software
+and hardware--
+
+164
+00:06:36,868 --> 00:06:38,200
+makes a lotta sense,
+
+165
+00:06:38,200 --> 00:06:41,200
+certainly for the mobile
+computing platform,
+
+166
+00:06:41,200 --> 00:06:42,567
+and that's actually
+one of the key things that--
+
+167
+00:06:42,567 --> 00:06:44,834
+that we're interested
+in working with you on over time
+
+168
+00:06:44,834 --> 00:06:48,434
+which is how do we actually
+really bring in both the mobile
+
+169
+00:06:48,434 --> 00:06:51,234
+and the desktop development
+environments together.
+
+170
+00:06:51,234 --> 00:06:54,601
+If you look at an example
+of how we're actually doing
+
+171
+00:06:54,601 --> 00:06:56,701
+this type of integration
+of the applications
+
+172
+00:06:56,701 --> 00:06:59,000
+using these accelerometer API,
+
+173
+00:06:59,000 --> 00:07:02,067
+you can see that
+we define a set of events,
+
+174
+00:07:02,067 --> 00:07:05,000
+and then you as a developer
+can go and define
+
+175
+00:07:05,000 --> 00:07:06,434
+the handling of those events.
+
+176
+00:07:06,434 --> 00:07:09,334
+So depending on how you want
+to leverage the accelerometer
+
+177
+00:07:09,334 --> 00:07:12,400
+in your application, it's very
+simple to access these events
+
+178
+00:07:12,400 --> 00:07:13,834
+and leverage these within
+
+179
+00:07:13,834 --> 00:07:18,133
+that JavaScript
+programming environment.
+
+180
+00:07:18,133 --> 00:07:20,934
+So again, what we see
+for HTML 5 and WebOS
+
+181
+00:07:20,934 --> 00:07:25,133
+is really a key convergent point
+between the mobile platform
+
+182
+00:07:25,133 --> 00:07:26,767
+and the desktop platform,
+
+183
+00:07:26,767 --> 00:07:29,234
+and we're very interested
+in working with you over time
+
+184
+00:07:29,234 --> 00:07:32,801
+to extend all the various
+events and access services
+
+185
+00:07:32,801 --> 00:07:35,701
+from these hardware platforms
+into this run time.
+
+186
+00:07:35,701 --> 00:07:37,234
+Thank you.
+
+187
+00:07:37,234 --> 00:07:39,801
+[applause]
+
+188
+00:07:39,801 --> 00:07:43,934
+Gundrota: Thank you. Thank you.
+
+189
+00:07:43,934 --> 00:07:46,200
+Okay, App Cache, Database--
+
+190
+00:07:46,200 --> 00:07:50,701
+broadly adopted today
+in these browsers.
+
+191
+00:07:50,701 --> 00:07:52,334
+Finally, let me talk
+about Web Workers.
+
+192
+00:07:52,334 --> 00:07:54,534
+You know, as the web
+becomes more powerful,
+
+193
+00:07:54,534 --> 00:07:56,434
+and you build better
+and better apps
+
+194
+00:07:56,434 --> 00:07:58,367
+that become richer and bigger,
+
+195
+00:07:58,367 --> 00:08:00,234
+uh, you do run
+into some problems.
+
+196
+00:08:00,234 --> 00:08:03,434
+Problems that native
+applications have solved.
+
+197
+00:08:03,434 --> 00:08:06,033
+For example, any of you
+who've written applications
+
+198
+00:08:06,033 --> 00:08:07,934
+with large amounts of JavaScript
+
+199
+00:08:07,934 --> 00:08:10,400
+understand the challenge
+of having the UI freeze
+
+200
+00:08:10,400 --> 00:08:12,300
+as you do JavaScript parsing.
+
+201
+00:08:12,300 --> 00:08:14,367
+It's not pretty.
+
+202
+00:08:14,367 --> 00:08:15,934
+but unfortunately
+it's unavoidable
+
+203
+00:08:15,934 --> 00:08:18,100
+as your JavaScript
+gets larger and larger.
+
+204
+00:08:18,100 --> 00:08:20,133
+How do we solve this problem?
+
+205
+00:08:20,133 --> 00:08:21,734
+Well, in a native application,
+
+206
+00:08:21,734 --> 00:08:24,534
+you could spawn
+a background thread.
+
+207
+00:08:24,534 --> 00:08:26,767
+You could, uh, have
+background processing.
+
+208
+00:08:26,767 --> 00:08:28,868
+And that's exactly
+what the HTML 5 standard
+
+209
+00:08:28,868 --> 00:08:30,534
+of web workers allows you to do.
+
+210
+00:08:30,534 --> 00:08:31,901
+Let me show you some demos.
+
+211
+00:08:31,901 --> 00:08:35,100
+Let's move over to screen one.
+There we go.
+
+212
+00:08:35,100 --> 00:08:37,601
+This particular example
+just calculates, um,
+
+213
+00:08:37,601 --> 00:08:38,934
+some prime numbers.
+
+214
+00:08:38,934 --> 00:08:41,367
+And so we've got a couple
+of tabs open there.
+
+215
+00:08:41,367 --> 00:08:43,267
+You can see we've got
+the <i>New York Times</i> and so forth.
+
+216
+00:08:43,267 --> 00:08:45,000
+Uh, Matt, why don't you go ahead
+and start the demo?
+
+217
+00:08:45,000 --> 00:08:47,434
+And now try clicking
+on another tab.
+
+218
+00:08:47,434 --> 00:08:50,300
+Uh, exactly.
+
+219
+00:08:50,300 --> 00:08:53,601
+So the JavaScript parsing
+is completely hosing
+
+220
+00:08:53,601 --> 00:08:55,734
+not only the tab--
+the UI of the tab--
+
+221
+00:08:55,734 --> 00:08:57,701
+but as well as
+the rest of the browser.
+
+222
+00:08:57,701 --> 00:08:59,968
+Let's redo that demo.
+
+223
+00:08:59,968 --> 00:09:02,801
+This time let's look
+at the source.
+
+224
+00:09:02,801 --> 00:09:04,634
+Same demo, but look
+at the source.
+
+225
+00:09:04,634 --> 00:09:06,200
+We made a change.
+
+226
+00:09:06,200 --> 00:09:08,067
+And you see there
+Matt highlighting the use
+
+227
+00:09:08,067 --> 00:09:11,400
+of the background processing
+via the Web Worker.
+
+228
+00:09:11,400 --> 00:09:13,801
+Let's run that same app again.
+
+229
+00:09:13,801 --> 00:09:15,834
+Number one, the UI
+is responsive,
+
+230
+00:09:15,834 --> 00:09:17,567
+the other tabs are responsive,
+
+231
+00:09:17,567 --> 00:09:19,634
+and it all just works.
+
+232
+00:09:19,634 --> 00:09:21,033
+Right? New capability.
+
+233
+00:09:21,033 --> 00:09:23,701
+Background processing
+in the browser from JavaScript.
+
+234
+00:09:23,701 --> 00:09:25,267
+That's just really,
+really great.
+
+235
+00:09:25,267 --> 00:09:26,601
+Let me--
+
+236
+00:09:26,601 --> 00:09:30,868
+[applause]
+
+237
+00:09:30,868 --> 00:09:32,033
+Hold your applause.
+
+238
+00:09:32,033 --> 00:09:34,133
+If you like that,
+wait 'til you see this.
+
+239
+00:09:34,133 --> 00:09:36,100
+Uh, this demo is my favorite.
+
+240
+00:09:36,100 --> 00:09:39,901
+Okay, it's using the canvas tag
+to place the boxes,
+
+241
+00:09:39,901 --> 00:09:42,300
+it's using the video tag
+to play the video,
+
+242
+00:09:42,300 --> 00:09:45,200
+it's using JavaScript
+and Web Workers
+
+243
+00:09:45,200 --> 00:09:46,834
+to run some
+background processing.
+
+244
+00:09:46,834 --> 00:09:48,634
+Let me tell you
+what's gonna happen.
+
+245
+00:09:48,634 --> 00:09:51,000
+We're gonna start the video,
+and you're gonna see a lady
+
+246
+00:09:51,000 --> 00:09:53,000
+walk by the vi--on the video.
+
+247
+00:09:53,000 --> 00:09:56,467
+JavaScript is gonna run
+and do motion detection,
+
+248
+00:09:56,467 --> 00:09:57,734
+and then draw via canvas
+a bounding box around the object
+

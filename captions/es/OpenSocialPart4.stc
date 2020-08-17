@@ -1,0 +1,179 @@
+﻿*TC 00:00:06;09
+En esta sección utilizaremos 
+el gadget de ejemplo que 
+
+*TC 00:00:09;02 
+hemos creado antes para 
+hacer regalos a nuestros amigos 
+
+*TC 00:00:11;17
+y lo modificaremos un poco
+
+*TC 00:00:12;27
+para poder ver los regalos 
+una vez enviados.
+
+*TC 00:00:15;23
+Empezaremos modificando 
+nuestra función de envío de regalos 
+
+*TC 00:00:18;15
+para que solicite datos en lugar de
+limitarse a actualizarlos.
+
+*TC 00:00:22;01
+En el objeto de solicitud de datos, 
+especificaremos que, 
+
+*TC 00:00:24;24
+además de actualizarse los datos 
+de la aplicación 
+
+*TC 00:00:27;13
+del usuario, se 
+solicite información sobre 
+
+*TC 00:00:29;28
+el usuario, sus amigos y su almacén 
+de información personal.
+
+*TC 00:00:34;25
+En la función de carga de amigos 
+
+*TC 00:00:36;27
+realizaremos un 
+procedimiento parecido
+
+*TC 00:00:38;23
+para que, al cargar nuestra lista 
+de amigos y la del usuario,
+
+*TC 00:00:41;14
+también se solicite el almacén de 
+aplicaciones personal del usuario.
+
+*TC 00:00:46;02
+Haremos que estas dos solicitudes 
+se realicen paralelamente
+
+*TC 00:00:48;12
+para que, al inicializar el gadget
+o al enviar un regalo, 
+
+*TC 00:00:50;26
+la devolución de llamada 
+reciba la misma información.
+
+*TC 00:00:54;25
+Después modificaremos la 
+función "onLoadFriends"
+
+*TC 00:00:57;00
+para que, además de especificar 
+al usuario y a sus amigos,
+
+*TC 00:01:00;27
+podamos extraer la lista de los
+regalos que hemos enviado.
+
+*TC 00:01:04;04
+Crearemos la lista de amigos 
+como un menú de selección. 
+
+*TC 00:01:07;05
+Una vez que lo hayamos 
+insertado en la página,
+
+*TC 00:01:09;24
+ejecutaremos la función de 
+actualización de 
+
+*TC 00:01:11;27
+lista de regalos para ver los 
+regalos que enviamos.
+
+*TC 00:01:14;09
+Esta función extrae información 
+del conjunto de datos 
+
+*TC 00:01:18;01
+que hemos proporcionado
+
+*TC 00:01:19;06
+especificada por la ID del
+usuario y la clave del regalo, 
+
+*TC 00:01:22;13
+que es donde está almacenada la
+información.
+
+*TC 00:01:24;08
+Después volveremos a convertir
+estos datos transformando la cadena 
+
+*TC 00:01:28;10
+"json" en un objeto JavaScript que
+
+*TC 00:01:30;14
+podamos utilizar. Este objeto,
+que es un par de ID de amigo 
+
+*TC 00:01:33;15
+e ID de regalo,
+
+*TC 00:01:34;17
+podremos convertirlo en una cadena 
+que especifique 
+
+*TC 00:01:37;06
+el nombre del amigo al que le hemos
+enviado 
+
+*TC 00:01:38;27
+el regalo y el regalo enviado.
+
+*TC 00:01:41;12
+Luego insertaremos esta lista
+en la página como HTML.
+
+*TC 00:01:44;21
+Por último, haremos un pequeño
+cambio en el archivo XML 
+
+*TC 00:01:47;27
+del gadget para poder insertar
+el texto HTML.
+
+*TC 00:01:52;03
+Ésta es una nueva versión de nuestro 
+gadget, con la 
+
+*TC 00:01:54;07
+lista de regalos que hemos enviado.
+
+*TC 00:01:55;27
+Al hacer clic en el botón de 
+envío de regalo,
+ 
+*TC 00:01:58;00
+el regalo aparecerá en 
+la lista.
+
+*TC 00:02:00;11
+Para obtener más información 
+sobre este proceso 
+
+*TC 00:02:02;02
+y sobre el API de 
+OpenSocial,
+
+*TC 00:02:04;06
+consultad el tutorial de la sección "OpenSocial" 
+
+*TC 00:02:06;20
+en "code.google.com". 
+
+
+
+
+

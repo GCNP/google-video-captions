@@ -1,0 +1,185 @@
+﻿*TC 00:00:06;02
+En esta sección utilizaremos
+la aplicación de
+
+*TC 00:00:07;25
+ejemplo que envía regalos a
+nuestros amigos y muestra
+
+*TC 00:00:10;19
+los regalos que les hemos 
+enviado para ver los regalos
+
+*TC 00:00:13;02
+que otros amigos nos
+han enviado.
+
+*TC 00:00:16;04
+En primer lugar, tendremos que
+hacer un pequeño cambio en
+
+*TC 00:00:19;03
+el XML del gadget para tener
+un lugar donde insertar la
+
+*TC 00:00:22;05
+lista de regalos recibidos.
+
+*TC 00:00:24;01
+Después haremos dos
+pequeños cambios,
+
+*TC 00:00:25;26
+uno en la función "loadFriends"
+y otro en "giveGift",
+
+*TC 00:00:27;26
+para crear una solicitud de 
+datos de nuestros amigos y
+
+*TC 00:00:31;24
+datos nuestros.
+
+*TC 00:00:32;21
+Primero modificaremos "loadFriends"
+para que, además de
+
+*TC 00:00:35;24
+solicitar información sobre
+elusuario, los amigos del usuario
+
+*TC 00:00:38;21
+y los datos personales
+de la aplicación del usuario,
+
+*TC 00:00:41;10
+también solicitemos los
+datos dela aplicación de amigos del usuario.
+
+*TC 00:00:45;21
+Luego haremos el mismo cambio
+en "giveGift" para que las
+
+*TC 00:00:49;13
+solicitudes sean paralelas.
+
+*TC 00:00:52;06
+Después actualizaremos "onLoadFriends"
+para que, además de extraer
+
+*TC 00:00:55;11
+información sobre el usuario, 
+los amigos del usuario
+
+*TC 00:00:57;20
+y los datos de regalos,
+podamos ver la información
+
+*TC 00:01:00;03
+de datosde amigos del usuario,
+que es la lista de regalos
+
+*TC 00:01:02;14
+que nos han hecho
+nuestros amigos.
+
+*TC 00:01:04;17
+Esta función se repite con
+toda la lista de amigos,
+
+*TC 00:01:07;06
+muestra los menús donde se
+pueden seleccionar amigos
+
+*TC 00:01:09;06
+para enviarles regalos,
+
+*TC 00:01:10;15
+actualiza la lista de regalos que
+muestra los regalos que hemos enviado,
+
+*TC 00:01:14;16
+y ejecuta por último la nueva
+función"updateReceivedList", que
+
+*TC 00:01:17;25
+muestra la lista de regalos que
+hemos recibido de nuestros amigos.
+
+*TC 00:01:21;16
+"updateReceivedList" funciona casi
+igual que "updateGiftList"
+
+*TC 00:01:24;29
+pero, en vez de repetirse una
+vez con toda la lista de regalos
+
+*TC 00:01:27;10
+que enviamos, se repite con cada
+uno de nuestros amigos, extrae
+
+*TC 00:01:30;06
+los datos de la aplicación del
+amigo especificado utilizando
+
+*TC 00:01:33;12
+su ID y, posteriormente,
+convierte los datos que ha
+
+*TC 00:01:36;23
+extraído en un
+objeto JavaScript.
+
+*TC 00:01:40;00
+Una vez obtenida la lista de
+regalos recibidos de nuestros
+
+*TC 00:01:42;18
+amigos, la función se repite con
+cada uno comparando la ID del
+
+*TC 00:01:45;14
+amigo que recibió el regalo con el
+
+*TC 00:01:47;22
+nuestro. Si coinciden, la función
+añade ese regalo a la lista de regalos
+
+*TC 00:01:52;19
+que hemos recibido.
+Una vez que esta lista
+
+*TC 00:01:54;06
+se ha completado, los 
+regalos se insertan en la página.
+
+*TC 00:01:57;09
+Aquí vemos la nueva versión
+de nuestro gadget, que
+
+*TC 00:01:59;16
+no sólo muestra opciones para
+enviar regalos a nuestros amigos
+
+*TC 00:02:02;24
+y la lista de regalos que ya les
+hemos enviado,
+
+*TC 00:02:05;01
+sino también los regalos que
+ellos nos han enviado.
+
+*TC 00:02:07;29
+Para obtener más información 
+sobre este proceso
+
+*TC 00:02:10;04
+y sobre el API de
+OpenSocial, consultad el
+
+*TC 00:02:12;15
+tutorial de la sección
+"OpenSocial"
+
+*TC 00:02:15;01
+en code.google.com.

@@ -1,0 +1,423 @@
+﻿
+*TC 00:00:06;27
+Hola, soy Jeff Scudder y trabajo
+con el API de datos de hojas
+
+*TC 00:00:09;21
+de cálculo de Google Docs. Puede
+que ya conozcáis las
+
+*TC 00:00:12;29
+hojas de cálculo de Google Docs,
+una aplicación online
+
+*TC 00:00:15;27
+para colaborar en
+tiempo real.
+
+*TC 00:00:18;15
+Forma parte de la suite de
+Google Docs. El API de hojas de cálculo os
+
+*TC 00:00:21;29
+permite acceder automáticamente
+a los datos de vuestras
+
+*TC 00:00:24;24
+hojas de cálculo en el
+idioma que queráis.
+
+*TC 00:00:28;13
+Google ofrece bibliotecas
+cliente en diferentes
+
+*TC 00:00:31;04
+idiomas para simplificar
+el trabajo con el
+
+*TC 00:00:33;07
+API de hojas de cálculo.
+
+*TC 00:00:34;23
+Hace poco añadí una función
+a la biblioteca Python para
+
+*TC 00:00:37;26
+facilitar el uso de las hojas
+de cálculo como bases
+
+*TC 00:00:40;14
+de datos de texto.
+
+*TC 00:00:42;22
+Una de las mayores ventajas
+de utilizar las hojas de cálculo
+
+*TC 00:00:45;13
+como base de datos es la
+posibilidad de ver y modificar
+
+*TC 00:00:49;09
+todos los datos desde
+una cómoda interfaz
+
+*TC 00:00:52;00
+de usuario y de acceder a ellos
+desde cualquier equipo. Si
+
+*TC 00:00:55;16
+estáis conectados a Internet,
+podréis interactuar con los
+
+*TC 00:00:58;18
+datos de Google Docs.
+
+*TC 00:01:00;10
+Veamos cómo funciona.
+
+*TC 00:01:05;02
+La biblioteca cliente Python es
+una biblioteca de software
+
+*TC 00:01:08;12
+libre disponible en
+code.google.com/p/gdata-python-client.
+
+*TC 00:01:16;07
+Este módulo se llama "text db" y
+forma parte del paquete de hojas
+
+*TC 00:01:19;26
+de cálculo Google Data de la
+biblioteca cliente Google Data.
+
+*TC 00:01:24;21
+El módulo de hojas de cálculo
+permite usar todas las funciones
+
+*TC 00:01:28;02
+del API de hojas de cálculo, a
+partir del que se ha creado
+
+*TC 00:01:31;17
+el nuevo módulo "text db".
+
+*TC 00:01:33;09
+El módulo "text db" 
+simplifica un uso concreto 
+
+*TC 00:01:35;25
+y hace que el uso del
+API de hojas de cálculo sea
+
+*TC 00:01:39;11
+como el de una base de datos.
+
+*TC 00:01:41;26
+Podéis hacer muchas más
+cosas con el API de hojas de cálculo,
+
+*TC 00:01:45;04
+como usar fórmulas, extraer
+datos de otras fuentes y
+
+*TC 00:01:49;06
+actualizar muchas celdas
+al mismo tiempo. 
+
+*TC 00:01:51;24
+Pero este módulo se centrará
+en un uso sencillo.
+
+*TC 00:01:55;10
+Veamos un ejemplo de
+la forma de utilizar el
+
+*TC 00:01:57;26
+texto "db module".
+
+*TC 00:02:00;15
+Empezaremos importando el
+módulo que incluye clases que
+
+*TC 00:02:03;16
+facilitan el uso de las hojas
+de cálculo como una simple
+
+*TC 00:02:06;08
+base de datos automatizada.
+
+*TC 00:02:08;16
+Después importaremos un
+módulo demo que inserta mi
+
+*TC 00:02:11;15
+dirección de correo para que
+no se haga pública a través de
+
+*TC 00:02:14;15
+este vídeo.
+
+*TC 00:02:16;20
+Ya podemos crear fácilmente una
+nueva hoja de cálculo de Google
+
+*TC 00:02:20;13
+con la aplicación. Sólo tenemos que
+indicar un nombre.
+
+*TC 00:02:24;25
+El objeto de base de datos 
+representa la nueva hoja de cálculo.
+
+*TC 00:02:28;22
+Ya podemos crear una tabla,
+
+*TC 00:02:30;19
+pero primero vamos a ver
+este documento en Google Docs.
+
+*TC 00:02:37;01
+Supongamos que tenemos una
+tabla de caballeros y queremos
+
+*TC 00:02:40;12
+conocer su nombre,
+empresa y color favorito.
+
+*TC 00:02:44;07
+La hoja de cálculo tiene ahora
+una nueva hoja de trabajo
+
+*TC 00:02:47;09
+y podemos añadir información.
+
+*TC 00:02:49;08
+Vamos a abrirla.
+
+*TC 00:02:52;01
+Ahora aparecerá una nueva fila
+en la hoja de cálculo.
+
+*TC 00:02:57;28
+También podemos añadir datos
+con la interfaz de usuario de
+
+*TC 00:03:01;19
+la hoja de cálculo.
+
+*TC 00:03:06;04
+Si estamos utilizando datos
+existentes, puede que tengamos
+
+*TC 00:03:09;14
+que localizar primero la hoja de
+cálculo buscando el nombre de esa
+
+*TC 00:03:12;12
+hoja de cálculo o la ID de clave
+única de la hoja de cálculo.
+
+*TC 00:03:19;08
+Como puede haber varias
+hojas de cálculo con el mismo
+
+*TC 00:03:21;20
+nombre, el método "getdatabases"
+generará una lista.
+
+*TC 00:03:26;09
+Para recuperar filas de datos,
+podemos buscar
+
+*TC 00:03:29;11
+una única fila o solicitar un
+grupo de filas con el método
+
+*TC 00:03:32;26
+"getrecords".
+
+*TC 00:03:35;03
+Como sólo tenemos tres filas
+de datos, las filas tienen
+
+*TC 00:03:38;18
+tres elementos.
+
+*TC 00:03:41;02
+También podemos buscar filas
+que cumplan requisitos
+
+*TC 00:03:43;25
+específicos con el lenguaje de
+consulta estructurado de hojas
+
+*TC 00:03:49;08
+de cálculo. Las consultas pueden
+contener and, or, less than, greater
+
+*TC 00:03:54;06
+than, coincidencias exactas y diferentes.
+
+*TC 00:03:57;22
+Teníamos dos caballeros con el
+azul como color favorito.
+
+*TC 00:04:02;02
+Por lo tanto, tenemos un par
+de coincidencias.
+
+*TC 00:04:07;03
+Cuando tengamos las filas, podremos
+cambiar los datos de nuestra
+
+*TC 00:04:10;17
+hoja de cálculo de Google.
+
+*TC 00:04:12;02
+Uno de los retos posibles del
+almacenamiento de datos
+
+*TC 00:04:14;22
+automatizado es que la lectura
+y escritura pueden ralentizarse
+
+*TC 00:04:19;02
+al transferirse datos mediante
+conexiones lentas y potencialmente
+
+*TC 00:04:22;15
+inestables. Para evitar
+este problema en la biblioteca
+
+*TC 00:04:26;16
+"text db", los cambios en
+objetos locales sólo se envían al
+
+*TC 00:04:30;04
+servidor cuando se ejecuta el
+método de envío. En el ejemplo anterior,
+
+*TC 00:04:34;20
+olvidamos introducir la
+empresa de Galahad.
+
+*TC 00:04:36;26
+Lo haremos ahora.
+
+*TC 00:04:38;27
+Veamos lo que tenemos
+ahora en nuestro registro.
+
+*TC 00:04:43;10
+Ahora vamos a enviar este
+cambio al servidor para ver
+
+*TC 00:04:46;20
+la empresa actualizada en la
+hoja de cálculo.
+
+*TC 00:04:50;22
+Parece que el color
+favorito de Galahad
+
+*TC 00:04:52;29
+no es correcto.
+
+*TC 00:04:54;06
+Para ver la recuperación de
+actualizaciones que se han
+
+*TC 00:04:57;04
+producido fuera de la copia
+local de los datos, haremos
+
+*TC 00:05:00;02
+un cambio en la hoja
+
+*TC 00:05:01;25
+de cálculo. Ese cambio no
+aparece en la copia local,
+
+*TC 00:05:06;04
+pero el contenido estará
+actualizado al extraer los datos.
+
+*TC 00:05:19;06
+Acabamos de ver un sencillo
+ejemplo de uso del módulo
+
+*TC 00:05:21;25
+"text db" que permite utilizar las
+hojas de cálculo de Google
+
+*TC 00:05:25;06
+como bases de datos
+
+*TC 00:05:27;06
+automatizadas. Éste sólo es
+uno de los usos del API
+
+*TC 00:05:29;08
+de hojas de cálculo.
+
+*TC 00:05:30;21
+Y hemos creado esta biblioteca
+con Python, pero podríamos
+
+*TC 00:05:34;05
+haber utilizado casi
+cualquier lenguaje.
+
+*TC 00:05:37;03
+Todo el código que hemos usado
+en este ejemplo es código libre
+
+*TC 00:05:40;13
+que podemos copiar y modificar
+libremente como queramos.
+
+*TC 00:05:43;22
+Si se os ocurre otra cosa
+interesante que os gustaría
+
+*TC 00:05:45;26
+hacer con el API de
+hojas de cálculo, estaremos
+
+*TC 00:05:48;27
+encantados de conocerla.
+
+*TC 00:05:50;14
+Visitad el grupo del API de
+datos de Google Docs.
+
+*TC 00:05:54;13
+También podéis consultar
+la documentación del API en
+
+*TC 00:05:57;29
+code.google.com.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6218 @@
+0:00:02.569,0:00:04.519
+man: Welcome to Google I/O.
+
+0:00:04.519,0:00:04.889
+[upbeat music]
+
+0:00:04.889,0:00:05.440
+[man singing indistinctly]
+
+0:00:05.439,0:00:06.719
+♫offline functionality improved access-ability de-crease your la-ten-cy♫
+
+0:00:06.720,0:00:14.049
+♫more fast applications with persistent storage and cacheable resources♫
+
+0:00:14.049,0:00:57.770
+♫rich in-browser video and audio (no plugin yo) geolocation api enables apps for on the go♫
+
+0:00:57.769,0:00:58.279
+♫write your multimedia, location service with regular javascript♫
+
+0:00:58.279,0:00:58.859
+♫query up and down your client-side, executing SQL states.♫
+
+0:00:58.859,0:00:59.430
+♫put my files inside your manifest to startup fast♫
+
+0:00:59.430,0:01:00.009
+♫see and play all of your buttons; attribute "controls"♫
+
+0:01:00.009,0:01:00.840
+♫vector graphics client-side, with drag drop from low to high mean high-fi-del-ity UIs♫
+
+0:01:00.840,0:01:01.349
+♫immersive experience. dynamic images, drawings and drag events♫
+
+0:01:01.349,0:01:13.279
+♫independent background scripts performing computation tricks, communication APIs for multi-origin post events♫
+
+0:01:13.279,0:01:43.720
+♫maintain page responsiveness, execute workers, safe cross-domain messages♫
+
+0:01:43.720,0:02:13.930
+♫pose your polygons because i'm gonna paint in JS♫
+
+0:02:13.930,0:02:49.670
+♫take it off, put it down, move around, never stop♫
+
+0:02:49.669,0:03:14.729
+♫i'm running tasks behind your back, but you will never be disturbed♫
+
+0:03:14.729,0:03:14.839
+♫vector graphics client-side, with drag drop from low to high mean high-fi-del-ity UIs♫
+
+0:03:14.839,0:03:14.910
+♫immersive experience. dynamic images, drawings and drag events♫
+
+0:03:14.910,0:03:15.020
+♫independent background scripts performing computation tricks, communication APIs for multi-origin post events♫
+
+0:03:15.020,0:03:15.080
+♫maintain page responsiveness, execute workers, safe cross-domain messages♫
+
+0:03:15.080,0:03:19.069
+♫pose your polygons because i'm gonna paint in JS♫
+
+0:03:19.070,0:03:58.039
+♫take it off, put it down, move around, never stop♫
+
+0:03:58.040,0:04:44.799
+♫i'm running tasks behind your back, but you will never be disturbed♫
+
+0:04:44.799,0:04:45.869
+man: Ladies and gentlemen,
+
+0:04:45.869,0:04:48.200
+please welcome Chief Executive Officer of Google,
+
+0:04:48.429,0:04:49.790
+Dr. Eric Schmidt.
+
+0:04:49.790,0:04:54.309
+Schmidt: Thank you.
+
+0:04:54.309,0:04:55.809
+[applause]
+
+0:04:55.809,0:05:00.339
+Thank you all.
+
+0:05:00.339,0:05:01.820
+First let me start by welcoming everybody.
+
+0:05:02.089,0:05:03.510
+Many of you traveled a long distance
+
+0:05:03.510,0:05:06.720
+to come here to, uh, spend two days with us
+
+0:05:06.839,0:05:08.989
+to talk about the thing I like the most,
+
+0:05:08.989,0:05:10.070
+which is programming.
+
+0:05:11.059,0:05:13.529
+And let me tell you that it's time.
+
+0:05:14.410,0:05:16.839
+It's time for us to take advantage
+
+0:05:17.679,0:05:20.209
+of the amazing opportunity that is before us.
+
+0:05:20.290,0:05:21.369
+And that's what I want to talk about
+
+0:05:21.369,0:05:22.279
+for just a few minutes.
+
+0:05:23.730,0:05:24.680
+Today and tomorrow,
+
+0:05:24.679,0:05:27.040
+you're going to have interesting product announcements,
+
+0:05:27.179,0:05:30.260
+some fun stuff, and perhaps most important,
+
+0:05:30.350,0:05:31.300
+you're gonna spend time
+
+0:05:31.869,0:05:33.559
+with the best programmers in the world
+
+0:05:33.820,0:05:35.279
+who are here in the room.
+
+0:05:35.290,0:05:35.800
+Literally you all.
+
+0:05:36.010,0:05:37.760
+And we're very excited to have you here.
+
+0:05:37.760,0:05:41.300
+Uh, from my perspective, it's time.
+
+0:05:45.329,0:05:47.959
+trying to build a programming model
+
+0:05:49.140,0:05:49.870
+that's the right one.
+
+0:05:50.559,0:05:52.089
+We started with the mainframe model.
+
+0:05:52.089,0:05:53.480
+Then we moved to the PC model.
+
+0:05:53.480,0:05:56.960
+And it had brilliant parts and very frustrating parts.
+
+0:05:57.619,0:05:58.679
+And then the internet arrived.
+
+0:05:59.529,0:06:00.589
+And internet programming.
+
+0:06:01.250,0:06:02.679
+The way we think about it now
+
+0:06:03.589,0:06:05.029
+is something we have all worked on
+
+0:06:05.149,0:06:06.000
+for all of our career.
+
+0:06:06.869,0:06:07.389
+It's time.
+
+0:06:08.359,0:06:09.239
+Why is it time?
+
+0:06:09.670,0:06:11.929
+We finally now have the networks,
+
+0:06:12.489,0:06:14.919
+the businesses, the programmers,
+
+0:06:15.309,0:06:16.529
+the programming tools,
+
+0:06:17.139,0:06:19.110
+that can build the kind of platforms
+
+0:06:19.109,0:06:22.079
+and the kind of opportunities that I want to highlight.
+
+0:06:24.320,0:06:25.790
+Today and tomorrow, you're going to hear a lot
+
+0:06:25.790,0:06:28.589
+about some of the Google technologies
+
+0:06:28.589,0:06:30.170
+many of you, you--you are already using.
+
+0:06:30.209,0:06:31.720
+For example, Google Web--Web Toolkit.
+
+0:06:31.720,0:06:32.829
+You know, we used to say "write once,
+
+0:06:32.829,0:06:35.170
+run anywhere with Java" back in my old--
+
+0:06:35.260,0:06:35.979
+in my old job.
+
+0:06:36.359,0:06:38.779
+Now it's write "write once, run on any browser," right?
+
+0:06:39.649,0:06:42.119
+Uh, because the browsers have become so complicated.
+
+0:06:42.119,0:06:44.249
+That's what GWT is all about.
+
+0:06:44.239,0:06:45.899
+We're going to see a lot more things
+
+0:06:45.899,0:06:48.239
+about a product called App Engine,
+
+0:06:48.239,0:06:49.449
+which now today includes, by the way,
+
+0:06:49.480,0:06:51.649
+support for Java, right, which is great,
+
+0:06:51.709,0:06:53.049
+and more, presumably, coming.
+
+0:06:54.029,0:06:58.019
+The notion of these platforms as powerful platforms
+
+0:06:58.639,0:07:00.899
+are part of a story that's been true forever.
+
+0:07:01.709,0:07:04.730
+And it's a story that innovation always occurs elsewhere.
+
+0:07:04.859,0:07:07.439
+It never is in the little world that I sit in
+
+0:07:07.440,0:07:08.329
+or that you sit in.
+
+0:07:08.450,0:07:09.639
+It's always somewhere else.
+
+0:07:10.309,0:07:13.339
+There's always a programmer, an inventor,
+
+0:07:13.700,0:07:14.649
+a brilliant person
+
+0:07:15.459,0:07:16.979
+who's somewhere other than where you are.
+
+0:07:17.489,0:07:19.639
+They need to use a platform that you build.
+
+0:07:20.209,0:07:22.480
+They need, for example, to be able to use a platform
+
+0:07:22.839,0:07:24.080
+even if they don't speak English
+
+0:07:24.750,0:07:26.589
+and even if they don't really understand
+
+0:07:26.589,0:07:28.429
+some of the other things that you've done,
+
+0:07:28.429,0:07:31.089
+but because they have an idea and they have a vision.
+
+0:07:32.089,0:07:34.119
+And maybe they use the wrong operating system
+
+0:07:34.179,0:07:35.429
+or they have the wrong background
+
+0:07:35.429,0:07:35.790
+or whatever,
+
+0:07:36.010,0:07:37.500
+but they're clever and they're smart.
+
+0:07:37.929,0:07:39.589
+And that's how innovation occurs.
+
+0:07:39.919,0:07:42.500
+It's always been true and it will always be true.
+
+0:07:43.359,0:07:46.149
+And that's why we're here today.
+
+0:07:46.149,0:07:47.940
+Maybe you're here to talk about Android
+
+0:07:47.940,0:07:49.320
+and some of the things that we're doing there.
+
+0:07:49.910,0:07:51.989
+Android looks like it's going to have a very strong year.
+
+0:07:52.230,0:07:54.349
+Not only do we have many thousands
+
+0:07:54.350,0:07:55.190
+of applications now
+
+0:07:55.339,0:07:57.789
+as part of our Android application store,
+
+0:07:57.799,0:07:59.619
+but we also have many hardware partners
+
+0:07:59.619,0:08:01.029
+that are coming along
+
+0:08:01.029,0:08:02.829
+to build innovative new hardware platforms
+
+0:08:03.149,0:08:04.240
+which look like phones,
+
+0:08:04.239,0:08:05.059
+but do a lot of things
+
+0:08:05.059,0:08:08.589
+that--that are not normally associated with phones.
+
+0:08:08.589,0:08:10.470
+Again, the innovation cycle continues.
+
+0:08:10.470,0:08:13.720
+So what we want you to do is we want you here
+
+0:08:14.269,0:08:17.690
+to spend your time with our teams and vice versa
+
+0:08:17.859,0:08:18.929
+and yourselves with each other
+
+0:08:19.540,0:08:22.809
+to try to figure out what we can do now.
+
+0:08:22.809,0:08:25.049
+So why is it time? Why is it time?
+
+0:08:25.130,0:08:26.940
+Why is it time to take the challenge?
+
+0:08:26.940,0:08:29.419
+Because people are frustrated.
+
+0:08:29.419,0:08:30.989
+They're tired of the complexity
+
+0:08:30.989,0:08:33.759
+of all of the systems that have been built up
+
+0:08:33.760,0:08:35.320
+They don't work that well.
+
+0:08:35.989,0:08:37.380
+Where's the "it works" option?
+
+0:08:37.619,0:08:39.959
+Where's the button where it just installs and works?
+
+0:08:40.520,0:08:43.989
+Why do we keep adding complexity after complexity in our--
+
+0:08:43.989,0:08:44.549
+in our world?
+
+0:08:45.179,0:08:47.960
+Well, here's an opportunity using Ajax programming,
+
+0:08:48.640,0:08:49.759
+the new programming languages,
+
+0:08:49.859,0:08:51.859
+the new programming paradigm that we're going to talk about
+
+0:08:51.859,0:08:55.109
+in the next couple of days to build another step higher.
+
+0:08:55.830,0:08:59.040
+To bring another level of functionality
+
+0:08:59.039,0:09:02.900
+that ultimately means power can generate simplicity
+
+0:09:03.400,0:09:04.900
+and ultimately make these systems
+
+0:09:05.150,0:09:06.640
+simpler and easier to use
+
+0:09:06.989,0:09:09.710
+by the people we serve who are not programmers.
+
+0:09:10.049,0:09:11.270
+They're not computer scientists.
+
+0:09:11.570,0:09:13.890
+They're not engineers.
+
+0:09:13.890,0:09:15.059
+I'm one of these people who believes
+
+0:09:15.059,0:09:15.880
+that computer science
+
+0:09:15.880,0:09:17.209
+is at the center of the universe.
+
+0:09:18.109,0:09:19.359
+I'm one of these people who believes
+
+0:09:19.359,0:09:23.650
+that what we do as scientists, as programmers,
+
+0:09:23.650,0:09:25.869
+as people who care about making the world
+
+0:09:25.869,0:09:27.199
+a better place,
+
+0:09:27.200,0:09:28.010
+can really scale.
+
+0:09:28.820,0:09:31.460
+I'm a person who believes that scalability
+
+0:09:31.460,0:09:33.500
+and the power as r-- as evidenced by the power
+
+0:09:33.500,0:09:35.340
+of the internet is just beginning.
+
+0:09:35.339,0:09:39.059
+And I would tell you that we're just at the beginning
+
+0:09:39.859,0:09:40.580
+of getting this right.
+
+0:09:40.580,0:09:43.000
+When we talk about cloud computing,
+
+0:09:43.000,0:09:45.429
+we talk about all the new kinds of devices,
+
+0:09:46.130,0:09:49.829
+you're seeing a whole new set of companies, ideas,
+
+0:09:50.250,0:09:51.820
+product solutions, competitors.
+
+0:09:52.339,0:09:55.349
+All sorts of things all coming from this shared vision
+
+0:09:55.839,0:09:57.830
+around a new programming model.
+
+0:09:57.830,0:09:58.940
+It's not the old programming model
+
+0:09:58.940,0:10:00.679
+where I was handed a book and said program
+
+0:10:00.679,0:10:03.099
+against these interfaces against this standard OS
+
+0:10:03.099,0:10:04.150
+and everything will work locally.
+
+0:10:05.219,0:10:06.419
+But it's a similar model
+
+0:10:07.500,0:10:09.709
+where I can go pick the very best
+
+0:10:09.979,0:10:11.080
+of this code and that code.
+
+0:10:11.429,0:10:12.929
+Put it together. Mash it if you will.
+
+0:10:13.609,0:10:15.030
+Have it automatically compiled.
+
+0:10:15.109,0:10:18.119
+And have it deliver tremendous performance
+
+0:10:18.390,0:10:20.059
+for all of us.
+
+0:10:20.059,0:10:22.619
+With this, we can take the collective intelligence
+
+0:10:22.619,0:10:24.219
+of the internet, which is astounding--
+
+0:10:24.729,0:10:26.799
+all the information, all those things going on--
+
+0:10:27.500,0:10:29.299
+and do amazing things.
+
+0:10:29.299,0:10:30.809
+We can tell people what's going to happen.
+
+0:10:30.809,0:10:32.559
+We can tell people what's happening nearby.
+
+0:10:32.890,0:10:34.940
+We can follow what they care about.
+
+0:10:35.349,0:10:36.500
+As you walk down the street,
+
+0:10:36.500,0:10:38.119
+we can tell them the history of the buildings
+
+0:10:38.119,0:10:38.890
+as we walk along.
+
+0:10:39.469,0:10:42.469
+We can do image recognition to sort of see what's happening.
+
+0:10:42.950,0:10:46.580
+All of these are applications that someone in this room
+
+0:10:46.960,0:10:49.250
+has already built.
+
+0:10:49.250,0:10:50.330
+All of you are busy building
+
+0:10:50.500,0:10:53.260
+of all of those kinds of things.
+
+0:10:53.270,0:10:53.959
+It's phenomenal.
+
+0:10:54.750,0:10:56.989
+So my message to you is this is the beginning
+
+0:10:58.140,0:11:00.539
+of the real win of cloud computing.
+
+0:11:00.539,0:11:02.420
+Of the real win of applications.
+
+0:11:02.969,0:11:04.970
+Of the real win of the internet,
+
+0:11:04.969,0:11:06.650
+which is changing the computing paradigm--
+
+0:11:07.630,0:11:08.859
+the one that we've all grown up with--
+
+0:11:09.529,0:11:10.380
+so it just works.
+
+0:11:10.929,0:11:12.710
+It works no matter what device you're using,
+
+0:11:13.070,0:11:14.500
+whatever operating system you're using,
+
+0:11:15.080,0:11:16.230
+as long as you're connected--
+
+0:11:16.589,0:11:18.599
+and even if you're no-- offline with some caching,
+
+0:11:19.339,0:11:20.940
+you're on and you have everything you need.
+
+0:11:21.460,0:11:24.489
+That's the promise of our new web computing model,
+
+0:11:24.859,0:11:26.020
+which we're all talking about.
+
+0:11:26.580,0:11:28.750
+We're going to show you some amazing technology
+
+0:11:28.750,0:11:30.669
+and some amazing partnerships that we've done
+
+0:11:30.669,0:11:31.899
+in the next hour and a half.
+
+0:11:31.979,0:11:34.219
+I'm delighted that you're here
+
+0:11:34.219,0:11:35.940
+and I'm excited about what we're doing.
+
+0:11:35.940,0:11:38.330
+And I want to take a minute to thank you for coming
+
+0:11:38.770,0:11:40.690
+and also introduce Vic Gundrota,
+
+0:11:41.179,0:11:42.690
+who's the executive who's in charge
+
+0:11:42.690,0:11:44.799
+of all of our develop programs, all of our mobile programs,
+
+0:11:44.799,0:11:45.899
+and lots of our businesses.
+
+0:11:46.239,0:11:47.839
+Vic, can you join me on stage?
+
+0:11:47.839,0:11:48.330
+Thank you very much.
+
+0:11:48.330,0:11:53.020
+Gundrota: Thank you, Eric. Schmidt: Take care, Vic.
+
+0:11:53.020,0:11:55.950
+Gundrota: Appreciate it. Schmidt: Thanks.
+
+0:11:55.950,0:11:56.709
+Gundrota: Thank you. Schmidt: Thank you.
+
+0:11:56.709,0:11:56.709
+[applause]
+
+0:11:56.709,0:11:57.900
+Gundrota: Thank you for those opening comments, Eric.
+
+0:11:58.000,0:12:00.849
+And good morning, everybody. Welcome to I/O.
+
+0:12:02.799,0:12:06.049
+Never underestimate the web.
+
+0:12:06.049,0:12:07.770
+It's a mistake that I once made.
+
+0:12:07.770,0:12:10.010
+It was about a half a decade ago
+
+0:12:10.339,0:12:13.700
+and I was leading a team at Microsoft responsible
+
+0:12:14.039,0:12:17.279
+for driving the developer adoption of Windows.
+
+0:12:17.279,0:12:19.219
+Of course we had seen the emergence of the web.
+
+0:12:20.039,0:12:24.809
+But we argued that web apps could never rival desktop apps.
+
+0:12:25.479,0:12:28.190
+In fact, our favorite and our canonical example
+
+0:12:28.630,0:12:32.189
+was from a small Bay Area company called Keyhole.
+
+0:12:33.179,0:12:34.780
+Keyhole had made the fan--
+
+0:12:34.909,0:12:37.899
+most fantastic geovisualization software
+
+0:12:38.029,0:12:38.559
+for Windows.
+
+0:12:38.809,0:12:41.159
+And it was exactly that kind of software
+
+0:12:41.159,0:12:43.659
+that we argued could never be done on the web.
+
+0:12:48.140,0:12:49.969
+Google acquired that small company
+
+0:12:50.700,0:12:54.219
+and a few months later released maps.google.com
+
+0:12:54.219,0:12:55.029
+with satellite views.
+
+0:12:55.229,0:12:58.559
+A web app that simply left us stunned.
+
+0:12:59.479,0:13:01.239
+Maybe you remember the first time you
+
+0:13:01.459,0:13:03.520
+from any browser were able to zoom down
+
+0:13:03.520,0:13:04.679
+into your own backyard.
+
+0:13:05.559,0:13:08.500
+You know, Google Apps-- Google Maps was amazing--
+
+0:13:08.539,0:13:10.309
+is amazing.
+
+0:13:10.309,0:13:13.730
+But what was even more important was what that application
+
+0:13:13.799,0:13:15.429
+was foretelling.
+
+0:13:15.429,0:13:17.309
+That we would see what we formerly thought
+
+0:13:17.309,0:13:20.000
+was impossible become possible,
+
+0:13:20.309,0:13:22.450
+even commonplace in the browser.
+
+0:13:23.159,0:13:25.549
+Yes, the web has won.
+
+0:13:26.440,0:13:29.809
+It has become the dominant programming model of our time.
+
+0:13:30.690,0:13:32.630
+In many respects, this conference, Google I/O,
+
+0:13:32.820,0:13:35.799
+is about a celebration of that open web platform.
+
+0:13:35.890,0:13:37.809
+And this morning, I'd like to talk to you
+
+0:13:37.809,0:13:41.109
+about the ongoing evolution of--of the web.
+
+0:13:41.109,0:13:44.469
+Of making a more powerful web made easier.
+
+0:13:45.059,0:13:47.019
+And this morning's keynote is broken up
+
+0:13:47.080,0:13:48.299
+into two broad sections.
+
+0:13:48.929,0:13:50.039
+In the opening section,
+
+0:13:50.140,0:13:50.929
+I'm going to show you,
+
+0:13:50.929,0:13:53.570
+uh, what's making the web more powerful.
+
+0:13:56.619,0:13:58.669
+that are enabling us to build applications
+
+0:13:58.669,0:14:00.799
+that I think will surprise users.
+
+0:14:01.419,0:14:02.949
+And in the second half of the keynote,
+
+0:14:03.969,0:14:05.820
+I'm going to highlight some Google services
+
+0:14:06.130,0:14:09.459
+that we believe can help you, uh, build those apps
+
+0:14:09.779,0:14:11.030
+much easier.
+
+0:14:11.029,0:14:12.429
+So let's get started here.
+
+0:14:13.200,0:14:14.440
+Let me find the clicker.
+
+0:14:16.309,0:14:18.359
+You know, I think when you look back over the last year--
+
+0:14:18.359,0:14:20.799
+in fact, just the last eight, nine months--
+
+0:14:21.549,0:14:23.580
+you have to be amazed
+
+0:14:23.580,0:14:26.380
+at the rate our web platform is accelerating.
+
+0:14:26.380,0:14:29.090
+It seems like almost every other month,
+
+0:14:29.219,0:14:30.679
+we've had a browser released
+
+0:14:30.679,0:14:32.929
+even--either for the desktop or for mobile.
+
+0:14:33.059,0:14:35.250
+And these new browsers are not just faster--
+
+0:14:35.250,0:14:37.229
+I mean, of course they're faster--
+
+0:14:37.229,0:14:38.260
+but even more importantly,
+
+0:14:38.369,0:14:42.179
+these browsers are incorporating .NET new functionality
+
+0:14:42.640,0:14:45.429
+that, frankly, I'm not sure most developers know about.
+
+0:14:45.429,0:14:48.900
+Gundrota: This new functionality that's, uh, included
+
+0:14:48.899,0:14:51.250
+in these browsers allows developers
+
+0:14:51.250,0:14:52.989
+to have their cake and eat it too.
+
+0:14:53.549,0:14:56.289
+We still get the best of the web browser
+
+0:14:56.289,0:14:58.780
+deployment model-- the friction-free deployment--
+
+0:14:59.169,0:15:02.119
+and for the first time as developers,
+
+0:15:02.339,0:15:05.019
+we're able to access the underlying services
+
+0:15:05.140,0:15:08.229
+such as geolocation or the graphic subsystem
+
+0:15:08.269,0:15:10.299
+or storage or CPU services
+
+0:15:10.640,0:15:13.000
+in a way that was formerly only limited
+
+0:15:13.339,0:15:15.510
+to native applications.
+
+0:15:15.510,0:15:17.699
+And those capabilities, we believe,
+
+0:15:17.700,0:15:21.659
+will close the remaining gap in usability and performance
+
+0:15:22.119,0:15:24.099
+from native apps and web applications
+
+0:15:24.219,0:15:24.769
+even further.
+
+0:15:24.769,0:15:27.549
+Course, it's not just about the technology.
+
+0:15:27.659,0:15:28.429
+It's about people.
+
+0:15:28.429,0:15:29.799
+It's about the people in this room.
+
+0:15:30.330,0:15:33.529
+Those who've contributed to this amazing acceleration
+
+0:15:33.529,0:15:34.729
+of innovation that we've seen.
+
+0:15:35.289,0:15:38.840
+This chart is the unique, monthly contributors,
+
+0:15:39.549,0:15:40.959
+um, to open source projects.
+
+0:15:41.079,0:15:43.039
+And just look at the growth of our community--
+
+0:15:43.260,0:15:46.169
+of developers contributing to make the web better.
+
+0:15:46.419,0:15:48.979
+And so it's no surprise that as our community grows,
+
+0:15:49.169,0:15:50.469
+we see more innovation.
+
+0:15:50.469,0:15:52.469
+I mean, just stop for a moment.
+
+0:15:52.539,0:15:54.299
+Did you realize that in the last decade,
+
+0:15:54.419,0:15:57.109
+we have seen
+
+0:15:57.109,0:15:58.139
+in JavaScript parsing?
+
+0:15:59.899,0:16:00.839
+Think about the implications.
+
+0:16:01.200,0:16:04.309
+The implications are that what we thought was impossible
+
+0:16:04.309,0:16:06.390
+to do in the browser with JavaScript
+
+0:16:06.599,0:16:08.309
+may now become possible.
+
+0:16:08.929,0:16:10.729
+Of course, that's just one example
+
+0:16:10.929,0:16:12.449
+of technological improvement.
+
+0:16:12.450,0:16:13.659
+We're going to show you lots more today.
+
+0:16:14.219,0:16:16.579
+More the community growing, more innovation,
+
+0:16:16.619,0:16:18.919
+has lead to the ultimate metric of success,
+
+0:16:19.079,0:16:19.739
+which is users.
+
+0:16:20.329,0:16:22.619
+And today, we have almost half a billion people
+
+0:16:22.709,0:16:24.559
+who are using modern, open source browsers.
+
+0:16:24.839,0:16:27.840
+And I think that is just a fantastic testimony
+
+0:16:27.839,0:16:29.890
+to the success that we as a community have had
+
+0:16:29.890,0:16:31.589
+in moving the web forward.
+
+0:16:31.589,0:16:35.239
+I'm gonna walk you through some new capabilities
+
+0:16:35.349,0:16:39.209
+in what I'm going
+
+0:16:39.209,0:16:41.629
+We believe that the capabilities that I'm about to show you
+
+0:16:41.630,0:16:42.849
+in this keynote allow us
+
+0:16:42.849,0:16:47.959
+but really move to kind of apps that have capability,
+
+0:16:48.059,0:16:49.769
+have a fidelity, have an experience
+
+0:16:50.329,0:16:52.130
+that I think will surprise you.
+
+0:16:52.959,0:16:54.959
+Before I go into those new standards,
+
+0:16:55.229,0:16:57.250
+I want to tell a cautionary tale
+
+0:16:57.709,0:17:00.539
+and I want to plead for help from you.
+
+0:17:03.169,0:17:03.779
+Almost a decade ago,
+
+0:17:04.239,0:17:06.399
+I was on another team responsible
+
+0:17:06.399,0:17:08.949
+for driving the adoption of XMLHttpRequest.
+
+0:17:08.949,0:17:12.419
+It was a new capability we had added to the browser
+
+0:17:12.779,0:17:15.029
+that allowed for asynchronous callback.
+
+0:17:15.029,0:17:17.149
+And I talked to many companies, many developers,
+
+0:17:17.239,0:17:20.169
+and we just didn't get traction
+
+0:17:20.169,0:17:22.279
+until--do you know when?
+
+0:17:22.279,0:17:27.829
+when Google released Gmail
+
+0:17:28.279,0:17:31.010
+and we saw an explosion of Ajax apps.
+
+0:17:32.029,0:17:34.199
+Yet those underlying capabilities
+
+0:17:34.199,0:17:36.109
+that enabled those Ajax applications
+
+0:17:36.149,0:17:37.699
+had laid dormant in the browser
+
+0:17:37.799,0:17:38.859
+for over half a decade
+
+0:17:40.769,0:17:42.599
+because no killer apps were developed
+
+0:17:42.729,0:17:44.419
+that exploited those capabilities.
+
+0:17:45.269,0:17:47.299
+I'm going to plead with you as a community,
+
+0:17:47.889,0:17:49.629
+let's not make the same mistake again.
+
+0:17:50.239,0:17:52.509
+As we talk about these new standards this morning
+
+0:17:54.719,0:17:56.049
+recognize that having the capability
+
+0:17:56.299,0:17:58.439
+in the underlying platform is not enough.
+
+0:17:58.989,0:18:01.019
+It's up to you and people like Google--
+
+0:18:01.019,0:18:02.299
+companies like Google and others--
+
+0:18:02.589,0:18:04.259
+to build the compelling apps
+
+0:18:04.339,0:18:06.219
+that are exploitive of these capabilities.
+
+0:18:06.479,0:18:08.199
+Let's not wait another half decade.
+
+0:18:08.419,0:18:10.150
+Let's take advantage of these things
+
+0:18:10.149,0:18:10.979
+that you'll see this morning.
+
+0:18:11.079,0:18:12.709
+Let's build those exploitive apps.
+
+0:18:12.949,0:18:15.599
+Let's move the web forward even faster.
+
+0:18:17.259,0:18:19.229
+So this morning, I'm going to invite up Matt Waddell
+
+0:18:19.229,0:18:20.119
+to walk us through--
+
+0:18:20.119,0:18:22.249
+we're gonna go through
+
+0:18:22.249,0:18:24.369
+You're going to see a lot of the capabilities
+
+0:18:24.369,0:18:24.849
+we're talking about.
+
+0:18:25.179,0:18:27.729
+And Matt, my colleague, is going to walk through these demos
+
+0:18:27.729,0:18:28.979
+as I--as I talk over them.
+
+0:18:29.249,0:18:32.169
+We're going to emphasize five things
+
+0:18:32.399,0:18:33.569
+that excite Google
+
+0:18:33.809,0:18:35.989
+and we think you should be paying attention to
+
+0:18:38.419,0:18:39.849
+The first one is canvas.
+
+0:18:40.629,0:18:41.749
+Let's talk about the problem.
+
+0:18:42.569,0:18:43.239
+You're developers.
+
+0:18:44.079,0:18:47.059
+How do you draw a diagonal line in the browser?
+
+0:18:51.769,0:18:52.859
+Think about it. What do you do?
+
+0:18:52.859,0:18:54.569
+Draw a diagonal line in the browser.
+
+0:18:54.569,0:18:56.659
+Well, I know, you think, well, Vic,
+
+0:18:56.779,0:18:58.639
+I guess you can't really draw a diagonal line in the browser.
+
+0:18:59.019,0:19:00.399
+You would draw and image on the server.
+
+0:19:00.579,0:19:01.839
+You'd push the image down
+
+0:19:01.909,0:19:02.999
+and you'd get your diagonal line.
+
+0:19:03.049,0:19:03.659
+Yeah, you're right.
+
+0:19:04.369,0:19:05.779
+But then, of course, your interactivity
+
+0:19:05.839,0:19:07.739
+is limited to the granularity of the image tag.
+
+0:19:08.029,0:19:09.269
+That's not very interactive.
+
+0:19:09.999,0:19:11.519
+Some of you in the audience are going, wait, wait,
+
+0:19:11.589,0:19:12.599
+it's easier than that.
+
+0:19:12.599,0:19:16.239
+Just use a VML or Silverlight or Flash.
+
+0:19:16.239,0:19:18.559
+And--and you're right. Those approaches could work.
+
+0:19:19.599,0:19:23.049
+But what if we wanted something that was part of the open,
+
+0:19:23.339,0:19:25.619
+transparent internet that we know and love?
+
+0:19:27.809,0:19:29.669
+And that's exactly what canvas is.
+
+0:19:29.669,0:19:31.809
+The canvas tag is intrinsic. It's native.
+
+0:19:31.809,0:19:33.529
+It fits seamlessly into the page
+
+0:19:33.789,0:19:37.489
+and works great with JavaScript and CSS and the DOM.
+
+0:19:39.209,0:19:41.359
+And canvas allows you as a developer
+
+0:19:41.359,0:19:42.999
+for the first time within the browser
+
+0:19:43.119,0:19:45.549
+to have drawing and animation APIs
+
+0:19:45.549,0:19:46.969
+with pixel-level control,
+
+0:19:47.329,0:19:49.879
+which changes, uh, the kind of applications
+
+0:19:49.879,0:19:50.449
+we can deliver.
+
+0:19:50.959,0:19:51.559
+Let me show you.
+
+0:19:52.129,0:19:53.489
+In the first example we're going to show--
+
+0:19:53.489,0:19:56.139
+if we could switch to the demo machine--
+
+0:19:56.139,0:19:59.259
+Matt is just going to draw within, uh, the browser.
+
+0:19:59.369,0:20:00.869
+And he's using the mouse. He's drawing.
+
+0:20:01.509,0:20:04.239
+The magic here is in the source code.
+
+0:20:04.239,0:20:05.679
+That's the entire source code.
+
+0:20:05.679,0:20:07.879
+There are no plug-ins here.
+
+0:20:07.879,0:20:09.529
+What's magical is what Matt is highlighting.
+
+0:20:09.899,0:20:12.159
+There's the use of the canvas tag.
+
+0:20:12.159,0:20:13.889
+And then the JavaScript is doing nothing more
+
+0:20:13.889,0:20:16.369
+than responding to mouse up and mouse down movements.
+
+0:20:16.639,0:20:18.849
+And he's drawing right there within the browser.
+
+0:20:19.279,0:20:21.789
+Let's show you a little bit more advanced example.
+
+0:20:22.379,0:20:24.149
+This is a first-person, uh, shooter--
+
+0:20:24.259,0:20:24.880
+I mean, gifter.
+
+0:20:25.659,0:20:27.059
+We did this on Mother's Day.
+
+0:20:27.059,0:20:28.519
+And we thought first-person shooter
+
+0:20:28.519,0:20:30.829
+was not politically correct so we changed his--
+
+0:20:30.829,0:20:31.269
+the weapon.
+
+0:20:31.599,0:20:32.919
+I guess he runs around giving gifts.
+
+0:20:32.919,0:20:35.179
+Uh, but once again, the magic here,
+
+0:20:35.879,0:20:36.749
+look at the JavaScript.
+
+0:20:37.759,0:20:40.649
+It's the use of the canvas tag and nothing more
+
+0:20:40.649,0:20:42.379
+than--than JavaScript.
+
+0:20:42.909,0:20:44.449
+And, you know, this is-- this is amazing.
+
+0:20:44.449,0:20:45.949
+That kind of demo half a decade ago
+
+0:20:46.059,0:20:48.529
+or a decade ago was amazing on the PC.
+
+0:20:48.529,0:20:49.949
+Now you can do that within the browser.
+
+0:20:50.339,0:20:51.759
+This next example is Bespin.
+
+0:20:51.949,0:20:53.869
+It's a development tool from Mozilla Labs.
+
+0:20:54.069,0:20:56.229
+It's an IDE that allows you to build web apps.
+
+0:20:56.229,0:20:57.749
+And it's, uh, it's a fascinating tool.
+
+0:20:58.019,0:20:59.419
+What's interesting about the IDE
+
+0:20:59.419,0:21:00.919
+is that it feels like a native app.
+
+0:21:01.759,0:21:03.889
+It's not a native app. This is in the browser.
+
+0:21:04.339,0:21:07.189
+And the use of canvas tags to do pixel-level control
+
+0:21:07.499,0:21:11.089
+gives this Bespin IDE tool a level of richness
+
+0:21:11.589,0:21:12.969
+and a native feel
+
+0:21:12.969,0:21:14.729
+that I don't think you're used to in the browser.
+
+0:21:15.009,0:21:16.429
+Finally, let me show you another example.
+
+0:21:16.429,0:21:17.399
+This is an internal tool.
+
+0:21:17.749,0:21:19.649
+We've never demonstrated this publicly.
+
+0:21:19.759,0:21:20.459
+We've never shown this.
+
+0:21:20.599,0:21:23.549
+It's a tool we use at Google to do profiling,
+
+0:21:23.939,0:21:25.889
+um, uh, uh, characteristics,
+
+0:21:26.009,0:21:27.369
+um, and so we can tweak our apps
+
+0:21:27.369,0:21:29.019
+and make them faster and better.
+
+0:21:29.019,0:21:30.749
+So we can switch to, uh, machine two.
+
+0:21:32.979,0:21:33.989
+And what Matt's going to do is this is--
+
+0:21:34.299,0:21:35.289
+this is running in Chrome.
+
+0:21:35.629,0:21:36.879
+He's going to click on the tab.
+
+0:21:36.959,0:21:38.939
+And he--he turned on this profiling tool
+
+0:21:38.939,0:21:40.219
+that you see him moving to the right.
+
+0:21:40.429,0:21:42.009
+Now he's going to open an article
+
+0:21:42.009,0:21:42.819
+in The New York Times.
+
+0:21:42.819,0:21:48.179
+Yeah, I don't think you clicked on that article.
+
+0:21:48.219,0:21:48.539
+There we go.
+
+0:21:48.969,0:21:51.259
+Now, as he, uh, goes to that article,
+
+0:21:51.489,0:21:53.389
+what will happen is that profiling tool
+
+0:21:53.389,0:21:54.589
+will start to graph,
+
+0:21:54.589,0:21:57.729
+uh, the--the performance characteristics
+
+0:21:57.729,0:21:59.959
+of--of that particular operation.
+
+0:21:59.959,0:22:02.229
+Note how he can zoom in to that profiling tool.
+
+0:22:02.399,0:22:04.169
+Those spikes represent time
+
+0:22:04.599,0:22:06.569
+or things that are slowing down the app.
+
+0:22:06.569,0:22:09.159
+And as he moves up and down, he can see the various events.
+
+0:22:09.429,0:22:10.429
+Matt, can you click-- there we go.
+
+0:22:10.599,0:22:12.089
+So he opened up a script tag.
+
+0:22:12.389,0:22:13.649
+You can see the pie chart there
+
+0:22:13.649,0:22:15.359
+that shows what percent of the time
+
+0:22:15.359,0:22:16.739
+was on the JavaScript compile,
+
+0:22:16.869,0:22:18.829
+what percent was on parsing the HTML
+
+0:22:18.829,0:22:19.419
+and so forth.
+
+0:22:19.949,0:22:21.059
+So the tool is interesting.
+
+0:22:22.099,0:22:24.049
+But would you believe that tool is completely built
+
+0:22:25.069,0:22:26.439
+that's just the use of a canvas tag
+
+0:22:26.509,0:22:28.099
+to produce this level of high fidelity?
+
+0:22:28.649,0:22:30.089
+It's an example of the kind of apps
+
+0:22:30.139,0:22:31.969
+that we as a community can build
+
+0:22:32.629,0:22:35.099
+once we have pixel-level control on the screen.
+
+0:22:35.799,0:22:39.020
+Let's go back to the slides.
+
+0:22:39.019,0:22:40.499
+Course, one of the advantages of using,
+
+0:22:40.659,0:22:41.969
+uh, something like canvas
+
+0:22:42.159,0:22:44.829
+is that you as the developer get to take advantage
+
+0:22:45.389,0:22:47.239
+of performance improvements in the browser.
+
+0:22:47.779,0:22:49.849
+So as JavaScript continues to get faster,
+
+0:22:50.189,0:22:51.439
+you get to ride that rocket
+
+0:22:51.909,0:22:53.119
+and automatically benefit from that.
+
+0:22:55.159,0:22:56.389
+Course, we've shown you some examples
+
+0:22:56.709,0:23:02.459
+of canvas to produce
+
+0:23:02.459,0:23:03.479
+We think it might be.
+
+0:23:03.579,0:23:06.039
+In fact, I'd like to invite up Matt Papakipos
+
+0:23:06.039,0:23:06.829
+up to the stage
+
+0:23:06.829,0:23:11.149
+uh, and some emerging standards
+
+0:23:11.239,0:23:13.199
+that we think will surprise you.
+
+0:23:13.199,0:23:13.699
+Matt.
+
+0:23:13.699,0:23:17.659
+Papakipos: I got to go, right? Gundrota: We've lost Matt.
+
+0:23:17.939,0:23:21.339
+Aha! There he is. Matt, please.
+
+0:23:21.339,0:23:22.389
+Papakipos: Thank you, Vic.
+
+0:23:22.389,0:23:23.679
+[applause]
+
+0:23:23.679,0:23:25.969
+So I'm Matt--Matt Papakipos.
+
+0:23:26.219,0:23:27.839
+I run, uh, one of the-- one of the efforts
+
+0:23:27.839,0:23:29.059
+in the Chrome team at Google.
+
+0:23:29.059,0:23:31.500
+Um, we are very excited about the prospects
+
+0:23:32.639,0:23:33.179
+inside the web browser.
+
+0:23:33.179,0:23:34.099
+And we'd like to share with you,
+
+0:23:34.279,0:23:35.859
+uh, what we've been working on today.
+
+0:23:37.999,0:23:39.119
+Over the last ten years,
+
+0:23:39.119,0:23:39.869
+we've seen an explosion
+
+0:23:40.549,0:23:41.759
+that real users use every day.
+
+0:23:42.479,0:23:45.509
+Everything from video games to engineering applications
+
+0:23:45.659,0:23:47.479
+to data visualizations like Google Earth.
+
+0:23:49.749,0:23:51.519
+What's been missing thus far is the ability
+
+0:23:52.989,0:23:52.989
+applications
+
+0:23:53.249,0:23:54.279
+in the browser itself.
+
+0:23:55.179,0:24:02.609
+So let me show you what we've been working on.
+
+0:24:02.609,0:24:03.239
+developed at Google,
+
+0:24:03.419,0:24:05.539
+that we open sourced a little over a month ago today.
+
+0:24:06.309,0:24:07.549
+You can find this on code.google.com.
+
+0:24:07.549,0:24:10.399
+So what are we looking at?
+
+0:24:10.399,0:24:11.629
+We're looking at rich,
+
+0:24:13.759,0:24:14.309
+running in the browser.
+
+0:24:15.249,0:24:16.549
+It's a JavaScript API
+
+0:24:16.549,0:24:19.069
+that a conventional web application can use
+
+0:24:20.759,0:24:20.759
+functionality
+
+0:24:20.759,0:24:22.019
+whenever you want in your app.
+
+0:24:22.679,0:24:24.419
+As you can see, we're running it here in Chrome.
+
+0:24:24.519,0:24:27.809
+But it also runs in Firefox and IE and Safari and Opera.
+
+0:24:30.069,0:24:31.419
+This, uh, the application we're running
+
+0:24:31.419,0:24:32.679
+is what we call our beach demo.
+
+0:24:32.939,0:24:35.239
+It's one of the many code samples we developed
+
+0:24:36.359,0:24:37.459
+that the technology worked
+
+0:24:37.459,0:24:38.139
+and performed.
+
+0:24:38.649,0:24:41.129
+Uh, and it's open sourced on code.google.com.
+
+0:24:41.129,0:24:43.599
+So the--the full source code of the JavaScript
+
+0:24:43.979,0:24:47.000
+and all the art assets are fully open sourced.
+
+0:24:46.999,0:24:49.039
+Papakipos: So you've probably seen
+
+0:24:49.039,0:24:51.279
+graphics like this before in games
+
+0:24:51.279,0:24:52.389
+or in other applications.
+
+0:24:52.549,0:24:53.880
+What you haven't seen is in--
+
+0:24:54.089,0:24:57.199
+seen this running intrinsically in the web browser.
+
+0:25:01.439,0:25:03.439
+So the technology clearly has great potential.
+
+0:25:03.659,0:25:05.839
+Let me walk you through some of the interesting aspects
+
+0:25:05.839,0:25:08.839
+of--of this demo, uh, to show you more about it.
+
+0:25:09.489,0:25:11.679
+So first off, notice the visual quality here.
+
+0:25:11.949,0:25:14.379
+We have very high resolution texture maps
+
+0:25:14.379,0:25:16.879
+on the surfaces of the rocks, of the trees,
+
+0:25:16.879,0:25:19.249
+of the bottom, uh, of the--the sea floor
+
+0:25:19.429,0:25:21.929
+under the water, and of the sky itself.
+
+0:25:22.179,0:25:24.109
+We also have what are called bump maps.
+
+0:25:24.109,0:25:26.469
+So we have, um, detailed textures
+
+0:25:26.469,0:25:29.269
+on the surfaces that describe the local surface texture--
+
+0:25:29.329,0:25:30.829
+the physical shape of the surface--
+
+0:25:31.079,0:25:33.029
+which gives us very realistic lighting
+
+0:25:33.029,0:25:34.679
+as the light bounces off the scene
+
+0:25:34.899,0:25:36.169
+and--and, uh, hits the viewer.
+
+0:25:36.749,0:25:38.359
+We're also doing some very advanced
+
+0:25:38.359,0:25:40.589
+shading techniques, uh, on the water.
+
+0:25:40.699,0:25:42.079
+So you can see that we've implemented
+
+0:25:42.079,0:25:43.529
+reflection and refraction.
+
+0:25:43.529,0:25:45.509
+And these are coded right in the source code
+
+0:25:45.509,0:25:48.239
+of the application so the application can control
+
+0:25:48.619,0:25:50.129
+the visual appearance of the water
+
+0:25:50.269,0:25:55.959
+or other attributes of the scene.
+
+0:25:55.959,0:25:57.119
+The next thing that we focused on
+
+0:25:57.119,0:25:57.909
+was performance.
+
+0:25:58.379,0:25:59.639
+So you'll notice we're running
+
+0:26:01.159,0:26:03.709
+It gives it this very smooth, liquid feel
+
+0:26:03.829,0:26:05.809
+like you're really there, you're in the scene.
+
+0:26:05.809,0:26:08.179
+Um, the same, uh, level of performance
+
+0:26:08.179,0:26:09.239
+that you would expect to see
+
+0:26:09.239,0:26:11.989
+from, uh, from a native application
+
+0:26:11.989,0:26:13.219
+running on the operating system.
+
+0:26:13.299,0:26:14.629
+And here we're seeing it in the browser.
+
+0:26:16.059,0:26:17.000
+The other interesting aspect
+
+0:26:16.999,0:26:18.349
+is we're doing all of the graphics
+
+0:26:18.349,0:26:21.119
+on the graphics processor, on the GPU.
+
+0:26:21.119,0:26:23.809
+So the CPU load as we run this application
+
+0:26:23.809,0:26:27.509
+So the CPU is still there for you to use
+
+0:26:27.509,0:26:29.479
+in your JavaScript code and by the browser
+
+0:26:29.909,0:26:31.449
+to implement your application logic,
+
+0:26:31.539,0:26:32.709
+which is extremely important.
+
+0:26:32.709,0:26:36.260
+Uh, and then the last point about the demo
+
+0:26:36.259,0:26:38.119
+that's interesting is it's all JavaScript code.
+
+0:26:38.699,0:26:40.499
+So you have all the nice attributes
+
+0:26:40.499,0:26:42.109
+of JavaScript for web development.
+
+0:26:42.449,0:26:44.159
+You can edit the code right on your machine,
+
+0:26:44.159,0:26:46.169
+test it on your machine, deploy it easily.
+
+0:26:46.679,0:26:48.369
+Uh, no complicated build process.
+
+0:26:48.509,0:26:49.549
+It's just JavaScript.
+
+0:26:51.109,0:26:52.589
+So this is very cool technology.
+
+0:26:52.979,0:26:54.339
+But we still have a long way to go
+
+0:26:54.339,0:26:55.769
+until we achieve our dream.
+
+0:26:56.019,0:26:57.359
+Where we want to get to is the point
+
+0:26:57.359,0:26:59.979
+where you type a URL in the address bar,
+
+0:26:59.979,0:27:02.609
+uh, go to a web site, and play a rich,
+
+0:27:05.159,0:27:05.159
+application.
+
+0:27:06.039,0:27:07.189
+In order for this to happen,
+
+0:27:07.549,0:27:10.349
+we need this capability to be built into the browsers
+
+0:27:10.439,0:27:11.009
+by default.
+
+0:27:11.109,0:27:12.849
+So we need a common set of APIs
+
+0:27:12.849,0:27:15.419
+that are implemented widely by all the dominant--
+
+0:27:15.449,0:27:17.229
+all the-- all the browser vendors
+
+0:27:17.529,0:27:20.009
+so that your browser of choice does this intrinsically.
+
+0:27:20.179,0:27:22.079
+It becomes a feature of the browser itself.
+
+0:27:22.689,0:27:24.259
+The key here is standardization.
+
+0:27:24.719,0:27:26.869
+So we're--we at Google are working very closely
+
+0:27:26.869,0:27:29.489
+with Apple, Mozilla, Opera, and others
+
+0:27:29.489,0:27:31.689
+in the context of the standards organizations,
+
+0:27:32.269,0:27:33.319
+to make this a reality.
+
+0:27:33.659,0:27:34.819
+So we still have a ways to go.
+
+0:27:35.009,0:27:37.209
+But we've begun the process of standardization
+
+0:27:38.389,0:27:39.109
+will work on the web.
+
+0:27:39.279,0:27:41.189
+We invite you to join that discussion.
+
+0:27:43.089,0:27:44.750
+The other thing is we have to put it
+
+0:27:44.749,0:27:45.659
+in the browser itself.
+
+0:27:45.659,0:27:47.099
+And so we're hard at work at Google
+
+0:27:49.309,0:27:49.849
+capabilities like these
+
+0:27:49.999,0:27:51.549
+into the Chromium code base
+
+0:27:51.859,0:27:54.279
+so that Chrome has the ability to do this
+
+0:27:54.279,0:27:56.119
+without the need of any plug-in whatsoever.
+
+0:27:56.529,0:27:58.329
+So we're very excited about the directions
+
+0:27:58.329,0:27:59.239
+these are--this is going.
+
+0:27:59.239,0:28:02.369
+So this is all very cool. It looks neat.
+
+0:28:02.449,0:28:03.119
+It's very fun.
+
+0:28:03.119,0:28:05.199
+It's nice to see the web gain these capabilities.
+
+0:28:05.629,0:28:06.889
+Uh, but it's still just a demo.
+
+0:28:07.139,0:28:08.589
+We're still in the very early phase.
+
+0:28:08.589,0:28:09.629
+This is a plug-in today.
+
+0:28:10.289,0:28:11.789
+We're very excited about the future.
+
+0:28:12.379,0:28:14.459
+The other key to the puzzle here is applications.
+
+0:28:14.459,0:28:17.309
+Uh, we want to see real world applications emerge
+
+0:28:17.309,0:28:20.279
+where you and people like you make applications
+
+0:28:20.279,0:28:22.559
+in web sites that use these capabilities
+
+0:28:22.559,0:28:23.589
+to their full advantage.
+
+0:28:23.709,0:28:24.869
+What is the next killer
+
+0:28:24.869,0:28:27.339
+on your web site?
+
+0:28:27.469,0:28:29.779
+Is it a game? Is it data visualization?
+
+0:28:29.869,0:28:31.339
+Is it an engineering application?
+
+0:28:31.399,0:28:32.139
+Is it something new?
+
+0:28:32.919,0:28:34.709
+So we're very excited about the prospects
+
+0:28:34.709,0:28:35.189
+for the future.
+
+0:28:35.349,0:28:37.919
+We hope you will check it out and, uh, join us
+
+0:28:38.129,0:28:39.829
+in, uh, pushing it over the finish line.
+
+0:28:39.829,0:28:41.479
+[applause]
+
+0:28:41.479,0:28:48.599
+Gundrota: Obviously, if you'd like to learn more
+
+0:28:48.599,0:28:49.769
+about what Matt just showed you,
+
+0:28:49.829,0:28:52.209
+there's the URL and you can get all the details
+
+0:28:52.769,0:28:55.319
+in addition to the sessions that we're having on it.
+
+0:28:55.319,0:28:57.119
+Going back to the canvas capability,
+
+0:28:57.289,0:28:59.909
+remember, uh, developers are not going to use canvas
+
+0:28:59.979,0:29:01.349
+if it isn't broadly available.
+
+0:29:01.439,0:29:02.849
+And we're very happy to report
+
+0:29:02.949,0:29:05.789
+that across all modern, open source browsers,
+
+0:29:06.149,0:29:08.049
+uh, Chrome, Firefox, Safari,
+
+0:29:08.829,0:29:09.979
+we have this capability.
+
+0:29:10.529,0:29:11.509
+I hear some of the laughter.
+
+0:29:11.509,0:29:13.549
+You must be wondering why I didn't mention
+
+0:29:13.679,0:29:14.459
+Internet Explorer.
+
+0:29:15.079,0:29:16.419
+Uh, let me talk about that briefly.
+
+0:29:17.249,0:29:19.389
+Obviously, Microsoft,
+
+0:29:19.529,0:29:21.629
+with its very large market share,
+
+0:29:21.909,0:29:24.979
+could do much to move the web forward.
+
+0:29:24.979,0:29:27.659
+And so you can imagine how excited we were
+
+0:29:28.219,0:29:30.139
+to hear Microsoft's public statements
+
+0:29:30.189,0:29:31.209
+about their commitment
+
+0:29:33.539,0:29:35.649
+And, uh, that very, very much excites us.
+
+0:29:35.819,0:29:40.029
+And we eagerly await to see, uh, evidence of that.
+
+0:29:40.029,0:29:42.079
+[audience laughs]
+
+0:29:42.079,0:29:43.949
+That's all I'm going to mention about IE today.
+
+0:29:44.199,0:29:45.739
+Now that I've danced past that elephant,
+
+0:29:45.739,0:29:46.319
+let's move on.
+
+0:29:46.319,0:29:51.289
+Uh, let's talk about video.
+
+0:29:51.289,0:29:52.489
+Just like I asked you with canvas,
+
+0:29:52.629,0:29:53.829
+let me ask you with video.
+
+0:29:53.829,0:29:55.899
+How do you play video in a browser today?
+
+0:29:56.779,0:29:58.959
+You know, as a developer, you really have a tough job.
+
+0:29:59.159,0:30:01.419
+You got to ensure that your users
+
+0:30:01.509,0:30:03.779
+have the correct plug-in installed, uh,
+
+0:30:03.919,0:30:04.549
+in their browser.
+
+0:30:05.089,0:30:06.799
+In addition to having a plug-in stalled,
+
+0:30:06.839,0:30:09.039
+you got to ask yourself "does that plug-in support
+
+0:30:09.089,0:30:10.849
+"the appropriate codec that's going to--
+
+0:30:11.229,0:30:12.369
+that that video is encoded in?"
+
+0:30:12.959,0:30:15.419
+And there's some variables that are outside of your control
+
+0:30:15.519,0:30:16.119
+as a developer.
+
+0:30:16.639,0:30:19.579
+So video is hard.
+
+0:30:19.579,0:30:21.279
+You might ask yourself if you were responsible
+
+0:30:21.279,0:30:24.409
+for moving the web forward, what would Occam do?
+
+0:30:24.409,0:30:27.529
+Well, how about a video tag as simple as image.
+
+0:30:27.529,0:30:28.750
+video gives you.
+
+0:30:28.749,0:30:32.459
+A simple tag where you point it to the source
+
+0:30:32.459,0:30:34.339
+and the browser handles the rest.
+
+0:30:34.869,0:30:35.979
+Let me show you some examples.
+
+0:30:37.059,0:30:37.929
+Let's go to machine one.
+
+0:30:37.929,0:30:40.279
+man: Billy's been trying to customize his web browser.
+
+0:30:40.279,0:30:42.959
+man: This'll make it go faster.
+
+0:30:42.959,0:30:46.789
+Gundrota: Okay, that's-- that's one way
+
+0:30:46.789,0:30:48.169
+to make the web go faster.
+
+0:30:48.759,0:30:51.299
+Uh, it's a--it's a video playing in the--in the browser.
+
+0:30:51.449,0:30:53.849
+No big deal until you look at the source code.
+
+0:30:54.769,0:30:56.049
+And you look at the source code here
+
+0:30:56.049,0:30:57.679
+and you can see use of the video tag
+
+0:30:58.239,0:30:59.089
+to play that video
+
+0:30:59.269,0:31:01.939
+and nothing more than JavaScript to play and stop it.
+
+0:31:02.039,0:31:04.289
+Of course, because it's integrated
+
+0:31:04.429,0:31:06.799
+right within the browser-- let's go back to that demo--
+
+0:31:07.439,0:31:08.599
+one of the benefits is, like, fo--
+
+0:31:08.599,0:31:09.599
+I can start a rotate.
+
+0:31:09.719,0:31:12.509
+This is just a simple JavaScript CSS transform.
+
+0:31:12.509,0:31:14.169
+And look, I'm rotating the video.
+
+0:31:14.169,0:31:15.479
+I can even play it if I wanted to.
+
+0:31:15.479,0:31:18.019
+But it gives you a sense of--of the advantage
+
+0:31:18.259,0:31:20.020
+of using something that's intrinsic
+
+0:31:20.109,0:31:21.389
+to that web programming model.
+
+0:31:21.659,0:31:24.079
+DOM manipulation just like any other element
+
+0:31:24.369,0:31:25.799
+with the video tag.
+
+0:31:25.809,0:31:27.249
+Let's go on to the next demonstration.
+
+0:31:28.329,0:31:30.049
+This is an experiment.
+
+0:31:30.299,0:31:32.209
+We are not announcing today that YouTube
+
+0:31:32.209,0:31:33.189
+is going to be built this way.
+
+0:31:33.559,0:31:35.919
+This is a demo that we just wanted to show you
+
+0:31:36.299,0:31:37.749
+to get the creative juices going.
+
+0:31:38.289,0:31:40.189
+Uh, obviously, YouTube is a sight
+
+0:31:40.419,0:31:41.799
+that you no doubt know and love.
+
+0:31:42.339,0:31:43.669
+Uh, this looks like YouTube.
+
+0:31:43.709,0:31:46.239
+In fact, there's a-- one change
+
+0:31:46.599,0:31:47.489
+that's pretty significant,
+
+0:31:47.899,0:31:49.529
+which is if you actually look at the source here,
+
+0:31:49.689,0:31:52.009
+it's implemented using the video tag.
+
+0:31:52.009,0:31:54.099
+And because it's implemented using the video tag,
+
+0:31:54.359,0:31:56.179
+those videos play and they're intrinsic
+
+0:31:56.239,0:31:58.139
+to that, uh, HTML page.
+
+0:31:58.269,0:32:00.119
+You see as he mouses over the thumbnails,
+
+0:32:00.119,0:32:00.709
+they just play.
+
+0:32:00.889,0:32:02.469
+There are--those are not
+
+0:32:04.279,0:32:06.159
+I'm not marshalling across boundaries.
+
+0:32:06.269,0:32:09.049
+This is JavaScript, the video tag, and that's it.
+
+0:32:09.049,0:32:10.889
+And it kind of gives you an example
+
+0:32:10.889,0:32:14.279
+of where we might be going, uh, in the future.
+
+0:32:14.279,0:32:15.809
+[applause]
+
+0:32:15.809,0:32:21.609
+All right, let's--let's go back to the slides.
+
+0:32:25.009,0:32:29.309
+Once again, very happy to say, across modern browsers,
+
+0:32:29.309,0:32:31.389
+broad support has been implemented
+
+0:32:31.679,0:32:33.669
+for the video tag.
+
+0:32:33.669,0:32:35.679
+Now let's talk about geolocation.
+
+0:32:35.679,0:32:38.429
+At Google, we believe that almost all kinds of apps
+
+0:32:38.429,0:32:39.339
+could be better
+
+0:32:39.529,0:32:41.359
+if they had access to geolocation.
+
+0:32:41.499,0:32:42.799
+Everything from business software
+
+0:32:42.799,0:32:43.639
+to social software.
+
+0:32:44.219,0:32:47.029
+Think about your CRM software if you're a business.
+
+0:32:47.029,0:32:49.319
+When your sales agent lands in Denver,
+
+0:32:49.969,0:32:52.389
+why doesn't the CRM software recognize his location
+
+0:32:52.419,0:32:54.879
+and show him or her the current customers
+
+0:32:55.139,0:32:56.259
+based on proximity?
+
+0:32:56.919,0:32:58.159
+In social software,
+
+0:32:58.159,0:33:00.499
+why isn't the photo automatically geotagged?
+
+0:33:00.569,0:33:02.759
+Why aren't my updates, my tweets,
+
+0:33:03.009,0:33:05.469
+uh, automatically tagged with location?
+
+0:33:05.789,0:33:08.459
+Well, the reality is is that accessing location
+
+0:33:08.609,0:33:10.489
+and using it is hard today.
+
+0:33:11.479,0:33:13.139
+You might think, like, what about GPS?
+
+0:33:13.619,0:33:15.419
+GPS takes a long time to get a fix.
+
+0:33:15.819,0:33:17.839
+GPS may often not work indoors.
+
+0:33:18.379,0:33:19.559
+What about IP-- IP-based location?
+
+0:33:19.559,0:33:22.509
+Well, it's too fuzzy. It's not granular enough.
+
+0:33:22.999,0:33:25.009
+I mean, heaven forbid your users are AOL users
+
+0:33:25.009,0:33:27.349
+where the IP has gone through a proxy in Virginia
+
+0:33:27.349,0:33:29.159
+and all the location reports is Virginia.
+
+0:33:29.789,0:33:33.219
+And so it hasn't been possible to get good quality data sources
+
+0:33:33.879,0:33:35.009
+until the last year.
+
+0:33:35.849,0:33:37.139
+Companies like Skyhook--
+
+0:33:37.639,0:33:40.819
+companies like Google and others have created
+
+0:33:40.869,0:33:45.799
+large databases of Wi-Fi data and cell ID data
+
+0:33:45.799,0:33:48.729
+and really have mapped the entire world with coverage.
+
+0:33:50.239,0:33:52.959
+These sources combined with GPS and other sources
+
+0:33:53.049,0:33:57.129
+have now given us the ability to accurately triangulate
+
+0:33:57.329,0:33:59.339
+or pinpoint an individual's location
+
+0:33:59.449,0:34:00.939
+with their consent.
+
+0:34:02.449,0:34:03.919
+Of course, you might be wondering,
+
+0:34:03.919,0:34:05.339
+well, that's good-- that's great, Vic,
+
+0:34:05.449,0:34:07.279
+but how do you get it in the browser?
+
+0:34:07.809,0:34:09.809
+Well, guess what, the last year,
+
+0:34:09.810,0:34:11.580
+we have seen tremendous progress
+
+0:34:11.790,0:34:13.119
+with standardization
+
+0:34:16.050,0:34:17.580
+which is implemented in these browsers.
+
+0:34:17.750,0:34:20.020
+So you as a developer can take advantage
+
+0:34:20.209,0:34:21.419
+of these capabilities.
+
+0:34:23.899,0:34:26.210
+To demonstrate these and kind of talk about them,
+
+0:34:26.330,0:34:27.820
+I'd like to invite up Jay Sullivan,
+
+0:34:27.850,0:34:29.030
+Vice President for Mozilla.
+
+0:34:29.239,0:34:30.330
+Jay, welcome.
+
+0:34:30.330,0:34:32.489
+Sullivan: Thanks, Vic.
+
+0:34:32.489,0:34:35.369
+Good to see you.
+
+0:34:35.370,0:34:36.810
+Gundrota: Jay...
+
+0:34:36.810,0:34:39.420
+just one moment before you go into your, uh, presentation
+
+0:34:39.419,0:34:39.850
+and demo here.
+
+0:34:39.899,0:34:42.280
+I did want to take a moment and just say thank you
+
+0:34:42.280,0:34:43.719
+to the Mozilla community.
+
+0:34:43.719,0:34:45.260
+Uh, you know, to a large extent,
+
+0:34:45.300,0:34:47.310
+we have the luxury this morning of talking
+
+0:34:47.310,0:34:48.260
+about modern browsers,
+
+0:34:48.260,0:34:49.790
+Gundrota:
+
+0:34:49.790,0:34:50.340
+about evolution.
+
+0:34:50.860,0:34:51.660
+But in reality,
+
+0:34:52.040,0:34:54.010
+I'm not sure we would've had this luxury
+
+0:34:54.130,0:34:56.570
+had it not been for Mozilla's and the community's
+
+0:34:56.570,0:34:58.330
+phenomenal work over ten years.
+
+0:34:59.330,0:35:01.209
+There was a time when people wondered,
+
+0:35:01.640,0:35:04.590
+uh, if the--that the odds were against you guys
+
+0:35:04.590,0:35:06.570
+with, uh, competitors that had the benefit
+
+0:35:06.630,0:35:07.639
+of preinstallation.
+
+0:35:08.130,0:35:10.719
+But you guys really proved-- you proved--
+
+0:35:11.179,0:35:13.770
+that you could build a community of hundreds of millions
+
+0:35:13.860,0:35:16.609
+of loyal consumers who chose Firefox
+
+0:35:16.610,0:35:17.979
+and you could build a better web.
+
+0:35:18.239,0:35:20.630
+So for all that you did, for what you're doing now,
+
+0:35:20.630,0:35:23.960
+and for what you will do, thank you.
+
+0:35:23.959,0:35:27.300
+Sullivan: Thanks. Thanks, Vic.
+
+0:35:27.300,0:35:29.810
+Gundrota: Thank you.
+
+0:35:29.810,0:35:33.040
+Sullivan: Well, I want to thank Vic
+
+0:35:33.040,0:35:33.900
+for that introduction.
+
+0:35:34.330,0:35:36.070
+Um, not for myself,
+
+0:35:36.070,0:35:38.140
+but on behalf of the whole Mozilla community
+
+0:35:38.140,0:35:39.729
+around the world that's made that possible.
+
+0:35:40.140,0:35:43.719
+Um, it's an amazing, vibrant, crazy organization
+
+0:35:43.719,0:35:44.979
+that it's fun to be a part of.
+
+0:35:45.739,0:35:48.550
+Um, I want to do three things today, um, real briefly.
+
+0:35:48.550,0:35:50.390
+I want to explain why Mozilla's here at I/O.
+
+0:35:51.429,0:35:52.800
+I want to talk about what's coming
+
+0:35:52.800,0:35:54.320
+in Firefox for developers,
+
+0:35:54.790,0:35:55.979
+and I want to give you a brief demo
+
+0:35:55.979,0:35:57.959
+of geolocation support in the browser.
+
+0:35:57.959,0:36:02.290
+So...
+
+0:36:02.290,0:36:03.839
+browser competition is heating up again.
+
+0:36:03.840,0:36:05.289
+That's--that's no secret to anybody here.
+
+0:36:05.290,0:36:07.409
+Um, and we think this is very important.
+
+0:36:07.510,0:36:11.119
+As users live more and more of their lives online,
+
+0:36:11.640,0:36:13.300
+it's very important that we continue
+
+0:36:13.300,0:36:17.090
+to improve the user experience, to make the browser faster,
+
+0:36:17.489,0:36:20.660
+and to protect user security and privacy online.
+
+0:36:21.050,0:36:23.030
+And we see what happens
+
+0:36:23.169,0:36:25.469
+when there isn't any competition in the marketplace.
+
+0:36:25.880,0:36:28.010
+Things stagnate. There aren't new features.
+
+0:36:28.330,0:36:29.510
+The web does not get better.
+
+0:36:29.669,0:36:31.909
+Now, since we entered the market with Firefox
+
+0:36:32.409,0:36:34.300
+and other browsers have followed--
+
+0:36:34.330,0:36:36.250
+these modern browsers that we're talking about today--
+
+0:36:36.810,0:36:38.409
+that's improved the user experience.
+
+0:36:38.449,0:36:41.140
+So it's very important to have that vibrant competition
+
+0:36:41.140,0:36:41.860
+in the marketplace.
+
+0:36:41.860,0:36:42.899
+And we're glad that these other--
+
+0:36:43.570,0:36:44.840
+other folks are producing browsers.
+
+0:36:46.010,0:36:49.020
+Now, it's also important to note that each of our organizations
+
+0:36:49.100,0:36:52.219
+have very different missions and motivations
+
+0:36:52.640,0:36:54.189
+for why we work on web browsers.
+
+0:36:54.689,0:36:56.489
+But today, we put all that aside
+
+0:36:56.659,0:36:58.719
+to focus on what we share in common.
+
+0:36:59.520,0:37:00.969
+So we share, I think,
+
+0:37:01.040,0:37:02.770
+three important things in common.
+
+0:37:03.219,0:37:05.969
+One, we believe strongly
+
+0:37:06.110,0:37:08.750
+that the web is the development platform
+
+0:37:09.100,0:37:09.770
+for our time.
+
+0:37:10.870,0:37:12.580
+More than any single operating system,
+
+0:37:12.580,0:37:14.470
+the web is going to drive the innovation
+
+0:37:14.469,0:37:17.330
+and the new services that are going to do amazing things
+
+0:37:17.399,0:37:18.640
+for people all around the world.
+
+0:37:19.699,0:37:23.070
+We also share a belief that we need to keep bringing
+
+0:37:23.159,0:37:25.330
+new capabilities to you as developers
+
+0:37:25.330,0:37:26.600
+so you can create these things.
+
+0:37:26.739,0:37:28.500
+And that means that we need to move quickly.
+
+0:37:29.459,0:37:33.170
+But also we need to make sure that we don't fragment the web.
+
+0:37:33.169,0:37:34.320
+There will be no worse outcome
+
+0:37:34.439,0:37:36.159
+than through this renewed competition
+
+0:37:36.159,0:37:38.760
+to have a fragmentation of the web platform.
+
+0:37:38.870,0:37:41.090
+You should be able to focus on--on building your house
+
+0:37:41.090,0:37:41.660
+and not worrying
+
+0:37:41.659,0:37:43.149
+about the cross-browser plumbing.
+
+0:37:43.250,0:37:44.919
+So we need to work together
+
+0:37:44.919,0:37:47.699
+to--to keep that standards held together.
+
+0:37:47.870,0:37:49.630
+And that's a challenge. And it's--it's the web.
+
+0:37:49.630,0:37:50.479
+So it's messy, right?
+
+0:37:50.600,0:37:53.540
+So we don't always agree on what the perfect API is
+
+0:37:53.540,0:37:55.540
+to expose a new piece of functionality.
+
+0:37:55.679,0:37:57.510
+We don't even always agree on the process
+
+0:37:57.820,0:37:59.619
+to run some experiments and then decide
+
+0:37:59.620,0:38:00.919
+which the best API should be.
+
+0:38:01.399,0:38:04.629
+But I strongly believe that a-a very, very good API
+
+0:38:04.630,0:38:06.390
+for something that's in five browsers
+
+0:38:06.780,0:38:09.580
+is better than a perfect API that's in no browsers
+
+0:38:09.699,0:38:10.449
+or one browser.
+
+0:38:10.989,0:38:13.099
+So we need to work hard together with Google
+
+0:38:13.100,0:38:15.359
+and the other browser vendors to hold that center.
+
+0:38:15.479,0:38:17.300
+And that's very important.
+
+0:38:17.300,0:38:19.690
+I want to talk a little bit about what's coming
+
+0:38:21.340,0:38:21.939
+for developers.
+
+0:38:21.939,0:38:26.159
+is the most successful browser
+
+0:38:26.399,0:38:27.459
+that we've ever built.
+
+0:38:30.340,0:38:31.040
+users worldwide.
+
+0:38:31.169,0:38:33.289
+We just recently had our one billionth
+
+0:38:33.659,0:38:34.529
+add-on download.
+
+0:38:34.530,0:38:37.389
+phenomenally successful.
+
+0:38:37.390,0:38:39.690
+But--but we believe
+
+0:38:41.140,0:38:42.020
+We believe it's much better.
+
+0:38:42.540,0:38:44.020
+Uh, JavaScript performance,
+
+0:38:44.020,0:38:45.520
+which is the underlying piece
+
+0:38:45.610,0:38:47.729
+that dr--that--that enables all of this innovation
+
+0:38:47.870,0:38:48.780
+in these apps that we're--
+
+0:38:48.780,0:38:50.070
+that we're working hard to build--
+
+0:38:51.070,0:38:53.060
+JavaScript performance is three times faster
+
+0:38:54.600,0:38:56.810
+And ten times faster
+
+0:38:56.810,0:39:00.470
+So we've been working very hard to increase the speed
+
+0:39:00.500,0:39:01.750
+of JavaScript execution.
+
+0:39:01.750,0:39:05.339
+Um, you heard a little bit about how canvas works
+
+0:39:06.090,0:39:07.040
+and how video works.
+
+0:39:07.409,0:39:09.260
+And what I think is important here
+
+0:39:09.260,0:39:10.489
+is getting things like video
+
+0:39:10.830,0:39:12.609
+out of, uh, out of plug-in prison
+
+0:39:12.760,0:39:13.969
+so that we can script them.
+
+0:39:14.270,0:39:16.850
+And when you combine things like video and canvas
+
+0:39:16.850,0:39:17.979
+as--as Vic demo'ed,
+
+0:39:18.419,0:39:20.880
+you start to see the power of being able to use things
+
+0:39:20.989,0:39:23.159
+through--through web APIs
+
+0:39:23.159,0:39:24.309
+and be able to manipulate them
+
+0:39:24.310,0:39:25.619
+and mash them up in new ways.
+
+0:39:25.620,0:39:26.820
+And that's really a common theme
+
+0:39:26.820,0:39:28.199
+for some of this new functionality
+
+0:39:28.199,0:39:29.239
+is it's the web.
+
+0:39:29.239,0:39:30.500
+You should be able to touch anything,
+
+0:39:30.630,0:39:32.240
+hack anything, and mash up anything.
+
+0:39:32.820,0:39:35.890
+Um, we're adding support for geolocation.
+
+0:39:36.040,0:39:38.469
+And I'll talk about that more in a minute.
+
+0:39:38.479,0:39:41.010
+We're also--we also have support for offline storage
+
+0:39:41.159,0:39:43.630
+so that you can begin to write apps that work better
+
+0:39:43.630,0:39:44.739
+when they're disconnected.
+
+0:39:44.739,0:39:47.820
+That's--that's very important for mobile situations
+
+0:39:47.820,0:39:48.899
+and--and other use cases.
+
+0:39:49.250,0:39:51.510
+And we're also adding support for Web Workers
+
+0:39:51.719,0:39:54.459
+so that you can write scripts that run pretty intensively
+
+0:39:54.659,0:39:56.709
+without hosing your browser, a very important feature.
+
+0:39:57.159,0:40:00.270
+And all this stuff is-- is, um, you can--
+
+0:40:00.380,0:40:02.229
+you can look at the link up there and go there
+
+0:40:02.229,0:40:03.350
+and it'll take you to a description
+
+0:40:03.350,0:40:05.349
+of how to use these new APIs
+
+0:40:05.350,0:40:06.290
+and exactly what the level
+
+0:40:09.719,0:40:10.969
+Um, I want to talk a little bit now
+
+0:40:10.969,0:40:13.260
+about geolocation support in the browser.
+
+0:40:15.439,0:40:19.239
+there's support for, um, the geolocation API.
+
+0:40:19.239,0:40:21.469
+And I'm going to give you a demo of one of the apps,
+
+0:40:21.469,0:40:27.419
+um, that's going to use this.
+
+0:40:27.419,0:40:29.050
+So be believe that there are use cases
+
+0:40:29.189,0:40:31.510
+in--in many, many, um, spheres
+
+0:40:31.709,0:40:33.350
+for geolocation support.
+
+0:40:33.669,0:40:36.910
+Um, we--we think it's going to change how maps,
+
+0:40:37.370,0:40:40.770
+local search, directions, all sorts of social networking--
+
+0:40:40.770,0:40:42.310
+anywhere where you want to tag something
+
+0:40:42.310,0:40:43.449
+with your location,
+
+0:40:43.439,0:40:44.960
+we believe it's going to change the nature
+
+0:40:44.959,0:40:46.830
+of how all of those applications work.
+
+0:40:47.159,0:40:49.439
+One particular application that's going to take advantage
+
+0:40:49.810,0:40:53.729
+of Firefox's support for geolocation is Google Maps.
+
+0:40:55.479,0:40:58.219
+So Google Maps, shortly, will be adding a new button
+
+0:40:58.409,0:41:00.989
+to the user interface called "my location."
+
+0:41:01.550,0:41:03.840
+And if I click this button, I get a prompt.
+
+0:41:04.040,0:41:06.439
+And I get request for-- if I would like to share
+
+0:41:06.439,0:41:07.890
+my location with that web site.
+
+0:41:08.469,0:41:09.570
+I'm going to go ahead and click share--
+
+0:41:09.570,0:41:10.190
+I'm going to come back to this
+
+0:41:10.189,0:41:11.250
+'cause I want to talk about this a little bit.
+
+0:41:11.250,0:41:14.559
+But I'm going to go ahead and share my location.
+
+0:41:14.560,0:41:16.909
+Couldn't be determined. Let's try that again.
+
+0:41:16.909,0:41:19.689
+Okay.
+
+0:41:19.689,0:41:22.459
+[applause]
+
+0:41:22.459,0:41:33.540
+Murphy's Law of demos.
+
+0:41:33.540,0:41:40.300
+Um, so--so I wanted to explain what's happened there.
+
+0:41:40.300,0:41:42.969
+So, um, what happened when I clicked that button
+
+0:41:43.149,0:41:45.669
+was the browser gathered up the signal strengths
+
+0:41:45.719,0:41:47.610
+of all the nearby Wi-Fi hotspots
+
+0:41:47.770,0:41:50.359
+and transformed that into a latitude and longitude.
+
+0:41:50.530,0:41:51.650
+If it was a cell phone,
+
+0:41:51.949,0:41:52.860
+I could've used Wi-Fi
+
+0:41:53.189,0:41:55.650
+or I could've used cell tower IDs
+
+0:41:55.649,0:41:57.360
+and the signal strength of those that are nearby.
+
+0:41:58.010,0:42:01.139
+Um, I could even use GPS if it's local to--to the device.
+
+0:42:01.139,0:42:03.449
+So there's a number of ways a back-end provider,
+
+0:42:03.870,0:42:05.540
+uh, can enable that functionality.
+
+0:42:05.639,0:42:08.129
+And because it's Firefox, user choice is important.
+
+0:42:08.130,0:42:09.719
+So users will be able to download
+
+0:42:10.060,0:42:11.979
+all sorts of add-ons that are going to provide
+
+0:42:11.979,0:42:13.750
+that back-end location functionality.
+
+0:42:14.030,0:42:16.479
+And web developers can enable their applications
+
+0:42:16.479,0:42:19.250
+with just a couple lines of JavaScript code.
+
+0:42:19.250,0:42:20.539
+It's dead simple to use the API.
+
+0:42:20.540,0:42:22.800
+I want to come back to one thing real briefly though,
+
+0:42:23.020,0:42:25.000
+which is--which is how a user opts in.
+
+0:42:25.000,0:42:26.909
+I think this is very important for features like this
+
+0:42:27.459,0:42:30.130
+that begin to blend services with client-side functionality.
+
+0:42:30.130,0:42:36.260
+Now, when I click the button, I get this mode list info bar.
+
+0:42:36.260,0:42:37.840
+Now, don't try to write down the URL.
+
+0:42:37.840,0:42:38.399
+It's not going to work.
+
+0:42:38.399,0:42:39.839
+It's behind some Google firewall.
+
+0:42:40.300,0:42:41.560
+Uh, don't try this at home yet.
+
+0:42:41.880,0:42:44.139
+Um, so--but I get a-- I get information
+
+0:42:44.139,0:42:47.090
+about what domain name is requesting my location.
+
+0:42:47.469,0:42:49.659
+I can click "learn more" if I want to understand
+
+0:42:49.659,0:42:50.670
+how the service works
+
+0:42:50.669,0:42:52.209
+and how the privacy policies work.
+
+0:42:53.060,0:42:55.250
+And if I just ignore this, nothing happens.
+
+0:42:55.380,0:42:57.089
+If I close it, nothing happens.
+
+0:42:57.219,0:42:58.260
+If I hit don't share--
+
+0:42:58.860,0:43:00.570
+and I can remember that not sharing
+
+0:43:00.570,0:43:02.530
+so that I don't get prompted in the future--
+
+0:43:02.530,0:43:03.210
+any of those things
+
+0:43:03.350,0:43:05.219
+and my location is never accessed
+
+0:43:05.219,0:43:05.889
+by the browser.
+
+0:43:06.330,0:43:08.040
+It's only if I explicitly opt in.
+
+0:43:08.040,0:43:10.869
+And that has to happen on a per hostname basis
+
+0:43:11.060,0:43:11.620
+for this to work.
+
+0:43:11.620,0:43:13.100
+So we're trying to err on the side
+
+0:43:13.100,0:43:15.010
+of--of the user being in control.
+
+0:43:15.010,0:43:17.750
+Even though it might include an extra click here and there,
+
+0:43:17.750,0:43:19.830
+we think it's important to err on that side.
+
+0:43:20.320,0:43:22.169
+So, um, that's it for the demo.
+
+0:43:22.169,0:43:24.330
+We look forward to see the--the great things
+
+0:43:24.330,0:43:25.719
+you're going to do with geolocation
+
+0:43:25.729,0:43:26.860
+and with all of these features.
+
+0:43:26.919,0:43:27.599
+So thanks, Vic.
+
+0:43:27.600,0:43:33.030
+Gundrota: Thank you. Thank you.
+
+0:43:33.030,0:43:34.110
+[applause]
+
+0:43:34.110,0:43:36.689
+Yeah, we love those guys and can't wait to see
+
+0:43:36.689,0:43:37.570
+what they're going to do next.
+
+0:43:38.149,0:43:40.669
+Uh, geolocation broadly available
+
+0:43:40.830,0:43:41.639
+in modern browsers.
+
+0:43:42.130,0:43:43.260
+Uh, before we move on,
+
+0:43:43.260,0:43:45.050
+I should show you one more geolocation demo.
+
+0:43:45.530,0:43:47.929
+Uh, Jay mentioned the importance of using geolocation
+
+0:43:48.010,0:43:49.000
+in mobile scenarios.
+
+0:43:49.459,0:43:51.459
+We've got exactly one of those demos to show you.
+
+0:43:52.000,0:43:55.959
+What you're looking at now is Latitude.
+
+0:43:56.760,0:43:58.500
+Latitude is an application Google released
+
+0:43:58.620,0:44:00.890
+several months ago for phones like the BlackBerry,
+
+0:44:00.889,0:44:02.629
+or Windows Mobile or Nokia phones.
+
+0:44:02.790,0:44:04.429
+What you're seeing for the first time
+
+0:44:04.530,0:44:06.100
+is Latitude on the iPhone.
+
+0:44:06.689,0:44:07.959
+And there's even one more surprise.
+
+0:44:08.669,0:44:11.820
+It's Latitude on the iPhone in the browser.
+
+0:44:12.570,0:44:13.979
+And the reason this is possible
+
+0:44:14.070,0:44:15.420
+is because in the next generation
+
+0:44:15.419,0:44:16.729
+of Apple's operating system,
+
+0:44:16.949,0:44:18.429
+they too have implemented
+
+0:44:21.610,0:44:24.439
+So we're able to build apps that were formerly impossible,
+
+0:44:24.860,0:44:28.650
+now possible right on the web, uh, uh, on the platform.
+
+0:44:28.649,0:44:31.860
+You--you'll see this app shortly after Apple releases,
+
+0:44:31.860,0:44:36.600
+Okay, let's go back to slides.
+
+0:44:36.600,0:44:38.030
+And by the way, that's another evidence
+
+0:44:38.139,0:44:41.729
+of Google making the bet
+
+0:44:41.729,0:44:43.620
+and really try to build those flagship apps
+
+0:44:43.909,0:44:45.260
+so we can move the web forward.
+
+0:44:45.880,0:44:48.200
+Now let's move on and talk about App Cache and Database.
+
+0:44:48.199,0:44:50.309
+Gundrota: As much as we love web apps,
+
+0:44:51.459,0:44:53.299
+they don't work in many situations
+
+0:44:53.570,0:44:54.720
+when you lose connectivity
+
+0:44:55.030,0:44:56.620
+or have intermittent connectivity.
+
+0:44:56.870,0:44:58.270
+And there are a lot of scenarios
+
+0:44:58.270,0:44:59.919
+that we wish our web apps could work.
+
+0:45:00.429,0:45:03.199
+One of the challenges is that there's no local storage
+
+0:45:03.199,0:45:07.310
+and no way to store the application state or code.
+
+0:45:07.310,0:45:08.379
+That is until recently.
+
+0:45:11.100,0:45:12.050
+of Database and App Cache
+
+0:45:12.050,0:45:15.139
+allow you do is really approach the problem of offline,
+
+0:45:15.489,0:45:17.900
+or even in the online scenario,
+
+0:45:18.260,0:45:20.679
+store and cache the resources you need
+
+0:45:20.760,0:45:22.229
+for a faster application.
+
+0:45:22.810,0:45:24.080
+Let's show you how this works.
+
+0:45:25.580,0:45:26.469
+Let's go into the first demo.
+
+0:45:27.439,0:45:28.550
+First demo, I'm in Safari,
+
+0:45:28.739,0:45:30.569
+I've got a little app, it creates a sticky note,
+
+0:45:30.639,0:45:32.989
+and I can, uh, you know, create some sort of data.
+
+0:45:32.989,0:45:35.030
+And if we go into the developer tool here,
+
+0:45:35.169,0:45:37.379
+inspect the element, go into the Database,
+
+0:45:37.380,0:45:38.219
+you'll see that sure enough,
+
+0:45:38.719,0:45:40.709
+the notes I'm writing are pushed down
+
+0:45:40.810,0:45:43.149
+into that SQLite database.
+
+0:45:43.149,0:45:44.479
+But let's lose the connection.
+
+0:45:44.479,0:45:48.479
+Okay. No connection. No Ethernet connection.
+
+0:45:48.880,0:45:53.270
+Can you go to google.com?
+
+0:45:53.270,0:45:55.260
+Okay, good. My favorite web site is inaccessible.
+
+0:45:55.260,0:45:56.410
+We really are offline.
+
+0:45:57.419,0:45:59.080
+Let's try creating another note.
+
+0:45:59.870,0:46:01.399
+Okay, so the note continues to work.
+
+0:46:01.479,0:46:02.540
+The JavaScript's all there.
+
+0:46:03.040,0:46:05.859
+Uh, the data is being pushed into the SQL database.
+
+0:46:05.860,0:46:07.449
+Now you must be wondering, okay,
+
+0:46:07.570,0:46:09.070
+you got the data in the database,
+
+0:46:09.199,0:46:10.680
+but where is the app?
+
+0:46:10.679,0:46:11.850
+Well, let's look at the manifest
+
+0:46:12.130,0:46:15.310
+because the standard points us to a way to actually, uh,
+
+0:46:15.520,0:46:18.140
+have pointers into the storage system which high--
+
+0:46:18.370,0:46:20.820
+which, uh, point to where the code is, the JavaScript code
+
+0:46:20.820,0:46:22.860
+and the other resources that you need.
+
+0:46:22.860,0:46:25.790
+And so there you can see where the JavaScript CSS images,
+
+0:46:26.229,0:46:27.510
+uh, and other things are stored
+
+0:46:27.570,0:46:29.239
+so that when you're in an offline state,
+
+0:46:29.239,0:46:31.510
+well, you can rehydrate all those resources,
+
+0:46:31.620,0:46:33.180
+and the app just works.
+
+0:46:34.149,0:46:36.429
+Let's show you a more advanced example.
+
+0:46:38.199,0:46:39.360
+This is an Android phone,
+
+0:46:40.959,0:46:43.049
+and what you're looking at here on Android is Gmail.
+
+0:46:43.790,0:46:45.629
+It's really, really rich Gmail.
+
+0:46:45.790,0:46:47.399
+You can see the colored labels,
+
+0:46:47.399,0:46:48.859
+for those of you who are Gmail users,
+
+0:46:48.949,0:46:50.040
+you've come to know and love.
+
+0:46:50.500,0:46:52.239
+Um, as Matt moves around,
+
+0:46:52.270,0:46:54.809
+you see that floating toolbar that moves with him--
+
+0:46:55.350,0:46:57.729
+that's all implemented, uh, in this particular app,
+
+0:46:57.729,0:46:58.719
+and it's very, very fast.
+
+0:46:58.719,0:46:59.989
+You click a message, it opens up.
+
+0:47:00.489,0:47:01.120
+Here's the kicker.
+
+0:47:02.219,0:47:03.189
+Look at the top of the screen.
+
+0:47:04.870,0:47:06.849
+This is an Android device that's in offline mode.
+
+0:47:07.000,0:47:08.250
+It has no connectivity.
+
+0:47:08.649,0:47:11.409
+In fact, what you're looking at is a web app,
+
+0:47:11.409,0:47:13.290
+utilizing the great new capabilities
+
+0:47:13.290,0:47:15.550
+of the Android browser to have support
+
+0:47:17.610,0:47:20.860
+This particular app, Gmail on Android or on the iPhone,
+
+0:47:20.939,0:47:22.040
+is already shipping.
+
+0:47:22.590,0:47:24.320
+In fact, it's Google's
+
+0:47:26.600,0:47:28.810
+and really demonstrates the power of what's possible.
+
+0:47:28.929,0:47:32.030
+And as these phones get faster, these web apps
+
+0:47:32.030,0:47:33.899
+just get better and better and better.
+
+0:47:33.899,0:47:35.609
+Whether it be better JavaScript performance,
+
+0:47:35.729,0:47:37.510
+or the CPU of the phone gets better,
+
+0:47:37.649,0:47:39.589
+or the network connectivity gets faster,
+
+0:47:39.949,0:47:41.610
+these really become more and more capable,
+
+0:47:41.840,0:47:43.389
+and another example of Google
+
+0:47:46.659,0:47:49.090
+Okay, let's go back to slides.
+
+0:47:49.090,0:47:53.680
+Of course, we're not the only company who's, uh--who's--
+
+0:47:53.679,0:47:55.219
+really has invested in the web.
+
+0:47:55.679,0:47:57.919
+Another company that has pivoted their strategy
+
+0:47:57.919,0:47:59.790
+around an open web platform is Palm.
+
+0:48:00.439,0:48:02.790
+And to talk about that, I'd like to invite up Michael.
+
+0:48:03.120,0:48:04.760
+Michael Abbott, Senior Vice President of Palm.
+
+0:48:05.040,0:48:05.770
+Welcome Michael.
+
+0:48:06.449,0:48:07.199
+Michael and Greg.
+
+0:48:07.199,0:48:10.130
+Gonna talk about this, yes.
+
+0:48:10.129,0:48:12.469
+Abbott: Thanks a lot, Vic.
+
+0:48:12.790,0:48:15.109
+Uh, good morning to everyone here.
+
+0:48:15.110,0:48:17.689
+Um, I think that, uh, one of the interesting things
+
+0:48:18.000,0:48:19.279
+that I was thinking about yesterday is that
+
+0:48:19.280,0:48:21.149
+if it was a year ago, and you were at this conference,
+
+0:48:21.149,0:48:22.860
+I'm not too sure many of you would've predicted
+
+0:48:22.860,0:48:25.439
+that Palm would be at stage here at Google I/O.
+
+0:48:26.379,0:48:29.739
+And, uh, one of the key things I think why we're here
+
+0:48:29.739,0:48:31.520
+is that we share a very common vision.
+
+0:48:31.699,0:48:32.439
+Or a similar vision.
+
+0:48:32.439,0:48:35.449
+And that is indeed that the web is really the platform.
+
+0:48:36.080,0:48:38.689
+And as we step back in time from when we were designing
+
+0:48:39.139,0:48:42.179
+and architecting webOS, we were thinking through,
+
+0:48:42.169,0:48:43.879
+how could we actually enable developers
+
+0:48:44.399,0:48:47.030
+to have a program model that we're used to,
+
+0:48:47.030,0:48:49.409
+but at the same time offer access to both
+
+0:48:49.409,0:48:51.860
+services in the cloud as well as on the device?
+
+0:48:52.479,0:48:55.229
+And so what we did was we have built up a platform
+
+0:48:55.620,0:48:59.010
+with the browser as really the core construct.
+
+0:48:59.000,0:49:00.989
+And more concretely, actually using WebKit
+
+0:49:00.989,0:49:02.919
+as the core rendering engine in WebOS.
+
+0:49:03.879,0:49:05.320
+So all of the core applications
+
+0:49:05.379,0:49:08.670
+that are built as a part of WebOS--
+
+0:49:08.669,0:49:10.130
+mail, contacts, and calendar--
+
+0:49:10.790,0:49:13.719
+are all built in HTML, CSS, and JavaScript
+
+0:49:13.719,0:49:16.439
+as applications on-- in this environment.
+
+0:49:16.439,0:49:19.030
+So if you look at a little more details
+
+0:49:19.030,0:49:20.929
+of what one of these applications really look like,
+
+0:49:20.989,0:49:23.310
+you can see that we have an HTML page
+
+0:49:23.310,0:49:25.030
+that defines a layout of the application,
+
+0:49:25.879,0:49:28.699
+we have JavaScript that-- which can define transitions,
+
+0:49:28.770,0:49:30.989
+animations, access storage on the device,
+
+0:49:30.989,0:49:33.830
+and we might use CSS to style the applications.
+
+0:49:34.489,0:49:36.120
+Now, for developers we have
+
+0:49:36.120,0:49:37.719
+a framework called the Mojo framework
+
+0:49:37.989,0:49:41.100
+that allows you to style applications in beautiful ways
+
+0:49:41.100,0:49:42.649
+and at the same time be very performate.
+
+0:49:43.360,0:49:47.359
+Now, with this program model that we're offering,
+
+0:49:47.360,0:49:49.969
+certainly standards is really important to us,
+
+0:49:49.969,0:49:55.290
+And so we're gonna show you just a couple quick demos
+
+0:49:55.590,0:49:56.650
+of how we've actually
+
+0:49:56.649,0:50:01.469
+in the initial version of the platform.
+
+0:50:01.469,0:50:03.229
+So we'll switch over.
+
+0:50:04.729,0:50:06.129
+So, the first thing I'm gonna show you
+
+0:50:06.370,0:50:09.239
+is just an example of the canvas tag in our calendar application.
+
+0:50:09.790,0:50:10.979
+You can see the way we're using it
+
+0:50:10.979,0:50:12.959
+is to actually get really high-performance scrolling
+
+0:50:13.010,0:50:15.390
+as Greg actually scrolls up and down in the day view.
+
+0:50:15.389,0:50:16.919
+So that's just one example there.
+
+0:50:17.530,0:50:20.959
+And this example we're gonna show you is CSS transformations.
+
+0:50:21.560,0:50:23.159
+So this is in our music application,
+
+0:50:23.500,0:50:25.659
+and you can see that we're using CSS transformations
+
+0:50:25.659,0:50:27.280
+to rotate the album art.
+
+0:50:27.530,0:50:28.560
+Again, this application
+
+0:50:28.560,0:50:33.220
+is all built in HTML, CSS, and JavaScript.
+
+0:50:33.229,0:50:36.290
+And the last example I'm gonna show you
+
+0:50:36.290,0:50:37.580
+And we're using
+
+0:50:37.580,0:50:43.119
+as a mechanism to store user's history as well as browsers.
+
+0:50:43.830,0:50:46.340
+Now, within this development environment,
+
+0:50:46.340,0:50:48.679
+there's a set of services that are on the device--
+
+0:50:48.679,0:50:50.540
+uh, we'll get to the next slide.
+
+0:50:52.330,0:50:54.199
+That we want to offer and expose up,
+
+0:50:54.580,0:50:56.410
+from the hardware in this particular case,
+
+0:50:56.989,0:50:58.979
+into that development environment.
+
+0:50:58.979,0:51:01.379
+And the Accelerometer is one of these extensions
+
+0:51:01.679,0:51:06.219
+What we've done is offered up various events
+
+0:51:06.310,0:51:07.719
+into that JavaScript run time
+
+0:51:08.250,0:51:12.479
+so, for example, events around shaking, acceleration,
+
+0:51:12.479,0:51:15.469
+and orientation, and expose those events up
+
+0:51:17.679,0:51:18.370
+into JavaScript.
+
+0:51:18.949,0:51:21.689
+Now, there are certainly other types of events like this
+
+0:51:21.689,0:51:24.100
+that--as a result of that deep integration
+
+0:51:24.129,0:51:25.310
+between the software and hardware--
+
+0:51:25.310,0:51:26.270
+makes a lotta sense,
+
+0:51:26.709,0:51:29.000
+certainly for the mobile computing platform,
+
+0:51:29.500,0:51:31.099
+and that's actually one of the key things that--
+
+0:51:31.149,0:51:33.150
+that we're interested in working with you on over time
+
+0:51:33.409,0:51:36.539
+which is how do we actually really bring in both the mobile
+
+0:51:37.060,0:51:39.949
+and the desktop development environments together.
+
+0:51:39.949,0:51:42.780
+If you look at an example of how we're actually doing
+
+0:51:42.780,0:51:44.989
+this type of integration of the applications
+
+0:51:45.350,0:51:47.729
+using these accelerometer API,
+
+0:51:47.729,0:51:49.699
+you can see that we define a set of events,
+
+0:51:49.699,0:51:53.510
+and then you as a developer can go and define
+
+0:51:53.510,0:51:54.590
+the handling of those events.
+
+0:51:54.620,0:51:57.700
+So depending on how you want to leverage the accelerometer
+
+0:51:57.870,0:52:00.930
+in your application, it's very simple to access these events
+
+0:52:00.929,0:52:01.899
+and leverage these within
+
+0:52:02.419,0:52:04.130
+that JavaScript programming environment.
+
+0:52:04.129,0:52:07.909
+So again, what we see
+
+0:52:07.909,0:52:13.419
+is really a key convergent point between the mobile platform
+
+0:52:13.719,0:52:15.040
+and the desktop platform,
+
+0:52:15.239,0:52:17.689
+and we're very interested in working with you over time
+
+0:52:17.780,0:52:20.949
+to extend all the various events and access services
+
+0:52:21.429,0:52:23.709
+from these hardware platforms into this run time.
+
+0:52:24.270,0:52:24.520
+Thank you.
+
+0:52:24.520,0:52:25.620
+[applause]
+
+0:52:25.620,0:52:31.150
+Gundrota: Thank you. Thank you.
+
+0:52:31.149,0:52:34.679
+Okay, App Cache, Database--
+
+0:52:35.340,0:52:37.429
+broadly adopted today in these browsers.
+
+0:52:38.870,0:52:40.050
+Finally, let me talk about Web Workers.
+
+0:52:41.010,0:52:43.099
+You know, as the web becomes more powerful,
+
+0:52:43.100,0:52:44.820
+and you build better and better apps
+
+0:52:44.820,0:52:46.139
+that become richer and bigger,
+
+0:52:46.139,0:52:48.710
+uh, you do run into some problems.
+
+0:52:48.820,0:52:52.239
+Problems that native applications have solved.
+
+0:52:52.239,0:52:54.549
+For example, any of you who've written applications
+
+0:52:54.550,0:52:55.989
+with large amounts of JavaScript
+
+0:52:56.679,0:52:58.729
+understand the challenge of having the UI freeze
+
+0:52:59.360,0:53:00.590
+as you do JavaScript parsing.
+
+0:53:00.709,0:53:01.410
+It's not pretty.
+
+0:53:02.949,0:53:04.250
+but unfortunately it's unavoidable
+
+0:53:04.250,0:53:06.100
+as your JavaScript gets larger and larger.
+
+0:53:06.989,0:53:08.089
+How do we solve this problem?
+
+0:53:08.389,0:53:10.139
+Well, in a native application,
+
+0:53:10.290,0:53:12.369
+you could spawn a background thread.
+
+0:53:13.189,0:53:14.979
+You could, uh, have background processing.
+
+0:53:15.219,0:53:16.160
+And that's exactly
+
+0:53:16.159,0:53:19.360
+of web workers allows you to do.
+
+0:53:19.360,0:53:20.830
+Let me show you some demos.
+
+0:53:20.830,0:53:22.840
+Let's move over to screen one. There we go.
+
+0:53:23.679,0:53:25.979
+This particular example just calculates, um,
+
+0:53:26.100,0:53:27.020
+some prime numbers.
+
+0:53:27.550,0:53:29.439
+And so we've got a couple of tabs open there.
+
+0:53:29.439,0:53:31.399
+You can see we've got the New York Times and so forth.
+
+0:53:31.399,0:53:33.439
+Uh, Matt, why don't you go ahead and start the demo?
+
+0:53:33.590,0:53:34.849
+And now try clicking on another tab.
+
+0:53:35.949,0:53:38.029
+Uh, exactly.
+
+0:53:38.889,0:53:42.030
+So the JavaScript parsing is completely hosing
+
+0:53:42.199,0:53:44.280
+not only the tab-- the UI of the tab--
+
+0:53:44.350,0:53:45.659
+but as well as the rest of the browser.
+
+0:53:46.310,0:53:47.560
+Let's redo that demo.
+
+0:53:48.469,0:53:50.000
+This time let's look at the source.
+
+0:53:51.750,0:53:52.750
+Same demo, but look at the source.
+
+0:53:53.000,0:53:54.109
+We made a change.
+
+0:53:54.550,0:53:56.429
+And you see there Matt highlighting the use
+
+0:53:56.570,0:53:59.320
+of the background processing via the Web Worker.
+
+0:53:59.909,0:54:01.579
+Let's run that same app again.
+
+0:54:02.570,0:54:04.389
+Number one, the UI is responsive,
+
+0:54:04.399,0:54:05.719
+the other tabs are responsive,
+
+0:54:06.100,0:54:07.680
+and it all just works.
+
+0:54:08.229,0:54:09.399
+Right? New capability.
+
+0:54:09.550,0:54:12.380
+Background processing in the browser from JavaScript.
+
+0:54:12.409,0:54:13.469
+That's just really, really great.
+
+0:54:13.590,0:54:16.969
+Let me--
+
+0:54:16.969,0:54:19.989
+[applause]
+
+0:54:19.989,0:54:20.599
+Hold your applause.
+
+0:54:20.600,0:54:22.689
+If you like that, wait 'til you see this.
+
+0:54:22.689,0:54:24.229
+Uh, this demo is my favorite.
+
+0:54:24.600,0:54:28.380
+Okay, it's using the canvas tag to place the boxes,
+
+0:54:28.379,0:54:30.510
+it's using the video tag to play the video,
+
+0:54:30.689,0:54:33.449
+it's using JavaScript and Web Workers
+
+0:54:33.719,0:54:35.040
+to run some background processing.
+
+0:54:35.239,0:54:36.429
+Let me tell you what's gonna happen.
+
+0:54:37.260,0:54:39.429
+We're gonna start the video, and you're gonna see a lady
+
+0:54:39.429,0:54:42.149
+walk by the vi--on the video.
+
+0:54:42.149,0:54:44.439
+JavaScript is gonna run and do motion detection,
+
+0:54:44.919,0:54:49.140
+and then draw via canvas a bounding box around the object
+
+0:54:49.139,0:54:49.500
+Gundrota: that's moving,
+
+0:54:50.310,0:54:51.909
+and it's gonna do that in the background
+
+0:54:51.909,0:54:53.110
+so the app's still responsive.
+
+0:54:53.219,0:54:53.649
+Watch this.
+
+0:55:00.229,0:55:01.910
+The boxes in the right are differentials.
+
+0:55:02.300,0:55:03.209
+How crazy is that?
+
+0:55:03.350,0:55:05.350
+Did you ever think you'd see background processing--
+
+0:55:05.479,0:55:08.070
+Uh, you'd see video motion detection
+
+0:55:08.119,0:55:09.419
+done in JavaScript in the browser?
+
+0:55:09.919,0:55:10.850
+You know, I certainly didn't.
+
+0:55:10.850,0:55:13.389
+This is just fantastic, and a great demonstration
+
+0:55:13.389,0:55:15.290
+of these capabilities all coming together,
+
+0:55:15.429,0:55:18.350
+and the kind of rich app that we can now start to build
+
+0:55:18.350,0:55:19.020
+within the browser.
+
+0:55:20.280,0:55:21.010
+So I hope you liked that.
+
+0:55:21.010,0:55:23.959
+[applause]
+
+0:55:23.959,0:55:28.280
+Let's go back to slides. Very good.
+
+0:55:28.310,0:55:29.959
+And once again, that capability,
+
+0:55:30.209,0:55:32.669
+broadly available in these modern browsers.
+
+0:55:34.199,0:55:36.609
+So I hope you've enjoyed that section of the talk.
+
+0:55:36.619,0:55:39.199
+That was about a more powerful web,
+
+0:55:39.199,0:55:43.090
+and how as an industry we are creating new capabilities
+
+0:55:43.770,0:55:46.040
+and, uh, but it's still up to us as a community
+
+0:55:46.110,0:55:47.310
+to build the applications
+
+0:55:47.610,0:55:50.309
+that take advantage of that more powerful web.
+
+0:55:50.310,0:55:52.120
+I'm going to pivot at this point,
+
+0:55:52.119,0:55:54.149
+and now talk about making it easier
+
+0:55:54.149,0:55:55.629
+to build those kind of apps
+
+0:55:55.739,0:55:58.090
+and how Google Services can help you.
+
+0:55:58.090,0:56:00.819
+Obviously if you came to last year's development conference,
+
+0:56:00.939,0:56:03.189
+or attended any of our Google Campfire Ones
+
+0:56:03.189,0:56:04.219
+or watched them online,
+
+0:56:04.619,0:56:06.540
+you know that Google's deeply interested
+
+0:56:06.899,0:56:09.040
+in making it easier for you to build web apps.
+
+0:56:09.750,0:56:11.600
+Two of our offerings in this space
+
+0:56:11.739,0:56:14.330
+have been Google App Engine and Google Web Toolkit.
+
+0:56:15.050,0:56:17.640
+Google App Engine's value proposition was very simple.
+
+0:56:18.100,0:56:21.989
+We said, let us provide the hosting for your app
+
+0:56:21.989,0:56:24.370
+so you don't have to worry about machine instances,
+
+0:56:24.580,0:56:26.669
+you don't have to worry about the app's scaling,
+
+0:56:26.800,0:56:29.899
+you don't have to carry a pager; we'll do that for you.
+
+0:56:29.899,0:56:32.659
+And we're gonna give you an update on that in a moment.
+
+0:56:32.649,0:56:34.929
+Google Web Toolkit had a different, uh, proposition.
+
+0:56:35.030,0:56:38.850
+It said, write in Java, and we'll compile down,
+
+0:56:39.250,0:56:40.860
+understand which browser's being used,
+
+0:56:40.919,0:56:42.859
+and push down the appropriate JavaScript,
+
+0:56:42.889,0:56:44.260
+and do it in a fantastic way
+
+0:56:44.600,0:56:46.389
+that allows you to target multiple browsers.
+
+0:56:47.040,0:56:47.910
+To give you an update
+
+0:56:48.070,0:56:50.330
+on Google App Engine and Google Web Toolkit,
+
+0:56:50.399,0:56:53.810
+let me invite up Andrew Bowers and Kevin Gibbs.
+
+0:56:53.810,0:56:54.840
+[applause]
+
+0:56:54.840,0:56:57.929
+Thank you, guys.
+
+0:56:57.929,0:57:01.020
+both: Thanks, Vic.
+
+0:57:01.020,0:57:05.699
+Gibbs: You know, the interest in adoption that we've seen
+
+0:57:05.739,0:57:07.469
+in Google App Engine over the past year
+
+0:57:07.739,0:57:08.880
+has been truly remarkable.
+
+0:57:12.139,0:57:12.709
+developers sign up
+
+0:57:13.110,0:57:14.199
+to use Google App Engine,
+
+0:57:14.949,0:57:16.619
+and not a single one of those developers
+
+0:57:16.679,0:57:19.179
+had to purchase or provision a server to get started.
+
+0:57:20.129,0:57:22.349
+They were able to develop their application locally
+
+0:57:22.699,0:57:25.640
+on their own machine, be it Mac, Windows, or Linux,
+
+0:57:25.639,0:57:27.449
+and leave the servers to us.
+
+0:57:28.500,0:57:30.399
+Now, our SDK is just three megabytes.
+
+0:57:30.530,0:57:31.979
+If you haven't tried out App Engine before,
+
+0:57:32.280,0:57:35.840
+I encourage you to download it. Give it a shot.
+
+0:57:35.840,0:57:38.919
+Now, since we launched App Engine last year,
+
+0:57:38.929,0:57:39.650
+we've also had
+
+0:57:41.810,0:57:43.609
+deployed on Google App Engine.
+
+0:57:43.619,0:57:45.989
+Now, often these applications have been created
+
+0:57:45.989,0:57:47.610
+by small and agile teams
+
+0:57:47.610,0:57:49.809
+like many of you in the audience here,
+
+0:57:49.810,0:57:52.399
+and they can be because with App Engine
+
+0:57:52.719,0:57:54.729
+you don't have to worry about your configuration,
+
+0:57:55.030,0:57:58.580
+your up time, or usage spikes, or re-architecting
+
+0:57:58.580,0:58:00.729
+your application once it finally starts to get popular.
+
+0:58:02.619,0:58:04.179
+In fact, we were able to put this, uh--
+
+0:58:04.760,0:58:06.479
+this policy to the test ourselves
+
+0:58:06.989,0:58:09.429
+when the White House decided to use Google Moderator,
+
+0:58:09.689,0:58:11.050
+which runs on Google App Engine,
+
+0:58:11.439,0:58:13.849
+for President Obama's live town hall event.
+
+0:58:14.939,0:58:16.369
+Despite a traffic peak
+
+0:58:18.389,0:58:20.949
+and promotions on all the major search engines and news sites,
+
+0:58:21.459,0:58:23.259
+the application scaled to meet the traffic,
+
+0:58:23.510,0:58:25.229
+and none of the other applications were affected.
+
+0:58:27.050,0:58:29.370
+Now, over the past year we've also launched
+
+0:58:29.369,0:58:32.459
+a number of features and improvement to App Engine,
+
+0:58:32.469,0:58:34.850
+including things like our SSL support,
+
+0:58:35.310,0:58:38.479
+memcache API, the system status site,
+
+0:58:39.239,0:58:41.989
+uh, access to secure data behind the firewall,
+
+0:58:41.989,0:58:46.030
+and the ability to pay for usage beyond our free quotas.
+
+0:58:47.939,0:58:49.760
+Now, we've also found that there's a number
+
+0:58:50.000,0:58:51.969
+of additional things that we'll launch to you
+
+0:58:51.969,0:58:52.649
+in the coming months.
+
+0:58:53.229,0:58:54.250
+They include things like
+
+0:58:54.489,0:58:56.419
+background processing for your jobs
+
+0:58:56.979,0:58:59.270
+and large object support for your application.
+
+0:58:59.270,0:59:01.189
+If you'd like to learn more,
+
+0:59:01.639,0:59:03.979
+I'd urge you to come to our sessions here at Google I/O
+
+0:59:03.979,0:59:06.270
+over the next two days.
+
+0:59:06.270,0:59:08.619
+Now, certainly the feature that we've launched recently
+
+0:59:08.709,0:59:11.120
+that's generated the most noise and the most buzz
+
+0:59:11.300,0:59:12.889
+is our Java language support.
+
+0:59:14.060,0:59:16.160
+The interest in our Java support since we launched it
+
+0:59:16.159,0:59:18.390
+a month and a half ago has been remarkable.
+
+0:59:19.879,0:59:21.270
+In a matter of days,
+
+0:59:21.270,0:59:23.360
+even hours since we launched our Java support,
+
+0:59:23.679,0:59:26.829
+we saw developers--many of you in the audience here today--
+
+0:59:27.629,0:59:30.610
+dive in and get not only Java frameworks
+
+0:59:30.739,0:59:33.959
+working on App Engine, but also other JVM languages.
+
+0:59:34.439,0:59:36.989
+Including things like JRuby, Groovy,
+
+0:59:37.619,0:59:40.280
+Scala, and even PHP.
+
+0:59:40.280,0:59:42.939
+And that, we thought, was truly amazing.
+
+0:59:42.939,0:59:43.729
+I'd like to say thank you
+
+0:59:44.189,0:59:46.060
+for all of you early adopters who gave us a try
+
+0:59:46.060,0:59:48.530
+and gave us the feedback with the system.
+
+0:59:48.530,0:59:53.000
+Now, we found that the demand for Java on App Engine
+
+0:59:53.080,0:59:56.430
+has been so overwhelming, and the response so positive,
+
+0:59:56.869,0:59:59.060
+we think that we're ready to take the next step
+
+0:59:59.250,1:00:00.300
+with Java on App Engine.
+
+1:00:01.649,1:00:03.139
+So I'd like to announce--
+
+1:00:03.139,1:00:04.500
+sorry, let's skip this slide.
+
+1:00:04.500,1:00:07.279
+I'd like to announce that we are opening sign-ups
+
+1:00:07.280,1:00:09.429
+for Java on App Engine as of right now.
+
+1:00:10.340,1:00:13.750
+Anyone can now log in and create a Java application immediately.
+
+1:00:13.750,1:00:14.830
+[applause]
+
+1:00:14.830,1:00:16.989
+Thank you.
+
+1:00:16.989,1:00:22.360
+Now with that, I'd like to stop telling you
+
+1:00:22.649,1:00:24.280
+about our Java support in App Engine,
+
+1:00:24.439,1:00:25.419
+and start showing you.
+
+1:00:26.290,1:00:27.939
+So I'd like to pull over Andrew Bowers.
+
+1:00:27.939,1:00:30.369
+Andrew is gonna demonstrate to you
+
+1:00:30.510,1:00:33.849
+how we have an NTN Solution for creating Java applications
+
+1:00:34.250,1:00:37.550
+using Google Web Toolkit and Google App Engine.
+
+1:00:37.550,1:00:40.050
+Andrew's gonna demonstrate to you how we think we have
+
+1:00:40.050,1:00:42.669
+a way to make applications both more scalable
+
+1:00:43.100,1:00:44.289
+and easier to use
+
+1:00:45.050,1:00:47.100
+with back-ends running on Google App Engine,
+
+1:00:47.310,1:00:49.149
+and front-ends built with Google Web Toolkit.
+
+1:00:49.149,1:00:49.589
+Andrew.
+
+1:00:49.590,1:00:50.939
+Bowers: Thanks, Kevin.
+
+1:00:50.939,1:00:53.859
+So if any of you have ever done Java development,
+
+1:00:53.860,1:00:55.979
+you've probably experienced the frustrating lag
+
+1:00:55.979,1:00:58.080
+between getting a development environment set up
+
+1:00:58.449,1:01:00.209
+and actually deploying something to the web.
+
+1:01:00.209,1:01:01.899
+And if you're working on a weekend project,
+
+1:01:01.929,1:01:03.729
+maybe you decided to go ahead and use something
+
+1:01:03.729,1:01:05.679
+like Ruby on Rails 'cause you wanted to actually
+
+1:01:05.760,1:01:06.489
+get something out there.
+
+1:01:07.250,1:01:09.489
+So we definitely recognize that pain and frustration
+
+1:01:09.489,1:01:13.010
+in our own lives, and tried to make the on-ramp to a new app
+
+1:01:13.010,1:01:13.929
+as quick as possible.
+
+1:01:13.929,1:01:16.379
+So to demonstrate, I'm going to create the starter project
+
+1:01:16.379,1:01:17.260
+from the Eclipse plug-in;
+
+1:01:17.750,1:01:19.139
+I'm gonna deploy that to the web.
+
+1:01:19.830,1:01:21.409
+And I'm gonna use Google Web Toolkit and App Engine
+
+1:01:21.790,1:01:23.120
+and hopeful--it should take me
+
+1:01:23.879,1:01:25.610
+so somewhere around there's my goal.
+
+1:01:26.040,1:01:27.620
+So here I have the Eclipse development environment.
+
+1:01:27.619,1:01:29.119
+and let's just get started.
+
+1:01:29.119,1:01:31.619
+I'm gonna go ahead and open up the new project wizard.
+
+1:01:32.179,1:01:37.739
+I'll create something called "com.google," create a package.
+
+1:01:37.750,1:01:39.169
+And I'm gonna use Google Web Toolkit and App Engine.
+
+1:01:39.949,1:01:41.630
+And this is gonna create the starter project for me.
+
+1:01:41.629,1:01:43.479
+Looks like we already had something running.
+
+1:01:43.479,1:01:44.689
+We'll go ahead and stop that.
+
+1:01:47.669,1:01:49.399
+And now I'm gonna start that on a local server.
+
+1:01:49.510,1:01:49.959
+So this is a--
+
+1:01:52.119,1:01:53.479
+Has everything I need already.
+
+1:01:53.669,1:01:55.709
+I didn't have to install Tomcat,
+
+1:01:55.709,1:01:58.079
+all I did was I installed the Google plug-in for Eclipse
+
+1:01:58.239,1:02:00.250
+into my Eclipse development environment.
+
+1:02:00.250,1:02:01.420
+That downloaded the App Engine SDK,
+
+1:02:01.419,1:02:05.119
+the Google Web Toolkit SDK, and the local development server
+
+1:02:05.209,1:02:07.270
+which mimics the production environment.
+
+1:02:07.270,1:02:10.000
+So now I have a, uh, very simple Ajax application.
+
+1:02:10.000,1:02:11.030
+It takes some text here.
+
+1:02:11.469,1:02:13.040
+It synchronously sends that to the server,
+
+1:02:13.659,1:02:15.909
+echoes the text back, as you can see,
+
+1:02:15.919,1:02:17.010
+and then gives me a little information
+
+1:02:17.010,1:02:18.010
+about the server that I'm running.
+
+1:02:18.159,1:02:20.020
+Just so we can tell that it's actually going to the server.
+
+1:02:20.020,1:02:21.979
+So if we look at the code for that...
+
+1:02:21.979,1:02:24.549
+Open up the project here.
+
+1:02:25.580,1:02:27.929
+You can see I have a client package and a server package.
+
+1:02:29.030,1:02:30.860
+Now, all of the code inside my client package
+
+1:02:30.859,1:02:32.239
+is Google Web Toolkit code
+
+1:02:32.719,1:02:35.539
+that's Java code that's going to be compiled into JavaScript
+
+1:02:35.540,1:02:37.179
+in the final step.
+
+1:02:37.179,1:02:37.670
+And it's using--
+
+1:02:37.669,1:02:40.250
+Uh, it's using widgets and it's using events
+
+1:02:40.250,1:02:43.169
+so they're abstracted away so that it'll work across browsers.
+
+1:02:43.229,1:02:47.079
+So I could change the text on the button here to "Post."
+
+1:02:47.080,1:02:50.870
+Inside my server package I have Java classes
+
+1:02:50.899,1:02:52.439
+that are grown as bytecode on the server
+
+1:02:53.090,1:02:54.850
+and you can see that I'm getting RPC,
+
+1:02:55.369,1:02:56.310
+and I'm echoing it back,
+
+1:02:56.310,1:03:00.570
+so we'll say, "Hello from Google I/O."
+
+1:03:00.570,1:03:01.290
+And we'll save that there.
+
+1:03:01.290,1:03:03.530
+Now if I go back--
+
+1:03:03.600,1:03:05.010
+So I've just edited Java code.
+
+1:03:05.010,1:03:07.429
+I'm gonna go back to my browser, I'll click "Refresh."
+
+1:03:09.879,1:03:10.849
+And I see it says "Post,"
+
+1:03:11.139,1:03:12.650
+and I see it says, "Hello from Google I/O."
+
+1:03:13.189,1:03:14.189
+So I just edited Java,
+
+1:03:14.310,1:03:16.020
+but I'm seeing those changes now on my browser.
+
+1:03:16.369,1:03:18.609
+Okay, so I've got a-a small, functioning app.
+
+1:03:18.609,1:03:21.679
+Let's go ahead and deploy that out to the web.
+
+1:03:21.689,1:03:23.659
+Go back into Eclipse, I'll go up to the deploy wizard,
+
+1:03:24.000,1:03:25.840
+and you'll notice there's an error here right now.
+
+1:03:26.209,1:03:27.930
+That's 'cause I haven't set an application ID.
+
+1:03:27.929,1:03:30.439
+So I'm gonna go to the App Engine console,
+
+1:03:30.439,1:03:33.659
+and I'll create a new application ID.
+
+1:03:33.659,1:03:37.079
+We'll say, "demoforio."
+
+1:03:37.080,1:03:40.699
+And we'll save that,
+
+1:03:40.699,1:03:42.669
+and hope no one beat me to it out there.
+
+1:03:47.040,1:03:49.859
+Okay. You're not fast enough.
+
+1:03:49.859,1:03:51.169
+Great, so we'll go back.
+
+1:03:51.689,1:03:54.719
+I had some backups just in case.
+
+1:03:54.719,1:03:57.429
+So we'll set the application ID here in the environment.
+
+1:03:57.429,1:03:58.979
+And all I need to do now
+
+1:03:58.979,1:04:01.500
+is enter in my username and password.
+
+1:04:01.500,1:04:03.870
+Then hit the "Deploy" button.
+
+1:04:03.869,1:04:04.959
+The SDK has taken care of the rest for me.
+
+1:04:05.070,1:04:07.889
+So it's going to convert that Java code
+
+1:04:07.889,1:04:10.449
+from Google Web Toolkit in the client package to JavaScript,
+
+1:04:10.449,1:04:14.049
+it's going to compile the, uh, Java code to bytecode,
+
+1:04:14.050,1:04:15.149
+for the server side stuff,
+
+1:04:15.659,1:04:17.810
+package all of that up into a web archive directory
+
+1:04:17.810,1:04:18.629
+and deploy it to the server.
+
+1:04:19.169,1:04:22.080
+There's no FTP involved by me, no server configuration;
+
+1:04:22.469,1:04:23.590
+everything's handled within the SDK.
+
+1:04:23.590,1:04:25.790
+And I could do this from the command line
+
+1:04:25.790,1:04:26.189
+if I wanted to as well.
+
+1:04:26.899,1:04:28.310
+And so now we should have a deployed app.
+
+1:04:28.729,1:04:31.379
+And hopefully within a few minutes, here.
+
+1:04:31.379,1:04:39.920
+So let's go to that demoforio.appspot.
+
+1:04:39.919,1:04:41.209
+And so I've got a fully functioning,
+
+1:04:41.389,1:04:47.600
+if not very functional, app out on the web.
+
+1:04:47.600,1:04:49.150
+[applause]
+
+1:04:49.149,1:04:53.379
+Bowers: So remember, too, that that was in Java
+
+1:04:53.379,1:04:55.869
+and it was really quick; there was no server configuration,
+
+1:04:55.869,1:04:57.260
+there was very little development configuration.
+
+1:04:57.260,1:04:59.050
+Just installed Eclipse and installed a plug-in
+
+1:04:59.050,1:05:00.370
+and it was pretty much ready to go.
+
+1:05:01.040,1:05:03.179
+Also notice that I didn't have to write
+
+1:05:03.280,1:05:05.079
+any JavaScript XHR calls.
+
+1:05:05.479,1:05:07.050
+That's because I'm using Google Web Toolkit,
+
+1:05:07.379,1:05:08.559
+and it'll handle the communication
+
+1:05:08.560,1:05:10.250
+between the client and the server for me.
+
+1:05:10.830,1:05:12.729
+So what App Engine does on the back-end
+
+1:05:13.060,1:05:14.630
+making server-side tasks easier,
+
+1:05:15.080,1:05:16.929
+Google Web Toolkit does on the front-end,
+
+1:05:17.189,1:05:19.780
+making client-side coding and development easier as well.
+
+1:05:19.780,1:05:21.609
+So if we can go back to slides...
+
+1:05:21.609,1:05:24.979
+[laughter]
+
+1:05:24.979,1:05:30.079
+So they told me I needed a marchitecture diagram.
+
+1:05:30.149,1:05:32.209
+So it's Google Web Toolkit in the front,
+
+1:05:32.239,1:05:34.500
+and App Engine in the back.
+
+1:05:34.510,1:05:36.290
+Now I want to talk about two features
+
+1:05:36.290,1:05:38.010
+that are coming up in Google Web Toolkit.
+
+1:05:38.580,1:05:39.449
+We're optimistic
+
+1:05:41.080,1:05:42.919
+bring some sanity to the browser world.
+
+1:05:43.280,1:05:44.130
+Yet you're still going to
+
+1:05:44.129,1:05:45.530
+have to develop for multiple browsers.
+
+1:05:45.530,1:05:47.850
+Now, Google Web Toolkit's inherently designed
+
+1:05:47.850,1:05:49.040
+to work across browsers,
+
+1:05:49.209,1:05:50.550
+handling the differences for you.
+
+1:05:50.550,1:05:52.500
+So you write your user interface in Java,
+
+1:05:52.929,1:05:56.010
+and then the compiler is going to handle the compiling
+
+1:05:56.010,1:05:59.020
+to the optimized, appropriate JavaScript-rich environment.
+
+1:05:59.020,1:06:02.159
+But right now there's a wrinkle in that development flow.
+
+1:06:02.780,1:06:05.350
+We encourage people to use CSS 'cause it's a powerful way
+
+1:06:05.350,1:06:07.830
+to style your apps, but if you're familiar with this,
+
+1:06:08.270,1:06:10.909
+you'll also know it's frustratingly inconsistent.
+
+1:06:10.909,1:06:13.659
+[applause]
+
+1:06:13.659,1:06:17.130
+I see some of you relate.
+
+1:06:17.540,1:06:20.790
+So it's times like these when you want to use Firebug
+
+1:06:20.790,1:06:22.839
+to figure out what the heck's going on.
+
+1:06:23.580,1:06:24.340
+Now, here's the wrinkle.
+
+1:06:24.859,1:06:26.979
+Because we have real time Java debugging
+
+1:06:27.189,1:06:29.199
+in Google Web Toolkit using a special browser,
+
+1:06:29.619,1:06:31.640
+it's meant you had to compile the JavaScript first,
+
+1:06:32.080,1:06:34.250
+then take that, go view that in Firefox,
+
+1:06:34.250,1:06:35.119
+and then look at Firebug,
+
+1:06:35.419,1:06:36.949
+and then so we had an extra step in there.
+
+1:06:37.429,1:06:38.189
+Well I'm happy to say
+
+1:06:38.189,1:06:39.580
+in the next version of Google Web Toolkit
+
+1:06:39.580,1:06:40.689
+You'll no longer have to do that.
+
+1:06:40.689,1:06:42.770
+You'll be able to debug directly in the browser.
+
+1:06:44.080,1:06:46.269
+It's also not just Firefox, it's any browser.
+
+1:06:46.770,1:06:49.449
+So let me show you a quick demo of what that looks like.
+
+1:06:49.449,1:06:54.219
+So I'm gonna go back to the project that I just created,
+
+1:06:56.389,1:06:57.729
+and I'm gonna change the launch configuration
+
+1:06:57.929,1:07:04.639
+to use the new plug-in.
+
+1:07:04.639,1:07:04.959
+So we'll take this out here.
+
+1:07:04.959,1:07:10.330
+So this is gonna start up the plug-in infrastructure.
+
+1:07:10.770,1:07:12.219
+And I'm gonna close down nightly
+
+1:07:12.219,1:07:17.859
+and start up the other version of Firefox we have here,
+
+1:07:17.859,1:07:23.840
+'cause that's what my plug-in is installed on.
+
+1:07:23.840,1:07:25.199
+Now I can navigate to my local server.
+
+1:07:28.729,1:07:29.859
+And you'll notice that I'm passing in,
+
+1:07:30.310,1:07:31.739
+uh, special query parameters
+
+1:07:31.739,1:07:36.319
+so that we know it's coming from the hosted mode.
+
+1:07:36.330,1:07:37.489
+And you can see this is the--
+
+1:07:37.489,1:07:40.989
+the app that I just had, and so now I can use Firebug
+
+1:07:40.989,1:07:42.629
+and inspect like-- like you're used to.
+
+1:07:42.629,1:07:45.039
+Okay, well, that doesn't seem too special,
+
+1:07:45.040,1:07:49.170
+but remember that what I have on the back-end is still Java.
+
+1:07:49.169,1:07:51.689
+So you can see this is Java that we're generating here.
+
+1:07:55.439,1:07:57.629
+I can make that change, go back to Firefox--
+
+1:07:57.679,1:07:59.330
+I'm not using the special browser here--
+
+1:08:00.209,1:08:00.679
+click "Refresh,"
+
+1:08:02.840,1:08:05.229
+and then I should be able to inspect that.
+
+1:08:05.229,1:08:13.659
+Let's see if we refresh again.
+
+1:08:13.659,1:08:15.409
+Or sometimes it helps to restart your server.
+
+1:08:17.439,1:08:22.969
+So let's do that. All right.
+
+1:08:22.969,1:08:30.549
+So we've got that running.
+
+1:08:30.549,1:08:34.049
+And make sure I didn't cache.
+
+1:08:34.049,1:08:41.369
+So this is going to make the development cycle a lot faster.
+
+1:08:41.369,1:08:43.479
+It's also going to work on multiple browsers as well,
+
+1:08:43.609,1:08:45.299
+so all the major browsers have plug-ins.
+
+1:08:45.739,1:08:49.019
+And there we go. There we see some changes.
+
+1:08:49.019,1:08:49.669
+[applause]
+
+1:08:49.669,1:08:52.120
+And it'll also work with other plug-ins as well.
+
+1:08:53.009,1:08:54.609
+Now, I want to talk about one more feature
+
+1:08:54.889,1:08:55.909
+that we're really excited about
+
+1:08:55.909,1:08:57.229
+in the next version of Google Web Toolkit.
+
+1:08:59.169,1:09:00.929
+With all this
+
+1:09:00.929,1:09:03.489
+you're going to find yourself writing rich user interfaces.
+
+1:09:04.249,1:09:06.219
+And if you've built apps like that before,
+
+1:09:06.219,1:09:09.119
+really large JavaScript Ajax apps,
+
+1:09:09.119,1:09:11.369
+you'll know that your JavaScript codebase is going to grow,
+
+1:09:11.369,1:09:13.199
+and it's going to grow a lot.
+
+1:09:13.199,1:09:17.310
+If we can go back to slides, please.
+
+1:09:17.299,1:09:19.509
+It's going to grow a lot as you add more functionality.
+
+1:09:20.139,1:09:21.989
+And that in turn means your users are going to wait,
+
+1:09:22.299,1:09:24.009
+and they're going to wait, and they're going to wait
+
+1:09:24.009,1:09:25.469
+for your application to finish loading.
+
+1:09:25.469,1:09:28.359
+So you need a way to split up all those JavaScript files
+
+1:09:28.469,1:09:30.259
+across multiple files so your user
+
+1:09:30.259,1:09:31.739
+can get started with your application
+
+1:09:32.119,1:09:34.789
+without having to wait for it.
+
+1:09:34.789,1:09:36.539
+However, manually splitting JavaScript
+
+1:09:36.539,1:09:37.939
+can be very tedious.
+
+1:09:38.419,1:09:40.209
+You have to get the dependencies correct,
+
+1:09:40.209,1:09:42.649
+uh, it takes a long time, and you really--
+
+1:09:42.649,1:09:44.890
+it's not something you wanna do on a Friday night.
+
+1:09:44.889,1:09:46.729
+So that's why the next version of Google Web Toolkit
+
+1:09:46.729,1:09:47.759
+we're gonna help you out with that,
+
+1:09:47.759,1:09:49.520
+and do it for you with something called,
+
+1:09:49.549,1:09:50.799
+"developer-guided code splitting,"
+
+1:09:51.499,1:09:52.969
+also known as runAsync.
+
+1:09:52.969,1:09:55.799
+Now with runAsync, what you do is specify in your code
+
+1:09:56.129,1:09:58.369
+somewhere that you're willing to accept a short pause
+
+1:09:58.989,1:10:00.859
+in exchange for the compiler being able
+
+1:10:00.859,1:10:03.709
+to functionally fragment your codebase.
+
+1:10:03.709,1:10:05.589
+So what this means is I can download code
+
+1:10:05.669,1:10:06.809
+after the initial download.
+
+1:10:06.809,1:10:09.379
+Imagine you have a settings page, it's not real--
+
+1:10:09.409,1:10:12.199
+uh, it's rarely used, not used on startup at least.
+
+1:10:12.199,1:10:13.290
+Well, there's no reason to download
+
+1:10:13.369,1:10:15.019
+that code with your initial download.
+
+1:10:15.969,1:10:18.589
+Instead you'd set a runAsync split point,
+
+1:10:18.589,1:10:20.949
+then allow that code to download in the background
+
+1:10:21.259,1:10:23.669
+after your user is up and running.
+
+1:10:23.669,1:10:25.649
+Okay, you're saying, "Andrew, that's great in theory,
+
+1:10:25.809,1:10:26.739
+but does it really work?"
+
+1:10:27.459,1:10:30.469
+Well, I'd like to leave you with some metrics
+
+1:10:30.469,1:10:33.029
+from a real world application that's using runAsync.
+
+1:10:33.029,1:10:35.129
+This is a application we'll talk more about tomorrow.
+
+1:10:36.149,1:10:37.789
+This is a graph during development
+
+1:10:37.829,1:10:39.539
+of the size of the JavaScript codebase.
+
+1:10:39.539,1:10:40.919
+So it quickly grew
+
+1:10:40.919,1:10:44.939
+as they added more functionality to the UI.
+
+1:10:44.939,1:10:47.449
+So that's--that's a lot of code to download on initial download.
+
+1:10:47.959,1:10:50.339
+Now, after runAsync, the initial download
+
+1:10:52.619,1:11:02.719
+which can then be decreased
+
+1:11:02.809,1:11:04.299
+It's going to load a lot faster.
+
+1:11:04.829,1:11:06.419
+And the best part is they didn't have to worry
+
+1:11:06.419,1:11:07.809
+about the dependencies themselves.
+
+1:11:07.859,1:11:09.709
+The compiler looked at their codebase
+
+1:11:10.119,1:11:11.169
+and handled all that for them.
+
+1:11:12.059,1:11:13.889
+So these are just a few of the features that we're adding
+
+1:11:13.999,1:11:14.989
+to Google Web Toolkit.
+
+1:11:15.149,1:11:17.159
+We're gonna be talking a lot more about the future
+
+1:11:17.589,1:11:19.289
+and the present with both App Engine
+
+1:11:19.289,1:11:20.849
+and Google Web Toolkit over the next few days,
+
+1:11:21.189,1:11:24.939
+so please stop by and join us.
+
+1:11:24.939,1:11:26.829
+Thank you.
+
+1:11:26.829,1:11:27.779
+[applause]
+
+1:11:27.779,1:11:28.719
+Thanks.
+
+1:11:28.719,1:11:30.129
+Gundrota: Great job, guys.
+
+1:11:30.399,1:11:32.439
+And as you can see, these are the URLs where you can go
+
+1:11:32.439,1:11:34.549
+to learn more or attend any of the sessions.
+
+1:11:34.549,1:11:37.849
+Of course we are very, very happy at Google
+
+1:11:37.849,1:11:40.589
+to see the developer adoption of Google services.
+
+1:11:40.909,1:11:43.649
+You go to a webpage and you see someone who's incorporated
+
+1:11:43.709,1:11:46.869
+Google YouTube, or Google News, or Google Video,
+
+1:11:47.199,1:11:48.809
+or even Google Search on their page,
+
+1:11:49.149,1:11:49.939
+and it delights us.
+
+1:11:51.769,1:11:52.589
+that we make available,
+
+1:11:52.589,1:11:53.859
+uh, to developers.
+
+1:11:54.339,1:11:55.849
+In fact, we're very proud to announce today
+
+1:11:56.049,1:11:56.969
+that we have crossed
+
+1:12:01.509,1:12:01.759
+every day
+
+1:12:02.409,1:12:03.179
+coming in to Google.
+
+1:12:03.509,1:12:04.739
+That's even a big number for us.
+
+1:12:04.939,1:12:06.589
+And so thank you for your support,
+
+1:12:06.749,1:12:10.059
+thank you for, uh, enhancing your apps with Google services.
+
+1:12:10.559,1:12:11.649
+Of course, we're not satisfied.
+
+1:12:11.749,1:12:14.319
+We wanna do more to-- to make your web apps better
+
+1:12:14.319,1:12:16.029
+and make the web even richer.
+
+1:12:16.459,1:12:19.370
+And we looked at one of our most successful models.
+
+1:12:19.489,1:12:20.229
+And that's AdSense.
+
+1:12:20.989,1:12:23.600
+There are literally hundreds of thousands of sites
+
+1:12:24.239,1:12:24.989
+that use AdSense.
+
+1:12:25.799,1:12:29.479
+And they get those Google ads on their page by nothing more
+
+1:12:29.819,1:12:31.729
+than including a little bit of JavaScript.
+
+1:12:32.279,1:12:33.829
+And so we asked ourselves, why couldn't we
+
+1:12:33.929,1:12:35.589
+take that approach for everything we were doing?
+
+1:12:35.799,1:12:38.629
+Why not make our other services that easy
+
+1:12:38.879,1:12:40.479
+to incorporate into your applications?
+
+1:12:40.919,1:12:43.319
+To demonstrate a brand-new developer product for you,
+
+1:12:43.379,1:12:44.589
+I'd like to invite up DeWitt Clinton
+
+1:12:45.129,1:12:46.000
+to walk you through that.
+
+1:12:46.219,1:12:47.040
+DeWitt, please. Welcome.
+
+1:12:47.039,1:12:49.909
+Clinton: Hey, thank you, Vic.
+
+1:12:49.909,1:12:51.949
+[applause]
+
+1:12:51.949,1:12:51.949
+Hi.
+
+1:12:53.199,1:12:55.339
+Today I'm very pleased to introduce
+
+1:12:55.629,1:12:56.719
+Google Web Elements.
+
+1:12:57.439,1:13:00.049
+Google Web Elements bring Google products
+
+1:13:00.539,1:13:04.529
+to your website using simple copy and paste.
+
+1:13:04.529,1:13:07.000
+We were inspired by the embeddable YouTube video
+
+1:13:07.439,1:13:09.129
+and AdSense, and asked ourselves,
+
+1:13:09.569,1:13:12.039
+could we apply this approach to more products?
+
+1:13:13.729,1:13:16.179
+Today I'm going to demonstrate adding Google News
+
+1:13:16.379,1:13:18.069
+and Google Maps, and Google Search
+
+1:13:18.339,1:13:20.419
+to a website using Google Web Elements.
+
+1:13:20.909,1:13:21.499
+Let's get started.
+
+1:13:21.499,1:13:30.629
+Here's a simple website we put together.
+
+1:13:30.929,1:13:33.989
+Standard two-column layout like something you'd find on Blogger,
+
+1:13:34.289,1:13:35.689
+or WordPress, or your own site.
+
+1:13:37.469,1:13:38.499
+It looks pretty good,
+
+1:13:38.499,1:13:40.949
+but I think we can make it more dynamic.
+
+1:13:41.339,1:13:44.719
+I'd like to pull in, uh, headline news from Google News,
+
+1:13:45.169,1:13:46.889
+and I'll do that with a Google Web Element.
+
+1:13:47.629,1:13:50.479
+I go to google.com/webelements,
+
+1:13:50.479,1:13:56.949
+and I select the "News" element.
+
+1:13:56.949,1:14:01.079
+And here I can choose from headlines from technology,
+
+1:14:01.149,1:14:03.329
+sports, politics, or enter my own.
+
+1:14:04.189,1:14:05.080
+I'll enter "Google."
+
+1:14:06.889,1:14:08.459
+And I'll fit it to my site.
+
+1:14:10.009,1:14:10.699
+And I copy the code,
+
+1:14:11.379,1:14:15.310
+and I go to the HTML of my site, and find the right place.
+
+1:14:16.249,1:14:17.689
+and I hit "paste."
+
+1:14:17.689,1:14:20.559
+When I go back to the page and refresh,
+
+1:14:20.559,1:14:22.239
+Google News is already live.
+
+1:14:24.089,1:14:25.149
+I'd like to add now a map
+
+1:14:25.479,1:14:28.439
+to Moscone and the developer conference.
+
+1:14:29.039,1:14:31.569
+So I go to google.com/webelements,
+
+1:14:31.569,1:14:33.629
+I go to the "Maps" element,
+
+1:14:33.629,1:14:38.709
+I type in, "Moscone Center."
+
+1:14:38.709,1:14:42.109
+And we're here for Google I/O.
+
+1:14:42.109,1:14:46.109
+And I like the terrain view.
+
+1:14:46.109,1:14:47.889
+And again, I copy the code,
+
+1:14:47.889,1:14:50.069
+I go to my template,
+
+1:14:50.069,1:14:54.379
+Clinton: and I paste it in wherever I want.
+
+1:14:54.379,1:14:56.229
+Refresh, and we're already live.
+
+1:14:58.689,1:15:00.179
+Now, even a small--thank you.
+
+1:15:00.179,1:15:02.639
+[applause]
+
+1:15:02.639,1:15:05.919
+Now, even a small site like this one can benefit from search.
+
+1:15:06.699,1:15:09.449
+I can do that with the Google Custom Search element.
+
+1:15:09.449,1:15:14.729
+I'll go to google.com/webelements,
+
+1:15:14.729,1:15:16.009
+click the "Custom Search" element,
+
+1:15:17.609,1:15:19.669
+and right now I don't need to do anything more.
+
+1:15:20.759,1:15:23.959
+The Custom Search element will automatically configure itself
+
+1:15:24.099,1:15:26.239
+to search just the content of my site.
+
+1:15:26.919,1:15:29.959
+So all I have to do is copy--
+
+1:15:29.959,1:15:31.679
+and I think you're seeing the pattern here--
+
+1:15:31.679,1:15:36.589
+paste,
+
+1:15:36.589,1:15:37.589
+and the search box appears.
+
+1:15:37.589,1:15:39.679
+I'm going to do a test search.
+
+1:15:39.679,1:15:44.149
+Looks good.
+
+1:15:44.149,1:15:47.319
+However, since the Custom Search element
+
+1:15:47.349,1:15:50.459
+is built on top of the Ajax search APIs,
+
+1:15:50.459,1:15:55.199
+I can apply the styling rules and custom JavaScript
+
+1:15:55.319,1:15:57.249
+however I like to make it fit my site.
+
+1:15:57.249,1:16:01.129
+I move the search box over here, and there we go.
+
+1:16:03.069,1:16:05.779
+So I've added maps, news, and search
+
+1:16:05.959,1:16:07.009
+all in about three minutes.
+
+1:16:08.799,1:16:10.139
+And my site's certainly more dynamic,
+
+1:16:11.509,1:16:13.149
+but I'd like to make it more interactive.
+
+1:16:13.679,1:16:14.649
+I'd like to make it social.
+
+1:16:15.399,1:16:19.839
+I can do that with the Google Conversation element.
+
+1:16:19.839,1:16:22.859
+The Google Conversation element allows visitors to my site
+
+1:16:23.049,1:16:24.699
+to post comments and videos
+
+1:16:25.159,1:16:28.049
+and hold a conversation about whatever topic I choose.
+
+1:16:28.049,1:16:32.639
+So, in fact, I will choose Google I/O as a topic.
+
+1:16:32.649,1:16:34.759
+And I will copy the code,
+
+1:16:34.759,1:16:37.589
+I will paste it into the site,
+
+1:16:37.589,1:16:41.159
+and I will refresh.
+
+1:16:41.159,1:16:44.769
+And our conversation is live.
+
+1:16:44.769,1:16:46.619
+Hello, Google--
+
+1:16:46.619,1:16:51.849
+Oops.
+
+1:16:51.849,1:16:54.399
+Google I/O.
+
+1:16:54.399,1:16:59.409
+So we've seen, just using copy and paste,
+
+1:16:59.729,1:17:04.339
+adding search, news, maps, and conversations to the website
+
+1:17:04.779,1:17:05.879
+thanks to Google Web Elements.
+
+1:17:06.549,1:17:08.509
+Google Web Elements are available today
+
+1:17:08.889,1:17:10.129
+at google.com/webelements.
+
+1:17:10.129,1:17:14.199
+Thank you. Thank you, Vic.
+
+1:17:14.199,1:17:15.879
+[applause]
+
+1:17:15.879,1:17:20.919
+Gundrota: Copy/paste development.
+
+1:17:20.919,1:17:25.959
+We think that's really going to make it easier.
+
+1:17:25.959,1:17:27.679
+Next I'd like to talk about Android.
+
+1:17:27.679,1:17:30.379
+Eric mentioned it in his opening remarks.
+
+1:17:30.379,1:17:34.509
+We couldn't be happier with the progress that we've made
+
+1:17:34.509,1:17:36.409
+in a little over just half a year
+
+1:17:36.509,1:17:38.679
+since Android's been introduced.
+
+1:17:38.679,1:17:41.769
+In those brief, few months, we've had three versions out,
+
+1:17:41.889,1:17:43.699
+including the latest version last week
+
+1:17:43.699,1:17:50.139
+We've had ten carriers and--
+
+1:17:54.159,1:17:56.529
+including apps like the one we demonstrated on Android earlier,
+
+1:17:57.449,1:17:59.319
+using the powerful capability of its browser.
+
+1:17:59.849,1:18:02.409
+And on average we're seeing users of Android
+
+1:18:02.409,1:18:05.250
+to their device.
+
+1:18:05.249,1:18:07.209
+And so the ecosystem is really working,
+
+1:18:07.589,1:18:10.069
+browser share is just fantastic and fun to watch,
+
+1:18:10.209,1:18:11.849
+and we thank you for your support.
+
+1:18:12.219,1:18:13.599
+What we'd like to do next, though,
+
+1:18:14.089,1:18:18.259
+is show you a sneak peek into what's coming next on Android,
+
+1:18:18.429,1:18:20.469
+and for that I'd like to invite up Romain Guy.
+
+1:18:20.469,1:18:23.399
+Romain, please, why don't you show us what's coming next.
+
+1:18:23.399,1:18:24.049
+Guy: Thank you, Vic.
+
+1:18:24.049,1:18:30.689
+[applause]
+
+1:18:30.689,1:18:31.579
+the Android team is already
+
+1:18:31.579,1:18:33.649
+hard at work on the next version of Android,
+
+1:18:33.819,1:18:35.169
+and we code named it "Donut."
+
+1:18:35.329,1:18:38.029
+You may have heard of it on the Web already.
+
+1:18:38.029,1:18:40.649
+And today I want to show you two exciting, new features
+
+1:18:40.649,1:18:42.779
+that will ship as part of Donut.
+
+1:18:42.779,1:18:46.779
+First, we want to make search more useful and more powerful
+
+1:18:47.069,1:18:49.139
+both for users and developers alike.
+
+1:18:50.259,1:18:53.189
+For users, we want-- we want them to be able,
+
+1:18:53.509,1:18:56.209
+from a single query, to be able to search the Web,
+
+1:18:56.589,1:18:58.319
+their contacts, their bookmarks,
+
+1:18:58.649,1:19:00.189
+their application, and their music.
+
+1:19:00.439,1:19:02.339
+But let me show you what it looks like.
+
+1:19:02.339,1:19:04.319
+So here I have an Android device.
+
+1:19:05.419,1:19:08.259
+And on my home screen, when I click the search widget,
+
+1:19:08.529,1:19:09.949
+I can initiate a new search.
+
+1:19:10.479,1:19:12.379
+And if I start typing,
+
+1:19:12.379,1:19:13.489
+the device automatically looks
+
+1:19:13.489,1:19:15.779
+for my applications or my contacts.
+
+1:19:16.649,1:19:19.759
+We can also look for Web results.
+
+1:19:20.819,1:19:26.169
+So if we're hungry for pizza,
+
+1:19:26.169,1:19:29.759
+we can search the Web for that.
+
+1:19:29.759,1:19:31.029
+But we decided that the search UI
+
+1:19:31.029,1:19:32.049
+could be a lot more than that.
+
+1:19:32.439,1:19:33.899
+The search UI can also act
+
+1:19:34.059,1:19:36.569
+as a brand-new launcher for you as a user.
+
+1:19:36.569,1:19:39.219
+Every time I click a search result,
+
+1:19:39.219,1:19:42.319
+the system remembers what I did with that search result,
+
+1:19:42.319,1:19:45.619
+and the more I use my device, the more the--the--
+
+1:19:45.619,1:19:47.919
+the device will know about me, about what I do every day,
+
+1:19:47.989,1:19:49.020
+about my common tasks.
+
+1:19:49.879,1:19:53.249
+And what happens is every time I start a new search,
+
+1:19:54.139,1:19:55.629
+I get pre-populated results.
+
+1:19:55.629,1:19:57.640
+So here, for instance, last time I did a search
+
+1:19:57.639,1:19:58.229
+I clicked the calendar application.
+
+1:19:58.229,1:20:01.040
+And I see here the result
+
+1:20:01.119,1:20:04.279
+that matters to me on a day-to-day basis.
+
+1:20:04.279,1:20:05.639
+So this is going to be an awesome feature
+
+1:20:05.649,1:20:07.889
+'cause I know that in this part of the UI
+
+1:20:07.889,1:20:09.409
+I will always have access to the thing
+
+1:20:09.409,1:20:10.879
+that matters to me as a user.
+
+1:20:11.899,1:20:12.350
+But there's more.
+
+1:20:12.939,1:20:15.589
+We want the search UI to become a powerful tool
+
+1:20:15.989,1:20:17.059
+for your applications.
+
+1:20:17.479,1:20:19.029
+And with just a few lines of code,
+
+1:20:19.389,1:20:24.149
+your application can populate more results in the search UI.
+
+1:20:24.149,1:20:25.549
+And I have a simple example here.
+
+1:20:25.909,1:20:27.419
+I wrote an application for myself,
+
+1:20:27.519,1:20:29.100
+just a list of books I've read,
+
+1:20:29.099,1:20:30.979
+and I wanted to be able to quickly search
+
+1:20:31.239,1:20:33.069
+my library from the home screen.
+
+1:20:33.719,1:20:35.589
+So with just a couple lines of XML,
+
+1:20:35.589,1:20:40.479
+I am now able to add my search results to this UI.
+
+1:20:40.479,1:20:44.479
+And if I type the name of one of my favorite authors,
+
+1:20:44.489,1:20:47.739
+I can see his books appearing in my search UI.
+
+1:20:47.739,1:20:50.889
+And you can see search results from the Web--
+
+1:20:50.889,1:20:52.600
+more books and more Web results.
+
+1:20:53.239,1:20:55.639
+So we're really excited about this feature
+
+1:20:55.649,1:20:57.850
+because you guys are creating the content.
+
+1:20:57.849,1:20:59.799
+You have the application, you have content
+
+1:20:59.799,1:21:01.619
+that the Android platform doesn't have,
+
+1:21:01.619,1:21:03.329
+and we can't wait to see what you're going to do with it
+
+1:21:03.329,1:21:06.839
+and what you're going to put in this UI.
+
+1:21:06.839,1:21:09.679
+Next, we wanted to add a new API--
+
+1:21:09.689,1:21:14.589
+something that you developers have widely requested.
+
+1:21:14.599,1:21:16.709
+a new speech recognition API
+
+1:21:16.709,1:21:18.529
+that lets you control the device
+
+1:21:18.819,1:21:20.489
+without any physical interaction.
+
+1:21:20.969,1:21:23.639
+Now, the problem is the device cannot interact with you.
+
+1:21:24.359,1:21:26.569
+So we're introducing a new Text-to-Speech API
+
+1:21:27.269,1:21:29.679
+that lets the device, you know, read text to you,
+
+1:21:29.889,1:21:31.279
+or give you a result, or, you know,
+
+1:21:31.449,1:21:32.469
+turn-by-turn navigation
+
+1:21:32.469,1:21:35.029
+if you're writing a GPS application.
+
+1:21:35.029,1:21:36.009
+And I have a simple demo here.
+
+1:21:36.459,1:21:39.229
+We modified the Translate application
+
+1:21:39.229,1:21:40.689
+that you can find on the Android market,
+
+1:21:41.279,1:21:44.729
+and we added the Text-to-Speech API.
+
+1:21:44.729,1:21:47.579
+So, for instance, here, if I want to translate a sentence
+
+1:21:47.579,1:21:49.770
+from English to French, and I click the "Translate" button...
+
+1:21:49.769,1:21:54.429
+computer voice: Bienvenue à San Francisco.
+
+1:21:54.429,1:21:57.539
+Guy: The device reads the sentence to me.
+
+1:21:57.539,1:21:59.619
+And we're shipping-- we're going to ship Donut
+
+1:21:59.619,1:22:02.039
+with several voice packs for different languages,
+
+1:22:02.209,1:22:05.499
+so in any language the user will get the right accent
+
+1:22:05.499,1:22:06.879
+so they will be able to understand
+
+1:22:07.139,1:22:08.499
+what the device is saying perfectly.
+
+1:22:08.569,1:22:09.500
+So, for instance, in German...
+
+1:22:09.499,1:22:14.359
+computer voice: Willkommen in San Francisco.
+
+1:22:14.359,1:22:15.809
+Guy: Or even in English.
+
+1:22:15.969,1:22:17.019
+As I--as you can see,
+
+1:22:17.019,1:22:17.969
+we have two different versions in English.
+
+1:22:17.969,1:22:19.989
+computer voice: Welcome to San Francisco.
+
+1:22:19.989,1:22:24.279
+Guy: So we're really excited...
+
+1:22:24.279,1:22:30.089
+[applause]
+
+1:22:30.089,1:22:31.669
+We're really excited about these APIs
+
+1:22:31.669,1:22:32.699
+'cause we know that you guys
+
+1:22:32.699,1:22:34.859
+are going to do great things with it.
+
+1:22:34.859,1:22:35.989
+But it gets even better.
+
+1:22:35.989,1:22:39.259
+We're shipping a new text-to-speech API in Donut,
+
+1:22:39.259,1:22:42.089
+but we're also going to ship the text-to-speech engine,
+
+1:22:42.369,1:22:45.719
+and thanks to SVOX, that engine will be open source.
+
+1:22:46.199,1:22:47.629
+So as part of the Android platform,
+
+1:22:47.889,1:22:49.919
+any Android device will have an open-source
+
+1:22:49.919,1:22:51.750
+text-to-speech engine of high quality
+
+1:22:51.749,1:22:54.649
+like you just heard right now.
+
+1:22:54.659,1:22:57.750
+Finally, I want to show you a small experiment
+
+1:22:57.749,1:23:00.270
+that we've been working on in the Android team.
+
+1:23:00.269,1:23:03.459
+We--you know, we recognize that sometimes
+
+1:23:03.609,1:23:05.949
+finding a specific item in a long list of data--
+
+1:23:05.949,1:23:08.279
+for instance, I have several hundred contacts--
+
+1:23:08.409,1:23:10.069
+and finding one item in that list
+
+1:23:10.219,1:23:11.679
+can be, you know, pretty painful.
+
+1:23:11.799,1:23:14.209
+So we have different solutions to address that issue.
+
+1:23:14.289,1:23:14.839
+We have search,
+
+1:23:14.839,1:23:16.309
+we have search on the home screen,
+
+1:23:16.599,1:23:17.599
+you can filter your list
+
+1:23:17.599,1:23:17.959
+when you're in a contact application,
+
+1:23:17.969,1:23:20.049
+we have a fast scroll widget--
+
+1:23:20.419,1:23:21.589
+many different ways to do it.
+
+1:23:21.849,1:23:25.199
+But we wanted something new, something more interesting
+
+1:23:25.299,1:23:27.439
+and that was a little more fun to use.
+
+1:23:27.439,1:23:29.179
+So I have a small demo for you here.
+
+1:23:29.749,1:23:31.149
+Wouldn't it be cool if I could
+
+1:23:31.149,1:23:32.949
+just launch my contact application
+
+1:23:32.949,1:23:35.619
+and start drawing on the screen to filter my list?
+
+1:23:35.619,1:23:39.319
+And I keep-- and I can keep going,
+
+1:23:40.019,1:23:41.609
+and the device just recognizes the handwriting
+
+1:23:41.899,1:23:42.739
+and filters the list.
+
+1:23:43.629,1:23:44.919
+Instead of filtering, if you prefer,
+
+1:23:45.329,1:23:46.719
+you can simply jump to an item.
+
+1:23:47.019,1:23:48.949
+So, for instance, in the music application,
+
+1:23:48.949,1:23:55.009
+I can jump directly to a certain position in the list.
+
+1:23:55.009,1:23:56.429
+We care about the user experience,
+
+1:23:56.429,1:23:58.939
+but we also care about the developer experience.
+
+1:23:58.939,1:24:01.029
+And we hope that with those new APIs
+
+1:24:01.029,1:24:02.159
+that we're introducing in Donut
+
+1:24:02.429,1:24:03.199
+there will be more--
+
+1:24:03.199,1:24:06.329
+you are going to come up with awesome applications
+
+1:24:06.329,1:24:08.949
+that will make Android a more exciting platform.
+
+1:24:08.949,1:24:11.439
+Thank you, Vic.
+
+1:24:11.439,1:24:18.109
+Gundrota: Thank you very much, Romain, thank you.
+
+1:24:18.109,1:24:18.939
+[applause]
+
+1:24:18.939,1:24:21.419
+Well, folks, we covered quite a bit of ground.
+
+1:24:21.739,1:24:24.739
+First of all, you heard about our call to action for HTML--
+
+1:24:25.409,1:24:27.879
+Google's commitment to make applications
+
+1:24:30.239,1:24:31.179
+and we hope you join us.
+
+1:24:32.449,1:24:33.409
+We talked about App Engine
+
+1:24:33.409,1:24:35.129
+being opened up for Java sign-ups.
+
+1:24:35.379,1:24:37.489
+We gave you a sneak peek at GWT
+
+1:24:37.489,1:24:39.879
+and what's coming next-- in the next version there.
+
+1:24:40.069,1:24:41.799
+We introduced Google Web Elements--
+
+1:24:41.799,1:24:43.629
+copy/paste development.
+
+1:24:43.849,1:24:45.669
+And finally, we gave you a sneak peek
+
+1:24:45.859,1:24:48.089
+at what's coming next in Android.
+
+1:24:48.529,1:24:51.009
+We have three more things and one final spot.
+
+1:24:51.009,1:24:54.429
+Gundrota: First I'd like to announce that we are--
+
+1:24:54.429,1:24:57.299
+have part two of the Android Developer Challenge
+
+1:24:57.389,1:24:58.069
+being announced today.
+
+1:24:58.639,1:25:00.989
+The details are located at that url.
+
+1:25:00.989,1:25:03.459
+We will take submissions for the contest in August,
+
+1:25:03.749,1:25:05.339
+judging will occur through the fall,
+
+1:25:05.619,1:25:07.529
+and we'll announce our winners at the end of fall.
+
+1:25:08.019,1:25:10.269
+This time we've learned a few things from American Idol,
+
+1:25:10.389,1:25:13.059
+and so we will have user votes as part of the judging,
+
+1:25:13.199,1:25:14.709
+and we think this contest
+
+1:25:14.709,1:25:16.069
+is going to be really, really exciting.
+
+1:25:16.839,1:25:18.779
+Number two, I'd like to announce
+
+1:25:18.779,1:25:20.559
+that we're going to give away--
+
+1:25:20.839,1:25:23.239
+to every conference attendee today,
+
+1:25:26.259,1:25:29.790
+which contains a link to the SDK documentation...
+
+1:25:29.789,1:25:35.899
+[laughter]
+
+1:25:35.899,1:25:37.169
+And a few more surprises...
+
+1:25:38.219,1:25:43.089
+including an Android phone.
+
+1:25:43.089,1:25:51.239
+[cheers and applause]
+
+1:25:51.249,1:25:51.249
+This...
+
+1:25:54.869,1:25:56.699
+I think, you know, we realized
+
+1:25:56.749,1:25:59.000
+that you could go download the SDK,
+
+1:25:58.999,1:26:01.159
+you could use the emulator,
+
+1:26:01.639,1:26:03.349
+but nothing beats having a real device.
+
+1:26:04.369,1:26:06.189
+And I've always wanted an Oprah moment,
+
+1:26:06.299,1:26:08.919
+so for you, and you, and you.
+
+1:26:08.919,1:26:11.609
+[applause]
+
+1:26:11.609,1:26:12.519
+There's one more thing.
+
+1:26:18.159,1:26:19.870
+This is an unlocked device that'll be available.
+
+1:26:19.959,1:26:22.179
+In addition, we went one step further.
+
+1:26:23.329,1:26:24.109
+Included in every device
+
+1:26:24.439,1:26:26.499
+will be a SIM that gives you
+
+1:26:28.789,1:26:31.669
+and thousands of hours
+
+1:26:34.019,1:26:35.829
+And so we realized some of you don't have a SIM
+
+1:26:36.009,1:26:38.059
+to get started tonight, you might have a CDMA phone,
+
+1:26:38.169,1:26:39.640
+but we think this is a nice way
+
+1:26:39.639,1:26:41.779
+to get started on you exploring the platform.
+
+1:26:41.779,1:26:48.099
+[cheers and applause]
+
+1:26:48.099,1:26:52.839
+It's our small way of saying
+
+1:26:52.909,1:26:54.909
+thank you for supporting our conference as well.
+
+1:26:55.909,1:26:57.819
+I'd like to conclude by just making
+
+1:26:57.819,1:26:59.259
+a few more quick announcements.
+
+1:26:59.759,1:27:01.339
+If you thought that surprise was fun,
+
+1:27:01.889,1:27:03.219
+we have another surprise for you.
+
+1:27:03.829,1:27:05.449
+Please don't miss tomorrow's keynote.
+
+1:27:06.239,1:27:09.699
+Tomorrow's keynote, I think, will surprise many of you
+
+1:27:10.629,1:27:13.279
+with some exciting things that have not yet leaked,
+
+1:27:13.509,1:27:15.699
+and we're so excited about that.
+
+1:27:15.699,1:27:16.719
+[laughter]
+
+1:27:16.719,1:27:17.629
+So you'll enjoy that.
+
+1:27:18.229,1:27:20.529
+Number two, picking up your device--
+
+1:27:20.779,1:27:23.709
+you can pick up your device starting this afternoon
+
+1:27:23.709,1:27:25.359
+throughout the entire conference.
+
+1:27:25.359,1:27:26.389
+So you don't have to go rush.
+
+1:27:26.539,1:27:28.479
+You don't have to go queue up in line right now.
+
+1:27:28.679,1:27:30.989
+Go to your sessions, and in the afternoon
+
+1:27:31.069,1:27:32.159
+at the registration area,
+
+1:27:32.159,1:27:33.269
+we'll start giving out
+
+1:27:36.079,1:27:37.770
+And we'll continue that through the party tonight.
+
+1:27:37.929,1:27:39.859
+So don't miss the after hours party.
+
+1:27:39.859,1:27:41.349
+We're going to have some great DJs.
+
+1:27:41.349,1:27:43.269
+Like last year, we're going to have a lot of fun.
+
+1:27:43.649,1:27:45.189
+And, of course, many Googlers
+
+1:27:45.189,1:27:46.419
+will be there to interact with you.
+
+1:27:46.809,1:27:48.719
+So once again, thank you for attending the keynote,
+
+1:27:48.779,1:27:49.799
+enjoy the conference,
+
+1:27:49.909,1:27:51.499
+and thank you for supporting Google I/O.
+
+1:27:51.499,1:27:54.159
+[cheers and applause]
+
+1:27:54.159,1:28:00.372
+recorded male voice: Welcome to Google I/O.

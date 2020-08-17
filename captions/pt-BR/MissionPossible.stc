@@ -1,0 +1,571 @@
+﻿*TC 00:00:13;19
+Se você aceitar, sua
+missão será
+
+*TC 00:00:16;27
+criar um Google Gadget.
+
+*TC 00:00:18;26
+O desafio: torná-lo
+original, útil,
+
+*TC 00:00:21;25
+e personalizável. 
+
+*TC 00:00:23;22
+Sou Dan Le, da
+equipe do Google Gadgets.
+
+*TC 00:00:25;26
+Estou aqui para informá-lo
+sobre sua missão.
+
+*TC 00:00:28;20
+Os Google Gadgets fornecem
+a hora, a previsão do tempo,
+
+*TC 00:00:31;10
+resultados esportivos ou
+obtêm feeds do YouTube.
+
+*TC 00:00:34;10
+Eles reúnem informações
+da Internet e
+
+*TC 00:00:36;17
+as exibem para você
+de maneira conveniente.
+
+*TC 00:00:39;06
+Você pode encontrar muitos
+outros gadgets no
+
+*TC 00:00:40;22
+diretório do iGoogle.
+
+*TC 00:00:43;11
+Vejamos agora como
+criar um gadget.
+
+*TC 00:00:45;16
+Começaremos com uma
+versão simples, tornando-a
+
+*TC 00:00:47;12
+mais complexa depois.
+
+*TC 00:00:50;02
+Este gadget obtém e
+exibe diversos feeds
+
+*TC 00:00:53;05
+RSS e Atom da web.
+
+*TC 00:00:55;07
+Ele usa diversos
+recursos de API e
+
+*TC 00:00:57;07
+é altamente configurável. 
+
+*TC 00:00:58;27
+Vamos selecionar
+os parâmetros básicos.
+
+*TC 00:01:01;03
+Digamos que você gosta muito
+de rythm and blues.
+Você pode personalizar este
+
+*TC 00:01:04;09
+gadget para obter as edições
+mais recentes de R&B
+
+*TC 00:01:07;02
+no YouTube, no Amazon e no
+iTunes, além de obter as
+
+*TC 00:01:10;27
+entradas mais recentes do
+seu blog de música favorito.
+
+*TC 00:01:13;16
+Você pode criar uma
+guia separada para cada feed.
+
+*TC 00:01:16;06
+Comece de forma simples,
+criando um gadget XML
+
+*TC 00:01:18;29
+apenas com o básico.
+
+*TC 00:01:20;28
+Você pode tornar o gadget
+mais complexo depois.
+
+*TC 00:01:24;13
+Aqui, o código determina
+o título e a altura
+
+*TC 00:01:26;09
+do gadget.
+
+*TC 00:01:30;04
+Agora, é necessário
+adicionar guias ao gadget.
+
+*TC 00:01:32;19
+Adicione
+'<Require feature="tabs"/>'
+
+*TC 00:01:34;13
+ao XML do gadget. Isso
+ativa o uso da
+
+*TC 00:01:37;04
+biblioteca de guias da API.
+
+*TC 00:01:39;06
+Gere conteúdo exclusivo
+para cada guia na
+
+*TC 00:01:41;13
+função de retorno de chamada.
+
+*TC 00:01:44;07
+Agora temos a estrutura básica
+do gadget com quatro guias.
+
+*TC 00:01:47;04
+A próxima etapa é obter um
+feed RSS ou Atom para cada guia.
+
+*TC 00:01:51;11
+Defina o valor padrão
+de cada feed de URL que
+
+*TC 00:01:54;03
+será carregado, mas adicione
+UserPrefs para que os usuários
+
+*TC 00:01:57;04
+possam configurar seus próprios
+dados ao usar o seu gadget.
+
+*TC 00:02:01;01
+Com os dados, você pode exibir
+tipos de informações diferentes
+
+*TC 00:02:03;28
+sobre os feeds, como seu
+nome, nome de exibição,
+
+*TC 00:02:07;01
+descrição, entrada do feed
+e resumos.
+
+*TC 00:02:10;25
+Depois de concluir esta
+etapa, os usuários poderão
+
+*TC 00:02:13;11
+alterar os URLs de feed de entrada.
+
+*TC 00:02:16;26
+Em seguida, no gadget, você
+deve executar a obtenção.
+
+*TC 00:02:20;23
+Temos o método da API 
+denominado "_IG_FetchFeedAsJSON".
+
+*TC 00:02:25;19
+Ele é usado para executar uma
+obtenção do feed e retornar uma
+
+*TC 00:02:28;26
+resposta "JSON" para a função
+de retorno de chamada
+
+*TC 00:02:31;01
+que você definir.
+
+*TC 00:02:33;04
+Dentro do retorno de chamada,
+use um objeto "JSON" para
+
+*TC 00:02:35;14
+ler o feed.
+
+*TC 00:02:37;11
+o segundo parâmetro é onde
+especificamos a
+
+*TC 00:02:39;16
+função de retorno de chamada.
+
+*TC 00:02:41;15
+O terceiro parâmetro define
+o número de entradas
+
+*TC 00:02:43;24
+que você deseja obter.
+
+*TC 00:02:45;09
+o quarto parâmetro é simplesmente
+verdadeiro ou falso, dependendo
+
+*TC 00:02:48;06
+se você deseja incluir
+resumos para cada entrada.
+
+*TC 00:02:51;26
+Este trecho de código mostra a
+função de retorno de chamada que
+
+*TC 00:02:54;16
+gera o HTML baseado nos
+
+*TC 00:02:56;15
+dados "JSON"
+que são retornados.
+
+*TC 00:02:59;13
+Vejamos a aparência
+do gadget agora. 
+
+*TC 00:03:02;07
+Depois que o gadget
+executa as funções básicas
+
+*TC 00:03:05;03
+que você definiu,
+
+*TC 00:03:07;16
+você pode melhorar sua
+aparência e desempenho.
+
+*TC 00:03:11;18
+Primeiro, formate a
+
+*TC 00:03:14;07
+IU do gadget.
+
+*TC 00:03:15;21
+Adicione regras CSS para
+imprimir estilo à saída
+
+*TC 00:03:18;13
+do gadget.
+
+*TC 00:03:19;18
+Tenha em mente alguns pontos
+essenciais de design de IU.
+
+*TC 00:03:23;03 
+Os gadgets devem ser
+os mais compactos possível.
+
+*TC 00:03:25;28
+O espaço do
+iGoogle é limitado.
+
+*TC 00:03:28;22
+Para manter os gadgets compactos,
+use linhas de borda simples,
+
+*TC 00:03:31;23
+reduza as margens e 
+aplique formatação às
+
+*TC 00:03:34;08
+guias, como tamanho
+de fonte menor.
+
+*TC 00:03:37;25
+Olhe o gadget novamente
+para ver a diferença
+
+*TC 00:03:39;28
+que as regras CSS fizeram.
+
+*TC 00:03:43;06
+Como a quantidade de
+informações dos feeds
+
+*TC 00:03:45;05
+mudará com freqüência, você
+pode evitar a necessidade de
+
+*TC 00:03:48;15
+espaço criado por isto com o
+"recurso de altura dinâmica".
+
+*TC 00:03:52;08
+Este recurso
+redimensiona seu gadget
+
+*TC 00:03:54;08
+automaticamente para ajustá-lo
+à quantidade de informações
+
+*TC 00:03:57;03
+proveniente dos feeds.
+
+*TC 00:03:59;07
+Isso evita que o gadget
+ocupe
+
+*TC 00:04:01;05
+espaço desnecessário.
+
+*TC 00:04:04;00
+Você pode adicionar o recurso 
+de análise, uma única função
+
+*TC 00:04:07;05
+chamada de função "_IG_Analytics".
+
+*TC 00:04:09;17
+Basta apenas ter uma conta do
+Google Analytics, que é
+
+*TC 00:04:11;25
+completamente gratuita.
+
+*TC 00:04:13;20
+Passando seu ID do Google
+Analytics como primeiro parâmetro.
+
+*TC 00:04:17;14
+Como segundo parâmetro,
+identifique um caminho exclusivo,
+
+*TC 00:04:20;20
+específico do gadget.
+
+*TC 00:04:22;14
+Esta função relata uma
+página visitada à sua
+
+*TC 00:04:25;05
+conta e permite saber
+quantas visitas são
+
+*TC 00:04:27;07
+provenientes do gadget.
+
+*TC 00:04:28;10
+Agora você pode dar os toques
+finais ao gadget.
+
+*TC 00:04:31;12
+Quanto mais personalizável,
+melhor.
+
+*TC 00:04:34;10
+Ao decidir o que adicionar,
+tenha em mente os recursos
+
+*TC 00:04:37;09
+que gostaria de ver se fosse
+usar este gadget.
+
+*TC 00:04:40;23
+Por exemplo, talvez você
+deseje poder mudar os
+
+*TC 00:04:43;12
+títulos, rótulos de guias e número
+de entradas de feed exibidas.
+
+*TC 00:04:48;13
+Aqui estão alguns trechos de código
+mostrando o que é necessário para
+
+*TC 00:04:51;12
+tornar o título do gadget e das
+guias personalizáveis.
+
+*TC 00:04:57;10
+O último recurso personalizável
+que você pode adicionar é
+
+*TC 00:05:00;05
+permitir que o usuário especifique
+quantas entradas de feed o
+
+*TC 00:05:02;24
+gadget deve aceitar.
+
+*TC 00:05:04;05
+Antes, o código especificou
+que haverá
+
+*TC 00:05:06;12
+três entradas de feed.
+
+*TC 00:05:08;02
+Você também pode definir um
+menu suspenso para os feeds.
+
+*TC 00:05:11;26
+Substituímos a parte programada
+do número de entradas
+
+*TC 00:05:15;02
+por esta preferência de usuário.
+
+*TC 00:05:17;05
+Agora, seu gadget
+está pronto.
+
+*TC 00:05:19;09
+A última etapa é
+colocá-lo em ação.
+
+*TC 00:05:22;06
+Como colocá-lo no
+diretório de gadgets?
+
+*TC 00:05:24;20
+Envie seu gadget para o iGoogle.
+
+*TC 00:05:26;25
+Para poder enviar este 
+gadget, é necessário
+
+*TC 00:05:29;17
+adicionar metadados
+sobre o gadget.
+
+*TC 00:05:32;11
+Estas informações serão
+usadas para ajudar a
+
+*TC 00:05:34;22
+tornar o gadget pesquisável
+no diretório do iGoogle.
+
+*TC 00:05:37;27
+Lembre-se, os usuários podem
+escolher entre milhares de
+
+*TC 00:05:41;02
+gadgets do diretório.
+
+*TC 00:05:43;05
+Você precisa atrair o usuário
+para seu gadget quando
+
+*TC 00:05:45;07
+ele estiver navegando.
+
+*TC 00:05:46;27
+Veja algumas das principais
+maneiras de fazê-lo:
+
+*TC 00:05:50;00
+Use um título atraente
+em seu gadget.
+
+*TC 00:05:52;06
+Escolha algo curto e descritivo.
+
+*TC 00:05:54;14
+O usuário deve saber exatamente
+o que o seu gadget
+
+*TC 00:05:57;00
+faz, somente pelo título.
+
+*TC 00:05:59;01
+Crie uma miniatura e captura
+de tela atraentes.
+
+*TC 00:06:02;04
+As imagens são importantes, pois
+podem ser a única coisa que
+
+*TC 00:06:05;02
+atrai o usuário para
+o seu gadget.
+
+*TC 00:06:07;12
+Faça a miniatura se destacar
+e incentive o usuário
+
+*TC 00:06:09;19
+a clicar nela.
+
+*TC 00:06:11;13
+Depois de listado no diretório do
+iGoogle, comece a
+
+*TC 00:06:14;19
+promover seu gadget.
+
+*TC 00:06:16;22
+Você pode adicionar o botão
+"Adicionar ao Google" em seu site.
+
+*TC 00:06:20;17
+Também há um recurso para compartilhar
+gadgets no iGoogle, que permite
+
+*TC 00:06:24;02
+que você o envie a seus amigos.
+
+*TC 00:06:26;04
+Se tiver alguma dúvida sobre a
+API de gadgets, incentivamos
+
+*TC 00:06:29;09
+você a se participar do
+grupo de discussão
+
+*TC 00:06:31;08
+público.
+
+*TC 00:06:33;08
+Os membros da minha equipe
+moderam este grupo e respondem
+
+*TC 00:06:35;24
+às perguntas que surgem.
+
+*TC 00:06:37;17
+Há mais de 3500 membros
+neste grupo, e ele
+
+*TC 00:06:41;01
+é um recurso ótimo.
+
+*TC 00:06:43;07
+Você já recebeu
+sua missão.
+
+*TC 00:06:48;14
+Boa sorte.
+
+*TC 00:06:58;12
+Envie seu gadget logo.
+
+*TC 00:07:00;20
+O tempo está passando.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

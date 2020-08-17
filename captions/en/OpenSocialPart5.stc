@@ -1,0 +1,185 @@
+*TC 00:00:06;02
+In this section, we're going
+to take our sample
+
+*TC 00:00:07;25
+application that gives gifts
+to our friends, and also
+
+*TC 00:00:10;19
+shows the gifts that we've
+given them to show the gifts
+
+*TC 00:00:13;02
+that other friends
+have given to us.
+
+*TC 00:00:16;04
+The first thing we need to do
+is make a small change to
+
+*TC 00:00:19;03
+our gadget XML, so that we
+have a place to insert our
+
+*TC 00:00:22;05
+list of received gifts.
+
+*TC 00:00:24;01
+Next we need to make two
+small changes,
+
+*TC 00:00:25;26
+one to "loadFriends,"
+and one to the "giveGift"
+
+*TC 00:00:27;26
+function, so that we have a
+request for our friends' data,
+
+*TC 00:00:31;24
+as well as our own.
+
+*TC 00:00:32;21
+First, we modify "loadFriends,"
+so that in addition to
+
+*TC 00:00:35;24
+requesting information on the
+"viewer" and the "viewerFriends,"
+
+*TC 00:00:38;21
+as well as the viewer's
+personal application data,
+
+*TC 00:00:41;10
+we also need to request the
+"viewerFriends'" application data.
+
+*TC 00:00:45;21
+Next, we make the same change
+in "giveGift" so that the
+
+*TC 00:00:49;13
+requests parallel each other.
+
+*TC 00:00:52;06
+Third, we update "onLoadFriends,"
+so that in addition to pulling
+
+*TC 00:00:55;11
+out information on the "viewer,"
+the "viewerFriends,"
+
+*TC 00:00:57;20
+and the "giftData,"
+we pull out information on
+
+*TC 00:01:00;03
+"viewerfriendData,"
+which is the list of gifts
+
+*TC 00:01:02;14
+that all of our
+friends have given.
+
+*TC 00:01:04;17
+This function then iterates
+through the list of friends,
+
+*TC 00:01:07;06
+displays the menus so that
+you may select a friend
+
+*TC 00:01:09;06
+to give a gift to,
+
+*TC 00:01:10;15
+updates the gift list which shows
+the list of gifts that you have sent,
+
+*TC 00:01:14;16
+finally, calls the new function
+"updateReceivedList," which
+
+*TC 00:01:17;25
+shows the list of gifts that you
+have received from your friends.
+
+*TC 00:01:21;16
+"updateReceivedList" closely
+parallels "updateGiftList,"
+
+*TC 00:01:24;29
+but instead of iterating just
+once through the list of gifts
+
+*TC 00:01:27;10
+that you have sent, it iterates
+through each of your friends,
+
+*TC 00:01:30;06
+pulls out the application data
+just for that friend specified
+
+*TC 00:01:33;12
+by your friend's Id, then
+converts the data that it
+
+*TC 00:01:36;23
+pulls out into a
+javascript object.
+
+*TC 00:01:40;00
+Once it has this list of gifts
+that your friend have given,
+
+*TC 00:01:42;18
+it iterates through each of them,
+comparing the friend Id that
+
+*TC 00:01:45;14
+the gift was sent to with your Id.
+
+*TC 00:01:47;22
+If the Ids match, it adds that
+gift as a gift that was given to you.
+
+*TC 00:01:52;19
+Once the list of gifts
+that have been given
+
+*TC 00:01:54;06
+to you has been completed,
+they are inserted into the page.
+
+*TC 00:01:57;09
+Here you can see the newly
+created version of our gadget,
+
+*TC 00:01:59;16
+that displays not just options
+for sending gifts to our friends,
+
+*TC 00:02:02;24
+and the lists the gifts that we
+have already sent to our friends,
+
+*TC 00:02:05;01
+but the list of gifts that
+our friends have sent to us.
+
+*TC 00:02:07;29
+For more information on
+what I just showed you,
+
+*TC 00:02:10;04
+as well as information
+on the OpenSocial API,
+
+*TC 00:02:12;15
+check out the tutorial on
+code.google.com
+
+*TC 00:02:15;01
+under the OpenSocial section.

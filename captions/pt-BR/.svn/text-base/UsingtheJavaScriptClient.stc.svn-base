@@ -1,0 +1,498 @@
+﻿*TC 00:00:06;19
+Olá, meu nome é Austin Chau.
+
+*TC 00:00:08;05
+Trabalho na equipe da API de
+dados do Google Agenda.
+
+*TC 00:00:10;22
+A API de dados do Google
+Agenda exibe os dados de
+
+*TC 00:00:14;08
+sua conta do Google Agenda.
+
+*TC 00:00:16;08
+Com a API, você pode
+criar e pesquisar eventos,
+
+*TC 00:00:18;26
+ou até mesmo criar um
+programa de agenda
+
+*TC 00:00:21;23
+totalmente novo automaticamente.
+
+*TC 00:00:23;12
+Hoje veremos como usar
+a biblioteca-cliente
+
+*TC 00:00:25;21
+JavaScript para comunicação com
+a API de dados do Google Agenda.
+
+*TC 00:00:29;02
+Também veremos uma demonstração
+do novo guia interativo do desenvolvedor
+
+*TC 00:00:31;18
+que desenvolvi.
+
+*TC 00:00:33;29
+Este novo guia do desenvolvedor
+permite alterar o código direto
+
+*TC 00:00:36;01
+no navegador.
+
+*TC 00:00:37;06
+É uma excelente ferramenta de
+aprendizado, para você aprender a
+
+*TC 00:00:39;16 
+usar a biblioteca-cliente.
+
+*TC 00:00:41;07
+A biblioteca-cliente JavaScript
+é a mais recente
+
+*TC 00:00:43;18
+que adicionamos à nossa lista
+de bibliotecas-cliente
+
+*TC 00:00:45;19
+oficialmente suportadas,
+incluindo Java, CSharp, PHP,
+
+*TC 00:00:49;15
+e Phython.
+
+*TC 00:00:50;26
+Mas a biblioteca-cliente JavaScript
+é particularmente útil,
+
+*TC 00:00:53;16
+pois permite uma fácil
+integração com HTML e
+
+*TC 00:00:56;18
+não há dependência no lado
+do serviço.
+
+*TC 00:00:58;24
+A biblioteca-cliente JavaScript
+também tem a
+
+*TC 00:01:00;20 
+tecnologia de criação que permite
+comunicação entre domínios, o que
+
+*TC 00:01:04;09
+significa que agora, você pode usar
+JavaScript para executar não apenas
+
+*TC 00:01:06;10
+a repetição de operações,
+mas também programar.
+
+*TC 00:01:08;21
+Isso é muito fácil, usando a
+biblioteca-cliente JavaScript.
+
+*TC 00:01:11;09 
+Vamos mostrar as poucas
+etapas necessárias para definir
+
+*TC 00:01:13;20
+o código e começar a usá-la.
+
+*TC 00:01:16;27
+Etapa 1: Você deve se inscrever para
+obter uma chave de desenvolvedor. Para isso,
+
+*TC 00:01:20;03
+visite este site.
+
+*TC 00:01:22;20
+Etapa 2: É necessário incluir o carregador
+da biblioteca-cliente em
+
+*TC 00:01:26;01
+seu site, incluindo este
+script com sua
+
+*TC 00:01:28;07
+chave de desenvolvedor.
+
+*TC 00:01:30;05
+Etapa 3: Envie uma imagem
+para o mesmo domínio no qual
+
+*TC 00:01:32;17
+o código JavaScript será
+incluído. Esta imagem não precisa
+
+*TC 00:01:35;13
+ser visível. 
+
+*TC 00:01:36;09
+Como você pode ver, vou posicioná-la
+bem fora da página.
+
+*TC 00:01:39;06
+Isto é necessário para
+efeitos de comunicação
+
+*TC 00:01:40;12
+entre domínios.
+
+*TC 00:01:42;12
+Etapa 4: Use o carregador
+para carregar a 
+
+*TC 00:01:45;04
+biblioteca-cliente JavaScript.
+
+*TC 00:01:46;23
+Etapa 5: Agora é necessário definir a
+função de retorno de chamada
+
+*TC 00:01:49;14
+a ser usada quando a biblioteca
+estiver carregada e pronta para uso.
+
+*TC 00:01:52;02
+Etapa 6: Na função de retorno de chamada,
+primeiro é necessário verificar se o
+
+*TC 00:01:55;10
+usuário fez login. 
+
+*TC 00:01:56;19
+Caso contrário, redirecione o
+usuário para a página da conta
+
+*TC 00:01:58;29
+do Google para fazer login.
+
+*TC 00:02:00;26
+O usuário será levado de
+volta à sua página quando
+
+*TC 00:02:03;00
+estiver autenticado.
+
+*TC 00:02:04;19
+Agora, você está pronto para usar
+a biblioteca-cliente JavaScript para
+
+*TC 00:02:06;15
+fazer chamadas e usar a API
+de dados do Google Agenda.
+
+*TC 00:02:09;28
+Vamos acessar o
+"Guia interativo do desenvolvedor".
+
+*TC 00:02:12;09
+Você pode acessá-lo
+neste endereço.
+
+*TC 00:02:17;03
+O guia do desenvolvedor
+interativo parece um guia
+
+*TC 00:02:19;03
+normal com amostras de código, 
+demonstrando os casos mais
+
+*TC 00:02:21;12
+comuns que podem ser
+executados com a API.
+
+*TC 00:02:24;13
+Mas, diferente do guia do 
+desenvolvedor normal, você pode
+
+*TC 00:02:26;16
+modificar o código fonte, usando o
+editor de texto integrado e
+
+*TC 00:02:29;05
+executar um código
+direito no navegador.
+
+*TC 00:02:31;14
+Esta é uma maneira divertida e
+intuitiva de aprender, pois
+
+*TC 00:02:34;06
+você pode ver o resultado da ação
+que acabou de executar imediatamente.
+
+*TC 00:02:37;16
+Assim, vejamos algumas das 
+amostras de código, e vamos
+
+*TC 00:02:39;12
+tentar executá-las.
+
+*TC 00:02:40;28
+Vamos executar esta amostra
+de código e ver o que ocorre.
+
+*TC 00:02:44;21
+O trecho que você acabou de
+executar recuperou uma lista de
+
+*TC 00:02:47;02
+todas as suas agendas e
+imprimiu os títulos.
+
+*TC 00:02:49;25
+Você pode obter a versão
+integrada do Google Agenda para
+
+*TC 00:02:52;03
+confirmar se todas estas
+agendas lhe pertencem.
+
+*TC 00:02:58;20
+Vamos analisar o código
+para ver como isto é feito.
+
+*TC 00:03:02;12
+Primeiro, criamos o objeto
+serviço da agenda e passamos
+
+*TC 00:03:05;18
+o nome do aplicativo.
+
+*TC 00:03:09;27
+Em seguida, especificamos o
+"feedURL", para o qual esta
+
+*TC 00:03:12;18
+solicitação será enviada.
+
+*TC 00:03:15;09
+Estamos usando o
+feed "allcalendar".
+
+*TC 00:03:17;16
+Depois, definimos a função
+de retorno de chamada.
+
+*TC 00:03:20;13
+Dentro de uma função, apenas
+verificamos a lista de
+
+*TC 00:03:24;17
+agendas que você possui e
+imprimimos seus títulos.
+
+*TC 00:03:27;08
+Usamos a função 
+print, que é um
+
+*TC 00:03:29;13 
+método conveniente
+fornecido neste
+
+*TC 00:03:31;15
+guia do desenvolvedor.
+
+*TC 00:03:34;13
+Também temos de criar uma
+função de retorno de chamada
+
+*TC 00:03:37;02
+para "tratar erros".
+
+*TC 00:03:39;13
+E agora enviamos a
+mensagem de erro à
+
+*TC 00:03:41;27
+guia "Output" (saída).
+
+*TC 00:03:43;08
+Finalmente, temos que
+enviar esta solicitação ao
+
+*TC 00:03:45;04
+servidor, chamando
+"getALLCalendarsFeed" através
+
+*TC 00:03:49;10
+do objeto serviço da agenda,
+passando o "feedURL", o
+
+*TC 00:03:52;23
+"retorno de chamada" e
+o "retorno de chamada de erro".
+
+*TC 00:03:55;21
+Vamos modificar o código
+para fazer algo diferente.
+
+*TC 00:03:58;04
+Vamos adicionar código para
+imprimir o fuso horário
+
+*TC 00:03:59;29
+da sua agenda.
+
+*TC 00:04:01;17
+Isto é fácil de fazer; basta
+abrir um editor de texto
+
+*TC 00:04:03;12
+e alterar o código.
+
+*TC 00:04:07;02
+E agora vamos executá-lo.
+
+*TC 00:04:12;22
+Veja que é necessário contar
+o título e o fuso horário
+
+*TC 00:04:15;25
+e enviá-los.
+
+*TC 00:04:18;19
+Ok. Ler os dados de suas
+agendas é divertido, mas é mais
+
+*TC 00:04:20;29
+interessante gravar dados
+nas agendas.
+
+*TC 00:04:23;14
+Vamos criar um evento em sua
+conta do Google Agenda.
+
+*TC 00:04:26;04
+Primeiro temos que criar um
+objeto serviço novamente.
+
+*TC 00:04:29;16
+Agora, especificamos um
+URL diferente para fazer
+
+*TC 00:04:31;25
+a criação do evento.
+
+*TC 00:04:33;21
+Este é o URL que
+usaremos, o URL 
+
+*TC 00:04:35;24
+"private/full".
+
+*TC 00:04:38;24
+Agora, temos de criar um objeto
+MDB para representar este
+
+*TC 00:04:41;06
+novo evento.
+
+*TC 00:04:43;08
+E definimos o título como
+"youtube video shoot".
+
+*TC 00:04:48;18
+Para associar horário a um
+evento, criamos um
+
+*TC 00:04:50;16
+"objeto When" (quando).
+
+*TC 00:04:51;24 
+Em seguida, definimos um horário
+de início e de fim do
+
+*TC 00:04:53;09
+"objeto When", usando a 
+restrição de horário diurno.
+
+*TC 00:04:56;03
+Aqui está, especificamos
+o horário de início para hoje
+
+*TC 00:04:58;23
+às 9:00.
+
+*TC 00:05:00;16
+E especificamos o horário de fim
+para hoje...10:00.
+
+*TC 00:05:06;04
+E definimos o horário do
+"objeto When".
+
+*TC 00:05:11;06
+Em seguida, adicionamos o
+"objeto When" ao evento.
+
+*TC 00:05:14;11
+Também temos que especificar a
+função de retorno de chamada para
+
+*TC 00:05:16;13
+informar quando o evento
+for criado.
+
+*TC 00:05:19;05
+E especificamos o
+"método de tratamento de erros" se
+
+*TC 00:05:21;23
+ocorrer algum erro.
+
+*TC 00:05:23;16
+Finalmente, temos que enviar
+esta solicitação ao servidor,
+
+*TC 00:05:26;06
+chamando o
+"método insert event".
+
+*TC 00:05:30;07
+E agora vamos executar o código.
+
+*TC 00:05:35;09
+Vejamos esta agenda.
+
+*TC 00:05:40;20
+Aqui está.
+
+*TC 00:05:44;13
+Espero que isso lhe dê uma
+idéia de como é fácil usar a
+
+*TC 00:05:46;13
+biblioteca-cliente JavaScript.
+
+*TC 00:05:48;07
+O guia do desenvolvedor interativo
+tem muitos outros exemplos
+
+*TC 00:05:50;19
+demonstrando outros recursos da
+API de dados do Google Agenda.
+
+*TC 00:05:53;10
+Sugiro que você consulte-os
+e experimente-os.
+
+*TC 00:05:56;00
+Para obter mais recursos, visite
+a página inicial da API de dados
+
+*TC 00:05:58;06
+do Google Agenda em
+"code.google.com".
+
+*TC 00:06:01;03
+Obrigado. Divirta-se programando.

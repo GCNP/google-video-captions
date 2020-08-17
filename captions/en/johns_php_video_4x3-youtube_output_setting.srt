@@ -1,0 +1,1409 @@
+1
+00:00:05,901 --> 00:00:07,901
+Hello, my name is Trevor Johns,
+
+2
+00:00:07,901 --> 00:00:10,734
+and I'm a software engineer
+from the Google Data APIs team.
+
+3
+00:00:10,734 --> 00:00:13,400
+The Google Data APIs allow you
+to programmatically access
+
+4
+00:00:13,400 --> 00:00:14,567
+various Google services,
+
+5
+00:00:14,567 --> 00:00:16,567
+such as Blogger,
+Google Calendar,
+
+6
+00:00:16,567 --> 00:00:18,901
+your Gmail contacts list,
+or even YouTube.
+
+7
+00:00:18,901 --> 00:00:20,901
+I'm here today to help you
+get started interacting
+
+8
+00:00:20,901 --> 00:00:23,734
+with these APIs from
+within your PHP applications.
+
+9
+00:00:23,734 --> 00:00:25,567
+This video assumes
+that you're already familiar
+
+10
+00:00:25,567 --> 00:00:27,734
+with the basics
+of web development and PHP.
+
+11
+00:00:27,734 --> 00:00:29,234
+It'll also help
+if you had past experience
+
+12
+00:00:29,234 --> 00:00:30,567
+working with web services,
+
+13
+00:00:30,567 --> 00:00:32,501
+though this
+isn't strictly required.
+
+14
+00:00:35,400 --> 00:00:37,400
+Before we begin,
+you'll need three things--
+
+15
+00:00:37,400 --> 00:00:39,734
+An HTTP Server, PHP,
+
+16
+00:00:39,734 --> 00:00:42,234
+and the PHP Google Data
+Client Library.
+
+17
+00:00:42,234 --> 00:00:45,234
+I'll go through each
+of these briefly.
+
+18
+00:00:45,234 --> 00:00:48,567
+Most hosting providers already
+provide an HTTP server and PHP,
+
+19
+00:00:48,567 --> 00:00:49,901
+but if you
+haven't already done so,
+
+20
+00:00:49,901 --> 00:00:51,901
+I highly recommend installing
+a copy locally
+
+21
+00:00:51,901 --> 00:00:53,567
+for development purposes.
+
+22
+00:00:53,567 --> 00:00:55,234
+Any HTTP server will do,
+
+23
+00:00:55,234 --> 00:00:57,901
+provided that there's support
+executing PHP scripts.
+
+24
+00:00:57,901 --> 00:00:59,400
+I recommend using
+the Apache HTTP Server,
+
+25
+00:00:59,400 --> 00:01:04,400
+which can be downloaded
+from httpd.apache.org.
+
+26
+00:01:04,400 --> 00:01:06,501
+Once your HTTP server
+is installed,
+
+27
+00:01:06,501 --> 00:01:08,901
+you can download PHP
+from php.net.
+
+28
+00:01:08,901 --> 00:01:10,567
+OS-specific
+installation instructions
+
+29
+00:01:10,567 --> 00:01:13,434
+are posted
+on each of these sites.
+
+30
+00:01:13,434 --> 00:01:15,067
+While installing Apache and PHP
+
+31
+00:01:15,067 --> 00:01:16,734
+are outside the scope
+of this video,
+
+32
+00:01:16,734 --> 00:01:18,400
+I'll show you
+how to quickly check to see
+
+33
+00:01:18,400 --> 00:01:20,868
+if your installation
+is properly set up.
+
+34
+00:01:20,868 --> 00:01:23,334
+Simply create a file
+that contains these two lines.
+
+35
+00:01:28,234 --> 00:01:30,734
+The first is just
+the standard PHP start tag,
+
+36
+00:01:30,734 --> 00:01:32,567
+and the second
+is the PHP info function,
+
+37
+00:01:32,567 --> 00:01:34,734
+which, if you've done
+PHP development before,
+
+38
+00:01:34,734 --> 00:01:36,567
+you might know that it goes
+and displays information
+
+39
+00:01:36,567 --> 00:01:38,434
+about your PHP environment.
+
+40
+00:01:38,434 --> 00:01:40,234
+If we save this
+within our web root
+
+41
+00:01:40,234 --> 00:01:43,734
+as, uh, say info.php...
+
+42
+00:01:43,734 --> 00:01:46,334
+and then load it
+within our browser...
+
+43
+00:01:49,734 --> 00:01:52,067
+it should show information
+about your PHP installation,
+
+44
+00:01:52,067 --> 00:01:54,734
+such as the version,
+any build commands you used,
+
+45
+00:01:54,734 --> 00:01:56,400
+what your include path is.
+
+46
+00:01:56,400 --> 00:01:58,400
+If you don't get this page
+and instead you just get
+
+47
+00:01:58,400 --> 00:02:01,167
+the contents of the
+info.php file you just saved,
+
+48
+00:02:01,167 --> 00:02:04,400
+then you know something's wrong,
+and you'll need to troubleshoot.
+
+49
+00:02:04,400 --> 00:02:06,400
+Once you have
+your HTTP server installed
+
+50
+00:02:06,400 --> 00:02:07,834
+and running with PHP support,
+
+51
+00:02:07,834 --> 00:02:10,734
+it's time to download the
+PHP Google Data Client Library.
+
+52
+00:02:10,734 --> 00:02:12,033
+This is distributed
+
+53
+00:02:12,033 --> 00:02:13,734
+as part of the Zend Framework
+Open Source Project,
+
+54
+00:02:13,734 --> 00:02:15,901
+available
+at framework.zend.com.
+
+55
+00:02:15,901 --> 00:02:17,734
+Zend Framework
+includes a lot of components
+
+56
+00:02:17,734 --> 00:02:20,734
+besides just what's needed for
+accessing the Google Data APIs.
+
+57
+00:02:20,734 --> 00:02:22,734
+So, if you don't want all
+the overhead of Zend Framework
+
+58
+00:02:22,734 --> 00:02:24,734
+or are already using
+another web-development toolkit,
+
+59
+00:02:24,734 --> 00:02:26,767
+you can download a lightweight
+Google-only version
+
+60
+00:02:26,767 --> 00:02:28,567
+of Zend Framework
+
+61
+00:02:28,567 --> 00:02:32,400
+by going to framework.zend.com/
+download/gdata.
+
+62
+00:02:32,400 --> 00:02:33,901
+To demonstrate,
+I'll quickly go through
+
+63
+00:02:33,901 --> 00:02:36,267
+the Zend Framework
+installation process.
+
+64
+00:02:36,267 --> 00:02:38,434
+So I'm just gonna go ahead
+and open up a browser
+
+65
+00:02:38,434 --> 00:02:42,067
+and go to framework.zend.com/
+download/gdata
+
+66
+00:02:42,067 --> 00:02:45,000
+and grab the tarball
+from Latest Release.
+
+67
+00:02:45,000 --> 00:02:46,400
+Once it finishes downloading,
+
+68
+00:02:46,400 --> 00:02:48,868
+I'm just gonna go ahead
+and extract it.
+
+69
+00:02:48,868 --> 00:02:51,067
+Once this is done,
+place the resulting folder
+
+70
+00:02:51,067 --> 00:02:53,567
+somewhere safe and accessible
+to your web server.
+
+71
+00:02:53,567 --> 00:02:54,834
+Since on my system,
+
+72
+00:02:54,834 --> 00:02:57,234
+both Apache and PHP
+are installed in opt/local,
+
+73
+00:02:57,234 --> 00:02:59,067
+I'm gonna go ahead
+and place it there as well.
+
+74
+00:02:59,067 --> 00:03:01,234
+On your system, you'll probably
+want to put it somewhere else.
+
+75
+00:03:18,734 --> 00:03:22,067
+Finally, you'll need to tell PHP
+where to find Zend Framework.
+
+76
+00:03:22,067 --> 00:03:25,067
+The best way to do this
+is to modify your php.ini file.
+
+77
+00:03:25,067 --> 00:03:27,901
+On my system, this is located
+in opt/local/etc
+
+78
+00:03:27,901 --> 00:03:29,734
+because I installed PHP
+into opt/local.
+
+79
+00:03:29,734 --> 00:03:31,567
+However, depending
+on how you've installed PHP,
+
+80
+00:03:31,567 --> 00:03:33,067
+it may be located
+in another location,
+
+81
+00:03:33,067 --> 00:03:34,901
+such as user/local/etc
+
+82
+00:03:34,901 --> 00:03:37,601
+or C:\PHP
+if you're on Windows.
+
+83
+00:03:37,601 --> 00:03:40,501
+So I'm gonna go ahead
+and open this up in Text Editor.
+
+84
+00:03:44,901 --> 00:03:46,267
+All right?
+
+85
+00:03:46,267 --> 00:03:49,067
+And find the line that begins
+with "include_path."
+
+86
+00:03:49,067 --> 00:03:50,400
+All right?
+
+87
+00:03:50,400 --> 00:03:53,234
+This is a colon-separated list
+of various directories
+
+88
+00:03:53,234 --> 00:03:56,734
+that PHP is going to search when
+it's looking up, um, libraries.
+
+89
+00:03:56,734 --> 00:03:57,834
+I'm just gonna go ahead
+
+90
+00:03:57,834 --> 00:03:59,901
+and add the path
+where I stored Zend Gdata,
+
+91
+00:03:59,901 --> 00:04:03,667
+so opt/local/ZendGdata
+followed by /library.
+
+92
+00:04:03,667 --> 00:04:05,734
+Now that I've updated
+my php.ini,
+
+93
+00:04:05,734 --> 00:04:07,067
+I just need to restart Apache
+
+94
+00:04:07,067 --> 00:04:09,067
+so that PHP can pick up
+the new changes.
+
+95
+00:04:09,067 --> 00:04:13,000
+So I'm just gonna go ahead
+and run Apache control restart.
+
+96
+00:04:14,400 --> 00:04:16,067
+And then
+it should be good to go.
+
+97
+00:04:16,067 --> 00:04:17,901
+So I'm just gonna go ahead
+and load php-a
+
+98
+00:04:17,901 --> 00:04:21,234
+to get an interactive
+PHP session,
+
+99
+00:04:21,234 --> 00:04:24,501
+and I'm going to try and load
+a file from Zend Framework.
+
+100
+00:04:28,567 --> 00:04:30,567
+I'm gonna load
+Zend/Loader.php,
+
+101
+00:04:30,567 --> 00:04:32,234
+which should be there.
+
+102
+00:04:32,234 --> 00:04:35,067
+If you don't get any errors,
+then everything's good to go.
+
+103
+00:04:35,067 --> 00:04:37,567
+If not, then you know
+you need to troubleshoot.
+
+104
+00:04:37,567 --> 00:04:39,234
+A good place to check,
+if this happens,
+
+105
+00:04:39,234 --> 00:04:42,067
+is to look at the info.php file
+we created earlier.
+
+106
+00:04:42,067 --> 00:04:43,067
+This will show you
+
+107
+00:04:43,067 --> 00:04:45,234
+the include path
+is currently in effect.
+
+108
+00:04:45,234 --> 00:04:46,601
+So, if this is wrong,
+
+109
+00:04:46,601 --> 00:04:49,234
+make sure that you've edited
+the correct php.ini file
+
+110
+00:04:49,234 --> 00:04:51,901
+and that the path you listed
+is actually correct.
+
+111
+00:04:51,901 --> 00:04:53,400
+If you're deploying
+to manage hosting,
+
+112
+00:04:53,400 --> 00:04:56,067
+you might have direct access
+to your php.ini file.
+
+113
+00:04:56,067 --> 00:04:57,901
+If you're hosting provider
+has allowed it
+
+114
+00:04:57,901 --> 00:05:00,334
+and if your hosting provider
+is using Apache with mod-php,
+
+115
+00:05:00,334 --> 00:05:02,734
+you can instead set PHP's
+configuration settings
+
+116
+00:05:02,734 --> 00:05:04,901
+using an htaccess file.
+
+117
+00:05:04,901 --> 00:05:07,501
+So to do this,
+go ahead and create a new file.
+
+118
+00:05:10,234 --> 00:05:15,400
+And then type the line,
+"php_value include_path"
+
+119
+00:05:15,400 --> 00:05:18,901
+and then in parentheses the path
+to your Zend Gdata folder
+
+120
+00:05:18,901 --> 00:05:22,133
+followed by /library.
+
+121
+00:05:22,133 --> 00:05:25,901
+Then save this in your web root
+as .htaccess
+
+122
+00:05:25,901 --> 00:05:27,567
+and save it.
+
+123
+00:05:27,567 --> 00:05:28,767
+I'm not gonna
+actually save it
+
+124
+00:05:28,767 --> 00:05:30,901
+because I've already edited
+my php.ini,
+
+125
+00:05:30,901 --> 00:05:32,701
+but otherwise,
+this should work.
+
+126
+00:05:34,934 --> 00:05:36,734
+Now that Zend Framework
+is installed,
+
+127
+00:05:36,734 --> 00:05:38,901
+let's take a brief tour
+of the client library.
+
+128
+00:05:38,901 --> 00:05:42,300
+A useful page for this is the
+Zend Framework API reference,
+
+129
+00:05:42,300 --> 00:05:45,901
+available at framework.zend.com/
+apidoc/core.
+
+130
+00:05:45,901 --> 00:05:47,267
+Let's go there now.
+
+131
+00:05:52,501 --> 00:05:54,901
+All right, click on Zend_Gdata
+in the upper-right-hand corner
+
+132
+00:05:54,901 --> 00:05:58,734
+to switch to--to make that
+the active package.
+
+133
+00:05:58,734 --> 00:06:00,834
+And then you'll notice on the
+left there's a list of classes
+
+134
+00:06:00,834 --> 00:06:04,400
+within the--
+within Zend Gdata.
+
+135
+00:06:04,400 --> 00:06:05,901
+There's five main types
+of classes
+
+136
+00:06:05,901 --> 00:06:07,901
+that you'll normally be
+interacting with--
+
+137
+00:06:07,901 --> 00:06:10,400
+service classes,
+query classes,
+
+138
+00:06:10,400 --> 00:06:14,067
+feeds, entries,
+and extension elements.
+
+139
+00:06:14,067 --> 00:06:17,200
+Zend Gdata is an example
+of a service class.
+
+140
+00:06:17,200 --> 00:06:18,901
+Service classes are the heart
+of the client library
+
+141
+00:06:18,901 --> 00:06:20,067
+and serve to manage access
+
+142
+00:06:20,067 --> 00:06:21,901
+to Google services
+over the network.
+
+143
+00:06:21,901 --> 00:06:25,100
+Zend Gdata is a generic
+service class used for Blogger.
+
+144
+00:06:25,100 --> 00:06:27,067
+Most of the services have
+a dedicated service class,
+
+145
+00:06:27,067 --> 00:06:28,734
+such as Zend Gdata at YouTube.
+
+146
+00:06:28,734 --> 00:06:30,067
+Query classes
+contain knowledge
+
+147
+00:06:30,067 --> 00:06:33,033
+about the address scheme used
+for the various services
+
+148
+00:06:33,033 --> 00:06:35,234
+and are used to assist
+in forming URLs.
+
+149
+00:06:35,234 --> 00:06:37,901
+You can either allow the query
+object to create a URL for you,
+
+150
+00:06:37,901 --> 00:06:40,734
+or just pass the URL into the
+query yourself if you know it.
+
+151
+00:06:40,734 --> 00:06:43,901
+As before, Zend Gdata Query
+is a generic query class,
+
+152
+00:06:43,901 --> 00:06:46,067
+though many services
+have specialized query classes,
+
+153
+00:06:46,067 --> 00:06:47,901
+such as Zend Gdata YouTube.
+
+154
+00:06:47,901 --> 00:06:49,567
+Feeds are returned
+by service classes
+
+155
+00:06:49,567 --> 00:06:51,067
+in response
+to a network request,
+
+156
+00:06:51,067 --> 00:06:52,667
+often using the help
+of a query.
+
+157
+00:06:52,667 --> 00:06:54,901
+Feeds are simply a collection
+of entry objects,
+
+158
+00:06:54,901 --> 00:06:56,234
+along with a small bit
+of metadata
+
+159
+00:06:56,234 --> 00:06:57,901
+to describe the collection.
+
+160
+00:06:57,901 --> 00:07:00,000
+Zend Gdata Feed
+is an example of this,
+
+161
+00:07:00,000 --> 00:07:03,534
+and there is many subclasses
+used for the various services.
+
+162
+00:07:03,534 --> 00:07:05,234
+Entries,
+as the name suggests,
+
+163
+00:07:05,234 --> 00:07:07,734
+represent a logical collection
+of data about something.
+
+164
+00:07:07,734 --> 00:07:08,901
+This might be a blog post
+
+165
+00:07:08,901 --> 00:07:10,734
+or a contact
+or a calendar event.
+
+166
+00:07:10,734 --> 00:07:12,901
+These are represented
+by Zend Gdata Entry,
+
+167
+00:07:12,901 --> 00:07:14,567
+and like Zend Gdata Feed,
+
+168
+00:07:14,567 --> 00:07:17,834
+there's many subclasses
+used by each of the services.
+
+169
+00:07:17,834 --> 00:07:20,734
+Finally, inside of entries
+and feeds, extension elements
+
+170
+00:07:20,734 --> 00:07:23,067
+are used to represent
+individual pieces of data.
+
+171
+00:07:23,067 --> 00:07:25,234
+For example, this might be
+the owner of a blog,
+
+172
+00:07:25,234 --> 00:07:27,901
+the title of a post,
+or the date of a calendar event.
+
+173
+00:07:27,901 --> 00:07:29,567
+These are represented
+by subclasses
+
+174
+00:07:29,567 --> 00:07:31,934
+of Zend Gdata App Extension.
+
+175
+00:07:31,934 --> 00:07:33,400
+Now that you're familiar
+with the library,
+
+176
+00:07:33,400 --> 00:07:34,901
+we're going to write
+a quick program
+
+177
+00:07:34,901 --> 00:07:36,567
+to create and display posts
+for Blogger.
+
+178
+00:07:36,567 --> 00:07:37,701
+Let's get started.
+
+179
+00:07:37,701 --> 00:07:39,100
+So, to begin,
+I'm gonna go and create
+
+180
+00:07:39,100 --> 00:07:41,501
+a brand-new HTML file.
+
+181
+00:07:42,901 --> 00:07:47,567
+I'll go ahead and call this,
+"Blogger PHP Demo."
+
+182
+00:07:47,567 --> 00:07:51,334
+And I'll go ahead and put a nice
+title at the top of the page.
+
+183
+00:07:55,834 --> 00:07:57,334
+All right?
+
+184
+00:07:57,334 --> 00:08:00,734
+And then I'm just gonna go ahead
+and save this as blogger.php
+
+185
+00:08:00,734 --> 00:08:03,200
+inside of my web root.
+
+186
+00:08:06,567 --> 00:08:09,734
+At the very top, I'll go ahead
+and insert a block of PHP code
+
+187
+00:08:09,734 --> 00:08:12,901
+to load
+in Zend Gdata libraries.
+
+188
+00:08:12,901 --> 00:08:14,567
+The very first thing
+you should always load
+
+189
+00:08:14,567 --> 00:08:17,400
+when using Zend Framework
+is Zend/Loader.php.
+
+190
+00:08:17,400 --> 00:08:18,667
+You can then use Zend Loader
+
+191
+00:08:18,667 --> 00:08:20,567
+to load in any other
+dependencies that you have.
+
+192
+00:08:20,567 --> 00:08:22,567
+In this case,
+we're using Zend Gdata,
+
+193
+00:08:22,567 --> 00:08:26,234
+Zend Gdata Query,
+and Zend Gdata ClientLogin.
+
+194
+00:08:26,234 --> 00:08:29,400
+Zend Gdata and Zend Gdata Query
+I discussed earlier.
+
+195
+00:08:29,400 --> 00:08:30,734
+Zend Gdata ClientLogin
+
+196
+00:08:30,734 --> 00:08:33,400
+is used to go
+and authenticate to Blogger.
+
+197
+00:08:33,400 --> 00:08:36,234
+So, once that's in place, I'll
+just go down here to the body,
+
+198
+00:08:36,234 --> 00:08:38,868
+create another block
+of PHP code,
+
+199
+00:08:38,868 --> 00:08:40,234
+and authenticate to Blogger.
+
+200
+00:08:40,234 --> 00:08:41,567
+So, again,
+we're using ClientLogin
+
+201
+00:08:41,567 --> 00:08:42,901
+to actually authenticate.
+
+202
+00:08:42,901 --> 00:08:44,734
+Uh, some other options
+you might want to use here
+
+203
+00:08:44,734 --> 00:08:47,067
+are auth 7.0 auth, which allow
+you to go and log in
+
+204
+00:08:47,067 --> 00:08:49,067
+without ever actually seeing
+the user's password,
+
+205
+00:08:49,067 --> 00:08:50,567
+which is really great
+for web apps,
+
+206
+00:08:50,567 --> 00:08:52,767
+since it protects
+the user's security.
+
+207
+00:08:52,767 --> 00:08:54,167
+Once that's done,
+we create an instance
+
+208
+00:08:54,167 --> 00:08:57,667
+of the Zend Gdata service class
+and call it Blogger Service.
+
+209
+00:09:00,334 --> 00:09:01,901
+From there,
+we're just gonna go ahead
+
+210
+00:09:01,901 --> 00:09:04,234
+and get a list
+of all the user's current blogs.
+
+211
+00:09:04,234 --> 00:09:06,234
+So we create a new query.
+
+212
+00:09:06,234 --> 00:09:08,734
+Um, this URL just happens to be
+the Blogger Meta Feed,
+
+213
+00:09:08,734 --> 00:09:10,734
+which lists all of the blogs
+available for a user.
+
+214
+00:09:10,734 --> 00:09:13,234
+This is documented
+on code.google.com.
+
+215
+00:09:13,234 --> 00:09:15,567
+And then we go
+and use the Blogger service
+
+216
+00:09:15,567 --> 00:09:17,567
+to go and fetch that feed.
+
+217
+00:09:17,567 --> 00:09:19,567
+From there, we just go
+and extract the first blogs,
+
+218
+00:09:19,567 --> 00:09:21,567
+since that's all
+we care about right now,
+
+219
+00:09:21,567 --> 00:09:24,400
+and we get the title,
+the blog's URL,
+
+220
+00:09:24,400 --> 00:09:27,734
+and the URL of the feed
+for that blog.
+
+221
+00:09:27,734 --> 00:09:30,067
+Something to note here
+is that title,
+
+222
+00:09:30,067 --> 00:09:31,901
+while you'd normally think
+of it as a string,
+
+223
+00:09:31,901 --> 00:09:33,400
+is actually an XML element,
+
+224
+00:09:33,400 --> 00:09:35,067
+and as such, it can have
+various attributes,
+
+225
+00:09:35,067 --> 00:09:36,234
+so you need to be sure
+
+226
+00:09:36,234 --> 00:09:37,734
+to actually request
+the text for the title,
+
+227
+00:09:37,734 --> 00:09:40,067
+as opposed to anything else
+that might be there.
+
+228
+00:09:40,067 --> 00:09:42,567
+And this applies to any other
+extension element as well.
+
+229
+00:09:42,567 --> 00:09:44,100
+All right?
+
+230
+00:09:44,100 --> 00:09:46,534
+And then we're just gonna
+go ahead and print this out.
+
+231
+00:09:46,534 --> 00:09:48,501
+So, if we load this
+in our browser...
+
+232
+00:09:50,567 --> 00:09:54,334
+you can see that it successfully
+fetched the first blog.
+
+233
+00:09:54,334 --> 00:09:57,033
+And if I load it,
+there's the index page,
+
+234
+00:09:57,033 --> 00:09:58,400
+and that looks good.
+
+235
+00:09:58,400 --> 00:09:59,567
+So let's go ahead
+
+236
+00:09:59,567 --> 00:10:00,901
+and do something
+a little more interesting.
+
+237
+00:10:00,901 --> 00:10:02,000
+Let's go and actually fetch
+
+238
+00:10:02,000 --> 00:10:04,234
+all the blog posts
+available on this blog.
+
+239
+00:10:06,067 --> 00:10:08,067
+So, again,
+we construct a new query,
+
+240
+00:10:08,067 --> 00:10:11,400
+and we use the blog feed URL
+that we extracted earlier.
+
+241
+00:10:11,400 --> 00:10:14,234
+We then again use the service
+to go and fetch this feed.
+
+242
+00:10:14,234 --> 00:10:16,400
+And then we iterate through
+every single entry in this feed,
+
+243
+00:10:16,400 --> 00:10:20,734
+where it--and here every entry
+represents a blog post.
+
+244
+00:10:20,734 --> 00:10:22,234
+For each blog post,
+
+245
+00:10:22,234 --> 00:10:24,234
+we go and extract the URL
+for the blog post
+
+246
+00:10:24,234 --> 00:10:25,400
+and the title
+
+247
+00:10:25,400 --> 00:10:27,400
+and display them on screen
+in a list.
+
+248
+00:10:27,400 --> 00:10:30,000
+So, if we refresh
+the page again...
+
+249
+00:10:32,901 --> 00:10:34,567
+you'll see it
+successfully fetched
+
+250
+00:10:34,567 --> 00:10:36,334
+all the blog posts available.
+
+251
+00:10:41,734 --> 00:10:43,234
+All right?
+
+252
+00:10:43,234 --> 00:10:44,734
+So, now that that's done,
+
+253
+00:10:44,734 --> 00:10:47,234
+let's go and insert
+some new posts into the blog.
+
+254
+00:10:47,234 --> 00:10:49,734
+So I'm just gonna go
+and create a form down here.
+
+255
+00:10:49,734 --> 00:10:51,601
+This is just a normal post
+
+256
+00:10:51,601 --> 00:10:53,567
+to the exact same page
+we're on right now.
+
+257
+00:10:53,567 --> 00:10:55,234
+It has two inputs--
+
+258
+00:10:55,234 --> 00:10:57,567
+a text field named "title"
+
+259
+00:10:57,567 --> 00:11:01,000
+and a text area
+named "body."
+
+260
+00:11:01,000 --> 00:11:02,901
+And you can see that
+right here.
+
+261
+00:11:02,901 --> 00:11:05,567
+Right now, this isn't wired up
+to do anything yet.
+
+262
+00:11:05,567 --> 00:11:07,234
+So let's fix that.
+
+263
+00:11:07,234 --> 00:11:10,200
+So, right after
+we fetch the first blog,
+
+264
+00:11:10,200 --> 00:11:12,734
+we'll check to see if there's
+anything in the forum.
+
+265
+00:11:12,734 --> 00:11:14,734
+If the forum's completely empty,
+we won't do anything,
+
+266
+00:11:14,734 --> 00:11:16,234
+but if there are things
+in the forum,
+
+267
+00:11:16,234 --> 00:11:19,734
+we'll go and, uh, create
+a brand-new entry,
+
+268
+00:11:19,734 --> 00:11:21,400
+populate the title
+and the content
+
+269
+00:11:21,400 --> 00:11:23,734
+using title
+and content extension elements,
+
+270
+00:11:23,734 --> 00:11:27,400
+and then just grab the title
+and the body from the post
+
+271
+00:11:27,400 --> 00:11:30,234
+and then use the service class
+to insert that into the blog,
+
+272
+00:11:30,234 --> 00:11:32,167
+using insert entry.
+
+273
+00:11:32,167 --> 00:11:33,734
+If we save this one more time
+
+274
+00:11:33,734 --> 00:11:35,400
+and then switch
+back to the browser--
+
+275
+00:11:35,400 --> 00:11:36,734
+I go ahead
+and type in a title here.
+
+276
+00:11:36,734 --> 00:11:39,567
+So, "Hello, World.
+
+277
+00:11:39,567 --> 00:11:43,234
+This is my sample post."
+
+278
+00:11:43,234 --> 00:11:45,734
+And hit continue.
+
+279
+00:11:45,734 --> 00:11:49,267
+You'll see that the post
+appears in the list.
+
+280
+00:11:49,267 --> 00:11:51,267
+If I reload the blog's index,
+
+281
+00:11:51,267 --> 00:11:53,734
+it appears there.
+
+282
+00:11:53,734 --> 00:11:56,267
+And if I click
+on the post right here,
+
+283
+00:11:56,267 --> 00:11:59,400
+it takes us to the page
+dedicated to that post.
+
+284
+00:11:59,400 --> 00:12:01,000
+If you'd like to learn more,
+
+285
+00:12:01,000 --> 00:12:02,567
+check out
+the PHP Getting Started Guide
+
+286
+00:12:02,567 --> 00:12:03,901
+that accompanies this video.
+
+287
+00:12:03,901 --> 00:12:05,400
+The URL is on your screen.
+
+288
+00:12:05,400 --> 00:12:07,567
+The Zend Framework Manual
+contains in-depth information
+
+289
+00:12:07,567 --> 00:12:09,234
+about working
+with Zend Framework modules,
+
+290
+00:12:09,234 --> 00:12:10,501
+including this one.
+
+291
+00:12:10,501 --> 00:12:13,234
+You can find this
+at framework.zend.com/manual.
+
+292
+00:12:13,234 --> 00:12:14,634
+Finally, be sure to keep
+
+293
+00:12:14,634 --> 00:12:17,234
+the Zend Framework API reference
+I mentioned earlier on hand,
+
+294
+00:12:17,234 --> 00:12:21,167
+available at framework.zend.com/
+apidoc/core.
+
+295
+00:12:22,901 --> 00:12:24,734
+I hope you got a good idea
+how to get started.
+
+296
+00:12:24,734 --> 00:12:27,334
+Thank you for watching
+and happy coding.
+

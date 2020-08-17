@@ -1,0 +1,435 @@
+﻿
+
+
+*TC 00:00:01;14  
+Vamos falar um 
+pouco sobre a 
+
+*TC 00:00:03;16
+API de idioma do
+Google Ajax.
+
+*TC 00:00:06;17
+Eu estava mexendo em
+um pequeno bookmarklet 
+
+*TC 00:00:11;00
+que podemos usar
+aqui, digamos 
+
+*TC 00:00:12;18
+olhando
+meu Twitter.
+
+*TC 00:00:14;03
+Temos esse item estranho
+aqui, em um idioma diferente.
+
+*TC 00:00:16;16
+Então temos algo em
+francês e 
+
+*TC 00:00:18;03
+não sei o que
+significa. 
+
+*TC 00:00:20;08
+Então vou
+selecionar isso.
+
+*TC 00:00:21;25
+Clique em traduzir
+para processar 
+
+*TC 00:00:23;26
+e receber a
+tradução real.
+
+*TC 00:00:26;19
+Vamos mudar isso.
+
+*TC 00:00:29;18
+A mesma coisa no site do 
+Real Madrid, 
+
+*TC 00:00:31;27
+assistindo ao futebol e
+imaginando o que Calderón disse.
+
+*TC 00:00:36;22
+Vá em frente.
+
+*TC 00:00:38;13
+Bum.  Ele vai processar e
+nos dizer
+
+*TC 00:00:41;02
+algo para nos divertir juntos.
+
+*TC 00:00:43;02
+É claro que 
+
+*TC 00:00:44;26
+o que ele retorna
+não será
+
+*TC 00:00:46;22
+uma tradução perfeita.
+Isso é muito difícil de fazer.
+
+*TC 00:00:50;20
+Mas ele fornece
+informações suficientes.
+
+*TC 00:00:53;23
+Por exemplo, 
+na verdade eu
+
+*TC 00:00:54;28
+estava mexendo no código da
+barra, alinhando-o
+
+*TC 00:00:58;24
+exceto aqui quando
+na verdade estava criando 
+
+*TC 00:01:01;28
+um widget de protótipo, 
+
+*TC 00:01:02;26
+então eu queria
+apenas ver
+ 
+*TC 00:01:04;01
+o que as pessoas
+estavam falando, 
+
+*TC 00:01:05;20
+e as respostas
+e o texto 
+
+*TC 00:01:06;24
+estavam em um
+site alemão. Então
+
+*TC 00:01:08;22
+Novamente, posso
+processar
+
+*TC 00:01:10;15
+obter a 
+tradução e
+
+*TC 00:01:11;25 
+tenho informações
+suficientes 
+
+*TC 00:01:13;19
+para ter uma idéia do
+que estão falando 
+
+*TC 00:01:15;18
+mesmo que a
+tradução 
+
+*TC 00:01:19;02
+não seja perfeita.
+
+*TC 00:01:22;02
+Assim, este bookmarklet é apenas
+algo que criei rapidamente e
+
+*TC 00:01:25;26
+a maior parte do código é
+apenas isto aqui, 
+
+*TC 00:01:29;00
+realizando a
+própria tradução.
+
+*TC 00:01:30;04
+Vamos processar e
+carregar a API de idioma
+
+*TC 00:01:34;21
+e fornecer algumas
+informações  
+
+*TC 00:01:37;06
+sobre o que queremos de volta.
+
+*TC 00:01:39;10
+Em seguida, primeiro faremos
+uma detecção para tentar 
+
+*TC 00:01:41;23
+fazer o sistema
+saber automaticamente 
+
+*TC 00:01:43;20
+que isto provavelmente é
+espanhol, isto é italiano, 
+
+*TC 00:01:45;14
+isto é alemão e,
+depois de 
+
+*TC 00:01:48;16
+ter realmente
+algo de volta lá, 
+
+*TC 00:01:49;24
+onde ele achar
+que há algo, 
+
+*TC 00:01:51;00
+ele processará
+o material 
+
+*TC 00:01:51;22
+e fará a
+tradução 
+
+*TC 00:01:53;21
+Portanto, ele irá tentar
+fazer a tradução 
+
+*TC 00:01:56;06
+e 
+
+*TC 00:01:58;06
+se houver algo 
+
+*TC 00:01:59;11
+ele irá processar e
+traduzir para mim 
+
+*TC 00:02:01;20
+caso contrário,
+ele irá informar
+
+*TC 00:02:03;09
+que não há.
+
+*TC 00:02:05;14
+Portanto, o que
+estou fazendo aqui 
+
+*TC 00:02:08;05
+é a lógica de exibição,
+e esta é a chamada
+
+*TC 00:02:11;24
+enviada para aquela
+pequena janela 
+
+*TC 00:02:13;12
+usando o novo
+protótipo de janela de IU aqui
+
+*TC 00:02:16;21
+para definir as informações.
+
+*TC 00:02:18;14
+Cabeçalhos e rodapés
+e tudo o mais,
+
+*TC 00:02:19;21
+e se isso não for 
+carregado por algum motivo, 
+
+*TC 00:02:21;25
+pois em um 
+bookmarklet, 
+
+*TC 00:02:24;00
+às vezes
+ocorrem conflitos 
+
+*TC 00:02:25;13
+e coisas
+desse tipo. 
+
+*TC 00:02:27;15
+Prossiga e desbloqueie
+de maneira simples.
+
+*TC 00:02:31;04
+E isto é tudo o que
+será carregado 
+
+*TC 00:02:34;16
+nos arquivos do
+bookmarklet.
+
+*TC 00:02:36;24
+Portanto, processe e carregue
+o java script principal,
+
+*TC 00:02:39;28
+carregue o css para isso, e o
+widget.
+
+*TC 00:02:43;20
+E finalmente, para
+iniciar 
+
+*TC 00:02:46;05
+esta é a chamada inicial para
+carregar as APIs do Google.
+
+*TC 00:02:50;14
+Veja aqui, adicionamos 
+um retorno de chamada.
+
+*TC 00:02:53;12
+Este é bem novo,
+tem alguns meses, 
+
+*TC 00:02:57;06 
+mas é uma maneira bem nova
+de agrupar um acesso dinâmico 
+
+*TC 00:03:00;28
+para que a cadeia
+seja processada 
+
+*TC 00:03:03;14
+e chame a
+API carregada.
+
+*TC 00:03:07;09
+Se não houver isso, ele
+fará uma chamada manual.
+
+*TC 00:03:09;28
+E quando as coisas
+são iniciadas, 
+
+*TC 00:03:11;24
+elas serão
+iniciadas até aqui 
+
+*TC 00:03:13;15
+que começará a
+funcionar.
+
+*TC 00:03:15;16
+E novamente temos outro
+retorno de chamada aqui,
+
+*TC 00:03:18;11
+portanto temos esses retornos
+de chamada repetitivos 
+
+*TC 00:03:20;19
+que fazem o que precisamos.
+
+*TC 00:03:23;14
+Outra coisa bem legal
+que eu 
+
+*TC 00:03:26;23
+descobri outro dia foi
+que o cliente Mibbit IRC 
+
+*TC 00:03:30;10
+é baseado puramente na web
+ 
+*TC 00:03:31;24
+e se entrarmos em uma sala
+de chat onde há uma conversa, 
+
+*TC 00:03:36;08
+podemos ver esta nova tradução.
+
+*TC 00:03:42;04
+E podemos processar,
+digamos, o inglês em 
+
+*TC 00:03:48;24
+em francês. E se as pessoas
+começassem a falar aqui,
+
+*TC 00:03:53;15
+dessa forma, 
+
+*TC 00:03:54;02
+veríamos que ele traduziu
+automaticamente para o francês.
+
+*TC 00:03:56;27
+Assim, ele pegou o inglês e
+transformou direto em francês. 
+
+*TC 00:04:00;14
+E, para traduzir o que eu digo,
+se eu estivesse em um canal
+
+*TC 00:04:05;12
+no qual não se falasse inglês,
+eu poderia entrar e 
+
+*TC 00:04:08;09
+digitar em meu idioma nativo
+e este seria traduzido
+
+01:04:10;16
+para o inglês.
+
+*TC 00:04:13;06
+Acho isso bem
+legal.
+
+*TC 00:04:16;19
+E a última peça deste
+quebra-cabeças é que 
+
+*TC 00:04:18;25
+se você consultar a documentação,
+verá que acabamos de adicionar 
+
+*TC 00:04:22;16
+este novo Flash e outros itens de
+ambiente não-Javascript.
+
+*TC 00:04:26;06
+Isto significa que agora você pode
+processar 
+
+*TC 00:04:27;28
+e fazer as traduções no lado
+do servidor. 
+
+*TC 00:04:30;27
+Assim, não é apenas processar
+no mundo de Ajax, 
+
+*TC 00:04:34;06
+você pode processar, 
+fazer uma pequena chamada Json
+
+*TC 00:04:37;14
+que pode ser copiada aqui
+para fazer a tradução.
+
+*TC 00:04:40;29
+Você pode fazer isso ou usar
+tecnologia no lado do servidor 
+
+
+*TC 00:04:44;08
+ou qualquer coisa que
+compreenda http e Json.
+
+*TC 00:04:48;06
+Portanto, espero que vocês
+tenham usos interessantes 
+
+*TC 00:04:51;07
+para a nova API de idioma.
+
+
+
+
+

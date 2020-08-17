@@ -1,0 +1,264 @@
+*TC 00:00:05:05
+Hi I'm Dan and I work on 
+Open Social 
+
+*TC 00:00:07;09 
+and today I'm going to take 
+you through the basic steps 
+
+*TC 00:00:09;07
+in running your own open 
+social applications.
+
+*TC 00:00:12;05
+So the first thing we are going 
+to do 
+
+*TC 00:00:13;12
+is a little primer on gadgets.
+
+*TC 00:00:15;09
+And Gadgets at their basic 
+level are just XML files.
+
+*TC 00:00:18;23
+and so we are going to take 
+
+*TC 00:00:19;17
+a quick look at what a gadget 
+xml file looks like
+
+*TC 00:00:22;14
+as you can see a gadget is just 
+xml 
+
+*TC 00:00:25;12
+at the top of the file you 
+can see the file
+
+*TC 00:00:26;17
+you can see the xml version 
+type and encoding
+
+*TC 00:00:29;17
+and below that you can see 
+the tags that specify this 
+
+*TC 00:00:32;24
+as a gadget file
+
+*TC 00:00:34;19
+we open everything up with a 
+module tag 
+
+*TC 00:00:36;25
+and inside of that 
+we have module preferences.
+
+*TC 00:00:38;28
+that specify things 
+like the applications title
+
+*TC 00:00:41;13
+and requires features 
+necessary for the application
+
+*TC 00:00:44;26
+here requiring the open 
+social feature 
+
+*TC 00:00:48;08
+and below that we actually 
+define the content of the gadget
+
+*TC 00:00:52;21 
+here the content  type is html 
+
+*TC 00:00:54;26
+ inside of that we have a 
+"cdata" section 
+
+*TC 00:00:56;24 
+which is where all of our code, 
+our html, and java script go
+
+*TC 00:01:00;27
+and the string "hello world".
+
+*TC 00:01:03;02 
+so now that that little intro's out 
+of the way we can 
+
+*TC 00:01:05;05 
+go down and run our first 
+social application.
+
+*TC 00:01:08;06
+so there's a couple of things 
+that you will need for this
+
+*TC 00:01:09;26
+First a text editor and a web 
+hosting account.
+
+*TC 00:01:13;18
+and in addition to that an orkut 
+account 
+
+*TC 00:01:15;29 
+and access to the 
+orkut sandbox
+
+*TC 00:01:17;20
+which is where we allow you to 
+test your social applications.
+
+*TC 00:01:21;26
+i will assume that most of you 
+have a text editor
+
+*TC 00:01:24;08
+and a lot of you probably 
+already  have web hosting
+
+*TC 00:01:26;06
+but if you don't there are two 
+things you can try.
+
+*TC 00:01:28;17
+First is google code project 
+hosting which is 
+
+*TC 00:01:31;00
+a place to host open 
+source applications
+
+*TC 00:01:33;18
+so if you'd like to make your 
+gadget open source
+
+*TC 00:01:35;14 
+you can host it there
+
+*TC 00:01:36;22
+and if you don't want to do that  
+you can use google page creator
+
+*TC 00:01:39;22
+which allows you to upload html 
+files and edit html files 
+
+*TC 00:01:42;17
+and upload other non html files 
+like gadget specifications
+
+*TC 00:01:47;09
+like what we're writing here.
+
+*TC 00:01:49;01
+so once you have that out of the 
+way 
+
+*TC 00:01:50;13
+your going to need to
+to create an orkut account
+
+*TC 00:01:52;02
+which is pretty straight forward.
+
+*TC 00:01:52;29
+just goto orkut.com and it will 
+walk you through the steps.
+
+*TC 00:01:55;24
+once you've done that, 
+
+*TC 00:01:56;17
+you're going to need to sign up 
+for access to the orkut sandbox.
+
+*TC 00:01:59;12
+which is pretty straight forward 
+as well.
+
+*TC 00:02:01;12
+we have a link that you can use 
+to do that.
+
+*TC 00:02:03;14
+and once you have access
+
+*TC 00:02:04;25
+you can log into 
+"sandbox.orkut.com" 
+
+*TC 00:02:07;26
+and add your gadget
+
+*TC 00:02:09;02
+and I'll show you how to do 
+that right now
+
+*TC 00:02:11;00 
+so what you should do is take 
+the text of the sample gadget
+
+*TC 00:02:14;26
+copy that into a text file 
+
+*TC 00:02:17;05
+and save it on your web hosting 
+account as "helloworld.xml"
+
+*TC 00:02:20;25
+log in to your orkut account
+
+*TC 00:02:23;21
+click on the edit button, 
+
+*TC 00:02:25;05 
+next to apps on the left 
+hand side of the page
+
+*TC 00:02:29;18
+type in the url of your 
+newly created xml file
+
+*TC 00:02:35;27 
+click on the add application 
+button
+
+*TC 00:02:39;27
+grant the application permission to 
+access your account
+
+*TC 00:02:44;13 
+and then click on the link that it adds 
+to the applications on your page.
+
+*TC 00:02:48;18
+so now you have installed 
+your first social application into orkut.
+
+*TC 00:02:51;06
+for more information on what i just did
+
+*TC 00:02:53;01
+as well as more information on the 
+rest of the social API
+
+*TC 00:02:56;02
+check out the tutorial on  
+"code.google.com" 
+
+*TC 00:02:58;17
+under the open social section.
+
+
+
+
+
+
+
+
+

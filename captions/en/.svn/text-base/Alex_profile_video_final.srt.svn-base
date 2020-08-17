@@ -1,0 +1,168 @@
+1
+00:00:01,100 --> 00:00:01,767
+Moffat: I'm Alex Moffat,
+the chief engineer
+
+2
+00:00:01,767 --> 00:00:03,300
+for Lombardi Blueprint,
+
+3
+00:00:03,300 --> 00:00:04,834
+and I'm gonna show you
+Blueprint,
+
+4
+00:00:04,834 --> 00:00:06,734
+an app that we built
+with Google Web Toolkit.
+
+5
+00:00:06,734 --> 00:00:10,501
+So Blueprint is a business
+process mapping tool
+
+6
+00:00:10,501 --> 00:00:12,501
+for business users
+
+7
+00:00:12,501 --> 00:00:15,133
+to collaboratively describe
+their processes,
+
+8
+00:00:15,133 --> 00:00:16,334
+and try
+and get agreement
+
+9
+00:00:16,334 --> 00:00:18,334
+about what
+the processes actually are.
+
+10
+00:00:18,334 --> 00:00:21,167
+So the tool--what they'd
+be using instead of Blueprint
+
+11
+00:00:21,167 --> 00:00:23,167
+is probably PowerPoint
+or Visio.
+
+12
+00:00:23,167 --> 00:00:24,601
+You can see here
+in the app
+
+13
+00:00:24,601 --> 00:00:25,701
+that on the left-hand side
+
+14
+00:00:25,701 --> 00:00:27,901
+we have an outline
+of the process,
+
+15
+00:00:27,901 --> 00:00:30,267
+and on the right-hand side,
+we have sort of a map view.
+
+16
+00:00:30,267 --> 00:00:32,767
+I can, uh, enter items
+into the outline.
+
+17
+00:00:32,767 --> 00:00:35,267
+And then I can do
+some drag and drop.
+
+18
+00:00:35,267 --> 00:00:37,634
+We also have, um,
+a diagram view,
+
+19
+00:00:37,634 --> 00:00:39,200
+which looks a lot more
+like Visio.
+
+20
+00:00:39,200 --> 00:00:41,801
+I can switch to that now.
+
+21
+00:00:41,801 --> 00:00:43,567
+Now the diagram
+actually does
+
+22
+00:00:43,567 --> 00:00:45,868
+automated, uh, layout
+of the boxes
+
+23
+00:00:45,868 --> 00:00:47,334
+and routing
+of the lines.
+
+24
+00:00:47,334 --> 00:00:49,534
+And all of this is happening
+on the client in JavaScript,
+
+25
+00:00:49,534 --> 00:00:51,467
+which is pretty remarkable.
+
+26
+00:00:51,467 --> 00:00:53,400
+Everything that
+you're seeing here is done--
+
+27
+00:00:53,400 --> 00:00:55,834
+is executing
+in an ordinary browser
+
+28
+00:00:55,834 --> 00:00:57,300
+in JavaScript.
+
+29
+00:00:57,300 --> 00:01:00,200
+There's no Flash or other
+client-side plugins required.
+
+30
+00:01:00,200 --> 00:01:02,234
+And really, that's the benefit
+that we get
+
+31
+00:01:02,234 --> 00:01:03,868
+from Google Web Toolkit.
+
+32
+00:01:03,868 --> 00:01:07,834
+We don't have to worry
+about all of the browser quirks
+
+33
+00:01:07,834 --> 00:01:10,567
+that you fight with when
+you're writing pure JavaScript.
+
+34
+00:01:10,567 --> 00:01:13,367
+We just write in a language
+that we like to use,
+
+35
+00:01:13,367 --> 00:01:15,467
+and they take care of all
+the difficult bits for us.
+

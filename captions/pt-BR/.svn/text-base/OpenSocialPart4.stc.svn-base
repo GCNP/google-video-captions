@@ -1,0 +1,179 @@
+﻿*TC 00:00:06;09
+nesta seção, usaremos 
+o gadget de exemplo 
+
+*TC 00:00:09;02 
+que acabamos de criar 
+para dar presentes aos nossos amigos 
+
+*TC 00:00:11;17
+e o modificaremos um pouco
+
+*TC 00:00:12;27
+para que possamos ver os presentes, 
+após dá-los.
+
+*TC 00:00:15;23
+começaremos modificando 
+nossa função giveGift 
+
+*TC 00:00:18;15
+para que, em vez de apenas atualizar os dados,
+ela também solicite os dados de volta.
+
+*TC 00:00:22;01
+em nosso objeto de solicitação de dados vamos 
+especificar que, 
+
+*TC 00:00:24;24
+além de atualizar os dados do 
+do aplicativo de exibições, 
+
+*TC 00:00:27;13
+também solicitemos 
+informações sobre o espectador, 
+
+*TC 00:00:29;28
+amigos do espectador e o armazenamento 
+de informações pessoais do espectador.
+
+*TC 00:00:34;25
+Na função loadFriends, 
+
+*TC 00:00:36;27
+também faremos 
+algo parecido
+
+*TC 00:00:38;23
+para que ao carregarmos nossa lista de 
+amigos e nossos amigos espectadores,
+
+*TC 00:00:41;14
+também solicitemos o armazenamento 
+de aplicativos pessoais do espectador.
+
+*TC 00:00:46;02
+faremos essas duas solicitações 
+de forma paralela,
+
+*TC 00:00:48;12
+para que ao inicializarmos 
+o gadget ou darmos um presente, 
+
+*TC 00:00:50;26
+possamos enviar ao retorno de chamada
+o mesmo conjunto de informações.
+
+*TC 00:00:54;25
+Em seguida, modificamos nossa função 
+"onLoadFriends"
+
+*TC 00:00:57;00
+para que, além de especificar 
+o espectador e os amigos do espectador,
+
+*TC 00:01:00;27
+obtenhamos os dados de presentes, que é 
+a lista de presentes que demos.
+
+*TC 00:01:04;04
+novamente, criamos a lista de 
+amigos como um menu de seleção 
+
+*TC 00:01:07;05
+e, após a inserção disso 
+na página,
+
+*TC 00:01:09;24
+chamamos a função 
+updateGiftList 
+
+*TC 00:01:11;27
+que exibirá a lista 
+de presentes dados.
+
+*TC 00:01:14;09
+a função UpdateGiftList extrai informações 
+da matriz de dados 
+
+*TC 00:01:18;01
+que fornecemos
+
+*TC 00:01:19;06
+especificada pelo ID do espectador 
+e pela chave de presentes 
+
+*TC 00:01:22;13
+que é onde nossas informações 
+estão armazenadas.
+
+*TC 00:01:24;08
+em seguida, pegamos esses dados e 
+os convertemos novamente de "json string" 
+
+*TC 00:01:28;10
+em um objeto javascript que podemos usar.
+
+*TC 00:01:30;14
+quando tivermos esse objeto, 
+que é um par de um ID de amigo 
+
+*TC 00:01:33;15
+e um ID de presente,
+
+*TC 00:01:34;17
+podemos convertê-lo em uma string
+que especifica  
+
+*TC 00:01:37;06
+o amigo ao qual demos o 
+presente  
+
+*TC 00:01:38;27
+e o presente que demos.
+
+*TC 00:01:41;12
+em seguida, essa lista poderá ser
+inserida na página como html.
+
+*TC 00:01:44;21
+Por fim, fazemos uma pequena alteração
+no arquivo XML do gadget 
+
+*TC 00:01:47;27
+para que tenhamos algum lugar 
+inserir o html.
+
+*TC 00:01:52;03
+aqui está uma nova versão de nosso gadget 
+que agora exibe 
+
+*TC 00:01:54;07
+a lista de presentes que demos
+
+*TC 00:01:55;27
+para que, ao clicarmos no botão 
+Dar presente,
+ 
+*TC 00:01:58;00
+ele apareça na lista abaixo.
+
+*TC 00:02:00;11
+para obter mais informações 
+sobre o que acabei de mostrar, 
+
+*TC 00:02:02;02
+e mais informações sobre a 
+API social
+
+*TC 00:02:04;06
+consulte o tutorial em 
+"code.google.com" 
+
+*TC 00:02:06;20
+na seção Open Social. 
+
+
+
+
+

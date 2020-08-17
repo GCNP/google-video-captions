@@ -1,0 +1,485 @@
+﻿*TC 00:00:02;24
+Olá, sou Brett Slatkin, um
+engenheiro de software da
+
+*TC 00:00:05;08
+equipe do Google App Engine.
+
+*TC 00:00:06;28
+O Google App Engine permite que
+editores criem aplicativos da web na
+
+*TC 00:00:09;05
+infra-estrutura do Google.
+
+*TC 00:00:10;20
+Hoje mostrarei como criar rapidamente
+um aplicativo de livro de visitantes
+
+*TC 00:00:12;15
+usando o Google App Engine.
+Vamos começar.
+
+*TC 00:00:16;10
+Primeiro, criamos um diretório
+para o novo aplicativo e
+
+*TC 00:00:18;24
+abrimos no editor.
+
+*TC 00:00:24;00
+Em seguida, criamos um
+arquivo "app.yamo" com a
+
+*TC 00:00:25;14
+configuração do aplicativo.
+
+*TC 00:00:29;23
+Digito o nome do aplicativo.
+
+*TC 00:00:32;06
+Versão deste aplicativo,
+neste caso,
+
+*TC 00:00:34;11
+a primeira versão.
+
+*TC 00:00:36;01
+Versão das apis que usarei.
+
+*TC 00:00:38;05
+E o tempo de execução,
+que é "python".
+
+*TC 00:00:42;00
+Depois, declaro como o
+URL será mapeado
+
+*TC 00:00:43;13
+para o aplicativo.
+
+*TC 00:00:45;19
+Neste caso, todos os URLs
+levam a scripts python
+
+*TC 00:00:48;16
+únicos denominados "main."
+
+*TC 00:00:51;09
+Vou criar o arquivo
+python principal.
+
+*TC 00:00:56;18
+Digito um aplicativo bem
+básico"Hello world".
+
+*TC 00:01:06;17
+Agora, vou ao terminal
+para iniciar o
+
+*TC 00:01:08;01
+servidor de desenvolvimento
+de web.
+
+*TC 00:01:12;00
+E agora que o servidor está
+sendo executado, posso exibir
+
+*TC 00:01:13;29
+o aplicativo "Hello world".
+
+*TC 00:01:19;26
+Agora faremos algo mais
+complexo, criando
+
+*TC 00:01:21;16
+um aplicativo da web.
+
+*TC 00:01:23;28
+Para fazer isso, fornecemos
+uma estrutura bem básica de
+
+*TC 00:01:26;10
+aplicativo da web,
+chamada "Web App."
+
+*TC 00:01:28;01
+Importo o módulo
+"Web App" e defino um
+
+]*TC 00:01:33;19
+manipulador que controla
+as solicitações
+
+*TC 00:01:35;21
+do aplicativo.
+
+*TC 00:01:42;03
+Os métodos desta classe
+controlam solicitações HTP.
+
+*TC 00:01:45;03
+Neste caso, quero manipular
+apenas uma solicitação get e
+
+
+*TC 00:01:47;22
+imprimir uma
+mensagem "Hello World".
+
+*TC 00:01:54;03
+Digite "schema handler
+" Usarei "wsgiref," que é
+
+*TC 00:01:57;09
+um recipiente python padrão
+para aplicativos da web.
+
+*TC 00:02:11;28
+Também definirei um
+"WSGIApplication" por todo
+
+*TC 00:02:15;00
+o acesso de URL ao nosso
+manipulador bem básico.
+
+*TC 00:02:31;10
+E, é claro, informo ao phython
+para executar a função principal.
+
+*TC 00:02:40;08
+Agora, vejamos isto
+no navegador.
+
+*TC 00:02:44;19
+Ótimo. 
+
+*TC 00:02:48;01
+Agora faremos modelos para
+melhorar a aparência da página.
+
+*TC 00:02:50;23
+Para isso, fornecemos
+uma biblioteca básica.
+
+*TC 00:02:54;22
+Vamos criar um arquivo de
+modelo usando Django.
+
+*TC 00:03:01;23
+Para começar, apenas
+criamos HTML dizendo
+
+*TC 00:03:04;00
+"Hello World".
+
+*TC 00:03:09;08
+Vou importar o
+módulo do modelo.
+
+*TC 00:03:18;02
+E depois exibir o modelo.
+
+*TC 00:03:28;12
+Em seguida, podemos
+exibir isso no navegador.
+
+*TC 00:03:34;06
+Agora implementaremos uma IU
+básica para o aplicativo da web.
+
+*TC 00:03:37;26
+Voltarei ao arquivo de
+modelo para criar a
+
+*TC 00:03:40;23
+IU e HTML.
+Primeiro, crio um formulário.
+
+*TC 00:03:47;05
+Neste caso, quero postar.
+
+*TC 00:03:49;18
+E o formulário terá
+alguns campos. 
+
+*TC 00:03:51;00
+Como é um livro de visitas,
+começamos com a mensagem
+
+*TC 00:03:53;13
+desejada.
+
+*TC 00:03:55;19
+Neste caso, apenas campos
+de texto com "mensagem".
+
+*TC 00:04:01;29
+Altero o texto do botão "submit"
+(enviar) para "shout" (grite).
+
+*TC 00:04:08;03
+E agora podemos voltar
+e exibir no navegador.
+
+*TC 00:04:12;07
+Vamos fazer o aplicativo da
+web manipular a solicitação
+
+*TC 00:04:14;00
+post e depois fazer
+algo mais interessante.
+
+*TC 00:04:18;05
+Modificarei "MyHandler"
+para manipular solicitações
+post, além das
+
+*TC 00:04:20;23
+solicitações "get".
+
+*TC 00:04:36;07 
+Agora, conectamos isto
+aos dados armazenados.
+
+*TC 00:04:39;02
+Para usar os dados armazenados,
+importamos o módulo dv e
+
+*TC 00:04:41;25
+procuramos uma classe de
+modelo informando que campos
+
+*TC 00:04:45;24
+devem ser armazenados.
+
+*TC 00:04:48;02
+Neste caso, a classe do
+modelo será "Shout".
+
+*TC 00:04:54;27
+E teremos dois campos. 
+Primeiro, a mensagem.
+
+*TC 00:05:02;04
+E a hora em que a
+mensagem foi escrita.
+
+*TC 00:05:13;05
+No método post, uso os
+parâmetros de solicitação para
+
+*TC 00:05:16;07
+criar um novo "Shout" e
+armazená-lo.
+
+*TC 00:05:28;16
+Depois, redireciono o usuário
+de volta à página principal.
+
+*TC 00:05:32;26
+Agora posso voltar ao
+navegador e verificar
+
+*TC 00:05:34;18
+se está funcionando.
+
+*TC 00:05:38;25
+Estamos manipulando posts
+e colocando posts e dados
+
+*TC 00:05:40;13
+no armazenamento de dados,
+mas sem recuperá-los.
+
+*TC 00:05:42;12
+Vamos criar uma consulta
+para recuperar os dados e
+
+*TC 00:05:44;19
+apresentá-los ao usuário.
+
+*TC 00:05:46;14
+Para isso, crio
+um "GqlQuery".
+
+*TC 00:05:57;13
+E uso o resultado
+da consulta para
+
+*TC 00:06:00;03
+preencher os modelos.
+
+*TC 00:06:04;23
+E passar valores para
+a apresentação do modelo.
+
+*TC 00:06:10;22
+Assim, se abro o modelo,
+posso usar os resultados da
+
+*TC 00:06:12;22
+consulta e apresentá-los
+ao usuário.
+
+*TC 00:06:19;10
+Neste caso,
+uso modelos Django.
+
+*TC 00:06:30;16
+Agora posso voltar
+ao navegador e verificar
+
+*TC 00:06:32;14
+se está funcionando.
+
+*TC 00:06:36;15
+Aqui estão as duas
+solicitações de antes.
+
+*TC 00:06:39;21
+Agora posso digitar
+mais mensagens.
+
+*TC 00:06:43;08
+Veja que elas não estão
+em uma ordem específica.
+
+*TC 00:06:45;07
+Mas quero adicionar uma
+classificação à consulta.
+
+*TC 00:06:59;21
+As novas mensagens ficam
+no alto.
+
+*TC 00:07:04;29
+Modifico o modelo para
+incluir outra propriedade,
+
+*TC 00:07:07;07
+que é
+"quem mandou a mensagem?"
+
+*TC 00:07:09;16
+Neste caso é opcional,
+porque algumas mensagens
+
+*TC 00:07:11;17
+foram enviadas sem
+um remetente explícito.
+
+*TC 00:07:15;24
+Entro no modelo
+e adiciono
+
+*TC 00:07:16;24
+o novo campo.
+
+*TC 00:07:29;07
+Também gostaria de campos
+de entrada com rótulos.
+
+*TC 00:07:33;06
+Ao criar a tela,
+é necessário assegurar que
+
+*TC 00:07:35;04
+o campo "who" seja
+corretamente preenchido.
+
+*TC 00:07:41;03
+Também quero exibir quem
+enviou cada mensagem.
+
+*TC 00:07:43;03
+Então, volto ao modelo
+para adicionar isso.
+
+*TC 00:07:51;18
+No caso em que o campo
+"who" está vazio, diremos
+apenas
+
+*TC 00:07:53;12
+que é anônimo.
+
+*TC 00:08:10;06
+Vamos voltar ao
+navegador e ver
+
+*TC 00:08:11;09
+a aparência disso.
+
+*TC 00:08:13;29
+Veja que todas as mensagens
+são anônimas porque
+
+*TC 00:08:15;29
+nenhuma delas tem remetente.
+
+*TC 00:08:17;08
+Vamos adicionar uma nova
+mensagem enviada por mim.
+
+*TC 00:08:24;10
+Veja que meu nome
+aparece.
+
+*TC 00:08:27;11
+A última coisa que faremos é
+corrigir o título para indicar
+
+*TC 00:08:30;08
+que este é o meu aplicativo
+chamado "shoutout!"
+
+*TC 00:08:36;00
+Para este aplicativo, usarei
+a ferramenta App Config.
+
+*TC 00:08:39;09
+Digitamos "appcfig
+update" para implementar
+
+*TC 00:08:41;21
+o aplicativo e o diretório
+do aplicativo de nomenclatura.
+
+*TC 00:08:48;18
+E pronto.
+
+*TC 00:08:49;26
+Agora posso acessar este
+aplicativo em appspot.com.
+
+*TC 00:08:57;24
+Vamos deixar uma mensagem.
+
+*TC 00:09:04;25
+É isso. Criamos um aplicativo
+e o implementamos.
+
+*TC 00:09:08;10
+Esperamos que você experimente
+o Google App Engine. 
+
+*TC 00:09:10;02
+Aguardamos seus comentários.
+
+*TC 00:09:12;01
+Se você quiser saber mais
+sobre o App Engine, participe
+
+*TC 00:09:13;23
+do Google IO, o evento do
+Google para desenvolvedores em
+
+*TC 00:09:16;16
+28 e 29 de maio.
+
+*TC 00:09:18;17
+Obrigado por assistir a este vídeo.
+
+
+

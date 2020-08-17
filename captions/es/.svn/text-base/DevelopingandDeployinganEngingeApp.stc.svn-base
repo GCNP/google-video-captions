@@ -1,0 +1,482 @@
+﻿*TC 00:00:02;24
+Hola, soy Brett Slatkin,
+ingeniero de software del
+
+*TC 00:00:05;08
+equipo Google App Engine.
+
+*TC 00:00:06;28
+App Engine permite a editores
+crear aplicaciones web en la
+
+*TC 00:00:09;05
+infraestructura de Google.
+
+*TC 00:00:10;20
+Hoy vamos a aprender a crear
+rápidamente una aplicación de
+
+*TC 00:00:12;15
+libro de visitas con App Engine.
+Veamos cómo funciona.
+
+*TC 00:00:16;10
+Primero crearemos un directorio
+para la nueva aplicación y
+
+*TC 00:00:18;24
+lo llevaremos al editor.
+
+*TC 00:00:24;00
+Luego crearemos un archivo
+"app.yamo" con la
+
+*TC 00:00:25;14
+configuración de la aplicación.
+
+*TC 00:00:29;23
+Introducimos el nombre.
+
+*TC 00:00:32;06
+La versión de la aplicación,
+en este caso
+
+*TC 00:00:34;11
+la primera.
+
+*TC 00:00:36;01
+La versión de las API que
+vamos a usar.
+
+*TC 00:00:38;05
+Y el tiempo de
+ejecución, "Python".
+
+*TC 00:00:42;00
+Declaramos cómo se va a
+asignar la URL a
+
+*TC 00:00:43;13
+la aplicación.
+
+*TC 00:00:45;19
+Aquí, vamos a hacer que
+todas las URL vayan a scripts
+
+*TC 00:00:48;16
+de Python llamados "main".
+
+*TC 00:00:51;09
+Creamos nuestro
+archivo Python principal.
+
+*TC 00:00:56;18
+Escribimos en una
+aplicación"Hello world" muy básica.
+
+*TC 00:01:06;17
+Vamos al terminal e
+iniciamos el servidor
+
+*TC 00:01:08;01
+web de desarrollo.
+
+*TC 00:01:12;00
+Ahora, con el servidor en
+funcionamiento, podemos ver la
+
+*TC 00:01:13;29
+aplicación "Hello World".
+
+*TC 00:01:19;26
+Hagamos algo un poco
+más complicado y creemos una
+
+*TC 00:01:21;16
+aplicación web.
+
+*TC 00:01:23;28
+Para ello, proporcionamos un
+entorno de aplicación web
+
+*TC 00:01:26;10
+muy básico llamado "Web App".
+
+*TC 00:01:28;01
+Importamos el módulo
+ "Web App" y definimos un
+
+*TC 00:01:33;19
+controlador, que controlará
+las solicitudes de
+
+*TC 00:01:35;21
+la aplicación.
+
+*TC 00:01:42;03
+Estos métodos controlarán
+las solicitudes HTP.
+
+*TC 00:01:45;03
+Sólo queremos controlar
+una solicitud de GET y que aparezca
+
+*TC 00:01:47;22
+un mensaje
+"Hello World".
+
+*TC 00:01:54;03
+Como "controlador
+de esquemas" usaremos "wsgiref",
+
+*TC 00:01:57;09
+el controlador
+estándar de Python.
+
+*TC 00:02:11;28
+Definamos
+"WSGIApplication" en el acceso
+
+*TC 00:02:15;00
+de todas las URL al
+controlador básico.
+
+*TC 00:02:31;10
+Indiquemos a Phython que
+ejecute la función principal.
+
+*TC 00:02:40;08
+Veamos esto en
+nuestro navegador.
+
+*TC 00:02:44;19
+Bien. Aparece y
+funciona.
+
+*TC 00:02:48;01
+Hagamos plantillas para mejorar
+el aspecto de esta página
+
+*TC 00:02:50;23
+mediante una
+biblioteca básica.
+
+*TC 00:02:54;22
+Creemos un archivo
+con plantillas Django.
+
+*TC 00:03:01;23
+Para comenzar, sólo tenemos
+HTML que dice,
+
+*TC 00:03:04;00
+"Hello World".
+
+*TC 00:03:09;08
+Importamos el
+módulo de plantillas
+
+*TC 00:03:18;02
+y especificamos la plantilla.
+
+*TC 00:03:28;12
+Ahora veremos
+esto en el navegador.
+
+*TC 00:03:34;06
+Implementemos una interfaz
+básica para la aplicación web.
+
+*TC 00:03:37;26
+Volvamos al archivo de
+plantillas e introduzcamos el
+
+*TC 00:03:40;23
+HTML y la interfaz.
+Primero, un formulario,
+
+*TC 00:03:47;05
+con una solicitud "post".
+
+*TC 00:03:49;18
+El formulario tendrá
+un par de campos. 
+
+*TC 00:03:51;00
+Como es un libro de visitas,
+comencemos con el mensaje
+
+*TC 00:03:53;13
+que queremos.
+
+*TC 00:03:55;19
+Aquí, campos "text"
+con contenido "message".
+
+*TC 00:04:01;29
+Modificamos el botón "submit"
+a "Shout!".
+
+*TC 00:04:08;03
+Ahora, volvamos atrás y
+veámoslo en el navegador.
+
+*TC 00:04:12;07
+Dejemos que la aplicación
+web gestione la solicitud
+
+*TC 00:04:14;00
+"post" y hagamos
+algo más interesante.
+
+*TC 00:04:18;05
+Modifiquemos "MyHandler" para
+que gestione solicitudes
+
+*TC 00:04:20;23
+"post y "get".
+
+*TC 00:04:36;07 
+Conectemos esto con
+el almacén de datos.
+
+*TC 00:04:39;02
+Para usar este almacén,
+importaremos el módulo "dv" y
+
+*TC 00:04:41;25
+buscaremos una clase de
+modelo que indique qué campos se
+
+*TC 00:04:45;24
+van a almacenar.
+
+*TC 00:04:48;02
+Aquí, la clase de modelo
+se llamará "Shout".
+
+*TC 00:04:54;27
+Tendremos dos campos. 
+Primero, el mensaje.
+
+*TC 00:05:02;04
+Y la hora en que se
+dejó el mensaje.
+
+*TC 00:05:13;05
+En el método "post", utilizamos
+los parámetros de solicitud
+
+*TC 00:05:16;07
+para crear un nuevo "Shout"
+y ponerlo en el almacén de datos.
+
+*TC 00:05:28;16
+El usuario volverá
+a la página principal.
+
+*TC 00:05:32;26
+Ahora podemos volver al
+navegador y ver si todo
+
+*TC 00:05:34;18
+funciona bien.
+
+*TC 00:05:38;25
+Estamos gestionado y colocando
+solicitudes "post" y colocando
+
+*TC 00:05:40;13
+datos en el almacén,
+pero no recuperando.
+
+*TC 00:05:42;12
+Creemos una consulta para
+recuperar los datos y
+
+*TC 00:05:44;19
+mostrárselos al usuario.
+
+*TC 00:05:46;14
+Para ello,
+crearemos una "GqlQuery"
+
+*TC 00:05:57;13
+y usaremos los resultados
+de la consulta para
+
+*TC 00:06:00;03
+rellenar las plantillas
+
+*TC 00:06:04;23
+y pasar valores
+al representador de plantillas.
+
+*TC 00:06:10;22
+Si accedemos a la plantilla,
+podremos usar los resultados de
+
+*TC 00:06:12;22
+la consulta y
+mostrárselos al usuario.
+
+*TC 00:06:19;10
+Es este caso,
+usaremos plantillas Django.
+
+*TC 00:06:30;16
+Ahora podemos volver al
+navegador y ver si todo
+
+*TC 00:06:32;14
+funciona al instante.
+
+*TC 00:06:36;15
+Aparecerán las dos
+solicitudes anteriores.
+
+*TC 00:06:39;21
+Podemos escribir
+más mensajes.
+
+*TC 00:06:43;08
+No aparecen en
+ningún orden concreto.
+
+*TC 00:06:45;07
+Ordenemos la consulta.
+Los mensajes
+
+*TC 00:06:59;21
+nuevos aparecen arriba.
+
+*TC 00:07:04;29
+Modifiquemos el modelo para
+tener otra propiedad,
+
+*TC 00:07:07;07
+que será
+"¿quién define el mensaje?"
+
+*TC 00:07:09;16
+Esto es opcional porque
+algunos de los mensajes se
+
+*TC 00:07:11;17
+enviaron sin
+un emisor concreto.
+
+*TC 00:07:15;24
+Vayamos a la plantilla
+y añadamos el
+
+*TC 00:07:16;24
+campo nuevo.
+
+*TC 00:07:29;07
+Resultaría útil tener etiquetas
+en estos campos de entrada.
+
+*TC 00:07:33;06
+Hay que asegurarse de que al
+crear "Shout" hemos
+
+*TC 00:07:35;04
+rellenado correctamente
+el campo "who".
+
+*TC 00:07:41;03
+Queremos mostrar
+quién envió cada mensaje.
+
+*TC 00:07:43;03
+Volvemos a la plantilla
+y lo añadimos también.
+
+*TC 00:07:51;18
+Si el campo "who" está
+vacío, diremos que
+
+*TC 00:07:53;12
+el emisor es anónimo.
+
+*TC 00:08:10;06
+Volvamos al navegador
+y veamos qué
+
+*TC 00:08:11;09
+aspecto tiene.
+
+*TC 00:08:13;29
+Todos los mensajes son
+anónimos porque
+
+*TC 00:08:15;29
+ninguno tiene emisor.
+
+*TC 00:08:17;08
+Añadiré uno nuevo
+y yo seré el emisor.
+
+*TC 00:08:24;10
+Veamos cómo aparece
+mi nombre.
+
+*TC 00:08:27;11
+Lo último que haremos, será
+arreglar el título para que indique
+
+*TC 00:08:30;08
+que esta es mi aplicación
+"Shoutout!".
+
+*TC 00:08:36;00
+Para esta aplicación,
+usaremos App Config Tool.
+
+*TC 00:08:39;09
+Escribimos "appcfig
+update" para implementar
+
+*TC 00:08:41;21
+la aplicación y el directorio
+de aplicaciones de nomenclatura.
+
+*TC 00:08:48;18
+Se acabó.
+
+*TC 00:08:49;26
+Ya podemos acceder a la
+aplicación en appspot.com.
+
+*TC 00:08:57;24
+Dejemos un mensaje.
+
+*TC 00:09:04;25
+Ya está. Hemos creado
+y usado una aplicación.
+
+*TC 00:09:08;10
+Esperamos que echéis un vistazo a 
+Google App Engine. 
+
+*TC 00:09:10;02
+Esperamos vuestros
+comentarios.
+
+*TC 00:09:12;01
+Si queréis aprender más
+sobre App Engine, registraros en
+
+*TC 00:09:13;23
+Google IO, el evento de
+desarrolladores de
+
+*TC 00:09:16;16
+Google, 28-29 mayo.
+
+*TC 00:09:18;17
+Muchas gracias.
+
+
+

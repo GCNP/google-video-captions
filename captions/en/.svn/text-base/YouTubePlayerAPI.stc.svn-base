@@ -1,0 +1,737 @@
+*TC 00:00:07;06
+Hi, my name is Stephanie Liu,
+and I work on the YouTube APIs
+
+*TC 00:00:10;00
+and Tools team. 
+
+*TC 00:00:11;06
+Today, I'll be going over some
+simple examples using the new
+
+*TC 00:00:13;21
+player APIs and the Chromeless
+player. First, a little bit
+
+*TC 00:00:16;24
+of background.  Before, if you
+wanted to embed a YouTube
+
+*TC 00:00:19;06
+video onto your site all you
+could do is choose one of our
+
+*TC 00:00:21;21
+standard embedder players, and
+put it there. As a developer,
+
+*TC 00:00:24;24
+you really didn't have any
+insight about what was going
+
+*TC 00:00:26;15
+on.  Now, you'll be able to do
+much more. The JavaScript and
+
+*TC 00:00:26;15
+Flash APIs that we've just
+released, will allow you to
+
+*TC 00:00:31;27
+control our embedded players.
+Issue commands like play,
+
+*TC 00:00:35;00
+pause, seek to a specific
+position in a video, mute, set
+
+*TC 00:00:38;12
+volume; get data, like current
+time, and how far the video is
+
+*TC 00:00:42;09
+buffered. You can also
+subscribe to events like
+
+*TC 00:00:44;12
+changes in the player state.
+Now, the Chromeless player is a
+
+*TC 00:00:47;18
+swf with no player controls.
+So, no YouTube buttons or our
+
+*TC 00:00:51;03
+progress bar. You can put in
+your own buttons and customize
+
+*TC 00:00:53;18
+it to fit in with the look and feel of
+your site. OK, so, let's get
+
+*TC 00:00:57;09
+started with what the
+JavaScript player API can do.
+
+*TC 00:01:00;29
+So, here we have the regular
+YouTube embedded player. I
+
+*TC 00:01:03;11
+think everyone's probably
+pretty familiar with this.
+
+*TC 00:01:06;29
+It plays and now I'm gonna
+show you how to set up this
+
+*TC 00:01:11;11
+embed so that we can make API
+calls to it. The first thing
+
+*TC 00:01:14;26
+you need to do is include
+"swfobject.js". Now, I
+
+*TC 00:01:19;02
+recommend using a swfobject
+because it makes embedding 
+
+*TC 00:01:21;05
+Flash content a lot easier.
+It'll take care of things for
+
+*TC 00:01:23;20
+you like detecting the user's
+version of Flash. They're
+
+*TC 00:01:27;02
+going to need version 8 or
+above to be able to see your
+
+*TC 00:01:29;20
+player correctly. Now here, is
+the div that the embed is
+
+*TC 00:01:36;20
+gonna to live in. You'll notice
+we're calling it "ytapiplayer,"
+
+*TC 00:01:40;17
+we're going to need that
+later. And, if they don't have
+
+*TC 00:01:43;26
+8 or above installed, they'll
+just see this line of text
+
+*TC 00:01:46;02
+instead of a broken player.
+Now we're kinda getting into
+
+*TC 00:01:50;02
+the meat of it. Here is where
+we're actually going to set up
+
+*TC 00:01:52;17
+the embed object. 
+
+*TC 00:01:58;08
+You see here,
+the parameters that we're
+
+*TC 00:02:00;28
+gonna have in the embed object.
+We need
+
+*TC 00:02:02;28
+"allowScriptAccess: "always"".
+This means the YouTube swf can
+
+*TC 00:02:07;10
+make calls to your HTML page.
+And your HTML page can make
+
+*TC 00:02:10;10
+calls to the player swf. One
+of the attributes we wanna set
+
+*TC 00:02:14;22
+is id for "myytplayer". This
+is gonna be the name of the
+
+*TC 00:02:20;10
+embedded object. You can use
+this to get a reference to the
+
+*TC 00:02:24;01
+player via JavaScript using
+get element by id later on.
+
+*TC 00:02:33;22
+Now "swfobject.embedSWF" will
+actually load the player from
+
+*TC 00:02:37;07
+YouTube and embed it on your
+HTML page. Let me just go over
+
+*TC 00:02:41;10 
+all the parameters that you
+need here. The first parameter
+
+*TC 00:02:45;28
+is the URL of the swf.
+"enableksopi=1,"  just
+
+*TC 00:02:53;04
+enables the player to
+receive API calls. 
+
+*TC 00:02:57;25 
+Now "playerapiid" is the
+parameter that's going to be
+
+*TC 00:03:02;03
+passed to "onYouTubePlayerReady"
+as the first argument
+
+*TC 00:03:05;24
+when the player is loaded and
+ready to go. Now you want to
+
+*TC 00:03:09;06
+name the player because if you
+are expecting multiple videos
+
+*TC 00:03:12;18
+to be loaded on your page,
+you'll want to know which one
+
+*TC 00:03:16;21
+has just told you that it's
+ready. The second parameter
+
+*TC 00:03:23;15
+here is the id of the HTML div
+that the embed is going to
+
+*TC 00:03:26;24
+live in. As you'll notice,
+this is "ytopiplayer," that we
+
+*TC 00:03:31;18
+called up here. Then we got
+width, height, and the
+
+*TC 00:03:36;15
+required version of Flash that
+the user needs. So remember
+
+*TC 00:03:41;06
+that they need "8" or above to
+be able to see your content
+
+*TC 00:03:43;18
+correctly. And then a couple
+of optional parameters we're
+
+*TC 00:03:48;09
+not going to use. And the
+parameters and attributes we
+
+*TC 00:03:51;03
+set up here. Okay, now that
+the embed is set up to receive
+
+*TC 00:03:55;03
+API calls, let's do something
+a little bit more interesting.
+
+*TC 00:03:57;15
+Let's enter some commands.
+
+*TC 00:03:58;27
+So here I've added
+a couple of links
+
+*TC 00:04:01;14
+We can control the player
+using these instead of the
+
+*TC 00:04:03;17
+buttons. I'll play and pause
+it. Stop. Mute. Unmute. And
+
+*TC 00:04:12;08
+so let me show you the really
+simple calls that need to be
+
+*TC 00:04:15;11
+made to set this up. As I was
+saying before, once the player
+
+*TC 00:04:18;20
+is loaded and ready to go, its
+going to call
+
+*TC 00:04:20;29
+"onYouTubePlayerReady."
+
+*TC 00:04:23;02
+So here we're defining the
+function. And we're just going
+
+*TC 00:04:26;23
+to grab the reference to the
+player and store it, so that we
+
+*TC 00:04:29;14
+can issue API calls to it. With
+that, we're ready to actually
+
+*TC 00:04:33;11
+start making things happen.
+
+*TC 00:04:35;17
+So this is how we set up those
+links. This is really simple,
+
+*TC 00:04:39;29
+just a link with an "onclick"
+to this play function. And
+
+*TC 00:04:44;20
+this is how we've defined it.
+We're just doing a little
+
+*TC 00:04:44;20
+error checking, making sure
+it's not null, and then
+
+*TC 00:04:50;08
+calling "ytplayer.playVideo."
+It's that simple. Similarly,
+
+*TC 00:04:55;23
+with pause we got
+".pauseVideo," "stop,"
+
+*TC 00:04:59;20
+"stopVideo," and then "mute"
+and "unmute." It's as simple
+
+*TC 00:05:05;16
+as that to issue these
+commands to the player. Now
+
+*TC 00:05:08;07
+that we've issued some basic
+commands, let's try to take
+
+*TC 00:05:10;28
+some input and seek to 90
+seconds into this video.
+
+*TC 00:05:18;19
+And this is just as easy as
+the other commands, and I'll
+
+*TC 00:05:21;01
+show you how to do that.
+
+*TC 00:05:22;28
+So here's a little form we
+made to get user input on how
+
+*TC 00:05:27;16
+many seconds to seek to in the
+video. We're calling the
+
+*TC 00:05:30;16
+"seekTo" function here and
+we're just grabbing the value
+
+*TC 00:05:33;10
+in the text box. And here's
+how we're defining the
+
+*TC 00:05:36;13
+function, very similar to what
+we did in before
+
+*TC 00:05:38;16
+"ytplayer.seekTo." The
+seconds we just passed in and
+
+*TC 00:05:42;16
+whether or not we want to make
+a new request to the server if
+
+*TC 00:05:46;01
+the "seekTo" position is
+beyond the loaded video. So
+
+*TC 00:05:52;07
+now that we've issued commands
+to the player, let's try to get
+
+*TC 00:05:54;07
+some data from it. Useful data
+to have is what the current
+
+*TC 00:05:58;10
+time of the player is, how far
+the user is in the video. So
+
+*TC 00:06:01;24
+if we hit play here, you'll
+see that the current time div
+
+*TC 00:06:07;18
+here is updating.
+
+*TC 00:06:10;09
+So to constantly display the
+current time of the video, we
+
+*TC 00:06:12;09
+are going to go back to
+
+*TC 00:06:13;21
+"onYouTubePlayerReady." We're
+going to add an interval for
+
+*TC 00:06:18;21
+every 250 milliseconds. So
+every 250 milliseconds is
+
+*TC 00:06:21;24
+going to be called
+"updateCurrentTime," which
+
+*TC 00:06:23;18
+just calls
+"ytplayer.getCurrentTime" and
+
+*TC 00:06:26;15
+updates the HTML. You can also
+get other data like the
+
+*TC 00:06:30;06
+duration of the video, the URL
+of the video, and the embed
+
+*TC 00:06:34;18
+code.  So now that we've
+issued commands to the player,
+
+*TC 00:06:38;15
+gotten data from it. Let's see
+how we can subscribe to events.
+
+*TC 00:06:41;24
+In this case, let's have the
+player tell us every time it
+
+*TC 00:06:46;06
+changes it's state. So right
+here you can see that the
+
+*TC 00:06:49;09
+player is in state 5, which is
+video queued. If I hit play,
+
+*TC 00:06:53;21
+it goes into buffering and
+then to 1, which is playing.
+
+*TC 00:06:58;03
+I pause it, it goes into 2
+and so on. So let me show you
+
+*TC 00:07:01;08
+how to subscribe to an event.
+Now if we want to constantly
+
+*TC 00:07:04;20
+show the current player state,
+we're going to go back to
+
+*TC 00:07:07;26
+"onYouTubePlayerReady" and
+we're going to add an event
+
+*TC 00:07:10;20
+listener by saying
+"ytplayer.addEventListener."
+
+*TC 00:07:15;20
+We're going to subscribe to
+the "onStateChange" event.
+
+*TC 00:07:19;08
+And the "onStateChange" event
+is going to use our callback
+
+*TC 00:07:22;29
+function right here and pass
+it the current state.
+
+*TC 00:07:28;11
+And here we are just updating
+the HTML. Now you know the
+
+*TC 00:07:33;11
+basics of the JavaScript API.
+How to issue commands, how to
+
+*TC 00:07:36;02
+get data, and how to listen
+for events. The Flash APIs
+
+*TC 00:07:39;08
+have all the same calls and
+the same functionality, but
+
+*TC 00:07:41;29
+loading the YouTube players
+swf into another swf is a
+
+*TC 00:07:44;14
+little trickier. Because of
+the architecture of the
+
+*TC 00:07:47;11
+player's swf, using the action
+script's built-in
+
+*TC 00:07:49;08
+"MovieClipLoader" will not
+give you accurate information
+
+*TC 00:07:51;17
+about when the player is ready.
+
+*TC 00:07:52;26
+So, here's a snippet of code
+that loads the YouTube player
+
+*TC 00:07:55;05
+into Flash. We create a new
+"MovieClipLoader" here.
+
+*TC 00:08:01;13
+Then we load a YouTube swf
+into it and call it "ytPlayer."
+
+*TC 00:08:07;10
+This listener will check every
+250 milliseconds whether the
+
+*TC 00:08:12;07
+player is loaded or not. Now
+this is the extra call that is
+
+*TC 00:08:16;13
+not in the JavaScript API.
+"ytplayer.isPlayerLoaded" is
+
+*TC 00:08:20;07
+what you should use in action
+script to check if a player is
+
+*TC 00:08:22;16
+loaded or not. Once this is
+true, we can go ahead and do
+
+*TC 00:08:27;25
+all the things I talked about
+before with the JavaScript API,
+
+*TC 00:08:30;01
+like addEventListeners.
+
+*TC 00:08:33;13
+Now that you know all about
+our Player APIs, let's talk
+
+*TC 00:08:36;04
+about the Chromeless Player.
+
+*TC 00:08:37;25
+As I was saying before, the
+Chromeless Player is just a
+
+*TC 00:08:40;07
+swf with no buttons. You can
+customize it to look however
+
+*TC 00:08:44;07
+you want. So for example, on
+this site they're using the
+
+*TC 00:08:48;07
+Chromeless Player. Using their
+
+*TC 00:08:51;04
+own buttons, and then using
+the player APIs to control it.
+
+*TC 00:09:03;03
+So here's an example, very
+similar to what we had before
+
+*TC 00:09:05;12
+except that we're using the
+Chromeless Player. You'll
+
+*TC 00:09:07;24
+notice that the buttons are
+gone and the progress bar.
+
+*TC 00:09:10;09
+All that's left is the YouTube
+logo here in the bottom right
+
+*TC 00:09:13;03
+hand corner. It uses the same
+JavaScript APIs that we've
+
+*TC 00:09:16;09
+been talking about, so I can
+control it with this links.
+
+*TC 00:09:19;09
+Play. Pause And you already
+pretty much know how to set this
+
+*TC 00:09:23;21
+up, except that the swf URL is
+different. So let me show you
+
+*TC 00:09:26;27
+that right now. So one thing
+that's different about the
+
+*TC 00:09:29;15
+Chromeless Player from the
+regular embedded player is
+
+*TC 00:09:32;12
+that you need a developer key
+to access it. So if you don't
+
+*TC 00:09:35;03
+have a developer key, head
+over to code.google.com and
+
+*TC 00:09:38;12
+get one. It's free and really
+easy to sign up. Now this code
+
+*TC 00:09:43;18
+should look really familiar
+to you. The only difference
+
+*TC 00:09:47;15
+between embedding the
+Chromeless Player in a page
+
+*TC 00:09:49;21
+and embedding a regular
+YouTube embedded player,
+
+*TC 00:09:52;00
+is the swf URL. So you can
+see here the URL for the
+
+*TC 00:09:55;24
+Chromeless Player swf is
+gdata.youtube.com/apiplayer.
+
+*TC 00:10:00;27
+Here's where you put your
+developer key.
+
+*TC 00:10:03;06
+And then the other two
+parameters are the same.
+
+*TC 00:10:09;06
+So now that you know how to
+load up the Chromeless Player,
+
+*TC 00:10:11;12
+let me point out a few
+differences from the regular
+
+*TC 00:10:13;15
+JavaScript API. You'll see
+here this is actual what the
+
+*TC 00:10:16;24
+Chromeless swf looks like when
+you first load it when you
+
+*TC 00:10:18;21
+first load it cause it doesn't
+have a video id in it yet.
+
+*TC 00:10:21;03
+So there's a load video id
+function that we can call.
+
+*TC 00:10:28;09
+And there it goes. There's
+also a queue video function
+
+*TC 00:10:36;03
+that you can call. So this
+just loads the thumbnail and
+
+*TC 00:10:40;12
+grab the video, but doesn't
+start playing. To load a new
+
+*TC 00:10:44;27
+video into the Chromeless
+Player, we just call a
+
+*TC 00:10:47;06 
+"ytplaer.loadVideoById," pass
+it in "id," and optionally
+
+*TC 00:10:51;21
+where in the player we want it
+to start at. Similarly, for
+
+*TC 00:10:56;06
+"cueNewVideo,"  we call
+"ytplaer.cueVideoBGyId," pass
+
+*TC 00:11:00;29
+the "id," and where in the
+video we want it to start once
+
+*TC 00:11:04;29
+the player has issues a play
+command. Hopefully, this give
+
+*TC 00:11:09;29
+you a good idea about what
+these new tools are and what
+
+*TC 00:11:12;05
+you can do with them. There
+are a lot of things I didn't
+
+*TC 00:11:14;05
+cover here, so be sure to
+check out the documentation
+
+*TC 00:11:16;17
+on code.google.com
+
+
+

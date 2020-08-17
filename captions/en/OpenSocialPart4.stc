@@ -1,0 +1,180 @@
+*TC 00:00:06;09
+in this section we are going to 
+take the sample gadget 
+
+*TC 00:00:09;02 
+that we just created 
+that gave gifts to our friends 
+
+*TC 00:00:11;17
+and modify it a little bit
+
+*TC 00:00:12;27
+so that we can see the gifts, 
+after we have given them
+
+*TC 00:00:15;23
+we are going to start 
+by modifying our give gift function 
+
+*TC 00:00:18;15
+so that instead of just updating data
+it also requests data back
+
+*TC 00:00:22;01
+in our data request object we are 
+going to specify that in 
+
+*TC 00:00:24;24
+addition to updating the views 
+application data 
+
+*TC 00:00:27;13
+we also request 
+information on the viewer 
+
+*TC 00:00:29;28
+the viewer friends and the personal 
+information storage of the viewer
+
+*TC 00:00:34;25
+in the load friends function, 
+
+*TC 00:00:36;27
+we're also going to 
+do something similar
+
+*TC 00:00:38;23
+so that when we load our list of 
+friends and our view friends
+
+*TC 00:00:41;14
+we also request the personal 
+application storage of the viewer
+
+*TC 00:00:46;02
+we are going to make these two 
+requests parallel each other
+
+*TC 00:00:48;12
+so that when we initialize the 
+gadget or give a gift 
+
+*TC 00:00:50;26
+we can send the callback 
+the same set of information
+
+*TC 00:00:54;25
+then we modify our "onLoad" 
+friends function
+
+*TC 00:00:57;00
+so that in addition to specifying 
+the viewer and the viewer friends
+
+*TC 00:01:00;27
+we pull out the gift data which is 
+the list of gifts that we've given
+
+*TC 00:01:04;04
+again, we create the list of 
+friends as a selection menu 
+
+*TC 00:01:07;05
+and once that has been 
+inserted into the page
+
+*TC 00:01:09;24
+we call the update gift list 
+function 
+
+*TC 00:01:11;27
+which will display the list 
+of gifts we have given.
+
+*TC 00:01:14;09
+update gift list pulls information 
+out of the data array 
+
+*TC 00:01:18;01
+that we have given it
+
+*TC 00:01:19;06
+specified by the view id 
+and the key of gifts 
+
+*TC 00:01:22;13
+which is where our information 
+is stored
+
+*TC 00:01:24;08
+we then take this data and 
+convert it back from a "json string" 
+
+*TC 00:01:28;10
+into a javascript object we can use
+
+*TC 00:01:30;14
+once we have this object, 
+which is a pairing of a friend id 
+
+*TC 00:01:33;15
+and a gift id
+
+*TC 00:01:34;17
+we can convert that into a string 
+which specifies 
+
+*TC 00:01:37;06
+the friend that we have given the 
+gift to 
+
+*TC 00:01:38;27
+and the gift we have given them
+
+*TC 00:01:41;12
+we can then insert this list 
+into the page as html
+
+*TC 00:01:44;21
+Finally we make a small change to 
+the gadget XML file 
+
+*TC 00:01:47;27
+so that we have somewhere 
+to insert the html
+
+*TC 00:01:52;03
+here's a new version of our gadget 
+that now displays 
+
+*TC 00:01:54;07
+the list of gifts that we have given
+
+*TC 00:01:55;27
+so that when I click on the give 
+gift button,
+ 
+*TC 00:01:58;00
+it shows up in the 
+list below.
+
+*TC 00:02:00;11
+for more information on 
+what i just showed you 
+
+*TC 00:02:02;02
+and more information on the 
+social API
+
+*TC 00:02:04;06
+please check out the tutorial on 
+"code.google.com" 
+
+*TC 00:02:06;20
+under the open social section 
+
+
+
+
+

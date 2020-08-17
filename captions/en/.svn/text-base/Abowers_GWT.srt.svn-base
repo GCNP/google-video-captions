@@ -1,0 +1,467 @@
+1
+01:00:02,167 --> 01:00:04,467
+Bowers: Hi, I'm Andrew Bowers,
+product manager
+
+2
+01:00:04,467 --> 01:00:06,200
+for developer products
+at Google.
+
+3
+01:00:06,200 --> 01:00:09,067
+I'd like to talk to you
+about Google Web Toolkit.
+
+4
+01:00:09,067 --> 01:00:11,100
+Browsers are capable
+of a lot these days,
+
+5
+01:00:11,100 --> 01:00:13,100
+but to take full advantage
+of the browser
+
+6
+01:00:13,100 --> 01:00:14,834
+you need to be an expert
+in JavaScript
+
+7
+01:00:14,834 --> 01:00:17,133
+and three or more browsers
+and their quirks,
+
+8
+01:00:17,133 --> 01:00:19,300
+and potentially have
+a lot of time on your hands.
+
+9
+01:00:19,300 --> 01:00:21,667
+Alternatively, you could
+have a good set of tools
+
+10
+01:00:21,667 --> 01:00:23,100
+to help you out.
+
+11
+01:00:23,100 --> 01:00:26,467
+Google Web Toolkit provides
+a set of tools for just that.
+
+12
+01:00:26,467 --> 01:00:28,767
+It lets a developer write
+an AJAX application
+
+13
+01:00:28,767 --> 01:00:30,367
+in the Java programming
+language,
+
+14
+01:00:30,367 --> 01:00:33,167
+taking advantage of all the
+tools available for Java,
+
+15
+01:00:33,167 --> 01:00:36,133
+and then cross-compiles that
+code in the highly optimized,
+
+16
+01:00:36,133 --> 01:00:37,667
+plain old JavaScript.
+
+17
+01:00:37,667 --> 01:00:40,434
+JavaScript that's not only
+optimized per browser,
+
+18
+01:00:40,434 --> 01:00:42,734
+but can be served
+from any web server.
+
+19
+01:00:42,734 --> 01:00:47,801
+Let's see what development with
+Google Web Toolkit looks like.
+
+20
+01:00:47,801 --> 01:00:50,067
+Let's look at one of the
+App Engine demo applications
+
+21
+01:00:50,067 --> 01:00:53,300
+that uses Google Web Toolkit,
+or GWT for short.
+
+22
+01:00:53,300 --> 01:00:55,801
+It's a sticky note application
+that allows surfaces
+
+23
+01:00:55,801 --> 01:00:57,734
+to be shared among
+logged-in users.
+
+24
+01:00:57,734 --> 01:01:01,100
+I'll go into Eclipse
+and open up this project.
+
+25
+01:01:01,100 --> 01:01:02,767
+The source package structure
+is divided
+
+26
+01:01:02,767 --> 01:01:04,767
+into client
+and server packages.
+
+27
+01:01:04,767 --> 01:01:07,367
+At deploy time, Java files
+in the client directory
+
+28
+01:01:07,367 --> 01:01:09,767
+will be cross-compiled
+into JavaScript,
+
+29
+01:01:09,767 --> 01:01:12,200
+and run
+in our users' browsers.
+
+30
+01:01:12,200 --> 01:01:13,968
+Files in the server directory
+
+31
+01:01:13,968 --> 01:01:15,834
+will be run as bytecode
+on the server.
+
+32
+01:01:15,834 --> 01:01:19,133
+Because my client code
+is also modeled in Java,
+
+33
+01:01:19,133 --> 01:01:21,234
+I have the option
+of using the same objects
+
+34
+01:01:21,234 --> 01:01:24,634
+across both my server
+and my JavaScript client.
+
+35
+01:01:24,634 --> 01:01:27,000
+GWT provides higher-level
+abstraction
+
+36
+01:01:27,000 --> 01:01:29,601
+on top of JavaScript,
+enabling developers
+
+37
+01:01:29,601 --> 01:01:31,934
+to be more productive
+by coding against widgets
+
+38
+01:01:31,934 --> 01:01:36,067
+and events that work across
+all major browsers.
+
+39
+01:01:36,067 --> 01:01:38,234
+It's worth noting
+that you can also mix
+
+40
+01:01:38,234 --> 01:01:41,367
+handwritten JavaScript
+into GWT source code easily.
+
+41
+01:01:41,367 --> 01:01:45,033
+But for now, I'm just focusing
+on the Java aspects.
+
+42
+01:01:45,033 --> 01:01:47,701
+Part of the development-time
+magic of GWT
+
+43
+01:01:47,701 --> 01:01:49,367
+is the hosted mode browser.
+
+44
+01:01:49,367 --> 01:01:51,868
+During development, you interact
+with your application
+
+45
+01:01:51,868 --> 01:01:54,400
+in the hosted mode browser,
+which runs your Java bytecode
+
+46
+01:01:54,400 --> 01:01:57,334
+on the back end to render
+your user interface
+
+47
+01:01:57,334 --> 01:01:59,567
+in an embedded browser.
+
+48
+01:01:59,567 --> 01:02:01,300
+This has two benefits.
+
+49
+01:02:01,300 --> 01:02:03,968
+First, because we're running
+Java bytecode,
+
+50
+01:02:03,968 --> 01:02:06,767
+it means you can debug as you
+would any Java applications,
+
+51
+01:02:06,767 --> 01:02:09,067
+setting breakpoints,
+inspecting variables,
+
+52
+01:02:09,067 --> 01:02:10,801
+and stepping through code.
+
+53
+01:02:10,801 --> 01:02:14,200
+I'll set break points...
+
+54
+01:02:14,200 --> 01:02:16,934
+create a new note
+to trigger one of them...
+
+55
+01:02:16,934 --> 01:02:23,534
+and then inspect the variable
+containing the note contents.
+
+56
+01:02:23,534 --> 01:02:26,033
+Second, you can develop
+using the familiar
+
+57
+01:02:26,033 --> 01:02:29,567
+edit-refresh-view
+programming model of JavaScript.
+
+58
+01:02:29,567 --> 01:02:31,634
+You don't have to compile your
+Java source
+
+59
+01:02:31,634 --> 01:02:34,267
+into JavaScript to see changes
+in the browser.
+
+60
+01:02:34,267 --> 01:02:38,467
+I'll change the size of a sticky
+note in my code...
+
+61
+01:02:38,467 --> 01:02:41,133
+refresh the hosted mode
+browser...
+
+62
+01:02:41,133 --> 01:02:45,701
+and create a note
+with the new dimensions.
+
+63
+01:02:45,701 --> 01:02:49,200
+Google Web Toolkit provides
+an optimized RPC mechanism
+
+64
+01:02:49,200 --> 01:02:51,501
+for Java, which means
+you don't have to worry
+
+65
+01:02:51,501 --> 01:02:55,267
+about the complexity
+of low-level HTTP interactions.
+
+66
+01:02:55,267 --> 01:02:58,400
+Alternatively, you can also
+easily use JSON
+
+67
+01:02:58,400 --> 01:03:01,200
+to communicate
+with the server.
+
+68
+01:03:01,200 --> 01:03:03,334
+When you're ready
+to see what your application
+
+69
+01:03:03,334 --> 01:03:05,000
+will look like in production,
+
+70
+01:03:05,000 --> 01:03:07,567
+you compile your source code
+into JavaScript.
+
+71
+01:03:07,567 --> 01:03:09,834
+Google Web Toolkit handles
+the browser implementation
+
+72
+01:03:09,834 --> 01:03:13,434
+differences for you, and creates
+an optimized JavaScript file
+
+73
+01:03:13,434 --> 01:03:15,167
+per major browser.
+
+74
+01:03:15,167 --> 01:03:18,667
+The code is contained
+in the cache.html files.
+
+75
+01:03:18,667 --> 01:03:20,934
+Browser-specific JavaScript
+means a user
+
+76
+01:03:20,934 --> 01:03:22,834
+downloads only what they need.
+
+77
+01:03:22,834 --> 01:03:25,334
+An Internet Explorer user
+doesn't download code
+
+78
+01:03:25,334 --> 01:03:27,534
+needed for Firefox.
+
+79
+01:03:27,534 --> 01:03:29,634
+The compiled script
+is heavily optimized,
+
+80
+01:03:29,634 --> 01:03:32,901
+including compiler optimizations
+like method inlining,
+
+81
+01:03:32,901 --> 01:03:35,334
+code size reduction,
+such as removal of comments
+
+82
+01:03:35,334 --> 01:03:38,234
+and unused code,
+and of course, the final script
+
+83
+01:03:38,234 --> 01:03:40,300
+is obfuscated and minified.
+
+84
+01:03:40,300 --> 01:03:42,934
+Now, if you want to inspect
+the final JavaScript
+
+85
+01:03:42,934 --> 01:03:44,734
+in a human-readable form,
+
+86
+01:03:44,734 --> 01:03:47,367
+simply compile with the "pretty"
+option selected.
+
+87
+01:03:47,367 --> 01:03:50,601
+Just be sure to switch back
+to obfuscated before deploying,
+
+88
+01:03:50,601 --> 01:03:53,634
+as this results in faster code
+and less JavaScript
+
+89
+01:03:53,634 --> 01:03:55,334
+for the user to download.
+
+90
+01:03:55,334 --> 01:03:57,067
+I've shown you the basics
+of developing
+
+91
+01:03:57,067 --> 01:03:58,467
+with Google Web Toolkit,
+
+92
+01:03:58,467 --> 01:03:59,767
+the benefit these tools
+can have
+
+93
+01:03:59,767 --> 01:04:01,501
+on a web developer's
+productivity,
+
+94
+01:04:01,501 --> 01:04:03,601
+and the performance gains
+you can achieve
+
+95
+01:04:03,601 --> 01:04:05,100
+in your AJAX application.
+
+96
+01:04:05,100 --> 01:04:06,133
+To learn more,
+
+97
+01:04:06,133 --> 01:04:08,801
+visit
+code.google.com/webtoolkit.
+

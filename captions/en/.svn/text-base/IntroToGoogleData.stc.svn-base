@@ -1,0 +1,1037 @@
+
+*TC 00:12:19;27
+Hi, I'm Jeff Fisher and if 
+you're watching this 
+
+*TC 00:00:04;10
+then you're a developer
+interested in working with 
+
+*TC 00:00:06;07
+google products using their APIs.
+
+*TC 00:00:07;28
+More specifically, their APIs 
+that use google data protocal.
+
+*TC 00:00:11;27
+So what is the google data 
+protocol you might ask me.
+
+*TC 00:00:14;25
+Well before I can answer that I 
+have to go through 
+
+*TC 00:00:17;10
+some background information.
+
+*TC 00:00:19;03
+I'm assuming here you're familiar 
+already with 
+
+*TC 00:00:21;19
+the technologies of HTTP and XML.
+
+*TC 00:00:24;11
+Now for a long time, 
+websites have been looking at 
+ 
+*TC 00:00:26;16
+an alternative way of 
+distributing their content 
+
+*TC 00:00:28;19
+in a more computer 
+friendly way.
+
+*TC 00:00:30;19
+Computers are not very bright 
+so they need 
+
+*TC 00:00:32;23
+a little help understanding 
+our information as we see it.
+
+*TC 00:00:36;12
+So, let's look at a simple 
+example, such as a blog site.
+
+*TC 00:00:39;27
+So a blog site has a number of 
+news articles that 
+
+*TC 00:00:42;23
+are displayed in a big list 
+and they have a summary, 
+
+*TC 00:00:45;11
+a title, who wrote them, 
+when they wrote it.
+
+*TC 00:00:48;03
+So it's basic information.
+
+*TC 00:00:49;17 
+How might we represent this 
+in a computer friendly way?
+
+*TC 00:00:52;17
+Well, the first attempt to 
+solve this problem was RSS
+
+*TC 00:00:55;14
+but the thing I'm talking 
+about today is 
+
+*TC 00:00:57;15
+the atom syndication format.
+
+*TC 00:00:59;18
+Atom is a XML based approach 
+to describing the data 
+
+*TC 00:01:02;14
+on these websites and making it 
+easy for computers 
+
+*TC 00:01:05;08
+to parse this information out.
+
+*TC 00:01:07;16
+So at the basic level 
+you have a feed element 
+
+*TC 00:01:11;10
+that contains multiple entries 
+and each entry will have all 
+
+*TC 00:01:14;18 
+the metadata associated with 
+the post on this blogsite.
+
+*TC 00:01:18;10
+Well that's great because now 
+we have a compact way of 
+
+*TC 00:01:21;02
+describing all the content 
+on this blog.
+
+*TC 00:01:23;18
+But what if I want to create 
+a program that edits this blog 
+
+*TC 00:01:26;18
+and not just reads it
+
+*TC 00:01:28;22
+well i could create an 
+entirely new mechanism to do 
+
+*TC 00:01:31;21
+this and have it be drastically 
+different than this feed 
+
+*TC 00:01:34;18
+mechanism we've already 
+described or 
+
+*TC 00:01:36;22
+I could try and re-use it.
+
+*TC 00:01:38;09
+Well if i'm going to re-use 
+this format 
+
+*TC 00:01:40;07
+that describes my post all 
+nicely in XML.
+
+*TC 00:01:44;06
+How would I transmit this data 
+to the server?
+
+*TC 00:01:46;12
+Since these posts are already 
+retrieved using HTTP, 
+
+*TC 00:01:49;08
+we can just use HTTP to edit 
+and delete this content 
+
+*TC 00:01:52;22
+as well as create 
+new content as well.
+
+*TC 00:01:54;26
+So great we can reuse what we 
+already have and just make use 
+
+*TC 00:01:59;05
+of other verbs in HTTP like 
+put, post, and delete
+
+*TC 00:02:04;00
+and we have now a full cycle 
+way of managing blog content 
+
+*TC 00:02:07;28
+by just editing 
+the feed basically.
+
+*TC 00:02:10;12
+Well what if it doesn't 
+have blog entries?
+
+*TC 00:02:14;01
+What if it's not a blog? 
+What if it's something like 
+
+*TC 00:02:16;14
+a calendar or a spreadsheet
+how would i represent that data?
+
+*TC 00:02:20;23
+Well 
+
+*TC 00:02:22;06
+you could try 
+and do it in a new way
+
+*TC 00:02:24;14
+Or you could try 
+and use this atom method again.
+
+*TC 00:02:27;28
+And if you 
+use the atom method,
+
+*TC 00:02:29;11
+that's what google data 
+tries to do.
+
+*TC 00:02:32;28 
+So,
+
+*TC 00:02:35;05
+let me show you 
+an example of  
+
+*TC 00:02:37;13
+what an atom feed looks like.
+
+*TC 00:02:39;04
+Atom feed is XML 
+
+*TC 00:02:41;09
+like what we said before 
+and it contains entries. 
+
+*TC 00:02:44;27
+Each feed has its own metadata 
+as well as each entry.
+
+*TC 00:02:49;20
+You'll also notice that each 
+entry has a unique identifier 
+
+*TC 00:02:53;08
+that makes it distinct from all 
+other entries on the site.  
+
+*TC 00:02:56;15
+As well as some information 
+used to edit it.
+
+*TC 00:03:01;10
+So, 
+
+*TC 00:03:03;10
+once we take this 
+and make it into 
+
+*TC 00:03:06;16 
+an editable form 
+we call we call this 
+
+*TC 00:03:08;02
+the atom publishing protocol.  
+
+*TC 00:03:09;25
+And the atom publishing protocol 
+extracts each of these entries 
+
+*TC 00:03:13;14
+and turns them into resources.
+
+*TC 00:03:15;15
+Now these resources can either 
+be a traditional text resource 
+
+*TC 00:03:19;11
+or they could be a media resource 
+such as an image file and video.
+
+*TC 00:03:24;04
+It also uses reuses the HTTP 
+requests that we've already 
+
+*TC 00:03:27;20
+discussed to manipulate this 
+data and then it uses 
+
+*TC 00:03:30;26
+the HTTP response codes 
+in order to 
+
+*TC 00:03:32;18
+tell if this operation was 
+successful or had errors 
+
+*TC 00:03:35;04
+or requires authentication.
+
+*TC 00:03:37;16
+Now this is what's 
+usually referred to as 
+
+*TC 00:03:40;00
+a restful protocol 
+that uses the restful semantics
+
+*TC 00:03:44;24
+in order to modify these resources
+and each request is therefore 
+
+*TC 00:03:48;02
+independently of each request 
+and doesn't require 
+
+*TC 00:03:51;19
+any additional context like a 
+session to know what to do.
+
+*TC 00:03:55;17
+So here we have an example post 
+of what it is to create 
+
+*TC 00:03:59;07
+an entry on the blog 
+using AtomPub
+
+*TC 00:04:02;04
+and you'll notice there is 
+some authorization, 
+
+*TC 00:04:04;07
+there is some other bits of 
+metadata but basically 
+
+*TC 00:04:06;29
+all we're posting is 
+the atom entry 
+
+*TC 00:04:08;24
+just like what we would get 
+on the atom feed.
+
+*TC 00:04:10;21
+Once we have posted this, 
+this bit of data we have created 
+
+*TC 00:04:14;15
+this entry and we get back 
+the entry as we created it 
+
+*TC 00:04:17;00
+with some additional members 
+such as an edit link 
+
+*TC 00:04:19;10
+in case you want to modify it
+and we also get back 
+
+*TC 00:04:22;04
+some kind of version string.
+
+*TC 00:04:23;14
+in this case, 
+you see there is an "Etag" 
+
+*TC 00:04:25;10
+which uniquely identifies the 
+specific revision of this post
+
+*TC 00:04:29;13
+The 201 response code 
+is used to indicate that 
+
+*TC 00:04:32;01
+this content was successfully 
+created on the server.
+
+*TC 00:04:35;20
+So now what is google data?  
+How do I use it?  
+
+*TC 00:04:40;02
+This abstract way of looking 
+at atom feeds.
+
+*TC 00:04:43;22
+Well, what would you need 
+if you wanted to represent 
+
+*TC 00:04:45;15
+something that wasn't 
+a blog post in atom?
+
+*TC 00:04:47;20
+Probably some custom XML 
+that describes these entities.  
+
+*TC 00:04:50;21
+And that's where kines comes in.  
+Gdata kines are used to 
+
+*TC 00:04:50;21
+represent abstract ideas that 
+come across many APIs such as 
+
+*TC 00:04:59;16
+what is a location? 
+what is a time? 
+
+*TC 00:05:01;21
+what is a contact?  Things you 
+don't want to have to 
+
+*TC 00:05:04;10
+reinvent each time you're 
+specifying a new API 
+
+*TC 00:05:06;16
+or working with 
+a different product.
+
+*TC 00:05:08;22
+So once we have this XML 
+that fits nicely 
+
+*TC 00:05:11;21
+into the Atom model.
+Since atom allows you 
+
+*TC 00:05:13;18
+to extend its XML.
+What else might you need?
+
+*TC 00:05:17;02
+Well, there are some things 
+like a query language 
+
+*TC 00:05:22;03
+or authentication that we 
+have added to atom pub 
+
+*TC 00:05:22;02
+as part of google data.
+Google data basically allows us
+
+*TC 00:05:24;23
+to fill in the cracks between 
+what atom pub tries to accomplish 
+
+*TC 00:05:29;19
+and what we would like to 
+accomplish using them as APIs.
+
+*TC 00:05:33;00
+So as I already mentioned, 
+there is some form of 
+
+*TC 00:05:34;21
+authentication that we already 
+need to have in order to work 
+
+*TC 00:05:36;19
+with google services and 
+tie in to google accounts 
+
+*TC 00:05:39;13
+and we also have some way of 
+restricting what kind of content 
+
+*TC 00:05:43;07
+that you are trying to 
+access using this feed 
+
+*TC 00:05:47;19
+and then we need some way 
+to handle conflicts just in case 
+
+*TC 00:05:51;02
+two people are trying to add 
+the same information 
+
+*TC 00:05:52;25
+at the same time.
+
+*TC 00:05:52;25
+And then we have these 
+common elements to express 
+
+*TC 00:05:56;01
+what this information is 
+that we're working with.
+
+*TC 00:05:58;03
+And we had some other 
+niceties as well 
+
+*TC 00:05:59;20 
+that are not part of 
+the atom specifications 
+
+*TC 00:06:02;08
+such as batch processing 
+and media support.
+
+*TC 00:06:05;01
+So when we're making 
+a query on an atom feed 
+
+*TC 00:06:07;17 
+or google data feed 
+in this case, what is it?
+
+*TC 00:06:10;29
+Well basically it's just 
+a URL that contains 
+
+*TC 00:06:14;05
+enough information to 
+tell us what kind of entries 
+
+*TC 00:06:16;28
+we are to expect.
+
+*TC 00:06:17;28
+So first here, 
+we have a URL that describes 
+
+*TC 00:06:22;11
+all of the documents  
+
+*TC 00:06:23;26
+in someone's docs 
+and spreadsheets account.
+
+*TC 00:06:26;14
+And maybe all we really 
+care about is 
+
+*TC 00:06:28;19
+what spreadsheets they have.
+
+*TC 00:06:29;25
+so the second URL here 
+is very similar to the first 
+
+*TC 00:06:32;21
+but it uses a category query 
+to restrict only 
+
+*TC 00:06:35;18
+the spreadsheet document 
+types in the result set.
+
+*TC 00:06:38;28
+and lastly of course 
+we can retrieve just each 
+
+*TC 00:06:40;20
+individual entry and the 
+information associated with them 
+
+*TC 00:06:43;17
+by passing a URL that contains 
+some sort of document key.
+
+*TC 00:06:47;18
+The nice thing about 
+google data  
+
+*TC 00:06:49;02
+is that it has consistent 
+features across all of 
+
+*TC 00:06:52;03
+our API such as 
+alternative output formats 
+
+*TC 00:06:54;14
+like Json and RSS 
+in case the software you're 
+
+*TC 00:06:57;03
+working with natively 
+consumes those formats.
+
+*TC 00:06:59;07
+It also has this 
+Authentication model 
+
+*TC 00:07:01;25
+that we'll talk about  
+that allows you to 
+
+*TC 00:07:03;25
+authenticate users to 
+their google account 
+
+*TC 00:07:06;01
+and securely access 
+their data.
+
+*TC 00:07:08;09
+We have created 
+a number of client libraries 
+
+*TC 00:07:10;23
+for many languages that 
+parse all this XML and
+
+*TC 00:07:14;19
+atom data into an easy to 
+use object orientated model 
+
+*TC 00:07:18;06
+that you can manipulate 
+directly in the 
+
+*TC 00:07:20;01
+language you are 
+comfortable with.
+
+*TC 00:07:21;18
+and we also provide some 
+protocol customizations like 
+
+*TC 00:07:24;13
+I've said for things 
+that atom hasn't tackled yet 
+
+*TC 00:07:26;15
+such as batch processing.
+
+*TC 00:07:27;20
+In case you want to do 
+a number of operations at once. 
+
+*TC 00:07:30;06
+So as you can see, there are 
+a number of google data APIs 
+
+*TC 00:07:33;26
+out there for a number of 
+popular google products 
+
+*TC 00:07:36;02
+such as google calendar, google 
+spreadsheets, picasa and youtube.
+
+*TC 00:07:39;18
+So you can now access data 
+in any one of those products 
+
+*TC 00:07:42;21
+using the same semantics 
+that I'm describing to you.
+
+*TC 00:07:47;04
+So for example, 
+lets go through 
+
+*TC 00:07:49;10
+a simple way that 
+I might as a programmer 
+
+*TC 00:07:51;28
+interact with 
+the google calendar API 
+
+*TC 00:07:55;24
+so first I'm going to 
+need some way of authenticating 
+
+*TC 00:07:58;18
+this request that 
+I'm going to be making.
+
+*TC 00:08:00;26
+So I have two options here.  
+
+*TC 00:08:02;15 
+One is AuthSub and 
+the other is ClientLogin.
+
+*TC 00:08:05;19
+ClientLogin is meant for 
+desktop based applications 
+
+*TC 00:08:09;09
+that can have the user input 
+their credentials directly 
+
+*TC 00:08:13;10
+and then make their request 
+to google's servers 
+
+*TC 00:08:15;09
+where as AuthSub is intended to 
+allow third party websites 
+
+*TC 00:08:18;15
+to re-direct users to google's 
+login page and then 
+
+*TC 00:08:22;19
+re-direct back to 
+the website in question 
+
+*TC 00:08:27;09
+so both of these are going 
+to give your program 
+
+*TC 00:08:29;25
+some kind of token that 
+you can pass along with 
+
+*TC 00:08:31;19
+your request and make it 
+an authenticated request.
+
+*TC 00:08:35;07
+So first let's see what 
+we would have to do 
+
+*TC 00:08:37;06
+to retrieve all the events 
+in someone's calendar.
+
+*TC 00:08:39;12
+well it's very simple, 
+all we are doing is 
+
+*TC 00:08:41;00
+pulling down a feed passing 
+along our credentials 
+
+*TC 00:08:43;14
+and making this 
+authenticated request.
+
+*TC 00:08:47;05
+So when we get it back, 
+we get a two hundred okayed, 
+
+*TC 00:08:49;16
+it means this 
+request was successful
+
+*TC 00:08:50;29
+and we get back an atom feed 
+that says some information 
+
+*TC 00:08:54;00
+about the calendar such as 
+this Mr. Test User's calendar 
+
+*TC 00:08:57;16
+and he is based out of 
+the Pacific time zone
+
+*TC 00:09:02;03
+But as you notice in this feed, 
+he didn't have any calendar 
+
+*TC 00:09:05;20
+events currently on his calendar
+so he is a very lonely person
+
+*TC 00:09:08;22
+and so maybe we should 
+invite him to lunch.
+
+*TC 00:09:10;14
+Well here I am demonstrating how 
+we can create an event 
+
+*TC 00:09:13;20
+on his calendar, 
+
+*TC 00:09:14;24
+by using the 
+post semantics of HTTP.
+
+*TC 00:09:17;28
+So all we're really doing is 
+creating an Atom entry 
+
+*TC 00:09:20;28
+and then sending it to the feed.
+
+*TC 00:09:23;16
+So as you can see, 
+we set the start time, 
+
+*TC 00:09:26;00
+eleven-thirty is time for 
+lunch at google
+
+*TC 00:09:28;21
+we set some information 
+about it in description
+
+*TC 00:09:31;03
+and we're using this category, 
+this kind of event
+
+*TC 00:09:35;12
+so people know this is 
+an atom entry 
+
+*TC 00:09:37;11
+representing a calendar event.
+so once we create it great, 
+
+*TC 00:09:40;28
+we get a 201 
+created response
+
+*TC 00:09:42;16
+which means it was added to 
+his calendar successfully
+
+*TC 00:09:44;14
+and we get back that 
+same entry except now 
+
+*TC 00:09:47;12
+you'll notice there is an edit 
+link inside of the atom entry
+
+*TC 00:09:51;23
+which allows us to go back 
+and make modifications
+
+*TC 00:09:54;04
+and there is a long ID there 
+in red which distinctly 
+
+*TC 00:09:58;11
+identifies this specific event 
+and then you'll notice there 
+
+*TC 00:10:00;26
+is a version string in blue 
+which represents 
+
+*TC 00:10:02;20
+this revision of this event 
+which is of course 
+
+*TC 00:10:04;25
+the first one since 
+we just created it.
+
+*TC 00:10:06;23
+But you notice in this 
+we forgot to set 
+
+*TC 00:10:10;14
+where this location 
+is occurring in,
+
+*TC 00:10:12;07
+Mr. Test User isn't 
+always very bright, 
+
+*TC 00:10:14;13
+so we had better tell him where 
+it is 
+
+*TC 00:10:15;14
+we had better 
+edit this thing.
+
+*TC 00:10:17;09
+So now we are going to 
+use put to edit 
+
+*TC 00:10:19;18
+the event we just created.
+
+*TC 00:10:21;07
+You notice we are 
+putting to the edit link 
+
+*TC 00:10:23;17
+that we just saw in 
+the previous slide
+
+*TC 00:10:25;27
+So here we are making this 
+request to the edit link 
+
+*TC 00:10:28;16
+with that specific revision 
+string that we just used 
+
+*TC 00:10:30;29
+and then we are passing our 
+authentication information 
+
+*TC 00:10:33;11
+and all we're doing is 
+putting the same Atom entry 
+
+*TC 00:10:36;24
+except now we are adding 
+the bottom here in blue
+
+*TC 00:10:39;01
+the where element of specifying 
+that google is
+
+*TC 00:10:42;11
+based out of Mountain View 
+in California
+
+*TC 00:10:45;10
+So now that request has gone 
+through, we get an ok back
+
+*TC 00:10:48;10
+and now you can see the 
+latest form of the event 
+
+*TC 00:10:51;21
+as on his calendar
+
+*TC 00:10:53;07
+and it has all the details 
+he needs to find us 
+
+*TC 00:10:55;17
+and he can come eat 
+lunch with us, that's great
+
+*TC 00:10:57;16
+but maybe we don't really like 
+Mr. Test User, 
+
+*TC 00:11:01;07
+he kind of talks to much 
+
+*TC 00:11:02;11
+and there is a reason that no 
+one ever invites him to things 
+
+*TC 00:11:05;07
+so we are going 
+to delete that event on him 
+
+*TC 00:11:07;25 
+before he sees it hopefully.
+
+*TC 00:11:09;12
+And so here, to delete the event 
+all we really need to do  
+
+*TC 00:11:13;00
+is issue a delete request 
+with the edit URL 
+
+*TC 00:11:15;02
+we just got back from 
+the updated form
+
+*TC 00:11:17;15
+Now notice I said the edit URL 
+from  the one we just got back
+
+*TC 00:11:20;12
+If we use the original edit URL 
+that we edited the event with, 
+
+*TC 00:11:24;13
+then that would already not 
+work anymore since that 
+
+*TC 00:11:26;29
+blue string at the end, 
+that version ID would be 
+
+*TC 00:11:28;24 
+different than it is now.
+
+*TC 00:11:30;12
+But since it is the correct 
+one, we get back a 200 OK.
+
+*TC 00:11:33;28
+Now if we had used the 
+previous one, 
+
+*TC 00:11:35;14
+you would see a 409 conflict 
+error there 
+
+*TC 00:11:38;01
+instead of a 200 OK. Which 
+meant that there is now
+
+*TC 00:11:40;15
+now a newer version of event 
+on the server than the one 
+
+*TC 00:11:43;03
+that we are trying to delete.
+
+*TC 00:11:44;18
+So now that we have seen the 
+fifteen minute rapid fire 
+
+*TC 00:11:48;15
+walk through of how to use google
+data using specific things 
+
+*TC 00:11:51;13
+you've got the basic idea of 
+what google data is 
+
+*TC 00:11:54;12
+and how it works on the basic 
+level of XML and using HTTP 
+
+*TC 00:11:58;09
+But perhaps like most people 
+you don't want to construct  
+
+*TC 00:12:01;07
+all this XML yourself. 
+You might be more interested in 
+
+*TC 00:12:03;25
+the high level client libraries 
+we support in your language of choice.
+
+*TC 00:12:07;22
+So now what you should do is 
+go to code.google.com/apis/gdata 
+
+*TC 00:12:13;10
+to find out more and download 
+the client library of your choice 

@@ -1,0 +1,56 @@
+00:00:01.000,00:00:06.520
+Once you've built a great site and you're ready to have it indexed in Google, you'll want to ensure that Google
+
+00:00:06.521,00:00:14.680
+knows about your site's pages. In many cases, Google may already be aware of your pages because one or more
+
+00:00:14.681,00:00:22.520
+quality sites have included a relevant link to your site on theirs. Indeed, naturally acquiring such links is a
+
+00:00:22.521,00:00:29.010
+great way for Google to learn about your site's pages. If you'd like to let Google know about a brand new site
+
+00:00:29.011,00:00:36.810
+of yours, however, you're welcome to jumpstart the process by submitting your site via the AddURL link here.
+
+00:00:36.811,00:00:44.010
+No need to list all your pages; just the top level one, like www.example.com, is sufficient.
+
+00:00:44.011,00:00:50.310
+To let Google know about all of your pages, you can submit an XML Sitemap.
+
+00:00:51.800,00:00:58.910
+Whether your site is old or new, we highly recommend that you create an XML Sitemap, which can help Google
+
+00:00:58.911,00:01:06.410
+and other search engines better find and understand the pages on your site. These are especially useful for sites
+
+00:01:06.411,00:01:14.010
+that feature dynamic content or a large set of new and updated pages, or have few incoming links.
+
+00:01:14.011,00:01:22.540
+You can create a general XML Sitemap in minutes, as well as XML Sitemaps for other types of information like video;
+
+00:01:22.541,00:01:31.810
+learn more from the links listed here. Note that this isn't the same thing as an HTML, or user-visible sitemap.
+
+00:01:31.811,00:01:38.910
+HTML sitemaps can complement XML Sitemaps, and can help people quickly discover and navigate to content
+
+00:01:38.911,00:01:40.710
+deep within your site.
+
+00:01:42.250,00:01:48.830
+We realize that you may have some pages that you don't want Google to access. For instance, you may not want
+
+00:01:48.831,00:01:55.910
+Googlebot, our automated page-fetching robot, accessing documents with private information or pages you're
+
+00:01:55.911,00:02:03.120
+simply not ready to show the world. In cases like this, you'll want to use one of two reliable methods for
+
+00:02:03.121,00:02:10.550
+blocking us from this content:  a "Disallow" line in your robots.txt file or a noindex meta tag on 
+
+00:02:10.551,00:02:13.250
+each page you don't want indexed.

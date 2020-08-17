@@ -1,0 +1,185 @@
+﻿*TC 00:00:06;02
+Nesta seção, vamos 
+analisar nosso exemplo de
+
+*TC 00:00:07;25
+aplicativo que dá presentes
+aos nossos amigos e também
+
+*TC 00:00:10;19
+mostra os presentes que demos
+para mostrar os presentes
+
+*TC 00:00:13;02
+que outros amigos
+nos deram.
+
+*TC 00:00:16;04
+A primeira coisa que precisamos fazer
+é uma pequena alteração no
+
+*TC 00:00:19;03
+XML de nosso gadget, para que 
+tenhamos um lugar para inserir nossa
+
+*TC 00:00:22;05
+lista de presentes recebidos.
+
+*TC 00:00:24;01
+Em seguida, precisamos fazer duas 
+pequenas alterações,
+
+*TC 00:00:25;26
+uma na função "loadFriends" 
+e outra na função "giveGift",
+
+*TC 00:00:27;26
+para que tenhamos uma solicitação
+dos dados de nossos amigos
+
+*TC 00:00:31;24
+e também de nossos dados.
+
+*TC 00:00:32;21
+Primeiro, modificamos "loadFriends"
+para que além de
+
+*TC 00:00:35;24
+solicitar informações sobre 
+"viewer", "viewerFriends" e
+
+*TC 00:00:38;21
+os dados de aplicativos
+pessoais do espectador,
+
+*TC 00:00:41;10
+também solicitemos os
+dados de aplicativos de "viewerFriends".
+
+*TC 00:00:45;21
+Em seguida, fazemos a mesma alteração em
+"giveGift" para que as
+
+*TC 00:00:49;13
+solicitações fiquem paralelas entre si.
+
+*TC 00:00:52;06
+Depois, atualizamos "onLoadFriends", 
+para que além de extrair
+
+*TC 00:00:55;11
+informações sobre "viewer",
+"viewerFriends"
+
+*TC 00:00:57;20
+e "giftData",
+extraiamos informações sobre
+
+*TC 00:01:00;03
+"viewerfriendData",
+que é a lista de presentes
+
+*TC 00:01:02;14
+que todos os nossos 
+amigos deram.
+
+*TC 00:01:04;17
+Essa função age novamente
+por meio da lista de amigos,
+
+*TC 00:01:07;06
+exibe os menus para que 
+você possa selecionar um amigo
+
+*TC 00:01:09;06
+ao qual dar um presente,
+
+*TC 00:01:10;15
+atualiza a lista de presentes que mostra 
+a lista de presentes enviados,
+
+*TC 00:01:14;16
+e, finalmente, chama a nova função
+"updateReceivedList", que 
+
+*TC 00:01:17;25
+mostra a lista de presentes 
+recebidos de seus amigos.
+
+*TC 00:01:21;16
+"updateReceivedList" é bem parecida 
+com a função "updateGiftList",
+
+*TC 00:01:24;29
+mas em vez de agir novamente apenas 
+uma vez na lista de presentes
+
+*TC 00:01:27;10
+que você enviou, ela age 
+em cada um de seus amigos,
+
+*TC 00:01:30;06
+extrai os dados de aplicativos
+apenas desse amigo especificado
+
+*TC 00:01:33;12
+pelo ID dele e, em seguida,
+converte os dados que ela
+
+*TC 00:01:36;23
+extraiu em um 
+objeto do javascript.
+
+*TC 00:01:40;00
+Assim que ela tiver essa lista de presentes 
+dados por seu amigo,
+
+*TC 00:01:42;18
+ela agirá em cada um deles,
+comparando o ID do amigo ao qual 
+
+*TC 00:01:45;14
+o presente foi enviado com seu ID.
+
+*TC 00:01:47;22
+Se os IDs corresponderem, ela adicionará esse 
+presente como um presente dado a você.
+
+*TC 00:01:52;19
+Assim que a lista de presentes 
+dados a você
+
+*TC 00:01:54;06
+estiver sido concluída,
+eles serão inseridos na página.
+
+*TC 00:01:57;09
+Aqui você pode ver a versão 
+recém-criada de nosso gadget,
+
+*TC 00:01:59;16
+que exibe não apenas opções 
+para enviar presentes a nossos amigos
+
+*TC 00:02:02;24
+e as listas de presentes que 
+já enviamos a nossos amigos,
+
+*TC 00:02:05;01
+mas também a lista de presentes que 
+nossos amigos nos enviaram.
+
+*TC 00:02:07;29
+Para obter mais informações 
+sobre o que acabei de mostrar,
+
+*TC 00:02:10;04
+além de informações 
+sobre a API do Open Social,
+
+*TC 00:02:12;15
+consulte o tutorial em
+code.google.com
+
+*TC 00:02:15;01
+na seção Open Social.

@@ -1,0 +1,185 @@
+1
+00:00:00,534 --> 00:00:01,400
+Olá. Eu sou Mendel,
+
+2
+00:00:01,400 --> 00:00:03,801
+gerente de marketing de produtos
+do Google Friend Connect.
+
+3
+00:00:03,801 --> 00:00:05,067
+Com o Google Friend Connect,
+
+4
+00:00:05,067 --> 00:00:07,834
+você pode adicionar facilmente
+recursos sociais ao seu site.
+
+5
+00:00:07,834 --> 00:00:10,133
+Assim, os seus visitantes
+poderão se envolver mais
+
+6
+00:00:10,133 --> 00:00:12,667
+com o seu conteúdo
+e uns com os outros.
+
+7
+00:00:12,667 --> 00:00:14,534
+Quando você começar a usar
+o Google Friend Connect,
+
+8
+00:00:14,534 --> 00:00:17,400
+os seus visitantes poderão
+participar do seu site.
+
+9
+00:00:17,400 --> 00:00:18,501
+Em vez de ter que criar
+
+10
+00:00:18,501 --> 00:00:20,167
+uma nova conta
+com uma nova senha,
+
+11
+00:00:20,167 --> 00:00:21,901
+eles têm a 
+opção de fazer login
+
+12
+00:00:21,901 --> 00:00:26,901
+com uma conta existente do
+Google, Yahoo, AIM ou OpenID.
+
+13
+00:00:26,901 --> 00:00:28,634
+Este gadget de mural
+permite que os seus visitantes
+
+14
+00:00:28,634 --> 00:00:32,467
+postem comentários e iniciem
+uma discussão no seu site.
+
+15
+00:00:32,467 --> 00:00:33,901
+Com o gadget de
+classificação e resenha,
+
+16
+00:00:33,901 --> 00:00:36,868
+os seus visitantes podem
+deixar uma classificação.
+
+17
+00:00:36,868 --> 00:00:39,501
+Novos gadgets estão sempre
+sendo criados pelo Google e pela
+
+18
+00:00:39,501 --> 00:00:41,667
+comunidade de desenvolvedores
+do Google OpenSocial,
+
+19
+00:00:41,667 --> 00:00:43,834
+por isso, haverá uma infinidade
+de outros gadgets sociais
+
+20
+00:00:43,834 --> 00:00:45,667
+para você adicionar em breve.
+
+21
+00:00:45,667 --> 00:00:49,133
+Os visitantes também podem se
+relacionar com outros membros.
+
+22
+00:00:49,133 --> 00:00:51,334
+Eles podem saber mais
+sobre os outros membros
+
+23
+00:00:51,334 --> 00:00:54,467
+ou fazer
+novos amigos.
+
+24
+00:00:54,467 --> 00:00:55,834
+Podem até
+convidar amigos
+
+25
+00:00:55,834 --> 00:00:58,434
+para conhecer o seu site.
+
+26
+00:00:58,434 --> 00:00:59,567
+E o melhor de tudo é que,
+
+27
+00:00:59,567 --> 00:01:01,100
+para adicionar o Friend Connect
+ao seu site,
+
+28
+00:01:01,100 --> 00:01:04,334
+não é necessário saber
+programação.
+
+29
+00:01:04,334 --> 00:01:06,434
+Escolha os gadgets
+que quiser na nossa galeria,
+
+30
+00:01:06,434 --> 00:01:08,868
+copie e cole alguns
+snippets de código
+
+31
+00:01:08,868 --> 00:01:11,334
+e o Google Friend Connect
+faz o resto.
+
+32
+00:01:11,334 --> 00:01:14,200
+Então, se você tiver um blog,
+
+33
+00:01:14,200 --> 00:01:17,100
+um site de fã,
+
+34
+00:01:17,100 --> 00:01:20,133
+um site comercial
+
+35
+00:01:20,133 --> 00:01:22,801
+ou um mashup,
+
+36
+00:01:22,801 --> 00:01:24,801
+os seus visitantes poderão
+se envolver mais
+
+37
+00:01:24,801 --> 00:01:27,434
+com o seu conteúdo
+e uns com os outros.
+
+38
+00:01:27,434 --> 00:01:30,167
+Onde eu posso saber mais
+sobre o Google Friend Connect?
+
+39
+00:01:30,167 --> 00:01:32,834
+Visite
+google.com/friendconnect.
+

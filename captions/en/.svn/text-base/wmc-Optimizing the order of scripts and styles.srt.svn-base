@@ -1,0 +1,186 @@
+1
+00:00:06,901 --> 00:00:08,367
+Gentilcore: Hi,
+I'm Tony Gentilcore,
+
+2
+00:00:08,367 --> 00:00:09,868
+software engineer at Google
+
+3
+00:00:09,868 --> 00:00:13,067
+and co-creator of the
+open-source Page Speed tool.
+
+4
+00:00:13,067 --> 00:00:16,200
+In the next couple of minutes,
+I'll use HttpWatch
+
+5
+00:00:16,200 --> 00:00:18,067
+and Steve Souders'
+Cuzillion tool
+
+6
+00:00:18,067 --> 00:00:20,200
+to show you
+two easy-to-implement,
+
+7
+00:00:20,200 --> 00:00:23,100
+yet high-impact techniques
+for speeding up your web page.
+
+8
+00:00:23,100 --> 00:00:26,801
+Typical web pages spend 80-90%
+of their load time
+
+9
+00:00:26,801 --> 00:00:28,701
+blocked waiting on the network.
+
+10
+00:00:28,701 --> 00:00:32,501
+We want to make sure
+all resources load in parallel,
+
+11
+00:00:32,501 --> 00:00:35,400
+so that minimal time is spent
+blocked on the network.
+
+12
+00:00:35,400 --> 00:00:37,868
+Most popular browsers
+will serialize
+
+13
+00:00:37,868 --> 00:00:39,300
+the download
+of script files.
+
+14
+00:00:39,300 --> 00:00:40,968
+So especially when downloading
+script files,
+
+15
+00:00:40,968 --> 00:00:42,300
+we need to be very careful
+
+16
+00:00:42,300 --> 00:00:44,968
+about the order in which
+script files are included.
+
+17
+00:00:44,968 --> 00:00:46,901
+Here are two common patterns
+that lead
+
+18
+00:00:46,901 --> 00:00:50,667
+to unnecessary serialization
+and have extremely easy fixes.
+
+19
+00:00:50,667 --> 00:00:54,734
+First, while script files block
+subsequent downloads,
+
+20
+00:00:54,734 --> 00:00:57,667
+those already in progress
+will remain downloading.
+
+21
+00:00:57,667 --> 00:01:01,667
+In this first example,
+a script before a CSS file
+
+22
+00:01:01,667 --> 00:01:06,033
+causes the browser to block,
+taking two seconds to load.
+
+23
+00:01:06,033 --> 00:01:09,334
+However, simply moving the style
+above the script
+
+24
+00:01:09,334 --> 00:01:12,434
+allows them
+to load in parallel.
+
+25
+00:01:12,434 --> 00:01:15,934
+So if you have an external
+script and CSS file,
+
+26
+00:01:15,934 --> 00:01:18,968
+always include the CSS file
+before the script,
+
+27
+00:01:18,968 --> 00:01:21,000
+so that they will download
+in parallel.
+
+28
+00:01:21,000 --> 00:01:25,033
+Inline script tags, even though
+they don't download anything,
+
+29
+00:01:25,033 --> 00:01:27,734
+will prevent subsequent
+resources from downloading
+
+30
+00:01:27,734 --> 00:01:30,133
+in parallel
+with a CSS file.
+
+31
+00:01:30,133 --> 00:01:33,033
+In this example,
+an inline script block
+
+32
+00:01:33,033 --> 00:01:35,534
+is placed between a style
+and a script.
+
+33
+00:01:35,534 --> 00:01:38,000
+It serializes the downloads.
+
+34
+00:01:38,000 --> 00:01:41,534
+In the fixed example,
+it is moved above the style,
+
+35
+00:01:41,534 --> 00:01:45,000
+and again parallelization
+is restored.
+
+36
+00:01:45,000 --> 00:01:47,133
+Watching for serialization
+points in the browser
+
+37
+00:01:47,133 --> 00:01:49,868
+is an important technique
+for speeding up your web page.
+
+38
+00:01:49,868 --> 00:01:54,801
+But there's much more
+at code.google.com/speed.
+

@@ -1,0 +1,205 @@
+1
+00:00:06,033 --> 00:00:07,434
+Brenneman: Hi,
+my name is Shawn Brenneman,
+
+2
+00:00:07,434 --> 00:00:09,968
+and I'm a software engineer
+on Picasa Web Albums.
+
+3
+00:00:09,968 --> 00:00:11,367
+Image files take longer
+to download
+
+4
+00:00:11,367 --> 00:00:13,734
+than most kinds of files
+on the Web.
+
+5
+00:00:13,734 --> 00:00:15,901
+But users want to look
+at large photos
+
+6
+00:00:15,901 --> 00:00:17,167
+as quickly
+as possible.
+
+7
+00:00:17,167 --> 00:00:19,767
+On Picasa Web, we use a lot
+of tricks to make
+
+8
+00:00:19,767 --> 00:00:22,701
+downloading photos
+as fast as possible.
+
+9
+00:00:22,701 --> 00:00:24,501
+One of the tricks we use
+is prefetching.
+
+10
+00:00:24,501 --> 00:00:26,067
+Most of the files
+that we download
+
+11
+00:00:26,067 --> 00:00:27,767
+are compressed image files.
+
+12
+00:00:27,767 --> 00:00:30,000
+We can't do anything
+about how large they are,
+
+13
+00:00:30,000 --> 00:00:32,667
+and they're going to take time
+over the network to come over.
+
+14
+00:00:32,667 --> 00:00:34,534
+But the sooner
+that we make the request,
+
+15
+00:00:34,534 --> 00:00:36,167
+the sooner
+the file gets there.
+
+16
+00:00:36,167 --> 00:00:38,834
+If we make the request at
+the beginning of an HTML page,
+
+17
+00:00:38,834 --> 00:00:41,634
+then, as that
+image file loads,
+
+18
+00:00:41,634 --> 00:00:43,300
+all of the smaller files
+will load,
+
+19
+00:00:43,300 --> 00:00:44,634
+and everything will get
+to the user
+
+20
+00:00:44,634 --> 00:00:45,901
+at about the same time.
+
+21
+00:00:45,901 --> 00:00:48,434
+On Picasa Web Albums,
+we have good usage data
+
+22
+00:00:48,434 --> 00:00:50,400
+where we know that,
+if a user looks at one photo,
+
+23
+00:00:50,400 --> 00:00:52,334
+they're probably gonna look
+at the next photo
+
+24
+00:00:52,334 --> 00:00:53,767
+and maybe even the next one.
+
+25
+00:00:53,767 --> 00:00:55,567
+So we start downloading those
+ahead of time.
+
+26
+00:00:55,567 --> 00:00:57,434
+By the time they start looking
+at the photo,
+
+27
+00:00:57,434 --> 00:00:59,067
+it's already
+in the browser's cache.
+
+28
+00:00:59,067 --> 00:01:01,267
+That way,
+the page loads instantly,
+
+29
+00:01:01,267 --> 00:01:02,734
+the files are already cached,
+
+30
+00:01:02,734 --> 00:01:05,300
+and the user can look
+at more content more quickly.
+
+31
+00:01:05,300 --> 00:01:07,000
+A couple of things
+you want to make sure of:
+
+32
+00:01:07,000 --> 00:01:09,067
+the files cache well
+in the browser...
+
+33
+00:01:09,067 --> 00:01:12,067
+Excellent examples of this
+are image files,
+
+34
+00:01:12,067 --> 00:01:14,200
+JavaScript files,
+style sheets.
+
+35
+00:01:14,200 --> 00:01:16,467
+Be careful
+about how much data you request.
+
+36
+00:01:16,467 --> 00:01:18,334
+You don't want to download
+your entire site.
+
+37
+00:01:18,334 --> 00:01:20,133
+You want to download
+a few resources
+
+38
+00:01:20,133 --> 00:01:22,801
+to make loading that next page
+a little bit faster.
+
+39
+00:01:22,801 --> 00:01:25,000
+This technique doesn't work
+on every kind of Web site.
+
+40
+00:01:25,000 --> 00:01:26,367
+But where it can be applied,
+
+41
+00:01:26,367 --> 00:01:28,300
+it's a huge speed-up
+for your users.
+
+42
+00:01:28,300 --> 00:01:32,267
+For more tips,
+go to code.google.com/speed.
+

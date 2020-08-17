@@ -1,0 +1,110 @@
+﻿*TC 00:00:06;00
+A continuación, crearemos una 
+aplicación de ejemplo que 
+
+*TC 00:00:07;23
+utilice nuestra lista de amigos y 
+nos permita enviarles regalos.
+
+*TC 00:00:12;14
+Primero haremos unos 
+pequeños cambios en el archivo XML,
+
+*TC 00:00:15;19
+crearemos un formulario con una lista 
+de amigos, otra de regalos 
+
+*TC 00:00:19;20
+y un botón para enviarle 
+el regalo al amigo.
+
+*TC 00:00:23;18
+Después modificaremos la 
+función "onLoadfriends" 
+
+*TC 00:00:26;12
+para que, en vez de 
+mostrar los amigos en
+
+*TC 00:00:28;29
+la página, cree un menú en el que 
+podamos seleccionar a un amigo.
+
+*TC 00:00:32;15
+Luego utilizaremos otra función 
+para crear un menú
+
+*TC 00:00:35;04
+que incluya la lista de regalos 
+especificada para poder
+
+*TC 00:00:37;10
+seleccionar el regalo que vamos 
+a enviar a uno de nuestros amigos.
+
+*TC 00:00:41;21
+Luego modificaremos
+la función de inicialización 
+
+*TC 00:00:43;26
+para que, al cargarse el 
+gadget, no sólo se cargue
+
+*TC 00:00:45;19
+la lista de amigos, sino también
+el menú de regalos.
+
+*TC 00:00:49;02
+El paso final y más importante es
+crear la función de envío de regalos.
+
+*TC 00:00:52;13
+Esta función guarda el regalo y 
+el amigo al que queremos  
+
+*TC 00:00:56;17
+enviárselo en el almacén de 
+datos persistentes del API 
+
+*TC 00:00:59;03
+de OpenSocial. Para eso,
+
+*TC 00:01:00;25
+debemos crear un nuevo 
+objeto de solicitud de datos 
+
+*TC 00:01:03;21
+y enviarlo a una nueva solicitud
+de actualización de datos de aplicación
+
+*TC 00:01:06;27
+de persona indicando que se 
+guarden en el objeto "viewer".
+
+*TC 00:01:10;10
+Luego enviaremos la solicitud
+al API de OpenSocial 
+
+*TC 00:01:12;20
+donde se almacenan los datos.
+
+*TC 00:01:14;04
+Aquí vemos el gadget que hemos 
+creado, y que
+
+*TC 00:01:15;29
+muestra una lista de regalos,
+
+*TC 00:01:17;14
+una lista de amigos y un botón 
+para enviarles regalos.
+
+*TC 00:01:21;11
+Para obtener más 
+información sobre este proceso, 
+
+*TC 00:01:23;08
+consultad el tutorial de lasección "OpenSocial" 
+
+*TC 00:01:25;14
+en "code.google.com".

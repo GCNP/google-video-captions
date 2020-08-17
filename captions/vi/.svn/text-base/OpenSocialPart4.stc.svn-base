@@ -1,0 +1,181 @@
+﻿*TC 00:00:06;09
+trong mục này, chúng ta 
+sẽ xem xét tiện ích mẫu 
+
+*TC 00:00:09;02 
+mà chúng ta vừa tạo để 
+tặng quà cho bạn bè 
+
+*TC 00:00:11;17
+và sửa đổi nó một chút
+
+*TC 00:00:12;27
+để chúng ta có thể xem quà 
+tặng sau khi chúng ta đã tặng
+
+*TC 00:00:15;23
+chúng ta sẽ bắt đầu bằng việc 
+sửa đổi hàm tặng quà 
+
+*TC 00:00:18;15
+để thay vì chỉ cập nhật dữ liệu, 
+hàm sẽ yêu cầu trả về dữ liệu
+
+*TC 00:00:22;01
+trong đối tượng yêu cầu dữ liệu, 
+chúng ta sẽ chỉ định rằng 
+
+*TC 00:00:24;24
+ngoài việc cập nhật 
+dữ liệu ứng dụng xem 
+
+*TC 00:00:27;13
+chúng ta cũng yêu cầu 
+thông tin về người xem 
+
+*TC 00:00:29;28
+bạn bè của người xem và lưu trữ 
+thông tin cá nhân của người xem
+
+*TC 00:00:34;25
+đối với hàm tải bạn bè, 
+
+*TC 00:00:36;27
+chúng ta cũng thực 
+hiện tương tự
+
+*TC 00:00:38;23
+để khi tải danh sách bạn bè và 
+bạn bè của người xem
+
+*TC 00:00:41;14
+chúng ta cũng sẽ tải lưu trữ ứng 
+dụng cá nhân của người xem
+
+*TC 00:00:46;02
+chúng ta sẽ thực hiện hai yêu 
+cầu này cùng một lúc
+
+*TC 00:00:48;12
+để khi khởi chạy 
+tiện ích hoặc tặng quà 
+
+*TC 00:00:50;26
+chúng ta có thể gửi yêu cầu trả về 
+lượng thông tin tương tự
+
+*TC 00:00:54;25
+sau đó chúng ta sửa 
+đổi hàm "onLoad" bạn bè
+
+*TC 00:00:57;00
+để ngoài việc chỉ định người xem và 
+bạn bè của người xem
+
+*TC 00:01:00;27
+chúng ta có thể gọi lại dữ liệu quà tặng, tức là danh sách quà chúng ta đã tặng lại, 
+
+*TC 00:01:04;04
+chúng ta tạo danh sách bạn bè dưới 
+dạng trình đơn lựa chọn 
+
+*TC 00:01:07;05
+và khi danh sách đã 
+được chèn vào trang web
+
+*TC 00:01:09;24
+chúng ta gọi hàm cập 
+nhật danh sách quà tặng 
+
+*TC 00:01:11;27
+hàm này sẽ hiển thị danh sách 
+quà chúng ta đã tặng.
+
+*TC 00:01:14;09
+cập nhật danh sách quà tặng sẽ 
+gọi lại thông tin từ mảng dữ liệu 
+
+*TC 00:01:18;01
+quà chúng ta đã tặng
+
+*TC 00:01:19;06
+được chỉ định bởi ID người 
+xem và mã quà tặng 
+
+*TC 00:01:22;13
+đó là nơi chúng 
+ta lưu trữ thông tin
+
+*TC 00:01:24;08
+sau đó chúng ta sẽ lấy dữ liệu này 
+và chuyển đổi nó từ "xâu json" 
+
+*TC 00:01:28;10
+thành đối tượng javascript mà 
+chúng ta có thể sử dụng
+
+*TC 00:01:30;14
+khi chúng ta đã có đối tượng này chính 
+là một cặp gồm id bạn bè 
+
+*TC 00:01:33;15
+và id quà tặng
+
+*TC 00:01:34;17
+chúng ta có thể chuyển đổi 
+nó thành xâu chỉ định 
+
+*TC 00:01:37;06
+người bạn mà 
+chúng ta đã tặng quà 
+
+*TC 00:01:38;27
+và món quà chúng 
+ta đã tặng cho họ
+
+*TC 00:01:41;12
+chúng ta có thể chèn danh sách này 
+vào trang web dưới dạng html
+
+*TC 00:01:44;21
+Cuối cùng, chúng ta thực hiện một thay 
+đổi nhỏ đối với tệp XML của tiện ích, 
+
+*TC 00:01:47;27
+để chúng ta có 
+khoảng trống chèn tệp html
+
+*TC 00:01:52;03
+đây là một phiên bản tiện 
+ích mới đang hiển thị 
+
+*TC 00:01:54;07
+danh sách quà chúng ta đã tặng
+
+*TC 00:01:55;27
+để khi tôi 
+nhấp vào nút tặng quà,
+ 
+*TC 00:01:58;00
+nó hiện lên danh 
+sách dưới đây.
+
+*TC 00:02:00;11
+để biết thêm thông tin về những 
+vấn đề tôi vừa trình bày 
+
+*TC 00:02:02;02
+và thông tin khác 
+về API mạng xã hội
+
+*TC 00:02:04;06
+hãy xem hướng dẫn trên 
+"code.google.com" 
+
+*TC 00:02:06;20
+trong mục mạng xã hội mở 
+
+
+
+
+

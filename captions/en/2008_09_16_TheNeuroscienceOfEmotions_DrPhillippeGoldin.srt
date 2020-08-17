@@ -1,0 +1,6598 @@
+1
+01:00:02,801 --> 01:00:05,234
+Ming: Hello.
+Uh, good afternoon, my friends.
+
+2
+01:00:05,234 --> 01:00:07,534
+Uh, my name is Ming,
+and I'm the owner
+
+3
+01:00:07,534 --> 01:00:10,033
+of the Search Inside Yourself
+Program in Google,
+
+4
+01:00:10,033 --> 01:00:12,467
+or the S.I.Y. Program.
+
+5
+01:00:12,467 --> 01:00:15,934
+S.I.Y. is Google's home-grown
+emotional intelligence--
+
+6
+01:00:15,934 --> 01:00:18,234
+Uh, sorry--
+home-grown, mindfulness-based
+
+7
+01:00:18,234 --> 01:00:20,000
+emotional intelligence course,
+
+8
+01:00:20,000 --> 01:00:21,901
+and we hope someday
+to make this course
+
+9
+01:00:21,901 --> 01:00:24,234
+accessible to the whole world.
+
+10
+01:00:24,234 --> 01:00:27,234
+This lecture will become
+part of the content
+
+11
+01:00:27,234 --> 01:00:30,334
+for the S.I.Y. course
+in the future.
+
+12
+01:00:30,334 --> 01:00:33,367
+And, uh, I'm delighted today
+to introduce my dear friend
+
+13
+01:00:33,367 --> 01:00:36,934
+and S.I.Y. instructor
+Philippe Goldin.
+
+14
+01:00:36,934 --> 01:00:40,534
+Philippe heads the clinic--
+Lemme get this--
+
+15
+01:00:40,534 --> 01:00:44,300
+clinically applied affective
+neuroscience group
+
+16
+01:00:44,300 --> 01:00:46,334
+Uh, in the department
+of psychology
+
+17
+01:00:46,334 --> 01:00:48,667
+at Stanford University.
+
+18
+01:00:48,667 --> 01:00:51,868
+He spent six years
+in India and Nepal
+
+19
+01:00:51,868 --> 01:00:53,834
+studying various languages.
+
+20
+01:00:53,834 --> 01:00:55,801
+I don't actually know
+how many languages he speaks,
+
+21
+01:00:55,801 --> 01:00:57,901
+but it's, like, more than three.
+
+22
+01:00:57,901 --> 01:01:01,801
+And, uh, he studied Buddhist
+philosophy and debate
+
+23
+01:01:01,801 --> 01:01:03,601
+at various monasteries.
+
+24
+01:01:03,601 --> 01:01:05,767
+And then he returned to the US
+
+25
+01:01:05,767 --> 01:01:08,934
+to complete a Ph.D.
+in clinical psychology
+
+26
+01:01:08,934 --> 01:01:11,300
+at Rutgers University.
+
+27
+01:01:11,300 --> 01:01:15,601
+His research focuses on function
+and neuroimaging investigations
+
+28
+01:01:15,601 --> 01:01:18,200
+of cognitive,
+affective mechanisms.
+
+29
+01:01:18,200 --> 01:01:19,901
+Whew.
+[laughter]
+
+30
+01:01:19,901 --> 01:01:22,100
+The effect
+of mindfulness meditation
+
+31
+01:01:22,100 --> 01:01:24,501
+and cognitive behavior therapy,
+
+32
+01:01:24,501 --> 01:01:29,501
+and the effect of parent-child
+mindfulness meditation training.
+
+33
+01:01:29,501 --> 01:01:31,934
+And, oh, by the way,
+he's also a meditation teacher,
+
+34
+01:01:31,934 --> 01:01:34,000
+in case you missed that.
+
+35
+01:01:34,000 --> 01:01:36,467
+And in person
+I find Philippe to be
+
+36
+01:01:36,467 --> 01:01:40,300
+very smart, very capable,
+and very compassionate.
+
+37
+01:01:40,300 --> 01:01:42,200
+And I'm very happy
+he's my friend.
+
+38
+01:01:42,200 --> 01:01:44,033
+He's just amazing.
+
+39
+01:01:44,033 --> 01:01:47,334
+And, uh, my friends,
+please welcome Philippe Goldin.
+
+40
+01:01:47,334 --> 01:01:50,868
+[applause]
+
+41
+01:01:50,868 --> 01:01:54,300
+Philippe: Very nice.
+
+42
+01:01:54,300 --> 01:01:56,834
+Okay. So, it's an honor
+to be here.
+
+43
+01:01:56,834 --> 01:01:58,167
+and I know that
+everyone is very busy,
+
+44
+01:01:58,167 --> 01:02:00,868
+so I really appreciate
+that you are here.
+
+45
+01:02:00,868 --> 01:02:04,167
+Um...Let's begin.
+
+46
+01:02:04,167 --> 01:02:06,000
+So, yes, I'm going to speak
+
+47
+01:02:06,000 --> 01:02:08,801
+about the neuroscience
+of emotions.
+
+48
+01:02:08,801 --> 01:02:11,934
+And, um, yes, I do come
+from an academic background,
+
+49
+01:02:11,934 --> 01:02:14,434
+and also a practice background.
+
+50
+01:02:14,434 --> 01:02:17,467
+And just to be really clear,
+the intention for today
+
+51
+01:02:17,467 --> 01:02:19,200
+is to give you
+a brief introduction
+
+52
+01:02:19,200 --> 01:02:22,133
+to a little bit
+about what we understand
+
+53
+01:02:22,133 --> 01:02:24,434
+about the neuroscience and how
+the brain works
+
+54
+01:02:24,434 --> 01:02:25,801
+with respect to emotions,
+
+55
+01:02:25,801 --> 01:02:28,100
+emotion regulation,
+emotion intelligence.
+
+56
+01:02:28,100 --> 01:02:30,567
+But it'll be brief because
+we only have a short time.
+
+57
+01:02:30,567 --> 01:02:32,667
+And, uh, this obviously--
+
+58
+01:02:32,667 --> 01:02:34,534
+We should start
+with some history.
+
+59
+01:02:34,534 --> 01:02:38,200
+So, Darwin, um,
+speaking about emotions,
+
+60
+01:02:38,200 --> 01:02:42,934
+made it very clear that animals
+need emotions to survive.
+
+61
+01:02:42,934 --> 01:02:44,868
+So do we.
+
+62
+01:02:44,868 --> 01:02:47,901
+They need fear as a trigger
+to escape predators,
+
+63
+01:02:47,901 --> 01:02:49,868
+and aggression to defend
+their territory,
+
+64
+01:02:49,868 --> 01:02:52,234
+their young, and food.
+
+65
+01:02:52,234 --> 01:02:54,200
+Emotions--
+He believed that emotions
+
+66
+01:02:54,200 --> 01:02:57,300
+are really maintained
+from our animal past
+
+67
+01:02:57,300 --> 01:03:00,667
+in the trajectory
+of evolution of human animals.
+
+68
+01:03:00,667 --> 01:03:02,234
+And that we really rely
+
+69
+01:03:02,234 --> 01:03:04,501
+on different emotions
+in different ways
+
+70
+01:03:04,501 --> 01:03:09,067
+to make quick,
+often complex, decisions.
+
+71
+01:03:09,067 --> 01:03:11,634
+So why do we have emotions?
+
+72
+01:03:11,634 --> 01:03:15,000
+Um, as you can see here,
+just looking at this photograph,
+
+73
+01:03:15,000 --> 01:03:17,067
+just notice where
+your attention goes.
+
+74
+01:03:17,067 --> 01:03:19,300
+Notice what you see.
+
+75
+01:03:19,300 --> 01:03:23,834
+So, from multiple
+decades of research on emotions,
+
+76
+01:03:23,834 --> 01:03:26,467
+we know that
+there are several functions.
+
+77
+01:03:26,467 --> 01:03:30,968
+One way--emotions help
+to direct our attention.
+
+78
+01:03:30,968 --> 01:03:33,701
+It helps to enhance our memory
+and how we actually
+
+79
+01:03:33,701 --> 01:03:37,033
+encode and consolidate
+different pieces of information.
+
+80
+01:03:37,033 --> 01:03:42,033
+Especially for information
+that's personally salient.
+
+81
+01:03:42,033 --> 01:03:44,534
+It also helps us
+to organize our behavior
+
+82
+01:03:44,534 --> 01:03:47,200
+and our orientation
+towards other people.
+
+83
+01:03:47,200 --> 01:03:49,167
+Um, specifically how we drive--
+
+84
+01:03:49,167 --> 01:03:51,934
+It helps to drive
+and direct social approach
+
+85
+01:03:51,934 --> 01:03:54,901
+or even social avoidance.
+
+86
+01:03:54,901 --> 01:03:58,067
+And, probably most importantly
+for this group,
+
+87
+01:03:58,067 --> 01:03:59,300
+and for the course--
+
+88
+01:03:59,300 --> 01:04:01,234
+the Search Inside
+Yourself course,
+
+89
+01:04:01,234 --> 01:04:02,801
+is that different emotions
+
+90
+01:04:02,801 --> 01:04:05,100
+and the way our learning
+history with emotions
+
+91
+01:04:05,100 --> 01:04:10,934
+really helps to develop
+moral and ethical behavior.
+
+92
+01:04:10,934 --> 01:04:14,033
+When emotions--and the brain
+is functioning well,
+
+93
+01:04:14,033 --> 01:04:15,734
+it can be an incredibly
+adaptive system,
+
+94
+01:04:15,734 --> 01:04:19,400
+meaning that emotions bring
+richness to our experience,
+
+95
+01:04:19,400 --> 01:04:22,734
+how we interact with people,
+how we interact with ourselves.
+
+96
+01:04:22,734 --> 01:04:27,100
+When emotions are dysregulated,
+out of control, exaggerated,
+
+97
+01:04:27,100 --> 01:04:30,667
+this can lead to things
+like anxiety, depression,
+
+98
+01:04:30,667 --> 01:04:32,501
+burn-out, even suicide.
+
+99
+01:04:32,501 --> 01:04:34,567
+So this is really
+a very important aspect
+
+100
+01:04:34,567 --> 01:04:36,834
+of the human experience.
+
+101
+01:04:36,834 --> 01:04:38,667
+There are different
+classes of emotion.
+
+102
+01:04:38,667 --> 01:04:40,801
+So, researchers have talked
+
+103
+01:04:40,801 --> 01:04:44,167
+about six primary
+or basic emotions.
+
+104
+01:04:44,167 --> 01:04:45,567
+They are happiness--
+as you can see--
+
+105
+01:04:45,567 --> 01:04:51,200
+Happiness, surprise, fear,
+sadness, disgust, and anger.
+
+106
+01:04:51,200 --> 01:04:52,634
+And you can check
+your own experience
+
+107
+01:04:52,634 --> 01:04:55,434
+as we go through this talk
+to see how this aligns
+
+108
+01:04:55,434 --> 01:04:57,934
+with what you've
+experienced in yourself.
+
+109
+01:04:57,934 --> 01:04:59,834
+There's also
+kind of a background
+
+110
+01:04:59,834 --> 01:05:01,567
+sense of emotion or mood--
+
+111
+01:05:01,567 --> 01:05:02,934
+Moods are long-term,
+
+112
+01:05:02,934 --> 01:05:06,267
+emotions are more punctate
+or short, acute.
+
+113
+01:05:06,267 --> 01:05:10,467
+So they talk often
+about wellbeing versus malaise.
+
+114
+01:05:10,467 --> 01:05:14,634
+A sense of calm
+versus a sense of tension.
+
+115
+01:05:14,634 --> 01:05:17,033
+Feelings of pain,
+emotional and physical,
+
+116
+01:05:17,033 --> 01:05:20,734
+in contrast to pleasure.
+
+117
+01:05:20,734 --> 01:05:23,701
+And then, importantly,
+especially for social animals
+
+118
+01:05:23,701 --> 01:05:26,734
+like human beings, all of us,
+there's a whole other realm
+
+119
+01:05:26,734 --> 01:05:30,501
+of social emotions that are
+in contrast to the primary.
+
+120
+01:05:30,501 --> 01:05:34,067
+And this really has to do
+with interpersonal interaction,
+
+121
+01:05:34,067 --> 01:05:37,601
+so emotions that arise
+like embarrassment, jealousy,
+
+122
+01:05:37,601 --> 01:05:41,467
+guilt, shame, sense of pride.
+
+123
+01:05:41,467 --> 01:05:45,467
+So this is a rough sketch of
+the different kinds of emotions.
+
+124
+01:05:45,467 --> 01:05:48,968
+Now, emotions
+are obviously expressed.
+
+125
+01:05:48,968 --> 01:05:51,234
+One of the most powerful,
+ubiquitous ways
+
+126
+01:05:51,234 --> 01:05:53,100
+is through our
+facial expressions.
+
+127
+01:05:53,100 --> 01:05:55,467
+So these are
+the six primary emotions
+
+128
+01:05:55,467 --> 01:05:58,701
+and the facial expressions
+of those emotions.
+
+129
+01:05:58,701 --> 01:05:59,968
+As you can see.
+
+130
+01:05:59,968 --> 01:06:02,133
+And apparently,
+in the English language,
+
+131
+01:06:02,133 --> 01:06:05,734
+there are over 600 words
+to describe different emotions,
+
+132
+01:06:05,734 --> 01:06:09,767
+and on your face
+there are 42 different muscles
+
+133
+01:06:09,767 --> 01:06:12,901
+that work together
+to express, very subtly,
+
+134
+01:06:12,901 --> 01:06:14,434
+different emotional expressions.
+
+135
+01:06:14,434 --> 01:06:17,734
+And Paul Ekman
+from U.C. San Francisco,
+
+136
+01:06:17,734 --> 01:06:19,434
+emeritus professor,
+
+137
+01:06:19,434 --> 01:06:22,501
+actually came up with
+a facial action coding system
+
+138
+01:06:22,501 --> 01:06:27,434
+to actually delineate
+what muscle groups need to arise
+
+139
+01:06:27,434 --> 01:06:29,601
+in order to make different
+emotional expressions.
+
+140
+01:06:29,601 --> 01:06:33,501
+So there's a whole science
+behind all of this.
+
+141
+01:06:33,501 --> 01:06:37,400
+It's not only an American
+or a North American
+
+142
+01:06:37,400 --> 01:06:39,100
+emotional expression thing.
+
+143
+01:06:39,100 --> 01:06:41,968
+In fact, lots of research
+by Paul Ekman and other people
+
+144
+01:06:41,968 --> 01:06:44,100
+have shown
+that the identification
+
+145
+01:06:44,100 --> 01:06:47,000
+of different facial expressions
+is cross-cultural,
+
+146
+01:06:47,000 --> 01:06:50,267
+as you can see, and there's
+a very high rate of consensus
+
+147
+01:06:50,267 --> 01:06:53,000
+across different cultures,
+different backgrounds,
+
+148
+01:06:53,000 --> 01:06:55,334
+about what constitutes
+happiness, sadness,
+
+149
+01:06:55,334 --> 01:06:58,200
+disgust, and so forth.
+
+150
+01:06:58,200 --> 01:07:02,067
+Another very important purpose
+for studying emotions
+
+151
+01:07:02,067 --> 01:07:04,767
+is that emotions are truly,
+if you think about it,
+
+152
+01:07:04,767 --> 01:07:06,434
+and check your own experience--
+
+153
+01:07:06,434 --> 01:07:10,834
+are an important source
+of information and feedback
+
+154
+01:07:10,834 --> 01:07:13,534
+that help to direct our behavior
+
+155
+01:07:13,534 --> 01:07:15,300
+and also our
+social interactions.
+
+156
+01:07:15,300 --> 01:07:16,634
+So you can think,
+
+157
+01:07:16,634 --> 01:07:20,167
+how often do we use
+a gut feeling or a gut instinct
+
+158
+01:07:20,167 --> 01:07:23,601
+or kind of an intuition
+to make a quick decision?
+
+159
+01:07:23,601 --> 01:07:25,167
+And, in fact, I would suggest
+
+160
+01:07:25,167 --> 01:07:26,667
+that if you check
+your experience,
+
+161
+01:07:26,667 --> 01:07:29,300
+this is happening
+many times per day.
+
+162
+01:07:29,300 --> 01:07:31,133
+So emotions
+are really contributing
+
+163
+01:07:31,133 --> 01:07:33,234
+to cognitive processes.
+
+164
+01:07:33,234 --> 01:07:36,300
+Thinking, reasoning,
+decision making.
+
+165
+01:07:36,300 --> 01:07:38,067
+Now, we know that here,
+in the brain,
+
+166
+01:07:38,067 --> 01:07:41,434
+when a person has a lesion,
+right, the absence of a--
+
+167
+01:07:41,434 --> 01:07:43,501
+be it a tumor
+or some kind of disease,
+
+168
+01:07:43,501 --> 01:07:46,167
+we know that
+frontal lobe lesions
+
+169
+01:07:46,167 --> 01:07:49,634
+often result in impaired
+emotional awareness.
+
+170
+01:07:49,634 --> 01:07:52,601
+Which goes along with
+impairment in social reasoning
+
+171
+01:07:52,601 --> 01:07:54,534
+or interpersonal problems,
+
+172
+01:07:54,534 --> 01:07:56,868
+and also problems
+making decisions.
+
+173
+01:07:56,868 --> 01:07:58,534
+So we know that there's
+a direct connection
+
+174
+01:07:58,534 --> 01:08:01,400
+between the functions
+of brain systems
+
+175
+01:08:01,400 --> 01:08:05,767
+and different aspects
+of emotion and their sequelli.
+
+176
+01:08:05,767 --> 01:08:08,868
+Emotions really exist
+on a range.
+
+177
+01:08:08,868 --> 01:08:10,033
+I'm stating the obvious.
+
+178
+01:08:10,033 --> 01:08:11,667
+From a normal sense of emotions,
+
+179
+01:08:11,667 --> 01:08:14,400
+and then the extreme
+forms of those emotions.
+
+180
+01:08:14,400 --> 01:08:16,400
+So I would posit that sadness,
+
+181
+01:08:16,400 --> 01:08:18,634
+which is a very normal
+human experience,
+
+182
+01:08:18,634 --> 01:08:21,901
+in its extreme,
+can lead to major depression.
+
+183
+01:08:21,901 --> 01:08:24,834
+Can be a very important
+component of major depression.
+
+184
+01:08:24,834 --> 01:08:29,901
+Anger, which also is
+a very normal human emotion,
+
+185
+01:08:29,901 --> 01:08:32,367
+when it reaches an extreme
+or an exaggerated form,
+
+186
+01:08:32,367 --> 01:08:33,901
+can become
+unprovoked aggression.
+
+187
+01:08:33,901 --> 01:08:38,000
+An angry orientation in all
+of our social interactions.
+
+188
+01:08:38,000 --> 01:08:40,067
+Pleasure. Again, normal.
+
+189
+01:08:40,067 --> 01:08:44,434
+In its extreme,
+it can lead to addiction.
+
+190
+01:08:44,434 --> 01:08:45,934
+Fear, which of course,
+
+191
+01:08:45,934 --> 01:08:48,300
+is appropriate
+in dangerous situations
+
+192
+01:08:48,300 --> 01:08:50,400
+as a protective mechanism,
+
+193
+01:08:50,400 --> 01:08:53,601
+in its exaggerated form,
+can lead to anxiety,
+
+194
+01:08:53,601 --> 01:08:55,234
+different kinds of phobias,
+
+195
+01:08:55,234 --> 01:08:57,667
+even panic attacks
+or panic disorder.
+
+196
+01:08:57,667 --> 01:09:00,901
+And worry, in itself,
+when it's out of control,
+
+197
+01:09:00,901 --> 01:09:04,434
+and when it's extreme, can lead
+to generalized anxiety disorder.
+
+198
+01:09:04,434 --> 01:09:07,501
+So we can really appreciate
+that the emotions
+
+199
+01:09:07,501 --> 01:09:12,667
+shift and move along a continuum
+from normal to extreme.
+
+200
+01:09:12,667 --> 01:09:16,033
+The br--Emotion and the brain.
+
+201
+01:09:16,033 --> 01:09:18,701
+Well, we know when people
+have different emotions
+
+202
+01:09:18,701 --> 01:09:22,667
+it manifests in, uh, the--
+in brain circuitry.
+
+203
+01:09:22,667 --> 01:09:25,968
+And specifically,
+different functional areas.
+
+204
+01:09:25,968 --> 01:09:29,701
+In this case, really the focus
+over the past several decades
+
+205
+01:09:29,701 --> 01:09:32,534
+has been on the emotion-related
+brain circuitry
+
+206
+01:09:32,534 --> 01:09:33,968
+in the limbic system,
+
+207
+01:09:33,968 --> 01:09:35,667
+which is really
+a distributed set
+
+208
+01:09:35,667 --> 01:09:39,634
+of brain nodes or brain regions
+that function together
+
+209
+01:09:39,634 --> 01:09:41,601
+to have the experience
+of emotions,
+
+210
+01:09:41,601 --> 01:09:45,434
+and maybe even
+to generate emotion experience.
+
+211
+01:09:45,434 --> 01:09:47,801
+And to detect
+what's personally salient
+
+212
+01:09:47,801 --> 01:09:49,734
+and emotionally
+significant for us.
+
+213
+01:09:49,734 --> 01:09:52,200
+So this is happening
+in a distributed brain system.
+
+214
+01:09:52,200 --> 01:09:55,534
+What you see here
+in bright red is the amygdala,
+
+215
+01:09:55,534 --> 01:09:57,434
+the left and right amygdala,
+which is,
+
+216
+01:09:57,434 --> 01:10:00,634
+as probably everyone here knows,
+is a very important node
+
+217
+01:10:00,634 --> 01:10:03,067
+within this limbic system
+for emotions.
+
+218
+01:10:03,067 --> 01:10:04,534
+Here, just to flesh
+it out a little more,
+
+219
+01:10:04,534 --> 01:10:08,234
+the limbic system really is
+made up of multiple brain areas,
+
+220
+01:10:08,234 --> 01:10:11,434
+including the amygdala,
+hippocampus, hypothalamus,
+
+221
+01:10:11,434 --> 01:10:12,434
+and other brain regions.
+
+222
+01:10:12,434 --> 01:10:14,167
+And even other
+paralimbic regions
+
+223
+01:10:14,167 --> 01:10:15,868
+like the orbital frontal cortex.
+
+224
+01:10:15,868 --> 01:10:18,000
+So we're only beginning
+to really understand
+
+225
+01:10:18,000 --> 01:10:19,968
+how these different
+brain circuitries
+
+226
+01:10:19,968 --> 01:10:22,033
+contribute to different
+kinds of emotion
+
+227
+01:10:22,033 --> 01:10:26,067
+and the ability to work
+with our emotions.
+
+228
+01:10:26,067 --> 01:10:28,734
+So, having said that, how do we
+actually measure emotion?
+
+229
+01:10:28,734 --> 01:10:31,734
+Well, many, many different ways.
+
+230
+01:10:31,734 --> 01:10:34,400
+One way, as you see here,
+is actually
+
+231
+01:10:34,400 --> 01:10:38,267
+taking first-person,
+subjective emotion experience
+
+232
+01:10:38,267 --> 01:10:40,067
+from moment to moment to moment.
+
+233
+01:10:40,067 --> 01:10:41,934
+Here you can see
+it's actually oscillating
+
+234
+01:10:41,934 --> 01:10:45,634
+from neutral to amused to sad,
+
+235
+01:10:45,634 --> 01:10:49,167
+and this is being induced
+by watching film clips.
+
+236
+01:10:49,167 --> 01:10:51,033
+So this is subjective
+emotion experience.
+
+237
+01:10:51,033 --> 01:10:52,400
+First-person report.
+
+238
+01:10:52,400 --> 01:10:55,567
+That's one window into emotion.
+
+239
+01:10:55,567 --> 01:11:00,200
+Another way is using peripheral
+autonomic psychophysiology.
+
+240
+01:11:00,200 --> 01:11:04,901
+Skin conductants,
+facial muscle contractions,
+
+241
+01:11:04,901 --> 01:11:06,400
+heart rate, breathing rate--
+
+242
+01:11:06,400 --> 01:11:08,901
+These are all autonomic
+psychophysiological measures
+
+243
+01:11:08,901 --> 01:11:10,234
+that we can use.
+
+244
+01:11:10,234 --> 01:11:12,801
+Another way is literally
+looking at facial expressions.
+
+245
+01:11:12,801 --> 01:11:14,868
+Of fear, for example.
+
+246
+01:11:14,868 --> 01:11:17,267
+Another method is, uh--
+which I will be talking about--
+
+247
+01:11:17,267 --> 01:11:18,767
+is functional neuroimaging.
+
+248
+01:11:18,767 --> 01:11:20,667
+Using, for example,
+brain imaging techniques
+
+249
+01:11:20,667 --> 01:11:23,767
+to look at an index
+of neural activity.
+
+250
+01:11:23,767 --> 01:11:26,501
+Here it's shown
+as bilateral amygdala.
+
+251
+01:11:26,501 --> 01:11:29,100
+And then another method
+that's relatively--
+
+252
+01:11:29,100 --> 01:11:31,167
+Well, no, actually it's been
+used for several decades--
+
+253
+01:11:31,167 --> 01:11:33,434
+is literally putting
+a grid of electrodes
+
+254
+01:11:33,434 --> 01:11:38,033
+right on the cortex
+to measure under the skull.
+
+255
+01:11:38,033 --> 01:11:39,701
+And of course,
+this is an invasive procedure,
+
+256
+01:11:39,701 --> 01:11:41,467
+so it's only done,
+you know, during epilepsy.
+
+257
+01:11:41,467 --> 01:11:43,234
+It's not done
+to study emotions by itself.
+
+258
+01:11:43,234 --> 01:11:44,234
+Not to worry.
+[chuckling]
+
+259
+01:11:44,234 --> 01:11:46,300
+Brain imaging techniques
+like fMRI,
+
+260
+01:11:46,300 --> 01:11:47,601
+which I'll talk about,
+is wonderful
+
+261
+01:11:47,601 --> 01:11:50,534
+because we can go
+under the skull noninvasively.
+
+262
+01:11:50,534 --> 01:11:52,400
+No harm.
+
+263
+01:11:52,400 --> 01:11:55,901
+Uh, just to drive
+home the point,
+
+264
+01:11:55,901 --> 01:11:57,667
+when we talk
+about different emotions,
+
+265
+01:11:57,667 --> 01:11:58,901
+this is one study we did
+
+266
+01:11:58,901 --> 01:12:02,534
+where we had neutral, sad,
+and amusing film clips.
+
+267
+01:12:02,534 --> 01:12:05,300
+Brain imaging, fMRI signal,
+what's called "BOLD,"
+
+268
+01:12:05,300 --> 01:12:07,434
+the blood oxygen level
+dependence signal.
+
+269
+01:12:07,434 --> 01:12:11,033
+First-person emotion ratings
+from moment to moment,
+
+270
+01:12:11,033 --> 01:12:13,534
+heart rate,
+and then breathing rate
+
+271
+01:12:13,534 --> 01:12:14,801
+or breathing intensity.
+
+272
+01:12:14,801 --> 01:12:17,000
+And this is just
+to really make the point
+
+273
+01:12:17,000 --> 01:12:20,033
+that this is a dynamic,
+interactive system.
+
+274
+01:12:20,033 --> 01:12:21,400
+And this is only four channels.
+
+275
+01:12:21,400 --> 01:12:23,467
+There are many other channels
+that we often look at--
+
+276
+01:12:23,467 --> 01:12:25,567
+can look at as well.
+
+277
+01:12:25,567 --> 01:12:28,567
+Um, a full explanation
+of a phenomena
+
+278
+01:12:28,567 --> 01:12:31,000
+would really go
+from looking at the genes
+
+279
+01:12:31,000 --> 01:12:33,734
+or genetic contribution,
+to molecules, to neurons,
+
+280
+01:12:33,734 --> 01:12:39,067
+neural circuitry, and then how
+different cognitive processes--
+
+281
+01:12:39,067 --> 01:12:41,400
+thinking, decision making,
+emotion, behavior--
+
+282
+01:12:41,400 --> 01:12:44,167
+are instantiated
+in those neural circuitry.
+
+283
+01:12:44,167 --> 01:12:48,367
+For today's talk, I'm only gonna
+be talking about the top two.
+
+284
+01:12:48,367 --> 01:12:50,534
+But a full explanation
+really is from genetics
+
+285
+01:12:50,534 --> 01:12:52,968
+all the way up
+to interpersonal interactions.
+
+286
+01:12:52,968 --> 01:12:54,767
+And currently we have
+the technology
+
+287
+01:12:54,767 --> 01:12:57,567
+to look at all of that.
+
+288
+01:12:57,567 --> 01:13:01,467
+Many different modalities
+of functional brain imaging.
+
+289
+01:13:01,467 --> 01:13:02,534
+There are many different tools.
+
+290
+01:13:02,534 --> 01:13:04,100
+They all have
+their pros and cons,
+
+291
+01:13:04,100 --> 01:13:05,367
+strengths and weaknesses.
+
+292
+01:13:05,367 --> 01:13:06,701
+What we'll be
+looking at is--
+
+293
+01:13:06,701 --> 01:13:09,300
+in the black box is referring
+to the orange circle--
+
+294
+01:13:09,300 --> 01:13:13,267
+is fMRI, functional magnetic
+resonance imaging.
+
+295
+01:13:13,267 --> 01:13:16,367
+So that gives us a signal
+on the order of seconds
+
+296
+01:13:16,367 --> 01:13:18,834
+across the entire brain, um,
+
+297
+01:13:18,834 --> 01:13:22,501
+and approximately we get
+the unit that we can analyze.
+
+298
+01:13:22,501 --> 01:13:27,033
+It's approximately two-three
+millimeters of voxels.
+
+299
+01:13:27,033 --> 01:13:29,200
+So it has its pros and cons,
+but it's noninvasive,
+
+300
+01:13:29,200 --> 01:13:30,467
+and that's what we use.
+
+301
+01:13:30,467 --> 01:13:31,667
+Now, if no one here is--
+
+302
+01:13:31,667 --> 01:13:33,234
+If you've not been
+in an MRI machine,
+
+303
+01:13:33,234 --> 01:13:34,400
+essentially it's a magnet.
+
+304
+01:13:34,400 --> 01:13:35,934
+And it's a beautiful,
+elegant machine,
+
+305
+01:13:35,934 --> 01:13:37,334
+but it's a magnet.
+
+306
+01:13:37,334 --> 01:13:39,167
+And you can see that people
+are lying down on their back
+
+307
+01:13:39,167 --> 01:13:41,300
+and we put them inside
+the bore of the magnet.
+
+308
+01:13:41,300 --> 01:13:44,501
+And I'm gonna give you
+a one-slide primer
+
+309
+01:13:44,501 --> 01:13:48,601
+on the dependent variable
+in fMRI.
+
+310
+01:13:48,601 --> 01:13:50,334
+So you're lying in the scanner,
+
+311
+01:13:50,334 --> 01:13:54,267
+you have this angry,
+harsh, critical face,
+
+312
+01:13:54,267 --> 01:13:56,400
+presented to you,
+you're perceiving it.
+
+313
+01:13:56,400 --> 01:14:00,367
+This sets off firing in specific
+populations of neurons
+
+314
+01:14:00,367 --> 01:14:04,334
+that activate neural circuitry--
+distributed neural circuits--
+
+315
+01:14:04,334 --> 01:14:07,167
+that then are consuming
+glucose and oxygen,
+
+316
+01:14:07,167 --> 01:14:08,667
+send a signal downstream--
+
+317
+01:14:08,667 --> 01:14:13,100
+"Hey, the neurons are firing,"
+send more cerebral blood volume,
+
+318
+01:14:13,100 --> 01:14:16,167
+more blood flow,
+and specifically,
+
+319
+01:14:16,167 --> 01:14:20,501
+more oxygenated hemoglobin
+and, um, glucose.
+
+320
+01:14:20,501 --> 01:14:23,033
+So that the neurons
+can continue to fire
+
+321
+01:14:23,033 --> 01:14:25,067
+and you can replenish
+what's been used.
+
+322
+01:14:25,067 --> 01:14:28,567
+Then they do a lot of signal
+processing and statistics
+
+323
+01:14:28,567 --> 01:14:30,501
+to create brain maps,
+
+324
+01:14:30,501 --> 01:14:32,434
+which you've seen
+in magazines, I'm sure,
+
+325
+01:14:32,434 --> 01:14:37,000
+to actually infer the underlying
+neural activity that's occurring
+
+326
+01:14:37,000 --> 01:14:39,767
+in response to looking
+at an angry face.
+
+327
+01:14:39,767 --> 01:14:41,000
+And then we use functional--
+
+328
+01:14:41,000 --> 01:14:42,634
+our knowledge
+of functional neural anatomy
+
+329
+01:14:42,634 --> 01:14:43,767
+to try to infer
+
+330
+01:14:43,767 --> 01:14:45,367
+what these different
+brain systems are doing
+
+331
+01:14:45,367 --> 01:14:48,834
+in conjunction with specific
+experimental design
+
+332
+01:14:48,834 --> 01:14:53,100
+to tease out the function
+of different brain activity.
+
+333
+01:14:53,100 --> 01:14:56,467
+That's a one-slide primer.
+
+334
+01:14:56,467 --> 01:15:00,667
+So, there are many ways
+to probe the brain.
+
+335
+01:15:00,667 --> 01:15:02,300
+And specifically to look
+
+336
+01:15:02,300 --> 01:15:05,767
+at the emotion-related brain
+regions in the limbic system.
+
+337
+01:15:05,767 --> 01:15:07,667
+One way would be
+dynamic social feedback,
+
+338
+01:15:07,667 --> 01:15:10,167
+so you can imagine a person
+in a video clip looking at you,
+
+339
+01:15:10,167 --> 01:15:13,767
+going, "People don't
+really like you."
+
+340
+01:15:13,767 --> 01:15:15,067
+That's one method.
+
+341
+01:15:15,067 --> 01:15:18,734
+Especially for people
+who are socially sensitive.
+
+342
+01:15:18,734 --> 01:15:20,501
+You could also use music.
+
+343
+01:15:20,501 --> 01:15:24,367
+Studies have used both
+positive and really sad music
+
+344
+01:15:24,367 --> 01:15:27,901
+to induce very rapid shifts
+in emotional state.
+
+345
+01:15:27,901 --> 01:15:29,634
+And you can just
+check your own experience
+
+346
+01:15:29,634 --> 01:15:31,100
+listening to different songs--
+
+347
+01:15:31,100 --> 01:15:33,300
+Bruce Springsteen songs
+or whatever.
+
+348
+01:15:33,300 --> 01:15:34,968
+Uh, another way
+as we've already shown
+
+349
+01:15:34,968 --> 01:15:36,667
+is facial expressions,
+
+350
+01:15:36,667 --> 01:15:40,868
+because we are super sensitive
+to the slightest shifts,
+
+351
+01:15:40,868 --> 01:15:42,667
+whether we're
+aware of it or not,
+
+352
+01:15:42,667 --> 01:15:45,133
+in peoples' facial expressions.
+
+353
+01:15:45,133 --> 01:15:46,567
+Electric shock.
+
+354
+01:15:46,567 --> 01:15:50,534
+A very powerful--especially
+the anticipation of the shock,
+
+355
+01:15:50,534 --> 01:15:52,501
+even if you don't
+deliver a shock,
+
+356
+01:15:52,501 --> 01:15:56,701
+sets up all kinds of anxiety
+and fear and defensive responses
+
+357
+01:15:56,701 --> 01:15:59,100
+that you can begin
+to measure in the brain.
+
+358
+01:15:59,100 --> 01:16:03,300
+Another method that's closer
+to what we do in psychotherapy
+
+359
+01:16:03,300 --> 01:16:07,934
+or clinical practice is peoples'
+own negative self-beliefs.
+
+360
+01:16:07,934 --> 01:16:11,033
+So, for example,
+"something is wrong with me."
+
+361
+01:16:11,033 --> 01:16:13,367
+Having that thought
+spinning in the mind
+
+362
+01:16:13,367 --> 01:16:16,200
+can actually induce activity
+in the limbic system,
+
+363
+01:16:16,200 --> 01:16:18,968
+and is really the basis of what
+we begin to work with in, um--
+
+364
+01:16:18,968 --> 01:16:20,634
+for people
+with depression and anxiety.
+
+365
+01:16:20,634 --> 01:16:22,234
+What are the core
+negative beliefs?
+
+366
+01:16:22,234 --> 01:16:24,434
+So these are--this is just
+a sampling of different methods
+
+367
+01:16:24,434 --> 01:16:25,901
+that can be used to probe
+
+368
+01:16:25,901 --> 01:16:28,701
+the function
+of the limbic system.
+
+369
+01:16:28,701 --> 01:16:30,033
+But then there's
+a whole other part.
+
+370
+01:16:30,033 --> 01:16:32,734
+This beautiful prefrontal cortex
+
+371
+01:16:32,734 --> 01:16:35,501
+that is so fully developed
+in the human animals,
+
+372
+01:16:35,501 --> 01:16:37,667
+which allows us
+to take perspective.
+
+373
+01:16:37,667 --> 01:16:41,234
+To think, to analyze,
+to use language.
+
+374
+01:16:41,234 --> 01:16:43,901
+All in the service
+of emotion regulation.
+
+375
+01:16:43,901 --> 01:16:47,367
+In what ways can we actually
+think in a certain way
+
+376
+01:16:47,367 --> 01:16:49,300
+that helps to change the meaning
+
+377
+01:16:49,300 --> 01:16:51,634
+of something that's
+going on right now in our life.
+
+378
+01:16:51,634 --> 01:16:53,033
+Or even right this moment.
+
+379
+01:16:53,033 --> 01:16:56,400
+To change its intensity,
+to change its duration.
+
+380
+01:16:56,400 --> 01:17:01,100
+To even shift our interpretation
+of what that emotion is doing
+
+381
+01:17:01,100 --> 01:17:02,634
+and why we're having it.
+
+382
+01:17:02,634 --> 01:17:05,901
+That's this prefrontal cortical
+area that allows us
+
+383
+01:17:05,901 --> 01:17:07,901
+to make abstractions, think,
+
+384
+01:17:07,901 --> 01:17:11,234
+take perspective,
+apply different strategies.
+
+385
+01:17:11,234 --> 01:17:12,567
+But this is not new.
+
+386
+01:17:12,567 --> 01:17:17,267
+Almost two millennia ago,
+Marcus Aurelius said,
+
+387
+01:17:17,267 --> 01:17:20,767
+"If you are distressed
+by anything external,
+
+388
+01:17:20,767 --> 01:17:22,334
+"or even internal,
+
+389
+01:17:22,334 --> 01:17:25,634
+"the pain is not
+due to the thing itself,
+
+390
+01:17:25,634 --> 01:17:27,501
+"but to your estimate of it,
+
+391
+01:17:27,501 --> 01:17:30,868
+"and this you have the power
+to revoke at any moment."
+
+392
+01:17:30,868 --> 01:17:34,501
+Profound, profound statement.
+
+393
+01:17:34,501 --> 01:17:37,033
+Definition
+of emotion regulation.
+
+394
+01:17:37,033 --> 01:17:40,067
+So it's not a new phenomena
+in human animals,
+
+395
+01:17:40,067 --> 01:17:42,634
+it's been here
+for thousands of years.
+
+396
+01:17:42,634 --> 01:17:43,934
+But this is really
+something specific
+
+397
+01:17:43,934 --> 01:17:45,934
+about our prefrontal cortex
+that allows us
+
+398
+01:17:45,934 --> 01:17:50,567
+to work with these processes
+to modify our experience
+
+399
+01:17:50,567 --> 01:17:52,200
+from moment to moment.
+
+400
+01:17:52,200 --> 01:17:55,834
+So, there are different stages
+of emotion regulation.
+
+401
+01:17:55,834 --> 01:17:59,167
+And just, as I'm saying this,
+check your own experience.
+
+402
+01:17:59,167 --> 01:18:00,634
+Pre-conscious.
+
+403
+01:18:00,634 --> 01:18:03,467
+Are there proclivities
+or even cognioprocesses
+
+404
+01:18:03,467 --> 01:18:07,033
+that are happening in the brain
+when a situation is occurring
+
+405
+01:18:07,033 --> 01:18:09,701
+even before we are aware of it
+
+406
+01:18:09,701 --> 01:18:12,901
+that's influencing
+how we interpret our emotions,
+
+407
+01:18:12,901 --> 01:18:16,133
+how we interpret
+our current situation?
+
+408
+01:18:16,133 --> 01:18:19,434
+Then this leads to immediate
+attentional shifts
+
+409
+01:18:19,434 --> 01:18:22,133
+when it bursts
+into conscious processing--
+
+410
+01:18:22,133 --> 01:18:24,534
+Something scary is going on.
+There's threat.
+
+411
+01:18:24,534 --> 01:18:27,434
+Do I shift my attention
+to the source of threat?
+
+412
+01:18:27,434 --> 01:18:28,567
+Social approach.
+
+413
+01:18:28,567 --> 01:18:30,400
+Do I shift my attention away?
+
+414
+01:18:30,400 --> 01:18:31,567
+Avoidance.
+
+415
+01:18:31,567 --> 01:18:33,067
+Both of which are forms--
+
+416
+01:18:33,067 --> 01:18:35,501
+can be forms of regulating
+my attention,
+
+417
+01:18:35,501 --> 01:18:38,467
+and which thereby
+influences emotions.
+
+418
+01:18:38,467 --> 01:18:40,767
+Another aspect
+is emotion appraisal.
+
+419
+01:18:40,767 --> 01:18:42,601
+How do I label that emotion?
+
+420
+01:18:42,601 --> 01:18:46,000
+How do I interpret
+what that emotion is?
+
+421
+01:18:46,000 --> 01:18:48,167
+And then cognitive reappraisal.
+
+422
+01:18:48,167 --> 01:18:50,701
+Using our thinking
+and perspective-taking ability
+
+423
+01:18:50,701 --> 01:18:52,100
+to change the meaning.
+
+424
+01:18:52,100 --> 01:18:53,534
+"Oh, that's not
+a source of threat,
+
+425
+01:18:53,534 --> 01:18:56,167
+"it's only a stick or a rope,
+it's not a snake."
+
+426
+01:18:56,167 --> 01:18:59,100
+"Oh, that person was only--
+was looking at somebody else,"
+
+427
+01:18:59,100 --> 01:19:01,300
+"Not at me."
+
+428
+01:19:01,300 --> 01:19:04,501
+And then finally,
+and more subtly, meta-cognitive.
+
+429
+01:19:04,501 --> 01:19:08,367
+How I view
+how I process thinking.
+
+430
+01:19:08,367 --> 01:19:11,968
+How I view my ability
+to create a space
+
+431
+01:19:11,968 --> 01:19:14,300
+to understand how my mind works.
+
+432
+01:19:14,300 --> 01:19:16,968
+So more meta-cognitive
+processes, which can--
+
+433
+01:19:16,968 --> 01:19:20,400
+All of these things that we're
+talking here can be trained.
+
+434
+01:19:20,400 --> 01:19:23,300
+Through different practices.
+
+435
+01:19:23,300 --> 01:19:26,000
+Little bit about
+the neuroanatomy.
+
+436
+01:19:26,000 --> 01:19:29,868
+Some wonderful work
+by Mary Phillips, Helen Mayburg,
+
+437
+01:19:29,868 --> 01:19:33,234
+Wayne Drevets, Kevin Ochsner,
+on and on and on.
+
+438
+01:19:33,234 --> 01:19:35,634
+Some fantastic neuroscientists
+who really have,
+
+439
+01:19:35,634 --> 01:19:40,300
+in the past 10-15 years,
+begun to create models--
+
+440
+01:19:40,300 --> 01:19:42,667
+brain anatomy
+and functional anatomy models
+
+441
+01:19:42,667 --> 01:19:45,467
+of emotion reactivity
+and regulation.
+
+442
+01:19:45,467 --> 01:19:50,834
+So in the context of a threat,
+real or imagined,
+
+443
+01:19:50,834 --> 01:19:54,167
+this can rapidly shift
+our affective state.
+
+444
+01:19:54,167 --> 01:19:57,367
+Fear, anxiety, arousal.
+
+445
+01:19:57,367 --> 01:19:58,934
+And this is really embedded
+
+446
+01:19:58,934 --> 01:20:01,868
+in the emotional reactivity
+in the limbic system.
+
+447
+01:20:01,868 --> 01:20:04,601
+Amygdala.
+Anterior Cingulate.
+
+448
+01:20:04,601 --> 01:20:06,334
+This sends a bottom-up signal
+
+449
+01:20:06,334 --> 01:20:08,868
+to recruit help from
+other parts of the brain.
+
+450
+01:20:08,868 --> 01:20:10,367
+Other brain systems.
+
+451
+01:20:10,367 --> 01:20:12,701
+When that's working correctly,
+then in blue,
+
+452
+01:20:12,701 --> 01:20:15,033
+see here that there are
+regulatory systems
+
+453
+01:20:15,033 --> 01:20:18,133
+that then begin to process
+what is that threat?
+
+454
+01:20:18,133 --> 01:20:20,367
+What are some strategies?
+How can I work with it?
+
+455
+01:20:20,367 --> 01:20:23,934
+And when it's working well,
+it sends a top-down signal
+
+456
+01:20:23,934 --> 01:20:28,100
+to modulate the intensity,
+the duration, the interpretation
+
+457
+01:20:28,100 --> 01:20:31,801
+of that ongoing
+emotion experience.
+
+458
+01:20:31,801 --> 01:20:35,000
+But I would also add
+that especially in human beings,
+
+459
+01:20:35,000 --> 01:20:37,801
+This is mediated
+through our view of self,
+
+460
+01:20:37,801 --> 01:20:40,767
+be it positive
+or negative or otherwise,
+
+461
+01:20:40,767 --> 01:20:43,200
+and our ability to use
+language and thinking
+
+462
+01:20:43,200 --> 01:20:46,334
+To modulate and understand
+our experiences.
+
+463
+01:20:46,334 --> 01:20:49,133
+So this is a beginning
+of a complex system
+
+464
+01:20:49,133 --> 01:20:51,033
+that people are
+beginning to, um, examine
+
+465
+01:20:51,033 --> 01:20:53,801
+using all kinds
+of neuroscientific tools.
+
+466
+01:20:53,801 --> 01:20:55,434
+Terms of emotional intelligence,
+
+467
+01:20:55,434 --> 01:20:58,300
+which is a relatively
+new concept,
+
+468
+01:20:58,300 --> 01:21:01,234
+Um, Peter Salovey and John Mayer
+
+469
+01:21:01,234 --> 01:21:03,801
+have defined it
+in the following way...
+
+470
+01:21:03,801 --> 01:21:06,067
+It is the ability to monitor
+
+471
+01:21:06,067 --> 01:21:11,767
+one's own and others'
+feelings and emotions,
+
+472
+01:21:11,767 --> 01:21:14,534
+to discriminate among them,
+
+473
+01:21:14,534 --> 01:21:16,601
+and to use this information
+
+474
+01:21:16,601 --> 01:21:19,601
+to guide one's
+thinking and actions
+
+475
+01:21:19,601 --> 01:21:23,300
+in a way that is not harming,
+and hopefully helping,
+
+476
+01:21:23,300 --> 01:21:24,901
+others and self.
+
+477
+01:21:24,901 --> 01:21:28,534
+So this is very fundamental
+to human social interaction,
+
+478
+01:21:28,534 --> 01:21:32,934
+human systems,
+Google, the world.
+
+479
+01:21:32,934 --> 01:21:35,234
+But this really relies
+on previous work
+
+480
+01:21:35,234 --> 01:21:38,868
+by Howard Gardner, who had
+a very, very influential book
+
+481
+01:21:38,868 --> 01:21:41,501
+where he talked
+about multiple intelligences.
+
+482
+01:21:41,501 --> 01:21:44,000
+So in cognitive psychology,
+clinical psychology,
+
+483
+01:21:44,000 --> 01:21:45,601
+we often talk about IQ.
+
+484
+01:21:45,601 --> 01:21:48,934
+Intellectual
+cognitive abilities.
+
+485
+01:21:48,934 --> 01:21:51,734
+But of course, there are many
+other kinds of intelligences
+
+486
+01:21:51,734 --> 01:21:54,000
+which are as important,
+and in some situations
+
+487
+01:21:54,000 --> 01:21:55,267
+even more important,
+
+488
+01:21:55,267 --> 01:21:58,834
+in the domains of interpersonal
+skills and intelligence,
+
+489
+01:21:58,834 --> 01:22:01,767
+and also intrapersonal skills.
+
+490
+01:22:01,767 --> 01:22:04,634
+So the idea is that there are
+multiple forms of intelligence,
+
+491
+01:22:04,634 --> 01:22:07,267
+and that these are important
+
+492
+01:22:07,267 --> 01:22:09,968
+to develop volitionally,
+intentionally,
+
+493
+01:22:09,968 --> 01:22:11,901
+and to find methods
+to actually work on that,
+
+494
+01:22:11,901 --> 01:22:16,234
+to be come a more full,
+skillful, optimal human being.
+
+495
+01:22:16,234 --> 01:22:18,434
+Um, some of the skills
+and competencies
+
+496
+01:22:18,434 --> 01:22:20,067
+that we're thinking about,
+
+497
+01:22:20,067 --> 01:22:21,968
+especially in
+Search Inside Yourself...
+
+498
+01:22:21,968 --> 01:22:23,200
+Emotional awareness.
+
+499
+01:22:23,200 --> 01:22:25,400
+The inverse of that
+is alexithymia.
+
+500
+01:22:25,400 --> 01:22:28,200
+The inability to detect
+and even describe
+
+501
+01:22:28,200 --> 01:22:31,634
+one's own emotional states,
+let alone others'.
+
+502
+01:22:31,634 --> 01:22:33,033
+Mindfulness.
+
+503
+01:22:33,033 --> 01:22:36,100
+The ability to volitionally
+place one's attention
+
+504
+01:22:36,100 --> 01:22:41,200
+in the moment on purpose
+from moment to moment
+
+505
+01:22:41,200 --> 01:22:45,934
+without negative critical
+self-judgment.
+
+506
+01:22:45,934 --> 01:22:47,567
+Self-awareness.
+
+507
+01:22:47,567 --> 01:22:50,000
+Enriching and enhancing
+our understanding
+
+508
+01:22:50,000 --> 01:22:52,467
+of what actually--
+"who actually am I?"
+
+509
+01:22:52,467 --> 01:22:54,167
+"How do I function?"
+
+510
+01:22:54,167 --> 01:22:55,434
+And the ability to regulate.
+
+511
+01:22:55,434 --> 01:22:58,868
+When I am off-balance,
+do I know how to regulate
+
+512
+01:22:58,868 --> 01:23:00,801
+and bring myself
+back into balance?
+
+513
+01:23:00,801 --> 01:23:02,133
+Off-balance, back into balance.
+
+514
+01:23:02,133 --> 01:23:04,400
+That's a whole set of skills.
+
+515
+01:23:04,400 --> 01:23:05,501
+Motivation.
+
+516
+01:23:05,501 --> 01:23:07,067
+What's the motivation
+or intention
+
+517
+01:23:07,067 --> 01:23:08,868
+for engaging in action?
+
+518
+01:23:08,868 --> 01:23:12,000
+Behavior?
+Interactions with other people?
+
+519
+01:23:12,000 --> 01:23:13,434
+Empathy.
+
+520
+01:23:13,434 --> 01:23:17,367
+As we'll see in a moment,
+the ability to actually tune in
+
+521
+01:23:17,367 --> 01:23:19,601
+and feel the reverberation,
+so to speak,
+
+522
+01:23:19,601 --> 01:23:22,133
+of the emotional state
+of another person.
+
+523
+01:23:22,133 --> 01:23:27,567
+Dropping the self just enough
+to attend to someone else
+
+524
+01:23:27,567 --> 01:23:29,567
+in deeper and deeper ways.
+
+525
+01:23:29,567 --> 01:23:31,234
+And then social skills.
+
+526
+01:23:31,234 --> 01:23:34,467
+Both linguistic,
+language, body language,
+
+527
+01:23:34,467 --> 01:23:36,734
+um, even vocabulary.
+
+528
+01:23:36,734 --> 01:23:40,767
+And also just being able
+to evaluate and take feedback.
+
+529
+01:23:40,767 --> 01:23:42,167
+So all of these
+are in the service
+
+530
+01:23:42,167 --> 01:23:46,567
+of enhancing psychological
+flexibility and well-being.
+
+531
+01:23:46,567 --> 01:23:48,934
+So, I did a lit search,
+and there are not
+
+532
+01:23:48,934 --> 01:23:51,868
+that many studies
+on emotional intelligence
+
+533
+01:23:51,868 --> 01:23:53,334
+and brain functioning.
+
+534
+01:23:53,334 --> 01:23:54,834
+But one that caught my eye
+is the following,
+
+535
+01:23:54,834 --> 01:23:57,200
+which is done
+by Killgore and colleagues.
+
+536
+01:23:57,200 --> 01:23:59,367
+This--In this particular
+study they worked
+
+537
+01:23:59,367 --> 01:24:04,133
+with 16 healthy children
+and adolescents,
+
+538
+01:24:04,133 --> 01:24:08,434
+and they had to do processing
+of fear facial expressions.
+
+539
+01:24:08,434 --> 01:24:09,434
+Here's one example.
+
+540
+01:24:09,434 --> 01:24:11,934
+So, fear face expressions.
+
+541
+01:24:11,934 --> 01:24:13,167
+Processing those.
+
+542
+01:24:13,167 --> 01:24:15,200
+What they found is
+
+543
+01:24:15,200 --> 01:24:18,334
+on one of many emotional
+intelligence questionnaires,
+
+544
+01:24:18,334 --> 01:24:21,934
+the more emotionally intelligent
+via self-report questionnaire
+
+545
+01:24:21,934 --> 01:24:25,601
+that these kids demonstrated--
+
+546
+01:24:25,601 --> 01:24:29,200
+This was associated
+with a reduction--blue--
+
+547
+01:24:29,200 --> 01:24:31,334
+a reduction in brain activity
+
+548
+01:24:31,334 --> 01:24:33,801
+in a distributed
+set of brain systems
+
+549
+01:24:33,801 --> 01:24:38,667
+that had to do with, um,
+somatic or sensory experience,
+
+550
+01:24:38,667 --> 01:24:43,067
+emotion reactivity, and even
+kind of cognitive control.
+
+551
+01:24:43,067 --> 01:24:45,701
+So reduction in the need
+to try to control
+
+552
+01:24:45,701 --> 01:24:50,267
+to viscerally feel,
+and--in red--
+
+553
+01:24:50,267 --> 01:24:53,834
+enhanced activity in some
+of the visual processing areas
+
+554
+01:24:53,834 --> 01:24:58,133
+as a function of reporting
+greater emotional intelligence.
+
+555
+01:24:58,133 --> 01:25:00,834
+So this is one study,
+but it's very promising
+
+556
+01:25:00,834 --> 01:25:03,567
+to see even in a younger
+sample of children
+
+557
+01:25:03,567 --> 01:25:07,000
+that emotional intelligence
+have correlates
+
+558
+01:25:07,000 --> 01:25:08,601
+in the brain
+that are interpretable
+
+559
+01:25:08,601 --> 01:25:12,567
+and important in terms of
+emotion and sensory experience.
+
+560
+01:25:12,567 --> 01:25:14,000
+Empathy.
+
+561
+01:25:14,000 --> 01:25:17,300
+So, I said that we'd talk
+a little bit about empathy.
+
+562
+01:25:17,300 --> 01:25:19,601
+So, currently, it's a hot field.
+
+563
+01:25:19,601 --> 01:25:21,534
+It's a hot area
+within neuroscience.
+
+564
+01:25:21,534 --> 01:25:24,300
+A decade ago,
+no one would've touched this.
+
+565
+01:25:24,300 --> 01:25:26,901
+So this is really talking
+about a paradigm shift
+
+566
+01:25:26,901 --> 01:25:29,133
+among scientists who,
+by definition,
+
+567
+01:25:29,133 --> 01:25:31,534
+tend to be rather
+conservative in what we study,
+
+568
+01:25:31,534 --> 01:25:33,601
+but understanding
+that we now have the tools
+
+569
+01:25:33,601 --> 01:25:37,100
+to be able to begin
+to dissect, deconstruct,
+
+570
+01:25:37,100 --> 01:25:39,300
+manipulate levels of empathy.
+
+571
+01:25:39,300 --> 01:25:40,634
+So here, we can under--
+
+572
+01:25:40,634 --> 01:25:44,000
+How can we understand
+the other person's mind?
+
+573
+01:25:44,000 --> 01:25:47,067
+You can say theory of mind
+is one aspect of this.
+
+574
+01:25:47,067 --> 01:25:49,300
+And what
+is the neurocircuitry involved?
+
+575
+01:25:49,300 --> 01:25:52,434
+So, empathy,
+I would say, really relies
+
+576
+01:25:52,434 --> 01:25:55,234
+on a bunch of earlier
+developed skills,
+
+577
+01:25:55,234 --> 01:25:56,767
+in fact, some that are innate.
+
+578
+01:25:56,767 --> 01:25:57,901
+So, what I'm putting here
+
+579
+01:25:57,901 --> 01:26:00,934
+is a picture that shows
+that children, infants
+
+580
+01:26:00,934 --> 01:26:05,400
+actually can imitate
+imitation, facial expressions,
+
+581
+01:26:05,400 --> 01:26:08,501
+and motor movements in adults.
+
+582
+01:26:08,501 --> 01:26:10,000
+This is a very important clue.
+
+583
+01:26:10,000 --> 01:26:11,501
+So now we're
+becoming detectives.
+
+584
+01:26:11,501 --> 01:26:16,000
+The ability to perceive others
+and to imitate their behaviors
+
+585
+01:26:16,000 --> 01:26:20,133
+is a building block for empathy.
+
+586
+01:26:20,133 --> 01:26:25,100
+In fact, some studies have shown
+that there's a frontal cortex
+
+587
+01:26:25,100 --> 01:26:28,434
+to parietal network
+that's implicated
+
+588
+01:26:28,434 --> 01:26:30,467
+in mirror neuron systems
+
+589
+01:26:30,467 --> 01:26:32,000
+for the ability
+to perceive others
+
+590
+01:26:32,000 --> 01:26:35,334
+and to imitate their behaviors
+and their actions.
+
+591
+01:26:35,334 --> 01:26:37,300
+So when you see kids,
+for example,
+
+592
+01:26:37,300 --> 01:26:38,734
+sticking their tongues
+at each other,
+
+593
+01:26:38,734 --> 01:26:41,167
+there's in fact
+a brain network--
+
+594
+01:26:41,167 --> 01:26:44,200
+the yellow part has to do
+with visual information
+
+595
+01:26:44,200 --> 01:26:47,033
+feeding the red--
+the two red areas
+
+596
+01:26:47,033 --> 01:26:49,934
+that have to do with generating
+the motor pattern
+
+597
+01:26:49,934 --> 01:26:52,868
+and then understanding
+how my motor pattern
+
+598
+01:26:52,868 --> 01:26:56,033
+matches what
+another person is doing.
+
+599
+01:26:56,033 --> 01:26:59,567
+Observation of an action
+automatically triggers
+
+600
+01:26:59,567 --> 01:27:01,734
+simulation of that action
+in the brain.
+
+601
+01:27:01,734 --> 01:27:05,634
+Even if it's not expressed.
+
+602
+01:27:05,634 --> 01:27:09,667
+Premotor cortical neurons fire
+during goal-directed actions
+
+603
+01:27:09,667 --> 01:27:12,267
+as well as during
+observation of similar actions.
+
+604
+01:27:12,267 --> 01:27:15,300
+So throughout the day,
+as we observe others,
+
+605
+01:27:15,300 --> 01:27:19,501
+parts of our brain are actually
+setting up simulations
+
+606
+01:27:19,501 --> 01:27:23,300
+that mirror other
+peoples' behaviors.
+
+607
+01:27:23,300 --> 01:27:25,601
+And we'll say that the neural
+bases of imitation,
+
+608
+01:27:25,601 --> 01:27:28,367
+as shown here,
+is really a basis for empathy,
+
+609
+01:27:28,367 --> 01:27:31,267
+which, in one way,
+is an inner imitation
+
+610
+01:27:31,267 --> 01:27:33,801
+of the emotional state
+of another person.
+
+611
+01:27:33,801 --> 01:27:36,334
+So we actually have
+the neural bases
+
+612
+01:27:36,334 --> 01:27:37,767
+that we can begin to probe
+
+613
+01:27:37,767 --> 01:27:40,434
+and see how they
+change with training.
+
+614
+01:27:40,434 --> 01:27:43,634
+So empathy here can be
+construed as identification
+
+615
+01:27:43,634 --> 01:27:47,267
+with and understanding
+of another's situation,
+
+616
+01:27:47,267 --> 01:27:50,133
+feelings, motives, intentions.
+
+617
+01:27:50,133 --> 01:27:53,267
+The state of being in tune
+with another person,
+
+618
+01:27:53,267 --> 01:27:56,400
+particularly by feeling
+what their situation is like
+
+619
+01:27:56,400 --> 01:27:58,033
+from the inside.
+
+620
+01:27:58,033 --> 01:28:00,067
+Not just intellectually.
+
+621
+01:28:00,067 --> 01:28:01,868
+And empathy--
+this is interesting--
+
+622
+01:28:01,868 --> 01:28:03,968
+may or may not precede sympathy,
+
+623
+01:28:03,968 --> 01:28:09,267
+which is a basis
+for developing the ability
+
+624
+01:28:09,267 --> 01:28:12,000
+to cognitively understand
+that person's mind,
+
+625
+01:28:12,000 --> 01:28:13,133
+how they view things.
+
+626
+01:28:13,133 --> 01:28:16,033
+So empathy would be
+more an affective state.
+
+627
+01:28:16,033 --> 01:28:18,801
+In fact, um, this is shown here.
+
+628
+01:28:18,801 --> 01:28:22,000
+One study that had to do
+with looking at empathy
+
+629
+01:28:22,000 --> 01:28:24,300
+for another person's pain.
+
+630
+01:28:24,300 --> 01:28:26,734
+Physical pain, emotional pain,
+
+631
+01:28:26,734 --> 01:28:29,701
+triggers in the perceiver,
+shown here,
+
+632
+01:28:29,701 --> 01:28:33,534
+brain regions associated
+with emotion processing.
+
+633
+01:28:33,534 --> 01:28:37,200
+Visceral experience.
+
+634
+01:28:37,200 --> 01:28:39,701
+Bilateral insula,
+a very important area
+
+635
+01:28:39,701 --> 01:28:41,400
+that has to do
+with the visceral experience
+
+636
+01:28:41,400 --> 01:28:44,467
+when you see
+someone else in pain.
+
+637
+01:28:44,467 --> 01:28:48,400
+In this particular study,
+people viewed short film clips
+
+638
+01:28:48,400 --> 01:28:50,434
+of people who
+either were neutral--
+
+639
+01:28:50,434 --> 01:28:52,400
+not--affectively
+are not in pain--
+
+640
+01:28:52,400 --> 01:28:55,200
+versus people who are
+in a very painful response.
+
+641
+01:28:55,200 --> 01:28:58,234
+Imagined the feelings
+of the other person
+
+642
+01:28:58,234 --> 01:29:00,334
+or even oneself
+having that pain.
+
+643
+01:29:00,334 --> 01:29:01,634
+And here, what I just
+wanna point out,
+
+644
+01:29:01,634 --> 01:29:03,901
+is that, um,
+they measured two things.
+
+645
+01:29:03,901 --> 01:29:07,133
+Personal distress
+and empathic concern.
+
+646
+01:29:07,133 --> 01:29:10,100
+And what you'll see
+is the empathic concern
+
+647
+01:29:10,100 --> 01:29:13,901
+was much greater when you saw
+the other person in pain.
+
+648
+01:29:13,901 --> 01:29:16,067
+Not oneself.
+
+649
+01:29:16,067 --> 01:29:18,767
+The personal distress
+was greater
+
+650
+01:29:18,767 --> 01:29:22,167
+when you imagined yourself
+in pain, not the other.
+
+651
+01:29:22,167 --> 01:29:24,701
+So here, this is a double--
+this is a double dissociation
+
+652
+01:29:24,701 --> 01:29:26,701
+where we can actually
+begin to delineate
+
+653
+01:29:26,701 --> 01:29:30,501
+different aspects of empathy,
+
+654
+01:29:30,501 --> 01:29:32,534
+and where they're
+playing out in the brain.
+
+655
+01:29:32,534 --> 01:29:35,434
+And again, insula--
+insular cortex,
+
+656
+01:29:35,434 --> 01:29:37,767
+this visceral experience
+of pain in others.
+
+657
+01:29:37,767 --> 01:29:40,534
+So this starts
+to get exciting, in fact.
+
+658
+01:29:40,534 --> 01:29:44,400
+Another very important
+review paper came out recently,
+
+659
+01:29:44,400 --> 01:29:48,234
+by Chaim and Tanya Singer,
+trying to delineate
+
+660
+01:29:48,234 --> 01:29:49,534
+two different aspects.
+
+661
+01:29:49,534 --> 01:29:51,767
+Cognitive perspective taking,
+which is something
+
+662
+01:29:51,767 --> 01:29:53,801
+that we probably
+are all doing many times a day
+
+663
+01:29:53,801 --> 01:29:56,400
+trying to understand
+what other people are thinking.
+
+664
+01:29:56,400 --> 01:29:59,400
+The ability to understand
+intentions, desires, and beliefs
+
+665
+01:29:59,400 --> 01:30:02,167
+of another person,
+resulting from cognitively
+
+666
+01:30:02,167 --> 01:30:04,367
+reasoning
+about the other's state.
+
+667
+01:30:04,367 --> 01:30:06,367
+"How is this person
+seeing the situation?"
+
+668
+01:30:06,367 --> 01:30:08,300
+"How could they actually
+do problem solving?"
+
+669
+01:30:08,300 --> 01:30:10,067
+"How--What are the things
+that they--
+
+670
+01:30:10,067 --> 01:30:12,701
+"are important in their
+process in decision making
+
+671
+01:30:12,701 --> 01:30:14,434
+that lead to their behavior?"
+
+672
+01:30:14,434 --> 01:30:17,200
+In contrast to that,
+the empathy is really
+
+673
+01:30:17,200 --> 01:30:20,567
+getting
+into the affective state,
+
+674
+01:30:20,567 --> 01:30:22,634
+which is caused
+by the sharing of the emotions
+
+675
+01:30:22,634 --> 01:30:25,033
+and the sensory experience
+of another person.
+
+676
+01:30:25,033 --> 01:30:29,467
+Dropping the self just enough
+to begin to experience
+
+677
+01:30:29,467 --> 01:30:33,534
+the emotions of another person
+at least to some degree.
+
+678
+01:30:33,534 --> 01:30:35,033
+On some level.
+
+679
+01:30:35,033 --> 01:30:37,434
+And--oop.
+
+680
+01:30:37,434 --> 01:30:40,067
+So these two different
+perspectives
+
+681
+01:30:40,067 --> 01:30:41,701
+on how to understand
+another person.
+
+682
+01:30:41,701 --> 01:30:44,534
+Green and orange
+are actually mapped
+
+683
+01:30:44,534 --> 01:30:47,067
+onto different parts
+of the brain.
+
+684
+01:30:47,067 --> 01:30:48,968
+And that the cognitive
+has to do
+
+685
+01:30:48,968 --> 01:30:51,033
+with more medial
+prefrontal cortex,
+
+686
+01:30:51,033 --> 01:30:54,767
+higher order abstract mental
+representations of the other,
+
+687
+01:30:54,767 --> 01:30:57,534
+as well as taking--
+
+688
+01:30:57,534 --> 01:31:00,467
+Actually, areas that have
+to do with social cognition,
+
+689
+01:31:00,467 --> 01:31:04,033
+perspective taking,
+how I represent other people
+
+690
+01:31:04,033 --> 01:31:05,567
+in my mind.
+
+691
+01:31:05,567 --> 01:31:07,067
+Versus the orange,
+which has to do
+
+692
+01:31:07,067 --> 01:31:11,200
+with the anterior cingulate
+and, again, the insula,
+
+693
+01:31:11,200 --> 01:31:15,167
+which has more to do with trying
+to resolve conflict.
+
+694
+01:31:15,167 --> 01:31:19,000
+Actually experience
+the visceral state
+
+695
+01:31:19,000 --> 01:31:20,701
+of another person's emotion.
+
+696
+01:31:20,701 --> 01:31:23,400
+So there's kind of tuning in
+on an emotional level.
+
+697
+01:31:23,400 --> 01:31:25,000
+So the brain
+is actually showing this
+
+698
+01:31:25,000 --> 01:31:28,801
+even without people's
+first-person report.
+
+699
+01:31:28,801 --> 01:31:30,567
+So this is a very
+interesting way
+
+700
+01:31:30,567 --> 01:31:33,133
+that the brain imaging is
+leading to understanding
+
+701
+01:31:33,133 --> 01:31:34,667
+about how people
+are functioning
+
+702
+01:31:34,667 --> 01:31:37,834
+that we may or may not be able
+to verbally express
+
+703
+01:31:37,834 --> 01:31:41,434
+or always reliably express
+verbally, I should say.
+
+704
+01:31:41,434 --> 01:31:43,801
+Um, compassion.
+
+705
+01:31:43,801 --> 01:31:46,767
+So I would suggest--
+and this can be open to debate
+
+706
+01:31:46,767 --> 01:31:47,968
+and thinking.
+
+707
+01:31:47,968 --> 01:31:51,567
+Empathy, the cognitive
+perspective taking,
+
+708
+01:31:51,567 --> 01:31:53,501
+are building blocks.
+
+709
+01:31:53,501 --> 01:31:57,634
+Both are necessary
+for developing compassion.
+
+710
+01:31:57,634 --> 01:32:00,968
+Compassion being truly--
+
+711
+01:32:00,968 --> 01:32:04,033
+Uh, well, I'll let the
+definition come up.
+
+712
+01:32:04,033 --> 01:32:08,067
+The deep awareness of the
+suffering of another person
+
+713
+01:32:08,067 --> 01:32:12,267
+coupled with the wish,
+the intention, the motivation
+
+714
+01:32:12,267 --> 01:32:14,934
+to relieve that person
+from their suffering.
+
+715
+01:32:14,934 --> 01:32:17,567
+So it's both
+an emotional component
+
+716
+01:32:17,567 --> 01:32:20,133
+and a cognitive component.
+
+717
+01:32:20,133 --> 01:32:21,767
+A tender feeling.
+
+718
+01:32:21,767 --> 01:32:26,467
+Sympathetic, sad concern
+for someone in misfortune.
+
+719
+01:32:26,467 --> 01:32:30,501
+Pity for others
+with a desire to help.
+
+720
+01:32:30,501 --> 01:32:34,033
+And I would
+pause it here and bold
+
+721
+01:32:34,033 --> 01:32:36,501
+that empathy and cognitive
+perspective taking
+
+722
+01:32:36,501 --> 01:32:42,234
+and behavioral action is really
+the crux of compassion.
+
+723
+01:32:42,234 --> 01:32:43,868
+And this can be trained.
+
+724
+01:32:43,868 --> 01:32:46,067
+So it's the emotion,
+the cognition,
+
+725
+01:32:46,067 --> 01:32:51,133
+and the action
+to relieve others of suffering.
+
+726
+01:32:51,133 --> 01:32:54,701
+Compassion doesn't mean
+we have to become angelic.
+
+727
+01:32:54,701 --> 01:32:56,133
+Angels.
+
+728
+01:32:56,133 --> 01:32:57,834
+And I put this up here because
+that's actually
+
+729
+01:32:57,834 --> 01:32:59,868
+an obstacle
+to even thinking about,
+
+730
+01:32:59,868 --> 01:33:02,167
+"How can I become more
+compassionate at work,
+
+731
+01:33:02,167 --> 01:33:04,434
+at home,
+in my relationships?"
+
+732
+01:33:04,434 --> 01:33:07,400
+If a goal is too lofty,
+I'll stop from the beginning.
+
+733
+01:33:07,400 --> 01:33:09,567
+This is not the case.
+
+734
+01:33:09,567 --> 01:33:14,200
+The absence of compassion can
+lead to incredible...
+
+735
+01:33:14,200 --> 01:33:16,467
+painful...
+
+736
+01:33:16,467 --> 01:33:18,901
+decisions to abuse other people.
+
+737
+01:33:18,901 --> 01:33:23,868
+As we see in Abu Ghraib
+in this picture.
+
+738
+01:33:23,868 --> 01:33:28,434
+But also, in this same field
+in the theater of war,
+
+739
+01:33:28,434 --> 01:33:30,334
+there can be moments
+of compassion
+
+740
+01:33:30,334 --> 01:33:34,267
+where a person decides
+to pause enough for a moment
+
+741
+01:33:34,267 --> 01:33:35,968
+to connect with others.
+
+742
+01:33:35,968 --> 01:33:37,300
+So this is really important.
+
+743
+01:33:37,300 --> 01:33:38,934
+This is not just theoretical.
+
+744
+01:33:38,934 --> 01:33:41,501
+This is actually playing
+out from moment to moment
+
+745
+01:33:41,501 --> 01:33:46,968
+either in very safe environments
+like Google or Mountain View
+
+746
+01:33:46,968 --> 01:33:48,834
+or in very dangerous
+environments
+
+747
+01:33:48,834 --> 01:33:52,834
+like East Palo Alto or Iraq
+or Afghanistan
+
+748
+01:33:52,834 --> 01:33:54,467
+and everywhere in between.
+
+749
+01:33:54,467 --> 01:33:55,934
+So this is not theoretical.
+
+750
+01:33:55,934 --> 01:33:58,067
+This is actually fundamental.
+
+751
+01:33:58,067 --> 01:34:00,234
+In fact, one quote here.
+
+752
+01:34:00,234 --> 01:34:02,734
+"I feel the capacity
+to care is the thing
+
+753
+01:34:02,734 --> 01:34:08,234
+which gives life
+its deepest significance."
+
+754
+01:34:08,234 --> 01:34:10,100
+His Holiness
+the Dalai Lama says,
+
+755
+01:34:10,100 --> 01:34:14,801
+"Love and compassion
+are necessities, not luxuries."
+
+756
+01:34:14,801 --> 01:34:16,734
+Why?
+
+757
+01:34:16,734 --> 01:34:20,234
+Because, "Without them
+humanity cannot survive."
+
+758
+01:34:20,234 --> 01:34:23,334
+And I think that one reason
+that neuroscientists,
+
+759
+01:34:23,334 --> 01:34:26,000
+neurologists, psychiatrists,
+psychologists,
+
+760
+01:34:26,000 --> 01:34:30,334
+researchers,
+even physicists at Stanford,
+
+761
+01:34:30,334 --> 01:34:35,734
+neurosurgeons, and beyond
+are actively putting
+
+762
+01:34:35,734 --> 01:34:38,534
+their intellectual resources,
+their money, and their time
+
+763
+01:34:38,534 --> 01:34:39,734
+into studying this.
+
+764
+01:34:39,734 --> 01:34:40,868
+Why?
+
+765
+01:34:40,868 --> 01:34:42,801
+Because they realize that
+
+766
+01:34:42,801 --> 01:34:44,601
+this is getting
+pretty serious.
+
+767
+01:34:44,601 --> 01:34:46,601
+It's not a luxury.
+
+768
+01:34:46,601 --> 01:34:49,400
+It's a necessity for human
+animals to continue
+
+769
+01:34:49,400 --> 01:34:51,367
+to exist on this planet.
+
+770
+01:34:51,367 --> 01:34:53,067
+So that's
+why the neuroscientists
+
+771
+01:34:53,067 --> 01:34:54,934
+who wouldn't have
+touched this ten years ago,
+
+772
+01:34:54,934 --> 01:34:57,667
+are actively studying this now
+because now
+
+773
+01:34:57,667 --> 01:35:00,801
+we need to do more
+and we can do more.
+
+774
+01:35:00,801 --> 01:35:04,701
+In fact, what do people
+at Google say?
+
+775
+01:35:04,701 --> 01:35:07,400
+The Googlers say,
+"Don't be evil."
+
+776
+01:35:07,400 --> 01:35:09,100
+How wonderful.
+
+777
+01:35:09,100 --> 01:35:11,667
+At least do not harm others.
+
+778
+01:35:11,667 --> 01:35:16,234
+And if you can, if possible,
+bring some benefit to others.
+
+779
+01:35:16,234 --> 01:35:18,334
+So I like your motto.
+
+780
+01:35:18,334 --> 01:35:22,767
+EEG, another imaging tool.
+
+781
+01:35:22,767 --> 01:35:24,868
+Different capacities.
+
+782
+01:35:24,868 --> 01:35:27,868
+Can we look at people who worked
+on training their minds?
+
+783
+01:35:27,868 --> 01:35:29,334
+Well, the answer is yes.
+
+784
+01:35:29,334 --> 01:35:32,133
+When people are doing
+loving-kindness meditation,
+
+785
+01:35:32,133 --> 01:35:35,734
+which is one kind of compassion
+meditation practice,
+
+786
+01:35:35,734 --> 01:35:37,901
+there are specific
+parts of the brain
+
+787
+01:35:37,901 --> 01:35:40,501
+from which we can begin
+to measure
+
+788
+01:35:40,501 --> 01:35:44,167
+rapid electrical
+firing patterns
+
+789
+01:35:44,167 --> 01:35:48,734
+that show when an adept,
+a really well trained meditator
+
+790
+01:35:48,734 --> 01:35:50,667
+in this case--
+but it could be a chess player,
+
+791
+01:35:50,667 --> 01:35:53,200
+it could be a mathematician,
+could be an engineer,
+
+792
+01:35:53,200 --> 01:35:57,834
+could be a therapist--
+can invoke a state of mind
+
+793
+01:35:57,834 --> 01:36:00,701
+that's open to loving-kindness
+towards all beings.
+
+794
+01:36:00,701 --> 01:36:03,133
+And how does that manifest
+in these electrical patterns
+
+795
+01:36:03,133 --> 01:36:04,534
+in the brain?
+
+796
+01:36:04,534 --> 01:36:06,534
+Well, in fact, we can begin
+to delineate that.
+
+797
+01:36:06,534 --> 01:36:08,234
+Can we train it?
+
+798
+01:36:08,234 --> 01:36:10,367
+And that brings the last part
+of this talk.
+
+799
+01:36:10,367 --> 01:36:12,434
+The most inspiring part,
+I hope.
+
+800
+01:36:12,434 --> 01:36:14,601
+Neuroplasticity.
+
+801
+01:36:14,601 --> 01:36:17,968
+So until recently we thought,
+You can't change the brain.
+
+802
+01:36:17,968 --> 01:36:19,567
+You can't change the anatomy.
+
+803
+01:36:19,567 --> 01:36:24,133
+You can't change the functioning
+or the linking of circuitry.
+
+804
+01:36:24,133 --> 01:36:27,234
+Well, in fact, we're finding
+more and more that you can.
+
+805
+01:36:27,234 --> 01:36:29,234
+So until recently they thought,
+"Okay, so maybe
+
+806
+01:36:29,234 --> 01:36:31,434
+"when you're infants,
+the brain is plastic.
+
+807
+01:36:31,434 --> 01:36:34,834
+But as you become adolescent
+and adult, you cannot."
+
+808
+01:36:34,834 --> 01:36:37,100
+That also now has been debunked.
+
+809
+01:36:37,100 --> 01:36:39,033
+And in fact,
+training the brain--
+
+810
+01:36:39,033 --> 01:36:42,667
+Training influences brain
+structure and brain function.
+
+811
+01:36:42,667 --> 01:36:44,000
+Here we go.
+
+812
+01:36:44,000 --> 01:36:46,734
+This is a very, very simple
+engineering diagram
+
+813
+01:36:46,734 --> 01:36:48,167
+of the brain.
+
+814
+01:36:48,167 --> 01:36:49,400
+Very simple.
+
+815
+01:36:49,400 --> 01:36:52,100
+The brain is super--
+What is it?
+
+816
+01:36:52,100 --> 01:36:55,300
+Google actually refers
+to ten to the hundredth, right?
+
+817
+01:36:55,300 --> 01:36:58,334
+That's what a google is.
+I looked it up.
+
+818
+01:36:58,334 --> 01:37:00,300
+I would posit that the brain
+is that complex.
+
+819
+01:37:00,300 --> 01:37:04,100
+We are only presenting
+reduced reductionistic
+
+820
+01:37:04,100 --> 01:37:05,367
+aspects of the brain.
+
+821
+01:37:05,367 --> 01:37:06,834
+The brain is much more complex
+
+822
+01:37:06,834 --> 01:37:09,834
+and beautiful
+than we can imagine.
+
+823
+01:37:09,834 --> 01:37:12,601
+But we know from
+our own experience,
+
+824
+01:37:12,601 --> 01:37:15,801
+and I hope this is true,
+that in our own mental states
+
+825
+01:37:15,801 --> 01:37:21,734
+can be like a fly stuck
+on sundew leaves.
+
+826
+01:37:21,734 --> 01:37:24,667
+Stuck, not able to fly.
+
+827
+01:37:24,667 --> 01:37:26,868
+And at other times,
+via our own experience,
+
+828
+01:37:26,868 --> 01:37:30,667
+we can experience our own mind
+as a fluid mountain stream.
+
+829
+01:37:30,667 --> 01:37:33,734
+And I would posit
+that it's about our choice.
+
+830
+01:37:33,734 --> 01:37:37,100
+We can train the mind
+in either of these directions.
+
+831
+01:37:37,100 --> 01:37:39,033
+We can also bring a sense
+of acceptance
+
+832
+01:37:39,033 --> 01:37:43,534
+to both of these mental states
+in our self and others.
+
+833
+01:37:43,534 --> 01:37:46,901
+So what's the evidence
+from neuroscience?
+
+834
+01:37:46,901 --> 01:37:50,100
+Well, for people who have
+Obsessive Compulsive Disorder,
+
+835
+01:37:50,100 --> 01:37:53,601
+a study now ten years ago--
+a decade ago--
+
+836
+01:37:53,601 --> 01:37:55,901
+looked at
+the orbital frontal cortex
+
+837
+01:37:55,901 --> 01:37:59,501
+right up behind the eyes
+and actually found
+
+838
+01:37:59,501 --> 01:38:03,767
+that a part of the baseline
+you could actually predict
+
+839
+01:38:03,767 --> 01:38:07,634
+based on your metabolism
+of glucose
+
+840
+01:38:07,634 --> 01:38:10,601
+in that part
+of the orbital frontal cortex.
+
+841
+01:38:10,601 --> 01:38:13,767
+Predicted who would respond
+to both medications
+
+842
+01:38:13,767 --> 01:38:16,267
+and to behavioral therapy.
+
+843
+01:38:16,267 --> 01:38:18,734
+This was a very important study.
+
+844
+01:38:18,734 --> 01:38:20,501
+A groundbreaking study
+that could show
+
+845
+01:38:20,501 --> 01:38:24,234
+brain functioning can predict
+who will benefit from at least
+
+846
+01:38:24,234 --> 01:38:27,434
+two very different forms
+of clinical treatment
+
+847
+01:38:27,434 --> 01:38:29,868
+in people with
+Obsessive Compulsive Disorder.
+
+848
+01:38:29,868 --> 01:38:31,334
+Very exciting.
+
+849
+01:38:31,334 --> 01:38:33,567
+Fast forward.
+
+850
+01:38:33,567 --> 01:38:35,567
+Now three years ago,
+Chris deCharms,
+
+851
+01:38:35,567 --> 01:38:39,334
+formerly at Stanford,
+did a fantastic study
+
+852
+01:38:39,334 --> 01:38:41,601
+looking at--
+showing people
+
+853
+01:38:41,601 --> 01:38:45,434
+in the MRI scanner a little
+igloo with a fire.
+
+854
+01:38:45,434 --> 01:38:48,701
+The greater the fire,
+the greater the neural activity
+
+855
+01:38:48,701 --> 01:38:51,133
+in a specific
+part of the brain.
+
+856
+01:38:51,133 --> 01:38:52,901
+This part of the brain.
+
+857
+01:38:52,901 --> 01:38:55,367
+And he had people
+up and down regulate
+
+858
+01:38:55,367 --> 01:38:59,801
+from moment to moment
+their own brain activity.
+
+859
+01:38:59,801 --> 01:39:03,000
+And it was represented by
+the flame inside of an igloo
+
+860
+01:39:03,000 --> 01:39:07,501
+for people with chronic
+physical, emotional pain,
+
+861
+01:39:07,501 --> 01:39:09,300
+and show them
+that they could actually
+
+862
+01:39:09,300 --> 01:39:12,701
+up and down regulate activity
+in a specific part of the brain.
+
+863
+01:39:12,701 --> 01:39:15,834
+That's neuroplasticity
+in a clinical intervention
+
+864
+01:39:15,834 --> 01:39:19,167
+for people with chronic pain
+using what's called
+
+865
+01:39:19,167 --> 01:39:21,834
+real-time fMRI.
+
+866
+01:39:21,834 --> 01:39:23,834
+This is one
+of my favorite studies.
+
+867
+01:39:23,834 --> 01:39:28,200
+London cabbie drivers.
+Cab drivers.
+
+868
+01:39:28,200 --> 01:39:34,167
+Showing that the number of years
+of experience driving
+
+869
+01:39:34,167 --> 01:39:37,934
+in London, which apparently
+is an incredibly complex grid,
+
+870
+01:39:37,934 --> 01:39:41,534
+not like New York City,
+that they actually had
+
+871
+01:39:41,534 --> 01:39:45,434
+greater activity
+in the hippocampus.
+
+872
+01:39:45,434 --> 01:39:46,601
+On a struc--I'm sorry.
+
+873
+01:39:46,601 --> 01:39:48,167
+Structural changes
+in the structure
+
+874
+01:39:48,167 --> 01:39:50,667
+of the hippocampus based
+on the numbers of years
+
+875
+01:39:50,667 --> 01:39:53,267
+of experience
+driving a cab in London.
+
+876
+01:39:53,267 --> 01:39:56,534
+Direct experience literally
+changing the shape
+
+877
+01:39:56,534 --> 01:39:57,934
+of the anatomy of the brain.
+
+878
+01:39:57,934 --> 01:40:00,067
+Again, neuroplasticity.
+
+879
+01:40:00,067 --> 01:40:01,501
+These are examples.
+
+880
+01:40:01,501 --> 01:40:05,367
+Specific phobia showing that
+cognitive-behavioral therapy,
+
+881
+01:40:05,367 --> 01:40:07,267
+which is the gold standard
+psychotherapy
+
+882
+01:40:07,267 --> 01:40:09,801
+for most of the anx--actually,
+all the anxiety disorders
+
+883
+01:40:09,801 --> 01:40:12,601
+and this specific phobia
+being one kind.
+
+884
+01:40:12,601 --> 01:40:16,367
+Showing that from pre to post
+cognitive-behavioral therapy,
+
+885
+01:40:16,367 --> 01:40:19,334
+activity in the--whoops.
+
+886
+01:40:19,334 --> 01:40:22,334
+Here shown
+in the anterior cingulate
+
+887
+01:40:22,334 --> 01:40:26,234
+and also in bilateral insula
+was reduced
+
+888
+01:40:26,234 --> 01:40:28,334
+following
+cognitive-behavioral therapy.
+
+889
+01:40:28,334 --> 01:40:31,434
+So people's cognitive conflict,
+cogni--
+
+890
+01:40:31,434 --> 01:40:33,701
+And also their visceral
+emotional reactivity
+
+891
+01:40:33,701 --> 01:40:36,667
+reduced in the presence
+of the phobic stimulus
+
+892
+01:40:36,667 --> 01:40:40,801
+from pre to post
+cognitive-behavioral therapy.
+
+893
+01:40:40,801 --> 01:40:44,133
+Here's just another study about
+actually what we're doing.
+
+894
+01:40:44,133 --> 01:40:46,100
+This is preliminary evidence
+showing that for people
+
+895
+01:40:46,100 --> 01:40:48,100
+with social anxiety disorder,
+when working
+
+896
+01:40:48,100 --> 01:40:50,467
+with your own negative
+self-beliefs,
+
+897
+01:40:50,467 --> 01:40:53,567
+pre-post 16 sessions
+of cognitive-behavioral therapy
+
+898
+01:40:53,567 --> 01:40:55,734
+for social anxiety.
+
+899
+01:40:55,734 --> 01:40:58,033
+Red here means increased
+activity in areas
+
+900
+01:40:58,033 --> 01:41:00,267
+having to do
+with self-regulation,
+
+901
+01:41:00,267 --> 01:41:03,634
+access to linguistic processing,
+
+902
+01:41:03,634 --> 01:41:06,100
+and then attention
+and cognitive regulation.
+
+903
+01:41:06,100 --> 01:41:07,968
+Increases in people
+when they're working
+
+904
+01:41:07,968 --> 01:41:12,467
+with their own negative beliefs
+pre to post cognitive therapy.
+
+905
+01:41:12,467 --> 01:41:15,267
+This is a very interesting study
+that was done cross-sectionally.
+
+906
+01:41:15,267 --> 01:41:16,667
+Not pre-post, but looking
+
+907
+01:41:16,667 --> 01:41:19,133
+at insight meditation
+practitioners.
+
+908
+01:41:19,133 --> 01:41:22,033
+That on an anatomical level,
+these two areas,
+
+909
+01:41:22,033 --> 01:41:24,701
+which normally decline
+as you age--
+
+910
+01:41:24,701 --> 01:41:27,100
+This is gray matter.
+
+911
+01:41:27,100 --> 01:41:30,467
+Normally decline as you age,
+which actually was preserved
+
+912
+01:41:30,467 --> 01:41:32,734
+in those people who meditated.
+
+913
+01:41:32,734 --> 01:41:35,033
+And in fact, the number
+of years of meditation
+
+914
+01:41:35,033 --> 01:41:39,334
+was shown to protect--
+was a protective mechanism--
+
+915
+01:41:39,334 --> 01:41:42,400
+against the normal decay or loss
+or degeneration
+
+916
+01:41:42,400 --> 01:41:44,167
+of gray matter.
+
+917
+01:41:44,167 --> 01:41:46,200
+Cross-sectional study.
+Not pre-post.
+
+918
+01:41:46,200 --> 01:41:47,934
+So it's a different
+kind of design.
+
+919
+01:41:47,934 --> 01:41:49,400
+But I'm sure that somebody
+will be working
+
+920
+01:41:49,400 --> 01:41:51,767
+on stronger
+experimental designs soon.
+
+921
+01:41:51,767 --> 01:41:54,834
+So again, more evidence
+that how what we choose to do
+
+922
+01:41:54,834 --> 01:41:57,534
+with our time influences
+even across
+
+923
+01:41:57,534 --> 01:42:01,934
+the aging process.
+
+924
+01:42:01,934 --> 01:42:03,601
+And this is just
+another study showing
+
+925
+01:42:03,601 --> 01:42:04,767
+that with mindfulness meditation
+
+926
+01:42:04,767 --> 01:42:07,601
+in people
+with anxiety disorders--
+
+927
+01:42:07,601 --> 01:42:09,968
+In these circles is a network
+of brain regions
+
+928
+01:42:09,968 --> 01:42:13,133
+in which attention regulation
+is instantiated
+
+929
+01:42:13,133 --> 01:42:15,400
+and that those regions
+are increased--
+
+930
+01:42:15,400 --> 01:42:19,734
+I.E., better ability to use the
+brain to shift your attention
+
+931
+01:42:19,734 --> 01:42:24,567
+pre-post mindfulness training.
+
+932
+01:42:24,567 --> 01:42:27,434
+And even before,
+I said about the self.
+
+933
+01:42:27,434 --> 01:42:30,000
+We also have preliminary
+evidence
+
+934
+01:42:30,000 --> 01:42:32,167
+that's now in at least two
+different labs
+
+935
+01:42:32,167 --> 01:42:33,734
+or three different
+labs for people
+
+936
+01:42:33,734 --> 01:42:36,400
+with anxiety disorders
+or even depression,
+
+937
+01:42:36,400 --> 01:42:40,767
+that the neural network that
+supports cell-focused attention
+
+938
+01:42:40,767 --> 01:42:44,834
+can actually be modulated
+with attention training.
+
+939
+01:42:44,834 --> 01:42:47,033
+Mindfulness
+meditation training.
+
+940
+01:42:47,033 --> 01:42:52,300
+So in summary--
+Threat, real or imagined?
+
+941
+01:42:52,300 --> 01:42:56,567
+Definitely we can see is that
+you can modulate up or down--
+
+942
+01:42:56,567 --> 01:42:58,367
+but hopefully down--
+
+943
+01:42:58,367 --> 01:43:00,634
+the intensity
+of emotional reactivity.
+
+944
+01:43:00,634 --> 01:43:03,501
+And that you can use all
+of these other brain systems.
+
+945
+01:43:03,501 --> 01:43:07,334
+Cognitive regulation, thinking,
+attention regulation.
+
+946
+01:43:07,334 --> 01:43:10,334
+They're eventually shifting our
+awareness and our attention
+
+947
+01:43:10,334 --> 01:43:13,067
+mediated through
+self-view and language
+
+948
+01:43:13,067 --> 01:43:17,267
+to lead
+to greater well-being.
+
+949
+01:43:17,267 --> 01:43:20,534
+I have done this work with many,
+many other people.
+
+950
+01:43:20,534 --> 01:43:22,133
+These people are in my group.
+
+951
+01:43:22,133 --> 01:43:24,667
+And many others who aren't
+even in the picture here.
+
+952
+01:43:24,667 --> 01:43:28,167
+And this is where
+I am virtually.
+
+953
+01:43:28,167 --> 01:43:30,234
+I'm actually right here.
+
+954
+01:43:30,234 --> 01:43:32,634
+And thank you
+for your attention.
+
+955
+01:43:32,634 --> 01:43:38,434
+[applause]
+
+956
+01:43:38,434 --> 01:43:40,501
+Ming: We have about
+ten minutes for questions...
+
+957
+01:43:40,501 --> 01:43:43,367
+and answers.
+
+958
+01:43:43,367 --> 01:43:45,100
+Goldin: Maybe only
+questions?
+
+959
+01:43:45,100 --> 01:43:48,968
+Ming: Any questions?
+
+960
+01:43:48,968 --> 01:43:50,334
+Goldin: Are any of you
+pondering?
+
+961
+01:43:50,334 --> 01:43:51,667
+It doesn't even have
+to be a question.
+
+962
+01:43:51,667 --> 01:43:54,300
+A reflection.
+
+963
+01:43:54,300 --> 01:43:57,334
+man: Sorry, just wondering will
+these slides be posted?
+
+964
+01:43:57,334 --> 01:43:59,200
+Will we have access to these?
+
+965
+01:43:59,200 --> 01:44:02,334
+Goldin: The whole talk is going
+to be uploaded to YouTube
+
+966
+01:44:02,334 --> 01:44:04,834
+in its entirety.
+
+967
+01:44:04,834 --> 01:44:06,300
+man: Okay, thank you.
+
+968
+01:44:06,300 --> 01:44:10,834
+Goldin: So you can
+ponder it even more.
+
+969
+01:44:10,834 --> 01:44:12,267
+woman: Would you be able
+to go back
+
+970
+01:44:12,267 --> 01:44:14,267
+to the study
+on the adolescents and--
+
+971
+01:44:14,267 --> 01:44:15,868
+Goldin: Yes.
+
+972
+01:44:15,868 --> 01:44:18,334
+woman: Just go--
+I wasn't sure.
+
+973
+01:44:18,334 --> 01:44:20,234
+What?
+[man speaking indistinctly]
+
+974
+01:44:20,234 --> 01:44:24,367
+No, grown up.
+
+975
+01:44:24,367 --> 01:44:26,634
+'Cause it seemed like you were
+saying something
+
+976
+01:44:26,634 --> 01:44:30,801
+that to me seemed contradictory
+but maybe it was just--
+
+977
+01:44:30,801 --> 01:44:32,133
+I was misunderstanding.
+
+978
+01:44:32,133 --> 01:44:34,567
+Goldin: Okay, so here--
+this is one study.
+
+979
+01:44:34,567 --> 01:44:35,767
+One thing I wanna
+make very clear
+
+980
+01:44:35,767 --> 01:44:37,467
+is don't trust one study.
+
+981
+01:44:37,467 --> 01:44:41,634
+Trust the meta analyses
+or trust a study
+
+982
+01:44:41,634 --> 01:44:43,167
+that's been replicated
+at least once,
+
+983
+01:44:43,167 --> 01:44:45,267
+preferably twice,
+not in the same lab.
+
+984
+01:44:45,267 --> 01:44:47,467
+That's one thing that's
+a caveat in science.
+
+985
+01:44:47,467 --> 01:44:49,033
+Don't trust any one study.
+
+986
+01:44:49,033 --> 01:44:50,834
+Here, this is one study
+
+987
+01:44:50,834 --> 01:44:53,167
+with 16 children
+and adolescents.
+
+988
+01:44:53,167 --> 01:44:55,400
+So already that's
+kind of a wide range.
+
+989
+01:44:55,400 --> 01:44:58,234
+But supposedly what
+we've presented in the study
+
+990
+01:44:58,234 --> 01:44:59,567
+is that the greater--
+
+991
+01:44:59,567 --> 01:45:01,467
+by self-report
+on a questionnaire--
+
+992
+01:45:01,467 --> 01:45:05,000
+The greater
+the emotional intelligence score
+
+993
+01:45:05,000 --> 01:45:09,334
+reported by kids
+and adolescents,
+
+994
+01:45:09,334 --> 01:45:14,133
+the reduction--blue--
+in these regions
+
+995
+01:45:14,133 --> 01:45:19,033
+and other regions that have
+to do with emotional reactivity,
+
+996
+01:45:19,033 --> 01:45:25,033
+visceral response
+to fear faces.
+
+997
+01:45:25,033 --> 01:45:26,901
+woman: Specifically
+to fear faces?
+
+998
+01:45:26,901 --> 01:45:28,734
+Goldin: Yeah, this is
+just one example.
+
+999
+01:45:28,734 --> 01:45:32,033
+This is
+to fear facial expressions.
+
+1000
+01:45:32,033 --> 01:45:34,367
+And people--
+
+1001
+01:45:34,367 --> 01:45:38,367
+The human brain
+is super sensitive
+
+1002
+01:45:38,367 --> 01:45:42,067
+to facial expressions
+of fear, anger,
+
+1003
+01:45:42,067 --> 01:45:44,734
+and have a reliable
+neural response.
+
+1004
+01:45:44,734 --> 01:45:46,167
+woman: Okay, thanks.
+
+1005
+01:45:46,167 --> 01:45:47,801
+Goldin: But it is interesting.
+
+1006
+01:45:47,801 --> 01:45:49,167
+What exactly--
+
+1007
+01:45:49,167 --> 01:45:51,133
+So this is a very
+kind of course.
+
+1008
+01:45:51,133 --> 01:45:52,934
+What aspect
+of emotional intelligence
+
+1009
+01:45:52,934 --> 01:45:56,434
+relates to less emotional
+reactivity to fear?
+
+1010
+01:45:56,434 --> 01:45:57,501
+That was not answered.
+
+1011
+01:45:57,501 --> 01:45:58,767
+woman: Right.
+
+1012
+01:45:58,767 --> 01:46:00,334
+Goldin: That's why you need
+further studies.
+
+1013
+01:46:00,334 --> 01:46:02,567
+Is that only in the adolescents
+or is it in younger kids?
+
+1014
+01:46:02,567 --> 01:46:04,133
+Is it age dependant?
+
+1015
+01:46:04,133 --> 01:46:05,601
+In fact, another study
+that I don't think
+
+1016
+01:46:05,601 --> 01:46:08,501
+is published yet from our group,
+James Gross's lab
+
+1017
+01:46:08,501 --> 01:46:10,234
+at Stanford Psychophysiology
+Laboratory,
+
+1018
+01:46:10,234 --> 01:46:13,234
+looking at the eight-year olds
+up to 22-year olds--
+
+1019
+01:46:13,234 --> 01:46:15,501
+boys and girls,
+every single age--
+
+1020
+01:46:15,501 --> 01:46:19,133
+the ability to use thinking,
+re-interpretation strategies,
+
+1021
+01:46:19,133 --> 01:46:22,601
+i.e. cognitive regulation or
+cognitive reappraisal--
+
+1022
+01:46:22,601 --> 01:46:24,534
+in clinical, we say
+cognitive restructuring--
+
+1023
+01:46:24,534 --> 01:46:27,100
+to emotional probe,
+to emotional reactivity,
+
+1024
+01:46:27,100 --> 01:46:29,801
+was actually predicted
+by cognitive development.
+
+1025
+01:46:29,801 --> 01:46:31,133
+Which totally makes sense.
+
+1026
+01:46:31,133 --> 01:46:35,267
+So the older you are,
+the more cognitively developed.
+
+1027
+01:46:35,267 --> 01:46:37,534
+The more cognitive development
+you demonstrate
+
+1028
+01:46:37,534 --> 01:46:39,767
+on neuropsychological tests,
+the more you're able
+
+1029
+01:46:39,767 --> 01:46:42,400
+to use cognitive reappraisal
+strategies
+
+1030
+01:46:42,400 --> 01:46:44,934
+to down regulate
+emotional reactivity.
+
+1031
+01:46:44,934 --> 01:46:48,334
+So there is an age-dependent
+thing from at least 8 to 22.
+
+1032
+01:46:48,334 --> 01:46:49,601
+But then it raises the question,
+
+1033
+01:46:49,601 --> 01:46:51,834
+"From 22 onwards--70, 80, 90--
+
+1034
+01:46:51,834 --> 01:46:53,467
+what are we doing?"
+
+1035
+01:46:53,467 --> 01:46:55,934
+Can we train?
+Can we overcome anger?
+
+1036
+01:46:55,934 --> 01:46:57,868
+Can we overcome low self-esteem?
+
+1037
+01:46:57,868 --> 01:47:00,634
+Can we overcome insecurity?
+
+1038
+01:47:00,634 --> 01:47:02,901
+And how?
+And what are the best methods?
+
+1039
+01:47:02,901 --> 01:47:04,901
+Yeah, so I think there's
+somebody behind you.
+
+1040
+01:47:04,901 --> 01:47:06,567
+man: S.I.Y.
+
+1041
+01:47:06,567 --> 01:47:08,601
+Goldin: S.I.Y.
+Search Inside Yourself.
+
+1042
+01:47:08,601 --> 01:47:11,067
+One method to do that
+or at least to begin
+
+1043
+01:47:11,067 --> 01:47:12,667
+to try to do that.
+
+1044
+01:47:12,667 --> 01:47:14,567
+man: I'm just wondering
+if there's any consensus
+
+1045
+01:47:14,567 --> 01:47:17,934
+among the critics or skepticism
+around this work
+
+1046
+01:47:17,934 --> 01:47:19,567
+that might be--
+
+1047
+01:47:19,567 --> 01:47:23,067
+that we might be able
+to address as well?
+
+1048
+01:47:23,067 --> 01:47:24,734
+Goldin: Um, does any--
+
+1049
+01:47:24,734 --> 01:47:26,534
+I mean,
+I have my own skepticism.
+
+1050
+01:47:26,534 --> 01:47:27,834
+Are you--
+
+1051
+01:47:27,834 --> 01:47:28,868
+Is there something
+in your mind that's come up?
+
+1052
+01:47:28,868 --> 01:47:30,200
+man: No, no, no, I don't.
+
+1053
+01:47:30,200 --> 01:47:32,334
+In fact, this is all very new
+and very exciting.
+
+1054
+01:47:32,334 --> 01:47:33,934
+Goldin: Yeah, sure.
+
+1055
+01:47:33,934 --> 01:47:35,400
+I'm happy to--
+
+1056
+01:47:35,400 --> 01:47:36,934
+You know, one of the great
+things about being in science
+
+1057
+01:47:36,934 --> 01:47:40,334
+is that we can be skeptical
+professionally.
+
+1058
+01:47:40,334 --> 01:47:42,901
+So I have my skepticism
+in the following way.
+
+1059
+01:47:42,901 --> 01:47:45,567
+I'll try to just briefly--
+
+1060
+01:47:45,567 --> 01:47:48,334
+So for example,
+in cognitive-behavorial therapy,
+
+1061
+01:47:48,334 --> 01:47:51,434
+which I'm trained in,
+it's change oriented.
+
+1062
+01:47:51,434 --> 01:47:53,434
+Identifying mistakes
+in thinking.
+
+1063
+01:47:53,434 --> 01:47:55,868
+Thinking in ways that
+are actually harmful,
+
+1064
+01:47:55,868 --> 01:47:59,667
+not beneficial, that lead
+to feeling worse about myself
+
+1065
+01:47:59,667 --> 01:48:01,100
+or others.
+
+1066
+01:48:01,100 --> 01:48:03,067
+One method to work
+with that is to identify
+
+1067
+01:48:03,067 --> 01:48:06,067
+those thoughts, modify them,
+change them,
+
+1068
+01:48:06,067 --> 01:48:09,667
+deconstruct them, find
+evidence that those thoughts
+
+1069
+01:48:09,667 --> 01:48:13,434
+are either not accurate or that
+they're not beneficial.
+
+1070
+01:48:13,434 --> 01:48:15,868
+So that's really a heady,
+logical, linguistic,
+
+1071
+01:48:15,868 --> 01:48:18,434
+language approach.
+
+1072
+01:48:18,434 --> 01:48:20,200
+Shift.
+
+1073
+01:48:20,200 --> 01:48:22,167
+I'm also trained in mindfulness
+or in meditation.
+
+1074
+01:48:22,167 --> 01:48:23,634
+Different kinds
+of meditation techniques.
+
+1075
+01:48:23,634 --> 01:48:25,567
+One of which is mindfulness
+meditation.
+
+1076
+01:48:25,567 --> 01:48:29,968
+There, you go for change,
+but it's not language based,
+
+1077
+01:48:29,968 --> 01:48:33,000
+it's not linguistic,
+it's not cognitively
+
+1078
+01:48:33,000 --> 01:48:34,534
+challenging my thoughts.
+
+1079
+01:48:34,534 --> 01:48:40,467
+It's actually shifting how
+I approach my own experience.
+
+1080
+01:48:40,467 --> 01:48:44,367
+Radically different from the
+cognitive-behavioral approach.
+
+1081
+01:48:44,367 --> 01:48:48,067
+But probably leading
+to the same kind
+
+1082
+01:48:48,067 --> 01:48:51,501
+of psychological flexibility.
+
+1083
+01:48:51,501 --> 01:48:53,567
+Currently people are--
+
+1084
+01:48:53,567 --> 01:48:55,601
+How do we know when someone
+walks in the door
+
+1085
+01:48:55,601 --> 01:48:58,601
+or even a friend,
+what methods work best for whom?
+
+1086
+01:48:58,601 --> 01:49:00,267
+We actually don't know that.
+
+1087
+01:49:00,267 --> 01:49:03,868
+How do know that
+a combined approach
+
+1088
+01:49:03,868 --> 01:49:07,167
+would work best
+for Joe or for Sally?
+
+1089
+01:49:07,167 --> 01:49:08,834
+Currently, we actually
+don't know.
+
+1090
+01:49:08,834 --> 01:49:10,400
+And this is one
+of the biggest problems.
+
+1091
+01:49:10,400 --> 01:49:12,934
+If I train you
+in certain skills
+
+1092
+01:49:12,934 --> 01:49:14,734
+where I assume this
+is gonna be helpful for you
+
+1093
+01:49:14,734 --> 01:49:16,834
+when they're not,
+we've just wasted energy,
+
+1094
+01:49:16,834 --> 01:49:21,267
+time, money, even actually
+inducing more frustration.
+
+1095
+01:49:21,267 --> 01:49:24,434
+So for example, meditation
+is not good for everybody.
+
+1096
+01:49:24,434 --> 01:49:26,000
+We know that as a fact.
+
+1097
+01:49:26,000 --> 01:49:28,100
+Cognitive-behavioral therapy
+doesn't treat
+
+1098
+01:49:28,100 --> 01:49:31,167
+everyone's anxiety
+or depression 100%.
+
+1099
+01:49:31,167 --> 01:49:32,834
+We know that as well.
+
+1100
+01:49:32,834 --> 01:49:35,400
+What's in the 30%
+that don't get better?
+
+1101
+01:49:35,400 --> 01:49:39,033
+How can we figure out
+who will get better?
+
+1102
+01:49:39,033 --> 01:49:40,734
+Yeah, yeah, okay.
+
+1103
+01:49:40,734 --> 01:49:42,400
+I mean, I have many more
+questions and doubts
+
+1104
+01:49:42,400 --> 01:49:44,968
+but that's at least
+one of them I can share.
+
+1105
+01:49:44,968 --> 01:49:49,467
+Yeah.
+
+1106
+01:49:49,467 --> 01:49:52,667
+woman: You just listed off two
+different types of treatment.
+
+1107
+01:49:52,667 --> 01:49:55,367
+Besides meditation, what are
+some other tools that you use?
+
+1108
+01:49:55,367 --> 01:49:57,367
+I mean, like, can you kinda give
+us, like, a case study
+
+1109
+01:49:57,367 --> 01:49:58,701
+or some examples?
+
+1110
+01:49:58,701 --> 01:50:01,267
+If I was to walk in your door,
+what would we do?
+
+1111
+01:50:01,267 --> 01:50:02,567
+Goldin: Sure.
+How about exercise?
+
+1112
+01:50:02,567 --> 01:50:03,934
+woman: No.
+
+1113
+01:50:03,934 --> 01:50:06,100
+Goldin: Exercise
+is a powerful mood regulator.
+
+1114
+01:50:06,100 --> 01:50:08,634
+But one of the things
+that happens there--
+
+1115
+01:50:08,634 --> 01:50:10,133
+'Cause we're actually
+doing a study right now.
+
+1116
+01:50:10,133 --> 01:50:12,601
+Brain imaging pre-post exercise
+
+1117
+01:50:12,601 --> 01:50:15,834
+for two and a half months
+for people with anxiety.
+
+1118
+01:50:15,834 --> 01:50:19,334
+That may or may not
+be just as effective
+
+1119
+01:50:19,334 --> 01:50:21,000
+as mindfulness meditation
+
+1120
+01:50:21,000 --> 01:50:22,400
+or even cognitive-behavioral
+therapy.
+
+1121
+01:50:22,400 --> 01:50:24,901
+But it might be
+very different mechanisms.
+
+1122
+01:50:24,901 --> 01:50:26,133
+So that's something.
+
+1123
+01:50:26,133 --> 01:50:27,968
+A whole other thing
+that we're not studying
+
+1124
+01:50:27,968 --> 01:50:29,968
+that could be very powerful
+to study
+
+1125
+01:50:29,968 --> 01:50:32,934
+since we are so embedded
+in logos or language
+
+1126
+01:50:32,934 --> 01:50:34,968
+is communication skills.
+
+1127
+01:50:34,968 --> 01:50:37,300
+How we actually
+process language.
+
+1128
+01:50:37,300 --> 01:50:41,501
+Even training ourselves
+to use language
+
+1129
+01:50:41,501 --> 01:50:44,834
+and linguistic processing
+in a way that's less harmful
+
+1130
+01:50:44,834 --> 01:50:46,834
+to self and others.
+
+1131
+01:50:46,834 --> 01:50:48,767
+That would be
+a whole other method
+
+1132
+01:50:48,767 --> 01:50:50,067
+that's not about therapy.
+
+1133
+01:50:50,067 --> 01:50:52,801
+It's not about meditation.
+
+1134
+01:50:52,801 --> 01:50:55,367
+Those are at least two examples
+that come to mind.
+
+1135
+01:50:55,367 --> 01:50:57,334
+And even, like,
+we talked about mindfulness.
+
+1136
+01:50:57,334 --> 01:50:59,601
+Here's a whole other realm
+with just compassion.
+
+1137
+01:50:59,601 --> 01:51:02,367
+So, for example,
+here's a thought.
+
+1138
+01:51:02,367 --> 01:51:05,100
+You take somebody who has an
+eating disorder,
+
+1139
+01:51:05,100 --> 01:51:10,367
+be it bulimia or binging
+or whatever or anorexia.
+
+1140
+01:51:10,367 --> 01:51:15,267
+Could you actually train the
+person to view themselves
+
+1141
+01:51:15,267 --> 01:51:19,367
+via compassion meditation
+on the self and others
+
+1142
+01:51:19,367 --> 01:51:22,834
+to actually move around
+the distorted self-view
+
+1143
+01:51:22,834 --> 01:51:25,934
+that leads
+to constriction of food
+
+1144
+01:51:25,934 --> 01:51:29,400
+or dissolving into food
+or vomiting, et cetera?
+
+1145
+01:51:29,400 --> 01:51:32,601
+I'm not sure that's been studied
+but there are approaches.
+
+1146
+01:51:32,601 --> 01:51:34,801
+So, for example,
+I think we have
+
+1147
+01:51:34,801 --> 01:51:38,100
+to think outside the box
+right now.
+
+1148
+01:51:38,100 --> 01:51:40,133
+Google is a thinking company.
+
+1149
+01:51:40,133 --> 01:51:42,567
+And that's exactly
+what we need to do as well
+
+1150
+01:51:42,567 --> 01:51:44,701
+instead of just staying
+with our normal, you know,
+
+1151
+01:51:44,701 --> 01:51:46,234
+psychotherapies,
+our trainings.
+
+1152
+01:51:46,234 --> 01:51:48,267
+There may be other ways
+to work with the mind
+
+1153
+01:51:48,267 --> 01:51:50,968
+that could be more powerful
+that we just haven't tried yet
+
+1154
+01:51:50,968 --> 01:51:52,234
+or thought about.
+
+1155
+01:51:52,234 --> 01:51:53,968
+Just to be clear,
+mindfulness meditation
+
+1156
+01:51:53,968 --> 01:51:55,367
+is one type of meditation.
+
+1157
+01:51:55,367 --> 01:51:57,067
+There are many, many,
+many kinds of meditation,
+
+1158
+01:51:57,067 --> 01:51:58,534
+for example.
+
+1159
+01:51:58,534 --> 01:52:00,000
+Many of which haven't even
+been translated
+
+1160
+01:52:00,000 --> 01:52:02,834
+or incorporated
+into Western psychotherapy yet.
+
+1161
+01:52:02,834 --> 01:52:06,067
+Zen has in the dialectic
+behavioral therapy,
+
+1162
+01:52:06,067 --> 01:52:08,100
+mindfulness-based
+cognitive therapy, et cetera.
+
+1163
+01:52:08,100 --> 01:52:10,000
+But there are
+many other techniques.
+
+1164
+01:52:10,000 --> 01:52:11,868
+Yeah.
+
+1165
+01:52:11,868 --> 01:52:14,767
+That are waiting
+to be tried out.
+
+1166
+01:52:14,767 --> 01:52:18,334
+man: So it's my experience
+and I also read
+
+1167
+01:52:18,334 --> 01:52:21,367
+that basically if you take
+any kind of action
+
+1168
+01:52:21,367 --> 01:52:24,767
+or just express the emotion
+then it basically becomes less.
+
+1169
+01:52:24,767 --> 01:52:27,133
+Has there been any study
+on that aspect
+
+1170
+01:52:27,133 --> 01:52:29,000
+or did you touch that?
+
+1171
+01:52:29,000 --> 01:52:30,734
+Goldin: Did you say just
+expressing the emotion?
+
+1172
+01:52:30,734 --> 01:52:33,701
+man: Expressing or just any
+other kind of action,
+
+1173
+01:52:33,701 --> 01:52:37,234
+body motion, rather than just
+keeping it within?
+
+1174
+01:52:37,234 --> 01:52:38,534
+Basically, obviously,
+it has an effect on you.
+
+1175
+01:52:38,534 --> 01:52:40,100
+Goldin: Yeah, in general.
+Yes.
+
+1176
+01:52:40,100 --> 01:52:43,000
+Actually there's a very elegant
+study by David Creswell.
+
+1177
+01:52:43,000 --> 01:52:45,767
+He was at UCLA and now he's
+at Carnegie Mellon.
+
+1178
+01:52:45,767 --> 01:52:48,033
+Where he just had people doing
+emotional labeling
+
+1179
+01:52:48,033 --> 01:52:50,601
+using language
+in an MRI scanner
+
+1180
+01:52:50,601 --> 01:52:54,567
+and found that just the act
+of applying a word,
+
+1181
+01:52:54,567 --> 01:52:57,234
+or a label, or a phrase
+to describe the emotion
+
+1182
+01:52:57,234 --> 01:52:58,968
+that one is feeling
+in the moment
+
+1183
+01:52:58,968 --> 01:53:01,100
+helps to reduce
+Amagdyla reactivity.
+
+1184
+01:53:01,100 --> 01:53:03,734
+Helps to actually shift neural
+activity in the brain.
+
+1185
+01:53:03,734 --> 01:53:05,467
+That's emotion labeling.
+
+1186
+01:53:05,467 --> 01:53:08,734
+Motion expression,
+catharsis,
+
+1187
+01:53:08,734 --> 01:53:10,567
+in many cases can be helpful.
+
+1188
+01:53:10,567 --> 01:53:12,567
+But we also know
+that it has to be done
+
+1189
+01:53:12,567 --> 01:53:14,934
+in a very skillful manner.
+
+1190
+01:53:14,934 --> 01:53:17,300
+So, for example,
+exposure therapy
+
+1191
+01:53:17,300 --> 01:53:20,434
+has to do with exposing
+one's self to what I fear
+
+1192
+01:53:20,434 --> 01:53:23,033
+and addressing it.
+
+1193
+01:53:23,033 --> 01:53:24,734
+So, for example,
+exposure therapy
+
+1194
+01:53:24,734 --> 01:53:26,901
+for post-traumatic
+stress disorder
+
+1195
+01:53:26,901 --> 01:53:31,033
+can either be very effective
+if done well, repeatedly,
+
+1196
+01:53:31,033 --> 01:53:33,734
+in a very concrete fashion,
+
+1197
+01:53:33,734 --> 01:53:36,100
+but it can also
+totally backfire.
+
+1198
+01:53:36,100 --> 01:53:40,133
+And you can see people actually
+melting down emotionally
+
+1199
+01:53:40,133 --> 01:53:42,601
+when they're trying to express
+and relive an emotion.
+
+1200
+01:53:42,601 --> 01:53:47,934
+So it's more situation and
+context and person dependent.
+
+1201
+01:53:47,934 --> 01:53:50,367
+So no blanket thing
+that catharsis
+
+1202
+01:53:50,367 --> 01:53:53,234
+or emotional expression
+is always helpful.
+
+1203
+01:53:53,234 --> 01:53:55,901
+The other issue here is how is
+it affecting the other people?
+
+1204
+01:53:55,901 --> 01:53:57,601
+Maybe it's beneficial for me.
+
+1205
+01:53:57,601 --> 01:53:59,667
+But I also--
+The people around me--
+
+1206
+01:53:59,667 --> 01:54:01,167
+If I'm doing it
+with a professional
+
+1207
+01:54:01,167 --> 01:54:03,701
+versus a friend
+or at work or whatever,
+
+1208
+01:54:03,701 --> 01:54:07,200
+I have to recognize that it may
+have different repercussions
+
+1209
+01:54:07,200 --> 01:54:09,067
+depending on
+which context I'm in.
+
+1210
+01:54:09,067 --> 01:54:11,000
+Yeah.
+
+1211
+01:54:18,467 --> 01:54:20,467
+man: Thank you.
+This is wonderful to hear.
+
+1212
+01:54:20,467 --> 01:54:23,667
+You've mentioned
+a lot of great things.
+
+1213
+01:54:23,667 --> 01:54:28,868
+I'm really curious about
+the fact that neuroscience
+
+1214
+01:54:28,868 --> 01:54:33,434
+is very excited
+about compassion recently.
+
+1215
+01:54:33,434 --> 01:54:36,868
+And it's wonderful when we hear
+that sciences are validating
+
+1216
+01:54:36,868 --> 01:54:39,234
+age-old wisdoms, so.
+
+1217
+01:54:39,234 --> 01:54:41,501
+The idea of slowing down,
+being more mindful,
+
+1218
+01:54:41,501 --> 01:54:45,434
+being in the present,
+good food, exercise, so.
+
+1219
+01:54:45,434 --> 01:54:46,434
+Goldin: Good friends.
+
+1220
+01:54:46,434 --> 01:54:47,734
+man: Good friends.
+
+1221
+01:54:47,734 --> 01:54:51,400
+Good relationships.
+All of that good loving, yeah.
+
+1222
+01:54:51,400 --> 01:54:54,501
+I'm just curious
+whether or not you have
+
+1223
+01:54:54,501 --> 01:54:57,467
+a certain perspective on how
+that fits into our society,
+
+1224
+01:54:57,467 --> 01:55:01,868
+because those age-old wisdoms
+are sound and true.
+
+1225
+01:55:01,868 --> 01:55:05,634
+But in a society where we're
+constantly fragmented,
+
+1226
+01:55:05,634 --> 01:55:09,133
+or even the idea of memory,
+it's being fragmented
+
+1227
+01:55:09,133 --> 01:55:11,267
+even by the fact that we're
+searching every day
+
+1228
+01:55:11,267 --> 01:55:13,033
+and we don't bother
+remembering things.
+
+1229
+01:55:13,033 --> 01:55:15,801
+Memory's important
+from an emotional context
+
+1230
+01:55:15,801 --> 01:55:18,300
+for understanding who we are.
+
+1231
+01:55:18,300 --> 01:55:20,868
+So, yes, we're understanding it.
+
+1232
+01:55:20,868 --> 01:55:22,534
+Yes, we're validating it.
+
+1233
+01:55:22,534 --> 01:55:25,067
+Do you have an opinion
+on how we can integrate it
+
+1234
+01:55:25,067 --> 01:55:29,300
+into our lives
+and complimenting, perhaps,
+
+1235
+01:55:29,300 --> 01:55:35,234
+our need to be fast-paced
+and hungry and diverse?
+
+1236
+01:55:35,234 --> 01:55:37,234
+Goldin: That's a great question.
+
+1237
+01:55:37,234 --> 01:55:41,000
+And, um...
+
+1238
+01:55:41,000 --> 01:55:43,234
+Introducing silence
+and stillness.
+
+1239
+01:55:43,234 --> 01:55:47,167
+Appreciation
+for silence and stillness.
+
+1240
+01:55:47,167 --> 01:55:49,734
+Going into stillness
+in one's self.
+
+1241
+01:55:49,734 --> 01:55:53,067
+In little kids.
+In families.
+
+1242
+01:55:53,067 --> 01:55:57,467
+In fact, my favorite studies are
+about training whole families
+
+1243
+01:55:57,467 --> 01:55:59,934
+to become quiet.
+
+1244
+01:55:59,934 --> 01:56:04,968
+To actually take stillness
+as a family exercise.
+
+1245
+01:56:04,968 --> 01:56:08,701
+Can you imagine taking stillness
+as a work exercise?
+
+1246
+01:56:08,701 --> 01:56:11,334
+So, for example,
+our lab meetings.
+
+1247
+01:56:11,334 --> 01:56:14,834
+My little group,
+we begin in silence.
+
+1248
+01:56:14,834 --> 01:56:16,501
+The Quakers do it.
+
+1249
+01:56:16,501 --> 01:56:21,033
+Introducing silence
+both mentally and communally.
+
+1250
+01:56:21,033 --> 01:56:24,000
+As a practice,
+that's not bizarre or weird.
+
+1251
+01:56:24,000 --> 01:56:27,834
+That actually reinforces how
+people feel about each other.
+
+1252
+01:56:27,834 --> 01:56:29,901
+But the key thing you're saying
+is right.
+
+1253
+01:56:29,901 --> 01:56:32,100
+How do we integrate this both
+intrapersonally--
+
+1254
+01:56:32,100 --> 01:56:33,601
+Like, in me?
+
+1255
+01:56:33,601 --> 01:56:35,467
+And that's something that
+each person has to figure out.
+
+1256
+01:56:35,467 --> 01:56:38,133
+How do I find that still,
+quiet place inside?
+
+1257
+01:56:38,133 --> 01:56:40,200
+Nourish it.
+Enjoy it.
+
+1258
+01:56:40,200 --> 01:56:42,267
+Actually, like, enjoy it.
+
+1259
+01:56:42,267 --> 01:56:45,133
+How do I experience that
+with other people?
+
+1260
+01:56:45,133 --> 01:56:48,501
+So in psychotherapy,
+this sensibility
+
+1261
+01:56:48,501 --> 01:56:50,067
+has kinda been infused lately.
+
+1262
+01:56:50,067 --> 01:56:51,968
+Mindfulness, acceptance,
+et cetera.
+
+1263
+01:56:51,968 --> 01:56:54,467
+And people are experimenting
+both in individual,
+
+1264
+01:56:54,467 --> 01:56:55,968
+couples, group therapy.
+
+1265
+01:56:55,968 --> 01:56:58,901
+In workplaces,
+people are recognizing
+
+1266
+01:56:58,901 --> 01:57:04,067
+that well-being
+is as monetarily valuable
+
+1267
+01:57:04,067 --> 01:57:08,234
+to creativity,
+to lack of illness,
+
+1268
+01:57:08,234 --> 01:57:10,334
+to a communal sense,
+
+1269
+01:57:10,334 --> 01:57:12,400
+and even, for example,
+creativity.
+
+1270
+01:57:12,400 --> 01:57:14,234
+So if the mind--
+
+1271
+01:57:14,234 --> 01:57:16,567
+If you're a company
+that really requires
+
+1272
+01:57:16,567 --> 01:57:18,734
+thinking outside the box,
+
+1273
+01:57:18,734 --> 01:57:20,901
+and you know there's different
+forms of stress
+
+1274
+01:57:20,901 --> 01:57:23,167
+that make me box-like--
+
+1275
+01:57:23,167 --> 01:57:26,133
+Wow, gosh,
+I have to address that.
+
+1276
+01:57:26,133 --> 01:57:31,234
+And actively creating community,
+be it on a family level,
+
+1277
+01:57:31,234 --> 01:57:33,667
+be it amongst people here,
+be it even, like,
+
+1278
+01:57:33,667 --> 01:57:35,167
+a little work team.
+
+1279
+01:57:35,167 --> 01:57:37,067
+I don't know
+what vocabulary you use.
+
+1280
+01:57:37,067 --> 01:57:40,634
+But introducing that sensibility
+either just as a tool
+
+1281
+01:57:40,634 --> 01:57:44,167
+for people to become
+more still, creative, aware.
+
+1282
+01:57:44,167 --> 01:57:49,100
+Even pausing for a moment
+before responding.
+
+1283
+01:57:50,734 --> 01:57:52,467
+And then again,
+it's all of this--
+
+1284
+01:57:52,467 --> 01:57:53,801
+You know, there's the muscle
+of attention
+
+1285
+01:57:53,801 --> 01:57:55,367
+and anyone can develop that.
+
+1286
+01:57:55,367 --> 01:57:56,734
+And then there's becoming--
+
+1287
+01:57:56,734 --> 01:57:59,901
+Search inside yourself
+to become more and more aware.
+
+1288
+01:57:59,901 --> 01:58:01,734
+How does my mind work?
+
+1289
+01:58:01,734 --> 01:58:04,133
+How does my mind work?
+Being curious.
+
+1290
+01:58:04,133 --> 01:58:06,634
+How do I impact others?
+
+1291
+01:58:06,634 --> 01:58:09,434
+How do I understand
+when I feel off
+
+1292
+01:58:09,434 --> 01:58:11,067
+or emotionally off-balance?
+
+1293
+01:58:11,067 --> 01:58:12,701
+How can I bring myself back?
+
+1294
+01:58:12,701 --> 01:58:15,067
+How can I become more skillful
+with myself?
+
+1295
+01:58:15,067 --> 01:58:17,100
+You know, other people
+take care of themselves.
+
+1296
+01:58:17,100 --> 01:58:18,467
+But just myself.
+
+1297
+01:58:18,467 --> 01:58:20,467
+So I think it starts
+from an individual practice
+
+1298
+01:58:20,467 --> 01:58:25,400
+and then it will automatically
+touch other people.
+
+1299
+01:58:25,400 --> 01:58:27,100
+So just a simple example,
+you know?
+
+1300
+01:58:27,100 --> 01:58:29,400
+Paul Ekman,
+who spoke yesterday on NPR
+
+1301
+01:58:29,400 --> 01:58:30,767
+and who's, uh--
+
+1302
+01:58:30,767 --> 01:58:33,434
+He was a pretty intense--
+
+1303
+01:58:33,434 --> 01:58:36,200
+intense, difficult,
+researcher guy.
+
+1304
+01:58:36,200 --> 01:58:38,767
+He went to India
+specifically 'cause
+
+1305
+01:58:38,767 --> 01:58:40,934
+his daughter wanted
+to meet the Dalai Lama.
+
+1306
+01:58:40,934 --> 01:58:42,634
+I don't think Paul Ekman
+was interested.
+
+1307
+01:58:42,634 --> 01:58:44,734
+He went there
+and he was smitten.
+
+1308
+01:58:44,734 --> 01:58:46,100
+That's the right word.
+
+1309
+01:58:46,100 --> 01:58:48,734
+Touched, smitten...
+
+1310
+01:58:48,734 --> 01:58:51,734
+by something inexplicable and so
+much so that he said
+
+1311
+01:58:51,734 --> 01:58:54,801
+yesterday on the radio
+that when he saw his wife,
+
+1312
+01:58:54,801 --> 01:58:56,868
+who did not attend this meeting,
+
+1313
+01:58:56,868 --> 01:58:59,467
+she said, "You're not
+the husband I knew
+
+1314
+01:58:59,467 --> 01:59:01,501
+for the past several decades."
+
+1315
+01:59:01,501 --> 01:59:03,968
+He'd been touched by something
+and he's still trying
+
+1316
+01:59:03,968 --> 01:59:05,501
+to figure out what that is.
+
+1317
+01:59:05,501 --> 01:59:07,701
+So there's also this sense
+of contagion.
+
+1318
+01:59:07,701 --> 01:59:10,033
+So emotional contagion
+can either drive us nuts,
+
+1319
+01:59:10,033 --> 01:59:13,667
+'cause somebody else is,
+you know, totally off-balance
+
+1320
+01:59:13,667 --> 01:59:14,968
+and is making me off-balance.
+
+1321
+01:59:14,968 --> 01:59:17,100
+That's the negative side
+of contagion.
+
+1322
+01:59:17,100 --> 01:59:20,334
+The other part
+can be emotional contagion
+
+1323
+01:59:20,334 --> 01:59:22,834
+or compassionate contagion
+where one person in the room
+
+1324
+01:59:22,834 --> 01:59:24,801
+is like, present.
+
+1325
+01:59:24,801 --> 01:59:27,701
+And other people are like,
+"Ooh, I feel that."
+
+1326
+01:59:27,701 --> 01:59:30,234
+That's a positive side
+of contagion.
+
+1327
+01:59:30,234 --> 01:59:33,367
+Being touched by,
+influenced by another person's
+
+1328
+01:59:33,367 --> 01:59:34,834
+inner development.
+
+1329
+01:59:34,834 --> 01:59:36,701
+So that's possible.
+
+1330
+01:59:36,701 --> 01:59:38,567
+And we have evidence
+that that's possible.
+
+1331
+01:59:38,567 --> 01:59:40,167
+Yeah.
+
+1332
+01:59:40,167 --> 01:59:45,667
+Ming: Maybe one last question,
+if any.
+
+1333
+01:59:45,667 --> 01:59:47,801
+woman: Um, maybe this
+isn't as related.
+
+1334
+01:59:47,801 --> 01:59:51,667
+But what's your view
+on psychoanalysis and how--
+
+1335
+01:59:51,667 --> 01:59:54,534
+Is that related at all or--
+
+1336
+01:59:54,534 --> 01:59:56,267
+I mean, 'cause you
+were kind of--
+
+1337
+01:59:56,267 --> 01:59:57,667
+These are almost--
+
+1338
+01:59:57,667 --> 02:00:00,367
+Sometimes I wonder
+if there are kind of
+
+1339
+02:00:00,367 --> 02:00:02,434
+bigger things
+that would prevent mindfulness
+
+1340
+02:00:02,434 --> 02:00:05,868
+or cognitive based
+therapies from actually
+
+1341
+02:00:05,868 --> 02:00:07,901
+taking as much effect.
+
+1342
+02:00:07,901 --> 02:00:10,567
+Goldin: So Mark Epstein,
+New York City,
+
+1343
+02:00:10,567 --> 02:00:13,234
+psychoanalytically trained
+psychotherapist,
+
+1344
+02:00:13,234 --> 02:00:15,501
+also Buddhist practitioner.
+
+1345
+02:00:15,501 --> 02:00:17,367
+He has several really good books
+
+1346
+02:00:17,367 --> 02:00:19,701
+addressing exactly
+this question.
+
+1347
+02:00:19,701 --> 02:00:23,167
+Within psychotherapy approaches,
+there's a wide range
+
+1348
+02:00:23,167 --> 02:00:24,901
+of how people work.
+
+1349
+02:00:24,901 --> 02:00:26,234
+And also it's
+different skills
+
+1350
+02:00:26,234 --> 02:00:27,968
+for different kinds
+of problems.
+
+1351
+02:00:27,968 --> 02:00:30,334
+You would treat elevator phobia
+very different
+
+1352
+02:00:30,334 --> 02:00:33,534
+than relationship phobia,
+for example.
+
+1353
+02:00:33,534 --> 02:00:35,634
+And also, you know,
+you go back to Freud.
+
+1354
+02:00:35,634 --> 02:00:37,300
+He talked about hovering--
+
+1355
+02:00:37,300 --> 02:00:38,868
+Trying to get
+the right vocabulary.
+
+1356
+02:00:38,868 --> 02:00:41,167
+I think he said
+"hovering awareness".
+
+1357
+02:00:41,167 --> 02:00:44,434
+This ability to just let
+the attention just rest
+
+1358
+02:00:44,434 --> 02:00:47,667
+and hover and be aware.
+
+1359
+02:00:47,667 --> 02:00:49,367
+And that actually could be--
+
+1360
+02:00:49,367 --> 02:00:51,367
+That's one aspect of--
+
+1361
+02:00:51,367 --> 02:00:53,767
+Resting in mindful awareness
+with nothing to do,
+
+1362
+02:00:53,767 --> 02:00:57,000
+nowhere to go,
+just observing,
+
+1363
+02:00:57,000 --> 02:00:58,300
+and enjoying that.
+
+1364
+02:00:58,300 --> 02:01:01,067
+So, in fact,
+that could be something
+
+1365
+02:01:01,067 --> 02:01:03,968
+that arises
+from psychoanalytic practice.
+
+1366
+02:01:03,968 --> 02:01:06,067
+So not just theory but practice.
+
+1367
+02:01:06,067 --> 02:01:08,501
+So, yeah, I mean,
+we're all humans.
+
+1368
+02:01:08,501 --> 02:01:11,033
+And we can give
+different vocabulary
+
+1369
+02:01:11,033 --> 02:01:14,334
+but it's the same suffering
+with slightly different flavors.
+
+1370
+02:01:14,334 --> 02:01:18,801
+And it's the same tools
+to restore well-being,
+
+1371
+02:01:18,801 --> 02:01:20,934
+balanced,
+psychological flexibility,
+
+1372
+02:01:20,934 --> 02:01:22,534
+not being stuck.
+
+1373
+02:01:22,534 --> 02:01:25,534
+And also believing that
+I actually can do something.
+
+1374
+02:01:25,534 --> 02:01:28,801
+That's one of the things that
+arises in any form of therapy
+
+1375
+02:01:28,801 --> 02:01:30,467
+or training
+or even friendship--
+
+1376
+02:01:30,467 --> 02:01:32,734
+True friendship is that,
+"Oh, my gosh.
+
+1377
+02:01:32,734 --> 02:01:37,334
+I can expand.
+I can be more than this."
+
+1378
+02:01:37,334 --> 02:01:38,968
+That is the sense.
+
+1379
+02:01:38,968 --> 02:01:40,167
+Then you trust that
+and you're hopeful
+
+1380
+02:01:40,167 --> 02:01:41,534
+that something can happen.
+
+1381
+02:01:41,534 --> 02:01:42,801
+I'm actually doing a study
+on hopefulness
+
+1382
+02:01:42,801 --> 02:01:43,968
+and hopelessness.
+
+1383
+02:01:43,968 --> 02:01:45,000
+And it really is--
+
+1384
+02:01:45,000 --> 02:01:47,400
+You can actually see
+in the brain.
+
+1385
+02:01:47,400 --> 02:01:50,200
+You can differentiate
+a hopeful state
+
+1386
+02:01:50,200 --> 02:01:51,634
+or a hopelessness.
+
+1387
+02:01:51,634 --> 02:01:54,767
+And even about
+being able to develop.
+
+1388
+02:01:54,767 --> 02:01:57,334
+Some people don't believe we can
+train the brain.
+
+1389
+02:01:57,334 --> 02:01:59,467
+And that's
+kind of a hopeless state.
+
+1390
+02:01:59,467 --> 02:02:02,501
+So let's actually
+change that with evidence.
+
+1391
+02:02:02,501 --> 02:02:04,400
+Personal evidence.
+
+1392
+02:02:04,400 --> 02:02:05,968
+Ming: And with that,
+thank you, Philippe.
+
+1393
+02:02:05,968 --> 02:02:07,534
+Goldin: Okay, thank you.
+
+1394
+02:02:07,534 --> 02:02:09,634
+[applause]
+

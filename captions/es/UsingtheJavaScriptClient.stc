@@ -1,0 +1,496 @@
+﻿*TC 00:00:06;19
+Hola. Soy Austin Chau,
+
+*TC 00:00:08;05
+del equipo del API de
+datos de Calendar.
+
+*TC 00:00:10;22
+El API de datos de Calendar es
+el API que muestra los datos
+
+*TC 00:00:14;08
+de tu cuenta de Google Calendar.
+
+*TC 00:00:16;08
+Con el API, podemos hacer
+cosas como crear eventos,
+
+*TC 00:00:18;26
+buscarlos o incluso crear
+automáticamente un programa
+
+*TC 00:00:21;23
+de calendario nuevo.
+
+*TC 00:00:23;12
+Hoy vamos a ver cómo empezar
+a utilizar la biblioteca
+
+*TC 00:00:25;21
+cliente JavaScript para
+hablar con esta API de datos.
+
+*TC 00:00:29;02
+También veremos una demostración
+de mi nueva guía interactiva
+
+*TC 00:00:31;18
+para desarrolladores.
+
+*TC 00:00:33;29
+Esta guía para desarrolladores
+permite jugar con el código
+
+*TC 00:00:36;01
+en el navegador.
+
+*TC 00:00:37;06
+Resulta una gran herramienta de
+aprendizaje para aprender a
+
+*TC 00:00:39;16 
+usar la biblioteca cliente.
+
+*TC 00:00:41;07
+La biblioteca JavaScript es la
+última biblioteca cliente
+
+*TC 00:00:43;18
+que hemos añadido a nuestra lista
+de bibliotecas cliente
+
+*TC 00:00:45;19
+compatibles oficialmente,
+como Java, CSharp, PHP
+
+*TC 00:00:49;15
+y Phython.
+
+*TC 00:00:50;26
+La biblioteca que tratamos
+aquí es particularmente útil,
+
+*TC 00:00:53;16
+porque se puede integrar con
+facilidad con el código HTML y
+
+*TC 00:00:56;18
+no implica dependencia
+del servicio.
+
+*TC 00:00:58;24
+Esta biblioteca cliente
+también incluye tecnología
+
+*TC 00:01:00;20 
+que permite la comunicación
+entre dominios, por lo que ahora
+
+*TC 00:01:04;09
+podemos usar JavaScript tanto
+para volver a hacer
+
+*TC 00:01:06;10
+operaciones como para escribir.
+
+*TC 00:01:08;21
+Es fácil usar la biblioteca
+cliente JavaScript.
+
+*TC 00:01:11;09 
+Veremos los pasos necesarios
+para configurar tu código y así
+
+*TC 00:01:13;20
+poder empezar a utilizarlo.
+
+*TC 00:01:16;27
+Paso 1: nos registramos para
+obtener la clave. Para ello
+
+*TC 00:01:20;03
+debemos acceder a este sitio web.
+
+*TC 00:01:22;20
+Paso 2: tendremos que incluir
+el cargador de la biblioteca
+
+*TC 00:01:26;01
+en el sitio web colocando este
+código que se incluye
+
+*TC 00:01:28;07
+con la clave anterior.
+
+*TC 00:01:30;05
+Paso 3: es necesario subir una
+imagen al mismo dominio donde
+
+*TC 00:01:32;17
+se encontrará el código
+JavaScript. Esta imagen no tiene que
+
+*TC 00:01:35;13
+ser visible. 
+
+*TC 00:01:36;09
+Como podéis ver, la colocamos
+lejos de la página.
+
+*TC 00:01:39;06
+Se usa con fines de
+comunicación
+
+*TC 00:01:40;12
+entre dominios.
+
+*TC 00:01:42;12
+Paso 4: tenemos que usar el
+cargador para cargar
+
+*TC 00:01:45;04
+nuestra biblioteca cliente.
+
+*TC 00:01:46;23
+Paso 5: ahora debemos definir
+una llamada a la función de
+
+*TC 00:01:49;14
+devolución de llamada cuando
+se cargue la biblioteca.
+
+*TC 00:01:52;02
+Paso 6: dentro de la función de
+devolución, tenemos que comprobar si
+
+*TC 00:01:55;10
+se ha iniciado sesión. 
+
+*TC 00:01:56;19
+Si no es así, tendremos que
+redirigir al usuario a la página
+
+*TC 00:01:58;29
+de la cuenta de Google para
+
+*TC 00:02:00;26
+iniciar sesión. El usuario volverá
+a nuestra página
+
+*TC 00:02:03;00
+cuando se autentique.
+
+*TC 00:02:04;19
+Ahora estamos listos para usar
+la biblioteca cliente
+
+*TC 00:02:06;15
+para jugar con el API
+de datos de Calendar.
+
+*TC 00:02:09;28
+Pasemos a la guía
+paradesarrolladores interactiva.
+
+*TC 00:02:12;09
+Para acceder a ella, vayamos
+a esta dirección.
+
+*TC 00:02:17;03
+La guía interactiva
+para desarrolladores parece
+
+*TC 00:02:19;03
+una guía para desarrolladores
+normal con código de ejemplo,
+
+*TC 00:02:21;12
+que muestra los usos más
+comunes de esta API.
+
+*TC 00:02:24;13
+Pero, a diferencia de
+una guía normal, ahora podemos
+
+*TC 00:02:26;16
+modificar el código fuente
+con el editor de texto integrado
+
+*TC 00:02:29;05
+y ejecutar código fuera
+del navegador.
+
+*TC 00:02:31;14
+Resulta una forma divertida e
+intuitiva de aprender
+
+*TC 00:02:34;06
+mientras se ven los resultados
+de la acción recién realizada.
+
+*TC 00:02:37;16
+Echemos un vistazo a algunos
+códigos de ejemplo e intentemos
+
+*TC 00:02:39;12
+ejecutarlos.
+
+*TC 00:02:40;28
+Mirad lo que ocurre cuando
+ejecutamos este código.
+
+*TC 00:02:44;21
+El fragmento que ejecutamos
+recuperó una lista de todos los
+
+*TC 00:02:47;02
+calendarios y mostró
+los títulos.
+
+*TC 00:02:49;25
+Podemos abrir la versión
+insertada de Google Calendar para
+
+*TC 00:02:52;03
+verificar que éstos sean todos
+sus calendarios.
+
+*TC 00:02:58;20
+Examinemos ahora el código
+para ver cómo podemos hacerlo.
+
+*TC 00:03:02;12
+Primero tendremos que crear el
+objeto CalendarService e incluir
+
+*TC 00:03:05;18
+el nombre de la aplicación.
+
+*TC 00:03:09;27
+Después especificaremos el 
+"feedURL", donde se enviará
+
+*TC 00:03:12;18
+esta solicitud.
+
+*TC 00:03:15;09
+Estamos usando
+el feed "allcalendar".
+
+*TC 00:03:17;16
+Ahora tenemos que definir
+la función de devolución.
+
+*TC 00:03:20;13
+Así que, dentro de una función,
+sólo examinamos la lista
+
+*TC 00:03:24;17
+de calendarios que tenemos
+y mostramos sus títulos.
+
+*TC 00:03:27;08
+Estamos usando la función
+de impresión, un
+
+*TC 00:03:29;13 
+método de ayuda incluido en
+esta guía para
+
+*TC 00:03:31;15
+desarrolladores.
+
+*TC 00:03:34;13
+Debemos crear una función
+de devolución de llamada
+
+*TC 00:03:37;02
+para la "gestión de errores".
+
+*TC 00:03:39;13
+Y ahora mostramos el mensaje
+de error en la ficha
+
+*TC 00:03:41;27
+"Output".
+
+*TC 00:03:43;08
+Por último, enviaremos
+esta solicitud al servidor.
+
+*TC 00:03:45;04
+Para ello, llamamos a
+"getALLCalendarsFeed" mediante
+
+*TC 00:03:49;10
+el objeto Calendar Service
+pasando el elemento "feedURL",
+
+*TC 00:03:52;23
+"callback" y
+"error callback".
+
+*TC 00:03:55;21
+Vamos a modificar el código
+a algo distinto.
+
+*TC 00:03:58;04
+Añadiremos código para mostrar
+la zona horaria fuera
+
+*TC 00:03:59;29
+del calendario.
+
+*TC 00:04:01;17
+Podemos hacerlo fácilmente
+si modificamos el código
+
+*TC 00:04:03;12
+en un editor de texto.
+
+*TC 00:04:07;02
+Ahora ejecutaremos este código.
+
+*TC 00:04:12;22
+Veremos que tenemos que incluir
+el título y la zona horaria
+
+*TC 00:04:15;25
+y mostrarlos.
+
+*TC 00:04:18;19
+Vale. Puede resultar divertido
+leer datos de los calendarios,
+
+*TC 00:04:20;29
+pero es más interesante
+escribirlos.
+
+*TC 00:04:23;14
+Vamos a crear un evento para
+la cuenta de Google Calendar.
+
+*TC 00:04:26;04
+Primero hay que volver a
+crear un objeto Service.
+
+*TC 00:04:29;16
+Y ahora hay que especificar
+una URL distinta para
+
+*TC 00:04:31;25
+crear el evento.
+
+*TC 00:04:33;21
+Ésta es la URL que vamos
+a utilizar, la URL 
+
+*TC 00:04:35;24
+"private/full".
+
+*TC 00:04:38;24
+Ahora tenemos que crear un objeto
+MDB para representar este
+
+*TC 00:04:41;06
+nuevo evento.
+
+*TC 00:04:43;08
+Definimos el título
+"youtube video shoot".
+
+*TC 00:04:48;18
+Para asociar tiempo a un
+evento, hay que crear un objeto
+
+*TC 00:04:50;16
+"When".
+
+*TC 00:04:51;24 
+Definimos una fecha de inicio
+y fin del objeto
+
+*TC 00:04:53;09
+"When" mediante la
+cadena de hora del día.
+
+*TC 00:04:56;03
+Y aquí especificamos que la
+fecha de inicio será hoy
+
+*TC 00:04:58;23
+a las 9:00 a.m.
+
+*TC 00:05:00;16
+Y especificamos la hora final hoy: 10:00 a.m.
+
+*TC 00:05:06;04
+Después definimos la
+hora en el objeto "When".
+
+*TC 00:05:11;06
+Añadimos el objeto
+"When" al evento.
+
+*TC 00:05:14;11
+También debemos especificar
+la función de devolución de
+
+*TC 00:05:16;13
+llamada para
+saber cuándo se crea
+
+*TC 00:05:19;05
+el evento, así como el método
+"error handling method" si
+
+*TC 00:05:21;23
+se produce algún error.
+
+*TC 00:05:23;16
+Por último, enviaremos esta
+solicitud al servidor llamando
+
+*TC 00:05:26;06
+al método
+"insert event method".
+
+*TC 00:05:30;07
+Ahora ejecutamos el código.
+
+*TC 00:05:35;09
+Echemos un vistazo a
+este calendario de datos.
+
+*TC 00:05:40;20
+Aquí está.
+
+*TC 00:05:44;13
+Espero que os hagáis una idea de
+lo fácil que es usar esta
+
+*TC 00:05:46;13
+biblioteca cliente.
+
+*TC 00:05:48;07
+La guía interactiva incluye
+muchos otros ejemplos que
+
+*TC 00:05:50;19
+demuestran otras funciones
+del API de datos de Calendar.
+
+*TC 00:05:53;10
+Os animo a que la consultéis
+y experimentéis con ella.
+
+*TC 00:05:56;00
+Para obtener más recursos,
+visitad la página principal
+
+*TC 00:05:58;06
+en "http://code.google.com/intl/es/".
+
+*TC 00:06:01;03
+Gracias, y que os divirtáis.

@@ -1,0 +1,318 @@
+0:00:00.000,0:00:01.939
+Hi, I'm Rob Powers from Clever Machine.
+
+0:00:02.360,0:00:05.219
+We built our app Scenechronize using the google web toolkit.
+
+0:00:05.460,0:00:11.199
+Scenechronize is an application designed for a producing team to make a movie or television program.
+
+0:00:11.519,0:00:12.949
+Let me show you the
+
+0:00:13.479,0:00:19.079
+application. Scenechronize is an application that's based around a script for a movie or a television production. The
+
+0:00:19.489,0:00:22.159
+user would first load in a PDF of their script
+
+0:00:22.250,0:00:23.299
+and we would parse it. We
+
+0:00:23.299,0:00:25.350
+pull information about the scenes,
+
+0:00:25.599,0:00:29.239
+the locations, and the speaking characters directly out of the script.
+
+0:00:29.529,0:00:30.139
+Um,
+
+0:00:30.139,0:00:33.589
+as you can see on the display here, the script is shown on the left side and
+
+0:00:33.869,0:00:35.579
+the user can scroll through. As
+
+0:00:35.909,0:00:37.080
+they scroll, the
+
+0:00:37.080,0:00:38.720
+page updates to show
+
+0:00:38.720,0:00:41.139
+various information for the current scene. The
+
+0:00:41.319,0:00:42.769
+user can also navigate
+
+0:00:43.029,0:00:44.969
+using the pearls along the top
+
+0:00:45.100,0:00:48.019
+by just clicking and it will directly go to that scene.
+
+0:00:48.189,0:00:52.039
+Or also, using the list box along the left side.
+
+0:00:53.170,0:00:56.079
+Let's go take a look at a scene that has some information in it that
+
+0:00:56.680,0:00:59.319
+would be typical in a production that's in progress.
+
+0:01:00.259,0:01:01.649
+In this particular scene, you
+
+0:01:01.680,0:01:04.250
+can see that on the right, there are a number of
+
+0:01:04.250,0:01:06.329
+items that are described. These
+
+0:01:06.620,0:01:07.790
+are the various
+
+0:01:07.790,0:01:11.479
+pieces for that scene that are going to be needed when shooting occurs.
+
+0:01:11.830,0:01:15.659
+These would include the characters with speaking parts as well as non-speaking parts,
+
+0:01:15.860,0:01:17.479
+extras, animals,
+
+0:01:17.690,0:01:18.919
+picture vehicles,
+
+0:01:19.040,0:01:21.299
+sound effects that needs
+
+0:01:21.769,0:01:23.919
+to happen, set information,
+
+0:01:23.940,0:01:24.709
+and the like.
+
+0:01:25.510,0:01:27.329
+to add new items into the
+
+0:01:27.970,0:01:29.250
+scene, you can either
+
+0:01:29.470,0:01:30.439
+click on part
+
+0:01:30.470,0:01:32.909
+of the ui on the right, or you can tag. And
+
+0:01:32.989,0:01:35.799
+tagging is simply a selection in the script itself,
+
+0:01:36.059,0:01:38.139
+telling it what item category
+
+0:01:38.139,0:01:39.369
+you're including.
+
+0:01:39.639,0:01:41.529
+In this case, we have a camera
+
+0:01:41.669,0:01:43.349
+that's needed for scene 21 and
+
+0:01:43.349,0:01:45.679
+we already have an existing camera in the system. So
+
+0:01:45.909,0:01:47.789
+we can select the existing element and
+
+0:01:47.790,0:01:49.969
+it gets displayed right on the screen.
+
+0:01:52.169,0:01:55.029
+For more information about any of the items, you can click on them.
+
+0:01:55.360,0:02:02.119
+And that comes, it will show a list of scenes that that particular item is used in. In this case, we're looking at a character
+
+0:02:02.250,0:02:03.969
+called David from this movie.
+
+0:02:04.369,0:02:07.449
+Uh, he's used in, he appears in 73 scenes and there
+
+0:02:07.619,0:02:10.430
+were a number of actors that were considered for the
+
+0:02:10.819,0:02:12.370
+role. For the actors, you
+
+0:02:12.549,0:02:13.499
+can click
+
+0:02:13.499,0:02:15.500
+onto any of the options that were
+
+0:02:16.039,0:02:16.790
+considered
+
+0:02:16.889,0:02:19.880
+and see pictures as well as other biographical data. You
+
+0:02:20.459,0:02:24.589
+can choose the appropriate actor that's actually going to be used in the movie on this screen.
+
+0:02:25.129,0:02:31.100
+Um, you can notice that as soon as you select one, if we switch tabs, it will be reflected immediately there.
+
+0:02:31.199,0:02:33.570
+Any reporting that gets done on the project will
+
+0:02:33.629,0:02:36.190
+include the latest update as soon as you enter it.
+
+0:02:37.439,0:02:39.279
+Another use for our application is
+
+0:02:39.279,0:02:41.080
+for scheduling a production.
+
+0:02:41.359,0:02:47.479
+The tool that's used in the industry is something called a strip board, and what we have provided is an electronic version of that.
+
+0:02:48.269,0:02:50.500
+It's basically a list of scenes,
+
+0:02:50.509,0:02:52.699
+each one as a "strip" that are
+
+0:02:52.939,0:02:54.760
+broken down by shooting day. Our
+
+0:02:55.419,0:02:57.860
+application uses a drag and drop interface that
+
+0:02:58.019,0:02:59.770
+allows the user to pull,
+
+0:02:59.799,0:03:01.750
+uh, one or more
+
+0:03:01.939,0:03:03.110
+of these strips
+
+0:03:03.209,0:03:06.070
+around the stripboard as needed. As
+
+0:03:06.349,0:03:08.369
+those changes happen, things
+
+0:03:08.599,0:03:11.550
+like the number of pages that are being shot that day
+
+0:03:11.839,0:03:13.229
+updates live. The
+
+0:03:13.829,0:03:15.909
+rich interface that our app provides
+
+0:03:15.909,0:03:19.150
+allows users to work in an environment that is comfortable to them
+
+0:03:19.219,0:03:22.540
+while providing a lot of data in a small amount of screen real estate. We
+
+0:03:23.249,0:03:27.220
+chose to use GWT for our application because it allowed us to write in Java,
+
+0:03:27.489,0:03:31.440
+which opened up the wide range of tools that are available for Java-based apps.
+
+0:03:31.739,0:03:33.520
+This allowed us to maintain the app,
+
+0:03:33.899,0:03:36.889
+refactor the code, and most importantly, debug it
+
+0:03:37.179,0:03:40.440
+much more easily than if we'd been writing in Javascript directly. We
+
+0:03:41.119,0:03:44.029
+tried a few of the other Javascript libraries available, and
+
+0:03:44.039,0:03:46.500
+we found that our code was slower
+
+0:03:46.579,0:03:48.940
+and more bug-prone than when we were using GWT. One of
+
+0:03:49.859,0:03:53.039
+the other advantages of GWT is because it is
+
+0:03:53.169,0:03:55.149
+multi-browser, it supports multiple browsers,
+
+0:03:55.299,0:03:58.919
+we're able to actually write our app so that it looks the same and works the same
+
+0:03:58.999,0:04:01.029
+across four major browser types. As
+
+0:04:01.489,0:04:03.449
+far as the user is concerned,
+
+0:04:03.679,0:04:04.930
+they don't know that
+
+0:04:04.939,0:04:06.839
+there's a difference between them,
+
+0:04:06.929,0:04:07.930
+but uhm, the
+
+0:04:08.149,0:04:11.430
+code is obviously quite different because of the GWT compiler's output.
+
+0:04:12.579,0:04:17.739
+We extended the GWT widget library so that we could use a custom MVC layer that we built,
+
+0:04:17.919,0:04:19.640
+and this allowed us to minimize the
+
+0:04:19.690,0:04:24.339
+amount of data that needed to be called into the client
+
+0:04:24.519,0:04:29.200
+and simplified the client coding so that we were less prone to introducting bugs due
+
+0:04:29.329,0:04:31.619
+to custom data request, uh,
+
+0:04:31.619,0:04:32.329
+data requests
+
+0:04:33.169,0:04:33.850
+that we
+
+0:04:34.039,0:04:35.769
+would need to make.
+
+0:04:36.649,0:04:38.010
+We utilize the
+
+0:04:38.109,0:04:41.970
+plug-in architecture of the GWT RPC layer to support the back end of that.
+
+0:04:42.099,0:04:47.559
+So as a user needs data, we can pull it piecemeal, piece by piece, from the server. And
+
+0:04:47.739,0:04:52.519
+as they make changes to things, we can push the changes live back to the
+
+0:04:52.519,0:04:54.950
+server. Overall we've been very happy with our experience with GWT,
+
+0:04:55.279,0:04:58.160
+and our app has been much better as a result.
+

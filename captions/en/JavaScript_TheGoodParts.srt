@@ -1,0 +1,7101 @@
+1
+00:00:22,534 --> 00:00:23,801
+Souders: All right,
+welcome, everyone.
+
+2
+00:00:23,801 --> 00:00:26,234
+It's great
+to see a big crowd here.
+
+3
+00:00:26,234 --> 00:00:27,901
+My name's Steve Souders.
+
+4
+00:00:27,901 --> 00:00:30,701
+I work here at Google
+on latency.
+
+5
+00:00:30,701 --> 00:00:34,501
+And I wanted to do a couple
+plugs for these talks.
+
+6
+00:00:34,501 --> 00:00:38,000
+I'm trying to see about
+starting up a series
+
+7
+00:00:38,000 --> 00:00:39,934
+of tech speakers coming in.
+
+8
+00:00:39,934 --> 00:00:42,968
+So a couple weeks ago we had
+John Resig come in
+
+9
+00:00:42,968 --> 00:00:45,133
+and you can see
+that talk
+
+10
+00:00:45,133 --> 00:00:49,501
+up on the Google developer
+channel up on Google code.
+
+11
+00:00:49,501 --> 00:00:54,133
+And next Thursday
+at 11:00 A.M. right here
+
+12
+00:00:54,133 --> 00:00:56,667
+is Rob Campbell
+who works at Mozilla
+
+13
+00:00:56,667 --> 00:00:59,834
+and he's one of the people
+leading the Firebug effort.
+
+14
+00:00:59,834 --> 00:01:02,133
+And he's gonna do a talk next
+Thursday at 11:00
+
+15
+00:01:02,133 --> 00:01:05,100
+right here on Firebug
+and the new releases
+
+16
+00:01:05,100 --> 00:01:07,767
+that are coming out
+and some of the new features.
+
+17
+00:01:07,767 --> 00:01:09,367
+And--
+But today--
+
+18
+00:01:09,367 --> 00:01:11,567
+So today we have
+Doug Crockford.
+
+19
+00:01:11,567 --> 00:01:14,234
+Um, I worked
+with Doug at Yahoo.
+
+20
+00:01:14,234 --> 00:01:15,734
+That's where I met him.
+
+21
+00:01:15,734 --> 00:01:19,200
+And I remember
+the first time I met him
+
+22
+00:01:19,200 --> 00:01:21,934
+and he told me his name,
+I said,
+
+23
+00:01:21,934 --> 00:01:23,901
+"I know that name somewhere.
+I know that name somewhere.
+
+24
+00:01:23,901 --> 00:01:27,334
+Oh, yeah, I've been using the
+stuff on your website a lot."
+
+25
+00:01:27,334 --> 00:01:30,901
+And so I was really
+excited to meet him.
+
+26
+00:01:30,901 --> 00:01:33,234
+And he's a really nice guy.
+
+27
+00:01:33,234 --> 00:01:35,567
+I enjoyed working
+with him at Yahoo.
+
+28
+00:01:35,567 --> 00:01:38,033
+Um, I--
+
+29
+00:01:38,033 --> 00:01:41,167
+I, uh, have a little bit
+of hesitation
+
+30
+00:01:41,167 --> 00:01:44,634
+because when my book came out,
+it did pretty well.
+
+31
+00:01:44,634 --> 00:01:48,234
+And then Doug's book came out
+and just kicked my book's butt.
+
+32
+00:01:48,234 --> 00:01:49,501
+And so I just checked.
+
+33
+00:01:49,501 --> 00:01:51,467
+And I'm, like, at 6,000
+and you're at, like,
+
+34
+00:01:51,467 --> 00:01:53,501
+4,000 on Amazon
+sales rank, Doug.
+
+35
+00:01:53,501 --> 00:01:56,000
+So that's really good.
+
+36
+00:01:56,000 --> 00:02:00,701
+And I believe that this talk
+is largely based on his book,
+
+37
+00:02:00,701 --> 00:02:02,367
+"JavaScript: The Good Parts."
+
+38
+00:02:02,367 --> 00:02:04,534
+And so we'll run
+for about an hour
+
+39
+00:02:04,534 --> 00:02:06,400
+and have time for Q and A.
+
+40
+00:02:06,400 --> 00:02:08,133
+So without any further ado,
+
+41
+00:02:08,133 --> 00:02:09,634
+please help me welcome
+Doug Crockford.
+
+42
+00:02:09,634 --> 00:02:15,634
+[applause]
+
+43
+00:02:15,634 --> 00:02:17,234
+I forgot.
+
+44
+00:02:17,234 --> 00:02:19,434
+Here's your Google
+tech talk goodie bag.
+
+45
+00:02:19,434 --> 00:02:22,067
+Crockford: This is what makes it
+all worthwhile, right here.
+
+46
+00:02:22,067 --> 00:02:25,067
+[laughter]
+
+47
+00:02:25,067 --> 00:02:26,167
+So, thank you, everybody.
+
+48
+00:02:26,167 --> 00:02:27,968
+I'm Doug Crockford
+from the Yahoo.
+
+49
+00:02:27,968 --> 00:02:31,968
+And I'm here today
+to talk about the good parts.
+
+50
+00:02:31,968 --> 00:02:34,434
+Now when I first started
+talking about JavaScript,
+
+51
+00:02:34,434 --> 00:02:36,868
+there were a lot of people who
+just could not accept the fact
+
+52
+00:02:36,868 --> 00:02:39,901
+that JavaScript has good parts.
+
+53
+00:02:39,901 --> 00:02:42,968
+But, in fact, it does.
+
+54
+00:02:42,968 --> 00:02:46,467
+But it's not well understood.
+Even now.
+
+55
+00:02:46,467 --> 00:02:50,100
+JavaScript has become probably
+the most important
+
+56
+00:02:50,100 --> 00:02:51,400
+programming language
+in the world.
+
+57
+00:02:51,400 --> 00:02:53,234
+There's more
+JavaScript processors
+
+58
+00:02:53,234 --> 00:02:55,567
+on more computers
+than anything else
+
+59
+00:02:55,567 --> 00:02:59,667
+by a very large factor.
+
+60
+00:02:59,667 --> 00:03:03,234
+But despite that,
+JavaScript is not held
+
+61
+00:03:03,234 --> 00:03:05,234
+in very good esteem,
+even within
+
+62
+00:03:05,234 --> 00:03:07,133
+its own programming community.
+
+63
+00:03:07,133 --> 00:03:10,868
+For example, the C#
+community loves Anders.
+
+64
+00:03:10,868 --> 00:03:13,300
+And the Java community
+loves Gosling.
+
+65
+00:03:13,300 --> 00:03:17,133
+And the PHP community
+loves Rasmus.
+
+66
+00:03:17,133 --> 00:03:22,400
+But in the JavaScript community,
+there is no love.
+
+67
+00:03:22,400 --> 00:03:24,033
+And there should be.
+
+68
+00:03:24,033 --> 00:03:28,701
+And I think it indicates a lack
+of understanding.
+
+69
+00:03:28,701 --> 00:03:31,968
+That's why JavaScript
+is still the world's
+
+70
+00:03:31,968 --> 00:03:34,100
+most misunderstood
+programming language.
+
+71
+00:03:34,100 --> 00:03:36,334
+It's the only language
+that I'm aware of
+
+72
+00:03:36,334 --> 00:03:39,501
+that people feel that
+they don't need to learn it
+
+73
+00:03:39,501 --> 00:03:41,367
+before they start using it.
+
+74
+00:03:41,367 --> 00:03:43,534
+[laughter]
+
+75
+00:03:43,534 --> 00:03:46,434
+It kinda looks familiar
+and yeah, yeah, yeah, yeah.
+
+76
+00:03:46,434 --> 00:03:47,968
+I've seen this before.
+I know how this works.
+
+77
+00:03:47,968 --> 00:03:50,300
+In fact, it works in a really
+radically different way.
+
+78
+00:03:50,300 --> 00:03:52,968
+It just looks very similar.
+
+79
+00:03:52,968 --> 00:03:55,767
+And then when people misuse it
+as inevitably they do
+
+80
+00:03:55,767 --> 00:03:57,367
+because they don't
+know how it works,
+
+81
+00:03:57,367 --> 00:04:02,868
+they get angry at it,
+and misunderstand it.
+
+82
+00:04:02,868 --> 00:04:04,534
+Which is a shame
+because there's actually
+
+83
+00:04:04,534 --> 00:04:06,167
+good stuff in this language.
+
+84
+00:04:06,167 --> 00:04:10,701
+And because it's everywhere,
+JavaScript is now becoming
+
+85
+00:04:10,701 --> 00:04:13,167
+the virtual machine
+for the world,
+
+86
+00:04:13,167 --> 00:04:15,701
+which is a really odd
+mission for this
+
+87
+00:04:15,701 --> 00:04:18,133
+little misunderstood language.
+
+88
+00:04:18,133 --> 00:04:20,801
+You know, you're doing it
+here at Google with the GUID.
+
+89
+00:04:20,801 --> 00:04:22,534
+And there are
+lots of other examples
+
+90
+00:04:22,534 --> 00:04:24,834
+of the same kinda crazy thing.
+
+91
+00:04:24,834 --> 00:04:27,234
+You know, it amazes me
+the lengths that people
+
+92
+00:04:27,234 --> 00:04:31,601
+will go to to avoid having
+to learn JavaScript.
+
+93
+00:04:31,601 --> 00:04:33,667
+But it's learnable
+and you can actually
+
+94
+00:04:33,667 --> 00:04:35,701
+write good programs in it.
+
+95
+00:04:35,701 --> 00:04:39,534
+And like everything else,
+knowing what you're doing,
+
+96
+00:04:39,534 --> 00:04:41,501
+you know, makes a difference.
+
+97
+00:04:41,501 --> 00:04:45,300
+And so I'm here to enlighten
+the world about JavaScript.
+
+98
+00:04:45,300 --> 00:04:48,434
+JavaScript is a language
+of many contrasts.
+
+99
+00:04:48,434 --> 00:04:51,167
+It contains some
+of the best ideas ever put
+
+100
+00:04:51,167 --> 00:04:52,634
+into a programming language.
+
+101
+00:04:52,634 --> 00:04:54,901
+And it contains some
+of the worst ideas
+
+102
+00:04:54,901 --> 00:04:57,267
+ever put
+into a programming language.
+
+103
+00:04:57,267 --> 00:04:59,100
+And a lot in between.
+
+104
+00:04:59,100 --> 00:05:02,701
+There's no other language
+which has this amazing range
+
+105
+00:05:02,701 --> 00:05:05,934
+of the ridiculous
+and the sublime.
+
+106
+00:05:05,934 --> 00:05:09,634
+Um, if you look
+at the community of people
+
+107
+00:05:09,634 --> 00:05:12,100
+who use JavaScript,
+it has the broadest range
+
+108
+00:05:12,100 --> 00:05:14,133
+of programmer skills of any
+programming language.
+
+109
+00:05:14,133 --> 00:05:16,868
+We've got people at the very
+high-end doing computer science
+
+110
+00:05:16,868 --> 00:05:18,667
+in this language,
+which it does really well
+
+111
+00:05:18,667 --> 00:05:21,133
+'cause it's basically a scheme
+with C syntax.
+
+112
+00:05:21,133 --> 00:05:23,434
+And we've got cut-n-pasters
+who don't even know
+
+113
+00:05:23,434 --> 00:05:25,400
+that they're programming,
+who are putting stuff together
+
+114
+00:05:25,400 --> 00:05:26,467
+and making it happen.
+
+115
+00:05:26,467 --> 00:05:28,734
+If you gave those kids
+Java compilers,
+
+116
+00:05:28,734 --> 00:05:31,467
+they would never get
+"Hello World" running,
+
+117
+00:05:31,467 --> 00:05:33,534
+but they can work
+with JavaScript.
+
+118
+00:05:33,534 --> 00:05:36,434
+So the language has amazing
+expressive power
+
+119
+00:05:36,434 --> 00:05:38,601
+and it supports everybody
+in between.
+
+120
+00:05:38,601 --> 00:05:41,267
+I contend there is
+no other programming language
+
+121
+00:05:41,267 --> 00:05:44,968
+that can support this really
+broad audience of users.
+
+122
+00:05:44,968 --> 00:05:46,901
+And I'll offer
+that as further evidence
+
+123
+00:05:46,901 --> 00:05:49,634
+that this language
+is getting something right.
+
+124
+00:05:49,634 --> 00:05:52,367
+Which again, may be surprising
+to the people who think
+
+125
+00:05:52,367 --> 00:05:55,901
+this language
+didn't get anything right.
+
+126
+00:05:55,901 --> 00:05:57,968
+One of the reasons
+people think that is that
+
+127
+00:05:57,968 --> 00:05:59,434
+they have a lot
+of complaints about it.
+
+128
+00:05:59,434 --> 00:06:01,067
+And I think these complaints
+are all valid
+
+129
+00:06:01,067 --> 00:06:03,400
+and I'd like to go through them
+one at a time.
+
+130
+00:06:03,400 --> 00:06:07,534
+The first one is that JavaScript
+is not a language I know.
+
+131
+00:06:07,534 --> 00:06:10,167
+If you're programming
+in any environment--
+
+132
+00:06:10,167 --> 00:06:13,334
+the desktop or embedded systems
+or the server--
+
+133
+00:06:13,334 --> 00:06:16,033
+generally, you get to pick what
+language you're going to use.
+
+134
+00:06:16,033 --> 00:06:17,334
+But if you're writing
+in the browser
+
+135
+00:06:17,334 --> 00:06:19,033
+or if you're writing
+in one of the applications
+
+136
+00:06:19,033 --> 00:06:20,534
+that has embedded
+JavaScript in it,
+
+137
+00:06:20,534 --> 00:06:21,534
+you don't get a choice.
+
+138
+00:06:21,534 --> 00:06:22,834
+You have to use JavaScript.
+
+139
+00:06:22,834 --> 00:06:24,534
+And a lot of people
+get resentful about that.
+
+140
+00:06:24,534 --> 00:06:26,167
+You know, "Why should I have
+to learn this stupid language?
+
+141
+00:06:26,167 --> 00:06:27,868
+"I already know lots
+of other good languages.
+
+142
+00:06:27,868 --> 00:06:29,067
+Why can't I use one of those?"
+
+143
+00:06:29,067 --> 00:06:30,334
+You can't.
+
+144
+00:06:30,334 --> 00:06:32,968
+Um, and so they...
+
+145
+00:06:32,968 --> 00:06:34,601
+try to write without
+learning the language,
+
+146
+00:06:34,601 --> 00:06:37,067
+which I think is really
+a bad thing to do.
+
+147
+00:06:37,067 --> 00:06:39,634
+My advice is man up
+and learn the language.
+
+148
+00:06:39,634 --> 00:06:42,367
+If you need to be writing
+in JavaScript,
+
+149
+00:06:42,367 --> 00:06:44,934
+there's nothing like knowing
+what you're doing.
+
+150
+00:06:44,934 --> 00:06:46,200
+Second complaint.
+
+151
+00:06:46,200 --> 00:06:48,601
+The browser programming
+experience is awful,
+
+152
+00:06:48,601 --> 00:06:50,934
+which is absolutely true.
+
+153
+00:06:50,934 --> 00:06:53,234
+But that's
+not JavaScript's fault.
+
+154
+00:06:53,234 --> 00:06:54,801
+I contend it's the DOM's fault.
+
+155
+00:06:54,801 --> 00:06:57,701
+The DOM is one of the worst APIs
+ever imagined
+
+156
+00:06:57,701 --> 00:07:00,734
+and that's what you have to use
+when you're using the browser.
+
+157
+00:07:00,734 --> 00:07:03,767
+Fortunately, there are a lot
+of Ajax libraries available now
+
+158
+00:07:03,767 --> 00:07:08,701
+which all do an amazing job
+at correcting the DOM model
+
+159
+00:07:08,701 --> 00:07:10,400
+and turning it into something
+that you can actually
+
+160
+00:07:10,400 --> 00:07:12,534
+write good applications in.
+
+161
+00:07:12,534 --> 00:07:15,868
+So, uh, there
+is a solution to that.
+
+162
+00:07:15,868 --> 00:07:18,267
+I'm hoping eventually
+we can push that solution
+
+163
+00:07:18,267 --> 00:07:19,567
+back into the browser.
+
+164
+00:07:19,567 --> 00:07:22,601
+But for now, the Ajax libraries
+work really well.
+
+165
+00:07:22,601 --> 00:07:24,968
+YEY, I'll mention that one.
+Comes out of Yahoo.
+
+166
+00:07:24,968 --> 00:07:26,400
+It's actually very, very good.
+
+167
+00:07:26,400 --> 00:07:27,934
+I think maybe the best of them.
+
+168
+00:07:27,934 --> 00:07:30,234
+There are lots of others that
+are also very good.
+
+169
+00:07:30,234 --> 00:07:33,000
+There's a complaint
+that it's not fast enough.
+
+170
+00:07:33,000 --> 00:07:35,934
+And in the browser, that's
+mainly because of the DOM again.
+
+171
+00:07:35,934 --> 00:07:37,501
+If you look
+at the fraction of time
+
+172
+00:07:37,501 --> 00:07:39,367
+that your program
+spends running,
+
+173
+00:07:39,367 --> 00:07:41,234
+a tiny fraction of that
+is actually running
+
+174
+00:07:41,234 --> 00:07:42,701
+in the JavaScript interpreter.
+
+175
+00:07:42,701 --> 00:07:44,400
+Most of the rest of it is
+wasting time 
+
+176
+00:07:44,400 --> 00:07:46,567
+in the DOM interface.
+
+177
+00:07:46,567 --> 00:07:48,534
+So if you could somehow make
+your programs
+
+178
+00:07:48,534 --> 00:07:51,100
+go infinitely fast,
+most web applications
+
+179
+00:07:51,100 --> 00:07:53,634
+are gonna look about the same.
+
+180
+00:07:53,634 --> 00:07:55,300
+There are other applications
+for which having
+
+181
+00:07:55,300 --> 00:07:57,634
+a faster language
+would actually be a benefit.
+
+182
+00:07:57,634 --> 00:08:02,000
+And so I'm happy to see that
+mainly, I think,
+
+183
+00:08:02,000 --> 00:08:04,100
+because of leadership
+from Google,
+
+184
+00:08:04,100 --> 00:08:05,567
+we're now starting
+to see higher performance
+
+185
+00:08:05,567 --> 00:08:07,100
+JavaScript entrants,
+which I think
+
+186
+00:08:07,100 --> 00:08:10,267
+is really, really cool and very
+much to be encouraged.
+
+187
+00:08:10,267 --> 00:08:12,200
+Although, practically,
+I don't think it's gonna make
+
+188
+00:08:12,200 --> 00:08:15,234
+much difference to web
+applications for a long time.
+
+189
+00:08:15,234 --> 00:08:16,868
+Then finally,
+there's a complaint
+
+190
+00:08:16,868 --> 00:08:19,901
+that the language is just
+a big pile of mistakes.
+
+191
+00:08:19,901 --> 00:08:24,133
+And I contend, no, it's not
+just a big pile of mistakes.
+
+192
+00:08:24,133 --> 00:08:27,534
+[laughter]
+
+193
+00:08:27,534 --> 00:08:29,834
+That hidden under a huge
+steaming pile of good intentions
+
+194
+00:08:29,834 --> 00:08:32,033
+and blunders,
+there is an elegant, expressive
+
+195
+00:08:32,033 --> 00:08:35,434
+programming language because
+JavaScript has good parts.
+
+196
+00:08:35,434 --> 00:08:37,601
+And if you can
+recognize those parts
+
+197
+00:08:37,601 --> 00:08:40,667
+and use those parts exclusively
+and avoid the bad parts,
+
+198
+00:08:40,667 --> 00:08:44,334
+you can actually write good
+programs in this language.
+
+199
+00:08:44,334 --> 00:08:46,200
+And I'll offer again,
+as evidence of that,
+
+200
+00:08:46,200 --> 00:08:48,100
+that JavaScript
+is succeeding very well
+
+201
+00:08:48,100 --> 00:08:51,133
+in an environment where Java
+was a total failure.
+
+202
+00:08:51,133 --> 00:08:53,634
+I don't know if anyone
+here remember Java applets.
+
+203
+00:08:53,634 --> 00:08:55,334
+How they're
+gonna change the world?
+
+204
+00:08:55,334 --> 00:08:56,901
+Didn't happen.
+
+205
+00:08:56,901 --> 00:08:58,300
+Crap.
+
+206
+00:08:58,300 --> 00:09:02,300
+Java turned out
+to be an okay language
+
+207
+00:09:02,300 --> 00:09:06,267
+and found a niche
+in the server
+
+208
+00:09:06,267 --> 00:09:08,567
+where it's doing pretty well.
+
+209
+00:09:08,567 --> 00:09:12,567
+But it was absolutely awful as
+a client programming language.
+
+210
+00:09:12,567 --> 00:09:16,434
+JavaScript is doing really,
+really well there.
+
+211
+00:09:16,434 --> 00:09:19,434
+The influences
+on JavaScript were Self,
+
+212
+00:09:19,434 --> 00:09:22,567
+from which it borrows
+prototypal inheritance
+
+213
+00:09:22,567 --> 00:09:24,000
+of dynamic objects.
+
+214
+00:09:24,000 --> 00:09:26,434
+Dynamic objects
+are a really clever thing
+
+215
+00:09:26,434 --> 00:09:28,734
+and they worked really well
+in this language.
+
+216
+00:09:28,734 --> 00:09:31,267
+From Scheme, it gets lambda,
+which is maybe the best idea
+
+217
+00:09:31,267 --> 00:09:32,667
+in the history
+of programming languages
+
+218
+00:09:32,667 --> 00:09:35,701
+and loose typing,
+which is pretty controversial.
+
+219
+00:09:35,701 --> 00:09:38,567
+The style of most languages
+today calls for strict typing.
+
+220
+00:09:38,567 --> 00:09:41,567
+The theory being
+that strict typing allows for
+
+221
+00:09:41,567 --> 00:09:43,667
+the compiler to check
+a large class of errors
+
+222
+00:09:43,667 --> 00:09:46,400
+at compilation time avoiding--
+
+223
+00:09:46,400 --> 00:09:50,167
+Catching any error early reduces
+the cost of the errors.
+
+224
+00:09:50,167 --> 00:09:51,300
+So that's a good thing.
+
+225
+00:09:51,300 --> 00:09:53,601
+And JavaScript
+doesn't have that.
+
+226
+00:09:53,601 --> 00:09:56,601
+So in JavaScript,
+any variable or any parameter
+
+227
+00:09:56,601 --> 00:09:58,534
+can contain a value
+of any type.
+
+228
+00:09:58,534 --> 00:10:01,367
+And that's really frightening
+to someone
+
+229
+00:10:01,367 --> 00:10:03,501
+who's coming from
+a strongly-typed tradition.
+
+230
+00:10:03,501 --> 00:10:05,167
+Like, "How can I have
+any confidence
+
+231
+00:10:05,167 --> 00:10:08,534
+that anything's gonna work
+right?"
+
+232
+00:10:08,534 --> 00:10:11,300
+It turns out
+that strong-typing
+
+233
+00:10:11,300 --> 00:10:13,634
+doesn't absolve you
+of the need to test.
+
+234
+00:10:13,634 --> 00:10:15,167
+You still have
+to test everything,
+
+235
+00:10:15,167 --> 00:10:17,100
+'cause there's an even larger
+class of mistakes
+
+236
+00:10:17,100 --> 00:10:20,767
+that type checking
+doesn't find for you.
+
+237
+00:10:20,767 --> 00:10:23,100
+And I found in my own practice
+that the amount
+
+238
+00:10:23,100 --> 00:10:26,434
+of testing that I have to do,
+writing in Java
+
+239
+00:10:26,434 --> 00:10:29,634
+or writing in JavaScript,
+is about the same.
+
+240
+00:10:29,634 --> 00:10:32,734
+That those type errors get found
+really quickly anyway,
+
+241
+00:10:32,734 --> 00:10:34,267
+so they're not really a problem.
+
+242
+00:10:34,267 --> 00:10:35,801
+The areas that are a problem,
+
+243
+00:10:35,801 --> 00:10:37,834
+the ones
+that keep me up at night,
+
+244
+00:10:37,834 --> 00:10:42,067
+um, type safety wouldn't
+have helped me there.
+
+245
+00:10:42,067 --> 00:10:44,367
+The benefit
+of having loose typing
+
+246
+00:10:44,367 --> 00:10:46,234
+is you don't have to mess
+with the type system.
+
+247
+00:10:46,234 --> 00:10:48,868
+And so that turns out
+to be liberating.
+
+248
+00:10:48,868 --> 00:10:51,634
+Your programs tend to be a lot
+smaller and a lot simpler.
+
+249
+00:10:51,634 --> 00:10:54,601
+So which one do you like?
+Well, it doesn't matter.
+
+250
+00:10:54,601 --> 00:10:56,901
+If you're working in JavaScript,
+it's gonna be loosely typed
+
+251
+00:10:56,901 --> 00:10:59,434
+and that's just
+the way it works.
+
+252
+00:10:59,434 --> 00:11:02,534
+From Java we get syntax,
+which is a source
+
+253
+00:11:02,534 --> 00:11:05,133
+of a lot of problems
+because it's basically
+
+254
+00:11:05,133 --> 00:11:07,801
+the C family of syntax,
+which we've all learned
+
+255
+00:11:07,801 --> 00:11:09,467
+to deal with.
+
+256
+00:11:09,467 --> 00:11:11,901
+We've gotten so good at it
+that we don't even recognize
+
+257
+00:11:11,901 --> 00:11:13,868
+anymore how defective it is.
+
+258
+00:11:13,868 --> 00:11:17,667
+But because JavaScript
+is used by beginners,
+
+259
+00:11:17,667 --> 00:11:21,033
+those problems are intensified.
+
+260
+00:11:21,033 --> 00:11:23,501
+And then finally, from Perle,
+JavaScript gets
+
+261
+00:11:23,501 --> 00:11:28,567
+a really horrendous regular
+expression notation.
+
+262
+00:11:28,567 --> 00:11:30,434
+So before we get
+to the good parts,
+
+263
+00:11:30,434 --> 00:11:33,000
+let me tantalize you
+with some of the bad parts.
+
+264
+00:11:33,000 --> 00:11:36,434
+The worst part by far,
+global variables.
+
+265
+00:11:36,434 --> 00:11:38,200
+JavaScript doesn't
+have a linker.
+
+266
+00:11:38,200 --> 00:11:40,367
+So the way compilation units
+get bound together
+
+267
+00:11:40,367 --> 00:11:43,334
+is they all get tossed
+in a common global namespace
+
+268
+00:11:43,334 --> 00:11:45,801
+where all the variable
+names can collide
+
+269
+00:11:45,801 --> 00:11:47,367
+and interfere with each other.
+
+270
+00:11:47,367 --> 00:11:50,968
+It has terrible
+reliability problems.
+
+271
+00:11:50,968 --> 00:11:53,200
+It has even worse
+security problems.
+
+272
+00:11:53,200 --> 00:11:55,300
+You've all heard of cross-site
+scripting attacks.
+
+273
+00:11:55,300 --> 00:11:58,033
+Those attacks are
+fundamentally enabled
+
+274
+00:11:58,033 --> 00:12:01,801
+by JavaScript's use
+of global variables.
+
+275
+00:12:01,801 --> 00:12:05,901
+JavaScript uses + to both
+add and concatenate.
+
+276
+00:12:05,901 --> 00:12:08,934
+It got that little bit
+of overloading from Java.
+
+277
+00:12:08,934 --> 00:12:12,267
+In Java, it wasn't too bad
+because it's strongly typed
+
+278
+00:12:12,267 --> 00:12:14,534
+and so you could predict
+which one it's going to do.
+
+279
+00:12:14,534 --> 00:12:16,234
+In JavaScript you can't.
+
+280
+00:12:16,234 --> 00:12:19,501
+So this is a very common
+source of errors.
+
+281
+00:12:19,501 --> 00:12:22,901
+Semicolon insertion was
+something intended to make
+
+282
+00:12:22,901 --> 00:12:25,767
+the C syntax easier
+for beginners.
+
+283
+00:12:25,767 --> 00:12:29,634
+C syntax, the rules for where
+a semicolon goes
+
+284
+00:12:29,634 --> 00:12:30,734
+are kind of complicated.
+
+285
+00:12:30,734 --> 00:12:32,801
+You really have
+to understand the syntax
+
+286
+00:12:32,801 --> 00:12:35,901
+of the whole language in order
+to understand where to put them.
+
+287
+00:12:35,901 --> 00:12:38,968
+So to make it easier for them,
+JavaScript says,
+
+288
+00:12:38,968 --> 00:12:43,133
+"We'll put them in for you so
+you don't have to use them."
+
+289
+00:12:43,133 --> 00:12:46,767
+The way it did that was
+when the compiler gets an error,
+
+290
+00:12:46,767 --> 00:12:48,901
+it backs up, looks around
+for a line feed,
+
+291
+00:12:48,901 --> 00:12:52,367
+turns it into a semicolon,
+and then tries again.
+
+292
+00:12:52,367 --> 00:12:54,033
+That should freak you out.
+
+293
+00:12:54,033 --> 00:12:56,267
+[laughter]
+
+294
+00:12:56,267 --> 00:12:58,367
+It sometimes puts them
+in the wrong place.
+
+295
+00:12:58,367 --> 00:13:01,067
+Sometimes doesn't put them
+in places where you'd expect.
+
+296
+00:13:01,067 --> 00:13:02,934
+My advice?
+
+297
+00:13:02,934 --> 00:13:04,567
+Figure out where
+the semicolons go.
+
+298
+00:13:04,567 --> 00:13:05,767
+Put 'em in the right place.
+
+299
+00:13:05,767 --> 00:13:06,767
+You'll be much better off.
+
+300
+00:13:06,767 --> 00:13:09,634
+JavaScript has a typeof operator
+
+301
+00:13:09,634 --> 00:13:12,467
+which allows you to determine
+if the typeof a value
+
+302
+00:13:12,467 --> 00:13:13,901
+is a string or a number
+or something like that,
+
+303
+00:13:13,901 --> 00:13:15,601
+which is really good.
+
+304
+00:13:15,601 --> 00:13:17,767
+If you ask it
+what the typeof an object is,
+
+305
+00:13:17,767 --> 00:13:19,100
+it says it's an object.
+
+306
+00:13:19,100 --> 00:13:20,200
+Great.
+
+307
+00:13:20,200 --> 00:13:22,033
+If you ask what
+the typeof an array is,
+
+308
+00:13:22,033 --> 00:13:25,167
+it says it's an object,
+which isn't very helpful.
+
+309
+00:13:25,167 --> 00:13:26,601
+If you ask what
+the typeof null is,
+
+310
+00:13:26,601 --> 00:13:31,033
+it says it's an object,
+which is wrong.
+
+311
+00:13:31,033 --> 00:13:35,667
+It has a with statement,
+which was well-intentioned
+
+312
+00:13:35,667 --> 00:13:36,968
+but doesn't work right.
+
+313
+00:13:36,968 --> 00:13:38,801
+I highly recommend
+you avoid it.
+
+314
+00:13:38,801 --> 00:13:41,567
+Simply by being in the language,
+it causes programs
+
+315
+00:13:41,567 --> 00:13:43,067
+to be a lot slower
+than necessary
+
+316
+00:13:43,067 --> 00:13:45,467
+whether you use it or not.
+
+317
+00:13:45,467 --> 00:13:49,467
+And similarly,
+eval is the most mis--
+
+318
+00:13:49,467 --> 00:13:52,434
+most misused feature
+in the language.
+
+319
+00:13:52,434 --> 00:13:54,834
+If you ever find yourself
+needing to use eval,
+
+320
+00:13:54,834 --> 00:13:57,734
+you're probably thinking about
+things in a really wrong way.
+
+321
+00:13:57,734 --> 00:14:00,567
+So step away from the computer,
+read my book,
+
+322
+00:14:00,567 --> 00:14:02,467
+and then take
+another run at it.
+
+323
+00:14:02,467 --> 00:14:04,701
+[laughter]
+
+324
+00:14:04,701 --> 00:14:06,400
+JavaScript has phony arrays.
+
+325
+00:14:06,400 --> 00:14:07,868
+In most languages,
+you've got an array,
+
+326
+00:14:07,868 --> 00:14:09,534
+which is a linear
+sequence of memory,
+
+327
+00:14:09,534 --> 00:14:12,968
+which is divided
+into regularly spaced buckets,
+
+328
+00:14:12,968 --> 00:14:14,400
+so you can
+do address computation
+
+329
+00:14:14,400 --> 00:14:15,901
+and very quickly
+get to an element.
+
+330
+00:14:15,901 --> 00:14:17,934
+JavaScript doesn't
+have anything like that.
+
+331
+00:14:17,934 --> 00:14:22,634
+In JavaScript, arrays
+are essentially hash tables,
+
+332
+00:14:22,634 --> 00:14:25,934
+in which the keys
+are turned into strings
+
+333
+00:14:25,934 --> 00:14:28,067
+and then hashed
+to locate the buckets.
+
+334
+00:14:28,067 --> 00:14:31,567
+This has a terrible
+performance penalty.
+
+335
+00:14:31,567 --> 00:14:33,100
+But it has an advantage
+in that it makes
+
+336
+00:14:33,100 --> 00:14:34,567
+the programming model
+quite a bit easier,
+
+337
+00:14:34,567 --> 00:14:36,801
+'cause you don't ever
+have to dimension an array.
+
+338
+00:14:36,801 --> 00:14:39,968
+Dimensions don't exist
+in this language.
+
+339
+00:14:39,968 --> 00:14:44,100
+It has a equality operator
+that does type coercion,
+
+340
+00:14:44,100 --> 00:14:45,734
+which turns out
+to be problematic.
+
+341
+00:14:45,734 --> 00:14:47,434
+I'll show you an example
+in a moment.
+
+342
+00:14:47,434 --> 00:14:50,000
+And it has too many
+bottom values,
+
+343
+00:14:50,000 --> 00:14:53,133
+which is a problem because
+beginners tend to get confused
+
+344
+00:14:53,133 --> 00:14:56,467
+by having all these things which
+almost mean the same thing
+
+345
+00:14:56,467 --> 00:14:59,467
+but are slightly different
+in their meaning.
+
+346
+00:14:59,467 --> 00:15:01,968
+So these are some
+of the consequences
+
+347
+00:15:01,968 --> 00:15:07,968
+of type coercion
+on the quality operator.
+
+348
+00:15:07,968 --> 00:15:10,701
+There are rules
+that govern this.
+
+349
+00:15:10,701 --> 00:15:12,868
+This isn't random behavior.
+
+350
+00:15:12,868 --> 00:15:14,634
+But it's certainly
+surprising behavior.
+
+351
+00:15:14,634 --> 00:15:17,033
+And the rules
+are not memorable,
+
+352
+00:15:17,033 --> 00:15:19,067
+so this all looks
+very mysterious.
+
+353
+00:15:19,067 --> 00:15:21,968
+Fortunately, the language has
+a triple equal operator,
+
+354
+00:15:21,968 --> 00:15:23,801
+which does not
+do type coercion,
+
+355
+00:15:23,801 --> 00:15:27,133
+so it would answer false
+to all these cases,
+
+356
+00:15:27,133 --> 00:15:28,434
+which is the right thing.
+
+357
+00:15:28,434 --> 00:15:30,200
+So I highly recommend--
+
+358
+00:15:30,200 --> 00:15:31,868
+Always use
+a triple equal operator.
+
+359
+00:15:31,868 --> 00:15:33,667
+Never use
+the double equal operator.
+
+360
+00:15:33,667 --> 00:15:37,033
+Just don't use it.
+
+361
+00:15:37,033 --> 00:15:39,901
+So one of the nice things about
+the dynamic objects
+
+362
+00:15:39,901 --> 00:15:41,434
+in this language--
+
+363
+00:15:41,434 --> 00:15:44,968
+If you ask an object for a
+property that it doesn't have,
+
+364
+00:15:44,968 --> 00:15:47,734
+you don't get an error,
+it doesn't throw.
+
+365
+00:15:47,734 --> 00:15:49,534
+It just returns
+to the undefined value,
+
+366
+00:15:49,534 --> 00:15:50,968
+which is really nice.
+
+367
+00:15:50,968 --> 00:15:52,267
+So you can, you know--
+
+368
+00:15:52,267 --> 00:15:57,067
+Reflection is just automatic
+on things like that.
+
+369
+00:15:57,067 --> 00:15:59,467
+So if you then ask
+if the thing is undefined,
+
+370
+00:15:59,467 --> 00:16:01,968
+then you can do something
+about it.
+
+371
+00:16:01,968 --> 00:16:04,234
+But because a lot of beginners
+don't understand
+
+372
+00:16:04,234 --> 00:16:06,534
+the difference between
+null and undefined,
+
+373
+00:16:06,534 --> 00:16:09,167
+they use null and they use
+the wrong comparison operator,
+
+374
+00:16:09,167 --> 00:16:11,133
+which often works.
+
+375
+00:16:11,133 --> 00:16:13,634
+It's the case of two errors that
+cancel each other out.
+
+376
+00:16:13,634 --> 00:16:15,767
+That's not a good way
+to write programs.
+
+377
+00:16:15,767 --> 00:16:17,334
+So the right way
+to write this program
+
+378
+00:16:17,334 --> 00:16:21,133
+would be to use the proper
+equality operator
+
+379
+00:16:21,133 --> 00:16:26,200
+on the proper value and now
+it'll work for all cases.
+
+380
+00:16:26,200 --> 00:16:29,033
+Here's another case where good
+features interact badly
+
+381
+00:16:29,033 --> 00:16:31,634
+in this language and I'll give
+you an example.
+
+382
+00:16:31,634 --> 00:16:33,868
+Objects can inherit
+from other objects,
+
+383
+00:16:33,868 --> 00:16:37,167
+which is good.
+
+384
+00:16:37,167 --> 00:16:39,868
+One of the interesting things
+about this language
+
+385
+00:16:39,868 --> 00:16:42,300
+is you don't have classes
+inheriting from classes.
+
+386
+00:16:42,300 --> 00:16:44,701
+Objects inherit directly
+from other objects,
+
+387
+00:16:44,701 --> 00:16:46,734
+which is really powerful,
+it turns out.
+
+388
+00:16:46,734 --> 00:16:48,634
+Objects can be members--
+
+389
+00:16:48,634 --> 00:16:51,100
+Functions can be members
+of objects, which is good.
+
+390
+00:16:51,100 --> 00:16:54,868
+That's how methods are created
+in this language.
+
+391
+00:16:54,868 --> 00:16:58,267
+And we have a for..in statement
+that mixes inherited functions
+
+392
+00:16:58,267 --> 00:17:01,200
+with the desired data members,
+which is not useful at all
+
+393
+00:17:01,200 --> 00:17:03,834
+and is a common source
+of errors.
+
+394
+00:17:03,834 --> 00:17:06,734
+So how did that happen?
+
+395
+00:17:06,734 --> 00:17:09,901
+There was a design question
+in the making of the language.
+
+396
+00:17:09,901 --> 00:17:11,934
+Should the for...in statement,
+which iterates
+
+397
+00:17:11,934 --> 00:17:14,300
+through all of the members
+of an object,
+
+398
+00:17:14,300 --> 00:17:17,734
+do a shallow skim
+of the object's own properties,
+
+399
+00:17:17,734 --> 00:17:18,934
+or should it
+do a deep dredge
+
+400
+00:17:18,934 --> 00:17:21,367
+going through
+its inheritance chain?
+
+401
+00:17:21,367 --> 00:17:23,734
+The decision was
+to do the deep dredge.
+
+402
+00:17:23,734 --> 00:17:26,734
+And I think the thinking was
+that if we do the shallow one
+
+403
+00:17:26,734 --> 00:17:29,334
+and what people really want
+is the deep one,
+
+404
+00:17:29,334 --> 00:17:30,434
+we're screwed.
+
+405
+00:17:30,434 --> 00:17:31,868
+They just can't
+get at that stuff.
+
+406
+00:17:31,868 --> 00:17:35,167
+Whereas if we do the deep one
+and what they wanted
+
+407
+00:17:35,167 --> 00:17:38,567
+was the shallow one, they can
+do the filtering themselves.
+
+408
+00:17:38,567 --> 00:17:40,200
+Except that
+they didn't tell anybody
+
+409
+00:17:40,200 --> 00:17:42,901
+that that's why they did it
+and that's how it works.
+
+410
+00:17:42,901 --> 00:17:45,100
+And so as a consequence,
+there's a lotta confusion
+
+411
+00:17:45,100 --> 00:17:46,868
+about how to use for...in
+
+412
+00:17:46,868 --> 00:17:50,934
+and how to attach methods
+to prototypes.
+
+413
+00:17:50,934 --> 00:17:52,534
+I think a better decision
+would have been
+
+414
+00:17:52,534 --> 00:17:55,634
+to not release the language
+until they had enough experience
+
+415
+00:17:55,634 --> 00:17:59,968
+with the language to know
+what the right answer was.
+
+416
+00:17:59,968 --> 00:18:03,200
+But to put it
+into historical context,
+
+417
+00:18:03,200 --> 00:18:07,534
+at Netscape, getting it right
+was not an option.
+
+418
+00:18:07,534 --> 00:18:09,901
+Which is why there's no
+longer Netscape.
+
+419
+00:18:09,901 --> 00:18:11,534
+Um, yes?
+
+420
+00:18:11,534 --> 00:18:13,634
+man: Isn't the real issue
+that people are using
+
+421
+00:18:13,634 --> 00:18:16,901
+objects as hash tables and
+they really aren't hash tables
+
+422
+00:18:16,901 --> 00:18:19,501
+because when you said they were,
+like, two strings
+
+423
+00:18:19,501 --> 00:18:21,834
+who get things
+you don't expect?
+
+424
+00:18:21,834 --> 00:18:25,033
+Crockford: Um, no, but we can
+get to that in the Q and A.
+
+425
+00:18:25,033 --> 00:18:28,067
+Um, so these are things which
+are wrong with JavaScript,
+
+426
+00:18:28,067 --> 00:18:33,901
+which are really wrong going all
+the way back to B actually.
+
+427
+00:18:33,901 --> 00:18:36,033
+But I'll talk about them here
+'cause we're talking
+
+428
+00:18:36,033 --> 00:18:37,634
+about JavaScript.
+
+429
+00:18:37,634 --> 00:18:39,901
+We have the option of using
+blockless statements,
+
+430
+00:18:39,901 --> 00:18:42,234
+which is a bad practice.
+
+431
+00:18:42,234 --> 00:18:44,667
+It creates code
+which is more likely
+
+432
+00:18:44,667 --> 00:18:46,834
+to get damaged
+under maintenance.
+
+433
+00:18:46,834 --> 00:18:49,634
+So I recommend always putting
+the curly braces in.
+
+434
+00:18:49,634 --> 00:18:51,834
+It allows for expression
+statements
+
+435
+00:18:51,834 --> 00:18:54,000
+in which it can just have
+the name of a variable
+
+436
+00:18:54,000 --> 00:18:56,200
+or a simple expression
+and do nothing.
+
+437
+00:18:56,200 --> 00:18:58,934
+I think the reason for that was
+it made the specification
+
+438
+00:18:58,934 --> 00:19:00,934
+of the syntax a tiny bit easier.
+
+439
+00:19:00,934 --> 00:19:03,000
+They were able to save a
+production or two.
+
+440
+00:19:03,000 --> 00:19:06,634
+But as we're gonna see,
+it just messes things up.
+
+441
+00:19:06,634 --> 00:19:10,634
+The most often reported error
+in the language
+
+442
+00:19:10,634 --> 00:19:14,934
+is that 0.1 + 0.2 !== 0.3.
+
+443
+00:19:14,934 --> 00:19:17,133
+And this is not really
+a problem with JavaScript.
+
+444
+00:19:17,133 --> 00:19:19,868
+It's a problem
+with IEEE floating point.
+
+445
+00:19:19,868 --> 00:19:23,767
+That floating point is the only
+number type in the language.
+
+446
+00:19:23,767 --> 00:19:26,133
+Having just one number type
+in the language
+
+447
+00:19:26,133 --> 00:19:28,033
+turns out to be really nice,
+particularly
+
+448
+00:19:28,033 --> 00:19:30,067
+for a language
+that beginners use,
+
+449
+00:19:30,067 --> 00:19:34,234
+because there's a whole lot of
+compatibility problems
+
+450
+00:19:34,234 --> 00:19:35,434
+that just go away.
+
+451
+00:19:35,434 --> 00:19:36,868
+Everything is the same type.
+
+452
+00:19:36,868 --> 00:19:40,200
+But unfortunately,
+they picked the wrong type.
+
+453
+00:19:40,200 --> 00:19:45,167
+That you tend to do a lot of
+computations involving money
+
+454
+00:19:45,167 --> 00:19:48,267
+in this language
+and the sums come out wrong.
+
+455
+00:19:48,267 --> 00:19:49,767
+And generally when you're adding
+people's money,
+
+456
+00:19:49,767 --> 00:19:53,200
+people have an expectation that
+the results gotta be right.
+
+457
+00:19:53,200 --> 00:19:55,067
+And it's hard
+to do in this language.
+
+458
+00:19:55,067 --> 00:19:56,534
+Unnecessarily hard.
+
+459
+00:19:56,534 --> 00:19:58,868
+It has the increment and
+decrement operators,
+
+460
+00:19:58,868 --> 00:20:03,100
+which are very convenient
+but have been implicated
+
+461
+00:20:03,100 --> 00:20:07,601
+in buffer overruns and
+other security hazards.
+
+462
+00:20:07,601 --> 00:20:10,434
+I found in my own practice
+that when I use them,
+
+463
+00:20:10,434 --> 00:20:12,567
+I would tend to write code
+which was too tricky.
+
+464
+00:20:12,567 --> 00:20:15,534
+And code which is too tricky
+is too often wrong.
+
+465
+00:20:15,534 --> 00:20:19,167
+So in my own practice, I don't
+use them anymore at all, ever.
+
+466
+00:20:19,167 --> 00:20:21,267
+Just part of my discipline.
+
+467
+00:20:21,267 --> 00:20:23,734
+Finally, it has
+the switch statement.
+
+468
+00:20:23,734 --> 00:20:28,033
+The switch statement was modeled
+after the FORTRAN computed goto.
+
+469
+00:20:28,033 --> 00:20:31,734
+It has the property that one
+case can fall through
+
+470
+00:20:31,734 --> 00:20:33,267
+into the next case.
+
+471
+00:20:33,267 --> 00:20:34,968
+I'm gonna tell you later
+about a program I wrote
+
+472
+00:20:34,968 --> 00:20:38,934
+called JSLint which
+is a quality--
+
+473
+00:20:38,934 --> 00:20:40,701
+code quality tool
+for JavaScript.
+
+474
+00:20:40,701 --> 00:20:42,667
+One day someone
+wrote to me and said,
+
+475
+00:20:42,667 --> 00:20:45,200
+"You know, the language
+has switch statements
+
+476
+00:20:45,200 --> 00:20:47,367
+"and sometimes you can
+have one case fall through
+
+477
+00:20:47,367 --> 00:20:50,701
+"into another case and it's
+really difficult to see that
+
+478
+00:20:50,701 --> 00:20:51,968
+"when reading the code,
+you know?
+
+479
+00:20:51,968 --> 00:20:53,968
+"So could you have JSLint
+generate a warning
+
+480
+00:20:53,968 --> 00:20:55,467
+anytime that happened?"
+
+481
+00:20:55,467 --> 00:20:57,634
+And I thought about it deeply
+and I wrote back to him
+
+482
+00:20:57,634 --> 00:20:59,133
+and I said,
+"Well, there are cases
+
+483
+00:20:59,133 --> 00:21:00,300
+"where it's actually
+beneficial
+
+484
+00:21:00,300 --> 00:21:01,968
+to have that falling through."
+
+485
+00:21:01,968 --> 00:21:04,934
+And you could have a code
+indicating, you know,
+
+486
+00:21:04,934 --> 00:21:06,834
+whether you intended that
+or not but, you know,
+
+487
+00:21:06,834 --> 00:21:08,567
+that doesn't really work.
+
+488
+00:21:08,567 --> 00:21:10,267
+You know, so on balance,
+I think maybe it's better
+
+489
+00:21:10,267 --> 00:21:11,367
+just to leave it alone.
+
+490
+00:21:11,367 --> 00:21:12,501
+That it's actually
+a good thing
+
+491
+00:21:12,501 --> 00:21:14,300
+to have in the language.
+
+492
+00:21:14,300 --> 00:21:17,334
+Next day, the same guy
+sent me a bug report
+
+493
+00:21:17,334 --> 00:21:21,000
+that I had something
+that JSLint was misclassifying.
+
+494
+00:21:21,000 --> 00:21:23,267
+So I threw it in the debugger
+and it turned out
+
+495
+00:21:23,267 --> 00:21:25,567
+I had a switch statement
+that was falling through.
+
+496
+00:21:25,567 --> 00:21:28,133
+[laughter]
+
+497
+00:21:28,133 --> 00:21:31,834
+So in that moment,
+I achieved enlightenment.
+
+498
+00:21:31,834 --> 00:21:33,868
+There are these moments
+in your programming career
+
+499
+00:21:33,868 --> 00:21:35,534
+where you actually
+learn something.
+
+500
+00:21:35,534 --> 00:21:37,167
+Learning turns out
+to be really hard.
+
+501
+00:21:37,167 --> 00:21:39,234
+And in this case,
+I actually learned my lesson.
+
+502
+00:21:39,234 --> 00:21:42,501
+And so I now
+never intentionally
+
+503
+00:21:42,501 --> 00:21:44,501
+fall through
+in a switch statement.
+
+504
+00:21:44,501 --> 00:21:47,667
+And because of that I can now
+much more easily detect
+
+505
+00:21:47,667 --> 00:21:49,767
+when I accidentally fall through
+in a switch statement.
+
+506
+00:21:49,767 --> 00:21:52,534
+So as a consequence,
+I think my use of that statement
+
+507
+00:21:52,534 --> 00:21:55,133
+has improved significantly.
+
+508
+00:21:55,133 --> 00:21:56,634
+So you've been waiting
+for the good parts.
+
+509
+00:21:56,634 --> 00:21:57,934
+Here they are.
+
+510
+00:21:57,934 --> 00:22:00,100
+It's a short list
+but it's a good list.
+
+511
+00:22:00,100 --> 00:22:02,267
+At the top
+of the list is Lambda.
+
+512
+00:22:02,267 --> 00:22:05,968
+This came out of Scheme,
+which came out
+
+513
+00:22:05,968 --> 00:22:11,567
+of Carl Hewitt's work
+on the Actor model.
+
+514
+00:22:11,567 --> 00:22:13,033
+I think this
+is the best thing ever
+
+515
+00:22:13,033 --> 00:22:14,400
+to go into
+a programming language.
+
+516
+00:22:14,400 --> 00:22:16,834
+It's powerful,
+it's safe, it's smart,
+
+517
+00:22:16,834 --> 00:22:18,601
+it's good, it's flexible.
+
+518
+00:22:18,601 --> 00:22:19,834
+Great stuff.
+
+519
+00:22:19,834 --> 00:22:22,200
+JavaScript has dynamic objects,
+which means
+
+520
+00:22:22,200 --> 00:22:24,133
+you can take any object
+and at any time,
+
+521
+00:22:24,133 --> 00:22:27,234
+you can add a new property to it
+or remove a property from it.
+
+522
+00:22:27,234 --> 00:22:29,133
+You don't have
+to go to some class
+
+523
+00:22:29,133 --> 00:22:32,133
+and make another derived class
+in order to have an object
+
+524
+00:22:32,133 --> 00:22:34,033
+which is slightly different
+than the one you've got.
+
+525
+00:22:34,033 --> 00:22:36,467
+That turns out
+to be amazingly powerful.
+
+526
+00:22:36,467 --> 00:22:39,133
+Makes this language
+especially easy to use.
+
+527
+00:22:39,133 --> 00:22:40,767
+It's got
+the loose typing in it,
+
+528
+00:22:40,767 --> 00:22:43,901
+which some people look at
+as a severe disadvantage.
+
+529
+00:22:43,901 --> 00:22:45,667
+I think it's actually
+an advantage.
+
+530
+00:22:45,667 --> 00:22:46,801
+This language is better off,
+I think,
+
+531
+00:22:46,801 --> 00:22:48,434
+for having loose typing.
+
+532
+00:22:48,434 --> 00:22:49,868
+And it has object literals.
+
+533
+00:22:49,868 --> 00:22:54,567
+Object literals are a very nice
+notation for describing objects.
+
+534
+00:22:54,567 --> 00:22:58,200
+JavaScript's object literals
+were the inspiration
+
+535
+00:22:58,200 --> 00:23:02,601
+for the JSON
+data interchange format.
+
+536
+00:23:02,601 --> 00:23:04,868
+Um, there--
+
+537
+00:23:04,868 --> 00:23:06,868
+Inheritance
+is object-oriented code reuse.
+
+538
+00:23:06,868 --> 00:23:09,067
+And there are two schools
+of thought for how to do that.
+
+539
+00:23:09,067 --> 00:23:11,033
+There's the classical school,
+which is represented
+
+540
+00:23:11,033 --> 00:23:14,234
+by almost all
+present-day languages.
+
+541
+00:23:14,234 --> 00:23:15,968
+And there's
+the prototypal school,
+
+542
+00:23:15,968 --> 00:23:19,334
+which is represented pretty much
+just by JavaScript.
+
+543
+00:23:19,334 --> 00:23:22,167
+There are no other languages
+in broad use
+
+544
+00:23:22,167 --> 00:23:24,367
+which have this property.
+
+545
+00:23:24,367 --> 00:23:26,334
+Turns out the prototypal
+inheritance
+
+546
+00:23:26,334 --> 00:23:29,133
+is amazingly powerful
+but it's not well understood.
+
+547
+00:23:29,133 --> 00:23:30,934
+It's so powerful
+that you can program as though
+
+548
+00:23:30,934 --> 00:23:33,534
+it is classical
+and it mostly works.
+
+549
+00:23:33,534 --> 00:23:35,133
+You can't do the opposite.
+
+550
+00:23:35,133 --> 00:23:36,467
+You can't go
+to a classical language
+
+551
+00:23:36,467 --> 00:23:39,200
+and program as though
+it's prototypal.
+
+552
+00:23:39,200 --> 00:23:42,234
+So in prototypal inheritance,
+it's class-free.
+
+553
+00:23:42,234 --> 00:23:43,467
+There are no classes.
+
+554
+00:23:43,467 --> 00:23:46,601
+Objects inherit directly
+from other objects.
+
+555
+00:23:46,601 --> 00:23:50,234
+And in this language,
+an object contains a hidden link
+
+556
+00:23:50,234 --> 00:23:52,567
+to another object from which
+it inherits stuff
+
+557
+00:23:52,567 --> 00:23:54,567
+in a process
+called delegation.
+
+558
+00:23:54,567 --> 00:23:56,834
+Sometimes called
+differential inheritance.
+
+559
+00:23:56,834 --> 00:23:59,968
+So each object contains only
+what makes it different
+
+560
+00:23:59,968 --> 00:24:01,734
+from the object
+it inherits from,
+
+561
+00:24:01,734 --> 00:24:06,100
+and that allows for objects
+to be much smaller.
+
+562
+00:24:06,100 --> 00:24:10,467
+For a long time,
+the language was ambivalent
+
+563
+00:24:10,467 --> 00:24:14,234
+about its prototypal nature,
+so never included an operator
+
+564
+00:24:14,234 --> 00:24:15,934
+for actually making
+new objects
+
+565
+00:24:15,934 --> 00:24:17,801
+which inherit
+from other objects.
+
+566
+00:24:17,801 --> 00:24:19,868
+We're correcting that oversight
+in the next edition
+
+567
+00:24:19,868 --> 00:24:22,334
+of the language
+with object.create,
+
+568
+00:24:22,334 --> 00:24:26,534
+which will make a new object
+which inherits from an old one.
+
+569
+00:24:26,534 --> 00:24:29,667
+Um, it's not
+in the current browsers,
+
+570
+00:24:29,667 --> 00:24:32,033
+but it's easily implemented.
+
+571
+00:24:32,033 --> 00:24:33,901
+Until it becomes
+standard equipment,
+
+572
+00:24:33,901 --> 00:24:36,033
+you can realize it
+in this way.
+
+573
+00:24:36,033 --> 00:24:39,267
+What JavaScript has instead
+of this operator currently
+
+574
+00:24:39,267 --> 00:24:43,667
+is a weird trio
+of constructor functions,
+
+575
+00:24:43,667 --> 00:24:46,300
+prototype members,
+and a new operator,
+
+576
+00:24:46,300 --> 00:24:50,601
+which were intended
+to provide a friendly object--
+
+577
+00:24:50,601 --> 00:24:53,400
+or friendly
+classical-like notation
+
+578
+00:24:53,400 --> 00:24:55,467
+for dealing with prototypes.
+
+579
+00:24:55,467 --> 00:24:57,334
+But it didn't work.
+
+580
+00:24:57,334 --> 00:25:00,067
+The Java community smelled this
+immediately and said,
+
+581
+00:25:00,067 --> 00:25:01,601
+"That's alien.
+
+582
+00:25:01,601 --> 00:25:03,267
+That's clearly
+not something we like."
+
+583
+00:25:03,267 --> 00:25:05,133
+And so what
+it really did was confuse
+
+584
+00:25:05,133 --> 00:25:08,467
+what the language
+was actually doing.
+
+585
+00:25:08,467 --> 00:25:10,868
+Uh, so in--
+
+586
+00:25:10,868 --> 00:25:16,334
+As part of that sugar
+for trying to look classical,
+
+587
+00:25:16,334 --> 00:25:20,167
+JavaScript has a new operator,
+which is absolutely required
+
+588
+00:25:20,167 --> 00:25:22,200
+when you're calling
+a constructor function.
+
+589
+00:25:22,200 --> 00:25:24,567
+If you call
+a constructor function
+
+590
+00:25:24,567 --> 00:25:26,300
+without the new operator,
+
+591
+00:25:26,300 --> 00:25:28,701
+instead of creating a new object
+and initializing it,
+
+592
+00:25:28,701 --> 00:25:30,767
+your constructor will clobber
+the global object,
+
+593
+00:25:30,767 --> 00:25:33,167
+which is a very,
+very bad thing.
+
+594
+00:25:33,167 --> 00:25:34,834
+There is no
+compile-time warning
+
+595
+00:25:34,834 --> 00:25:36,834
+and there's no run-time
+warning for this.
+
+596
+00:25:36,834 --> 00:25:39,501
+So for this reason,
+I don't use "new" anymore.
+
+597
+00:25:39,501 --> 00:25:42,300
+I think
+it's just too dangerous.
+
+598
+00:25:42,300 --> 00:25:44,868
+So it's time
+to look at some code.
+
+599
+00:25:44,868 --> 00:25:46,701
+Here I'm gonna make
+a simple little function
+
+600
+00:25:46,701 --> 00:25:49,434
+called digit_name,
+which I'll pass it a number
+
+601
+00:25:49,434 --> 00:25:53,100
+and it will return a string
+which is the name of the digit.
+
+602
+00:25:53,100 --> 00:25:55,334
+So I've got
+an array of strings,
+
+603
+00:25:55,334 --> 00:25:57,400
+which I create
+using an array literal.
+
+604
+00:25:57,400 --> 00:25:59,067
+Very nice.
+
+605
+00:25:59,067 --> 00:26:01,567
+And then
+the function returns
+
+606
+00:26:01,567 --> 00:26:04,000
+looking up the argument
+in the array.
+
+607
+00:26:04,000 --> 00:26:06,434
+So everybody understand
+how this works?
+
+608
+00:26:06,434 --> 00:26:07,734
+All right.
+
+609
+00:26:07,734 --> 00:26:10,033
+Problem with this is names
+is a global variable.
+
+610
+00:26:10,033 --> 00:26:13,834
+So if there's anything else
+in my application called names,
+
+611
+00:26:13,834 --> 00:26:16,534
+either it's going to fail
+or my program's gonna fail
+
+612
+00:26:16,534 --> 00:26:18,767
+or we're both gonna fail,
+which is really bad.
+
+613
+00:26:18,767 --> 00:26:22,667
+Particularly as pages become
+really dynamic,
+
+614
+00:26:22,667 --> 00:26:26,133
+I may be linking
+with libraries I've never seen,
+
+615
+00:26:26,133 --> 00:26:27,868
+will never get a chance
+to test with.
+
+616
+00:26:27,868 --> 00:26:30,634
+I may be having to run with ads
+which I will never see,
+
+617
+00:26:30,634 --> 00:26:32,334
+which could interfere
+with my program.
+
+618
+00:26:32,334 --> 00:26:34,300
+So I want to--I have
+really good reasons
+
+619
+00:26:34,300 --> 00:26:36,234
+to try to avoid
+the global variables.
+
+620
+00:26:36,234 --> 00:26:37,267
+And the language gives us
+
+621
+00:26:37,267 --> 00:26:39,300
+a couple of options
+for doing that.
+
+622
+00:26:39,300 --> 00:26:42,968
+One approach would be I could
+define the array of names
+
+623
+00:26:42,968 --> 00:26:45,400
+as a private variable
+of the function.
+
+624
+00:26:45,400 --> 00:26:46,868
+And that works just fine.
+
+625
+00:26:46,868 --> 00:26:48,801
+So we have function scope
+in this language.
+
+626
+00:26:48,801 --> 00:26:52,868
+We don't have block scope,
+so you need to understand
+
+627
+00:26:52,868 --> 00:26:54,501
+the difference and do it right.
+
+628
+00:26:54,501 --> 00:26:55,934
+But having that,
+this will work.
+
+629
+00:26:55,934 --> 00:26:57,467
+So names is no longer
+a global variable,
+
+630
+00:26:57,467 --> 00:26:59,334
+so I avoid that hazard.
+
+631
+00:26:59,334 --> 00:27:01,267
+The problem with this
+is that every time
+
+632
+00:27:01,267 --> 00:27:03,000
+this function gets called,
+we're going
+
+633
+00:27:03,000 --> 00:27:06,767
+to reinitialize the names array.
+
+634
+00:27:06,767 --> 00:27:08,968
+Now in theory,
+an optimizing compiler
+
+635
+00:27:08,968 --> 00:27:11,667
+could detect this case
+and factor that out.
+
+636
+00:27:11,667 --> 00:27:14,434
+But today, nobody does that.
+
+637
+00:27:14,434 --> 00:27:17,501
+So I might want to write this
+function in a different way
+
+638
+00:27:17,501 --> 00:27:19,000
+to avoid that.
+
+639
+00:27:19,000 --> 00:27:20,534
+So one way I could
+do that would be
+
+640
+00:27:20,534 --> 00:27:22,634
+to put it in a closure.
+
+641
+00:27:22,634 --> 00:27:25,267
+So here I've got
+a function which is going
+
+642
+00:27:25,267 --> 00:27:27,501
+to return another function
+and the outer function
+
+643
+00:27:27,501 --> 00:27:30,234
+gets executed immediately.
+
+644
+00:27:30,234 --> 00:27:33,033
+Okay?
+
+645
+00:27:33,033 --> 00:27:36,033
+The inner function has access
+to the properties
+
+646
+00:27:36,033 --> 00:27:40,267
+of the outer function or to the
+variables of the outer function.
+
+647
+00:27:40,267 --> 00:27:42,167
+It will continue
+to enjoy access to them
+
+648
+00:27:42,167 --> 00:27:45,267
+even after the outer function
+has returned.
+
+649
+00:27:45,267 --> 00:27:47,767
+So this allows me to have--
+
+650
+00:27:47,767 --> 00:27:51,033
+So when it returns, the function
+goes into digit_name
+
+651
+00:27:51,033 --> 00:27:53,634
+and that function
+will have names bound
+
+652
+00:27:53,634 --> 00:27:56,167
+to the original array
+and will continue to have it
+
+653
+00:27:56,167 --> 00:27:57,701
+for as long as it lives.
+
+654
+00:27:57,701 --> 00:27:59,767
+This is an amazingly
+powerful thing
+
+655
+00:27:59,767 --> 00:28:02,634
+that this language does
+very, very nicely.
+
+656
+00:28:02,634 --> 00:28:08,634
+And we can generalize this
+into a constructor pattern.
+
+657
+00:28:08,634 --> 00:28:10,767
+So if you think
+of an application
+
+658
+00:28:10,767 --> 00:28:13,400
+or any kind of singleton,
+we don't have to make a class
+
+659
+00:28:13,400 --> 00:28:14,834
+in this language
+to make a singleton.
+
+660
+00:28:14,834 --> 00:28:15,834
+We can just make it.
+
+661
+00:28:15,834 --> 00:28:17,601
+And the proper--
+
+662
+00:28:17,601 --> 00:28:21,200
+The methods
+that that singleton has,
+
+663
+00:28:21,200 --> 00:28:24,801
+can enjoy private
+shared access to stuff.
+
+664
+00:28:24,801 --> 00:28:26,901
+We don't have to put it
+in global variables.
+
+665
+00:28:26,901 --> 00:28:28,467
+So I can--
+
+666
+00:28:28,467 --> 00:28:31,234
+Again, I've got a function
+which I'll execute immediately
+
+667
+00:28:31,234 --> 00:28:34,801
+and return an object literal
+which contains some methods
+
+668
+00:28:34,801 --> 00:28:36,367
+which will do useful stuff.
+
+669
+00:28:36,367 --> 00:28:39,100
+And those methods will have
+access to the private material
+
+670
+00:28:39,100 --> 00:28:42,868
+that the outer function
+provides for them.
+
+671
+00:28:42,868 --> 00:28:46,834
+We can take this and
+turn it into a constructor,
+
+672
+00:28:46,834 --> 00:28:50,067
+which is a very nice way,
+an alternate way,
+
+673
+00:28:50,067 --> 00:28:52,000
+in this language
+for making objects.
+
+674
+00:28:52,000 --> 00:28:54,334
+So here's the recipe.
+
+675
+00:28:54,334 --> 00:28:56,100
+Step one, you make an object.
+
+676
+00:28:56,100 --> 00:28:57,634
+And there are four ways
+we can make an object.
+
+677
+00:28:57,634 --> 00:28:59,868
+We can use an object literal.
+We could use "new."
+
+678
+00:28:59,868 --> 00:29:01,701
+I don't do that but you might.
+
+679
+00:29:01,701 --> 00:29:05,534
+We could use object.create
+to beget something
+
+680
+00:29:05,534 --> 00:29:07,234
+from an existing object.
+
+681
+00:29:07,234 --> 00:29:09,200
+Or we could call another
+of these power constructors,
+
+682
+00:29:09,200 --> 00:29:14,100
+which gives us another
+inheritance model.
+
+683
+00:29:14,100 --> 00:29:17,601
+Step two, we define some
+variables and functions.
+
+684
+00:29:17,601 --> 00:29:19,200
+These will become
+the private members
+
+685
+00:29:19,200 --> 00:29:21,334
+of the object that we're making.
+
+686
+00:29:21,334 --> 00:29:24,834
+Step three, we augment the
+object with privileged methods.
+
+687
+00:29:24,834 --> 00:29:27,434
+Privileged methods
+have unique access
+
+688
+00:29:27,434 --> 00:29:30,300
+to the stuff defining step two.
+
+689
+00:29:30,300 --> 00:29:32,400
+Then step four,
+we return the object.
+
+690
+00:29:32,400 --> 00:29:34,868
+So pretty simple recipe.
+
+691
+00:29:34,868 --> 00:29:37,901
+Let me turn the recipe
+into a template.
+
+692
+00:29:37,901 --> 00:29:40,367
+So step one,
+I'm gonna make a new object.
+
+693
+00:29:40,367 --> 00:29:42,567
+I'm gonna put it
+in a variable called "that."
+
+694
+00:29:42,567 --> 00:29:44,667
+"That" because
+it's reminiscent of "this."
+
+695
+00:29:44,667 --> 00:29:45,701
+And I can't call it "this"
+
+696
+00:29:45,701 --> 00:29:48,133
+because "this"
+is a reserved word.
+
+697
+00:29:48,133 --> 00:29:51,834
+Step two, I'll define a variable
+that will be secret,
+
+698
+00:29:51,834 --> 00:29:54,667
+be private,
+shared by these guys.
+
+699
+00:29:54,667 --> 00:29:57,000
+Step three, I'll create
+a privileged method,
+
+700
+00:29:57,000 --> 00:29:59,367
+which is a function
+which will have access
+
+701
+00:29:59,367 --> 00:30:03,467
+to the state
+of the outer function.
+
+702
+00:30:03,467 --> 00:30:07,467
+And step four, I return that,
+and that's it.
+
+703
+00:30:07,467 --> 00:30:10,033
+Really easy way
+to make objects
+
+704
+00:30:10,033 --> 00:30:15,000
+which can hide their stuff
+and be private.
+
+705
+00:30:15,000 --> 00:30:17,567
+So the reason this works
+is because
+
+706
+00:30:17,567 --> 00:30:19,100
+we have closure
+in this language,
+
+707
+00:30:19,100 --> 00:30:21,000
+which means that
+a function object contains
+
+708
+00:30:21,000 --> 00:30:23,534
+the function itself,
+which has a name and parameters
+
+709
+00:30:23,534 --> 00:30:26,801
+and a body and it has
+a reference to the environment
+
+710
+00:30:26,801 --> 00:30:29,200
+in which it was created
+or the context.
+
+711
+00:30:29,200 --> 00:30:30,601
+You know, which--
+
+712
+00:30:30,601 --> 00:30:32,968
+In this case is the stuff
+that was in the outer function.
+
+713
+00:30:32,968 --> 00:30:34,467
+This is a very good thing.
+
+714
+00:30:34,467 --> 00:30:39,267
+This is one of the best parts
+of this language.
+
+715
+00:30:39,267 --> 00:30:41,634
+Now concerning style,
+
+716
+00:30:41,634 --> 00:30:43,434
+if you get any
+two programmers together,
+
+717
+00:30:43,434 --> 00:30:46,534
+they could argue all day
+about matters of style.
+
+718
+00:30:46,534 --> 00:30:50,400
+Like should the curly brace
+be on the left or on the right?
+
+719
+00:30:50,400 --> 00:30:52,567
+And they may get really
+emotional about
+
+720
+00:30:52,567 --> 00:30:53,767
+which way it goes.
+
+721
+00:30:53,767 --> 00:30:55,501
+We feel very strongly
+about this stuff
+
+722
+00:30:55,501 --> 00:30:58,067
+even though we don't know why.
+
+723
+00:30:58,067 --> 00:31:01,100
+You know, we can agree
+that whichever we do,
+
+724
+00:31:01,100 --> 00:31:02,801
+we should be consistent.
+
+725
+00:31:02,801 --> 00:31:05,400
+But it's hard
+to find agreement
+
+726
+00:31:05,400 --> 00:31:06,734
+on should it be
+on the left or the right.
+
+727
+00:31:06,734 --> 00:31:08,000
+It's sort of like,
+"What side of the road
+
+728
+00:31:08,000 --> 00:31:09,033
+should we drive on?"
+
+729
+00:31:09,033 --> 00:31:10,400
+There's not a compelling reason
+
+730
+00:31:10,400 --> 00:31:12,067
+for why we should drive
+on the left or right.
+
+731
+00:31:12,067 --> 00:31:14,934
+As long as we all drive
+on the same side.
+
+732
+00:31:14,934 --> 00:31:19,734
+If we don't,
+then bad things will happen.
+
+733
+00:31:19,734 --> 00:31:21,167
+And we have
+a similar thing here.
+
+734
+00:31:21,167 --> 00:31:23,200
+So if you look
+at why people get emotional
+
+735
+00:31:23,200 --> 00:31:24,968
+about that stuff,
+where did the idea
+
+736
+00:31:24,968 --> 00:31:27,667
+of leftness
+or rightness come from?
+
+737
+00:31:27,667 --> 00:31:28,868
+You know,
+you could trace it down
+
+738
+00:31:28,868 --> 00:31:30,501
+to where they went to school
+
+739
+00:31:30,501 --> 00:31:32,767
+or what they learned
+on their first job
+
+740
+00:31:32,767 --> 00:31:37,200
+or are deeply impressed somebody
+early in their career.
+
+741
+00:31:37,200 --> 00:31:38,734
+They may give you
+a lot of reasons
+
+742
+00:31:38,734 --> 00:31:40,968
+for why the left side or right
+side is better than the other.
+
+743
+00:31:40,968 --> 00:31:42,501
+But they don't
+fundamentally know.
+
+744
+00:31:42,501 --> 00:31:45,133
+They just get
+really emotional about it.
+
+745
+00:31:45,133 --> 00:31:49,200
+Well, it turns out having them
+on the right side
+
+746
+00:31:49,200 --> 00:31:51,868
+is the right way and the left
+side is the wrong way
+
+747
+00:31:51,868 --> 00:31:53,300
+in JavaScript.
+
+748
+00:31:53,300 --> 00:31:55,067
+I can't testify
+for any other language.
+
+749
+00:31:55,067 --> 00:31:56,701
+But it is absolutely true
+for this language.
+
+750
+00:31:56,701 --> 00:31:58,868
+And I'll show you
+an example why.
+
+751
+00:31:58,868 --> 00:32:01,200
+So here we have
+a return statement
+
+752
+00:32:01,200 --> 00:32:02,934
+which is returning
+an object literal.
+
+753
+00:32:02,934 --> 00:32:04,167
+We saw an example
+of that
+
+754
+00:32:04,167 --> 00:32:06,968
+in the earlier
+construction pattern.
+
+755
+00:32:06,968 --> 00:32:09,334
+The one on the right
+works right.
+
+756
+00:32:09,334 --> 00:32:12,334
+And the one on the left,
+"silent error."
+
+757
+00:32:12,334 --> 00:32:14,400
+It doesn't return an object.
+It returns nothing.
+
+758
+00:32:14,400 --> 00:32:17,334
+It returns undefined,
+which is deeply surprising
+
+759
+00:32:17,334 --> 00:32:19,133
+and wrong.
+
+760
+00:32:19,133 --> 00:32:20,133
+You don't get
+a compile time error.
+
+761
+00:32:20,133 --> 00:32:21,434
+You don't get a runtime error.
+
+762
+00:32:21,434 --> 00:32:23,300
+You don't get nothing
+in the log.
+
+763
+00:32:23,300 --> 00:32:24,534
+This is really bad.
+
+764
+00:32:24,534 --> 00:32:26,367
+So how does this happen?
+
+765
+00:32:26,367 --> 00:32:29,601
+Because the two statements look
+like they should be equivalent.
+
+766
+00:32:29,601 --> 00:32:32,367
+So let's zoom in
+on a little bit.
+
+767
+00:32:32,367 --> 00:32:34,267
+Look at what's going on.
+
+768
+00:32:34,267 --> 00:32:36,601
+All right, you remember I told
+you about semicolon insertion?
+
+769
+00:32:36,601 --> 00:32:37,667
+How we'll sometimes
+put semicolons
+
+770
+00:32:37,667 --> 00:32:39,000
+where they shouldn't go?
+
+771
+00:32:39,000 --> 00:32:40,601
+This is one of those times,
+
+772
+00:32:40,601 --> 00:32:43,133
+so it puts a semicolon
+in there.
+
+773
+00:32:43,133 --> 00:32:46,901
+So a return statement
+with no value after it
+
+774
+00:32:46,901 --> 00:32:48,567
+and no expression after it,
+
+775
+00:32:48,567 --> 00:32:50,400
+will return undefined
+in most contexts.
+
+776
+00:32:50,400 --> 00:32:52,400
+Occasionally,
+it'll return these.
+
+777
+00:32:52,400 --> 00:32:54,968
+So but there's a lot
+of other junk here.
+
+778
+00:32:54,968 --> 00:32:56,634
+That should cause some sort
+of syntax error or something.
+
+779
+00:32:56,634 --> 00:32:58,601
+Give us some sort of warning.
+
+780
+00:32:58,601 --> 00:33:01,167
+Well, no, because it turns out
+that curly brace
+
+781
+00:33:01,167 --> 00:33:03,033
+can mean
+"start an object literal",
+
+782
+00:33:03,033 --> 00:33:04,601
+or it could mean a block.
+
+783
+00:33:04,601 --> 00:33:06,767
+Now it turns out,
+in this language,
+
+784
+00:33:06,767 --> 00:33:08,067
+we don't have block scope.
+
+785
+00:33:08,067 --> 00:33:12,934
+So having an empty block
+is not useful.
+
+786
+00:33:12,934 --> 00:33:14,367
+We have one.
+
+787
+00:33:14,367 --> 00:33:18,033
+The syntax prefers a block
+to a literal in this notation,
+
+788
+00:33:18,033 --> 00:33:20,868
+so that's what we get.
+
+789
+00:33:20,868 --> 00:33:23,834
+Okay, so "ok" doesn't
+look like a statement.
+
+790
+00:33:23,834 --> 00:33:27,100
+Well, actually it does.
+It looks like a statement label.
+
+791
+00:33:27,100 --> 00:33:30,367
+Well, "false" doesn't look like
+any kind of a statement.
+
+792
+00:33:30,367 --> 00:33:33,000
+But, remember, we have those
+useless expression statements
+
+793
+00:33:33,000 --> 00:33:34,601
+that we inherited from C.
+
+794
+00:33:34,601 --> 00:33:37,667
+So we'll evaluate "false"
+and go, "Yep, that's false.",
+
+795
+00:33:37,667 --> 00:33:39,434
+and ignore it.
+
+796
+00:33:39,434 --> 00:33:41,100
+But it doesn't have
+a semicolon after it.
+
+797
+00:33:41,100 --> 00:33:43,033
+Well, that's not a problem,
+because semicolon insertion
+
+798
+00:33:43,033 --> 00:33:45,834
+comes in, repairs that one.
+
+799
+00:33:45,834 --> 00:33:49,400
+Now we've got an extra semicolon
+at the bottom there.
+
+800
+00:33:49,400 --> 00:33:50,901
+That should trigger an error.
+
+801
+00:33:50,901 --> 00:33:52,934
+No, 'cause from C we also
+get the empty statement,
+
+802
+00:33:52,934 --> 00:33:55,901
+which allows you to have as many
+semicolons as you want.
+
+803
+00:33:55,901 --> 00:33:59,000
+So all these things tend
+to work together to mask errors.
+
+804
+00:33:59,000 --> 00:34:01,434
+Then, finally, we've got some
+unreachable code here.
+
+805
+00:34:01,434 --> 00:34:03,868
+But JavaScript doesn't care.
+
+806
+00:34:03,868 --> 00:34:06,501
+So there's nothing in the
+language, in the grammar,
+
+807
+00:34:06,501 --> 00:34:10,133
+that says there's any problem
+with unreachable code.
+
+808
+00:34:10,133 --> 00:34:15,133
+So here's a case where bad style
+produces a very bad result.
+
+809
+00:34:15,133 --> 00:34:17,100
+You've got code which
+you think means that
+
+810
+00:34:17,100 --> 00:34:18,367
+which means that.
+
+811
+00:34:18,367 --> 00:34:19,667
+That's one
+of the worst things
+
+812
+00:34:19,667 --> 00:34:22,067
+a language can do to you.
+
+813
+00:34:22,067 --> 00:34:23,467
+Now you might
+be looking at this
+
+814
+00:34:23,467 --> 00:34:25,133
+and you might be wondering,
+
+815
+00:34:25,133 --> 00:34:28,501
+"How did this ever
+become a standard?"
+
+816
+00:34:28,501 --> 00:34:31,901
+And you might be wondering,
+
+817
+00:34:31,901 --> 00:34:34,067
+"Why am I betting my career
+on this piece of crap?"
+
+818
+00:34:34,067 --> 00:34:37,367
+[laughter]
+
+819
+00:34:37,367 --> 00:34:41,033
+Um, getting back
+to the question about standards,
+
+820
+00:34:41,033 --> 00:34:43,033
+this shouldn't
+have become a standard.
+
+821
+00:34:43,033 --> 00:34:44,634
+There was nobody
+paying attention
+
+822
+00:34:44,634 --> 00:34:48,367
+and this stuff went through
+and JavaScript became
+
+823
+00:34:48,367 --> 00:34:51,100
+the world's biggest
+programming language
+
+824
+00:34:51,100 --> 00:34:53,868
+completely independent
+of its merits.
+
+825
+00:34:53,868 --> 00:34:57,767
+Given the process
+by which all of that happened,
+
+826
+00:34:57,767 --> 00:34:59,901
+we deserve a language
+which is far, far worse
+
+827
+00:34:59,901 --> 00:35:02,267
+than JavaScript.
+
+828
+00:35:02,267 --> 00:35:08,267
+In fact, given its amazing
+success despite some of these
+
+829
+00:35:08,267 --> 00:35:13,300
+obvious shortcomings,
+I think we got lucky.
+
+830
+00:35:13,300 --> 00:35:16,033
+There's actually enough
+goodness, smartness,
+
+831
+00:35:16,033 --> 00:35:18,334
+built into the language
+that if you can just
+
+832
+00:35:18,334 --> 00:35:20,601
+avoid the bad parts,
+the good parts are really good
+
+833
+00:35:20,601 --> 00:35:23,300
+and are worthwhile.
+
+834
+00:35:23,300 --> 00:35:25,701
+So I call that
+"working with the grain."
+
+835
+00:35:25,701 --> 00:35:27,667
+I spent a lot of time struggling
+with this language
+
+836
+00:35:27,667 --> 00:35:29,667
+trying to figure out
+how to make it work right,
+
+837
+00:35:29,667 --> 00:35:31,367
+how to make it do good things.
+
+838
+00:35:31,367 --> 00:35:33,100
+'Cause all the examples
+that were published
+
+839
+00:35:33,100 --> 00:35:35,267
+by Netscape at the time
+and that you could see
+
+840
+00:35:35,267 --> 00:35:36,801
+coming out of Dreamweaver,
+
+841
+00:35:36,801 --> 00:35:38,567
+all told you to do
+really awful stuff.
+
+842
+00:35:38,567 --> 00:35:40,033
+And it took a long time
+to figure out
+
+843
+00:35:40,033 --> 00:35:41,100
+what this was about.
+
+844
+00:35:41,100 --> 00:35:43,000
+I remember one day
+I had an epiphany.
+
+845
+00:35:43,000 --> 00:35:44,634
+"Wait, this is scheme."
+
+846
+00:35:44,634 --> 00:35:46,033
+You know, I--
+
+847
+00:35:46,033 --> 00:35:49,100
+There was no documentation
+which said how functions worked
+
+848
+00:35:49,100 --> 00:35:51,334
+and the properties of it.
+
+849
+00:35:51,334 --> 00:35:52,834
+It wasn't accidental.
+
+850
+00:35:52,834 --> 00:35:54,834
+Brendan Eich, the designer
+of the language,
+
+851
+00:35:54,834 --> 00:35:58,067
+always intended to implement
+a scheme language.
+
+852
+00:35:58,067 --> 00:36:03,133
+His bosses at Netscape wouldn't
+let him do a scheme language
+
+853
+00:36:03,133 --> 00:36:04,467
+because it was too weird
+looking.
+
+854
+00:36:04,467 --> 00:36:06,067
+They told him,
+"Make it more like Java
+
+855
+00:36:06,067 --> 00:36:07,467
+or Visual Basic or something."
+
+856
+00:36:07,467 --> 00:36:09,200
+So he did this to it.
+
+857
+00:36:09,200 --> 00:36:11,234
+So it's not accidental
+that the good stuff
+
+858
+00:36:11,234 --> 00:36:12,267
+is in the language.
+
+859
+00:36:12,267 --> 00:36:13,701
+He put it there intentionally.
+
+860
+00:36:13,701 --> 00:36:18,634
+So he very quickly put together
+a prototype, uh, uh,
+
+861
+00:36:18,634 --> 00:36:22,534
+in an amazingly short time
+and presented it to management
+
+862
+00:36:22,534 --> 00:36:24,400
+and it seemed to work.
+
+863
+00:36:24,400 --> 00:36:25,634
+And they said,
+"It seems to work."
+
+864
+00:36:25,634 --> 00:36:26,801
+He said, "Yeah."
+
+865
+00:36:26,801 --> 00:36:28,167
+So they shipped it.
+
+866
+00:36:28,167 --> 00:36:29,968
+[laughter]
+
+867
+00:36:29,968 --> 00:36:33,334
+Then Microsoft observed it and
+decided to knock it off,
+
+868
+00:36:33,334 --> 00:36:38,334
+and they reverse engineered
+it to amazing fidelity.
+
+869
+00:36:38,334 --> 00:36:40,100
+They found
+all the errors that were
+
+870
+00:36:40,100 --> 00:36:42,701
+in that first implementation
+and copied them exactly.
+
+871
+00:36:42,701 --> 00:36:44,934
+[laughter]
+
+872
+00:36:44,934 --> 00:36:46,501
+And when it went
+to standardization,
+
+873
+00:36:46,501 --> 00:36:48,934
+all that stuff got locked
+into the standard.
+
+874
+00:36:48,934 --> 00:36:50,801
+So this bit
+I showed you before,
+
+875
+00:36:50,801 --> 00:36:53,534
+this amazingly silly bit
+of silliness,
+
+876
+00:36:53,534 --> 00:36:56,300
+that's not due to errors
+and implementations.
+
+877
+00:36:56,300 --> 00:36:59,133
+It's required behavior
+by the standard.
+
+878
+00:36:59,133 --> 00:37:01,267
+In fact, all the
+browsers implement it
+
+879
+00:37:01,267 --> 00:37:03,767
+exactly that way.
+
+880
+00:37:03,767 --> 00:37:08,701
+So when JavaScript
+was first introduced
+
+881
+00:37:08,701 --> 00:37:13,133
+late in 1995,
+it was intentionally
+
+882
+00:37:13,133 --> 00:37:16,100
+mispositioned
+by Sun and Netscape.
+
+883
+00:37:16,100 --> 00:37:19,834
+They decided they needed to join
+together against Microsoft.
+
+884
+00:37:19,834 --> 00:37:21,234
+And there was some confusion
+
+885
+00:37:21,234 --> 00:37:22,868
+about why they needed
+two languages.
+
+886
+00:37:22,868 --> 00:37:24,434
+'Cause it was clearly that Java
+was going to be
+
+887
+00:37:24,434 --> 00:37:27,067
+the language that was going
+to rule in the future.
+
+888
+00:37:27,067 --> 00:37:30,267
+Netscape didn't want
+to give up on this language,
+
+889
+00:37:30,267 --> 00:37:32,234
+which was called JavaScript
+at the time.
+
+890
+00:37:32,234 --> 00:37:33,934
+And their alliance
+almost broke down
+
+891
+00:37:33,934 --> 00:37:36,567
+until Marc Andreessen,
+perhaps as a joke,
+
+892
+00:37:36,567 --> 00:37:38,234
+suggested that they
+call it JavaScript
+
+893
+00:37:38,234 --> 00:37:40,767
+and that way Sun
+wouldn't have to hate it.
+
+894
+00:37:40,767 --> 00:37:41,767
+[man speaking indistinctly]
+
+895
+00:37:41,767 --> 00:37:42,767
+Crockford: I'm sorry?
+
+896
+00:37:42,767 --> 00:37:43,767
+man: It was LiveScript.
+
+897
+00:37:43,767 --> 00:37:45,934
+Crockford: It was LiveScript.
+
+898
+00:37:45,934 --> 00:37:48,167
+Um...
+
+899
+00:37:48,167 --> 00:37:51,934
+So, um, I looked at the first
+version of the language
+
+900
+00:37:51,934 --> 00:37:54,167
+and like all of you,
+I said,
+
+901
+00:37:54,167 --> 00:37:55,601
+"Well, this is incompetent crap.
+
+902
+00:37:55,601 --> 00:37:58,200
+I'm not gonna waste
+any time on this."
+
+903
+00:37:58,200 --> 00:38:01,801
+I had an occasion several years
+later to take another look.
+
+904
+00:38:01,801 --> 00:38:06,033
+And between
+that time and the next,
+
+905
+00:38:06,033 --> 00:38:08,367
+some goodness had been added
+to the language
+
+906
+00:38:08,367 --> 00:38:11,667
+that was missing
+from the first release.
+
+907
+00:38:11,667 --> 00:38:13,734
+My company was approached by
+Turner Broadcasting
+
+908
+00:38:13,734 --> 00:38:18,300
+to do a website for children
+based on Cartoon Network.
+
+909
+00:38:18,300 --> 00:38:20,801
+And we had a chat system
+that we had
+
+910
+00:38:20,801 --> 00:38:22,300
+that they wanted
+to adapt
+
+911
+00:38:22,300 --> 00:38:25,367
+to this online
+children's community.
+
+912
+00:38:25,367 --> 00:38:28,300
+So I went down to Atlanta and
+learned about the requirements
+
+913
+00:38:28,300 --> 00:38:29,601
+and it was pretty clear
+our chat system
+
+914
+00:38:29,601 --> 00:38:31,968
+wasn't going to be
+good enough to do this.
+
+915
+00:38:31,968 --> 00:38:33,767
+And I didn't wanna
+give the money back
+
+916
+00:38:33,767 --> 00:38:36,567
+because this was, like,
+the biggest contract
+
+917
+00:38:36,567 --> 00:38:39,767
+in the history of the company,
+and I really wanted to do this.
+
+918
+00:38:39,767 --> 00:38:42,934
+So I don't know
+where it came from,
+
+919
+00:38:42,934 --> 00:38:44,267
+but I got this
+really silly idea.
+
+920
+00:38:44,267 --> 00:38:47,067
+Maybe we could do it in
+the web browser just as it is?
+
+921
+00:38:47,067 --> 00:38:53,067
+So I wrote up a little
+prototype and it ran on IE 4,
+
+922
+00:38:53,067 --> 00:38:57,167
+I think, at the time
+and on Netscape 4.
+
+923
+00:38:57,167 --> 00:38:59,834
+And I sent it to Atlanta
+and they liked it.
+
+924
+00:38:59,834 --> 00:39:01,934
+You could drag and drop
+little cartoon guys.
+
+925
+00:39:01,934 --> 00:39:04,868
+They'd never seen anything like
+that in a browser before.
+
+926
+00:39:04,868 --> 00:39:08,033
+And they liked that it wasn't
+a big installation.
+
+927
+00:39:08,033 --> 00:39:09,667
+It was just a little thing
+that ran in their browsers,
+
+928
+00:39:09,667 --> 00:39:11,834
+so it was something
+they could ask kids to do.
+
+929
+00:39:11,834 --> 00:39:14,501
+So that was really good.
+So I went to my team.
+
+930
+00:39:14,501 --> 00:39:16,434
+And my team,
+I had some of the best
+
+931
+00:39:16,434 --> 00:39:18,667
+Java developers in the world.
+
+932
+00:39:18,667 --> 00:39:19,968
+We'd been together
+for a long time.
+
+933
+00:39:19,968 --> 00:39:22,567
+We had a lot of experience
+at doing this stuff.
+
+934
+00:39:22,567 --> 00:39:24,567
+And I said, "Okay, this is how
+we're going to do it.
+
+935
+00:39:24,567 --> 00:39:27,834
+We're gonna write the client
+in the browser in JavaScript."
+
+936
+00:39:27,834 --> 00:39:29,767
+And they all said,
+and you may remember,
+
+937
+00:39:29,767 --> 00:39:31,767
+"That's great.
+What's plan B?
+
+938
+00:39:31,767 --> 00:39:33,334
+[laughter]
+
+939
+00:39:33,334 --> 00:39:35,067
+"In fact, we should start
+plan B right now
+
+940
+00:39:35,067 --> 00:39:37,834
+because there's no way
+this is going to work."
+
+941
+00:39:37,834 --> 00:39:39,534
+And I said,
+"No, we're not gonna do plan B.
+
+942
+00:39:39,534 --> 00:39:41,501
+"We're going to do plan A,
+and it is going to work.
+
+943
+00:39:41,501 --> 00:39:43,734
+So who wants
+to do the JavaScript?"
+
+944
+00:39:43,734 --> 00:39:46,701
+And everybody
+took a step backward.
+
+945
+00:39:46,701 --> 00:39:48,667
+So it was, like,
+I have to do this
+
+946
+00:39:48,667 --> 00:39:50,133
+or I'm gonna have
+to give the money back.
+
+947
+00:39:50,133 --> 00:39:51,834
+And I really didn't wanna
+give the money back.
+
+948
+00:39:51,834 --> 00:39:54,434
+So I had to do JavaScript.
+
+949
+00:39:54,434 --> 00:39:56,667
+And like everybody else,
+I started doing it
+
+950
+00:39:56,667 --> 00:39:59,701
+without learning it and was
+hating it the whole time.
+
+951
+00:39:59,701 --> 00:40:01,200
+[mild growl]
+
+952
+00:40:01,200 --> 00:40:03,834
+And it wasn't until I had
+the scheme epiphany,
+
+953
+00:40:03,834 --> 00:40:06,267
+which came late, that I
+understood what it was about.
+
+954
+00:40:06,267 --> 00:40:08,267
+And it was like, "Oh, okay.
+This isn't so bad."
+
+955
+00:40:08,267 --> 00:40:11,534
+There's actually goodness in it
+and discovering the goodness--
+
+956
+00:40:11,534 --> 00:40:13,901
+It's like, "There's JSON in it!"
+
+957
+00:40:13,901 --> 00:40:16,300
+JSON came about it
+from my experience
+
+958
+00:40:16,300 --> 00:40:18,033
+using the language
+and recognizing,
+
+959
+00:40:18,033 --> 00:40:19,467
+"Hey, this little bit
+of a language
+
+960
+00:40:19,467 --> 00:40:21,067
+could be used for doing
+data interchange."
+
+961
+00:40:21,067 --> 00:40:22,801
+And it was great.
+It was already there.
+
+962
+00:40:22,801 --> 00:40:25,267
+It was free.
+And it was well done.
+
+963
+00:40:25,267 --> 00:40:28,234
+So JSON,
+just as a consequence
+
+964
+00:40:28,234 --> 00:40:31,801
+of my recognizing it,
+has become a world standard.
+
+965
+00:40:31,801 --> 00:40:33,300
+The JSON story--
+
+966
+00:40:33,300 --> 00:40:37,801
+In 2001, Chip Morningstar and I
+were at State Software
+
+967
+00:40:37,801 --> 00:40:39,901
+and we had
+an early AJAX platform.
+
+968
+00:40:39,901 --> 00:40:41,400
+Really amazing stuff.
+
+969
+00:40:41,400 --> 00:40:43,868
+I think it's still better than
+what's out there today.
+
+970
+00:40:43,868 --> 00:40:49,367
+And we used JSON
+for the data exchange.
+
+971
+00:40:49,367 --> 00:40:51,767
+And we went
+to potential customers
+
+972
+00:40:51,767 --> 00:40:53,167
+and we explained how it worked.
+
+973
+00:40:53,167 --> 00:40:54,701
+And they said,
+"Well, where's the XML?"
+
+974
+00:40:54,701 --> 00:40:56,267
+We said, "Oh, we don't need XML.
+We're doing this.
+
+975
+00:40:56,267 --> 00:40:58,167
+It's really so much
+easier and faster."
+
+976
+00:40:58,167 --> 00:41:01,200
+They'd go, "Oh, we just
+committed to XML.
+
+977
+00:41:01,200 --> 00:41:02,934
+I'm sorry.
+We can't use it."
+
+978
+00:41:02,934 --> 00:41:04,734
+Or they'd say,
+"It's not a standard."
+
+979
+00:41:04,734 --> 00:41:05,801
+I'd say, "Well, yeah,
+it's a standard.
+
+980
+00:41:05,801 --> 00:41:07,067
+It's in JavaScript."
+
+981
+00:41:07,067 --> 00:41:08,968
+"It's not a standard.
+We can't use it."
+
+982
+00:41:08,968 --> 00:41:10,601
+So I declared it's a standard.
+
+983
+00:41:10,601 --> 00:41:13,167
+So I bought json.org
+and put it up.
+
+984
+00:41:13,167 --> 00:41:15,701
+One-pager that described it
+because it's really simple
+
+985
+00:41:15,701 --> 00:41:17,834
+and it's all
+the description it needed.
+
+986
+00:41:17,834 --> 00:41:19,868
+Few years later,
+I also wrote an RFC
+
+987
+00:41:19,868 --> 00:41:22,334
+that described it
+a little bit more formally.
+
+988
+00:41:22,334 --> 00:41:23,734
+And it's become
+a world standard.
+
+989
+00:41:23,734 --> 00:41:25,901
+Basically,
+I am a standards body.
+
+990
+00:41:25,901 --> 00:41:27,834
+[laughter]
+
+991
+00:41:27,834 --> 00:41:31,567
+It became a standard
+just on my say-so.
+
+992
+00:41:31,567 --> 00:41:34,868
+So anyway, getting back
+to the electric community story.
+
+993
+00:41:34,868 --> 00:41:36,834
+So we--
+
+994
+00:41:36,834 --> 00:41:38,868
+That JavaScript program,
+we finished,
+
+995
+00:41:38,868 --> 00:41:40,300
+we shipped it, we got paid.
+
+996
+00:41:40,300 --> 00:41:41,834
+All that stuff is great.
+
+997
+00:41:41,834 --> 00:41:43,667
+Unfortunately,
+while I was making the money,
+
+998
+00:41:43,667 --> 00:41:45,501
+the other half of the company
+was spending the money.
+
+999
+00:41:45,501 --> 00:41:48,367
+So by the time it all got done,
+the board
+
+1000
+00:41:48,367 --> 00:41:52,701
+fired the CEO and the COO
+and made me CEO again
+
+1001
+00:41:52,701 --> 00:41:55,667
+and I had about two week's cash.
+
+1002
+00:41:55,667 --> 00:41:57,667
+Anyway, when you're going
+through a bankruptcy,
+
+1003
+00:41:57,667 --> 00:41:58,934
+you get a lotta spare time.
+
+1004
+00:41:58,934 --> 00:42:01,534
+[laughter]
+
+1005
+00:42:01,534 --> 00:42:04,601
+And so I remembered a paper
+that Vaughan Pratt had written
+
+1006
+00:42:04,601 --> 00:42:06,467
+years ago at the first
+POPL conference
+
+1007
+00:42:06,467 --> 00:42:09,434
+about top-down
+operator precedents.
+
+1008
+00:42:09,434 --> 00:42:12,300
+Which was this amazingly clever,
+elegant, lightweight
+
+1009
+00:42:12,300 --> 00:42:15,067
+way of writing parsers.
+
+1010
+00:42:15,067 --> 00:42:19,834
+And he used it for putting
+an ALGOL-like syntax onto Lisp.
+
+1011
+00:42:19,834 --> 00:42:21,234
+But it turned out
+the Lisp community
+
+1012
+00:42:21,234 --> 00:42:23,033
+has never wanted syntax.
+
+1013
+00:42:23,033 --> 00:42:24,901
+But the JavaScript
+community likes syntax.
+
+1014
+00:42:24,901 --> 00:42:27,400
+And so it occurred
+to me that I could write
+
+1015
+00:42:27,400 --> 00:42:30,601
+a JavaScript parser
+in the language, and I did.
+
+1016
+00:42:30,601 --> 00:42:32,000
+And it turned out
+really well.
+
+1017
+00:42:32,000 --> 00:42:34,033
+And then I had this
+JavaScript interpreter--
+
+1018
+00:42:34,033 --> 00:42:36,667
+or JavaScript parser,
+and what do I do with it?
+
+1019
+00:42:36,667 --> 00:42:39,567
+So I turned it
+into a code quality tool
+
+1020
+00:42:39,567 --> 00:42:41,501
+for JavaScript called JSLint.
+
+1021
+00:42:41,501 --> 00:42:43,934
+And so what JSLint does
+is it parses your program
+
+1022
+00:42:43,934 --> 00:42:46,300
+and analyzes it
+for the sorts of weaknesses
+
+1023
+00:42:46,300 --> 00:42:47,300
+that I've been showing you.
+
+1024
+00:42:47,300 --> 00:42:49,567
+Identifies the bad parts.
+
+1025
+00:42:49,567 --> 00:42:53,167
+And if you can get it to stop
+complaining about your program,
+
+1026
+00:42:53,167 --> 00:42:56,067
+then your program probably
+just contains good parts
+
+1027
+00:42:56,067 --> 00:42:58,334
+and it's more likely
+to be a good program.
+
+1028
+00:42:58,334 --> 00:43:01,267
+So it imposes
+a programming discipline
+
+1029
+00:43:01,267 --> 00:43:02,834
+that makes me
+much more confident
+
+1030
+00:43:02,834 --> 00:43:06,334
+in being in this very dynamic,
+very loosely typed environment.
+
+1031
+00:43:06,334 --> 00:43:08,767
+The sort of confidence
+that strict typing gives you,
+
+1032
+00:43:08,767 --> 00:43:11,167
+JSLint gives me in this
+silly little language.
+
+1033
+00:43:11,167 --> 00:43:12,400
+And it's free.
+
+1034
+00:43:12,400 --> 00:43:13,634
+If you're writing in JavaScript,
+
+1035
+00:43:13,634 --> 00:43:16,067
+you need to be using JSLint.
+
+1036
+00:43:16,067 --> 00:43:19,534
+So go on the web and get it.
+
+1037
+00:43:19,534 --> 00:43:23,367
+If you're evaluating other
+people's JavaScript,
+
+1038
+00:43:23,367 --> 00:43:24,834
+it's good at that too.
+
+1039
+00:43:24,834 --> 00:43:26,634
+So, say if you're comparing
+AJAX libraries,
+
+1040
+00:43:26,634 --> 00:43:28,000
+you don't know which one to use.
+
+1041
+00:43:28,000 --> 00:43:29,300
+Run it through JSLint.
+
+1042
+00:43:29,300 --> 00:43:31,200
+See which one is coded well.
+
+1043
+00:43:31,200 --> 00:43:35,334
+It'll tell you very clearly.
+
+1044
+00:43:35,334 --> 00:43:36,601
+One bit of warning.
+
+1045
+00:43:36,601 --> 00:43:37,901
+JSLint will hurt your feelings.
+
+1046
+00:43:37,901 --> 00:43:39,434
+[laughter]
+
+1047
+00:43:39,434 --> 00:43:42,033
+It'll hurt them really bad.
+It stings.
+
+1048
+00:43:42,033 --> 00:43:44,067
+From time to time,
+people write to me and say,
+
+1049
+00:43:44,067 --> 00:43:45,400
+"Hey, here's another thing
+you could test."
+
+1050
+00:43:45,400 --> 00:43:46,868
+And if it makes sense,
+I'll put it in
+
+1051
+00:43:46,868 --> 00:43:49,300
+and then I'll run all
+of my old programs against it.
+
+1052
+00:43:49,300 --> 00:43:52,300
+Then you realize,
+"Well, I really suck."
+
+1053
+00:43:52,300 --> 00:43:53,567
+You know,
+even though I wrote it,
+
+1054
+00:43:53,567 --> 00:43:56,267
+even though I know
+what all the rules are,
+
+1055
+00:43:56,267 --> 00:43:59,100
+it still hurts
+when I run into this stuff.
+
+1056
+00:43:59,100 --> 00:44:00,868
+And so I can
+imagine your pain
+
+1057
+00:44:00,868 --> 00:44:02,267
+when you go through this stuff.
+
+1058
+00:44:02,267 --> 00:44:04,534
+I do feel it.
+
+1059
+00:44:04,534 --> 00:44:08,100
+Despite that, I recommend
+do everything it says,
+
+1060
+00:44:08,100 --> 00:44:10,033
+because it's right.
+
+1061
+00:44:10,033 --> 00:44:12,734
+And even though you've
+been programming and you've got
+
+1062
+00:44:12,734 --> 00:44:15,100
+a good career and you really
+know what you're doing,
+
+1063
+00:44:15,100 --> 00:44:16,734
+it's smarter about JavaScript
+than you are.
+
+1064
+00:44:16,734 --> 00:44:18,667
+It's certainly
+smarter than I am.
+
+1065
+00:44:18,667 --> 00:44:21,334
+I highly recommend
+you use JSLint.
+
+1066
+00:44:21,334 --> 00:44:23,000
+One of the things
+that makes it hurt
+
+1067
+00:44:23,000 --> 00:44:25,234
+is that unlearning
+is really hard.
+
+1068
+00:44:25,234 --> 00:44:27,167
+I get letters from people
+all the time saying,
+
+1069
+00:44:27,167 --> 00:44:30,601
+"JSLint said my shit stinks.
+What's up with that?"
+
+1070
+00:44:30,601 --> 00:44:33,400
+And they always use the words
+"perfectly fine."
+
+1071
+00:44:33,400 --> 00:44:35,467
+"I did this thing and it was
+perfectly fine."
+
+1072
+00:44:35,467 --> 00:44:37,734
+Well, I think "perfectly fine"
+is double equal to "faulty."
+
+1073
+00:44:37,734 --> 00:44:39,601
+[laughter]
+
+1074
+00:44:39,601 --> 00:44:42,901
+And there arguing with me.
+"Why should I have to fix that?"
+
+1075
+00:44:42,901 --> 00:44:44,634
+I don't care if you fix it.
+
+1076
+00:44:44,634 --> 00:44:46,534
+It's not, you know--
+Nothing to do with me.
+
+1077
+00:44:46,534 --> 00:44:48,033
+You're not even
+paying me for this.
+
+1078
+00:44:48,033 --> 00:44:49,667
+I'm just
+putting it out there free.
+
+1079
+00:44:49,667 --> 00:44:52,734
+If you want your programs
+to be good, make 'em good.
+
+1080
+00:44:52,734 --> 00:44:56,601
+But, you know, we get really
+invested in this stuff.
+
+1081
+00:44:56,601 --> 00:44:58,801
+And ultimately it's because
+unlearning this stuff--
+
+1082
+00:44:58,801 --> 00:45:01,234
+When you learn something wrong
+it's really hard
+
+1083
+00:45:01,234 --> 00:45:02,767
+to get it right.
+
+1084
+00:45:02,767 --> 00:45:06,601
+In JavaScript, if you're
+a professional programmer,
+
+1085
+00:45:06,601 --> 00:45:08,901
+you're coming
+to the language with baggage
+
+1086
+00:45:08,901 --> 00:45:10,133
+from other languages.
+
+1087
+00:45:10,133 --> 00:45:12,133
+And because it looks
+like Java but works
+
+1088
+00:45:12,133 --> 00:45:14,968
+completely different than Java,
+it's really easy
+
+1089
+00:45:14,968 --> 00:45:16,567
+to get stuff wrong unless
+you're paying attention
+
+1090
+00:45:16,567 --> 00:45:17,868
+to what you're doing.
+
+1091
+00:45:17,868 --> 00:45:19,534
+Or if you're a beginner,
+you probably started
+
+1092
+00:45:19,534 --> 00:45:24,033
+by reading view-source
+on crap that ultimately
+
+1093
+00:45:24,033 --> 00:45:26,300
+traces all the way back
+to Dreamweaver.
+
+1094
+00:45:26,300 --> 00:45:29,400
+And it's awful and that's the
+way people learn.
+
+1095
+00:45:29,400 --> 00:45:30,834
+And once that stuff
+gets in your head,
+
+1096
+00:45:30,834 --> 00:45:34,968
+it's really hard to get it out,
+but you need to do it.
+
+1097
+00:45:34,968 --> 00:45:36,868
+Josh Billings said,
+"It's not ignorance
+
+1098
+00:45:36,868 --> 00:45:38,300
+"does so much damage;
+it's knowin'
+
+1099
+00:45:38,300 --> 00:45:39,934
+so derned much that ain't so."
+
+1100
+00:45:39,934 --> 00:45:43,033
+And ain't that the truth?
+
+1101
+00:45:43,033 --> 00:45:46,567
+So maybe the best part about
+this language is its stability.
+
+1102
+00:45:46,567 --> 00:45:49,100
+There have been
+no new design errors since 1999.
+
+1103
+00:45:49,100 --> 00:45:51,801
+[laughter]
+
+1104
+00:45:51,801 --> 00:45:55,033
+And this is a consequence of--
+
+1105
+00:45:55,033 --> 00:45:57,267
+That's the last time the
+language spec was revised
+
+1106
+00:45:57,267 --> 00:45:59,167
+was in 1999.
+
+1107
+00:45:59,167 --> 00:46:02,334
+But I think it's a good idea to,
+every ten years or so,
+
+1108
+00:46:02,334 --> 00:46:03,968
+revisit the specifications.
+
+1109
+00:46:03,968 --> 00:46:07,234
+So we're about
+to lose this best part.
+
+1110
+00:46:07,234 --> 00:46:09,434
+We're about to come out
+with a new edition
+
+1111
+00:46:09,434 --> 00:46:12,801
+which is codenamed ES3.1,
+which will probably
+
+1112
+00:46:12,801 --> 00:46:16,033
+be labeled
+ Fourth Edition.
+
+1113
+00:46:16,033 --> 00:46:18,634
+There's a weird story you might
+ask me about later
+
+1114
+00:46:18,634 --> 00:46:21,334
+for why it's called and not
+JavaScript.
+
+1115
+00:46:21,334 --> 00:46:24,334
+This new edition will contain
+a lot of corrections.
+
+1116
+00:46:24,334 --> 00:46:26,133
+Both corrections
+to the specification
+
+1117
+00:46:26,133 --> 00:46:28,033
+and some corrections
+to the language.
+
+1118
+00:46:28,033 --> 00:46:30,634
+It turns out there
+are cases where, um,
+
+1119
+00:46:30,634 --> 00:46:33,167
+all the browser makers
+did something different
+
+1120
+00:46:33,167 --> 00:46:35,634
+than the standard
+and they all got it right.
+
+1121
+00:46:35,634 --> 00:46:39,000
+So we're recognizing that
+and making the standard better.
+
+1122
+00:46:39,000 --> 00:46:40,934
+There are also places
+where we saw
+
+1123
+00:46:40,934 --> 00:46:43,567
+three out of four
+of the browser makers
+
+1124
+00:46:43,567 --> 00:46:46,501
+were doing one thing and
+Microsoft was doing another.
+
+1125
+00:46:46,501 --> 00:46:48,634
+We're fixing that now too.
+
+1126
+00:46:48,634 --> 00:46:51,734
+The next version of JScript
+coming out of Microsoft
+
+1127
+00:46:51,734 --> 00:46:55,667
+will be in much closer alliance
+to the common language
+
+1128
+00:46:55,667 --> 00:46:57,300
+than everybody else.
+
+1129
+00:46:57,300 --> 00:46:59,667
+So one of the key benefits from
+this language is that
+
+1130
+00:46:59,667 --> 00:47:02,534
+cross-browser compatibility
+will be significantly improved.
+
+1131
+00:47:02,534 --> 00:47:04,868
+Now it turns out JavaScript
+is already, I think,
+
+1132
+00:47:04,868 --> 00:47:07,234
+one of the best languages
+in the world in terms
+
+1133
+00:47:07,234 --> 00:47:11,133
+of compatibility
+with multiple implementations.
+
+1134
+00:47:11,133 --> 00:47:14,501
+You know, two JavaScript engines
+are much more likely
+
+1135
+00:47:14,501 --> 00:47:17,534
+to be compatible
+at a really deep level
+
+1136
+00:47:17,534 --> 00:47:20,934
+than, say, two C engines.
+
+1137
+00:47:20,934 --> 00:47:23,467
+JavaScript gets
+knocked pretty hard
+
+1138
+00:47:23,467 --> 00:47:25,434
+about cross-browser
+compatibility.
+
+1139
+00:47:25,434 --> 00:47:27,601
+But most of those problems
+are due to the DOM.
+
+1140
+00:47:27,601 --> 00:47:30,000
+The language itself tends
+to be pretty good.
+
+1141
+00:47:30,000 --> 00:47:31,667
+It's gonna get even better.
+
+1142
+00:47:31,667 --> 00:47:34,100
+We're providing support
+for object hardening.
+
+1143
+00:47:34,100 --> 00:47:37,501
+So objects right now
+are maybe too dynamic,
+
+1144
+00:47:37,501 --> 00:47:40,400
+where everything in them
+is completely malleable
+
+1145
+00:47:40,400 --> 00:47:41,601
+all the time.
+
+1146
+00:47:41,601 --> 00:47:43,501
+So we can now
+make objects immutable,
+
+1147
+00:47:43,501 --> 00:47:45,734
+where you can lock down
+individual properties
+
+1148
+00:47:45,734 --> 00:47:48,367
+or lock the whole object down.
+
+1149
+00:47:48,367 --> 00:47:51,167
+This will be particularly good
+as we start looking
+
+1150
+00:47:51,167 --> 00:47:53,868
+someday towards secure mashups,
+where you can have
+
+1151
+00:47:53,868 --> 00:47:55,834
+a hardened object which
+you can give to other code
+
+1152
+00:47:55,834 --> 00:47:58,300
+and know that it
+cannot be compromised.
+
+1153
+00:47:58,300 --> 00:48:01,634
+We'll also have a new
+strict mode for reliability.
+
+1154
+00:48:01,634 --> 00:48:03,100
+So there are a lot of things
+in the language
+
+1155
+00:48:03,100 --> 00:48:06,601
+which are just intolerable.
+
+1156
+00:48:06,601 --> 00:48:08,567
+But the biggest problem
+with the bad parts
+
+1157
+00:48:08,567 --> 00:48:12,033
+in this language
+isn't that they are useless.
+
+1158
+00:48:12,033 --> 00:48:13,868
+They actually
+are occasionally useful.
+
+1159
+00:48:13,868 --> 00:48:17,567
+And so the web
+has found uses for all
+
+1160
+00:48:17,567 --> 00:48:19,734
+of the really bad parts
+of the language.
+
+1161
+00:48:19,734 --> 00:48:22,501
+So we were very greatly
+constrained
+
+1162
+00:48:22,501 --> 00:48:23,834
+in what we could take out.
+
+1163
+00:48:23,834 --> 00:48:27,334
+And we've tried to be respectful
+for existing code
+
+1164
+00:48:27,334 --> 00:48:29,133
+and tried to minimize
+the breakage
+
+1165
+00:48:29,133 --> 00:48:31,901
+that the new language
+will cause.
+
+1166
+00:48:31,901 --> 00:48:33,467
+But there's some stuff
+in the language
+
+1167
+00:48:33,467 --> 00:48:34,834
+which really has to be fixed.
+
+1168
+00:48:34,834 --> 00:48:36,434
+So we now have an opt-in mode.
+
+1169
+00:48:36,434 --> 00:48:38,200
+You can say "strict mode"
+and put it in the top
+
+1170
+00:48:38,200 --> 00:48:40,234
+of your program or
+in the top of your function
+
+1171
+00:48:40,234 --> 00:48:42,534
+and that says, "I don't
+want the crappy behavior.
+
+1172
+00:48:42,534 --> 00:48:44,868
+I want the rational behavior."
+
+1173
+00:48:44,868 --> 00:48:47,133
+I recommend you not put
+the strict mode tag
+
+1174
+00:48:47,133 --> 00:48:49,734
+into your program unless you
+understand what it does
+
+1175
+00:48:49,734 --> 00:48:52,601
+and what it means
+and that's the language
+
+1176
+00:48:52,601 --> 00:48:53,767
+you want to be writing in.
+
+1177
+00:48:53,767 --> 00:48:55,400
+But I recommend
+that's the language
+
+1178
+00:48:55,400 --> 00:48:58,000
+that you want
+to be writing in.
+
+1179
+00:48:58,000 --> 00:49:00,400
+So right now we're waiting
+on implementations.
+
+1180
+00:49:00,400 --> 00:49:03,868
+The specification's
+just about done.
+
+1181
+00:49:03,868 --> 00:49:09,033
+Microsoft and Mozilla both
+committed to public testing.
+
+1182
+00:49:09,033 --> 00:49:12,834
+If the testing goes well,
+then the standards
+
+1183
+00:49:12,834 --> 00:49:15,567
+should go to the ECMA
+general assembly in December
+
+1184
+00:49:15,567 --> 00:49:18,701
+and I'm hoping
+that it will pass.
+
+1185
+00:49:18,701 --> 00:49:21,534
+And then we'll probably see it
+up here in web browsers
+
+1186
+00:49:21,534 --> 00:49:23,000
+even before that.
+
+1187
+00:49:23,000 --> 00:49:24,601
+If you could
+hold it to the end.
+
+1188
+00:49:24,601 --> 00:49:27,133
+We're almost there.
+
+1189
+00:49:27,133 --> 00:49:28,567
+Something that's
+not coming soon
+
+1190
+00:49:28,567 --> 00:49:31,300
+is a competing project
+called ES4.
+
+1191
+00:49:31,300 --> 00:49:33,133
+That project
+has been cancelled.
+
+1192
+00:49:33,133 --> 00:49:35,601
+There were some good ideas
+in that project though
+
+1193
+00:49:35,601 --> 00:49:38,501
+and they've been resurrected
+in a follow-on
+
+1194
+00:49:38,501 --> 00:49:41,300
+to 3.1 called Harmony.
+
+1195
+00:49:41,300 --> 00:49:44,934
+So far, the project doesn't have
+any defined goals or rules,
+
+1196
+00:49:44,934 --> 00:49:48,434
+so it's a little vague as to
+what it's gonna turn out to be.
+
+1197
+00:49:48,434 --> 00:49:51,601
+We'll keep an eye on that.
+
+1198
+00:49:51,601 --> 00:49:53,200
+There's been some real
+interesting work lately
+
+1199
+00:49:53,200 --> 00:49:55,067
+in secure subsets.
+
+1200
+00:49:55,067 --> 00:49:57,200
+JavaScript is not a secure
+programming language
+
+1201
+00:49:57,200 --> 00:49:59,434
+but it's not far off from one.
+
+1202
+00:49:59,434 --> 00:50:02,100
+If you correct--get rid
+of the global object
+
+1203
+00:50:02,100 --> 00:50:05,234
+and make a few other changes--
+
+1204
+00:50:05,234 --> 00:50:08,133
+hold much closer
+to its scheme nature,
+
+1205
+00:50:08,133 --> 00:50:11,467
+there's the kernel
+of a secure language in there.
+
+1206
+00:50:11,467 --> 00:50:15,267
+We've seen some experiments like
+FBJS out of Facebook,
+
+1207
+00:50:15,267 --> 00:50:17,868
+Caja & Cajita from the Google,
+
+1208
+00:50:17,868 --> 00:50:20,334
+and ADsafe,
+which is my own work.
+
+1209
+00:50:20,334 --> 00:50:23,000
+ADsafe is intended
+to make advertising safe.
+
+1210
+00:50:23,000 --> 00:50:26,534
+Currently it's not, and we can
+talk about that another time.
+
+1211
+00:50:26,534 --> 00:50:30,200
+These subsets will be informing
+the design of a new language
+
+1212
+00:50:30,200 --> 00:50:32,033
+which will ultimately
+replace JavaScript.
+
+1213
+00:50:32,033 --> 00:50:35,133
+And there's some exploration
+going on now at ECMA
+
+1214
+00:50:35,133 --> 00:50:38,767
+for such a language.
+
+1215
+00:50:38,767 --> 00:50:40,901
+So to review the good parts,
+this is maybe
+
+1216
+00:50:40,901 --> 00:50:42,901
+the best part of all.
+
+1217
+00:50:42,901 --> 00:50:45,901
+Your JavaScript application
+has the potential
+
+1218
+00:50:45,901 --> 00:50:47,534
+to reach an audience
+of billions.
+
+1219
+00:50:47,534 --> 00:50:49,434
+There is no other
+programming platform
+
+1220
+00:50:49,434 --> 00:50:52,901
+that has anywhere
+near that kind of reach.
+
+1221
+00:50:52,901 --> 00:50:55,634
+And, you know,
+just that, I think,
+
+1222
+00:50:55,634 --> 00:50:58,534
+should be enough
+to encourage you to wanna
+
+1223
+00:50:58,534 --> 00:51:00,067
+be on this platform.
+
+1224
+00:51:00,067 --> 00:51:02,968
+If you avoid the bad parts,
+JavaScript works really well.
+
+1225
+00:51:02,968 --> 00:51:04,801
+There's even brilliance
+in this language.
+
+1226
+00:51:04,801 --> 00:51:06,467
+There should be love
+in the JavaScript community
+
+1227
+00:51:06,467 --> 00:51:08,033
+for this language
+and its designer,
+
+1228
+00:51:08,033 --> 00:51:10,400
+'cause there is goodness here.
+
+1229
+00:51:10,400 --> 00:51:13,534
+And it is possible to write good
+programs in JavaScript.
+
+1230
+00:51:13,534 --> 00:51:15,100
+There are a lotta people who
+thought it's not possible
+
+1231
+00:51:15,100 --> 00:51:17,667
+to write good programs,
+so you shouldn't even try.
+
+1232
+00:51:17,667 --> 00:51:20,767
+My message is it is possible
+and it is necessary
+
+1233
+00:51:20,767 --> 00:51:22,300
+to write good programs.
+
+1234
+00:51:22,300 --> 00:51:23,801
+If you don't wanna
+write good programs,
+
+1235
+00:51:23,801 --> 00:51:26,868
+I recommend you find
+another line of work.
+
+1236
+00:51:26,868 --> 00:51:29,868
+Um, then finally, um,
+here's the commercial plug.
+
+1237
+00:51:29,868 --> 00:51:32,367
+I wrote this cranky
+little pamphlet
+
+1238
+00:51:32,367 --> 00:51:34,167
+called "JavaScript:
+The Good Parts."
+
+1239
+00:51:34,167 --> 00:51:36,834
+So if you wanna know more
+about this silly language,
+
+1240
+00:51:36,834 --> 00:51:39,234
+that's where to go.
+
+1241
+00:51:39,234 --> 00:51:40,400
+So that's it.
+
+1242
+00:51:40,400 --> 00:51:42,067
+That's all I got for you today.
+Thank you.
+
+1243
+00:51:42,067 --> 00:51:45,000
+[applause]
+
+1244
+00:51:50,133 --> 00:51:52,133
+So how do we
+do questions here?
+
+1245
+00:51:52,133 --> 00:51:53,901
+Is there a mic
+or do I repeat or what?
+
+1246
+00:51:53,901 --> 00:51:55,567
+[man speaking indistinctly]
+
+1247
+00:51:55,567 --> 00:51:57,300
+Crockford: Okay, yes?
+
+1248
+00:51:57,300 --> 00:52:02,167
+man: So strict mode in 3.1,
+does that actually change
+
+1249
+00:52:02,167 --> 00:52:04,501
+behavior or does it just
+pick things out?
+
+1250
+00:52:04,501 --> 00:52:06,601
+Crockford: Strict mode,
+does it change behavior
+
+1251
+00:52:06,601 --> 00:52:07,767
+or does it take things out?
+
+1252
+00:52:07,767 --> 00:52:10,934
+It actually changes
+some behavior.
+
+1253
+00:52:10,934 --> 00:52:12,901
+So one of--
+
+1254
+00:52:12,901 --> 00:52:14,434
+It does take some things out.
+
+1255
+00:52:14,434 --> 00:52:16,033
+Like, you can't
+have a "with" statement
+
+1256
+00:52:16,033 --> 00:52:17,801
+in strict mode.
+
+1257
+00:52:17,801 --> 00:52:21,701
+So it does take some features
+out of the language.
+
+1258
+00:52:21,701 --> 00:52:23,801
+It changes
+the way some features work.
+
+1259
+00:52:23,801 --> 00:52:26,934
+Like, it greatly constrains
+how eval works
+
+1260
+00:52:26,934 --> 00:52:32,834
+and reduces its ability
+to do harm to the state.
+
+1261
+00:52:32,834 --> 00:52:36,467
+It also changes
+some air behavior.
+
+1262
+00:52:36,467 --> 00:52:38,067
+For example,
+currently in the language,
+
+1263
+00:52:38,067 --> 00:52:41,801
+if you do an assignment
+to a read-only property
+
+1264
+00:52:41,801 --> 00:52:45,467
+of an object,
+you get a silent failure.
+
+1265
+00:52:45,467 --> 00:52:47,901
+Which is a bad thing.
+
+1266
+00:52:47,901 --> 00:52:49,968
+In strict mode, you will now
+get an exception,
+
+1267
+00:52:49,968 --> 00:52:55,767
+which is a better thing.
+
+1268
+00:52:55,767 --> 00:52:58,834
+Any other questions?
+
+1269
+00:52:58,834 --> 00:53:01,901
+man: I've heard you and some
+other people I know
+
+1270
+00:53:01,901 --> 00:53:06,434
+talk about ideas for projects
+to fix the DOM problem.
+
+1271
+00:53:06,434 --> 00:53:10,100
+Can you give us a update on
+what's going on there?
+
+1272
+00:53:10,100 --> 00:53:13,934
+Crockford: Question is what are
+we doing about the DOM problem?
+
+1273
+00:53:13,934 --> 00:53:17,501
+One bit of difficulty about
+that is there are two
+
+1274
+00:53:17,501 --> 00:53:20,601
+independent standards bodies
+that control
+
+1275
+00:53:20,601 --> 00:53:22,801
+two parts of this system.
+
+1276
+00:53:22,801 --> 00:53:25,501
+ECMA controls
+the programming language
+
+1277
+00:53:25,501 --> 00:53:29,334
+and W3C controls the API.
+
+1278
+00:53:29,334 --> 00:53:31,601
+And these two organizations,
+as far as I can tell,
+
+1279
+00:53:31,601 --> 00:53:33,367
+do not cooperate
+with each other.
+
+1280
+00:53:33,367 --> 00:53:36,534
+They don't talk,
+they don't share plans.
+
+1281
+00:53:36,534 --> 00:53:38,434
+That's a problem.
+
+1282
+00:53:38,434 --> 00:53:41,133
+And so there's much
+in the DOM--
+
+1283
+00:53:41,133 --> 00:53:45,968
+Fixing the language
+will not solve
+
+1284
+00:53:45,968 --> 00:53:48,934
+any of our security problems if
+the DOM is left the way it is
+
+1285
+00:53:48,934 --> 00:53:51,300
+because it is also
+hopelessly insecure.
+
+1286
+00:53:51,300 --> 00:53:56,734
+So I'm hoping that we can put
+ECMA and W3C together
+
+1287
+00:53:56,734 --> 00:54:02,334
+and do a more collaborative
+approach to revising the DOM.
+
+1288
+00:54:02,334 --> 00:54:07,601
+I see work going on on HTML 5
+and the web API stuff
+
+1289
+00:54:07,601 --> 00:54:10,067
+and it's really alarming to me.
+
+1290
+00:54:10,067 --> 00:54:12,467
+I think they're going off
+in very, very bad direction.
+
+1291
+00:54:12,467 --> 00:54:14,067
+I think it's
+way too complicated.
+
+1292
+00:54:14,067 --> 00:54:17,167
+I don't think it's addressing
+our real problems.
+
+1293
+00:54:17,167 --> 00:54:20,767
+It just seems more like a
+standard maker's holiday to me.
+
+1294
+00:54:20,767 --> 00:54:23,400
+So I'm hoping that we can
+do a reset there,
+
+1295
+00:54:23,400 --> 00:54:26,000
+start over with a better set
+of goals
+
+1296
+00:54:26,000 --> 00:54:28,734
+that we can go
+into the future together.
+
+1297
+00:54:28,734 --> 00:54:31,167
+I'm optimistic about it because
+of what I've seen
+
+1298
+00:54:31,167 --> 00:54:33,868
+in the AJAX libraries.
+
+1299
+00:54:33,868 --> 00:54:39,000
+You know, the DOM model
+is just really awful.
+
+1300
+00:54:39,000 --> 00:54:41,200
+There was originally
+the Netscape model,
+
+1301
+00:54:41,200 --> 00:54:42,467
+which was even worse.
+
+1302
+00:54:42,467 --> 00:54:43,934
+Microsoft improved it.
+
+1303
+00:54:43,934 --> 00:54:48,300
+Microsoft gets beaten up a lot
+for making the DOM so bad.
+
+1304
+00:54:48,300 --> 00:54:51,400
+I think the thing
+they did wrong
+
+1305
+00:54:51,400 --> 00:54:55,200
+was they stopped too soon.
+
+1306
+00:54:55,200 --> 00:54:57,133
+But it is bad.
+
+1307
+00:54:57,133 --> 00:55:00,133
+But the AJAX libraries
+are all very thin.
+
+1308
+00:55:00,133 --> 00:55:03,033
+Just, you know,
+a little bit of code,
+
+1309
+00:55:03,033 --> 00:55:06,133
+you know, generally
+on the order of 20 to 40k,
+
+1310
+00:55:06,133 --> 00:55:08,634
+which makes it so much better,
+you know?
+
+1311
+00:55:08,634 --> 00:55:12,567
+So eventually I'd
+like to take a look
+
+1312
+00:55:12,567 --> 00:55:14,868
+at the lessons that we got
+from the AJAX libraries,
+
+1313
+00:55:14,868 --> 00:55:17,567
+and then refactor
+the DOM based on that,
+
+1314
+00:55:17,567 --> 00:55:22,133
+push it down,
+and that becomes the new API.
+
+1315
+00:55:22,133 --> 00:55:23,667
+Yeah?
+
+1316
+00:55:23,667 --> 00:55:25,400
+man: What about Lambdasoft?
+
+1317
+00:55:25,400 --> 00:55:26,667
+Lambda is good.
+I like Lambda.
+
+1318
+00:55:26,667 --> 00:55:27,968
+You had lots of praise for it.
+
+1319
+00:55:27,968 --> 00:55:29,934
+But Lambda's more than closures.
+
+1320
+00:55:29,934 --> 00:55:31,701
+How do you spell Lambda
+in JavaScript?
+
+1321
+00:55:31,701 --> 00:55:35,634
+Crockford: How do you spell
+Lambda in JavaScript function?
+
+1322
+00:55:35,634 --> 00:55:38,100
+So you don't get everything
+that you get in scheme.
+
+1323
+00:55:38,100 --> 00:55:39,801
+You know, so we don't
+have continuations.
+
+1324
+00:55:39,801 --> 00:55:41,501
+We don't have
+tail recursion optimization.
+
+1325
+00:55:41,501 --> 00:55:43,300
+There's a lot
+of stuff that's missing.
+
+1326
+00:55:43,300 --> 00:55:47,868
+But the basic notion of
+helixical scoping is there
+
+1327
+00:55:47,868 --> 00:55:50,767
+and functions
+as first-class values.
+
+1328
+00:55:50,767 --> 00:55:52,167
+Yes?
+
+1329
+00:55:52,167 --> 00:55:54,133
+man: You mentioned the worst
+mistake in JavaScript
+
+1330
+00:55:54,133 --> 00:55:57,100
+was the use
+of global variables for linkage.
+
+1331
+00:55:57,100 --> 00:55:59,868
+What's your preferred way
+of solving that problem?
+
+1332
+00:55:59,868 --> 00:56:02,334
+Crockford: So I said
+the worst problem
+
+1333
+00:56:02,334 --> 00:56:05,133
+in JavaScript was its use of
+global variables for linkage.
+
+1334
+00:56:05,133 --> 00:56:06,701
+How would I solve that?
+
+1335
+00:56:06,701 --> 00:56:10,634
+I'd like to have some...
+
+1336
+00:56:10,634 --> 00:56:14,567
+discovery pattern in which
+each of the compilation units
+
+1337
+00:56:14,567 --> 00:56:17,000
+is initially
+completely isolated,
+
+1338
+00:56:17,000 --> 00:56:19,501
+but is given a capability which
+allows it to introduce itself
+
+1339
+00:56:19,501 --> 00:56:22,834
+to some other
+capability manager.
+
+1340
+00:56:22,834 --> 00:56:25,367
+So they can make
+introductions to each other
+
+1341
+00:56:25,367 --> 00:56:28,367
+and form a network.
+
+1342
+00:56:28,367 --> 00:56:30,534
+Uh, uh, yeah?
+
+1343
+00:56:30,534 --> 00:56:34,133
+man: You said that there
+is no issues with using objects
+
+1344
+00:56:34,133 --> 00:56:36,534
+as though they were hash tables.
+
+1345
+00:56:36,534 --> 00:56:40,100
+Remind me what key
+you would use [indistinct].
+
+1346
+00:56:40,100 --> 00:56:44,567
+Crockford: Okay, so Waldemar is
+getting after me about--
+
+1347
+00:56:44,567 --> 00:56:49,767
+JavaScript objects are not
+strictly hash tables,
+
+1348
+00:56:49,767 --> 00:56:53,200
+or are defective hash tables,
+I think is maybe more correct.
+
+1349
+00:56:53,200 --> 00:56:59,200
+In that there are some names
+which will cause collisions.
+
+1350
+00:56:59,200 --> 00:57:05,267
+And, in fact, some of the stuff
+we came up with in 3.1
+
+1351
+00:57:05,267 --> 00:57:09,267
+is a little odd
+in the way it's put together
+
+1352
+00:57:09,267 --> 00:57:13,767
+and that was in order to not
+worsen that problem.
+
+1353
+00:57:13,767 --> 00:57:17,467
+So, yeah, it's not perfect.
+
+1354
+00:57:17,467 --> 00:57:21,300
+Like so much in this language,
+it's not perfect.
+
+1355
+00:57:21,300 --> 00:57:22,634
+Yes?
+
+1356
+00:57:22,634 --> 00:57:26,067
+man: You were saying
+that you think that web apps
+
+1357
+00:57:26,067 --> 00:57:29,400
+and HTML 5 is going
+in the wrong direction.
+
+1358
+00:57:29,400 --> 00:57:33,934
+What things do you think
+that we're doing wrong?
+
+1359
+00:57:33,934 --> 00:57:35,634
+Is it just that we're not
+solving the problems,
+
+1360
+00:57:35,634 --> 00:57:37,334
+or is it are we
+actually adding to them?
+
+1361
+00:57:37,334 --> 00:57:40,601
+Crockford: What do I think is
+wrong with HTML 5?
+
+1362
+00:57:40,601 --> 00:57:42,000
+man: And the web apps.
+
+1363
+00:57:42,000 --> 00:57:45,767
+Crockford: And the web apps?
+
+1364
+00:57:45,767 --> 00:57:48,367
+I think it's doing too much.
+
+1365
+00:57:48,367 --> 00:57:50,200
+You can look at any
+individual thing and say,
+
+1366
+00:57:50,200 --> 00:57:51,567
+"Oh, that looks nice."
+
+1367
+00:57:51,567 --> 00:57:55,033
+But there are way too many
+of those things.
+
+1368
+00:57:55,033 --> 00:57:57,267
+I would like to see
+a more disciplined approach.
+
+1369
+00:57:57,267 --> 00:57:59,534
+I'd like to see
+a more minimalist approach.
+
+1370
+00:57:59,534 --> 00:58:03,734
+You know, so if you look
+at the two proposals
+
+1371
+00:58:03,734 --> 00:58:05,767
+that were competing for the
+fourth edition,
+
+1372
+00:58:05,767 --> 00:58:07,901
+ES3.1 and ES4.
+
+1373
+00:58:07,901 --> 00:58:10,234
+I preferred ES3.1.
+
+1374
+00:58:10,234 --> 00:58:15,367
+It was less ambitious but it was
+less likely to cause problems.
+
+1375
+00:58:15,367 --> 00:58:18,434
+And it was moving
+more toward minimalism.
+
+1376
+00:58:18,434 --> 00:58:20,501
+Which I think is something which
+is way underrated,
+
+1377
+00:58:20,501 --> 00:58:22,734
+Particularly in standards.
+
+1378
+00:58:22,734 --> 00:58:25,000
+My view of minimalism,
+particularly after
+
+1379
+00:58:25,000 --> 00:58:28,868
+the JSON standard,
+is that the less
+
+1380
+00:58:28,868 --> 00:58:31,834
+we have to agree on in order
+to work together, the better.
+
+1381
+00:58:31,834 --> 00:58:37,534
+And so I would like to look
+at a way of re-engineering HTML
+
+1382
+00:58:37,534 --> 00:58:39,501
+and all the stuff
+that goes around it
+
+1383
+00:58:39,501 --> 00:58:44,167
+to be much smaller
+and work better.
+
+1384
+00:58:44,167 --> 00:58:48,868
+And, you know,
+I see HTML 5 and the web apps
+
+1385
+00:58:48,868 --> 00:58:51,734
+going in the other direction,
+which is just
+
+1386
+00:58:51,734 --> 00:58:54,000
+the emperor's
+old clothes approach,
+
+1387
+00:58:54,000 --> 00:58:56,701
+where you just keep piling
+more stuff and more stuff
+
+1388
+00:58:56,701 --> 00:58:59,767
+and more stuff.
+It just gets too big.
+
+1389
+00:58:59,767 --> 00:59:01,501
+It's easy to make things bigger.
+
+1390
+00:59:01,501 --> 00:59:05,667
+It's harder
+to make things better.
+
+1391
+00:59:05,667 --> 00:59:07,334
+Okay.
+Yeah?
+
+1392
+00:59:07,334 --> 00:59:11,801
+man: How did it come about
+that JSON and, uh, ECMAscript
+
+1393
+00:59:11,801 --> 00:59:16,133
+have the same syntax,
+but almost--but not quite?
+
+1394
+00:59:16,133 --> 00:59:17,434
+Crockford: Yeah,
+so how'd it come about
+
+1395
+00:59:17,434 --> 00:59:21,868
+that JSON and JavaScript have
+almost the same syntax?
+
+1396
+00:59:21,868 --> 00:59:24,334
+I think it's just in the two
+line-ending characters.
+
+1397
+00:59:24,334 --> 00:59:25,734
+Yeah?
+Yeah.
+
+1398
+00:59:25,734 --> 00:59:29,200
+It's because I missed
+that line in the standard
+
+1399
+00:59:29,200 --> 00:59:31,701
+when I was
+putting it together.
+
+1400
+00:59:31,701 --> 00:59:34,901
+When I specified what the
+whitespace characters were,
+
+1401
+00:59:34,901 --> 00:59:37,767
+carriage return, line feed,
+tab, and space.
+
+1402
+00:59:37,767 --> 00:59:40,234
+And I missed that--
+
+1403
+00:59:40,234 --> 00:59:42,601
+What--
+PS and?
+
+1404
+00:59:42,601 --> 00:59:43,634
+man: And LS?
+
+1405
+00:59:43,634 --> 00:59:44,801
+Crockford: And LS.
+
+1406
+00:59:44,801 --> 00:59:46,767
+Were also recognized
+as whitespace.
+
+1407
+00:59:46,767 --> 00:59:49,000
+We tried to fix that in the
+ECMAscript standard
+
+1408
+00:59:49,000 --> 00:59:50,300
+and we couldn't.
+
+1409
+00:59:50,300 --> 00:59:53,267
+So we're stuck with that
+little bit of difference.
+
+1410
+00:59:53,267 --> 00:59:55,567
+As far as I can tell,
+nobody's ever used
+
+1411
+00:59:55,567 --> 00:59:59,167
+PS and NLS
+in this context, so...
+
+1412
+00:59:59,167 --> 01:00:01,868
+[man speaking indistinctly]
+
+1413
+01:00:01,868 --> 01:00:05,067
+Crockford: Yeah, but I've never
+seen anybody use them.
+
+1414
+01:00:05,067 --> 01:00:08,834
+So it hasn't been
+a problem yet.
+
+1415
+01:00:08,834 --> 01:00:11,167
+There's a potential security
+hazard in that
+
+1416
+01:00:11,167 --> 01:00:13,734
+the two systems view
+it differently.
+
+1417
+01:00:13,734 --> 01:00:15,801
+Particularly when--
+
+1418
+01:00:15,801 --> 01:00:19,033
+But we never identified
+an exploit that came from that.
+
+1419
+01:00:19,033 --> 01:00:22,534
+And now that there's an explicit
+JSON parser built in
+
+1420
+01:00:22,534 --> 01:00:26,067
+to JavaScript--that's one of
+the new good parts, by the way.
+
+1421
+01:00:26,067 --> 01:00:29,434
+That problem
+goes away completely.
+
+1422
+01:00:29,434 --> 01:00:31,300
+Yes?
+
+1423
+01:00:31,300 --> 01:00:34,534
+man: So the first time
+I was using JSON,
+
+1424
+01:00:34,534 --> 01:00:37,567
+the first problem I ran into,
+like, first object
+
+1425
+01:00:37,567 --> 01:00:39,501
+I tried to parse
+with the JSON parser,
+
+1426
+01:00:39,501 --> 01:00:41,934
+it wouldn't parse and it was
+because I didn't put quotes
+
+1427
+01:00:41,934 --> 01:00:43,734
+around my property names.
+
+1428
+01:00:43,734 --> 01:00:45,767
+Is there a reason
+for why that is not allowed?
+
+1429
+01:00:45,767 --> 01:00:48,100
+Crockford: Yeah, so why
+does JSON require quotes
+
+1430
+01:00:48,100 --> 01:00:49,734
+around the property names?
+
+1431
+01:00:49,734 --> 01:00:51,567
+There are
+three reasons.
+
+1432
+01:00:51,567 --> 01:00:55,734
+One of the reasons is that I
+wanted to align it with Python.
+
+1433
+01:00:55,734 --> 01:00:58,167
+In Python,
+the quotes are required.
+
+1434
+01:00:58,167 --> 01:01:02,434
+Another reason was it makes
+the grammar of the standard
+
+1435
+01:01:02,434 --> 01:01:06,234
+much easier to specify
+and I like simplicity.
+
+1436
+01:01:06,234 --> 01:01:08,701
+But the real reason,
+the true reason,
+
+1437
+01:01:08,701 --> 01:01:12,033
+is that JavaScript has a--
+okay, I'll say it--
+
+1438
+01:01:12,033 --> 01:01:13,968
+a stupid reserved word policy.
+
+1439
+01:01:13,968 --> 01:01:16,167
+And there are certain words
+that you cannot use
+
+1440
+01:01:16,167 --> 01:01:20,033
+in the key position
+of an object literal.
+
+1441
+01:01:20,033 --> 01:01:22,901
+Many of those names are
+not even used in the language.
+
+1442
+01:01:22,901 --> 01:01:25,400
+They're reserved unnecessarily
+
+1443
+01:01:25,400 --> 01:01:27,601
+and there's
+just no reason for it.
+
+1444
+01:01:27,601 --> 01:01:29,200
+And at the time
+that I put JSON together,
+
+1445
+01:01:29,200 --> 01:01:32,300
+it wasn't like I was riding
+on JavaScript's coattails,
+
+1446
+01:01:32,300 --> 01:01:35,234
+because nobody was using
+JavaScript at that time
+
+1447
+01:01:35,234 --> 01:01:36,968
+and everybody
+hated JavaScript.
+
+1448
+01:01:36,968 --> 01:01:41,901
+So it wasn't like I was
+basking in JavaScript's glow.
+
+1449
+01:01:41,901 --> 01:01:46,100
+So in order to not have quotes
+but still use it in JavaScript,
+
+1450
+01:01:46,100 --> 01:01:49,634
+I was going to have to have an
+appendix of the JSON spec,
+
+1451
+01:01:49,634 --> 01:01:52,834
+which was gonna be at least as
+big as all the rest of the spec
+
+1452
+01:01:52,834 --> 01:01:55,300
+describing
+how the reserve words worked.
+
+1453
+01:01:55,300 --> 01:01:58,400
+Basically what it said,
+"This is something
+
+1454
+01:01:58,400 --> 01:02:00,234
+that's really stupid
+in JavaScript."
+
+1455
+01:02:00,234 --> 01:02:01,934
+You know,
+need to point it out.
+
+1456
+01:02:01,934 --> 01:02:04,567
+And at that point,
+I didn't wanna make JavaScript
+
+1457
+01:02:04,567 --> 01:02:09,033
+look stupider.
+
+1458
+01:02:09,033 --> 01:02:12,400
+So I said, "Okay, we'll just
+quote the keys and then we don't
+
+1459
+01:02:12,400 --> 01:02:16,801
+have to tell anybody
+about this shameful thing."
+
+1460
+01:02:16,801 --> 01:02:18,801
+One bit of good news.
+
+1461
+01:02:18,801 --> 01:02:21,200
+We fixed that
+in the next language.
+
+1462
+01:02:21,200 --> 01:02:24,968
+Reserved words are now allowed
+in key position
+
+1463
+01:02:24,968 --> 01:02:27,367
+and also in dot position
+in the language.
+
+1464
+01:02:27,367 --> 01:02:29,167
+So that's better.
+
+1465
+01:02:29,167 --> 01:02:32,734
+But that took a long time.
+
+1466
+01:02:32,734 --> 01:02:35,067
+Uh, one more question?
+
+1467
+01:02:35,067 --> 01:02:38,667
+Yeah?
+All right, one more.
+
+1468
+01:02:38,667 --> 01:02:40,234
+Yes?
+
+1469
+01:02:40,234 --> 01:02:42,701
+man: Are there any prospects
+for adding concurrency
+
+1470
+01:02:42,701 --> 01:02:44,567
+to the language?
+
+1471
+01:02:44,567 --> 01:02:46,000
+Crockford: Are there any
+prospects for adding concurrency
+
+1472
+01:02:46,000 --> 01:02:48,601
+to the language?
+
+1473
+01:02:48,601 --> 01:02:51,067
+It depends on what you mean
+by "concurrency."
+
+1474
+01:02:51,067 --> 01:02:54,434
+Brendan Eich is pretty adamant
+and I completely agree with him.
+
+1475
+01:02:54,434 --> 01:02:57,901
+We should not put threads
+in this language.
+
+1476
+01:02:57,901 --> 01:03:03,701
+I would like to see some sort
+of messaging model.
+
+1477
+01:03:03,701 --> 01:03:05,367
+I don't know that it belongs
+in this language.
+
+1478
+01:03:05,367 --> 01:03:11,100
+More likely, it belongs in some
+layer beside the language.
+
+1479
+01:03:11,100 --> 01:03:13,934
+We would definitely
+benefit from that.
+
+1480
+01:03:13,934 --> 01:03:17,667
+man: There is--Firefox 3.1 is
+gonna have support
+
+1481
+01:03:17,667 --> 01:03:20,567
+for APIs that allow
+you to create
+
+1482
+01:03:20,567 --> 01:03:24,868
+separate threads that can send
+messages to each other.
+
+1483
+01:03:24,868 --> 01:03:28,567
+Crockford: Yeah, I like
+that model a lot.
+
+1484
+01:03:28,567 --> 01:03:30,267
+Okay, that's all I got
+for you today.
+
+1485
+01:03:30,267 --> 01:03:31,968
+Thanks.
+
+1486
+01:03:31,968 --> 01:03:34,234
+[applause]
+
+1487
+01:03:34,234 --> 01:03:35,634
+Souders: That was an amazing
+talk, Doug.
+
+1488
+01:03:35,634 --> 01:03:38,167
+Thank you very much.
+
