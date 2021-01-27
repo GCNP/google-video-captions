@@ -1,25 +1,5 @@
 # google-video-captions
-
-Captions for Videos on Google's YouTube channels,
-Imported from [google-video-captions](https://code.google.com/archive/p/google-video-captions/) on Google Code Archive, originally maintained by @naomiblack.
-
-## What is this anyway?
-
-Over a decade ago, [Naomi](https://github.com/naomiblack) [Black](https://www.linkedin.com/in/naomitraveller/), a long-time Technical Program Manager at Google, began a project to gather a collection of closed captions on Google's own channels. The files span videos between 2008-2009, and are available in 14 different languages, albeit not equally so.
-
-Unfortunately the project later fell into obscurity and was presumably discontinued, as was Google Code where it was previously maintained.
-
-Years later I uncovered the project when doing research about the history of the captions feature on YouTube in the heat of a controversy which resulted in Google announcing that they would be permanently disabling community contributions to captions. In hopes that isn't lost to the sands of time, and that it may someday be revitilized, I've decided to upload it to GitHub.
-
-## Where to from here?
-
-* Find URL's: The naming convention in the files makes it a bit difficult to identify the associated videos. Fortunately, YouTube has a hit-or-miss CC search function which can be used for hunting down videos based on quotes in the captions: querying with `"your quote here",cc` can return videos where a particular quote appears. A supplementary csv file could be used to gather the links for all of these videos.
-
-* Post-2009: I am intent on keeping this repository as similar to the original project as possible, but the premise of extending this project to later videos uploaded on the channels is definetly worth investigating. I implore anyone interested to fork the repository, possibly renaming it.
-
-* Raw video files: The prospect of using these files for something like multimodal learning is obvious, and beyond links to the original videos perhaps including raw copies of the videos might be an interesting idea. Though perhaps Kaggle is more suited for this than GitHub.
-
-## Original Summary Page:
+#### Captions for Videos on Google's YouTube channels
 
 The google-video-captions project has two goals:
 
@@ -71,3 +51,10 @@ Captions can only be added to a video by the channel owner. If you have a transl
 1. Send email to google-video-captions@googlegroups.com with a link to the URL of the video in YouTube.
 2. We will review the translation for upload to GoogleDevelopers.
 3. If we add your translated caption, it will appear when anyone views the video on YouTube with a preference set for that language.
+
+## Wikis
+[README](captions/README)
+
+## Original Repo
+Migrated from https://code.google.com/archive/p/google-video-captions/
+
