@@ -52,6 +52,10 @@ Captions can only be added to a video by the channel owner. If you have a transl
 2. We will review the translation for upload to GoogleDevelopers.
 3. If we add your translated caption, it will appear when anyone views the video on YouTube with a preference set for that language.
 
+## Demo
+
+[YouTube Playlist](http://www.youtube.com/view_play_list?p=01131B751C6A8CD6)
+
 ## Wikis
 [README](captions/README)
 
