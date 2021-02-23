@@ -11,7 +11,7 @@ The captioned videos are primarily from these Google Developer video channels:
 * [GoogleDevelopers](http://www.youtube.com/profile?user=GoogleDevelopers&view=videos)
 * [androiddevelopers](http://www.youtube.com/profile?user=androiddevelopers&view=videos)
 
-Not all videos on these channels are captioned. To only see captioned videos, choose the ["Videos with captions"](http://www.youtube.com/view_play_list?p=01131B751C6A8CD6) playlist in YouTube.
+Not all videos on these channels are captioned. To only see captioned videos, choose the ["Videos with captions"](https://www.youtube.com/playlist?list=PLF8B988C0072C859E) playlist in YouTube.
 
 ### Downloading caption files
 
